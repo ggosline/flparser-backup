@@ -11,11 +11,11 @@ from floraparser.FGParser import FGParser, cleanparsetree, FindNode
 
 trec = defaultdict(lambda: None)
 
-description = 'Flowers (1–2)3–15, in cymes, bisexual, 12–15 mm. in diam.'
+description = 'Sepals (4)5(6), imbricate, free or ± united, the inner ones sometimes ± petaloid'
 fromDB = True
 fromDB = False
 parser = FeatureBottomUpLeftCornerChartParser
-#parser = FeatureEarleyChartParser
+parser = FeatureEarleyChartParser
 #parser = FeatureTopDownChartParser
 cleantree = False
 cleantree = True
