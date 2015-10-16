@@ -15,11 +15,12 @@ class FGChart(FeatureChart):
         FeatureChart.__init__(self, tokens)
 
     def initialize(self):
-        self._instantiated = set()
+        self._heads_unified = set()
         FeatureChart.initialize(self)
 
     def insert(self, edge, *child_pointer_list):
-        if edge in self._instantiated: return False
+        if edge in self._heads_unified:
+            return False
         self.unify_heads(edge)
         return FeatureChart.insert(self, edge, *child_pointer_list)
 
@@ -45,14 +46,13 @@ class FGChart(FeatureChart):
         if edge.span()[0] != edge.span()[1]:
             edge._lhs.update(span=((self._tokens[edge.start()].slice.start), self._tokens[edge.end() - 1].slice.stop))
 
-        # Get a list of variables that need to be instantiated.
-        # If there are none, then return as-is.
         head_prod = [prod for prod in edge.rhs() if isinstance(prod, FeatStruct) and prod.has_key("HD")]
 
         if not head_prod: return
-        edge._lhs['H'] = edge.lhs()['H'].unify(head_prod[0]['H'], trace=2)
-        # Instantiate the edge!
-        self._instantiated.add(edge)
+        lhead = edge._lhs.get('H', FeatStructNonterminal([]))
+        edge._lhs['H'] = lhead.unify(head_prod[0]['H'], trace=2)
+        # mark edge as done!
+        self._heads_unified.add(edge)
 
     def pretty_format_edge(self, edge, width=None):
         line = FeatureIncrementalChart.pretty_format_edge(self, edge)
