@@ -1,62 +1,68 @@
 __author__ = 'gg12kg'
 import sys
-
-from nltk import grammar, parse
-from nltk.grammar import FeatureGrammar, FeatStructNonterminal, FeatStructReader, read_grammar, SLASH, TYPE, Production, \
-    Nonterminal
 from nltk.parse.featurechart import FeatureChart, FeatureTreeEdge
+
+from nltk.grammar import FeatureGrammar, FeatStructNonterminal, FeatStructReader,\
+    read_grammar, SLASH, TYPE, Production, \
+    Nonterminal
+from nltk.parse.chart import TreeEdge
 from nltk.featstruct import FeatStruct, Feature, FeatList
 from floraparser.fltoken import FlToken
-from nltk import Tree, ImmutableTree
-from nltk.parse.earleychart import FeatureIncrementalChart
+from nltk import Tree
+from nltk.parse.earleychart import FeatureIncrementalChart, FeatureEarleyChartParser
 
-class FGChart(FeatureChart):
-    def __init__(self, tokens):
-        FeatureChart.__init__(self, tokens)
 
-    def initialize(self):
-        self._heads_unified = set()
-        FeatureChart.initialize(self)
+class FGFeatureTreeEdge(FeatureTreeEdge):
 
-    def insert(self, edge, *child_pointer_list):
-        if edge in self._heads_unified:
-            return False
-        self.unify_heads(edge)
-        return FeatureChart.insert(self, edge, *child_pointer_list)
+    def __init__(self, span, lhs, rhs, dot=0, bindings=None):
+        """
+        Construct a new edge.
+        If complete copy head features in addition to the bindings
+        """
+        if bindings is None: bindings = {}
 
-    def unify_heads(self, edge):
+        # If the edge is complete, then substitute in the bindings,
+        # and then throw them away.  (If we didn't throw them away, we
+        # might think that 2 complete edges are different just because
+        # they have different bindings, even though all bindings have
+        # already been applied.)
+        if dot == len(rhs) and bindings:
+            lhs = self._bind(lhs, bindings)
+            rhs = [self._bind(elt, bindings) for elt in rhs]
+            bindings = {}
+            self.unify_heads(span, lhs, rhs)
+
+        # Initialize the edge.
+        TreeEdge.__init__(self, span, lhs, rhs, dot)
+        self._bindings = bindings
+        self._comparison_key = (self._comparison_key, tuple(sorted(bindings.items())))
+
+
+    def unify_heads(self, span, lhs, rhs):
         """
         If the edge is a ``FeatureTreeEdge``, and it is complete,
         then unify the head feature on the LHS with the head feature
         in the head daughter on the RHS.
         Head daughter marked with feature +HD.
         Head feature is H.
-
-        Note that instantiation is done in-place, since the
-        parsing algorithms might already hold a reference to
-        the edge for future use.
         """
-        # If the edge is a leaf, or is not complete, or is
-        # already in the chart, then just return it as-is.
-        if not isinstance(edge, FeatureTreeEdge): return
-        if not edge.is_complete(): return
-        if edge in self._edge_to_cpls: return
-        # Save the text span of the edge
-        edge._lhs = edge._lhs.copy()
-        if edge.span()[0] != edge.span()[1]:
-            edge._lhs.update(span=((self._tokens[edge.start()].slice.start), self._tokens[edge.end() - 1].slice.stop))
+        if span[0] != span[1]:
+            lhs.update(span=((self._tokens[span[0]].slice.start), self._tokens[span[1] - 1].slice.stop-1))
 
-        head_prod = [prod for prod in edge.rhs() if isinstance(prod, FeatStruct) and prod.has_key("HD")]
+        head_prod = [prod for prod in rhs() if isinstance(prod, FeatStruct) and prod.has_key("HD")]
 
         if not head_prod: return
-        lhead = edge._lhs.get('H', FeatStructNonterminal([]))
-        edge._lhs['H'] = lhead.unify(head_prod[0]['H'], trace=2)
-        # mark edge as done!
-        self._heads_unified.add(edge)
+        lhead = lhs.get('H', FeatStructNonterminal([]))
+        lhs['H'] = lhead.unify(head_prod[0]['H'], trace=2)
+
+FeatureTreeEdge.__init__ = FGFeatureTreeEdge.__init__
+
+class FGChart(FeatureChart):
 
     def pretty_format_edge(self, edge, width=None):
         line = FeatureIncrementalChart.pretty_format_edge(self, edge)
         return line[0:400]
+
 
 class FGGrammar(FeatureGrammar):
     def __init__(self, start, productions):
@@ -116,8 +122,9 @@ class FGGrammar(FeatureGrammar):
         '''
         pass
 
+
 class FGParser():
-    def __init__(self, grammarfile='flg.fcfg', trace=1, parser=parse.FeatureEarleyChartParser):
+    def __init__(self, grammarfile='flg.fcfg', trace=1, parser=FeatureEarleyChartParser):
         with open(grammarfile, 'r', encoding='utf-8') as gf:
             gs = gf.read()
         self._grammar = FGGrammar.fromstring(gs)
@@ -183,7 +190,7 @@ class FGParser():
                             trees.remove((t, tstart, tend))
                         elif (charedge.start() >= tstart and charedge.end() < tend) \
                                 or (
-                                        charedge.start() > tstart and charedge.end() <= tend):  # subsumed
+                                                charedge.start() > tstart and charedge.end() <= tend):  # subsumed
                             newtree = False
                             continue
                         newtree = True
@@ -355,7 +362,7 @@ def flattentree(tree: Tree, listnodetype):
                 nodeList.append((child, node))
 
 
-def FindNode(lab:str, tree:Tree) -> Tree:
+def FindNode(lab: str, tree: Tree) -> Tree:
     if tree.label()[TYPE] == lab:
         return tree
     for t in tree:

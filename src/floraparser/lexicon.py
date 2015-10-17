@@ -6,7 +6,6 @@ import csv
 import pickle
 import os
 from nltk.featstruct import Feature, FeatStruct, FeatStructReader
-from flfeatureclass import SpanFeature
 from nltk.grammar import FeatStructNonterminal, TYPE, SLASH
 from nltk.sem import Expression
 
@@ -45,8 +44,8 @@ def pickle_lexicon():
             category = ""
         else:
             category = morefeatures['category']
-        if 'sem' not in morefeatures:
-            morefeatures['sem'] = read_expr(word.replace('.', ''))
+        # if 'sem' not in morefeatures:
+        #     morefeatures['sem'] = read_expr(word.replace('.', ''))
         # lexicon[tuple(ws)] = LexEntry(POS, tuple(ws), category, appliesto)
 
         featstring = POS + "[ category= '" + category + "', orth='" + word + "'] "
@@ -83,7 +82,7 @@ def pickle_lexicon():
                 else:
                     POS = 'UNK'
                     semexpr = None
-                addlexentry(term, POS, category=category, sem=semexpr, **morefeatures)
+                addlexentry(term, POS, category=category, **morefeatures)
 
     COORDCONJUNCTION = 'and|or|and/or|neither|nor|otherwise|but|except|except_for|×'.split('|')
     for word in COORDCONJUNCTION:
@@ -94,10 +93,10 @@ def pickle_lexicon():
     ARTICLE = 'the|a|an'.split('|')
     addlexicon(ARTICLE, 'ART')
     DETERMINER = 'each|every|some|all|other|both|their'.split('|')
-    addlexicon(DETERMINER, 'DET', sem=None)
+    addlexicon(DETERMINER, 'DET')
     PUNCTUATION = [';', '(', ')']
     for char in PUNCTUATION:
-        addlexentry(char, 'PUNC', punc=char, sem=None)
+        addlexentry(char, 'PUNC', punc=char)
     addlexicon([','], 'COMMA', sem=None)
     PRONOUN = 'it|one|ones|form|forms|part|parts'.split('|')
     addlexicon(PRONOUN, 'PRO')
@@ -106,7 +105,7 @@ def pickle_lexicon():
                   'towards|up|upward|when|owing_to|due_to|according_to|on_account_of|' \
                   'tipped_by|to_form'.split('|')
     for word in PREPOSITION:
-        addlexentry(word, 'P', prep=word, position=False, sem=read_expr(r'\x.' + word + '(x)'))
+        addlexentry(word, 'P', prep=word, position=False) #, sem=read_expr(r'\x.' + word + '(x)'))
 
     WITH = 'with|without'.split('|')
     for word in WITH:
