@@ -30,7 +30,7 @@ class FGFeatureTreeEdge(FeatureTreeEdge):
             lhs = self._bind(lhs, bindings)
             rhs = [self._bind(elt, bindings) for elt in rhs]
             bindings = {}
-            self.unify_heads(span, lhs, rhs)
+            unify_heads(span, lhs, rhs, [])
 
         # Initialize the edge.
         TreeEdge.__init__(self, span, lhs, rhs, dot)
@@ -38,22 +38,22 @@ class FGFeatureTreeEdge(FeatureTreeEdge):
         self._comparison_key = (self._comparison_key, tuple(sorted(bindings.items())))
 
 
-    def unify_heads(self, span, lhs, rhs):
-        """
-        If the edge is a ``FeatureTreeEdge``, and it is complete,
-        then unify the head feature on the LHS with the head feature
-        in the head daughter on the RHS.
-        Head daughter marked with feature +HD.
-        Head feature is H.
-        """
-        if span[0] != span[1]:
-            lhs.update(span=((self._tokens[span[0]].slice.start), self._tokens[span[1] - 1].slice.stop-1))
+def unify_heads(span, lhs, rhs, tokens):
+    """
+    If the edge is a ``FeatureTreeEdge``, and it is complete,
+    then unify the head feature on the LHS with the head feature
+    in the head daughter on the RHS.
+    Head daughter marked with feature +HD.
+    Head feature is H.
+    """
+    # if span[0] != span[1]:
+    #     lhs.update(span=((tokens[span[0]].slice.start), tokens[span[1] - 1].slice.stop-1))
 
-        head_prod = [prod for prod in rhs() if isinstance(prod, FeatStruct) and prod.has_key("HD")]
+    head_prod = [prod for prod in rhs if isinstance(prod, FeatStruct) and prod.has_key("HD")]
 
-        if not head_prod: return
-        lhead = lhs.get('H', FeatStructNonterminal([]))
-        lhs['H'] = lhead.unify(head_prod[0]['H'], trace=2)
+    if not head_prod: return
+    lhead = lhs.get('H', FeatStructNonterminal([]))
+    lhs['H'] = lhead.unify(head_prod[0]['H'], trace=2)
 
 FeatureTreeEdge.__init__ = FGFeatureTreeEdge.__init__
 

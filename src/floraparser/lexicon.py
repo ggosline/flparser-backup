@@ -100,10 +100,16 @@ def pickle_lexicon():
     addlexicon([','], 'COMMA', sem=None)
     PRONOUN = 'it|one|ones|form|forms|part|parts'.split('|')
     addlexicon(PRONOUN, 'PRO')
-    PREPOSITION = 'among|amongst|around|as|below|beneath|between|beyond|by|' \
-                  'during|for|from|in|inside|into|near|off|on|onto|out|outside|over|per|through|throughout|toward|' \
-                  'towards|up|upward|when|owing_to|due_to|according_to|on_account_of|' \
-                  'tipped_by|to_form'.split('|')
+
+    PREP_POSITION = 'among|amongst|around|below|beneath|between|beyond|by|' \
+                  'from|in|inside|into|near|on|onto|out_of|outside|over|through|throughout|toward|' \
+                  'towards|up|'.split('|')
+    for word in PREP_POSITION:
+        addlexentry(word, 'P', prep=word, position=True) #, sem=read_expr(r'\x.' + word + '(x)'))
+
+    PREPOSITION = 'as|during|for|from|in|off|on|onto|out|over|per|through|throughout|' \
+              'towards|up|upward|when|owing_to|due_to|according_to|on_account_of|' \
+              'tipped_by|to_form'.split('|')
     for word in PREPOSITION:
         addlexentry(word, 'P', prep=word, position=False) #, sem=read_expr(r'\x.' + word + '(x)'))
 

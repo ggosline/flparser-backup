@@ -11,7 +11,7 @@ from floraparser.FGParser import FGParser, cleanparsetree, FindNode
 
 trec = defaultdict(lambda: None)
 
-description = 'Sepals bright red'
+description = 'Ovary superior, (2)3-locular, with 2–8 axile ovules in 1–2 rows per loculus, sessile or on a gynophore, usually immersed in the disk'
 fromDB = True
 fromDB = False
 parser = FeatureBottomUpLeftCornerChartParser
@@ -44,8 +44,8 @@ if __name__ == '__main__':
             for i, phrase in enumerate(sent.phrases):
                 trees = parser.parse(phrase.tokens, cleantree=cleantree, maxtrees=100)
                 for t in parser.listCHARs():
-                    cleanparsetree(t)
-                    print(taxon.gettext(t[()].label()['span']))
+                    #cleanparsetree(t)
+                    #print(taxon.gettext(t[()].label()['span']))
                     print(t[()].label()['H'], '\n')
                     t.draw()
                 #     print(t, file=of)
