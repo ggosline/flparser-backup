@@ -2216,6 +2216,7 @@ ID,term,category,appliesTo,definition,category2,dataSource
 2309,_serrate,shape-margin,,"Having the number of orders of sawteeth indicated by the prefix, one upon another; as in biserrate.  See also ...crenate (...-scalloped), ...dentate (...-toothed).",shape,
 2310,serrulate,shape-margin,,"Finely serrate (sawtoothed).  See also crentate (scalloped), crenulate (small-scalloped), dentate (toothed), denticulate (small-toothed).",shape,
 2311,sessile,architecture,structure,"Lacking a stalk, thus inserted ('sitting') directly upon the bearing structure.",architecture,
+2311,sessile,position,structure,"Lacking a stalk, thus inserted ('sitting') directly upon the bearing structure.",architecture,
 2312,seta,structure,,"A slender, more or less straight and stiff, fine-pointed, terminal or subterminal appendage or prolongation, sometimes a continuation of the bearing structure's central primary vein, as on a glume, lemma, or palea in Poaceae (Gramineae).",STRUCTURE,
 2313,setae,structure,,"A slender, more or less straight and stiff, fine-pointed, terminal or subterminal appendage or prolongation, sometimes a continuation of the bearing structure's central primary vein, as on a glume, lemma, or palea in Poaceae (Gramineae).",STRUCTURE,
 2314,seta,structure,,"A trichome that is elongate, slender, more or less straight, terete, fine-pointed, and stiff.",STRUCTURE,

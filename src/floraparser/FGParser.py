@@ -6,7 +6,7 @@ from nltk.grammar import FeatureGrammar, FeatStructNonterminal, FeatStructReader
     read_grammar, SLASH, TYPE, Production, \
     Nonterminal
 from nltk.parse.chart import TreeEdge
-from nltk.featstruct import FeatStruct, Feature, FeatList
+from nltk.featstruct import FeatStruct, Feature, FeatList, FeatDict
 from floraparser.fltoken import FlToken
 from nltk import Tree
 from nltk.parse.earleychart import FeatureIncrementalChart, FeatureEarleyChartParser
@@ -49,11 +49,16 @@ def unify_heads(span, lhs, rhs, tokens):
     # if span[0] != span[1]:
     #     lhs.update(span=((tokens[span[0]].slice.start), tokens[span[1] - 1].slice.stop-1))
 
-    head_prod = [prod for prod in rhs if isinstance(prod, FeatStruct) and prod.has_key("HD")]
+    head_prod = [prod for prod in rhs if isinstance(prod, FeatStruct) and prod.has_key("HD")]  # should be just one
 
     if not head_prod: return
-    lhead = lhs.get('H', FeatStructNonterminal([]))
-    lhs['H'] = lhead.unify(head_prod[0]['H'], trace=2)
+    rhead = head_prod[0]['H']
+    lhs['H'] = lhs.get('H', FeatStructNonterminal([]))
+    # lhs['H'] = lhead.unify(head_prod[0]['H'], trace=2)
+    if not isinstance(rhead, FeatDict):
+        lhs['H'] = rhead
+    else:
+        lhs['H'].update(head_prod[0]['H'])   # copy rather than unify which has trouble with lists
 
 FeatureTreeEdge.__init__ = FGFeatureTreeEdge.__init__
 

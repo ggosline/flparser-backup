@@ -109,16 +109,15 @@ def pickle_lexicon():
 
     PREPOSITION = 'as|during|for|from|in|off|on|onto|out|over|per|through|throughout|' \
               'towards|up|upward|when|owing_to|due_to|according_to|on_account_of|' \
-              'tipped_by|to_form'.split('|')
+              'tipped_by|to_form|attached_to|immersed_in'.split('|')
     for word in PREPOSITION:
         addlexentry(word, 'P', prep=word, position=False) #, sem=read_expr(r'\x.' + word + '(x)'))
 
     WITH = 'with|without'.split('|')
     for word in WITH:
         addlexentry(word, 'WITH', position=False, presence=True)
-    POSITIONP = 'on|at|near|outside|inside|above|below|beneath|outside|inside|between|' \
-                'before|after|behind|across|along|around|from|within|without|' \
-                'attached_to'.split('|')
+    POSITIONP = 'on|at|in|near|outside|inside|above|below|beneath|outside|inside|between|' \
+                'before|after|behind|across|along|around|from|within|without'.split('|')
     for word in POSITIONP:
         addlexentry(word, 'P', prep=word, position=True, sem=read_expr(r'\x.' + word + '(x)'))
     GROUPS = "group|groups|clusters|cluster|arrays|array|series|fascicles|fascicle|" \
