@@ -7,19 +7,19 @@ from floracorpus.reader import AbstractFloraCorpusReader  # , FloraCorpusReader
 from nltk.tree import Tree
 from nltk.parse import FeatureEarleyChartParser, FeatureIncrementalBottomUpLeftCornerChartParser, FeatureChartParser
 from nltk.parse import FeatureBottomUpChartParser, FeatureBottomUpLeftCornerChartParser, FeatureTopDownChartParser
-from floraparser.FGParser import FGParser, cleanparsetree, FindNode
+from floraparser.FGParser import FGParser, cleanparsetree, FindNode, PrintStruct
 
 trec = defaultdict(lambda: None)
 
-description = 'lamina bright green to olive-green, concolorous or rather paler green below, shining above, or with both surfaces dull, (4·5)5·2–9·5(11) × (1·6)2–5·1(6·5) cm., elliptic or oblong-elliptic to obovate or oblanceolate, acute to obtuse or rounded and shortly apiculate at the apex, with margin entire or ± deeply curved-dentate, cuneate or decurrent at the base, papyraceous to coriaceous, with (6)7–8(9) lateral nerves and densely reticulate venation more prominent below than above'
+description = 'anthers dehiscing by oblique clefts sometimes confluent at the apex'
 fromDB = True
 fromDB = False
 parser = FeatureBottomUpLeftCornerChartParser
-#parser = FeatureEarleyChartParser
+parser = FeatureEarleyChartParser
 #parser = FeatureTopDownChartParser
 cleantree = False
-#cleantree = True
-ttrace = 2
+cleantree = True
+ttrace = 1
 
 trec['description'] = description
 trdr = [trec]
@@ -46,7 +46,8 @@ if __name__ == '__main__':
                 for t in parser.listCHARs():
                     cleanparsetree(t)
                     # print(taxon.gettext(t[()].label()['span']))
-                    print(t[()].label()['H'], '\n')
+                    print()
+                    PrintStruct(t[()].label()['H'], 1)
                     t.draw()
                 #     print(t, file=of)
                 if trees:

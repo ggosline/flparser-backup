@@ -2874,6 +2874,7 @@ ID,term,category,appliesTo,definition,category2,dataSource
 2985,colorless,coloration,,,,
 2986,columnar,shape,,,,
 2987,concave,shape,,,,
+2987,concave,shape-margin,,,,
 2988,concealed,manifestation,,,,
 2989,concentrated,arrangement,,,,
 2990,condensed,architecture,,,,

@@ -10,7 +10,7 @@ from nltk.featstruct import FeatStruct, Feature, FeatList, FeatDict
 from floraparser.fltoken import FlToken
 from nltk import Tree
 from nltk.parse.earleychart import FeatureIncrementalChart, FeatureEarleyChartParser
-
+import collections
 
 class FGFeatureTreeEdge(FeatureTreeEdge):
 
@@ -385,3 +385,15 @@ class FeatListNonterminal(FeatList, Nonterminal):
 
     def symbol(self):
         return self
+
+def PrintStruct(struct, indent: int = 0):
+    if isinstance(struct,FeatDict):
+        for (fname, fval) in struct._items():
+            print('\t'*indent, fname.upper())
+            PrintStruct(fval, indent+1)
+    elif isinstance(struct, tuple) or isinstance(struct, frozenset):
+        for listitem in struct:
+            PrintStruct(listitem, indent+1)
+    else:
+        print ('\t'*indent, struct)
+

@@ -101,7 +101,7 @@ def pickle_lexicon():
     PRONOUN = 'it|one|ones|form|forms|part|parts'.split('|')
     addlexicon(PRONOUN, 'PRO')
 
-    PREP_POSITION = 'among|amongst|around|below|beneath|between|beyond|by|' \
+    PREP_POSITION = 'among|amongst|around|at|below|beneath|between|beyond|by|' \
                   'from|in|inside|into|near|on|onto|out_of|outside|over|through|throughout|toward|' \
                   'towards|up|'.split('|')
     for word in PREP_POSITION:
@@ -141,8 +141,8 @@ def pickle_lexicon():
         '|')
     addlexicon(POSITIONA, 'A', position=True, timing=False, category='position')
 
-    POSITION = 'top|bottom|underside|base|apex|front|back|both_sides|both_surfaces|each_side|section|rest_of'.split('|')
-    addlexicon(POSITION, 'N', position=True, category='position')
+    POSITION = 'top|bottom|underside|base|apex|margin|front|back|both_sides|both_surfaces|each_side|section|rest_of'.split('|')
+    addlexicon(POSITION, 'N', position=True, category='partof')
     ACCURACY = "c.|about|more_or_less|±|exactly|almost".split('|')
     addlexicon(ACCURACY, 'DEG', accuracy=True, timing=False)
     FREQUENCY = "very|a_little|not_much|sometimes|often|usually|rarely|generally|never|always|" \
