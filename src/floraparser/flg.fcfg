@@ -31,7 +31,7 @@ CTERMINATOR -> COMMA | '$'
 CHR[category=?c, H=[stage=?st]] ->  CHR[category=?c, +HD, H=?head] STAGE[stage=?st]
 CHR[category=?c, H=[stage=?st]] ->  CHR[category=?c, +HD, H=?head] SUBSET[stage=?st]
 CHR[category=?c, H=[posit=?p]] ->  CHR[category=?c, +HD, H=?head] POSITION[H=?p]
-CHAR[category=clist, H=[posit=?p]] ->  POSITION[H=?p] CHARLIST[+HD, H=?head]
+# CHAR[category=clist, H=[posit=?p]] ->  POSITION[H=?p] CHARLIST[+HD, H=?head]
 
 CHR[category=?c] ->  APL[category=?c, +HD, H=?head]
 CHR[category=?c] ->  AP[category=?c, +HD, H=?head]
@@ -39,14 +39,14 @@ CHR[category=?c] ->  WITHP[category=?c, +HD, H=?head]
 
 CHR[+anaph, category=?c] -> ANAPH[category=?c] CHARLIST[+HD, H=?head]
 
-CHR[category=?c] -> ISA NPL[category=?c, +HD, H=?head]
+CHR[category=?c, H=[clist=?clist]] -> ISA NPL[category=?c, +HD, H=?head] CHRL[H=?clist]
 ISA -> IS
 
 CHR[category=size] ->  SIZEB[+HD, H=?head]
 CHR[category=count] ->  COUNT[+HD, H=?head]
 #CHR[category=group] -> P[prep='in'] NP[H=[+group], +HD]
 
-CHRL[category=?c, H=(?h,)] ->  CHR[H=?h, category=?c]
+CHRL[category=?c, H=?h] ->  CHR[H=?h, category=?c]
 CHRL[category=(?c+?d), H=[AND=(?ha+?hb)]] ->  CHR[H=?ha, category=?c] AND CHRL[H=?hb, category=?d]
 
 NL[category={?c+?d}, H=[orth=(?o+?ol)]] -> N[category=?d, orth = ?o] NL[category=?c, orth=?ol, +HD, H=?head]
@@ -71,10 +71,13 @@ NP -> NAME
 
 NP -> ANAPH
 
+NP/?x -> POSITION NBAR/?x
+NBAR/NBAR ->
+
 NP[H=[AND=(?ha+?hb)]] -> NP[H=?ha] AND NP[H=?hb]
 
 NPL[H=[OR=(?ha+?hb)], category=?c] -> NP[H=?ha, category=?c] ORDELIM NPL[H=?hb, category=?c]
-NPL[category=?c, H=(?h,)] -> NP[H=?h, category=?c]
+NPL[category=?c, H=?h] -> NP[H=?h, category=?c]
 
 N[+group, category='structure-infl', orth = ?o] -> N[category='structure-infl', orth = ?o]
 
@@ -119,7 +122,7 @@ ABAR[category=?c, H=[orth=?o, category=?c, mod=?adv]] -> COUNT[H=?adv] A[categor
 
 ORDELIM -> COMMA | OR | COMMA OR
 ABARL[category=?c, H=[category=?c, OR=(?ha+?hb)]] ->  ABAR[category=?c, H=?ha] ORDELIM ABARL[category=?c, H=?hb, -position]
-ABARL[category=?c, H=(?h,)] ->  ABAR[category=?c, H=?h, -position]
+ABARL[category=?c, H=?h] ->  ABAR[category=?c, H=?h, -position]
 
 ABAR[category=?c, H=[category=?c, orth=(?o1+'OR'+?h2)]] -> ABAR[category=?c, H=[orth=?o1]] OR WITHP[H=?h2]
 ABAR[category=?c] -> ABAR[category=?c, H=?h1] TO[H=[category=?c, TO=(?h1+?h2)], +HD] ABAR[category=?c, H=?h2]
@@ -139,13 +142,16 @@ ABAR[category=?c] -> ABAR[category=?c, +HD, H=?head] PAREXP
 AP[category=?c] -> ABARL[category=?c, +HD, H=?head]
 
 # AP[category=?c, H=?h] -> AP[category=?c, H=?h] PAREXP
-# AP[category=(?c+?d), H=(?ha+'AND'+?hb)] -> AP[category=?c, H=?ha] AND AP[category=?d, H=?hb]
+# AP[category=(?c+?d), H=[AND=(?ha+?hb)]] -> AP[category=?c, H=?ha] AND AP[category=?d, H=?hb]
 
-WITHP[category=?c, H=[+having, with=?h]] -> WITH NP[category=?c, +HD, H=?h]
-WITHP[category=?c, H=[+having, with=?h, clist=?clist]] -> WITH NP[category=?c, +HD, H=?h] CHRL[H=?clist]
-#WITHP[category=?c, H=[+having, with= ?h, clist=?cl]] -> WITH NP[category=?c, +HD, H=?] CHARLIST[H=?cl]
+WITHP[category=?c, H=[having = ?p ]] -> WITH[presence=?p] NP[category=?c, +HD, H=?h]
+WITHP[category=?c, H=[having = ?p ]] -> WITH[presence=?p] NP[category=?c, +HD, H=?h]/?x
+WITHP[category=?c, H=[having = ?p, clist=?clist]] -> WITH[presence=?p] NP[category=?c, +HD, H=?h] CHRL[H=?clist]
+WITHP[category=?c, H=[having = ?p, clist=?clist]] -> WITH[presence=?p] NP[category=?c, +HD, H=?h]/?x CHRL[H=?clist]
+WITHP[category=?c, H=[having = ?p, clist=?cl]] -> WITH[presence=?p] NP[category=?c, +HD, H=?h]/?x CHARLIST[H=?cl]
 WITHP[category=?c, H=[deg=?m]] -> DEG[orth=?m] WITHP[category=?c, +HD, H=?head]
-WITHP[category=?c, H=[+having, with=?h, clist=?clist]] -> NP[category=?c, H=?h] CHRL[H=?clist]
+WITHP[category=?c, H=[having = ?p, clist=?clist]] -> NP[category=?c, H=?h] CHRL[H=?clist]
+WITHP[category=?c, H=[having = ?p, clist=?clist]] -> NP[category=?c, H=?h]/?x CHRL[H=?clist]
 
 WITHP[category=?c] -> WITH NP[category=?c, H=?h1] AND[H=[AND=(?h1+?h2)], +HD]  NP[category=?c, H=?h2]
 

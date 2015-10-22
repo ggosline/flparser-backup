@@ -53,12 +53,12 @@ def unify_heads(span, lhs, rhs, tokens):
 
     if not head_prod: return
     rhead = head_prod[0]['H']
-    lhs['H'] = lhs.get('H', FeatStructNonterminal([]))
-    # lhs['H'] = lhead.unify(head_prod[0]['H'], trace=2)
-    if not isinstance(rhead, FeatDict):
-        lhs['H'] = rhead
-    else:
-        lhs['H'].update(head_prod[0]['H'])   # copy rather than unify which has trouble with lists
+    lhead = lhs.get('H', FeatStructNonterminal([]))
+    lhs['H'] = lhead.unify(rhead, trace=2)
+    # if not isinstance(rhead, FeatDict):
+    #     lhs['H'] = rhead
+    # else:
+    #     lhs['H'].update(head_prod[0]['H'])   # copy rather than unify which has trouble with lists
 
 FeatureTreeEdge.__init__ = FGFeatureTreeEdge.__init__
 

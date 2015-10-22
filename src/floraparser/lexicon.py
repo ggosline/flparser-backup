@@ -113,11 +113,11 @@ def pickle_lexicon():
     for word in PREPOSITION:
         addlexentry(word, 'P', prep=word, position=False) #, sem=read_expr(r'\x.' + word + '(x)'))
 
-    WITH = 'with|without'.split('|')
-    for word in WITH:
-        addlexentry(word, 'WITH', position=False, presence=True)
+    addlexentry('with', 'WITH', position=False, presence=True)
+    addlexentry('without', 'WITH', position=False, presence=False)
+
     POSITIONP = 'on|at|in|near|outside|inside|above|below|beneath|outside|inside|between|' \
-                'before|after|behind|across|along|around|from|within|without'.split('|')
+                'before|after|behind|across|along|around|from|within'.split('|')
     for word in POSITIONP:
         addlexentry(word, 'P', prep=word, position=True, sem=read_expr(r'\x.' + word + '(x)'))
     GROUPS = "group|groups|clusters|cluster|arrays|array|series|fascicles|fascicle|" \

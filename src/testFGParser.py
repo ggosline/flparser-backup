@@ -11,15 +11,15 @@ from floraparser.FGParser import FGParser, cleanparsetree, FindNode, PrintStruct
 
 trec = defaultdict(lambda: None)
 
-description = 'anthers dehiscing by oblique clefts sometimes confluent at the apex'
+description = 'Sepals green, with pale or reddish ciliolate margin, c. 1 mm. long, unequal, semicircular, rounded, free'
 fromDB = True
 fromDB = False
 parser = FeatureBottomUpLeftCornerChartParser
-parser = FeatureEarleyChartParser
+#parser = FeatureEarleyChartParser
 #parser = FeatureTopDownChartParser
 cleantree = False
 cleantree = True
-ttrace = 1
+ttrace = 2
 
 trec['description'] = description
 trdr = [trec]
@@ -60,7 +60,7 @@ if __name__ == '__main__':
                             # if True and i <= 20:
                             #     tfilename = tfilebase + str(i)
                             #     tfile = open(tfilename, mode='w', encoding='utf-8')
-                            #     print(treex, file=tfile)
+                            #     print(treex) , file=tfile)
                             #     tfile.close
                     print(FindNode('SUBJECT', trees[0]))
                 # else:
