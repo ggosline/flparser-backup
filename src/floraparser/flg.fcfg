@@ -6,13 +6,10 @@ CDELIM -> COMMA |
 
 DESCRIPTION[subject=?s, chars=?clist] -> SUBJECT[H=?s] CDELIM CHARLIST[H=?clist]
 
-SUBJECT[H=[orth=?o, mod=?m]] -> CBEGINNER AP[H=?m] N[category=structure, orth=?o]
-SUBJECT[H=[orth=?o, mod=?m]] -> CBEGINNER AP[H=?m] N[category='life-form', orth=?o]
-SUBJECT[H=[orth=?o, mod=?m]] -> CBEGINNER AP[H=?m] N[category='feature', orth=?o]
-SUBJECT[H=[orth=?o]] -> CBEGINNER N[category=structure, orth=?o]
-SUBJECT[H=[orth=?o]] -> CBEGINNER N[category=structure, orth=?o] OFP
-SUBJECT[H=[orth=?o]] -> CBEGINNER N[category='life-form', orth=?o]
-SUBJECT[H=[category=structure, orth=?o]] -> CBEGINNER UNK[orth=?o]
+SUBJN[H=[category=subject, orth=?o]] -> N[category=structure, orth=?o] | N[category='life-form', orth=?o] | N[category='feature', orth=?o]
+SUBJN[H=[mod=?m]] -> AP[H=?m] SUBJN[H=?head, +HD]
+SUBJN[H=[mod=?m]] -> AP[H=?m] SUBJN[H=?head, +HD] OFP
+SUBJECT[] -> CBEGINNER SUBJN[H=?head, +HD]
 
 CHARLIST[H=(?h1+?h2)] -> CHAR[H=?h1] CHARLIST[H=?h2]
 CHARLIST[] -> CHAR[+HD, H=?head]
@@ -29,12 +26,12 @@ CTERMINATOR -> COMMA | '$'
 # CTERMINATOR ->
 
 CHR[category=?c, H=[stage=?st]] ->  CHR[category=?c, +HD, H=?head] STAGE[stage=?st]
-CHR[category=?c, H=[stage=?st]] ->  CHR[category=?c, +HD, H=?head] SUBSET[stage=?st]
+CHR[category=?c, H=[subset=?st]] ->  CHR[category=?c, +HD, H=?head] SUBSET[stage=?st]
 CHR[category=?c, H=[posit=?p]] ->  CHR[category=?c, +HD, H=?head] POSITION[H=?p]
 # CHAR[category=clist, H=[posit=?p]] ->  POSITION[H=?p] CHARLIST[+HD, H=?head]
 
 CHR[category=?c] ->  APL[category=?c, +HD, H=?head]
-CHR[category=?c] ->  AP[category=?c, +HD, H=?head]
+#CHR[category=?c] ->  AP[category=?c, +HD, H=?head]
 CHR[category=?c] ->  WITHP[category=?c, +HD, H=?head]
 
 CHR[+anaph, category=?c] -> ANAPH[category=?c] CHARLIST[+HD, H=?head]
@@ -57,7 +54,7 @@ NBAR[category=?c, H=[count=?count]] -> COUNT[H=[val=?count]] NBAR[category=?c, +
 NBAR[category=?c] -> NL[category=?c, +HD, H=?head]
 NBAR[category=?c] -> NBAR[category=?c, +HD, H=?head] OFP
 NBAR[category=?c, H=[mod=?prep]] -> NBAR[category=?c, +HD, H=?head] PP[H=?prep]
-NBAR[category=?c, H=[mod=?prep]] -> NBAR[category=?c, +HD, H=?head] AP[H=?prep]
+#NBAR[category=?c, H=[mod=?prep]] -> NBAR[category=?c, +HD, H=?head] AP[H=?prep]
 
 NBAR[category=?c] -> NBAR[category=?c, +HD, H=?head] PAREXP
 NBAR[category=pro] -> PRO
