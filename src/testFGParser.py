@@ -11,7 +11,7 @@ from floraparser.FGParser import FGParser, cleanparsetree, FindNode, PrintStruct
 
 trec = defaultdict(lambda: None)
 
-description = 'Sepals green, with pale or reddish ciliolate margin, c. 1 mm. long, unequal, semicircular, rounded, free'
+description = 'Fruit orange to pinkish, 1·8–3 cm. in diam., globose, finely rugulose, c. 6-seeded'
 fromDB = True
 fromDB = False
 parser = FeatureBottomUpLeftCornerChartParser
@@ -19,12 +19,12 @@ parser = FeatureBottomUpLeftCornerChartParser
 #parser = FeatureTopDownChartParser
 cleantree = False
 cleantree = True
-ttrace = 2
+ttrace = 1
 
 trec['description'] = description
 trdr = [trec]
 
-tfilebase = r'..\..\..\temp\tree'
+tfilebase = r'..\..\temp\tree'
 
 of = sys.stdout
 if __name__ == '__main__':
@@ -44,12 +44,12 @@ if __name__ == '__main__':
             for i, phrase in enumerate(sent.phrases):
                 trees = parser.parse(phrase.tokens, cleantree=cleantree, maxtrees=100)
                 for t in parser.listCHARs():
-                    cleanparsetree(t)
+                    # cleanparsetree(t)
                     # print(taxon.gettext(t[()].label()['span']))
                     print()
                     PrintStruct(t[()].label()['H'], 1)
                     t.draw()
-                #     print(t, file=of)
+                    print(t, file=of)
                 if trees:
                     print('Success: ' + phrase.text, file=of)
                     print('No. of trees: %d' % len(trees), file=of)
@@ -57,11 +57,11 @@ if __name__ == '__main__':
                         for i, treex in enumerate(trees):
                             # cleanparsetree(treex)
                             treex.draw()
-                            # if True and i <= 20:
-                            #     tfilename = tfilebase + str(i)
-                            #     tfile = open(tfilename, mode='w', encoding='utf-8')
-                            #     print(treex) , file=tfile)
-                            #     tfile.close
+                            if True and i <= 20:
+                                tfilename = tfilebase + str(i)
+                                tfile = open(tfilename, mode='w', encoding='utf-8')
+                                print(treex , file=tfile)
+                                tfile.close
                     print(FindNode('SUBJECT', trees[0]))
                 # else:
                 #     print('Fail:    ' + phrase.text, file=of)

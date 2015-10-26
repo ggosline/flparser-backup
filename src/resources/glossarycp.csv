@@ -1206,7 +1206,7 @@ ID,term,category,appliesTo,definition,category2,dataSource
 1266,many_,prefix,,"Indicating presence of or constitution by a relatively large number of entities of the type denoted by the term's stem; as in many-angled, many-pistilled, many-seeded.  See also few-... (oligo...).",prefix,
 1267,many-stemmed,architecture,plant,"Having many, more or less equal, principal stems arising at substrate level from a caudex or root crown.",architecture,
 1268,marcescent,duration,structure,Persistent in a distinctly withered condition.,duration,
-1269,margin,structure,,"Configuration of all or part of the periphery of a planate structure, sometimes referred to as though it were discrete and an entity in its own right for descriptive purposes.  The extent of the area considered to pertain to the margin in a given case is,",CHARACTER,
+#,margin,structure,,"Configuration of all or part of the periphery of a planate structure, sometimes referred to as though it were discrete and an entity in its own right for descriptive purposes.  The extent of the area considered to pertain to the margin in a given case is,",CHARACTER,
 #,marginal,insertion,,Upon or otherwise directly associated with the margins.,position,
 1271,marginal,position,,Upon or otherwise directly associated with the margins.,position,
 1272,masculine,reproduction,,Of the sex that produces microspores and sperm.,reproduction,

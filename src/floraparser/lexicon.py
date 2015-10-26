@@ -173,7 +173,7 @@ def pickle_lexicon():
     addlexicon(GERUND, 'P', verb=True, position=False)
 
     addlexicon(['to'], 'TO')
-    addlexicon(['not'], 'NOT', sem=None)
+    addlexicon(['not'], 'DEG', frequency=True, timing=False)
     addlexicon(['in'], 'IN')
     addlexicon(['than'], 'THAN')
     addlexicon(['for'], 'FOR')

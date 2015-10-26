@@ -54,7 +54,7 @@ def unify_heads(span, lhs, rhs, tokens):
     if not head_prod: return
     rhead = head_prod[0]['H']
     lhead = lhs.get('H', FeatStructNonterminal([]))
-    lhs['H'] = lhead.unify(rhead, trace=2)
+    lhs['H'] = lhead.unify(rhead, trace=1)
     # if not isinstance(rhead, FeatDict):
     #     lhs['H'] = rhead
     # else:
