@@ -11,7 +11,7 @@ from floraparser.FGParser import FGParser, cleanparsetree, FindNode, PrintStruct
 
 trec = defaultdict(lambda: None)
 
-description = 'Fruit orange to pinkish, 1·8–3 cm. in diam., globose, finely rugulose, c. 6-seeded'
+description = 'pedicels 4–8 mm. long, smooth, articulated at the base'
 fromDB = True
 fromDB = False
 parser = FeatureBottomUpLeftCornerChartParser
@@ -43,13 +43,16 @@ if __name__ == '__main__':
         for sent in taxon.sentences:
             for i, phrase in enumerate(sent.phrases):
                 trees = parser.parse(phrase.tokens, cleantree=cleantree, maxtrees=100)
-                for t in parser.listCHARs():
-                    # cleanparsetree(t)
-                    # print(taxon.gettext(t[()].label()['span']))
+                for t, txtstart, txtend in parser.listCHARs():
+                    cleanparsetree(t)
                     print()
-                    PrintStruct(t[()].label()['H'], 1)
-                    t.draw()
-                    print(t, file=of)
+                    print('CHARACTER:')
+                    print('Text: ', taxon.gettext((txtstart,txtend)))
+                    H = t[()].label()['H']
+                    print(H.get('category'), H.get('orth'))
+                    # PrintStruct(t[()].label()['H'], 1)
+                    # t.draw()
+                    # print(t, file=of)
                 if trees:
                     print('Success: ' + phrase.text, file=of)
                     print('No. of trees: %d' % len(trees), file=of)

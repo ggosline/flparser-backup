@@ -8,10 +8,10 @@ from floraparser.inflect import singularize
 
 from floraparser.lexicon import lexicon, multiwords
 from nltk.grammar import FeatStructNonterminal, TYPE, SLASH
-from nltk.sem import Expression
+#from nltk.sem import Expression
 
-read_expr = Expression.fromstring
-Expression._logic_parser.quote_chars = [('"', '"', r'\\', True)]
+# read_expr = Expression.fromstring
+# Expression._logic_parser.quote_chars = [('"', '"', r'\\', True)]
 
 PREFIX = re.compile(r'\b(?P<prefix>ab|ad|bi|deca|dis|dodeca|hemi|hetero|hexa|homo|infra|inter|'
                     r'macro|mega|meso|micro|'
@@ -96,9 +96,9 @@ class FlTagger():
         if NUMBERS.match(word):
             return flword, 'NUM', [
                 FeatStructNonterminal(
-                    features={TYPE: 'NUM', 'numeric': True, 'orth': word, 'sem': read_expr('num("' + word + '")')})], (
-                       word,)
-
+                    features={TYPE: 'NUM', 'numeric': True, 'orth': word})], (word,)
+                    # features={TYPE: 'NUM', 'numeric': True, 'orth': word, 'sem': read_expr('num("' + word + '")')})], \
+                    #     (word,)
         ws = FlTagger.singularize(self, word)
         if ws:
             ws = (ws,)
@@ -123,8 +123,10 @@ class FlTagger():
 
         if word.endswith('ly'):
             return flword, 'ADV', [
-                FeatStructNonterminal(features={TYPE: 'ADV', 'timing': False, 'orth': word, 'sem': read_expr(word)})], (
+                FeatStructNonterminal(features={TYPE: 'ADV', 'timing': False, 'orth': word, })], (
                    word,)
+                # FeatStructNonterminal(features={TYPE: 'ADV', 'timing': False, 'orth': word, 'sem': read_expr(word)})], (
+                #    word,)
 
         # Didn't find in fnaglossary; try WordNet
         # synsets = word.synsets

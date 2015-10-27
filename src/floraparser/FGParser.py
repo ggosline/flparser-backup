@@ -30,15 +30,16 @@ class FGFeatureTreeEdge(FeatureTreeEdge):
             lhs = self._bind(lhs, bindings)
             rhs = [self._bind(elt, bindings) for elt in rhs]
             bindings = {}
-            unify_heads(span, lhs, rhs, [])
+
+        if dot == len(rhs):
+            unify_heads(span, lhs, rhs)
 
         # Initialize the edge.
         TreeEdge.__init__(self, span, lhs, rhs, dot)
         self._bindings = bindings
         self._comparison_key = (self._comparison_key, tuple(sorted(bindings.items())))
 
-
-def unify_heads(span, lhs, rhs, tokens):
+def unify_heads(span, lhs, rhs):
     """
     If the edge is a ``FeatureTreeEdge``, and it is complete,
     then unify the head feature on the LHS with the head feature
@@ -54,7 +55,13 @@ def unify_heads(span, lhs, rhs, tokens):
     if not head_prod: return
     rhead = head_prod[0]['H']
     lhead = lhs.get('H', FeatStructNonterminal([]))
-    lhs['H'] = lhead.unify(rhead, trace=1)
+    newH = lhead.unify(rhead, trace=1)
+    if newH:
+        lhs['H'] = newH
+    else:
+        lhs['H'] = rhead
+        print('FAIL to unify heads')
+    lhs['span'] = span
     # if not isinstance(rhead, FeatDict):
     #     lhs['H'] = rhead
     # else:
@@ -238,7 +245,7 @@ class FGParser():
                     if newtree:
                         trees.append((tree, charedge.start(), charedge.end()))
 
-        return [t for t, _, _ in trees]
+        return [(t, self._chart._tokens[start].slice.start, self._chart._tokens[end-1].slice.stop) for t, start, end in trees]
 
     def simple_select(self, **restrictions):
         """

@@ -86,7 +86,7 @@ def pickle_lexicon():
 
     COORDCONJUNCTION = 'and|or|and/or|neither|nor|otherwise|but|except|except_for|×'.split('|')
     for word in COORDCONJUNCTION:
-        addlexentry(word, 'CONJ', conj=word, coord=True, sem=None)
+        addlexentry(word, 'CONJ', conj=word, coord=True)
     SUBCONJUNCTION = 'but|for|yet|so|although|because|since|unless|if'.split('|')
     for word in SUBCONJUNCTION:
         addlexentry(word, 'CONJ', conj=word, coord=False)
@@ -97,7 +97,7 @@ def pickle_lexicon():
     PUNCTUATION = [';', '(', ')']
     for char in PUNCTUATION:
         addlexentry(char, 'PUNC', punc=char)
-    addlexicon([','], 'COMMA', sem=None)
+    addlexicon([','], 'COMMA')
     PRONOUN = 'it|one|ones|form|forms|part|parts'.split('|')
     addlexicon(PRONOUN, 'PRO')
 
@@ -119,7 +119,8 @@ def pickle_lexicon():
     POSITIONP = 'on|at|in|near|outside|inside|above|below|beneath|outside|inside|between|' \
                 'before|after|behind|across|along|around|from|within'.split('|')
     for word in POSITIONP:
-        addlexentry(word, 'P', prep=word, position=True, sem=read_expr(r'\x.' + word + '(x)'))
+        addlexentry(word, 'P', prep=word, position=True)
+        #addlexentry(word, 'P', prep=word, position=True, sem=read_expr(r'\x.' + word + '(x)'))
     GROUPS = "group|groups|clusters|cluster|arrays|array|series|fascicles|fascicle|" \
              "pairs|pair|row|rows|number|numbers|colonies".split('|')
     addlexicon(GROUPS, 'N', group=True, category='grouping')

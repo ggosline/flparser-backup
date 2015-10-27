@@ -1364,6 +1364,7 @@ ID,term,category,appliesTo,definition,category2,dataSource
 1428,iridescent,coloration,,"Reflecting a pattern colors from throughout the visible spectrum, the pattern changing with the angle of view.",coloration,
 1429,irregular,architecture,"perianth, calyx, corolla","Imperfectly actinomorphic, the constituents disposed symmetrically but unequal in size and/or shape.  See also peloric.",architecture,q
 1430,irregular,course,,Deviating asymmetrically from a straight line.,architecture,q
+1430,irregular,shape,,Deviating asymmetrically from a straight line.,architecture,q
 1431,isodiametric,architecture,,Of approximately constant breadth in all median planes.,architecture,
 1432,isopetalous,architecture,"flower, perianth, corolla",Having the petals essentially alike in size and shape.,architecture,
 1433,isopolar,architecture,"pollen grain, spore","Having evident polarity, the proximal and distal halves similar.",architecture,
@@ -2097,6 +2098,7 @@ ID,term,category,appliesTo,definition,category2,dataSource
 2187,root,structure,,"A vascularized, primary or higher-order (branch) axis that is not differentiated into nodes and internodes and that branches endogenously, together with any non-axial structures borne from it; usually growing below ground level, but sometimes structurally",STRUCTURE,
 2188,rough,relief,,"Having small, stout, stiff, more or less acute protrusions.",relief,
 2189,round,shape,,Circular.,shape,
+2189,rounded,shape,,Circular.,shape,
 2190,rounded,shape-base,,Convex overall and more or less regularly curved.,shape,
 2190,rounded,shape-apex,,Convex overall and more or less regularly curved.,shape,
 2192,rubiaceous,architecture,stomate,"Having one or more subsidiary cells to either side, all oriented parallel to its long axis.",architecture,
@@ -3107,7 +3109,7 @@ ID,term,category,appliesTo,definition,category2,dataSource
 3217,subcordate,shape-base,,,,
 3218,subcylindric,shape,,,,
 3219,subdichasiform,arrangement,,,,
-3220,subentire,shape,,,,
+3220,subentire,shape-margin,,,,
 3221,subequaling,comparison,,,,
 3222,suberect,orientation,,,,
 3223,subfusiform,shape,,,,
