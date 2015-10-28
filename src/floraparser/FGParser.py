@@ -55,7 +55,7 @@ def unify_heads(span, lhs, rhs):
     if not head_prod: return
     rhead = head_prod[0]['H']
     lhead = lhs.get('H', FeatStructNonterminal([]))
-    newH = lhead.unify(rhead, trace=1)
+    newH = lhead.unify(rhead, trace=0)
     if newH:
         lhs['H'] = newH
     else:

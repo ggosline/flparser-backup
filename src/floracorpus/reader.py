@@ -6,7 +6,7 @@ from nltk.tokenize.punkt import PunktSentenceTokenizer, PunktParameters, PunktLa
 # from nltk.util import AbstractLazySequence, LazyMap, LazyConcatenation
 
 # from floracorpus.SQLitedb import SQLitedb
-# from floracorpus.ADO import ADOdb
+from floracorpus.ADO import ADOdb
 from floraparser.fltoken import FlToken, FlTokenizer, FlTaxon, FlPhrase
 
 
@@ -27,18 +27,18 @@ class AbstractFloraCorpusReader(object):
         return self._taxa
 
 
-# class FloraCorpusReader(AbstractFloraCorpusReader):
-#     def __init__(self, db=r'..\resources\efloras.db3', Accessdbname=r'..\resources\efloras.accdb',
-#                  query='Select * from Taxa;', fieldlst=None, **kwargs):
-#         # self._seq = list(AccessDBSequence(**kwargs))
-#         if not fieldlst:
-#             fieldlst = ['taxonNo', 'flora_name', 'rank', 'family', 'genus', 'species', 'infrarank', 'infraepi',
-#                         'description', ]
-#         # self.dbr = SQLitedb(db)
-#         self.dbr = ADOdb(Accessdbname)
-#         self.dbr.OpenTable(query, fieldlst)
-#         self.rdr = self.dbr.NextRec()
-#         super().__init__(reader=self.rdr, **kwargs)
+class FloraCorpusReader(AbstractFloraCorpusReader):
+    def __init__(self, db=r'..\resources\efloras.db3', Accessdbname=r'..\resources\efloras.accdb',
+                 query='Select * from Taxa;', fieldlst=None, **kwargs):
+        # self._seq = list(AccessDBSequence(**kwargs))
+        if not fieldlst:
+            fieldlst = ['taxonNo', 'flora_name', 'rank', 'family', 'genus', 'species', 'infrarank', 'infraepi',
+                        'description', ]
+        # self.dbr = SQLitedb(db)
+        self.dbr = ADOdb(Accessdbname)
+        self.dbr.OpenTable(query, fieldlst)
+        self.rdr = self.dbr.NextRec()
+        super().__init__(reader=self.rdr, **kwargs)
 
 
 if __name__ == "__main__":

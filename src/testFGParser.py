@@ -3,7 +3,7 @@ __author__ = 'Geoge'
 import sys
 
 from collections import defaultdict
-from floracorpus.reader import AbstractFloraCorpusReader  # , FloraCorpusReader
+from floracorpus.reader import AbstractFloraCorpusReader , FloraCorpusReader
 from nltk.tree import Tree
 from nltk.parse import FeatureEarleyChartParser, FeatureIncrementalBottomUpLeftCornerChartParser, FeatureChartParser
 from nltk.parse import FeatureBottomUpChartParser, FeatureBottomUpLeftCornerChartParser, FeatureTopDownChartParser
@@ -11,7 +11,7 @@ from floraparser.FGParser import FGParser, cleanparsetree, FindNode, PrintStruct
 
 trec = defaultdict(lambda: None)
 
-description = 'pedicels 4–8 mm. long, smooth, articulated at the base'
+description = 'Disk nectariferous, annular, entire or angular or crenulate or lobed or covered with fleshy processes, concave to convex, rarely wholly or partly forming an androgynophore or discontinuous pockets, fleshy or membranous, very rarely absent'
 fromDB = True
 fromDB = False
 parser = FeatureBottomUpLeftCornerChartParser
@@ -31,28 +31,31 @@ if __name__ == '__main__':
     if fromDB:
         ttrace = 0
         ttaxa = FloraCorpusReader(db=r'..\resources\efloras.db3',
-                                  query="Select * from AllTaxa where flora_name = 'FZ' and genus = 'Salacia';", )  # and species = 'senegalensis
+                                  query="Select * from AllTaxa where flora_name = 'FZ' and family = 'Celastraceae' and rank = 'family';", )  # genus = 'Salacia' and species = 'senegalensis
         of = open('testphrases.txt', 'w', encoding='utf-8')
     else:
         ttaxa = AbstractFloraCorpusReader(reader=trdr)
 
     parser = FGParser(parser=parser, trace=ttrace)
     for taxon in ttaxa.taxa:
-        print(taxon.genus, taxon.species)
-        print(taxon.genus, taxon.species, file=of)
+        print('TAXON: ', taxon.family, taxon.genus, taxon.species)
+        print('TAXON: ', taxon.family, taxon.genus, taxon.species, file=of)
+
         for sent in taxon.sentences:
             for i, phrase in enumerate(sent.phrases):
+                print('PARSING: ', phrase.text)
                 trees = parser.parse(phrase.tokens, cleantree=cleantree, maxtrees=100)
-                for t, txtstart, txtend in parser.listCHARs():
-                    cleanparsetree(t)
-                    print()
-                    print('CHARACTER:')
-                    print('Text: ', taxon.gettext((txtstart,txtend)))
-                    H = t[()].label()['H']
-                    print(H.get('category'), H.get('orth'))
-                    # PrintStruct(t[()].label()['H'], 1)
-                    # t.draw()
-                    # print(t, file=of)
+                if ttrace:
+                    for t, txtstart, txtend in parser.listCHARs():
+                        cleanparsetree(t)
+                        print()
+                        print('CHARACTER:')
+                        print('Text: ', sent.text[txtstart:txtend])
+                        H = t[()].label()['H']
+                        print(H.get('category'), H.get('orth'))
+                        PrintStruct(t[()].label()['H'], 1)
+                        # t.draw()
+                        # print(t, file=of)
                 if trees:
                     print('Success: ' + phrase.text, file=of)
                     print('No. of trees: %d' % len(trees), file=of)
@@ -66,15 +69,15 @@ if __name__ == '__main__':
                                 print(treex , file=tfile)
                                 tfile.close
                     print(FindNode('SUBJECT', trees[0]))
-                # else:
-                #     print('Fail:    ' + phrase.text, file=of)
-                #     trees = parser.partialparses()
-                #     print('No. of trees: %d' % len(trees), file=of)
-                #     if ttrace:
-                #         for treex in trees[0:40]:
-                #             cleanparsetree(treex)
-                #             treex.draw()
-                #     if trees:
-                #         print(FindNode('SUBJECT', trees[0]))
+                else:
+                    print('Fail:    ' + phrase.text, file=of)
+                    trees = parser.partialparses()
+                    print('No. of trees: %d' % len(trees), file=of)
+                    if ttrace:
+                        for treex in trees[0:40]:
+                            cleanparsetree(treex)
+                            treex.draw()
+                    if trees:
+                        print(FindNode('SUBJECT', trees[0]))
     of.close()
 

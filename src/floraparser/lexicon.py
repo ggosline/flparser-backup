@@ -146,7 +146,7 @@ def pickle_lexicon():
     addlexicon(POSITION, 'N', position=True, category='partof')
     ACCURACY = "c.|about|more_or_less|±|exactly|almost".split('|')
     addlexicon(ACCURACY, 'DEG', accuracy=True, timing=False)
-    FREQUENCY = "very|a_little|not_much|sometimes|often|usually|rarely|generally|never|always|" \
+    FREQUENCY = "very|a_little|not_much|sometimes|often|usually|rarely|more_rarely|more_often|generally|never|always|" \
                 "soon|also|even|especially|?".split('|')
     addlexicon(FREQUENCY, 'DEG', frequency=True, timing=False)
     DEGREE = "sparsely|densely|slightly|narrowly|widely|markedly|somewhat|rather|shallowly|scarcely|partly|partially|much|" \
@@ -161,7 +161,7 @@ def pickle_lexicon():
     SIZECOMP = "shorter|longer|wider|narrower|bigger|smaller|higher|as_long".split('|')
     addlexicon(SIZECOMP, 'A', compar=True, category='size', position=False, timing=False)
     COMPADJ = "more|less|most|least".split('|')
-    addlexicon(COMPADJ, 'A', makecomp=True)
+    addlexicon(COMPADJ, 'ADV', makecomp=True)
     TIMING = "at_first|when_young|becoming|remaining|turning|in_age|at_maturity|later|at_length|eventually|when_fresh|when_dry".split(
         '|')
     addlexicon(TIMING, 'A', timing=True, position=False)
