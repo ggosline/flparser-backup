@@ -966,6 +966,7 @@ ID,term,category,appliesTo,definition,category2,dataSource
 1015,fleeting,duration,structure,"Wilting or withering very shortly after emergence, soon becoming inconspicuous and falling away or disintegrating.",duration,
 1016,flesh,structure,,"Tissue that is fairly firm and dense, juicy or at least moist, and easily cut.",STRUCTURE,
 1017,fleshy,texture,,"Fairly firm and dense, juicy or at least moist, and easily cut.",texture,
+1017,fleshy,shape,,"as opposed to flat -- cotyledons",texture,
 1018,fleshy-stemmed,texture,plant,"Having main stems that are fleshy (carnose, sarcous).",texture,
 1019,flexed,shape,,"Having an abrupt bend at some point along its length.  See also declinate (inclinate), geniculate (kneed), inflexed, reflexed.",shape,
 1020,flexible,texture,,Able to bend over its length and/or breadth without structural disruption.,texture,
@@ -3383,7 +3384,7 @@ ID,term,category,appliesTo,definition,category2,dataSource
 3573,collections,taxonomy,,,,KG
 3574,collectors,taxonomy,,,,KG
 3576,colour,,,,,KG
-3577,coloured,,,,,KG
+3577,coloured,color,,,,KG
 3578,covered,,,,,KG
 #,covering,,,,,KG
 3580,crown,structure,,"<b> 1. </b>in trees, the cluster of branches and leaves borne at the top of the trunk, or the shape formed by the uppermost and outermost leaves; <b>2.</b> (in cycads) the apex of the trunk or stem, usually covered with protective bracts [not recommended]",,KG

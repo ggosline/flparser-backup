@@ -11,7 +11,7 @@ from floraparser.FGParser import FGParser, cleanparsetree, FindNode, PrintStruct
 
 trec = defaultdict(lambda: None)
 
-description = 'Disk nectariferous, annular, entire or angular or crenulate or lobed or covered with fleshy processes, concave to convex, rarely wholly or partly forming an androgynophore or discontinuous pockets, fleshy or membranous, very rarely absent'
+description = 'stems very light brown'
 fromDB = True
 fromDB = False
 parser = FeatureBottomUpLeftCornerChartParser

@@ -92,7 +92,7 @@ def pickle_lexicon():
         addlexentry(word, 'CONJ', conj=word, coord=False)
     ARTICLE = 'the|a|an'.split('|')
     addlexicon(ARTICLE, 'ART')
-    DETERMINER = 'each|every|some|all|other|both|their'.split('|')
+    DETERMINER = 'each|every|some|all|other|both|their|its'.split('|')
     addlexicon(DETERMINER, 'DET')
     PUNCTUATION = [';', '(', ')']
     for char in PUNCTUATION:
@@ -154,7 +154,7 @@ def pickle_lexicon():
     addlexicon(DEGREE, 'DEG', timing=False)
     COMPARISON = "paler|darker|lighter|shorter|longer|wider|narrower|bigger|smaller|duller|shinier|higher|" \
                  "older|younger|" \
-                 "exceeding|equalling|as_long_as|indistinguishable_from|similar".split('|')
+                 "as_many_as|exceeding|equalling|as_long_as|indistinguishable_from|similar".split('|')
     addlexicon(COMPARISON, 'A', compar=True, category='compar', position=False, timing=False)
     COLOURCOMP = "paler|darker|lighter|duller|shinier".split('|')
     addlexicon(COLOURCOMP, 'A', compar=True, category='color', position=False, timing=False)
