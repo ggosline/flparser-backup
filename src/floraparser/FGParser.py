@@ -5,12 +5,13 @@ from nltk.parse.featurechart import FeatureChart, FeatureTreeEdge
 from nltk.grammar import FeatureGrammar, FeatStructNonterminal, FeatStructReader,\
     read_grammar, SLASH, TYPE, Production, \
     Nonterminal
+from nltk.sem import Variable
 from nltk.parse.chart import TreeEdge
+from nltk.grammar import FeatureValueType
 from nltk.featstruct import FeatStruct, Feature, FeatList, FeatDict
 from floraparser.fltoken import FlToken
 from nltk import Tree
 from nltk.parse.earleychart import FeatureIncrementalChart, FeatureEarleyChartParser
-import collections
 
 class FGFeatureTreeEdge(FeatureTreeEdge):
 
@@ -88,6 +89,62 @@ class FGGrammar(FeatureGrammar):
         :type productions: list(Production)
         """
         FeatureGrammar.__init__(self, start, productions)
+
+    def _calculate_indexes(self):
+        super()._calculate_indexes()
+        self._lhs_var_productions = []
+        self._rhs_var_productions = []
+        for prod in self._productions:
+            # Left hand side.
+            lhs = self._get_type_if_possible(prod._lhs)
+            if isinstance(lhs, FeatureValueType) and isinstance(lhs._value, Variable):
+                self._lhs_var_productions.append(prod)
+            if prod._rhs:
+                # First item in right hand side.
+                rhs0 = self._get_type_if_possible(prod._rhs[0])
+                if isinstance(rhs0, FeatureValueType) and isinstance(rhs0._value, Variable):
+                    self._rhs_var_productions.append(prod)
+
+    def productions(self, lhs=None, rhs=None, empty=False):
+        """
+        Return the grammar productions, filtered by the left-hand side
+        or the first item in the right-hand side.
+
+        :param lhs: Only return productions with the given left-hand side.
+        :param rhs: Only return productions with the given first item
+            in the right-hand side.
+        :param empty: Only return productions with an empty right-hand side.
+        :rtype: list(Production)
+        """
+        if rhs and empty:
+            raise ValueError("You cannot select empty and non-empty "
+                             "productions at the same time.")
+
+        # no constraints so return everything
+        if not lhs and not rhs:
+            if empty:
+                return self._empty_productions
+            else:
+                return self._productions
+
+        # only lhs specified so look up its index
+        elif lhs and not rhs:
+            if empty:
+                return self._empty_index.get(self._get_type_if_possible(lhs), [])
+            else:
+                return self._lhs_index.get(self._get_type_if_possible(lhs), []) + \
+                            self._lhs_var_productions
+
+        # only rhs specified so look up its index
+        elif rhs and not lhs:
+            return self._rhs_index.get(self._get_type_if_possible(rhs), []) + \
+                            self._rhs_var_productions
+
+        # intersect
+        else:
+            return [prod for prod in self._lhs_index.get(self._get_type_if_possible(lhs), [])
+                    if prod in self._rhs_index.get(self._get_type_if_possible(rhs), [])]
+
 
     @classmethod
     def fromstring(cls, input, features=None, logic_parser=None, fstruct_reader=None,
