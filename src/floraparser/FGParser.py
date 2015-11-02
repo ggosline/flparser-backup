@@ -3,12 +3,11 @@ __author__ = 'gg12kg'
 from nltk.parse.featurechart import FeatureSingleEdgeFundamentalRule, FeatureTreeEdge, FeatureChart,\
     BU_LC_FEATURE_STRATEGY, FeatureBottomUpPredictCombineRule, FeatureEmptyPredictRule, FeatureChartParser
 
-
 from nltk.grammar import FeatureGrammar, FeatStructNonterminal, FeatStructReader,\
     read_grammar, SLASH, TYPE, Production, \
     Nonterminal
 from nltk.sem import Variable
-from nltk.parse.chart import TreeEdge, FundamentalRule, SingleEdgeFundamentalRule, LeafInitRule
+from nltk.parse.chart import TreeEdge, FundamentalRule, SingleEdgeFundamentalRule, LeafInitRule, EdgeI
 from nltk.grammar import FeatureValueType, is_nonterminal
 from nltk.featstruct import FeatStruct, Feature, FeatList, FeatDict, unify
 from floraparser.fltoken import FlToken
@@ -78,7 +77,7 @@ class FGFeatureTreeEdge(FeatureTreeEdge):
     def nextsym_isvar(self):
         ns = self.nextsym()
         if not isinstance(ns, FeatStruct): return False
-        if isinstance(ns['*type'], Variable): return True
+        if isinstance(ns.get('*type*'), Variable): return True
         return False
 
 def unify_heads(span, lhs, rhs):
@@ -110,6 +109,7 @@ def unify_heads(span, lhs, rhs):
     #     lhs['H'].update(head_prod[0]['H'])   # copy rather than unify which has trouble with lists
 
 FeatureTreeEdge.__init__ = FGFeatureTreeEdge.__init__
+EdgeI.nextsym_isvar = FGFeatureTreeEdge.nextsym_isvar
 FeatureTreeEdge.nextsym_isvar = FGFeatureTreeEdge.nextsym_isvar
 
 class FGChart(FeatureChart):
