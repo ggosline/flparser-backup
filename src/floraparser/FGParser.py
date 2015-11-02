@@ -15,38 +15,6 @@ from nltk import Tree
 from nltk.parse.earleychart import FeatureIncrementalChart, FeatureEarleyChartParser
 from nltk.parse import FeatureBottomUpChartParser, FeatureBottomUpLeftCornerChartParser, FeatureTopDownChartParser
 
-class FGFeatureSingleEdgeFundamentalRule(SingleEdgeFundamentalRule):
-    """
-    A specialized version of the completer / single edge fundamental rule
-    that operates on nonterminals whose symbols are ``FeatStructNonterminal``s.
-    Rather than simply comparing the nonterminals for equality, they are
-    unified.
-    """
-    #_fundamental_rule = FGFeatureFundamentalRule()
-
-    def _apply_complete(self, chart, grammar, right_edge):
-        fr = self._fundamental_rule
-        for left_edge in chart.select(end=right_edge.start(),
-                                      is_complete=False,
-                                      nextsym=right_edge.lhs()):
-            for new_edge in fr.apply(chart, grammar, left_edge, right_edge):
-                yield new_edge
-
-        for left_edge in chart.select(end=right_edge.start(),
-                                      is_complete=False,
-                                      nextsym_isvar=True):
-            for new_edge in fr.apply(chart, grammar, left_edge, right_edge):
-                yield new_edge
-
-    def _apply_incomplete(self, chart, grammar, left_edge):
-        fr = self._fundamental_rule
-        for right_edge in chart.select(start=left_edge.end(),
-                                       is_complete=True,
-                                       lhs=left_edge.nextsym()):
-            for new_edge in fr.apply(chart, grammar, left_edge, right_edge):
-                yield new_edge
-
-
 class FGFeatureTreeEdge(FeatureTreeEdge):
 
     def __init__(self, span, lhs, rhs, dot=0, bindings=None):
@@ -77,8 +45,10 @@ class FGFeatureTreeEdge(FeatureTreeEdge):
     def nextsym_isvar(self):
         ns = self.nextsym()
         if not isinstance(ns, FeatStruct): return False
-        if isinstance(ns.get('*type*'), Variable): return True
+        if isinstance(ns.get(TYPE), Variable):
+            return True
         return False
+
 
 def unify_heads(span, lhs, rhs):
     """
@@ -109,9 +79,9 @@ def unify_heads(span, lhs, rhs):
     #     lhs['H'].update(head_prod[0]['H'])   # copy rather than unify which has trouble with lists
 
 FeatureTreeEdge.__init__ = FGFeatureTreeEdge.__init__
+
 EdgeI.nextsym_isvar = FGFeatureTreeEdge.nextsym_isvar
 FeatureTreeEdge.nextsym_isvar = FGFeatureTreeEdge.nextsym_isvar
-
 class FGChart(FeatureChart):
 
     def pretty_format_edge(self, edge, width=None):
@@ -172,7 +142,38 @@ class FGFeatureFundamentalRule(FundamentalRule):
         if chart.insert_with_backpointer(new_edge, left_edge, right_edge):
             yield new_edge
 
-FGFeatureSingleEdgeFundamentalRule._fundamental_rule = FGFeatureFundamentalRule
+class FGFeatureSingleEdgeFundamentalRule(SingleEdgeFundamentalRule):
+    """
+    A specialized version of the completer / single edge fundamental rule
+    that operates on nonterminals whose symbols are ``FeatStructNonterminal``s.
+    Rather than simply comparing the nonterminals for equality, they are
+    unified.
+    """
+    _fundamental_rule = FGFeatureFundamentalRule()
+
+    def _apply_complete(self, chart, grammar, right_edge):
+        fr = self._fundamental_rule
+        for left_edge in chart.select(end=right_edge.start(),
+                                      is_complete=False,
+                                      nextsym=right_edge.lhs()):
+            print(left_edge)
+            for new_edge in fr.apply(chart, grammar, left_edge, right_edge):
+                yield new_edge
+
+        for left_edge in chart.select(end=right_edge.start(),
+                                      is_complete=False,
+                                      nextsym_isvar=True):
+            for new_edge in fr.apply(chart, grammar, left_edge, right_edge):
+                yield new_edge
+
+    def _apply_incomplete(self, chart, grammar, left_edge):
+        fr = self._fundamental_rule
+        for right_edge in chart.select(start=left_edge.end(),
+                                       is_complete=True,
+                                       lhs=left_edge.nextsym()):
+            for new_edge in fr.apply(chart, grammar, left_edge, right_edge):
+                yield new_edge
+
 
 class FGGrammar(FeatureGrammar):
     def __init__(self, start, productions):
