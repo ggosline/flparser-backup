@@ -1,17 +1,52 @@
 __author__ = 'gg12kg'
-import sys
-from nltk.parse.featurechart import FeatureChart, FeatureTreeEdge
+
+from nltk.parse.featurechart import FeatureSingleEdgeFundamentalRule, FeatureTreeEdge, FeatureChart,\
+    BU_LC_FEATURE_STRATEGY, FeatureBottomUpPredictCombineRule, FeatureEmptyPredictRule, FeatureChartParser
+
 
 from nltk.grammar import FeatureGrammar, FeatStructNonterminal, FeatStructReader,\
     read_grammar, SLASH, TYPE, Production, \
     Nonterminal
 from nltk.sem import Variable
-from nltk.parse.chart import TreeEdge
-from nltk.grammar import FeatureValueType
-from nltk.featstruct import FeatStruct, Feature, FeatList, FeatDict
+from nltk.parse.chart import TreeEdge, FundamentalRule, SingleEdgeFundamentalRule, LeafInitRule
+from nltk.grammar import FeatureValueType, is_nonterminal
+from nltk.featstruct import FeatStruct, Feature, FeatList, FeatDict, unify
 from floraparser.fltoken import FlToken
 from nltk import Tree
 from nltk.parse.earleychart import FeatureIncrementalChart, FeatureEarleyChartParser
+from nltk.parse import FeatureBottomUpChartParser, FeatureBottomUpLeftCornerChartParser, FeatureTopDownChartParser
+
+class FGFeatureSingleEdgeFundamentalRule(SingleEdgeFundamentalRule):
+    """
+    A specialized version of the completer / single edge fundamental rule
+    that operates on nonterminals whose symbols are ``FeatStructNonterminal``s.
+    Rather than simply comparing the nonterminals for equality, they are
+    unified.
+    """
+    #_fundamental_rule = FGFeatureFundamentalRule()
+
+    def _apply_complete(self, chart, grammar, right_edge):
+        fr = self._fundamental_rule
+        for left_edge in chart.select(end=right_edge.start(),
+                                      is_complete=False,
+                                      nextsym=right_edge.lhs()):
+            for new_edge in fr.apply(chart, grammar, left_edge, right_edge):
+                yield new_edge
+
+        for left_edge in chart.select(end=right_edge.start(),
+                                      is_complete=False,
+                                      nextsym_isvar=True):
+            for new_edge in fr.apply(chart, grammar, left_edge, right_edge):
+                yield new_edge
+
+    def _apply_incomplete(self, chart, grammar, left_edge):
+        fr = self._fundamental_rule
+        for right_edge in chart.select(start=left_edge.end(),
+                                       is_complete=True,
+                                       lhs=left_edge.nextsym()):
+            for new_edge in fr.apply(chart, grammar, left_edge, right_edge):
+                yield new_edge
+
 
 class FGFeatureTreeEdge(FeatureTreeEdge):
 
@@ -39,6 +74,12 @@ class FGFeatureTreeEdge(FeatureTreeEdge):
         TreeEdge.__init__(self, span, lhs, rhs, dot)
         self._bindings = bindings
         self._comparison_key = (self._comparison_key, tuple(sorted(bindings.items())))
+
+    def nextsym_isvar(self):
+        ns = self.nextsym()
+        if not isinstance(ns, FeatStruct): return False
+        if isinstance(ns['*type'], Variable): return True
+        return False
 
 def unify_heads(span, lhs, rhs):
     """
@@ -69,6 +110,7 @@ def unify_heads(span, lhs, rhs):
     #     lhs['H'].update(head_prod[0]['H'])   # copy rather than unify which has trouble with lists
 
 FeatureTreeEdge.__init__ = FGFeatureTreeEdge.__init__
+FeatureTreeEdge.nextsym_isvar = FGFeatureTreeEdge.nextsym_isvar
 
 class FGChart(FeatureChart):
 
@@ -76,6 +118,61 @@ class FGChart(FeatureChart):
         line = FeatureIncrementalChart.pretty_format_edge(self, edge)
         return line[0:400]
 
+class FGFeatureFundamentalRule(FundamentalRule):
+    """
+    A specialized version of the fundamental rule that operates on
+    nonterminals whose symbols are ``FeatStructNonterminal``s.  Rather
+    tha simply comparing the nonterminals for equality, they are
+    unified.  Variable bindings from these unifications are collected
+    and stored in the chart using a ``FeatureTreeEdge``.  When a
+    complete edge is generated, these bindings are applied to all
+    nonterminals in the edge.
+
+    The fundamental rule states that:
+
+    - ``[A -> alpha \* B1 beta][i:j]``
+    - ``[B2 -> gamma \*][j:k]``
+
+    licenses the edge:
+
+    - ``[A -> alpha B3 \* beta][i:j]``
+
+    assuming that B1 and B2 can be unified to generate B3.
+    """
+    def apply(self, chart, grammar, left_edge, right_edge):
+        # Make sure the rule is applicable.
+        if not (left_edge.end() == right_edge.start() and
+                left_edge.is_incomplete() and
+                right_edge.is_complete() and
+                isinstance(left_edge, FeatureTreeEdge)):
+            return
+        found = right_edge.lhs()
+        nextsym = left_edge.nextsym()
+        if isinstance(right_edge, FeatureTreeEdge):
+            if not is_nonterminal(nextsym): return
+            # if nextsym()[TYPE] != found[TYPE]: return
+            # Create a copy of the bindings.
+            bindings = left_edge.bindings()
+            # We rename vars here, because we don't want variables
+            # from the two different productions to match.
+            found = found.rename_variables(used_vars=left_edge.variables())
+            # Unify B1 (left_edge.nextsym) with B2 (right_edge.lhs) to
+            # generate B3 (result).
+            result = unify(nextsym, found, bindings, rename_vars=False)
+            if result is None: return
+        else:
+            if nextsym != found: return
+            # Create a copy of the bindings.
+            bindings = left_edge.bindings()
+
+        # Construct the new edge.
+        new_edge = left_edge.move_dot_forward(right_edge.end(), bindings)
+
+        # Add it to the chart, with appropriate child pointers.
+        if chart.insert_with_backpointer(new_edge, left_edge, right_edge):
+            yield new_edge
+
+FGFeatureSingleEdgeFundamentalRule._fundamental_rule = FGFeatureFundamentalRule
 
 class FGGrammar(FeatureGrammar):
     def __init__(self, start, productions):
@@ -191,12 +288,23 @@ class FGGrammar(FeatureGrammar):
         '''
         pass
 
+BU_LC_FEATURE_STRATEGY = [LeafInitRule(),
+                          FeatureEmptyPredictRule(),
+                          FeatureBottomUpPredictCombineRule(),
+                          FGFeatureSingleEdgeFundamentalRule()]
+
+def patch__init__(self, grammar, **parser_args):
+        FeatureChartParser.__init__(self, grammar, BU_LC_FEATURE_STRATEGY, **parser_args)
+
+FeatureBottomUpLeftCornerChartParser.__init__ = patch__init__
 
 class FGParser():
+
     def __init__(self, grammarfile='flg.fcfg', trace=1, parser=FeatureEarleyChartParser):
         with open(grammarfile, 'r', encoding='utf-8') as gf:
             gs = gf.read()
         self._grammar = FGGrammar.fromstring(gs)
+
         self._parser = parser(self._grammar, trace=trace, chart_class=FGChart)
         self._chart = None
 

@@ -15,11 +15,11 @@ description = 'stems very light brown'
 fromDB = True
 fromDB = False
 parser = FeatureBottomUpLeftCornerChartParser
-parser = FeatureEarleyChartParser
-parser = FeatureTopDownChartParser
+#parser = FeatureEarleyChartParser
+#parser = FeatureTopDownChartParser
 cleantree = False
 cleantree = True
-ttrace = 1
+ttrace = 2
 
 trec['description'] = description
 trdr = [trec]
