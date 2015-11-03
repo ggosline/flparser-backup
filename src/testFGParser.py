@@ -11,7 +11,7 @@ from floraparser.FGParser import FGParser, cleanparsetree, FindNode, PrintStruct
 
 trec = defaultdict(lambda: None)
 
-description = 'stems very light brown'
+description = 'Plant is Shrubs, much branched, or shrublets with erect  shoots from a woody more or less creeping rootstock, 0.2-1 m. high (or higher and arborescent according to some collectors), sometimes forming colonies, without latex, glabrous'
 fromDB = True
 fromDB = False
 parser = FeatureBottomUpLeftCornerChartParser
@@ -19,7 +19,7 @@ parser = FeatureBottomUpLeftCornerChartParser
 #parser = FeatureTopDownChartParser
 cleantree = False
 cleantree = True
-ttrace = 2
+ttrace = 1
 
 trec['description'] = description
 trdr = [trec]
@@ -31,7 +31,7 @@ if __name__ == '__main__':
     if fromDB:
         ttrace = 0
         ttaxa = FloraCorpusReader(db=r'..\resources\efloras.db3',
-                                  query="Select * from AllTaxa where flora_name = 'FZ' and family = 'Celastraceae' and rank = 'family';", )  # genus = 'Salacia' and species = 'senegalensis
+                                  query="Select * from AllTaxa where flora_name = 'FZ' and genus = 'Salacia';")
         of = open('testphrases.txt', 'w', encoding='utf-8')
     else:
         ttaxa = AbstractFloraCorpusReader(reader=trdr)

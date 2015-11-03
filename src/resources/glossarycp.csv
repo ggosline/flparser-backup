@@ -148,7 +148,7 @@ ID,term,category,appliesTo,definition,category2,dataSource
 155,aposporous,reproduction,"taxon, plant","Producing new gametophytes from the sporophytes asexually, without intervening meiosis (or spores).",reproduction,
 156,apostemonous,architecture,"flower, androecium",Having two or more distinct stamens; having the stamens unfused.,architecture,
 157,apotropous,orientation,ovule,"Anatropous but the whole recurved such that the raphe (adnate portion of the funiculus) faces the ovary wall (placenta) and the ovule is parallel to it, the micropyle facing the free basal portion of the funiculus.",orientation,
-158,appendage,structure,,Any subordinate structure ontogenetically derived from and associated with a given organ or part.,STRUCTURE,
+158,appendage,FEATURE,,Any subordinate structure ontogenetically derived from and associated with a given organ or part.,STRUCTURE,
 159,appressed,orientation,lateral structure,"Angled at or near the base and closely flattened against the surface of the bearing structure, thus more or less parallel to it.",orientation,
 160,approximate,arrangement,,Disposed relatively near to one another.,arrangement,
 161,aquatic,habit,plant,Growing in water.,habit,
@@ -314,7 +314,7 @@ ID,term,category,appliesTo,definition,category2,dataSource
 336,broom-shaped,shape,,"Having a proximal axis that bears a distal cluster of elongate slender branches or appendages, these variously ascending to erect; like a broom.",shape,
 337,buckler-shaped,shape,,"Relatively thin with opposite broad oblong faces, planate to shallowly concave-convex, sometimes thickened about the periphery such that each face has a marginal rim; like an oblong shield.  See also platter-shaped (scutellate, scutelliform), which is not",shape,
 338,bud,structure,,"A rudimentary, unexpanded stem, stem branch, inflorescence, inflorescence branch, or flower, or a combination thereof, in a resting state; enveloped or not by subtending protective scales.",STRUCTURE,
-338,bud,life-stage,,"in bud -- ",,
+338,in_bud,life-stage,,"in bud -- ",,
 339,bud_scale,structure,,"A scale that, alone or aggregated with others, envelops and protects a bud.",STRUCTURE,
 340,bud-scale_scar,FEATURE,,"A scar on a stem due to abscission of a bud scale.  The scar(s) encircle(s) the axis to which the bud was terminal, each single scar having an outline like that of a transverse section through the base of the bud scale that was inserted there.  Sets of bu",FEATURE,
 341,bulb,structure,,"A thickened underground perennating structure consisting of a stem with numerous closely proximate nodes bearing many tightly imbricate, thickened, often fleshy, foliaceous organs containing large amounts of stored food, usually in the form of starch; the",STRUCTURE,
@@ -1098,6 +1098,7 @@ ID,term,category,appliesTo,definition,category2,dataSource
 1152,greasy,texture,,"Liquid or deformably solid, cohesive, and slippery to the touch.",coating,q
 1153,gregarious,habit,plants,Growing in loose aggregations.  See also cespitose.,habit,
 1154,groove,FEATURE,,A longitudinal depression that is relatively shallow and narrow.,FEATURE,
+1154,hollow,FEATURE,,A depression that is relatively shallow and rounded.,FEATURE,
 1155,grooved,architecture,,Having one or more relatively narrow and shallow longitudinal depressions (grooves).,architecture,
 1156,_grooved,architecture,,"Having the number of grooves indicated by the prefix; as in three-grooved, 5-grooved.",architecture,
 1157,grumous,shape,,"Having an external aspect like a cluster of grains, basically convex overall.",shape,
@@ -3368,7 +3369,7 @@ ID,term,category,appliesTo,definition,category2,dataSource
 3545,accessory,architecture,"buds, branches, fruits","<b> 1. </b>(of buds) additional to axillary buds, and assuming their function; <b>2. </b>(of branches) secondary branches; <b>3. </b>(of fruits) false fruits, conspicuous but without function other than attraction; <b>4.</b> a fruit (or group of fruits) c",,KG
 3548,acumen,structure,,a rather abruptly tapering point from an otherwise rounded or obtuse apex,,KG
 3551,angles,structure,,,,KG
-3552,anthesis,life-stage,,time of fertilisation of the flower; time of receptivity of stigma or distribution of pollen; used more loosely for the time when the flower opens,,KG
+3552,at_anthesis,life-stage,,time of fertilisation of the flower; time of receptivity of stigma or distribution of pollen; used more loosely for the time when the flower opens,,KG
 3553,appearing,,,,,KG
 3556,point_of_attachment,structure,,,,KG
 3557,bases,structure,,,,KG

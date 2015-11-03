@@ -1,35 +1,40 @@
-TAXON:  Celastraceae  
-Fail:    Plant is Trees, shrubs, shrublets or woody climbers, without tendrils, glabrous or with simple hairs, unarmed or with axillary shoots terminating in a spine, sometimes with rubber-like latex (gutta) in various parts appearing as elastic threads when a leaf is broken
-No. of trees: 6
-Success: Leaves simple, alternate or spiral to subopposite or opposite, sometimes fasciculate on short shoots, entire or with crenate or denticulate to spinose margins, penninerved
-No. of trees: 3
-Fail:    stipules small, simple or laciniate, sometimes united by a transverse ridge, usually deciduous, or absent
-No. of trees: 6
-Fail:    Flowers bisexual or polygamous or unisexual, monoecious or dioecious, actinomorphic, often fragrant, in axillary and/ or terminal dichasial or monochasial cymes or panicles or thyrses, sometimes with accessory branches, or fasciculate or solitary, usually bracteate
-No. of trees: 6
-Success: pedicels often articulated
-No. of trees: 1
-Success: Sepals (3)4–5(6), imbricate or rarely valvate in bud, free or united at the base, persistent
-No. of trees: 10
-Fail:    Petals (3)4–5(6), free or rarely united at the base, imbricate or rarely valvate in bud, usually persistent, sometimes with ventral grooves or hollows or appendages
+TAXON:  Celastraceae Salacia 
+Fail:    Plant is Lianes or shrubs or small trees, often with the upper branches scandent, rarely rhizomatous shrublets, with or without latex
 No. of trees: 5
-Fail:    Stamens (2)3–5(6–10), antisepalous, free or more rarely with filaments partly united to form a tube, inserted outside or on or inside the disk
-No. of trees: 3
-Success: anthers usually short, (1)2-thecous, extrorse or introrse, basifixed or dorsifixed or versatile, sometimes deciduous, dehiscing by longitudinal or oblique or horizontal slits
-No. of trees: 12
-Fail:    pollen simple or more rarely in tetrads or polyads
+Success: Leaves opposite to alternate, petiolate
 No. of trees: 1
-Fail:    Disk nectariferous, annular, entire or angular or crenulate or lobed or covered with fleshy processes, concave to convex, rarely wholly or partly forming an androgynophore or discontinuous pockets, fleshy or membranous, very rarely absent
-No. of trees: 7
-Fail:    Ovary free or partly or wholly immersed in the disk, sessile or on a short androgynophore, syncarpous, completely or very rarely incompletely 2–5-locular, or rarely 1-locular by abortion, with 1-? erect or rarely pendulous ovules in 2 rows or rarely superimposed in each loculus
-No. of trees: 5
-Fail:    styles as many as the loculi, free or ± united, or absent
-No. of trees: 3
-Fail:    stigmas various, free or ± united
+Success: stipules small, free, deciduous, or absent
 No. of trees: 2
-Fail:    Fruit capsular, loculicidal, or of divergent ± dorsiventrally flattened dehiscent mericarps or baccate or drupaceous or dry, indehiscent and sometimes winged
-No. of trees: 5
-Fail:    Seeds with a fleshy or submembranous brightly coloured aril, or winged with the funicle free from the wing (Tab. 80 figs 6–7) or united to its base (Tab. 85 fig. A8) or neither arillate nor winged (usually in indehiscent fruits), with or without endosperm
-No. of trees: 3
-Fail:    embryo erect, with cotyledons flat or fleshy, rarely united
+Success: Inflorescence pedunculate or sessile, cymose, dichasial or monochasial or fasciculate, simple, without accessory branches, axillary or extra-axillary
+No. of trees: 8
+Success: bracts persistent
+No. of trees: 1
+Success: Flowers bisexual or functionally unisexual
+No. of trees: 1
+Success: Sepals (4)5(6), imbricate, free or ± united, the inner ones sometimes ± petaloid
 No. of trees: 4
+Success: Petals (4)5(6), green, white, yellow, orange, brownish or red, imbricate in bud
+No. of trees: 32
+Fail:    Disk extrastaminal, single, varying in shape, free or variously united with other floral parts
+No. of trees: 3
+Fail:    Stamens (2)3(4), with filaments often ± broadened below, free or united with the ovary or gynophore, becoming reflexed
+No. of trees: 5
+Fail:    anthers versatile, extrorse or apical, with thecae vertical to oblique or transverse, free or ± confluent
+No. of trees: 5
+Success: pollen simple
+No. of trees: 1
+Success: Ovary superior, (2)3-locular, with 2–8 axile ovules in 1–2 rows per loculus, sessile or on a gynophore, usually immersed in the disk
+No. of trees: 100
+Success: style simple
+No. of trees: 1
+Success: stigma 3-lobed or entire
+No. of trees: 1
+Fail:    Fruit drupaceous, globose or ± elongated, with coriaceous exocarp and mucilaginous pulp (mesocarp), (2)3-locular, soon becoming 1-locular by evanescence of dissepiments, 1-c. 20-seeded
+No. of trees: 6
+Fail:    Seeds (pyrenes) ± irregular
+No. of trees: 2
+Fail:    Germination hypogeal (2 species)
+No. of trees: 1
+Fail:    Chromosome number: 2n = 28 (8 species)
+No. of trees: 1
+TAXON:  Celastraceae Salacia bussei
