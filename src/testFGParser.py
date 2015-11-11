@@ -11,9 +11,9 @@ from floraparser.FGParser import FGParser, cleanparsetree, FindNode, PrintStruct
 
 trec = defaultdict(lambda: None)
 
-description = 'Plant is Shrubs, much branched, or shrublets with erect  shoots from a woody more or less creeping rootstock, 0.2-1 m. high (or higher and arborescent according to some collectors), sometimes forming colonies, without latex, glabrous'
+description = 'buds 3–4 mm. long, ovoid-conic'
 fromDB = True
-fromDB = False
+#fromDB = False
 parser = FeatureBottomUpLeftCornerChartParser
 #parser = FeatureEarleyChartParser
 #parser = FeatureTopDownChartParser
@@ -27,33 +27,45 @@ trdr = [trec]
 tfilebase = r'..\..\temp\tree'
 
 of = sys.stdout
+cf = open('characters.txt', 'w', encoding='utf-8')
 if __name__ == '__main__':
     if fromDB:
         ttrace = 0
         ttaxa = FloraCorpusReader(db=r'..\resources\efloras.db3',
-                                  query="Select * from AllTaxa where flora_name = 'FZ' and genus = 'Salacia';")
+                                  query="Select * from AllTaxa where flora_name = 'FZ' and genus = 'Salacia' ;")
         of = open('testphrases.txt', 'w', encoding='utf-8')
+
     else:
         ttaxa = AbstractFloraCorpusReader(reader=trdr)
 
     parser = FGParser(parser=parser, trace=ttrace)
     for taxon in ttaxa.taxa:
-        print('TAXON: ', taxon.family, taxon.genus, taxon.species)
-        print('TAXON: ', taxon.family, taxon.genus, taxon.species, file=of)
+        print('\rTAXON: ', taxon.family, taxon.genus, taxon.species)
+        print('\rTAXON: ', taxon.family, taxon.genus, taxon.species, file=of)
+        print('-'*80,  '\rTAXON: ', taxon.family, taxon.genus, taxon.species, file=cf)
 
         for sent in taxon.sentences:
             for i, phrase in enumerate(sent.phrases):
-                print('PARSING: ', phrase.text)
+                print('\rPARSING: ', phrase.text)
+                print('\rPARSING: ', phrase.text, file=cf)
                 trees = parser.parse(phrase.tokens, cleantree=cleantree, maxtrees=100)
-                if ttrace:
+                if True:
+                    for t, txtstart, txtend in parser.listSUBJ():
+                        cleanparsetree(t)
+                        print(file=cf)
+                        print('SUBJECT:', file=cf)
+                        print('Text: ', sent.text[txtstart:txtend])
+                        print('Text: ', sent.text[txtstart:txtend], file=cf)
+                        print(t[()].label()['H', 'orth'], file=cf)
                     for t, txtstart, txtend in parser.listCHARs():
                         cleanparsetree(t)
-                        print()
-                        print('CHARACTER:')
+                        print(file=cf)
+                        print('CHARACTER:', file=cf)
                         print('Text: ', sent.text[txtstart:txtend])
+                        print('Text: ', sent.text[txtstart:txtend], file=cf)
                         H = t[()].label()['H']
                         print(H.get('category'), H.get('orth'))
-                        PrintStruct(t[()].label()['H'], 1)
+                        PrintStruct(t[()].label()['H'], indent=1, file=cf)
                         # t.draw()
                         # print(t, file=of)
                 if trees:
@@ -68,7 +80,7 @@ if __name__ == '__main__':
                                 tfile = open(tfilename, mode='w', encoding='utf-8')
                                 print(treex , file=tfile)
                                 tfile.close
-                    print(FindNode('SUBJECT', trees[0]))
+                    # print(FindNode('SUBJECT', trees[0]))
                 else:
                     print('Fail:    ' + phrase.text, file=of)
                     trees = parser.partialparses()
@@ -77,7 +89,7 @@ if __name__ == '__main__':
                         for treex in trees[0:40]:
                             cleanparsetree(treex)
                             treex.draw()
-                    if trees:
-                        print(FindNode('SUBJECT', trees[0]))
+                    # if trees:
+                    #     print(FindNode('SUBJECT', trees[0]))
     of.close()
 

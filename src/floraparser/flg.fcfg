@@ -48,7 +48,7 @@ ISA -> IS
 
 CHR[category=size] ->  SIZEB[+HD, H=?head]
 CHR[category=count] ->  COUNT[+HD, H=?head]
-#CHR[category=group] -> P[prep='in'] NP[H=[+group], +HD]
+CHR[category=group] -> P[prep='in'] NP[H=?head, +HD, +group]
 
 CHRL[category=?c, H=?h] ->  CHR[H=?h, category=?c]
 CHRL[category=(?c+?d), H=[AND=(?ha+?hb)]] ->  CHR[H=?ha, category=?c] AND CHRL[H=?hb, category=?d]
@@ -156,7 +156,7 @@ AP[category=?c] -> ABARL[category=?c, +HD, H=?head]
 # AP[category=(?c+?d), H=[AND=(?ha+?hb)]] -> AP[category=?c, H=?ha]  AP[category=?d, H=?hb]
 
 WITHP[category=?c, H=[having = ?p ]] -> WITH[presence=?p] NPL[category=?c, +HD, H=?h]
-WITHP[category=?c, H=[having = ?p ]] -> WITH[presence=?p] NP[category=?c, +HD, H=?h]/?x
+#WITHP[category=?c, H=[having = ?p ]] -> WITH[presence=?p] NP[category=?c, +HD, H=?h]/?x
 #WITHP[category=?c, H=[having = ?p, clist=?clist]] -> WITH[presence=?p] NP[category=?c, +HD, H=?h] CHRL[H=?clist]
 #WITHP[category=?c, H=[having = ?p, clist=?clist]] -> WITH[presence=?p] NP[category=?c, +HD, H=?h]/?x CHRL[H=?clist]
 WITHP[category=?c, H=[having = ?p, clist=?cl]] -> WITH[presence=?p] NP[category=?c, +HD, H=?h]/?x CHARLIST[H=?cl]

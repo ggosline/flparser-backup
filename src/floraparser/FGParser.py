@@ -66,12 +66,15 @@ def unify_heads(span, lhs, rhs):
     if not head_prod: return
     rhead = head_prod[0]['H']
     lhead = lhs.get('H', FeatStructNonterminal([]))
-    newH = lhead.unify(rhead, trace=0)
+    try:
+        newH = lhead.unify(rhead, trace=0)
+    except:
+        newH = {}
     if newH:
         lhs['H'] = newH
     else:
         lhs['H'] = rhead
-        print('FAIL to unify heads')
+        print('FAIL to unify heads', lhs, rhs)
     lhs['span'] = span
     # if not isinstance(rhead, FeatDict):
     #     lhs['H'] = rhead
@@ -297,7 +300,7 @@ BU_LC_FEATURE_STRATEGY = [LeafInitRule(),
 def patch__init__(self, grammar, **parser_args):
         FeatureChartParser.__init__(self, grammar, BU_LC_FEATURE_STRATEGY, **parser_args)
 
-FeatureBottomUpLeftCornerChartParser.__init__ = patch__init__
+# FeatureBottomUpLeftCornerChartParser.__init__ = patch__init__
 
 class FGParser():
 
@@ -377,6 +380,22 @@ class FGParser():
 
         return [t for t, _, _ in trees]
 
+    def listSUBJ(self):
+        '''
+        List all trees labelled with SUBJECT
+        Choose the longest edges!
+        parse must have been called first! to generate the chart
+        '''
+
+        trees = []
+        subjend = 0
+
+        charedges = list(self.simple_select(is_complete=True, lhs='SUBJECT'))
+        for charedge in charedges:
+            for tree in self._chart.trees(charedge, complete=True, tree_class=Tree):
+                trees.append((tree, charedge.start(), charedge.end()))
+        return [(t, self._chart._tokens[start+1].slice.start, self._chart._tokens[end-1].slice.stop) for t, start, end in trees]
+
     def listCHARs(self):
         '''
         List all trees labelled with CHAR
@@ -385,6 +404,7 @@ class FGParser():
         '''
 
         trees = []
+        subjend = 0
 
         charedges = list(self.simple_select(is_complete=True, lhs='SUBJECT'))
         for charedge in charedges:
@@ -411,7 +431,7 @@ class FGParser():
                     if newtree:
                         trees.append((tree, charedge.start(), charedge.end()))
 
-        return [(t, self._chart._tokens[start].slice.start, self._chart._tokens[end-1].slice.stop) for t, start, end in trees]
+        return [(t, self._chart._tokens[start+1].slice.start, self._chart._tokens[end-1].slice.stop) for t, start, end in trees]
 
     def simple_select(self, **restrictions):
         """
@@ -559,14 +579,14 @@ class FeatListNonterminal(FeatList, Nonterminal):
     def symbol(self):
         return self
 
-def PrintStruct(struct, indent: int = 0):
+def PrintStruct(struct, indent: int = 0, file=None):
     if isinstance(struct,FeatDict):
         for (fname, fval) in struct._items():
-            print('\t'*indent, fname.upper())
-            PrintStruct(fval, indent+1)
+            print('\t'*indent, fname.upper(), file=file)
+            PrintStruct(fval, indent+1, file=file)
     elif isinstance(struct, tuple) or isinstance(struct, frozenset):
         for listitem in struct:
-            PrintStruct(listitem, indent+1)
+            PrintStruct(listitem, indent+1, file=file)
     else:
-        print ('\t'*indent, struct)
+        print ('\t'*indent, struct, file=file)
 
