@@ -590,3 +590,14 @@ def PrintStruct(struct, indent: int = 0, file=None):
     else:
         print ('\t'*indent, struct, file=file)
 
+def DumpStruct(struct, indent: int = 0, file=None):
+    if isinstance(struct,FeatDict):
+        for (fname, fval) in struct._items():
+            print(fname.upper(), '\t', fval, file=file)
+            DumpStruct(fval, indent+1, file=file)
+    elif isinstance(struct, tuple) or isinstance(struct, frozenset):
+        for listitem in struct:
+            DumpStruct(listitem, indent+1, file=file)
+    else:
+        pass
+        # print ('\t'*indent, struct, file=file)

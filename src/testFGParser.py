@@ -7,7 +7,7 @@ from floracorpus.reader import AbstractFloraCorpusReader , FloraCorpusReader
 from nltk.tree import Tree
 from nltk.parse import FeatureEarleyChartParser, FeatureIncrementalBottomUpLeftCornerChartParser, FeatureChartParser
 from nltk.parse import FeatureBottomUpChartParser, FeatureBottomUpLeftCornerChartParser, FeatureTopDownChartParser
-from floraparser.FGParser import FGParser, cleanparsetree, FindNode, PrintStruct
+from floraparser.FGParser import FGParser, cleanparsetree, FindNode, PrintStruct, DumpStruct
 
 trec = defaultdict(lambda: None)
 
@@ -42,30 +42,31 @@ if __name__ == '__main__':
     for taxon in ttaxa.taxa:
         print('\rTAXON: ', taxon.family, taxon.genus, taxon.species)
         print('\rTAXON: ', taxon.family, taxon.genus, taxon.species, file=of)
-        print('-'*80,  '\rTAXON: ', taxon.family, taxon.genus, taxon.species, file=cf)
+        # print('-'*80,  '\rTAXON: ', taxon.family, taxon.genus, taxon.species, file=cf)
 
         for sent in taxon.sentences:
             for i, phrase in enumerate(sent.phrases):
                 print('\rPARSING: ', phrase.text)
-                print('\rPARSING: ', phrase.text, file=cf)
+                # print('\rPARSING: ', phrase.text, file=cf)
                 trees = parser.parse(phrase.tokens, cleantree=cleantree, maxtrees=100)
                 if True:
                     for t, txtstart, txtend in parser.listSUBJ():
                         cleanparsetree(t)
-                        print(file=cf)
-                        print('SUBJECT:', file=cf)
+                        # print(file=cf)
+                        # print('SUBJECT:', file=cf)
                         print('Text: ', sent.text[txtstart:txtend])
-                        print('Text: ', sent.text[txtstart:txtend], file=cf)
-                        print(t[()].label()['H', 'orth'], file=cf)
+                        # print('Text: ', sent.text[txtstart:txtend], file=cf)
+                        print('SUBJECT\t', t[()].label()['H', 'orth'], file=cf)
                     for t, txtstart, txtend in parser.listCHARs():
                         cleanparsetree(t)
-                        print(file=cf)
-                        print('CHARACTER:', file=cf)
+                        # print(file=cf)
+                        # print('CHARACTER:', file=cf)
                         print('Text: ', sent.text[txtstart:txtend])
-                        print('Text: ', sent.text[txtstart:txtend], file=cf)
+                        # print('Text: ', sent.text[txtstart:txtend], file=cf)
                         H = t[()].label()['H']
                         print(H.get('category'), H.get('orth'))
-                        PrintStruct(t[()].label()['H'], indent=1, file=cf)
+                        # PrintStruct(t[()].label()['H'], indent=1, file=cf)
+                        DumpStruct(t[()].label()['H'], indent=1, file=cf)
                         # t.draw()
                         # print(t, file=of)
                 if trees:
