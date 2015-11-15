@@ -23,7 +23,7 @@ SUFFIX = re.compile(r"\b(?P<root>\w+)(?P<suffix>form|ish|merous|most|shaped|like
 
 PLENDINGS = re.compile(r"(?:[^aeiou]ies|i|ia|(x|ch|sh)es|ves|ices|ae|s)$")
 
-NUMBERS = re.compile(r'^[–0-9—.·()\s/]+$')
+NUMBERS = re.compile(r'^[-–0-9—.·()\s/]+$')
 
 
 class FlTagger():

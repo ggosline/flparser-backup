@@ -78,7 +78,7 @@ def pickle_lexicon():
                 elif category != '':
                     POS = 'A'
                     semexpr = read_expr(category.replace('-', '_') + '(' + semterm + ')')
-                    morefeatures = {'position': False, 'timing': False}
+                    morefeatures = {'position': False, 'timing': False, 'compar': False}
                 else:
                     POS = 'UNK'
                     semexpr = None
@@ -150,7 +150,7 @@ def pickle_lexicon():
                 "soon|also|even|especially|?".split('|')
     addlexicon(FREQUENCY, 'DEG', frequency=True, timing=False)
     DEGREE = "sparsely|densely|slightly|narrowly|widely|markedly|somewhat|rather|shallowly|scarcely|partly|partially|much|" \
-             "dark|light".split('|')
+             "dark|light|deep".split('|')
     addlexicon(DEGREE, 'DEG', timing=False)
     COMPARISON = "paler|darker|lighter|shorter|longer|wider|narrower|bigger|smaller|duller|shinier|higher|" \
                  "older|younger|" \

@@ -29,6 +29,7 @@ CHR[H=[OR=absent]] -> OR ABAR[category=presence, H=[orth='absent']]
 
 CBEGINNER -> '¢'
 CTERMINATOR -> COMMA | '$'
+CTERMINATOR -> WITHP
 # CTERMINATOR ->
 
 #CHR[category=?c, H=[stage=?st]] ->  CHR[category=?c, +HD, H=?head] STAGE[stage=?st]
@@ -75,8 +76,8 @@ NP -> NAME
 
 NP -> ANAPH
 
-NP/?x -> POSITION NBAR/?x
-NBAR/NBAR ->
+#NP/?x -> POSITION NBAR/?x
+#NBAR/NBAR ->
 
 NP[H=[AND=(?ha+?hb)]] -> NP[H=?ha] AND NP[H=?hb]
 
@@ -114,7 +115,7 @@ DEG -> COMPADJ DEG
 ADVB[+comp, category=adv, orth=?o] -> A[+makecomp] ADV[orth=?o]
 
 MOD[H=?adv] -> ADVB[H=?adv]
-MOD[H=?adv] ->  DEG[orth=?adv] | COUNT[H=?adv] | RANGE[orth=?adv]
+MOD[H=?adv] ->  DEG[orth=?adv] | COUNT[H=?adv]
 #[*type*=?t, H=(?ma+?mb), +and] -> [*type*=?t, H=?ma, +and] [*type*=?t, H=?mb]
 #[*type*=?t, H=?ma, +and] -> [*type*=?t, H=?ma]
 MOD[H=[AND=(?ma+?mb)]] -> MODL[H=?ma] MOD[H=?mb]
@@ -126,7 +127,7 @@ MODL[H=?ma] -> MOD[H=?ma]
 #ABAR[category=?c, H=[orth=?o, category=?c, mod=?adv]] ->  MODL[H=?adv] A[category=?c, orth=?o, -position, -timing]
 ABAR[category=?c, H=[mod=?adv]] ->  MODL[H=?adv] ABAR[category=?c, H=?head, +HD, -position, -timing]
 ABAR[category=?c, H=[orth=?o, category=?c]] ->  A[category=?c, orth=?o, -position, -timing]
-A[category=?c, orth=(?a1+?a2)] -> A[orth=?a1, -position, -timing] A[category=?c, orth=?a2, -position, -timing]
+A[category=?c, orth=(?a1+?a2)] -> A[category=?c, orth=?a1, -position, -timing] A[category=?c, orth=?a2, -position, -timing]
 #ABAR[category=?c, H=[orth=?o, category=?c, mod=?adv]] -> COUNT[H=?adv] A[category=?c, orth=?o, -position, -timing]
 
 ORDELIM -> COMMA | OR | COMMA OR
@@ -152,8 +153,8 @@ ABAR[category=?c] -> ABAR[category=?c, +HD, H=?head] PAREXP
 AP[category=?c] -> ABARL[category=?c, +HD, H=?head]
 
 # AP[category=?c, H=?h] -> AP[category=?c, H=?h] PAREXP
-# AP[category=(?c+?d), H=[AND=(?ha+?hb)]] -> AP[category=?c, H=?ha] AND AP[category=?d, H=?hb]
-# AP[category=(?c+?d), H=[AND=(?ha+?hb)]] -> AP[category=?c, H=?ha]  AP[category=?d, H=?hb]
+AP[category=(?c+?d), H=[AND=(?ha+?hb)]] -> AP[category=?c, H=?ha] AND AP[category=?d, H=?hb]
+AP[category=(?c+?d), H=[AND=(?ha+?hb)]] -> AP[category=?c, H=?ha]  AP[category=?d, H=?hb]
 
 WITHP[category=?c, H=[having = ?p ]] -> WITH[presence=?p] NPL[category=?c, +HD, H=?h]
 #WITHP[category=?c, H=[having = ?p ]] -> WITH[presence=?p] NP[category=?c, +HD, H=?h]/?x
@@ -162,7 +163,7 @@ WITHP[category=?c, H=[having = ?p ]] -> WITH[presence=?p] NPL[category=?c, +HD, 
 WITHP[category=?c, H=[having = ?p, clist=?cl]] -> WITH[presence=?p] NP[category=?c, +HD, H=?h]/?x CHARLIST[H=?cl]
 WITHP[category=?c, H=[mod=?m]] -> MODL[H=?m] WITHP[category=?c, +HD, H=?head]
 WITHP[category=?c, H=[having = ?h, clist=?clist]] -> WITH[presence=?p] NP[category=?c, H=?h] CHRL[H=?clist]
-WITHP[category=?c, H=[having = ?h, clist=?clist]] -> WITH[presence=?p] NP[category=?c, H=?h]/?x CHRL[H=?clist]
+#WITHP[category=?c, H=[having = ?h, clist=?clist]] -> WITH[presence=?p] NP[category=?c, H=?h]/?x CHRL[H=?clist]
 WITHP[category=?c, H=[presence=True, having = ?h, clist=?clist]] -> NP[category=?c, H=?h] CHRL[H=?clist]
 #WITHP[category=?c, H=[presence=True, having = ?h, clist=?clist]] -> NP[category=?c, H=?h]/?x CHRL[H=?clist]
 
