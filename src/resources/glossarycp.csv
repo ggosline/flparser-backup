@@ -2063,7 +2063,7 @@ ID,term,category,appliesTo,definition,category2,dataSource
 2150,resinous,texture,,Having the consistency of resin.,texture,q
 2151,resupinate,orientation,lateral structure,Inverted due to twisting distal to the point of insertion during development.,orientation,
 2152,reticulate,architecture,"tertiary and higher-order laminar veins, excl veinlets",Interconnecting more or less regularly.,relief,q
-2153,reticulate,coloration,,Having a  pattern of interconnected fine lines of contrasting hue and/or intensity.,relief,q
+#,reticulate,coloration,,Having a  pattern of interconnected fine lines of contrasting hue and/or intensity.,relief,q
 #,reticulate,relief,,"Having prominulous, more or less regularly interconnected lines.",relief,q
 2155,reticulodromous,venation,,"Having a single median primary vein that branches to either side along the length of the lamina, the secondary veins running thence toward the margin, branching repeatedly, becoming less distinct, and yielding a dense higher-order reticulum near the margi",venation,
 2156,retrorse,orientation,,"Directed generally backward, toward the proximal end of the context of reference, parallel or at an acute angle to the bearing structure.",orientation,
@@ -2933,7 +2933,6 @@ ID,term,category,appliesTo,definition,category2,dataSource
 3039,expanded,size,,,,
 3040,expanding,size,,,,
 3041,falling,orientation,,,,
-3042,fascicles,arrangement,,,,
 3043,featherlike,shape,,,,
 3044,feltlike,texture,,,,
 3045,a_few,count,,,,

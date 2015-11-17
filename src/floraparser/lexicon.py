@@ -74,14 +74,15 @@ def pickle_lexicon():
                 if category in ('structure', 'feature', 'character', 'structure-infl',
                                 'substance', 'life-form', 'plant', 'taxonomy', 'en', 'process'):
                     POS = 'N'
-                    semexpr = read_expr(semterm)
+                    # semexpr = read_expr(semterm)
+                    morefeatures = {'group': False}
                 elif category != '':
                     POS = 'A'
                     semexpr = read_expr(category.replace('-', '_') + '(' + semterm + ')')
                     morefeatures = {'position': False, 'timing': False, 'compar': False}
                 else:
                     POS = 'UNK'
-                    semexpr = None
+                    # semexpr = None
                 addlexentry(term, POS, category=category, **morefeatures)
 
     COORDCONJUNCTION = 'and|or|and/or|neither|nor|otherwise|but|except|except_for|×'.split('|')
@@ -121,7 +122,7 @@ def pickle_lexicon():
     for word in POSITIONP:
         addlexentry(word, 'P', prep=word, position=True)
         #addlexentry(word, 'P', prep=word, position=True, sem=read_expr(r'\x.' + word + '(x)'))
-    GROUPS = "group|groups|clusters|cluster|arrays|array|series|fascicles|fascicle|" \
+    GROUPS = "group|groups|clusters|cluster|arrays|array|series|" \
              "pairs|pair|row|rows|number|numbers|colonies".split('|')
     addlexicon(GROUPS, 'N', group=True, category='grouping')
     LITNUMBERS = "zero|one|ones|two|half|three|thirds|four|fourths|quarter|" \
@@ -157,7 +158,7 @@ def pickle_lexicon():
                  "as_many_as|exceeding|equalling|as_long_as|indistinguishable_from|similar".split('|')
     addlexicon(COMPARISON, 'A', compar=True, category='compar', position=False, timing=False)
     COLOURCOMP = "paler|darker|lighter|duller|shinier".split('|')
-    addlexicon(COLOURCOMP, 'A', compar=True, category='color', position=False, timing=False)
+    addlexicon(COLOURCOMP, 'A', compar=True, category='coloration', position=False, timing=False)
     SIZECOMP = "shorter|longer|wider|narrower|bigger|smaller|higher|as_long".split('|')
     addlexicon(SIZECOMP, 'A', compar=True, category='size', position=False, timing=False)
     COMPADJ = "more|less|most|least".split('|')

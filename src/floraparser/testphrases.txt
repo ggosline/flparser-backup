@@ -1,0 +1,37 @@
+TAXON:  Celastraceae Salacia erecta
+Fail:    Plant is Shrub, often with climbing branches, or liane, (1)2–7(15) m. high, sometimes forming thickets, without latex, glabrous
+No. of trees: 7
+Fail:    stems with paired raised lines or quadrangular, olive-green to purplish and rugulose-tuberculate at first, becoming subterete, purplish-grey and smooth or remaining rugulose
+No. of trees: 5
+Success: Leaves opposite to subopposite or alternate (on climbing shoots), petiolate
+No. of trees: 4
+Fail:    lamina dark green, paler below, glossy or more rarely rather dull on both surfaces, (3·3)4·4–10·8(15) × (1·2)2·1–4·5 cm., oblong or elliptic-oblong to obovate, acuminate at the apex with acumen long to short, obtuse or retuse, with margin shallowly rounded-denticulate, rarely subentire, cuneate to rounded at the base, chartaceous to softly coriaceous, with (6)7–10 lateral nerves and ± densely reticulate venation varying in prominence
+No. of trees: 13
+Success: petiole (2)3–4(6) mm. long, with margins markedly undulating
+No. of trees: 1
+Success: stipules small, asymmetric, ± ciliate-denticulate, caducous
+No. of trees: 3
+Success: Flowers 1–5, axillary, in sessile or very shortly pedunculate fascicles, bisexual, 4–7(9) mm. in diam.
+No. of trees: 22
+Success: buds 2–3 mm. long, ovoid to ovoid-cylindric
+No. of trees: 1
+Success: pedicels 3–5(7) mm. long, smooth or slightly rugulose, articulated at the base
+No. of trees: 1
+Fail:    Sepals green with pale subentire or irregularly denticulate margin, 0·4–1 mm. long, unequal, ovate to semicircular, rounded, free or shortly united
+No. of trees: 5
+Success: Petals greenish-yellow, 2–3(4) mm. long, oblong, rounded, entire
+No. of trees: 4
+Fail:    Disk brown, convex or convex-cylindric, without depressions, surrounding the ovary and wider than it
+No. of trees: 4
+Success: Stamens 3, with filaments slender
+No. of trees: 1
+Success: anthers dehiscing by 2 oblique clefts confluent at the apex
+No. of trees: 9
+Success: Ovary ovoid, 3-gonous or 3-lobed, with style narrowly pyramidal
+No. of trees: 1
+Success: stigma entire
+No. of trees: 1
+Success: ovules (2)4–6 per loculus
+No. of trees: 3
+Fail:    Fruit orange, ovoid-3-gonous and acute when young, becoming 3-crested and eventually globose, 1·3–3 cm. in diam., smooth or with a few tubercles, 1–3-seeded
+No. of trees: 7
