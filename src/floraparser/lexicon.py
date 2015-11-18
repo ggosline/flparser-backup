@@ -75,7 +75,10 @@ def pickle_lexicon():
                                 'substance', 'life-form', 'plant', 'taxonomy', 'en', 'process'):
                     POS = 'N'
                     # semexpr = read_expr(semterm)
-                    morefeatures = {'group': False}
+                    if category == 'structure-infl':
+                        morefeatures = {'group': True}
+                    else:
+                        morefeatures = {'group': False}
                 elif category != '':
                     POS = 'A'
                     semexpr = read_expr(category.replace('-', '_') + '(' + semterm + ')')

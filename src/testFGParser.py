@@ -7,11 +7,12 @@ from floracorpus.reader import AbstractFloraCorpusReader , FloraCorpusReader
 from nltk.tree import Tree
 from nltk.parse import FeatureEarleyChartParser, FeatureIncrementalBottomUpLeftCornerChartParser, FeatureChartParser
 from nltk.parse import FeatureBottomUpChartParser, FeatureBottomUpLeftCornerChartParser, FeatureTopDownChartParser
-from floraparser.FGParser import FGParser, cleanparsetree, FindNode, PrintStruct, DumpStruct
+from floraparser.FGParser import FGParser, cleanparsetree, FindNode, PrintStruct, DumpStruct, DumpChar
+import csv
 
 trec = defaultdict(lambda: None)
 
-description = 'Flowers 1–5, axillary, in sessile or very shortly pedunculate fascicles, bisexual, 4–7(9) mm. in diam.'
+description = 'Stamens 3, with filaments slender'
 fromDB = True
 #fromDB = False
 parser = FeatureBottomUpLeftCornerChartParser
@@ -23,13 +24,17 @@ ttrace = 1
 draw = False
 #draw = True
 
+trec['genus'] = 'Test'
+trec['species'] = 'run'
 trec['description'] = description
+
 trdr = [trec]
 
 tfilebase = r'..\..\temp\tree'
 
 of = sys.stdout
 cf = open('characters.txt', 'w', encoding='utf-8')
+cfcsv = csv.DictWriter(cf, 'taxon subject subpart category value mod presence'.split())
 if __name__ == '__main__':
     if fromDB:
         ttrace = 0
@@ -45,7 +50,7 @@ if __name__ == '__main__':
         print('\rTAXON: ', taxon.family, taxon.genus, taxon.species)
         print('\rTAXON: ', taxon.family, taxon.genus, taxon.species, file=of)
         # print('-'*80,  '\rTAXON: ', taxon.family, taxon.genus, taxon.species, file=cf)
-
+        taxname = taxon.genus + ' ' + taxon.species
         for sent in taxon.sentences:
             for i, phrase in enumerate(sent.phrases):
                 print('\rPARSING: ', phrase.text)
@@ -58,7 +63,8 @@ if __name__ == '__main__':
                         # print('SUBJECT:', file=cf)
                         print('Text: ', sent.text[txtstart:txtend])
                         # print('Text: ', sent.text[txtstart:txtend], file=cf)
-                        print('SUBJECT\t', t[()].label()['H', 'orth'], file=cf)
+                        # print('SUBJECT\t', t[()].label()['H', 'orth'], file=cf)
+                        subject = t[()].label()['H', 'orth']
                     for t, txtstart, txtend in parser.listCHARs():
                         cleanparsetree(t)
                         # print(file=cf)
@@ -68,7 +74,7 @@ if __name__ == '__main__':
                         H = t[()].label()['H']
                         print(H.get('category'), H.get('orth'))
                         # PrintStruct(t[()].label()['H'], indent=1, file=cf)
-                        DumpStruct(t[()].label()['H'], indent=1, file=cf)
+                        DumpChar(taxname, subject, '', t[()].label()['H'], indent=1, file=cfcsv)
                         if draw: t.draw()
                         # print(t, file=of)
                 if trees:
@@ -95,4 +101,4 @@ if __name__ == '__main__':
                     if trees:
                         print(FindNode('SUBJECT', trees[0]))
     of.close()
-
+    cf.close()

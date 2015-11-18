@@ -49,7 +49,7 @@ ISA -> IS
 
 CHR[category=size] ->  SIZEB[+HD, H=?head]
 CHR[category=count] ->  COUNT[+HD, H=?head]
-CHR[category=group] -> P[orth='in'] NP[H=?head, +HD, +group]
+CHR[category=group, H=?h] -> P[orth='in'] NP[H=?head, +HD, +group]
 
 CHRL[category=?c, H=?h] ->  CHR[H=?h, category=?c]
 CHRL[category=(?c+?d), H=[AND=(?ha+?hb)]] ->  CHR[H=?ha, category=?c] AND CHRL[H=?hb, category=?d]
@@ -178,7 +178,7 @@ WITHP[category=(?c+?d), H=[+presence, having=[OR=(?h1+?h2)]]] -> WITH WITHC[cate
 
 OFP[category=?c, H=[prep=OF]] -> OF NP[category=?c, +HD, H=?head]
 
-PP[H=[prep=?prep, obj=?n]] -> P[orth=?prep, -position] NP[H=?n]
+PP[H=[prep=?prep, obj=?n]] -> P[orth=?prep, -position] NP[H=?n, -group]
 PP[H=[qual=?deg]] -> DEG[orth=?deg] PP[+HD, H=?head]
 
 P[orth=?p] -> A[category=fusion, orth=?p] TO

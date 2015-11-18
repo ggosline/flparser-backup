@@ -14,6 +14,7 @@ from floraparser.fltoken import FlToken
 from nltk import Tree
 from nltk.parse.earleychart import FeatureIncrementalChart, FeatureEarleyChartParser
 from nltk.parse import FeatureBottomUpChartParser, FeatureBottomUpLeftCornerChartParser, FeatureTopDownChartParser
+from floracorpus import recordtype
 
 class FGFeatureTreeEdge(FeatureTreeEdge):
 
@@ -600,4 +601,43 @@ def DumpStruct(struct, indent: int = 0, file=None):
             DumpStruct(listitem, indent+1, file=file)
     else:
         pass
+
+CharRec = recordtype.recordtype('CharRec', 'taxon subject subpart category value mod presence', default=None)
+def DumpChar(taxon, subject, subpart, struct, indent: int = 0, file=None):
+    crec = CharRec(taxon, subject)
+    if isinstance(struct,FeatDict):
+        category = struct.get('category')
+        crec.category = category
+        if struct.get('having') and struct.get('orth'):
+            crec.subpart = struct['orth']
+            if struct.get('clist'): crec.mod = struct['clist']
+            crec.presence = struct['presence']
+            file.writerow(crec._asdict())
+        else:
+            crec.mod = struct.get('mod')
+            if category == 'size':
+                crec.value = (struct.get('num'), struct.get('unit'), struct.get('dim'))
+            elif category == 'count':
+                crec.value = struct.get('val')
+            else:
+                crec.value =  struct.get('orth')
+            if crec.value:
+                file.writerow(crec._asdict())
+            elif struct.get('OR'):
+                for subc in struct.get('OR'):
+                    DumpChar(taxon, subject, subpart, subc, file=file)
+            elif struct.get('AND'):
+                for subc in struct.get('AND'):
+                    DumpChar(taxon, subject, subpart, subc, file=file)
+
+        pass
+    #     for (fname, fval) in struct._items():
+    #         print(fname.upper(), '\t', fval, file=file)
+    #         DumpStruct(fval, indent+1, file=file)
+    # elif isinstance(struct, tuple) or isinstance(struct, frozenset):
+    #     for listitem in struct:
+    #         DumpStruct(listitem, indent+1, file=file)
+    else:
+        pass
         # print ('\t'*indent, struct, file=file)
+
