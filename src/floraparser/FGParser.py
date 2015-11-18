@@ -69,14 +69,15 @@ def unify_heads(span, lhs, rhs):
     lhead = lhs.get('H', FeatStructNonterminal([]))
     try:
         newH = lhead.unify(rhead, trace=0)
+        if newH:
+            lhs['H'] = newH
+        else:
+            lhs['H'] = rhead
+            print('FAIL to unify heads', lhs, rhs)
+        lhs['span'] = span
     except:
         newH = {}
-    if newH:
-        lhs['H'] = newH
-    else:
-        lhs['H'] = rhead
-        print('FAIL to unify heads', lhs, rhs)
-    lhs['span'] = span
+
     # if not isinstance(rhead, FeatDict):
     #     lhs['H'] = rhead
     # else:

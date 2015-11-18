@@ -35,11 +35,13 @@ tfilebase = r'..\..\temp\tree'
 of = sys.stdout
 cf = open('characters.txt', 'w', encoding='utf-8')
 cfcsv = csv.DictWriter(cf, 'taxon subject subpart category value mod presence'.split())
+cfcsv.WriteHeader()
+
 if __name__ == '__main__':
     if fromDB:
         ttrace = 0
         ttaxa = FloraCorpusReader(db=r'..\resources\efloras.db3',
-                                  query="Select * from AllTaxa where flora_name = 'FZ' and genus = 'Salacia' and species = 'erecta' ;")
+                                  query="Select * from AllTaxa where flora_name = 'FZ' and genus = 'Salacia' ;")
         of = open('testphrases.txt', 'w', encoding='utf-8')
 
     else:
@@ -71,10 +73,13 @@ if __name__ == '__main__':
                         # print('CHARACTER:', file=cf)
                         print('Text: ', sent.text[txtstart:txtend])
                         # print('Text: ', sent.text[txtstart:txtend], file=cf)
-                        H = t[()].label()['H']
-                        print(H.get('category'), H.get('orth'))
-                        # PrintStruct(t[()].label()['H'], indent=1, file=cf)
-                        DumpChar(taxname, subject, '', t[()].label()['H'], indent=1, file=cfcsv)
+                        try:
+                            H = t[()].label()['H']
+                            print(H.get('category'), H.get('orth'))
+                            # PrintStruct(t[()].label()['H'], indent=1, file=cf)
+                            DumpChar(taxname, subject, '', t[()].label()['H'], indent=1, file=cfcsv)
+                        except:
+                            print('failure to get H')
                         if draw: t.draw()
                         # print(t, file=of)
                 if trees:
