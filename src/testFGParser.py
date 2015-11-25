@@ -33,7 +33,7 @@ trdr = [trec]
 tfilebase = r'..\..\temp\tree'
 
 of = sys.stdout
-cf = open('characters.txt', 'w', encoding='utf-8')
+cf = open('characters.csv', 'w', encoding='utf-8')
 cfcsv = csv.DictWriter(cf, 'taxon subject subpart category value mod presence'.split())
 cfcsv.WriteHeader()
 
