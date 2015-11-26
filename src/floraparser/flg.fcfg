@@ -88,7 +88,7 @@ NP[+group, category='structure-infl'] -> NP[category='structure-infl', H=?h, +HD
 BYX -> CONJ[conj='×'] | 'x'
 SIZE[category=size, H=[category=size, num=?num, unit=?unit, dim=?dim]]  -> NUM[orth=?num] UNIT[orth=?unit] DIMEN[dim=?dim]
 SIZE[category=size, H=[category=size, num=?num, unit=?unit, dim=long]]  -> NUM[orth=?num] UNIT[orth=?unit]
-SIZE[category=size, H=[category=size, length=?num1, width=?num2, unit=?unit]]  -> NUM[orth=?num1] BYX NUM[orth=?num2] UNIT[orth=?unit]
+SIZE[category=size, H=[AND=([category=size, num=?num1, dim=long, unit=?unit],[category=size, num=?num2, dim=wide, unit=?unit])]]  -> NUM[orth=?num1] BYX NUM[orth=?num2] UNIT[orth=?unit]
 
 SIZEB[category=size, H=[AND=(?h1+?h2)]] -> SIZE[H=?h1] AND SIZE[H=?h2]
 SIZEB[category=size, H=[AND=(?h1+?h2)]] -> SIZE[H=?h1] COMMA SIZE[H=?h2]

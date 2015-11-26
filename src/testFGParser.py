@@ -7,22 +7,22 @@ from floracorpus.reader import AbstractFloraCorpusReader , FloraCorpusReader
 from nltk.tree import Tree
 from nltk.parse import FeatureEarleyChartParser, FeatureIncrementalBottomUpLeftCornerChartParser, FeatureChartParser
 from nltk.parse import FeatureBottomUpChartParser, FeatureBottomUpLeftCornerChartParser, FeatureTopDownChartParser
-from floraparser.FGParser import FGParser, cleanparsetree, FindNode, PrintStruct, DumpStruct, DumpChar
+from floraparser.FGParser import FGParser, cleanparsetree, FindNode, PrintStruct, DumpStruct, DumpChars
 import csv
 
 trec = defaultdict(lambda: None)
 
-description = 'Stamens 3, with filaments slender'
+description = 'lamina bright green to olive-green, concolorous or rather paler green below, shining above or with both surfaces dull, (4·5)5·2–9·5(11) × (1·6)2–5·1(6·5) cm., elliptic or oblong-elliptic to obovate or oblanceolate, acute to obtuse or rounded and shortly apiculate at the apex, with margin entire or ± deeply curved-dentate, cuneate or decurrent at the base, papyraceous to coriaceous, with (6)7–8(9) lateral nerves and densely reticulate venation more prominent below than above'
 fromDB = True
-#fromDB = False
+fromDB = False
 parser = FeatureBottomUpLeftCornerChartParser
 #parser = FeatureEarleyChartParser
 #parser = FeatureTopDownChartParser
 cleantree = False
 cleantree = True
-ttrace = 1
+ttrace = 0
 draw = False
-#draw = True
+draw = True
 
 trec['genus'] = 'Test'
 trec['species'] = 'run'
@@ -34,14 +34,14 @@ tfilebase = r'..\..\temp\tree'
 
 of = sys.stdout
 cf = open('characters.csv', 'w', encoding='utf-8')
-cfcsv = csv.DictWriter(cf, 'taxon subject subpart category value mod presence'.split())
-cfcsv.WriteHeader()
+cfcsv = csv.DictWriter(cf, 'taxon subject subpart category value mod posit phase presence'.split())
+cfcsv.writeheader()
 
 if __name__ == '__main__':
     if fromDB:
         ttrace = 0
         ttaxa = FloraCorpusReader(db=r'..\resources\efloras.db3',
-                                  query="Select * from AllTaxa where flora_name = 'FZ' and genus = 'Salacia' ;")
+                                  query="Select * from AllTaxa where flora_name = 'FZ' and genus = 'Salacia' and species = 'bussei' ;")
         of = open('testphrases.txt', 'w', encoding='utf-8')
 
     else:
@@ -61,29 +61,22 @@ if __name__ == '__main__':
                 if True:
                     for t, txtstart, txtend in parser.listSUBJ():
                         cleanparsetree(t)
-                        # print(file=cf)
-                        # print('SUBJECT:', file=cf)
                         print('Text: ', sent.text[txtstart:txtend])
-                        # print('Text: ', sent.text[txtstart:txtend], file=cf)
-                        # print('SUBJECT\t', t[()].label()['H', 'orth'], file=cf)
                         subject = t[()].label()['H', 'orth']
                     for t, txtstart, txtend in parser.listCHARs():
                         cleanparsetree(t)
-                        # print(file=cf)
-                        # print('CHARACTER:', file=cf)
                         print('Text: ', sent.text[txtstart:txtend])
-                        # print('Text: ', sent.text[txtstart:txtend], file=cf)
+                        if draw:
+                            t.draw()
                         try:
                             H = t[()].label()['H']
                             print(H.get('category'), H.get('orth'))
-                            # PrintStruct(t[()].label()['H'], indent=1, file=cf)
-                            DumpChar(taxname, subject, '', t[()].label()['H'], indent=1, file=cfcsv)
                         except:
                             print('failure to get H')
-                        if draw: t.draw()
-                        # print(t, file=of)
+                        DumpChars(taxname, subject, '', t[()].label()['H'], indent=1, file=cfcsv)
+
                 if trees:
-                    print('Success: ' + phrase.text, file=of)
+                    print('Success: \n ' + phrase.text, file=of)
                     print('No. of trees: %d' % len(trees), file=of)
                     if ttrace:
                         for i, treex in enumerate(trees):
@@ -96,7 +89,7 @@ if __name__ == '__main__':
                                 tfile.close
                     # print(FindNode('SUBJECT', trees[0]))
                 else:
-                    print('Fail:    ' + phrase.text, file=of)
+                    print('Fail:\n ' + phrase.text, file=of)
                     trees = parser.partialparses()
                     print('No. of trees: %d' % len(trees), file=of)
                     if ttrace and draw:

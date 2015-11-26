@@ -603,19 +603,27 @@ def DumpStruct(struct, indent: int = 0, file=None):
     else:
         pass
 
-CharRec = recordtype.recordtype('CharRec', 'taxon subject subpart category value mod presence', default=None)
-def DumpChar(taxon, subject, subpart, struct, indent: int = 0, file=None):
+CharRec = recordtype.recordtype('CharRec', 'taxon subject subpart category value mod posit phase presence', default=None)
+
+def DumpChars(taxon, subject, subpart, struct, indent: int = 0, file=None):
     crec = CharRec(taxon, subject)
+    DumpChar(crec, struct, indent, file)
+
+def DumpChar(crec, struct, indent: int = 0, file=None):
     if isinstance(struct,FeatDict):
         category = struct.get('category')
-        crec.category = category
+        if category: crec.category = category
+        if struct.get('posit'): crec.posit = struct.get('posit')
+        if struct.get('phase'): crec.phase = struct.get('phase')
         if struct.get('having') and struct.get('orth'):
             crec.subpart = struct['orth']
             if struct.get('clist'): crec.mod = struct['clist']
             crec.presence = struct['presence']
             file.writerow(crec._asdict())
+            return
         else:
-            crec.mod = struct.get('mod')
+            if struct.get('mod'):
+                crec.mod = struct.get('mod')
             if category == 'size':
                 crec.value = (struct.get('num'), struct.get('unit'), struct.get('dim'))
             elif category == 'count':
@@ -624,12 +632,18 @@ def DumpChar(taxon, subject, subpart, struct, indent: int = 0, file=None):
                 crec.value =  struct.get('orth')
             if crec.value:
                 file.writerow(crec._asdict())
-            elif struct.get('OR'):
+                return
+            if struct.get('OR'):
                 for subc in struct.get('OR'):
-                    DumpChar(taxon, subject, subpart, subc, file=file)
+                    DumpChar(crec, subc, file=file)
             elif struct.get('AND'):
                 for subc in struct.get('AND'):
-                    DumpChar(taxon, subject, subpart, subc, file=file)
+                    DumpChar(crec, subc, file=file)
+            elif struct.get('TO'):
+                tolist = [str(subc.get('orth')) for subc in struct.get('TO')]
+                crec.value = ' TO '.join(tolist)
+                file.writerow(crec._asdict())
+
 
         pass
     #     for (fname, fval) in struct._items():

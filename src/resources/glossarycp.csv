@@ -703,7 +703,7 @@ ID,term,category,appliesTo,definition,category2,dataSource
 743,declined,orientation,,Directed downward or backward.,orientation,
 744,decompound,architecture,,Comprising two or more orders of equivalent substructural entities; multiply compound.,architecture,
 745,decumbent,habit,axis,"Reclining upon the substrate proximally, ascending to erect distally.",orientation,
-746,decurrent,shape,laminar structure,"Having the lamina prolonged and adherent to the supporting axis beneath the point of vascular insertion, the prolonged portion termed a sterigma.",shape,
+746,decurrent,shape-base,laminar structure,"Having the lamina prolonged and adherent to the supporting axis beneath the point of vascular insertion, the prolonged portion termed a sterigma.",shape,
 747,decurved,orientation,,Curving abaxially.  See also incurved.,orientation,
 748,decussate,arrangement,,"Opposite with successive pairs radially oriented at right angles to one another, thus polystichous with four equidistant ranks.",arrangement,
 749,deflexed,orientation,,"Abruptly bent outward (abaxially), downward, or backward at some point along its length.",orientation,
