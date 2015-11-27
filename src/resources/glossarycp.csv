@@ -2462,6 +2462,7 @@ ID,term,category,appliesTo,definition,category2,dataSource
 2555,subapical,position,,Lateral and just below the apex.,position,
 2556,subcircular,shape,,"Compressed circular or very broadly elliptic, only slightly longer than wide.",shape,
 2557,subequal,size,equivalent structures,"Nearly uniform in extent.  See also equal, unequal.",size,
+2557,sub-equal,size,equivalent structures,"Nearly uniform in extent.  See also equal, unequal.",size,
 2558,suberous,texture,,"Firm, relatively light, discontinuous but strongly cohesive, and resilient.",texture,
 2559,subglobose,shape,,"Broadly ellipsoid with a length:width ratio closely approaching 1:1; almost globose, slightly longer than broad.",shape,
 2560,subinferior,position,ovary,"Having its proximal portion enclosed by a floral tube casing, the more distal portions of the perianth and/or androecium thus arising between its base and apex.",position,

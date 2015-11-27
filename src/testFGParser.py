@@ -12,17 +12,17 @@ import csv
 
 trec = defaultdict(lambda: None)
 
-description = 'lamina bright green to olive-green, with (6)7–8(9) lateral nerves and densely reticulate venation'# more prominent below than above'
+description = 'lamina bright green to olive-green, concolorous or rather paler green below, shining above , (4·5)5·2–9·5(11) × (1·6)2–5·1(6·5) cm., elliptic or oblong-elliptic to obovate or oblanceolate, acute to obtuse or rounded and shortly apiculate at the apex, margin entire or ± deeply curved-dentate, cuneate or decurrent at the base, papyraceous to coriaceous, with (6)7–8(9) lateral nerves and densely reticulate venation'# more prominent below than above'
 fromDB = True
-#fromDB = False
+fromDB = False
 parser = FeatureBottomUpLeftCornerChartParser
 #parser = FeatureEarleyChartParser
 #parser = FeatureTopDownChartParser
 cleantree = False
 cleantree = True
-ttrace = 1
+ttrace = 0
 draw = False
-#draw = True
+draw = True
 
 trec['genus'] = 'Test'
 trec['species'] = 'run'
@@ -39,7 +39,7 @@ cfcsv.writeheader()
 
 if __name__ == '__main__':
     if fromDB:
-        ttrace = 0
+        ttrace = 1
         ttaxa = FloraCorpusReader(db=r'..\resources\efloras.db3',
                                   query="Select * from AllTaxa where flora_name = 'FZ' and genus = 'Salacia' and species = 'bussei' ;")
         of = open('testphrases.txt', 'w', encoding='utf-8')
@@ -57,7 +57,11 @@ if __name__ == '__main__':
             for i, phrase in enumerate(sent.phrases):
                 print('\rPARSING: ', phrase.text)
                 # print('\rPARSING: ', phrase.text, file=cf)
-                trees = parser.parse(phrase.tokens, cleantree=cleantree, maxtrees=100)
+                try:
+                    trees = parser.parse(phrase.tokens, cleantree=cleantree, maxtrees=100)
+                except:
+                    print('Parser failure!')
+                    continue
                 if True:
                     for t, txtstart, txtend in parser.listSUBJ():
                         cleanparsetree(t)
@@ -73,7 +77,9 @@ if __name__ == '__main__':
                             print(H.get('category'), H.get('orth'))
                         except:
                             print('failure to get H')
-                        DumpChars(taxname, subject, '', t[()].label()['H'], indent=1, file=cfcsv)
+                            H = None
+                        if H:
+                            DumpChars(taxname, subject, '', t[()].label()['H'], indent=1, file=cfcsv)
 
                 if trees:
                     print('Success: \n ' + phrase.text, file=of)
@@ -92,10 +98,10 @@ if __name__ == '__main__':
                     print('Fail:\n ' + phrase.text, file=of)
                     trees = parser.partialparses()
                     print('No. of trees: %d' % len(trees), file=of)
-                    if ttrace and draw:
-                        for treex in trees[0:40]:
-                            cleanparsetree(treex)
-                            treex.draw()
+                    # if ttrace and draw:
+                    #     for treex in trees[0:40]:
+                    #         cleanparsetree(treex)
+                    #         treex.draw()
                     if trees:
                         print(FindNode('SUBJECT', trees[0]))
     of.close()

@@ -1,6 +1,6 @@
 __author__ = 'gg12kg'
 
-from nltk.parse.featurechart import FeatureSingleEdgeFundamentalRule, FeatureTreeEdge, FeatureChart,\
+from nltk.parse.featurechart import FeatureSingleEdgeFundamentalRule, FeatureTreeEdge, FeatureChart, \
     BU_LC_FEATURE_STRATEGY, FeatureBottomUpPredictCombineRule, FeatureEmptyPredictRule, FeatureChartParser
 
 from nltk.grammar import FeatureGrammar, FeatStructNonterminal, FeatStructReader,\
@@ -9,8 +9,9 @@ from nltk.grammar import FeatureGrammar, FeatStructNonterminal, FeatStructReader
 from nltk.sem import Variable
 from nltk.parse.chart import TreeEdge, FundamentalRule, SingleEdgeFundamentalRule, LeafInitRule, EdgeI
 from nltk.grammar import FeatureValueType, is_nonterminal
-from nltk.featstruct import FeatStruct, Feature, FeatList, FeatDict, unify
+from nltk.featstruct import FeatStruct, Feature, FeatList, FeatDict, unify, FeatureValueTuple
 from floraparser.fltoken import FlToken
+from floraparser.lexicon import lexicon
 from nltk import Tree
 from nltk.parse.earleychart import FeatureIncrementalChart, FeatureEarleyChartParser
 from nltk.parse import FeatureBottomUpChartParser, FeatureBottomUpLeftCornerChartParser, FeatureTopDownChartParser
@@ -304,6 +305,7 @@ class FGGrammar(FeatureGrammar):
 
 # FeatureBottomUpLeftCornerChartParser.__init__ = patch__init__
 
+
 class FGParser():
 
     def __init__(self, grammarfile='flg.fcfg', trace=1, parser=FeatureEarleyChartParser):
@@ -321,6 +323,9 @@ class FGParser():
         '''
         # check for tokens added by the POS processor -- e.g. ADV
         newprod = False
+        # Add a comma and a terminal token to beginning and end of phrase
+        tokens = [FGTerminal('¢', 'EOP', 0)] + tokens + [COMMA] + [FGTerminal('$', 'EOP', tokens[-1].slice.stop)]
+
         for fltoken in tokens:
             if not self._grammar._lexical_index.get(fltoken.lexword):
                 newprod = True
@@ -330,9 +335,6 @@ class FGParser():
                     self._grammar._productions.append(newprod)
         if newprod:
             self._grammar.__init__(self._grammar._start, self._grammar._productions)
-
-        # Add a terminal token to beginning and end of pharase
-        tokens = [FGTerminal('¢', 0)] + tokens + [FGTerminal('$', tokens[-1].slice.stop)]
 
         self._chart = self._parser.chart_parse([tk for tk in tokens if tk.POS != 'NULL'])
         # self._chart = self._parser.chart_parse([FGLeaf(tk) for tk in tokens if tk.POS != 'NULL'])
@@ -463,7 +465,7 @@ class FGParser():
 
 
 class FGTerminal(FlToken):
-    def __init__(self, char, position):
+    def __init__(self, char, type, position):
         self.lexword = char
         self.POS = 'EOP'
         self.slice = slice(position, position)
@@ -473,8 +475,10 @@ class FGTerminal(FlToken):
         return self.lexword
 
     def __repr__(self):
-        return 'EOPHRASE'
+        return self.text
 
+COMMA = FGTerminal(',', 'COMMA', -1)
+COMMA.lexentry = lexicon[(',',)]
 
 def cleanparsetree(tree):
     purgenodes(tree, ['CTERMINATOR'])
@@ -633,7 +637,7 @@ def DumpChar(crec, struct, indent: int = 0, file=None):
         else:
             if struct.get('mod'):
                 crec.mod = struct.get('mod')
-            if category == 'size':
+            if category == 'dimension':
                 crec.value = (struct.get('num'), struct.get('unit'), struct.get('dim'))
             elif category == 'count':
                 crec.value = struct.get('val')
@@ -661,7 +665,8 @@ def DumpChar(crec, struct, indent: int = 0, file=None):
     # elif isinstance(struct, tuple) or isinstance(struct, frozenset):
     #     for listitem in struct:
     #         DumpStruct(listitem, indent+1, file=file)
-    else:
-        pass
-        # print ('\t'*indent, struct, file=file)
+    elif isinstance(struct, FeatureValueTuple):
+        for subc in struct:
+            DumpChar(crec, subc, file=file)
+
 
