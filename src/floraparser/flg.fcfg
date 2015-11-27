@@ -58,7 +58,7 @@ NL[category=(?c+?d), H=[orth=(?o+?ol)]] -> N[category=?d, orth = ?o] NL[category
 NL[category=?c, orth=?o, H=[orth=?o, category=?c], group=?g] -> N[category=?c, orth=?o, group=?g]
 
 NBAR[category=?c, H=[mod=?m]] -> APL[H=?m] NL[category=?c, +HD, H=?head]
-#NBAR[category=?c, H=[count=?count]] -> COUNT[H=[val=?count]] NBAR[category=?c, +HD, H=?head]
+#NBAR[category=?c, H=[mod=?count]] -> COUNT[H=?count] NBAR[category=?c, +HD, H=?head]
 NBAR[category=?c] -> NL[category=?c, +HD, H=?head]
 NBAR[category=?c] -> NBAR[category=?c, +HD, H=?head] OFP
 NBAR[category=?c, H=[mod=?prep]] -> NBAR[category=?c, +HD, H=?head] PP[H=?prep]
@@ -115,9 +115,10 @@ ADVB[+comp, category=adv, orth=?o] -> A[+makecomp] ADV[orth=?o]
 
 MOD[H=[mod=?adv]] -> ADVB[H=?adv]
 MOD[H=[deg=?adv]] ->  DEG[orth=?adv]
-MOD[H=[count=?adv]] ->  COUNT[H=?adv]
-#[*type*=?t, H=(?ma+?mb), +and] -> [*type*=?t, H=?ma, +and] [*type*=?t, H=?mb]
-#[*type*=?t, H=?ma, +and] -> [*type*=?t, H=?ma]
+#MOD[H=[count=?adv]] -> COUNT[H=?adv]
+AP[H=?count] -> COUNT[H=?count]
+
+
 MODL[H=[AND=(?ma+?mb)]] -> MODL[H=?ma] MOD[H=?mb]
 MODL[H=?ma] -> MOD[H=?ma]
 

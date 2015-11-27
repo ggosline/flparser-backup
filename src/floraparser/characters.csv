@@ -1,40 +1,148 @@
 taxon,subject,subpart,category,value,mod,posit,phase,presence
-Test run,lamina,,subject,lamina,,,,
-Test run,lamina,,coloration,"(bright, green) TO olive-green",,[ posit = 'below' ],,
-Test run,lamina,,coloration,concolorous,,[ posit = 'below' ],,
-Test run,lamina,,coloration,"(paler, green)",[ deg = 'rather' ],[ posit = 'below' ],,
-Test run,lamina,both_surfaces,partof,,"[ category = 'reflectance' ]
-[ orth     = 'dull'        ]",,,True
-Test run,lamina,,size,"('(4·5)5·2–9·5(11)', 'cm.', 'long')",,,,
-Test run,lamina,,size,"('(1·6)2–5·1(6·5)', 'cm.', 'wide')",,,,
-Test run,lamina,,shape,elliptic,,,,
-Test run,lamina,,shape,oblong-elliptic TO obovate,,,,
-Test run,lamina,,shape,oblanceolate,,,,
-Test run,lamina,,shape-base,acute TO obtuse,,"[ obj   = [ category = 'partof' ] ]
+Salacia bussei,plant,,subject,plant,,,,
+Salacia bussei,plant,,life-form,shrub,,,,
+Salacia bussei,plant,,architecture,branched,[ deg = 'much' ],,,
+Salacia bussei,plant,shoot,architecture,"[ category = 'structure'                                                                                                                                                                                                     ]
+[                                                                                                                                                                                                                            ]
+[ mod      = [ AND = ([ category = 'texture' ]
+[ orth     = 'woody'   ], [ category = 'habit'       ]
+[                          ]
+[ mod      = [ deg = '±' ] ]
+[                          ]
+[ orth     = 'creeping'    ]) ] ]
+[                                                                                                                                                                                                                            ]
+[ orth     = 'rootstock'                                                                                                                                                                                                     ]",,,,True
+Salacia bussei,plant,,architecture,"[ category = 'grouping' ]
+[ orth     = 'colonies' ]",[ deg = 'sometimes' ],,,
+Salacia bussei,plant,,substance,latex,,,,
+Salacia bussei,plant,,pubescence,glabrous,,,,
+Salacia bussei,stem,,subject,stem,,,,
+Salacia bussei,stem,,shape,subterete,,,,
+Salacia bussei,stem,,shape,flattened,[ deg = '±' ],,,
+Salacia bussei,stem,,relief,smooth,[ deg = 'almost' ],,,
+Salacia bussei,stem,,relief,striate,[ deg = 'almost' ],,,
+Salacia bussei,stem,,coloration,striate,,,,
+Salacia bussei,stem,,coloration,green,,,,
+Salacia bussei,stem,,coloration,purple-brown,,,,
+Salacia bussei,leaves,,subject,leaves,,,,
+Salacia bussei,leaves,,arrangement,subopposite,,,,
+Salacia bussei,leaves,,arrangement,opposite,,,,
+Salacia bussei,leaves,,architecture,petiolate,,,,
+Salacia bussei,lamina,,subject,lamina,,,,
+Salacia bussei,lamina,,coloration,"(bright, green) TO olive-green",,[ posit = 'below' ],,
+Salacia bussei,lamina,,coloration,concolorous,,[ posit = 'below' ],,
+Salacia bussei,lamina,,coloration,"(paler, green)",[ deg = 'rather' ],[ posit = 'below' ],,
+Salacia bussei,lamina,both_surfaces,reflectance,dull,,,,True
+Salacia bussei,lamina,,size,"('(4·5)5·2–9·5(11)', 'cm.', 'long')",,,,
+Salacia bussei,lamina,,size,"('(1·6)2–5·1(6·5)', 'cm.', 'wide')",,,,
+Salacia bussei,lamina,,shape,elliptic,,,,
+Salacia bussei,lamina,,shape,oblong-elliptic TO obovate,,,,
+Salacia bussei,lamina,,shape,oblanceolate,,,,
+Salacia bussei,lamina,,shape-base,acute TO obtuse,,"[ obj   = [ category = 'partof' ] ]
 [         [ orth     = 'apex'   ] ]
 [                                 ]
 [ posit = 'at'                    ]",,
-Test run,lamina,,shape-base,rounded,,"[ obj   = [ category = 'partof' ] ]
+Salacia bussei,lamina,,shape-base,rounded,,"[ obj   = [ category = 'partof' ] ]
 [         [ orth     = 'apex'   ] ]
 [                                 ]
 [ posit = 'at'                    ]",,
-Test run,lamina,,shape-apex,apiculate,[ mod = [ orth = 'shortly' ] ],"[ obj   = [ category = 'partof' ] ]
+Salacia bussei,lamina,,shape-apex,apiculate,[ mod = [ orth = 'shortly' ] ],"[ obj   = [ category = 'partof' ] ]
 [         [ orth     = 'apex'   ] ]
 [                                 ]
 [ posit = 'at'                    ]",,
-Test run,lamina,margin,partof,,"[ OR       = ([ category = 'shape-margin' ]
-[ orth     = 'entire'       ], [ category = 'shape-margin'                                           ]
-[                                                                     ]
-[ mod      = [ AND = ([ deg = '±' ], [ mod = [ orth = 'deeply' ] ]) ] ]
-[                                                                     ]
-[ orth     = 'curved-dentate'                                         ]) ]
-[ category = 'shape-margin'                                                                                                                                                                                                                                                                                                                                                                                                                         ]",,,True
-Test run,lamina,,shape-base,cuneate,,"[ obj   = [ category = 'partof' ] ]
+Salacia bussei,lamina,margin,shape-margin,entire,,,,True
+Salacia bussei,lamina,margin,shape-margin,curved-dentate,"[ AND = ([ deg = '±' ], [ mod = [ orth = 'deeply' ] ]) ]",,,True
+Salacia bussei,lamina,,shape-base,cuneate,,"[ obj   = [ category = 'partof' ] ]
 [         [ orth     = 'base'   ] ]
 [                                 ]
 [ posit = 'at'                    ]",,
-Test run,lamina,,shape-base,decurrent,,"[ obj   = [ category = 'partof' ] ]
+Salacia bussei,lamina,,shape-base,decurrent,,"[ obj   = [ category = 'partof' ] ]
 [         [ orth     = 'base'   ] ]
 [                                 ]
 [ posit = 'at'                    ]",,
-Test run,lamina,,texture,papyraceous TO coriaceous,,,,
+Salacia bussei,lamina,,texture,papyraceous TO coriaceous,,,,
+Salacia bussei,petiole,,subject,petiole,,,,
+Salacia bussei,petiole,,size,"('1–4', 'mm.', 'long')",,,,
+Salacia bussei,petiole,margin,partof,,,,,True
+Salacia bussei,stipule,,subject,stipule,,,,
+Salacia bussei,stipule,,presence,absent,,,,
+Salacia bussei,flower,,subject,flower,,,,
+Salacia bussei,flower,,count,3–15,,,,
+Salacia bussei,flower,,reproduction,bisexual,,,,
+Salacia bussei,flower,,size,"('12–15', 'mm.', 'diam.')",,,,
+Salacia bussei,bud,,subject,bud,,,,
+Salacia bussei,bud,,size,"('3–4', 'mm.', 'long')",,,,
+Salacia bussei,bud,,shape,ovoid-conic,,,,
+Salacia bussei,peduncle,,subject,peduncle,,,,
+Salacia bussei,peduncle,,size,"('1–9(15)', 'mm.', 'long')",,,,
+Salacia bussei,pedicel,,subject,pedicel,,,,
+Salacia bussei,pedicel,,size,"('5–30', 'mm.', 'long')",,,,
+Salacia bussei,pedicel,,position,lower,,,,
+Salacia bussei,pedicel,,count,1/2,,,,
+Salacia bussei,bract,,subject,bract,,,,
+Salacia bussei,bract,,size,"('0·5–1·5', 'mm.', 'long')",,,,
+Salacia bussei,bract,,shape,oblong TO triangular,,,,
+Salacia bussei,bract,,texture,scarious,,,,
+Salacia bussei,bract,,shape-margin,denticulate,,,,
+Salacia bussei,bract,,duration,persistent,,,,
+Salacia bussei,sepal,,subject,sepal,,,,
+Salacia bussei,sepal,margin,partof,,,,,True
+Salacia bussei,sepal,,size,"('1–1·5', 'mm.', 'long')",,,,
+Salacia bussei,sepal,,camparison,equal,,,,
+Salacia bussei,sepal,,shape,ovate TO oblong,,,,
+Salacia bussei,sepal,,shape,semicircular,,,,
+Salacia bussei,sepal,,shape,rounded,,,,
+Salacia bussei,sepal,,fusion,free,,,,
+Salacia bussei,petal,,subject,petal,,,,
+Salacia bussei,petal,,coloration,"(pale, green) TO yellowish",,,,
+Salacia bussei,petal,,size,"('4–7', 'mm.', 'long')",,,,
+Salacia bussei,petal,,shape,oblong TO triangular,,,,
+Salacia bussei,petal,,shape,rounded,,,,
+Salacia bussei,petal,,shape-margin,entire,,"[ obj   = [ category = 'partof' ] ]
+[         [ orth     = 'base'   ] ]
+[                                 ]
+[ posit = 'at'                    ]",,
+Salacia bussei,disk,,subject,disk,,,,
+Salacia bussei,disk,,coloration,pale,,,,
+Salacia bussei,disk,,coloration,yellowish,,,,
+Salacia bussei,disk,,coloration,green,,,,
+Salacia bussei,disk,,shape,cylindric,[ mod = [ orth = 'shortly' ] ],,,
+Salacia bussei,disk,margin,size,"(None, None, None)",,,,True
+Salacia bussei,disk,margin,shape,flat,,,,True
+Salacia bussei,disk,margin,shape,concave,,,,True
+Salacia bussei,disk,,count,5,,,,
+Salacia bussei,disk,,shape,-lobed,,,,
+Salacia bussei,stamen,,subject,stamen,,,,
+Salacia bussei,stamen,,count,3,,,,
+Salacia bussei,stamen,filament,size,"('3', 'mm.', 'long')",,,,True
+Salacia bussei,stamen,,size,"(None, None, None)",,,,
+Salacia bussei,stamen,,shape,flattened,[ deg = '±' ],,,
+Salacia bussei,anther,,subject,anther,,,,
+Salacia bussei,anther,,coloration,pale TO orange-yellow,,,,
+Salacia bussei,anther,,architecture,confluent,[ deg = 'not' ],"[ obj   = [ category = 'partof' ] ]
+[         [ orth     = 'apex'   ] ]
+[                                 ]
+[ posit = 'at'                    ]",,
+Salacia bussei,ovary,,subject,ovary,,,,
+Salacia bussei,ovary,,count,3,,,,
+Salacia bussei,ovary,,shape,-lobed,,,,
+Salacia bussei,ovary,style,size,"(None, None, None)",,,,True
+Salacia bussei,ovary,,shape,elongated,,,,
+Salacia bussei,stigma,,subject,stigma,,,,
+Salacia bussei,stigma,,count,3,,,,
+Salacia bussei,stigma,,shape,-lobed,,,,
+Salacia bussei,ovule,,subject,ovule,,,,
+Salacia bussei,ovule,,count,2,,,,
+Salacia bussei,ovule,,architecture,"[ category = 'structure' ]
+[ orth     = 'loculus'   ]",,,,
+Salacia bussei,fruit,,subject,fruit,,,,
+Salacia bussei,fruit,,coloration,orange,,,,
+Salacia bussei,fruit,,size,"('3·5–4', 'cm.', 'long')",,,,
+Salacia bussei,fruit,,size,"('1·8–3·2', 'cm.', 'wide')",,,,
+Salacia bussei,fruit,,shape,subglobose TO pyriform,,,,
+Salacia bussei,fruit,,shape,irregular,,,,
+Salacia bussei,fruit,,shape-apex,apiculate,,,,
+Salacia bussei,fruit,,shape,ridged,[ deg = 'sometimes' ],,,
+Salacia bussei,fruit,,relief,smooth,,,,
+Salacia bussei,fruit,,count,1–3,,,,
+Salacia bussei,fruit,,architecture,-seeded,,,,

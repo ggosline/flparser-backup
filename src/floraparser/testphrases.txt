@@ -44,12 +44,12 @@ No. of trees: 5
 Success: 
  Stamens 3, with filaments up to 3 mm. long, slender, ± flattened
 No. of trees: 1
-Success: 
+Fail:
  anthers pale to orange-yellow, dehiscing by 2 oblique or almost vertical clefts not confluent at the apex
-No. of trees: 4
-Success: 
+No. of trees: 3
+Fail:
  Ovary ovoid-3-gonous or 3-lobed, with style narrow, elongated
-No. of trees: 1
+No. of trees: 4
 Success: 
  stigma 3-lobed
 No. of trees: 2
