@@ -105,11 +105,16 @@ def pickle_lexicon():
     PRONOUN = 'it|one|ones|form|forms|part|parts'.split('|')
     addlexicon(PRONOUN, 'PRO')
 
-    PREP_POSITION = 'among|amongst|around|at|below|beneath|between|beyond|by|' \
-                  'from|in|inside|into|near|on|onto|out_of|outside|over|through|throughout|toward|' \
+    PREP_POSITION = 'among|amongst|around|at|between|beyond|by|' \
+                  'from|in|into|near|on|onto|out_of|over|through|throughout|toward|' \
                   'towards|up|'.split('|')
     for word in PREP_POSITION:
-        addlexentry(word, 'P', prep=word, position=True) #, sem=read_expr(r'\x.' + word + '(x)'))
+        addlexentry(word, 'P', prep=word, position=True, adjectival=False) #, sem=read_expr(r'\x.' + word + '(x)'))
+    POSITIONP = 'near|outside|inside|above|below|beneath|outside|inside|between|' \
+                    'before|after|behind|across|along|around|from|within|without'.split('|')
+    for word in POSITIONP:
+        addlexentry(word, 'P', prep=word, position=True, adjectival=True)
+        #addlexentry(word, 'P', prep=word, position=True, sem=read_expr(r'\x.' + word + '(x)'))
 
     PREPOSITION = 'as|during|for|from|in|off|on|onto|out|over|per|through|throughout|' \
               'towards|up|upward|when|owing_to|due_to|according_to|on_account_of|' \
@@ -120,15 +125,11 @@ def pickle_lexicon():
     addlexentry('with', 'WITH', position=False, presence=True)
     addlexentry('without', 'WITH', position=False, presence=False)
 
-    POSITIONP = 'on|at|in|near|outside|inside|above|below|beneath|outside|inside|between|' \
-                'before|after|behind|across|along|around|from|within'.split('|')
-    for word in POSITIONP:
-        addlexentry(word, 'P', prep=word, position=True)
-        #addlexentry(word, 'P', prep=word, position=True, sem=read_expr(r'\x.' + word + '(x)'))
+
     GROUPS = "group|groups|clusters|cluster|arrays|array|series|" \
              "pairs|pair|row|rows|number|numbers|colonies".split('|')
     addlexicon(GROUPS, 'N', group=True, category='grouping')
-    LITNUMBERS = "zero|one|ones|two|half|three|thirds|four|fourths|quarter|" \
+    LITNUMBERS = "zero|one|two|half|three|thirds|four|fourths|quarter|" \
                  "five|fifths|six|sixths|seven|sevenths|eight|eighths|" \
                  "nine|ninths|tenths|1/2|1/3|2/3|1/4|1/5|2/5".split('|')
     addlexicon(LITNUMBERS, 'NUM', literal=True)

@@ -17,7 +17,7 @@ CHARLIST[] -> CHAR[+HD, H=?head]
 # CHARLIST[H=(?h1+?h2)] -> CHRL[H=?h1] WITHP[H=?h2] CTERMINATOR
 
 CHAR[] -> CHRL[+HD, H=?head] CTERMINATOR
-CHAR[H=[+withph]] -> WITHP[+HD, H=?head]
+
 #CHAR[category=presence] -> OR ABAR[category=presence, +HD, H=?head]
 #CHAR[category=presence] -> ABAR[category=presence, +HD, H=?head] OR
 
@@ -39,7 +39,8 @@ CHR[category=clist, H=[posit=?p]] ->  POSITION[H=?p] CHRL[+HD, H=?head]
 
 CHR[category=?c] ->  APL[category=?c, +HD, H=?head]
 CHR[category=?c] ->  AP[category=?c, +HD, H=?head]
-CHAR[category=?c] ->  WITHP[category=?c, +HD, H=?head]
+CHR[category=?c] ->  WITHP[category=?c, +HD, H=?head]
+CHR[category=?c] ->  COMPARISON[category=?c, +HD, H=?head]
 
 CHR[+anaph, category=?c] -> ANAPH[category=?c] CHARLIST[+HD, H=?head]
 
@@ -53,6 +54,7 @@ CHR[category=group, H=?h] -> P[orth='in'] NP[H=?head, +HD, +group]
 
 CHRL[category=?c, H=?h] ->  CHR[H=?h, category=?c]
 CHRL[category=(?c+?d), H=[AND=(?ha+?hb)]] ->  CHR[H=?ha, category=?c] AND CHRL[H=?hb, category=?d]
+#CHRL[category=(?c), H=[OR=(?ha+?hb)]] ->  CHR[H=?ha, category=?c] OR CHRL[H=?hb, category=?c]
 
 NL[category=(?c+?d), H=[orth=(?o+?ol)]] -> N[category=?d, orth = ?o] NL[category=?c, orth=?ol, +HD, H=?head]
 NL[category=?c, orth=?o, H=[orth=?o, category=?c], group=?g] -> N[category=?c, orth=?o, group=?g]
@@ -160,7 +162,7 @@ AP[category=?c, H=[mod=?mod]] -> MODL[H=?mod] ABARL[category=?c, +HD, H=?head]
 AP[category=(?c+?d), H=[AND=(?ha+?hb)]] -> AP[category=?c, H=?ha] AND AP[category=?d, H=?hb]
 AP[category=(?c+?d), H=[AND=(?ha+?hb)]] -> AP[category=?c, H=?ha]  AP[category=?d, H=?hb]
 
-WITHC[category=?c, H=[clist=?clist]] ->  NP[category=?c, H=?h, +HD] CHARLIST[H=?clist]
+WITHC[category=?c, H=[clist=?clist]] ->  NP[category=?c, H=?h, +HD] CHRL[H=?clist]
 WITHC[category=?c, H=[]] ->  NP[category=?c, H=?h, +HD]
 
 WITHP[category=?c, H=[presence=?p, having = ?p ]] -> WITH[presence=?p] WITHC[category=?c, +HD, H=?h]
@@ -176,6 +178,8 @@ WITHP[category=?c, H=[presence=?p, having = ?p ]] -> WITH[presence=?p] WITHC[cat
 
 WITHP[category=(?c+?d), H=[+presence, having=[AND=(?h1+?h2)]]] -> WITH WITHC[category=?c, H=?h1] AND  WITHC[category=?d, H=?h2]
 WITHP[category=(?c+?d), H=[+presence, having=[OR=(?h1+?h2)]]] -> WITH WITHC[category=?c, H=?h1] OR  WITHC[category=?d, H=?h2]
+
+COMPARISON[H=[category=?cat, orth=(?comp,?aa,?ab)]] -> ADV[+makecomp, orth=?comp] AP[H=?aa, category=?cat] THAN AP[H=?ab]
 
 OFP[category=?c, H=[prep=OF]] -> OF NP[category=?c, +HD, H=?head]
 
@@ -199,6 +203,7 @@ STAGE[stage=?o] -> P[orth='in'] A[category='life-stage', orth=?o] 'state'
 STAGE[stage=?o] -> P[orth='at'] A[category='life-stage', orth=?o]
 STAGE[stage=?o] -> A[+timing, orth=?o]
 
+A[category=position, orth=?o] -> P[orth=?o, +position, +adjectival]
 POSITION[H=[posit=?o]] -> P[prep=?p, orth=?o, +position]
 POSITION[H=[posit=?prep, obj=?n]] -> P[prep=?prep, +position] NP[H=?n]
 POSITION[H=[posit=?o]] -> A[+position, orth=?o]
@@ -206,8 +211,8 @@ POSITION[H=[posit=?o]] -> A[+position, orth=?o]
 #SUBSET[stage=(?a+?n)] -> P[orth='in'] ABARL[orth=?a] N[orth=?n]
 SUBSET[subset=?a] -> P[orth='in'] NP[H=?a]
 ABAR[category=architecture, -position, H=[category=architecture, orth=?a]] -> P[orthp='in', -position] NPL[H=?a]
-
-ANAPH[category=?o] -> ART A[orth=?o] 'ones'
-ANAPH[category=?o] -> ART A[orth=?o] 'one'
+A[category=comparison, orth=?o] -> ART A[orth=?o] 'ones'
+#ANAPH[category=?o] -> ART A[orth=?o] 'ones'
+#ANAPH[category=?o] -> ART A[orth=?o] 'one'
 
 

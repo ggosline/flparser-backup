@@ -1,42 +1,4 @@
 taxon,subject,subpart,category,value,mod,posit,phase,presence
-Test run,lamina,,subject,lamina,,,,
-Test run,lamina,,coloration,"(bright, green) TO olive-green",,[ posit = 'below' ],,
-Test run,lamina,,coloration,concolorous,,[ posit = 'below' ],,
-Test run,lamina,,coloration,"(paler, green)",[ deg = 'rather' ],[ posit = 'below' ],,
-Test run,lamina,,reflectance,shining,,[ posit = 'above' ],,
-Test run,lamina,,dimension,"('(4·5)5·2–9·5(11)', 'cm.', 'long')",,,,
-Test run,lamina,,dimension,"('(1·6)2–5·1(6·5)', 'cm.', 'wide')",,,,
-Test run,lamina,,shape,elliptic,,,,
-Test run,lamina,,shape,oblong-elliptic TO obovate,,,,
-Test run,lamina,,shape,oblanceolate,,,,
-Test run,lamina,,shape-base,acute TO obtuse,,"[ obj   = [ category = 'partof' ] ]
-[         [ orth     = 'apex'   ] ]
-[                                 ]
-[ posit = 'at'                    ]",,
-Test run,lamina,,shape-base,rounded,,"[ obj   = [ category = 'partof' ] ]
-[         [ orth     = 'apex'   ] ]
-[                                 ]
-[ posit = 'at'                    ]",,
-Test run,lamina,,shape-apex,apiculate,[ mod = [ orth = 'shortly' ] ],"[ obj   = [ category = 'partof' ] ]
-[         [ orth     = 'apex'   ] ]
-[                                 ]
-[ posit = 'at'                    ]",,
-Test run,lamina,,shape-margin,entire,,,,
-Test run,lamina,,shape-margin,curved-dentate,"[ AND = ([ deg = '±' ], [ mod = [ orth = 'deeply' ] ]) ]",,,
-Test run,lamina,,shape-base,cuneate,,"[ obj   = [ category = 'partof' ] ]
-[         [ orth     = 'base'   ] ]
-[                                 ]
-[ posit = 'at'                    ]",,
-Test run,lamina,,shape-base,decurrent,,"[ obj   = [ category = 'partof' ] ]
-[         [ orth     = 'base'   ] ]
-[                                 ]
-[ posit = 'at'                    ]",,
-Test run,lamina,,texture,papyraceous TO coriaceous,,,,
-Test run,lamina,nerve,structure,nerve,"[ AND = ([ category = 'count'     ]
-[ val      = '(6)7–8(9)' ], [ category = 'position' ]
-[ orth     = 'lateral'  ]) ]",,,True
-Test run,lamina,venation,character,venation,"[ category = 'architecture'      ]
-[                                ]
-[ mod      = [ deg = 'densely' ] ]
-[                                ]
-[ orth     = 'reticulate'        ]",,,True
+Test run,leaves,,subject,leaves,,,,
+Test run,leaves,,arrangement,subopposite,,[ posit = 'upper' ],,
+Test run,leaves,,architecture,petiolate,,,,

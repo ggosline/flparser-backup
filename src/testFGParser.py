@@ -12,7 +12,7 @@ import csv
 
 trec = defaultdict(lambda: None)
 
-description = 'lamina bright green to olive-green, concolorous or rather paler green below, shining above , (4·5)5·2–9·5(11) × (1·6)2–5·1(6·5) cm., elliptic or oblong-elliptic to obovate or oblanceolate, acute to obtuse or rounded and shortly apiculate at the apex, margin entire or ± deeply curved-dentate, cuneate or decurrent at the base, papyraceous to coriaceous, with (6)7–8(9) lateral nerves and densely reticulate venation'# more prominent below than above'
+description = 'Leaves alternate or the upper ones subopposite , petiolate'
 fromDB = True
 fromDB = False
 parser = FeatureBottomUpLeftCornerChartParser
@@ -20,7 +20,7 @@ parser = FeatureBottomUpLeftCornerChartParser
 #parser = FeatureTopDownChartParser
 cleantree = False
 cleantree = True
-ttrace = 0
+ttrace = 1
 draw = False
 draw = True
 
@@ -39,7 +39,7 @@ cfcsv.writeheader()
 
 if __name__ == '__main__':
     if fromDB:
-        ttrace = 1
+        ttrace = 0
         ttaxa = FloraCorpusReader(db=r'..\resources\efloras.db3',
                                   query="Select * from AllTaxa where flora_name = 'FZ' and genus = 'Salacia' and species = 'bussei' ;")
         of = open('testphrases.txt', 'w', encoding='utf-8')
