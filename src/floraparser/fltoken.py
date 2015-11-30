@@ -98,7 +98,7 @@ class FlToken():
         self.lexentry = None
         self.POS = None
         # tagger can leave tokens with slice(0,0) from multiword processing
-        self.flRoot, self.POS, self.lexentry, wordtuple = fltagger.tag_word(self.word)
+        self.flRoot, self.POS, self.lexentry, wordtuple = fltagger.tag_word(self.word.text, self.word)
         if wordtuple:
             self.lexword = '_'.join(wordtuple)
         self.slice = word.slice

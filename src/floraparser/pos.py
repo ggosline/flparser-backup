@@ -5,7 +5,6 @@ import re
 import copy
 
 from floraparser.inflect import singularize
-
 from floraparser.lexicon import lexicon, multiwords
 from nltk.grammar import FeatStructNonterminal, TYPE, SLASH
 #from nltk.sem import Expression
@@ -25,17 +24,16 @@ PLENDINGS = re.compile(r"(?:[^aeiou]ies|i|ia|(x|ch|sh)es|ves|ices|ae|s)$")
 
 NUMBERS = re.compile(r'^[-–0-9—.·()\s/]+$')
 
+NUMWORD = re.compile(r'(?P<prefix>[0-9](?:-[0-9]))(?P<root>[-–][-a-z]*)')
 
 class FlTagger():
     def rootword(self, word):
         # hyphenated word
         # return list of words with last word first (the root?)
         if '-' in word:
-            wrds = word.split('-')
-            if NUMBERS.match(wrds[0]):
-                rootw = '_' + wrds[1]
-                return rootw, [wrds[1]]
-            return wrds[-1], wrds[0:-1]
+            m = NUMWORD.match(word)
+            if m:
+                return m.group('root'), m.group('prefix')
 
         # prefix or suffix
         m = PREFIX.match(word)
@@ -75,14 +73,14 @@ class FlTagger():
 
         return (word,)
 
-    def tag_word(self, flword):
+    def tag_word(self, word, flword=None):
         """
         :param flword: fltoken.FlWord
         """
-        if flword.text == '':
+        if word == '':
             return None, '', None, None
 
-        word = flword.text.lower()
+        word = word.lower()
 
         if word in multiwords:  # multi word phrase
             ws = self.multiwordtokenize(flword, word)
@@ -90,7 +88,7 @@ class FlTagger():
             ws = (word,)
 
         if ws in lexicon:
-            return flword, lexicon[ws][0][TYPE], lexicon[ws], ws
+            return word, lexicon[ws][0][TYPE], lexicon[ws], ws
 
         # lexicon matches punctuation, including single parentheses; so do before numbers
         if NUMBERS.match(word):
@@ -116,9 +114,11 @@ class FlTagger():
         if root:
             if (root[0],) in lexicon:  # xxx not handling synonym entries here !
                 le = lexicon[(root[0],)][0]
+                le['H', 'mod'] = root[1]
                 return root, le[TYPE], [le], (root[0],)
             if ('-' + root[0],) in lexicon:  # suffix
                 le = lexicon[('-' + root[0],)][0]
+                le['H', 'mod'] = root[1]
                 return root, le[TYPE], [le], ('-' + root[0],)
 
         if word.endswith('ly'):
@@ -133,14 +133,15 @@ class FlTagger():
         # for sy in synsets:
         # pass
 
-        return flword, 'UNK', [FeatStructNonterminal(features={TYPE: 'UNK', 'orth': word})], (word,)
+        return word, 'UNK', [FeatStructNonterminal(features={TYPE: 'UNK', 'orth': word})], (word,)
 
         # def tag(self, blob):
         # return [self.tag_word(word) for word in blob.words]
 
 
 if __name__ == "__main__":
+    from floraparser.fltoken import FlWord
     tagger = FlTagger()
-    testword = "3-locular"
+    testword = "bilocular"
     print(tagger.tag_word(testword))
     # print(posfromglossary(word))

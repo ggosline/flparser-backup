@@ -48,7 +48,7 @@ def pickle_lexicon():
         #     morefeatures['sem'] = read_expr(word.replace('.', ''))
         # lexicon[tuple(ws)] = LexEntry(POS, tuple(ws), category, appliesto)
 
-        featstring = POS + "[ category= '" + category + "', orth='" + word + "'] "
+        featstring = POS + "[H=[ category= '" + category + "', orth='" + word + "']] "
         newfeature = featurereader.fromstring(featstring)
         newfeature.update(morefeatures)
 

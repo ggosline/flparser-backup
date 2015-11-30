@@ -6,7 +6,7 @@ CDELIM -> COMMA |
 
 DESCRIPTION[subject=?s, chars=?clist] -> SUBJECT[H=?s] CDELIM CHARLIST[H=?clist] '$'
 
-SUBJN[H=[category=subject, orth=?o]] -> N[category=structure, orth=?o] | N[category='life-form', orth=?o] | N[category='feature', orth=?o]
+SUBJN[H=[category=subject, orth=?o]] -> N[category=structure, H=[orth=?o]] | N[category='life-form', H=[orth=?o]] | N[category='feature', H=[orth=?o]]
 SUBJN[H=[mod=?m]] -> AP[H=?m] SUBJN[H=?head, +HD]
 SUBJN[H=[mod=?m]] -> AP[H=?m] SUBJN[H=?head, +HD] OFP
 SUBJECT[] -> CBEGINNER SUBJN[H=?head, +HD]
@@ -56,8 +56,8 @@ CHRL[category=?c, H=?h] ->  CHR[H=?h, category=?c]
 CHRL[category=(?c+?d), H=[AND=(?ha+?hb)]] ->  CHR[H=?ha, category=?c] AND CHRL[H=?hb, category=?d]
 #CHRL[category=(?c), H=[OR=(?ha+?hb)]] ->  CHR[H=?ha, category=?c] OR CHRL[H=?hb, category=?c]
 
-NL[category=(?c+?d), H=[orth=(?o+?ol)]] -> N[category=?d, orth = ?o] NL[category=?c, orth=?ol, +HD, H=?head]
-NL[category=?c, orth=?o, H=[orth=?o, category=?c], group=?g] -> N[category=?c, orth=?o, group=?g]
+NL[category=(?c+?d), H=[orth=(?o+?ol)]] -> N[category=?d, H=[orth = ?o]] NL[category=?c, orth=?ol, +HD, H=?head]
+NL[category=?c, orth=?o, group=?g] -> N[category=?c, H=?h, +HD, group=?g]
 
 NBAR[category=?c, H=[mod=?m]] -> APL[H=?m] NL[category=?c, +HD, H=?head]
 #NBAR[category=?c, H=[mod=?count]] -> COUNT[H=?count] NBAR[category=?c, +HD, H=?head]
@@ -94,7 +94,7 @@ SIZE[category=dimension, H=[AND=([category=dimension, num=?num1, dim=long, unit=
 
 SIZEB[category=dimension, H=[AND=(?h1+?h2)]] -> SIZE[H=?h1] AND SIZE[H=?h2]
 SIZEB[category=dimension, H=[AND=(?h1+?h2)]] -> SIZE[H=?h1] COMMA SIZE[H=?h2]
-SIZEB[category=dimension, H=[qual=?deg]] -> DEG[orth=?deg] SIZE[H=?h1, +HD]
+SIZEB[category=dimension, H=[qual=?deg]] -> DEG[H=[orth=?deg]] SIZE[H=?h1, +HD]
 SIZEB[category=dimension, H=[qual=?deg]] -> RANGE[orth=?deg] SIZE[H=?h1, +HD]
 SIZEB[category=dimension] -> SIZE[H=?h1, +HD]
 SIZEB[category=dimension, H=[qual=(OR,?qual)]] -> SIZEB[H=?h1, +HD] OR A[+compar, orth=?qual]
@@ -103,7 +103,7 @@ DIMEN[dim=?dim] -> P[orth='in'] DIM[orth=?dim]
 DIMEN[dim=?dim] -> DIM[orth=?dim]
 COUNT[category=count, H=[category=count, val=?num]] -> NUM[orth=?num]
 COUNT[category=count, H=[category=count, +per, val=?num, obj=?h]] ->  NUM[orth=?num] P[orth='per'] NBAR[H=?h]
-COUNT[category=count, H=[category=count, val=?num, group=?h]] -> NUM[orth=?num] N[+group, orth=?h]
+COUNT[category=count, H=[category=count, val=?num, group=?h]] -> NUM[orth=?num] N[+group, H=[orth=?h]]
 #COUNT[H=[qual=?deg]] -> DEG[orth=?deg] COUNT[+HD, H=?head]
 COUNT[H=[qual=?deg]] -> RANGE[orth=?deg] COUNT[+HD, H=?head]
 
@@ -116,7 +116,7 @@ DEG -> COMPADJ DEG
 ADVB[+comp, category=adv, orth=?o] -> A[+makecomp] ADV[orth=?o]
 
 MOD[H=[mod=?adv]] -> ADVB[H=?adv]
-MOD[H=[deg=?adv]] ->  DEG[orth=?adv]
+MOD[H=[deg=?deg]] ->  DEG[H=[orth=?deg]]
 #MOD[H=[count=?adv]] -> COUNT[H=?adv]
 AP[H=?count] -> COUNT[H=?count]
 
@@ -129,9 +129,9 @@ MODL[H=?ma] -> MOD[H=?ma]
 #ABAR[category=?c, H=[orth=?o, category=?c, qual=?deg]] -> DEG[orth=?deg] A[category=?c, orth=?o, -position, -timing]
 #ABAR[category=?c, H=[orth=?o, category=?c, mod=?adv]] ->  MODL[H=?adv] A[category=?c, orth=?o, -position, -timing]
 #ABAR[category=?c, H=[deg=?adv]] ->  MODL[H=?adv] ABAR[category=?c, H=?head, +HD, -position, -timing]
-ABAR[category=?c, H=[orth=?o, category=?c]] ->  A[category=?c, orth=?o, -position, -timing]
-A[category=?c, orth=(?a1+?a2)] -> A[category=?c, orth=?a1, -position, -timing] A[category=?c, orth=?a2, -position, -timing]
-ABAR[category=?c, H=[orth=?o, category=?c, mod=?adv]] -> COUNT[H=?adv] A[category=?c, orth=?o, -position, -timing]
+ABAR[category=?c] ->  A[category=?c, H=?h, +HD, -position, -timing]
+A[category=?c, H=[orth=(?a1+?a2), category=?c], -position, -timing] -> A[category=?c, H=[orth=?a1], -position, -timing] A[category=?c, H=[orth=?a2], -position, -timing]
+ABAR[category=?c, H=[mod=?adv]] -> COUNT[H=?adv] A[category=?c, H=?h, +HD, -position, -timing]
 
 ORDELIM -> COMMA | OR | COMMA OR
 ABARL[category=?c, H=[category=?c, OR=(?ha+?hb)]] ->  ABAR[category=?c, H=?ha] ORDELIM ABARL[category=?c, H=?hb, -position, -timing]
@@ -184,7 +184,7 @@ COMPARISON[H=[category=?cat, orth=(?comp,?aa,?ab)]] -> ADV[+makecomp, orth=?comp
 OFP[category=?c, H=[prep=OF]] -> OF NP[category=?c, +HD, H=?head]
 
 PP[H=[prep=?prep, obj=?n]] -> P[orth=?prep, -position] NP[H=?n, -group]
-PP[H=[qual=?deg]] -> DEG[orth=?deg] PP[+HD, H=?head]
+PP[H=[qual=?deg]] -> DEG[H=[orth=?deg]] PP[+HD, H=?head]
 
 P[orth=?p] -> A[category=fusion, orth=?p] TO
 P[orth=?p] -> A[category=fusion, orth=?p] WITH

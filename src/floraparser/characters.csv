@@ -1,4 +1,0 @@
-taxon,subject,subpart,category,value,mod,posit,phase,presence
-Test run,leaves,,subject,leaves,,,,
-Test run,leaves,,arrangement,subopposite,,[ posit = 'upper' ],,
-Test run,leaves,,architecture,petiolate,,,,

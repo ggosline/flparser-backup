@@ -12,7 +12,7 @@ import csv
 
 trec = defaultdict(lambda: None)
 
-description = 'Leaves alternate or the upper ones subopposite , petiolate'
+description = 'stigma 3-lobed'
 fromDB = True
 fromDB = False
 parser = FeatureBottomUpLeftCornerChartParser
@@ -22,7 +22,7 @@ cleantree = False
 cleantree = True
 ttrace = 1
 draw = False
-draw = True
+#draw = True
 
 trec['genus'] = 'Test'
 trec['species'] = 'run'
@@ -57,11 +57,11 @@ if __name__ == '__main__':
             for i, phrase in enumerate(sent.phrases):
                 print('\rPARSING: ', phrase.text)
                 # print('\rPARSING: ', phrase.text, file=cf)
-                try:
-                    trees = parser.parse(phrase.tokens, cleantree=cleantree, maxtrees=100)
-                except:
-                    print('Parser failure!')
-                    continue
+                #try:
+                trees = parser.parse(phrase.tokens, cleantree=cleantree, maxtrees=100)
+                #except:
+                #    print('Parser failure!')
+                #    continue
                 if True:
                     for t, txtstart, txtend in parser.listSUBJ():
                         cleanparsetree(t)
