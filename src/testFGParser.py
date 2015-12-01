@@ -12,7 +12,7 @@ import csv
 
 trec = defaultdict(lambda: None)
 
-description = 'stigma 3-lobed'
+description = 'stigma green or brown'
 fromDB = True
 fromDB = False
 parser = FeatureBottomUpLeftCornerChartParser
