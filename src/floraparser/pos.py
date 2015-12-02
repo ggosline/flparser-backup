@@ -7,7 +7,7 @@ import copy
 from floraparser.inflect import singularize
 from floraparser.lexicon import lexicon, multiwords
 from nltk.grammar import FeatStructNonterminal, TYPE, SLASH
-#from nltk.sem import Expression
+from nltk.featstruct import FeatStructReader
 
 # read_expr = Expression.fromstring
 # Expression._logic_parser.quote_chars = [('"', '"', r'\\', True)]
@@ -26,6 +26,8 @@ NUMBERS = re.compile(r'^[-–0-9—.·()\s/]+$')
 
 NUMWORD = re.compile(r'(?P<prefix>[0-9](?:-[0-9]))(?P<root>[-–][-a-z]*)')
 
+featurereader = FeatStructReader(fdict_class=FeatStructNonterminal)
+
 class FlTagger():
     def rootword(self, word):
         # hyphenated word
@@ -34,6 +36,10 @@ class FlTagger():
             m = NUMWORD.match(word)
             if m:
                 return m.group('root'), m.group('prefix')
+            else:
+                parts = word.split('-')
+                if (parts[-1],) in lexicon:
+                    return parts[-1], word[0:word.rindex('-')]
 
         # prefix or suffix
         m = PREFIX.match(word)
@@ -92,9 +98,8 @@ class FlTagger():
 
         # lexicon matches punctuation, including single parentheses; so do before numbers
         if NUMBERS.match(word):
-            return flword, 'NUM', [
-                FeatStructNonterminal(
-                    features={TYPE: 'NUM', 'numeric': True, 'orth': word})], (word,)
+            return flword, 'NUM', [featurereader.fromstring(
+                "NUM[+numeric, orth='" + word +"']")], (word,)
                     # features={TYPE: 'NUM', 'numeric': True, 'orth': word, 'sem': read_expr('num("' + word + '")')})], \
                     #     (word,)
         ws = FlTagger.singularize(self, word)
@@ -123,8 +128,9 @@ class FlTagger():
 
         if word.endswith('ly'):
             return flword, 'ADV', [
-                FeatStructNonterminal(features={TYPE: 'ADV', 'timing': False, 'orth': word, })], (
-                   word,)
+                featurereader.fromstring(
+                "ADV[H=[orth='" + word +"']]")], \
+                   (word,)
                 # FeatStructNonterminal(features={TYPE: 'ADV', 'timing': False, 'orth': word, 'sem': read_expr(word)})], (
                 #    word,)
 
