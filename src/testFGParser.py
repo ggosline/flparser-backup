@@ -13,14 +13,14 @@ import traceback
 
 trec = defaultdict(lambda: None)
 
-description = 'lamina bright green to olive-green, concolorous or rather paler green below, shining above, (4·5)5·2–9·5(11) × (1·6)2–5·1(6·5) cm., elliptic or oblong-elliptic to obovate or oblanceolate, acute to obtuse or rounded and shortly apiculate at the apex, with margin entire or ± deeply curved-dentate, cuneate or decurrent at the base, papyraceous to coriaceous, with (6)7–8(9) lateral nerves and densely reticulate venation more prominent below'
+description = 'lamina  elliptic , apex acute to obtuse , with margin entire or ± deeply curved-dentate, cuneate or decurrent at the base'
 fromDB = True
-#fromDB = False
+fromDB = False
 parser = FeatureBottomUpLeftCornerChartParser
 parser = FeatureEarleyChartParser
 #parser = FeatureTopDownChartParser
 cleantree = False
-cleantree = True
+#cleantree = True
 ttrace = 1
 draw = False
 draw = True

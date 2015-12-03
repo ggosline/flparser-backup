@@ -143,8 +143,8 @@ def pickle_lexicon():
     addlexicon(DIMENSION, 'DIM')
     RANGE = 'up_to|at_least|to|more_than|less_than'.split('|')
     addlexicon(RANGE, 'RANGE')
-    POSITIONA = 'upper|lower|uppermost|lowermost|superior|inferior|outer|inner|outermost|innermost|various|above_and_beneath'.split(
-        '|')
+    POSITIONA = 'upper|lower|uppermost|lowermost|superior|inferior|outer|inner|outermost|innermost|various|' \
+                'above_and_beneath|at_the_apex|at_the_base'.split('|')
     addlexicon(POSITIONA, 'A', position=True, timing=False, category='position')
 
     POSITION = 'top|bottom|underside|base|apex|margin|front|back|both_sides|both_surfaces|each_side|section|rest_of'.split('|')

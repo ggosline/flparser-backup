@@ -167,7 +167,8 @@ AP[category=?d, H=[AND=(?ha+?hb)]] -> AP[category=?c, H=?ha]  AP[category=?d, H=
 WITHC[category=?c, H=[clist=?clist]] ->  NP[category=?c, H=?h, +HD] CHRL[H=?clist]
 WITHC[category=?c, H=[]] ->  NP[category=?c, H=?h, +HD]
 
-WITHP[category=?c, H=[presence=?p, having = ?p ]] -> WITH[presence=?p] WITHC[category=?c, +HD, H=?h]
+WITHP[category=?c, H=[presence=?p, having = True ]] -> WITH[presence=?p] WITHC[category=?c, +HD, H=?h]
+WITHP[category=?c, H=[presence=True, having = True ]] -> WITHC[category=?c, +HD, H=?h]
 #WITHP[category=?c, H=[having = ?p ]] -> WITH[presence=?p] NP[category=?c, +HD, H=?h]/?x
 #WITHP[category=?c, H=[having = ?p, clist=?clist]] -> WITH[presence=?p] NP[category=?c, +HD, H=?h] CHRL[H=?clist]
 #WITHP[category=?c, H=[having = ?p, clist=?clist]] -> WITH[presence=?p] NP[category=?c, +HD, H=?h]/?x CHRL[H=?clist]
@@ -209,6 +210,8 @@ A[category=position, H=[orth=?o, category=position], +position, -timing] -> P[H=
 POSITION[H=[posit=?o]] -> P[prep=?p, H=[orth=?o], +position]
 POSITION[H=[posit=?prep, obj=?n]] -> P[prep=?prep, +position] NP[H=?n]
 POSITION[H=[posit=?o]] -> A[+position, H=[orth=?o], -timing]
+WITHC[H=[orth='base', category='part_of', clist=?clist]] ->   CHRL[H=?clist] POSITION[H=[posit='at_the_base']]
+WITHC[H=[orth='apex', category='part_of', clist=?clist]] ->   CHRL[H=?clist] POSITION[H=[posit='at_the_apex']]
 
 #SUBSET[stage=(?a+?n)] -> P[orth='in'] ABARL[orth=?a] N[orth=?n]
 SUBSET[subset=?a] -> P[prep='in'] NP[H=?a]
