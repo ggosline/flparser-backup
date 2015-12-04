@@ -13,14 +13,14 @@ import traceback
 
 trec = defaultdict(lambda: None)
 
-description = 'lamina  elliptic , apex acute to obtuse , with margin entire or ± deeply curved-dentate, cuneate or decurrent at the base'
+description = 'lamina  obtuse at the apex, green'
 fromDB = True
 fromDB = False
 parser = FeatureBottomUpLeftCornerChartParser
-parser = FeatureEarleyChartParser
+#parser = FeatureEarleyChartParser
 #parser = FeatureTopDownChartParser
 cleantree = False
-#cleantree = True
+cleantree = True
 ttrace = 1
 draw = False
 draw = True
@@ -59,13 +59,13 @@ if __name__ == '__main__':
             for i, phrase in enumerate(sent.phrases):
                 print('\rPARSING: ', phrase.text)
                 # print('\rPARSING: ', phrase.text, file=cf)
-                # try:
-                trees = parser.parse(phrase.tokens, cleantree=cleantree, maxtrees=100)
-                # except:
-                #     #e = sys.exc_info()
-                #     print('Parser failure!')
-                #     traceback.print_exc()
-                #     continue
+                try:
+                    trees = parser.parse(phrase.tokens, cleantree=cleantree, maxtrees=100)
+                except:
+                    #e = sys.exc_info()
+                    print('Parser failure!')
+                    traceback.print_exc()
+                    continue
                 if True:
                     for t, txtstart, txtend in parser.listSUBJ():
                         cleanparsetree(t)

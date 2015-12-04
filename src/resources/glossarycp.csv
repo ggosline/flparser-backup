@@ -130,7 +130,7 @@ ID,term,category,appliesTo,definition,category2,dataSource
 136,antisepalous,position,equivalent floral structures,"Each inserted directly above or below a sepal.  In place of this term, the phrase 'opposite the sepals' is often used, but that contradicts the sense of opposite as otherwise employed (arrangement of lateral structures along an axis) and should be avoided",position,
 137,antrorse,orientation,,"Directed forward or upward, toward the distal end of the context of reference, parallel or at an acute angle to the bearing structure.",orientation,
 138,apetalous,architecture,"flower, perianth",Lacking petals.,architecture,
-#,apex,structure,,"Configuration of the uppermost, distal, or terminal portion of a structure, its extent determined somewhat subjectively in relation to the shape of the structure as a whole.  The concept of apex varies from one descriptive context to another, since the ap",shape,
+139,apex,structure,,"Configuration of the uppermost, distal, or terminal portion of a structure, its extent determined somewhat subjectively in relation to the shape of the structure as a whole.  The concept of apex varies from one descriptive context to another, since the ap",shape,
 140,apices,structure,,"Configuration of the uppermost, distal, or terminal portion of a structure, its extent determined somewhat subjectively in relation to the shape of the structure as a whole.  The concept of apex varies from one descriptive context to another, since the ap",CHARACTER,
 141,aphyllous,architecture,"plant, axis",Not bearing leaves.,architecture,
 #,apical,insertion,,At or very near the developmental end or tip (apex) of a structure.,position,

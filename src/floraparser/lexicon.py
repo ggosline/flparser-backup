@@ -26,11 +26,11 @@ def pickle_lexicon():
     #         self.appliesto = appliesto
     featurereader = FeatStructReader(fdict_class=FeatStructNonterminal)
 
-    def addlexicon(words, POS, **morefeatures):
+    def addlexicon(words, POS, morefeatures):
         for word in words:
-            addlexentry(word, POS, **morefeatures)
+            addlexentry(word, POS, morefeatures)
 
-    def addlexentry(word, POS, **morefeatures):
+    def addlexentry(word, POS, morefeatures):
         if word.startswith('_'):
             word = word.replace('_', '-', 1)
         ws = word.split('_')
@@ -76,119 +76,119 @@ def pickle_lexicon():
                     POS = 'N'
                     # semexpr = read_expr(semterm)
                     if category == 'structure-infl':
-                        morefeatures = {'group': True}
+                        morefeatures = {'*group*': True}
                     else:
-                        morefeatures = {'group': False}
+                        morefeatures = {'*group*': False}
                 elif category != '':
                     POS = 'A'
                     semexpr = read_expr(category.replace('-', '_') + '(' + semterm + ')')
-                    morefeatures = {'position': False, 'timing': False, 'compar': False}
+                    morefeatures = {'*position*': False, '*timing*': False, '*compar*': False}
                 else:
                     POS = 'UNK'
-                    # semexpr = None
-                addlexentry(term, POS, category=category, **morefeatures)
+                morefeatures['category']=category    # semexpr = None
+                addlexentry(term, POS,  morefeatures)
 
     COORDCONJUNCTION = 'and|or|and/or|neither|nor|otherwise|but|except|except_for|×'.split('|')
     for word in COORDCONJUNCTION:
-        addlexentry(word, 'CONJ', conj=word, coord=True)
+        addlexentry(word, 'CONJ', dict(conj=word, coord=True))
     SUBCONJUNCTION = 'but|for|yet|so|although|because|since|unless|if'.split('|')
     for word in SUBCONJUNCTION:
-        addlexentry(word, 'CONJ', conj=word, coord=False)
+        addlexentry(word, 'CONJ', dict(conj=word, coord=False))
     ARTICLE = 'the|a|an'.split('|')
-    addlexicon(ARTICLE, 'ART')
+    addlexicon(ARTICLE, 'ART', {})
     DETERMINER = 'each|every|some|all|other|both|their|its'.split('|')
-    addlexicon(DETERMINER, 'DET')
+    addlexicon(DETERMINER, 'DET', {})
     PUNCTUATION = [';', '(', ')']
     for char in PUNCTUATION:
-        addlexentry(char, 'PUNC', punc=char)
-    addlexicon([','], 'COMMA')
+        addlexentry(char, 'PUNC', dict(punc=char))
+    addlexicon([','], 'COMMA', {})
     PRONOUN = 'it|one|ones|form|forms|part|parts'.split('|')
-    addlexicon(PRONOUN, 'PRO')
+    addlexicon(PRONOUN, 'PRO', {})
 
     PREP_POSITION = 'among|amongst|around|at|between|beyond|by|' \
                   'from|in|into|near|on|onto|out_of|over|through|throughout|toward|' \
                   'towards|up|'.split('|')
     for word in PREP_POSITION:
-        addlexentry(word, 'P', prep=word, position=True, timing=False, adjectival=False) #, sem=read_expr(r'\x.' + word + '(x)'))
+        addlexentry(word, 'P', {'prep':word, '*position*':True, 'adjectival':False}) #, sem=read_expr(r'\x.' + word + '(x)'))
     POSITIONP = 'near|outside|inside|above|below|beneath|outside|inside|between|' \
                     'before|after|behind|across|along|around|from|within|without'.split('|')
     for word in POSITIONP:
-        addlexentry(word, 'P', prep=word, position=True, timing=False, adjectival=True)
-        #addlexentry(word, 'P', prep=word, position=True, sem=read_expr(r'\x.' + word + '(x)'))
+        addlexentry(word, 'P', {'prep':word, '*position*':True, '*adjectival*':True})
+        #addlexentry(word, 'P', prep=word, *position*=True, sem=read_expr(r'\x.' + word + '(x)'))
 
     PREPOSITION = 'as|during|for|from|in|off|on|onto|out|over|per|through|throughout|' \
               'towards|up|upward|when|owing_to|due_to|according_to|on_account_of|' \
               'tipped_by|to_form|attached_to|immersed_in'.split('|')
     for word in PREPOSITION:
-        addlexentry(word, 'P', prep=word, position=False) #, sem=read_expr(r'\x.' + word + '(x)'))
+        addlexentry(word, 'P', dict(prep=word)) #, sem=read_expr(r'\x.' + word + '(x)'))
 
-    addlexentry('with', 'WITH', position=False, presence=True)
-    addlexentry('without', 'WITH', position=False, presence=False)
+    addlexentry('with', 'WITH', {'presence':True})
+    addlexentry('without', 'WITH', {'presence':False})
 
 
     GROUPS = "group|groups|clusters|cluster|arrays|array|series|" \
              "pairs|pair|row|rows|number|numbers|colonies".split('|')
-    addlexicon(GROUPS, 'N', group=True, category='grouping')
+    addlexicon(GROUPS, 'N', dict(group=True, category='grouping'))
     LITNUMBERS = "zero|one|two|half|three|thirds|four|fourths|quarter|" \
                  "five|fifths|six|sixths|seven|sevenths|eight|eighths|" \
                  "nine|ninths|tenths|1/2|1/3|2/3|1/4|1/5|2/5".split('|')
-    addlexicon(LITNUMBERS, 'NUM', literal=True)
+    addlexicon(LITNUMBERS, 'NUM', dict(literal=True))
     ORDNUMBERS = "principal|primary|secondary|tertiary|1st|2nd|3rd|first|second|third|fourth|fifth|sixth|seventh|eigth|ninth|tenth".split(
         '|')
-    addlexicon(ORDNUMBERS, 'A', ordinal=True)
+    addlexicon(ORDNUMBERS, 'A', dict(ordinal=True))
     UNITS = "mm.|cm.|dm.|m.|km.".split('|')
-    addlexicon(UNITS, 'UNIT')
+    addlexicon(UNITS, 'UNIT', {})
     DIMENSION = "high|tall|long|wide|thick|diam.|diameter|diam|in_height|in_width|in_diameter|in_diam".split(
         '|')
-    addlexicon(DIMENSION, 'DIM')
+    addlexicon(DIMENSION, 'DIM', {})
     RANGE = 'up_to|at_least|to|more_than|less_than'.split('|')
-    addlexicon(RANGE, 'RANGE')
+    addlexicon(RANGE, 'RANGE', {})
     POSITIONA = 'upper|lower|uppermost|lowermost|superior|inferior|outer|inner|outermost|innermost|various|' \
                 'above_and_beneath|at_the_apex|at_the_base'.split('|')
-    addlexicon(POSITIONA, 'A', position=True, timing=False, category='position')
+    addlexicon(POSITIONA, 'A', {'*position*':True, 'category':'position'})
 
     POSITION = 'top|bottom|underside|base|apex|margin|front|back|both_sides|both_surfaces|each_side|section|rest_of'.split('|')
-    addlexicon(POSITION, 'N', position=True, category='partof')
+    addlexicon(POSITION, 'N', {'*position*':True, 'category':'partof'})
     ACCURACY = "c.|about|more_or_less|±|exactly|almost".split('|')
-    addlexicon(ACCURACY, 'DEG', accuracy=True, timing=False)
+    addlexicon(ACCURACY, 'DEG', dict(accuracy=True))
     FREQUENCY = "very|a_little|not_much|sometimes|often|usually|rarely|more_rarely|more_often|generally|never|always|" \
                 "soon|also|even|especially|?".split('|')
-    addlexicon(FREQUENCY, 'DEG', frequency=True, timing=False)
+    addlexicon(FREQUENCY, 'DEG', dict(frequency=True))
     DEGREE = "sparsely|densely|slightly|narrowly|widely|markedly|somewhat|rather|shallowly|scarcely|partly|partially|much|" \
              "dark|light|deep".split('|')
-    addlexicon(DEGREE, 'DEG', timing=False)
+    addlexicon(DEGREE, 'DEG', {})
     COMPARISON = "paler|darker|lighter|shorter|longer|wider|narrower|bigger|smaller|duller|shinier|higher|" \
                  "older|younger|" \
                  "as_many_as|exceeding|equalling|as_long_as|indistinguishable_from|similar".split('|')
-    addlexicon(COMPARISON, 'A', compar=True, category='compar', position=False, timing=False)
+    addlexicon(COMPARISON, 'A', dict(compar=True, category='compar'))
     COLOURCOMP = "paler|darker|lighter|duller|shinier".split('|')
-    addlexicon(COLOURCOMP, 'A', compar=True, category='coloration', position=False, timing=False)
+    addlexicon(COLOURCOMP, 'A', dict(compar=True, category='coloration'))
     SIZECOMP = "shorter|longer|wider|narrower|bigger|smaller|higher|as_long".split('|')
-    addlexicon(SIZECOMP, 'A', compar=True, category='size', position=False, timing=False)
+    addlexicon(SIZECOMP, 'A', dict(compar=True, category='size'))
     COMPADJ = "more|less|most|least".split('|')
-    addlexicon(COMPADJ, 'ADV', makecomp=True)
+    addlexicon(COMPADJ, 'ADV', dict(makecomp=True))
     TIMING = "at_first|when_young|becoming|remaining|turning|in_age|at_maturity|later|at_length|eventually|when_fresh|when_dry".split(
         '|')
-    addlexicon(TIMING, 'A', timing=True, position=False)
+    addlexicon(TIMING, 'A', {'*timing*':True})
     PRESENCE = "present|absent".split('|')
-    addlexicon(PRESENCE, 'A', category='presence')
+    addlexicon(PRESENCE, 'A', dict(category='presence'))
     ISA = "is|consisting_of".split('|')
-    addlexicon(ISA, 'IS', category='ISA')
+    addlexicon(ISA, 'IS', dict(category='ISA'))
     GERUND = "covering|closing|enveloping|surrounding|forming|terminating|dehiscing_by|dividing|" \
              "ending|varying_in|arranged_in".split('|')
-    addlexicon(GERUND, 'P', verb=True, position=False)
+    addlexicon(GERUND, 'P', dict(verb=True))
 
-    addlexicon(['to'], 'TO')
-    addlexicon(['not'], 'DEG', frequency=True, timing=False)
-    addlexicon(['in'], 'IN')
-    addlexicon(['than'], 'THAN')
-    addlexicon(['for'], 'FOR')
-    addlexicon(['that'], 'RCOMP')
-    addlexicon(['that'], 'COMP')
-    addlexicon(['times'], 'TIMES')
-    addlexicon(['NUM'], 'NUM')
-    addlexicon(['of'], 'OF')
-    addlexicon(['in_outline'], 'NULL')
+    addlexicon(['to'], 'TO', {})
+    addlexicon(['not'], 'DEG', dict(frequency=True, timing=False))
+    addlexicon(['in'], 'IN', {})
+    addlexicon(['than'], 'THAN', {})
+    addlexicon(['for'], 'FOR', {})
+    addlexicon(['that'], 'RCOMP', {})
+    addlexicon(['that'], 'COMP', {})
+    addlexicon(['times'], 'TIMES', {})
+    addlexicon(['NUM'], 'NUM', {})
+    addlexicon(['of'], 'OF', {})
+    addlexicon(['in_outline'], 'NULL', {})
 
     readcpglossary()
     # for wlist in multiwords.values():
