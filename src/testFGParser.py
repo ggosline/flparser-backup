@@ -13,9 +13,9 @@ import traceback
 
 trec = defaultdict(lambda: None)
 
-description = 'lamina  obtuse at the apex, green'
+description = 'petiole 1–4 mm. long, with entire margins'
 fromDB = True
-fromDB = False
+#fromDB = False
 parser = FeatureBottomUpLeftCornerChartParser
 #parser = FeatureEarleyChartParser
 #parser = FeatureTopDownChartParser

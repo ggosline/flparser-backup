@@ -56,8 +56,8 @@ CHRL[category=?c, H=?h] ->  CHR[H=?h, category=?c]
 CHRL[category=(?c+?d), H=[AND=(?ha+?hb)]] ->  CHR[H=?ha, category=?c] AND CHRL[H=?hb, category=?d]
 #CHRL[category=(?c), H=[OR=(?ha+?hb)]] ->  CHR[H=?ha, category=?c] OR CHRL[H=?hb, category=?c]
 
-NL[category=(?c+?d), H=[orth=(?o+?ol)]] -> N[category=?d, H=[orth = ?o]] NL[category=?c, orth=?ol, +HD, H=?head]
-NL[category=?c, group=?g] -> N[category=?c, H=?h, +HD, group=?g]
+NL[category=(?c+?d), H=[orth=(?o+?ol)]] -> N[*position*=?p, category=?d, H=[orth = ?o]] NL[category=?c, orth=?ol, +HD, H=?head]
+NL[category=?c, group=?g] -> N[*position*=?p, category=?c, H=?h, +HD, group=?g]
 
 NBAR[category=?c, H=[mod=?m]] -> APL[H=?m] NL[category=?c, +HD, H=?head]
 #NBAR[category=?c, H=[mod=?count]] -> COUNT[H=?count] NBAR[category=?c, +HD, H=?head]
@@ -207,9 +207,9 @@ STAGE[stage=?o] -> P[prep='at'] A[category='life-stage', orth=?o]
 STAGE[stage=?o] -> A[+*timing*, H=[orth=?o]]
 
 A[category=position, H=[orth=?o, category=position], +*position*] -> P[H=[orth=?o], +*position*, +*adjectival*]
-POSITION[+*position*, H=[*posit*=?o]] -> P[prep=?p, H=[orth=?o], +*position*]
-POSITION[+*position*, H=[*posit*=?prep, obj=?n]] -> P[prep=?prep, +*position*] NP[H=?n]
-POSITION[+*position*, H=[*posit*=?o]] -> A[+*position*, H=[orth=?o]]
+POSITION[H=[*posit*=?o]] -> P[prep=?p, H=[orth=?o], +*position*]
+POSITION[H=[*posit*=?prep, obj=?n]] -> P[prep=?prep, +*position*] NP[H=?n]
+POSITION[H=[*posit*=?o]] -> A[+*position*, H=[orth=?o]]
 #CHR[H=[orth='base', category='part-of', clist=?clist]] ->   CHR[H=[*posit*='at_the_base', clist=?clist]]
 #CHR[H=[orth='apex', category='part-of', clist=?clist]] ->   CHR[H=[*posit*='at_the_apex', clist=?clist]]
 

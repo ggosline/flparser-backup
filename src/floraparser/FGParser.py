@@ -12,6 +12,7 @@ from nltk.grammar import FeatureValueType, is_nonterminal
 from nltk.featstruct import FeatStruct, Feature, FeatList, FeatDict, unify, FeatureValueTuple
 from floraparser.fltoken import FlToken
 from floraparser.lexicon import lexicon
+from floraparser.lexicon import position, timing, posit, makecomp, compar, adjectival
 from nltk import Tree
 from nltk.parse.earleychart import FeatureIncrementalChart, FeatureEarleyChartParser
 from nltk.parse import FeatureBottomUpChartParser, FeatureBottomUpLeftCornerChartParser, FeatureTopDownChartParser
@@ -308,20 +309,12 @@ class FGGrammar(FeatureGrammar):
 
 # FeatureBottomUpLeftCornerChartParser.__init__ = patch__init__
 
-# Our features with default values (usually False)
-position = Feature('position', default=False)
-timing   = Feature('timing', default=False)
-posit    = Feature('posit', default='')
-makecomp = Feature('makecomp', default=False)
-compar   = Feature('compar', default=False)
-adjectival   = Feature('adjectival', default=False)
-
 class FGParser():
 
     def __init__(self, grammarfile='flg.fcfg', trace=1, parser=FeatureEarleyChartParser):
         with open(grammarfile, 'r', encoding='utf-8') as gf:
             gs = gf.read()
-        self._grammar = FGGrammar.fromstring(gs, features=(TYPE, SLASH, position, timing, posit, makecomp,compar, adjectival))
+        self._grammar = FGGrammar.fromstring(gs, features=(TYPE, SLASH, position, timing, posit, makecomp, compar, adjectival))
 
         self._parser = parser(self._grammar, trace=trace, chart_class=FGChart)
         self._chart = None

@@ -7,14 +7,21 @@ import pickle
 import os
 from nltk.featstruct import Feature, FeatStruct, FeatStructReader
 from nltk.grammar import FeatStructNonterminal, TYPE, SLASH
-from nltk.sem import Expression
+# from nltk.sem import Expression
 
-read_expr = Expression.fromstring
+# read_expr = Expression.fromstring
 
 lexicon = {}
 
 multiwords = {}
 
+# Our features with default values (usually False)
+position =  Feature('position', default=False)
+timing   =  Feature('timing', default=False)
+posit    =  Feature('posit', default='')
+makecomp =  Feature('makecomp', default=False)
+compar   =  Feature('compar', default=False)
+adjectival = Feature('adjectival', default=False)
 
 def pickle_lexicon():
     global lexicon, multiwords
@@ -76,13 +83,13 @@ def pickle_lexicon():
                     POS = 'N'
                     # semexpr = read_expr(semterm)
                     if category == 'structure-infl':
-                        morefeatures = {'*group*': True}
+                        morefeatures = {'group': True}
                     else:
-                        morefeatures = {'*group*': False}
+                        morefeatures = {'group': False}
                 elif category != '':
                     POS = 'A'
-                    semexpr = read_expr(category.replace('-', '_') + '(' + semterm + ')')
-                    morefeatures = {'*position*': False, '*timing*': False, '*compar*': False}
+                    # semexpr = read_expr(category.replace('-', '_') + '(' + semterm + ')')
+                    morefeatures = {position: False, timing: False, compar: False}
                 else:
                     POS = 'UNK'
                 morefeatures['category']=category    # semexpr = None
@@ -109,12 +116,12 @@ def pickle_lexicon():
                   'from|in|into|near|on|onto|out_of|over|through|throughout|toward|' \
                   'towards|up|'.split('|')
     for word in PREP_POSITION:
-        addlexentry(word, 'P', {'prep':word, '*position*':True, 'adjectival':False}) #, sem=read_expr(r'\x.' + word + '(x)'))
+        addlexentry(word, 'P', {'prep':word, position:True, adjectival:False}) #, sem=read_expr(r'\x.' + word + '(x)'))
     POSITIONP = 'near|outside|inside|above|below|beneath|outside|inside|between|' \
                     'before|after|behind|across|along|around|from|within|without'.split('|')
     for word in POSITIONP:
-        addlexentry(word, 'P', {'prep':word, '*position*':True, '*adjectival*':True})
-        #addlexentry(word, 'P', prep=word, *position*=True, sem=read_expr(r'\x.' + word + '(x)'))
+        addlexentry(word, 'P', {'prep':word, position:True, adjectival:True})
+        #addlexentry(word, 'P', prep=word, position=True, sem=read_expr(r'\x.' + word + '(x)'))
 
     PREPOSITION = 'as|during|for|from|in|off|on|onto|out|over|per|through|throughout|' \
               'towards|up|upward|when|owing_to|due_to|according_to|on_account_of|' \
@@ -145,10 +152,10 @@ def pickle_lexicon():
     addlexicon(RANGE, 'RANGE', {})
     POSITIONA = 'upper|lower|uppermost|lowermost|superior|inferior|outer|inner|outermost|innermost|various|' \
                 'above_and_beneath|at_the_apex|at_the_base'.split('|')
-    addlexicon(POSITIONA, 'A', {'*position*':True, 'category':'position'})
+    addlexicon(POSITIONA, 'A', {position:True, 'category':'position'})
 
     POSITION = 'top|bottom|underside|base|apex|margin|front|back|both_sides|both_surfaces|each_side|section|rest_of'.split('|')
-    addlexicon(POSITION, 'N', {'*position*':True, 'category':'partof'})
+    addlexicon(POSITION, 'N', {position:True, 'category':'partof'})
     ACCURACY = "c.|about|more_or_less|±|exactly|almost".split('|')
     addlexicon(ACCURACY, 'DEG', dict(accuracy=True))
     FREQUENCY = "very|a_little|not_much|sometimes|often|usually|rarely|more_rarely|more_often|generally|never|always|" \
@@ -169,7 +176,7 @@ def pickle_lexicon():
     addlexicon(COMPADJ, 'ADV', dict(makecomp=True))
     TIMING = "at_first|when_young|becoming|remaining|turning|in_age|at_maturity|later|at_length|eventually|when_fresh|when_dry".split(
         '|')
-    addlexicon(TIMING, 'A', {'*timing*':True})
+    addlexicon(TIMING, 'A', {timing:True})
     PRESENCE = "present|absent".split('|')
     addlexicon(PRESENCE, 'A', dict(category='presence'))
     ISA = "is|consisting_of".split('|')
