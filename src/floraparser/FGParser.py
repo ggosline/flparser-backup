@@ -12,7 +12,7 @@ from nltk.grammar import FeatureValueType, is_nonterminal
 from nltk.featstruct import FeatStruct, Feature, FeatList, FeatDict, unify, FeatureValueTuple
 from floraparser.fltoken import FlToken
 from floraparser.lexicon import lexicon
-from floraparser.lexicon import position, timing, posit, makecomp, compar, adjectival
+from floraparser.lexicon import defaultfeatures
 from nltk import Tree
 from nltk.parse.earleychart import FeatureIncrementalChart, FeatureEarleyChartParser
 from nltk.parse import FeatureBottomUpChartParser, FeatureBottomUpLeftCornerChartParser, FeatureTopDownChartParser
@@ -77,10 +77,9 @@ def unify_heads(span, lhs, rhs):
         lhs['span'] = span
     except:
         newH = FeatStructNonterminal('H[]')
-    stitems = list(newH.items())
-    for st in stitems:     # get rid of useless variables
-        if isinstance(st[1], Variable):
-            del newH[st[0]]
+
+    newH.remove_variables()     # get rid of unresolved variables
+
     lhs['H'] = newH
 
     # if not isinstance(rhead, FeatDict):
@@ -314,7 +313,7 @@ class FGParser():
     def __init__(self, grammarfile='flg.fcfg', trace=1, parser=FeatureEarleyChartParser):
         with open(grammarfile, 'r', encoding='utf-8') as gf:
             gs = gf.read()
-        self._grammar = FGGrammar.fromstring(gs, features=(TYPE, SLASH, position, timing, posit, makecomp, compar, adjectival))
+        self._grammar = FGGrammar.fromstring(gs, features=(TYPE, SLASH) + defaultfeatures)
 
         self._parser = parser(self._grammar, trace=trace, chart_class=FGChart)
         self._chart = None

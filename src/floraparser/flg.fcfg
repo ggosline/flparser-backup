@@ -131,7 +131,7 @@ MODL[H=?ma] -> MOD[H=?ma]
 #ABAR[category=?c, H=[deg=?adv]] ->  MODL[H=?adv] ABAR[category=?c, H=?head, +HD,  ]
 ABAR[category=?c] ->  A[category=?c, H=?h, +HD]
 A[category=?c, H=[orth=(?a1+?a2), category=?c]] -> A[category=?c, H=[orth=?a1]] A[category=?c, H=[orth=?a2]]
-ABAR[category=?c, H=[mod=?adv]] -> COUNT[H=?adv] A[category=?c, H=?h, +HD]
+ABAR[category=?c, H=[mod=?adv]] -> COUNT[H=[val=?adv]] A[+*counted*, category=?c, H=?h, +HD]
 
 ORDELIM -> COMMA | OR | COMMA OR
 ABARL[category=?c, H=[category=?c, OR=(?ha+?hb)]] ->  ABAR[category=?c, H=?ha] ORDELIM ABARL[category=?c, H=?hb]
@@ -210,13 +210,14 @@ A[category=position, H=[orth=?o, category=position], +*position*] -> P[H=[orth=?
 POSITION[H=[*posit*=?o]] -> P[prep=?p, H=[orth=?o], +*position*]
 POSITION[H=[*posit*=?prep, obj=?n]] -> P[prep=?prep, +*position*] NP[H=?n]
 POSITION[H=[*posit*=?o]] -> A[+*position*, H=[orth=?o]]
+MOD[H=[*posit*=?o]] -> ART A[+*position*, H=[orth=?o]] 'ones'
 #CHR[H=[orth='base', category='part-of', clist=?clist]] ->   CHR[H=[*posit*='at_the_base', clist=?clist]]
 #CHR[H=[orth='apex', category='part-of', clist=?clist]] ->   CHR[H=[*posit*='at_the_apex', clist=?clist]]
 
 #SUBSET[stage=(?a+?n)] -> P[orth='in'] ABARL[orth=?a] N[orth=?n]
 SUBSET[subset=?a] -> P[prep='in'] NP[H=?a]
 ABAR[category=architecture,  H=[category=architecture, orth=?a]] -> P[orthp='in'] NPL[H=?a]
-A[category=comparison, H=[orth=?o]] -> ART A[H=[orth=?o]] 'ones'
+A[category=comparison, H=[orth=?o]] -> ART A[+*compar*, H=[orth=?o]] 'ones'
 #ANAPH[category=?o] -> ART A[orth=?o] 'ones'
 #ANAPH[category=?o] -> ART A[orth=?o] 'one'
 

@@ -37,7 +37,7 @@ Fail:
 No. of trees: 6
 Success: 
  Petals pale green to yellowish, 4–7 mm. long, oblong to triangular, rounded, entire, united with the disk at the base
-No. of trees: 8
+No. of trees: 15
 Fail:
  Disk dark to pale or yellowish green, shortly cylindric, round the bases of stamens and ovary, with margin broad and flat or concave, shallowly and ± irregularly 5-lobed
 No. of trees: 6
@@ -45,8 +45,17 @@ Success:
  Stamens 3, with filaments up to 3 mm. long, slender, ± flattened
 No. of trees: 1
 Success: 
+ anthers pale to orange-yellow, dehiscing by 2 oblique or almost vertical clefts not confluent at the apex
+No. of trees: 5
+Success: 
  Ovary ovoid-3-gonous or 3-lobed, with style narrow, elongated
+No. of trees: 2
+Success: 
+ stigma 3-lobed
+No. of trees: 2
+Success: 
+ ovules 2 per loculus
 No. of trees: 3
 Success: 
  Fruit orange, 3·5–4 × 1·8–3·2 cm., subglobose to pyriform or irregular, apiculate, sometimes ridged, smooth, 1–3-seeded
-No. of trees: 3
+No. of trees: 2

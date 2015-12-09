@@ -13,9 +13,9 @@ import traceback
 
 trec = defaultdict(lambda: None)
 
-description = 'petiole 1–4 mm. long, with entire margins'
+description = 'Leaves alternate or the upper ones subopposite or opposite, petiolate'
 fromDB = True
-#fromDB = False
+fromDB = False
 parser = FeatureBottomUpLeftCornerChartParser
 #parser = FeatureEarleyChartParser
 #parser = FeatureTopDownChartParser

@@ -22,6 +22,9 @@ posit    =  Feature('posit', default='')
 makecomp =  Feature('makecomp', default=False)
 compar   =  Feature('compar', default=False)
 adjectival = Feature('adjectival', default=False)
+counted  = Feature('counted', default=False)
+
+defaultfeatures = (position, timing, posit, makecomp, compar, adjectival, counted)
 
 def pickle_lexicon():
     global lexicon, multiwords
@@ -40,6 +43,7 @@ def pickle_lexicon():
     def addlexentry(word, POS, morefeatures):
         if word.startswith('_'):
             word = word.replace('_', '-', 1)
+            morefeatures[counted] = True
         ws = word.split('_')
         if len(ws) > 1:
             firstword = ws[0]
@@ -77,7 +81,7 @@ def pickle_lexicon():
                 morefeatures = {}
                 gid, term, category, appliesto = gentry['ID'], gentry['term'], gentry['category'].lower(), gentry[
                     'appliesTo'].lower()
-                semterm = term.replace('-', '_').strip('.')
+                # semterm = term.replace('-', '_').strip('.')
                 if category in ('structure', 'feature', 'character', 'structure-infl',
                                 'substance', 'life-form', 'plant', 'taxonomy', 'en', 'process'):
                     POS = 'N'
@@ -118,7 +122,7 @@ def pickle_lexicon():
     for word in PREP_POSITION:
         addlexentry(word, 'P', {'prep':word, position:True, adjectival:False}) #, sem=read_expr(r'\x.' + word + '(x)'))
     POSITIONP = 'near|outside|inside|above|below|beneath|outside|inside|between|' \
-                    'before|after|behind|across|along|around|from|within|without'.split('|')
+                    'before|after|behind|across|along|around|from|within'.split('|')
     for word in POSITIONP:
         addlexentry(word, 'P', {'prep':word, position:True, adjectival:True})
         #addlexentry(word, 'P', prep=word, position=True, sem=read_expr(r'\x.' + word + '(x)'))
@@ -163,7 +167,7 @@ def pickle_lexicon():
     addlexicon(FREQUENCY, 'DEG', dict(frequency=True))
     DEGREE = "sparsely|densely|slightly|narrowly|widely|markedly|somewhat|rather|shallowly|scarcely|partly|partially|much|" \
              "dark|light|deep".split('|')
-    addlexicon(DEGREE, 'DEG', {})
+    addlexicon(DEGREE, 'ADV', {})
     COMPARISON = "paler|darker|lighter|shorter|longer|wider|narrower|bigger|smaller|duller|shinier|higher|" \
                  "older|younger|" \
                  "as_many_as|exceeding|equalling|as_long_as|indistinguishable_from|similar".split('|')
