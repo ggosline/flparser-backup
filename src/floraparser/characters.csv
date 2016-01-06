@@ -1,6 +1,4 @@
 taxon,subject,subpart,category,value,mod,posit,phase,presence
-Test run,leaves,,subject,leaves,,,,
-Test run,leaves,,arrangement,alternate,,,,
-Test run,leaves,,arrangement,subopposite,[ *posit* = 'upper' ],,,
-Test run,leaves,,arrangement,opposite,[ *posit* = 'upper' ],,,
-Test run,leaves,,architecture,petiolate,,,,
+Test run,anther,,subject,anther,,,,
+Test run,anther,,coloration,pale TO orange-yellow,,,,
+Test run,anther,,architecture,confluent,[ deg = 'not' ],[ *posit* = 'at_the_apex' ],,

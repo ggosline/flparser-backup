@@ -13,7 +13,7 @@ import traceback
 
 trec = defaultdict(lambda: None)
 
-description = 'Leaves alternate or the upper ones subopposite or opposite, petiolate'
+description = 'anthers pale to orange-yellow, dehiscing by 2 oblique or almost vertical clefts not confluent at the apex'
 fromDB = True
 fromDB = False
 parser = FeatureBottomUpLeftCornerChartParser
@@ -83,7 +83,7 @@ if __name__ == '__main__':
                             print('failure to get H')
                             H = None
                         if H:
-                            DumpChars(taxname, subject, '', t[()].label()['H'], indent=1, file=cfcsv)
+                            DumpChars(taxname, subject, '', H, indent=1, file=cfcsv)
 
                 if trees:
                     print('Success: \n ' + phrase.text, file=of)
