@@ -1,4 +1,4 @@
 taxon,subject,subpart,category,value,mod,posit,phase,presence
-Test run,anther,,subject,anther,,,,
-Test run,anther,,coloration,pale TO orange-yellow,,,,
-Test run,anther,,architecture,confluent,[ deg = 'not' ],[ *posit* = 'at_the_apex' ],,
+Test run,lamina,,subject,lamina,,,,
+Test run,lamina,margin,shape-margin,entire,,,,True
+Test run,lamina,margin,shape-margin,curved-dentate,"[ AND = ([ deg = '±' ], [ mod = 'deeply' ]) ]",,,True

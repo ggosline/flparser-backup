@@ -13,7 +13,7 @@ import traceback
 
 trec = defaultdict(lambda: None)
 
-description = 'anthers pale to orange-yellow, dehiscing by 2 oblique or almost vertical clefts not confluent at the apex'
+description = 'lamina margin entire or ± deeply curved-dentate'
 fromDB = True
 fromDB = False
 parser = FeatureBottomUpLeftCornerChartParser

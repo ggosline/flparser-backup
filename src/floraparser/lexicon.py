@@ -98,6 +98,8 @@ def pickle_lexicon():
                     POS = 'UNK'
                 morefeatures['category']=category    # semexpr = None
                 addlexentry(term, POS,  morefeatures)
+                if '-' in term:     # assume people may have left the dash out of terms (see colours)
+                    addlexentry(term.replace('-','_'), POS, morefeatures)
 
     COORDCONJUNCTION = 'and|or|and/or|neither|nor|otherwise|but|except|except_for|×'.split('|')
     for word in COORDCONJUNCTION:
