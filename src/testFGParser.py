@@ -15,7 +15,7 @@ trec = defaultdict(lambda: None)
 
 description = 'lamina margin entire or ± deeply curved-dentate'
 fromDB = True
-fromDB = False
+#fromDB = False
 parser = FeatureBottomUpLeftCornerChartParser
 #parser = FeatureEarleyChartParser
 #parser = FeatureTopDownChartParser

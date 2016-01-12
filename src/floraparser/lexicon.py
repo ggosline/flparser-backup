@@ -168,7 +168,7 @@ def pickle_lexicon():
                 "soon|also|even|especially|?".split('|')
     addlexicon(FREQUENCY, 'DEG', dict(frequency=True))
     DEGREE = "sparsely|densely|slightly|narrowly|widely|markedly|somewhat|rather|shallowly|scarcely|partly|partially|much|" \
-             "dark|light|deep".split('|')
+             "dark|light|deep|bright".split('|')
     addlexicon(DEGREE, 'ADV', {})
     COMPARISON = "paler|darker|lighter|shorter|longer|wider|narrower|bigger|smaller|duller|shinier|higher|" \
                  "older|younger|" \
