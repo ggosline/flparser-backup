@@ -65,7 +65,7 @@ NBAR[category=?c, H=[mod=?m]] -> APL[H=?m] NL[category=?c, +HD, H=?head]
 NBAR[category=?c] -> NL[category=?c, +HD, H=?head]
 NBAR[category=?c] -> NBAR[category=?c, +HD, H=?head] OFP
 NBAR[category=?c, H=[mod=?prep]] -> NBAR[category=?c, +HD, H=?head] PP[H=?prep]
-#NBAR[category=?c, H=[mod=?prep]] -> NBAR[category=?c, +HD, H=?head] AP[H=?prep]
+NBAR[category=?c, H=[mod=?prep]] -> NBAR[category=?c, +HD, H=?head] AP[H=?prep]
 
 NBAR[category=?c] -> NBAR[category=?c, +HD, H=?head] PAREXP
 NBAR[category=pro, H=[category=pro]] -> PRO[H=?h, +HD]
@@ -116,7 +116,7 @@ ADVB[H=[OR=(?o1,?o2)]] -> ADVB[H=?o1] OR ADVB[H=?o2]
 DEG -> COMPADJ DEG
 ADVB[+comp, category=adv, H=[orth=?o, mod=?c]] -> A[+*makecomp*, H=[orth=?c]] ADV[H=[orth=?o]]
 
-MOD[H=[mod=?adv]] -> ADVB[H=[orth=?adv]]
+MOD[H=[orth=?adv]] -> ADVB[H=[orth=?adv]]
 MOD[H=[deg=?deg]] ->  DEG[H=[orth=?deg]]
 #MOD[H=[count=?adv]] -> COUNT[H=?adv]
 AP[H=?count] -> COUNT[H=?count]

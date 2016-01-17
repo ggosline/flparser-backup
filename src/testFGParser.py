@@ -13,9 +13,9 @@ import traceback
 
 trec = defaultdict(lambda: None)
 
-description = 'lamina margin entire or ± deeply curved-dentate'
+description = 'Flowers (1–2)3–15 in axillary dichasial or subumbellate cymes, bisexual, 12–15 mm. in diam.'
 fromDB = True
-#fromDB = False
+fromDB = False
 parser = FeatureBottomUpLeftCornerChartParser
 #parser = FeatureEarleyChartParser
 #parser = FeatureTopDownChartParser

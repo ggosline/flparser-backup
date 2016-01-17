@@ -120,12 +120,12 @@ def pickle_lexicon():
 
     PREP_POSITION = 'among|amongst|around|at|between|beyond|by|' \
                   'from|in|into|near|on|onto|out_of|over|through|throughout|toward|' \
-                  'towards|up|'.split('|')
+                  'outside|inside|between|before|after|behind|across|along|from|' \
+                  'towards|up'.split('|')
     for word in PREP_POSITION:
         addlexentry(word, 'P', {'prep':word, position:True, adjectival:False}) #, sem=read_expr(r'\x.' + word + '(x)'))
-    POSITIONP = 'near|outside|inside|above|below|beneath|outside|inside|between|' \
-                    'before|after|behind|across|along|around|from|within'.split('|')
-    for word in POSITIONP:
+    POSITIONADJ = 'outside|inside|above|below|beneath|within|throughout'.split('|')
+    for word in POSITIONADJ:
         addlexentry(word, 'P', {'prep':word, position:True, adjectival:True})
         #addlexentry(word, 'P', prep=word, position=True, sem=read_expr(r'\x.' + word + '(x)'))
 
