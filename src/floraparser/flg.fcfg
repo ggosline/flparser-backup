@@ -197,6 +197,8 @@ A[category=position, H=[orth=?o, category=position], +*position*] -> P[H=[orth=?
 POSITION[H=[*posit*=?o]] -> P[prep=?p, H=[orth=?o], +*position*]
 POSITION[H=[*posit*=?prep, obj=?n]] -> P[prep=?prep, +*position*] NP[H=?n]
 POSITION[H=[*posit*=?o]] -> A[+*position*, H=[orth=?o]]
+POSITION[H=[*posit*=?o, deg=?deg]] -> DEG[H=[orth=?deg]] A[+*position*, H=[orth=?o]]
+POSITION[H=[AND=(?h1+?h2)]] -> POSITION[H=?h1] AND POSITION[H=?h2]
 MOD[H=[*posit*=?o]] -> ART A[+*position*, H=[orth=?o]] 'ones'
 
 #SUBSET[stage=(?a+?n)] -> IN ABARL[orth=?a] N[orth=?n]

@@ -157,7 +157,7 @@ def pickle_lexicon():
     RANGE = 'up_to|at_least|to|more_than|less_than'.split('|')
     addlexicon(RANGE, 'RANGE', {})
     POSITIONA = 'upper|lower|uppermost|lowermost|superior|inferior|outer|inner|outermost|innermost|various|' \
-                'above_and_beneath|at_the_apex|at_the_base'.split('|')
+                'above_and_beneath|at_the_apex|at_the_base|at_the_top'.split('|')
     addlexicon(POSITIONA, 'A', {position:True, 'category':'position'})
 
     POSITION = 'top|bottom|underside|base|apex|margin|front|back|both_sides|both_surfaces|each_side|section|rest_of'.split('|')

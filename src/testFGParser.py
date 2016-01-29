@@ -13,7 +13,7 @@ import traceback
 
 trec = defaultdict(lambda: None)
 
-description = 'Flowers (1–2)3–15 in axillary dichasial or subumbellate cymes, bisexual, 12–15 mm. in diam.'
+description = 'Pods 5-13 x 1.2-2.1 (2.8) cm., subcoriaceous, straight or slightly curved, grey or brown, longitudinally veined, ± glandular and sometimes puberulous, narrowed at the base and sometimes at the top'
 fromDB = True
 fromDB = False
 parser = FeatureBottomUpLeftCornerChartParser
@@ -43,7 +43,7 @@ if __name__ == '__main__':
         ttrace = 0
         draw = False
         ttaxa = FloraCorpusReader(db=r'..\resources\efloras.db3',
-                                  query="Select * from AllTaxa where flora_name = 'FZ' and genus = 'Salacia' and species = 'bussei' ;")
+                                  query="Select * from AllTaxa where flora_name = 'FZ' and genus = 'Acacia' ;")
         of = open('testphrases.txt', 'w', encoding='utf-8')
 
     else:

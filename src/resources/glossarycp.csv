@@ -1890,6 +1890,7 @@ ID,term,category,appliesTo,definition,category2,dataSource
 1970,plumule,structure,,"A distinguishable nascent shoot developed in the embryo in some taxa, consisting of a shoot axis with unexpanded internodes and one or more leaf primordia, being that portion of the embryo above the level of cotyledon insertion; the primordial shoot, when",STRUCTURE,
 1971,pluri_,prefix,,"Indicating presence of or constitution by a relatively large number of entities of the type denoted by the term's stem; as in  plurilocular, pluriseriate.  See also oligo... (few-...).",prefix,
 1972,pneumatophore,structure,,"A structurally and functionally specialized root serving as an aboveground aerating organ; found in some woody taxa of wet habitats, notably some mangroves.",STRUCTURE,
+1972.1,pod,structure,,"a dry dehiscent fruit...",STRUCTURE,
 1973,polished,reflectance,,Uniformly reflecting a high proportion of incident light at all angles.,reflectance,
 1974,pollen,structure,,"Collectively, the spores or grains produced within the thecae of anthers, each containing a very small microgametophyte (or its evolutionary homologue); serving as disseminules from which microgametes are released after transport to a receptive micropylar",STRUCTURE,
 1975,pollen_sac,structure,,"Any of the one, two or four ontogenetically distinct, pollen-producing sectors (microsporangia) of an anther.  In some taxa the walls between pairs of adjacent thecae break down as an anther approaches maturity, the mature anther thus ultimately containin",STRUCTURE,

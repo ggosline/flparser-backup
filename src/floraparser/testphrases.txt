@@ -1,0 +1,105 @@
+TAXON:  Leguminosae Acacia 
+Success: 
+ Plant is Trees or shrubs, sometimes climbing
+No. of trees: 1
+Fail:
+ the native species in our area almost invariably armed with prickles or spines, the introduced ones usually unarmed
+No. of trees: 2
+Fail:
+ Leaves 2-pinnate or (in introduced species) often modified to phyllodes (entire leaflike often flattened organs without pinnae or leaflets)
+No. of trees: 1
+Fail:
+ pinnae each with one to many pairs of leaflets
+No. of trees: 2
+Fail:
+ gland on the upper side of the petiole usually present
+No. of trees: 2
+Success: 
+ glands also often present at the insertion of the pinnae
+No. of trees: 1
+Success: 
+ Flowers in spikes, spiciform racemes or round heads, hermaphrodite or male and hermaphrodite
+No. of trees: 10
+Fail:
+ if in heads then central flowers not enlarged and modified
+No. of trees: 1
+Success: 
+ inflorescences usually axillary, racemose or paniculate
+No. of trees: 2
+Fail:
+ Calyx (in our species) gamosepalous, subtruncate or usually with 4-5 teeth or lobes
+No. of trees: 3
+Success: 
+ Corolla 4-5(7)-lobed
+No. of trees: 2
+Fail:
+ Stamens many, fertile, their filaments free or (in A. albida and A. eriocarpa) connate into a tube at their extreme base only
+No. of trees: 3
+Fail:
+ anthers (at least some) glandular at the apex, or all eglandular (in all native species glandular except in A. albida, in introduced species mostly eglandular)
+No. of trees: 3
+Success: 
+ Ovary stipitate to sessile, glabrous to puberulous
+No. of trees: 1
+Fail:
+ Pods very variable, dehiscent or sometimes indehiscent, flat, ± compressed, or sometimes cylindric, straight, curved, spiral or contorted, continuous or moniliform
+No. of trees: 9
+Fail:
+ Seeds unwinged, often with a hard smooth testa, without endosperm
+No. of trees: 4
+TAXON:  Leguminosae Acacia abyssinica
+Success: 
+ Plant is Conspicuously flat-crowned tree 6-15(20) m. high
+No. of trees: 1
+Fail:
+ bark rough and fissured, brown to nearly black
+No. of trees: 3
+Success: 
+ epidermis not peeling on the twigs
+No. of trees: 4
+Success: 
+ bark on young trees papery
+No. of trees: 7
+Fail:
+ indumentum of branchlets variable, pubescent to shortly villous, grey or somewhat yellowish
+No. of trees: 4
+Success: 
+ Stipules spinescent, other prickles absent
+No. of trees: 2
+Fail:
+ spines variable, absent, short or up to 7.2 cm. long, straight, ashen when elongate, never inflated
+No. of trees: 7
+Success: 
+ Leaves: petiole 2-5 mm. long
+No. of trees: 1
+Fail:
+ pinnae of well-developed leaves of mature shoots 15-51 pairs (reduced leaves with fewer pairs also present)
+No. of trees: 2
+Fail:
+ leaflets up to 4 x 0.75 mm
+No. of trees: 2
+Success: 
+ Flowers in heads
+No. of trees: 5
+Success: 
+ stamens white
+No. of trees: 1
+Fail:
+ calyx and corolla red (? always)
+No. of trees: 1
+Success: 
+ Corolla glabrous or inconspicuously puberulous on the lobes outside
+No. of trees: 2
+Fail:
+ Pods 5-13 x 1.2-2.1 (2.8) cm., subcoriaceous, straight or slightly curved, grey or brown, longitudinally veined, ± glandular and sometimes puberulous, narrowed at the base and sometimes at the top
+No. of trees: 7
+Fail:
+ Seeds ± oblique in the pod, olive-brown, 7-10 x 4-6 mm., smooth, elliptic, compressed, areole 6-7 x 2.5-4 mm
+No. of trees: 7
+TAXON:  Leguminosae Acacia adenocalyx
+Fail:
+ Plant is Compact shrub or small tree 1-5 m. high, sometimes low and spreading, or even scandent
+No. of trees: 4
+Success: 
+ young branchlets puberulous and with very many minute brown glands
+No. of trees: 2

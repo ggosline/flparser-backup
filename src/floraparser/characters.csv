@@ -1,0 +1,13 @@
+taxon,subject,subpart,category,value,mod,posit,phase,presence
+Test run,pod,,subject,pod,,,,
+Test run,pod,,dimension,"('5-13', 'cm.', 'long')",,,,
+Test run,pod,,dimension,"('1.2-2.1 (2.8)', 'cm.', 'wide')",,,,
+Test run,pod,,texture,coriaceous,sub,,,
+Test run,pod,,shape,curved,[ orth = 'slightly' ],,,
+Test run,pod,,coloration,grey,,,,
+Test run,pod,,coloration,brown,,,,
+Test run,pod,,architecture,veined,[ orth = 'longitudinally' ],,,
+Test run,pod,,pubescence,glandular,[ deg = '±' ],,,
+Test run,pod,,pubescence,puberulous,[ deg = 'sometimes' ],,,
+Test run,pod,,size,narrowed,,"[ AND = ([ *posit* = 'at_the_base' ], [ *posit* = 'at_the_top' ]
+[ deg     = 'sometimes'  ]) ]",,
