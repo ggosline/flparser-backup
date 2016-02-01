@@ -127,6 +127,7 @@ class FlTagger():
                 return root, le[TYPE], [le], ('-' + root[0],)
 
         if word.endswith('ly'):
+            print ("UNK adverb:", word)
             return flword, 'ADV', [
                 featurereader.fromstring(
                 "ADV[H=[orth='" + word +"']]")], \
@@ -139,6 +140,7 @@ class FlTagger():
         # for sy in synsets:
         # pass
 
+        print ("UNK word:  ", word)
         return word, 'UNK', [FeatStructNonterminal(features={TYPE: 'UNK', 'orth': word})], (word,)
 
         # def tag(self, blob):

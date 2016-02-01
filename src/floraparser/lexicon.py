@@ -101,7 +101,7 @@ def pickle_lexicon():
                 if '-' in term:     # assume people may have left the dash out of terms (see colours)
                     addlexentry(term.replace('-','_'), POS, morefeatures)
 
-    COORDCONJUNCTION = 'and|or|and/or|neither|nor|otherwise|but|except|except_for|×'.split('|')
+    COORDCONJUNCTION = 'and|or|and/or|neither|nor|otherwise|but|except|except_for|×|x'.split('|')
     for word in COORDCONJUNCTION:
         addlexentry(word, 'CONJ', dict(conj=word, coord=True))
     SUBCONJUNCTION = 'but|for|yet|so|although|because|since|unless|if'.split('|')

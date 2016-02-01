@@ -13,9 +13,9 @@ import traceback
 
 trec = defaultdict(lambda: None)
 
-description = 'Pods 5-13 x 1.2-2.1 (2.8) cm., subcoriaceous, straight or slightly curved, grey or brown, longitudinally veined, ± glandular and sometimes puberulous, narrowed at the base and sometimes at the top'
+description = 'Pods 5-13 x 1.2-2.1 (2.8) cm., subcoriaceous'
 fromDB = True
-fromDB = False
+#fromDB = False
 parser = FeatureBottomUpLeftCornerChartParser
 #parser = FeatureEarleyChartParser
 #parser = FeatureTopDownChartParser
@@ -43,7 +43,7 @@ if __name__ == '__main__':
         ttrace = 0
         draw = False
         ttaxa = FloraCorpusReader(db=r'..\resources\efloras.db3',
-                                  query="Select * from AllTaxa where flora_name = 'FZ' and genus = 'Acacia' ;")
+                                  query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Acacia' and species = 'abyssinica' ;")
         of = open('testphrases.txt', 'w', encoding='utf-8')
 
     else:
