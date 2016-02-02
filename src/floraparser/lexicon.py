@@ -23,8 +23,9 @@ makecomp =  Feature('makecomp', default=False)
 compar   =  Feature('compar', default=False)
 adjectival = Feature('adjectival', default=False)
 counted  = Feature('counted', default=False)
+conditional  = Feature('conditional', default=False)
 
-defaultfeatures = (position, timing, posit, makecomp, compar, adjectival, counted)
+defaultfeatures = (position, timing, posit, makecomp, compar, adjectival, counted, conditional)
 
 def pickle_lexicon():
     global lexicon, multiwords
@@ -124,7 +125,7 @@ def pickle_lexicon():
                   'towards|up'.split('|')
     for word in PREP_POSITION:
         addlexentry(word, 'P', {'prep':word, position:True, adjectival:False}) #, sem=read_expr(r'\x.' + word + '(x)'))
-    POSITIONADJ = 'outside|inside|above|below|beneath|within|throughout'.split('|')
+    POSITIONADJ = 'outside|inside|above|below|beneath|within|throughout|upward'.split('|')
     for word in POSITIONADJ:
         addlexentry(word, 'P', {'prep':word, position:True, adjectival:True})
         #addlexentry(word, 'P', prep=word, position=True, sem=read_expr(r'\x.' + word + '(x)'))
@@ -135,9 +136,12 @@ def pickle_lexicon():
     for word in PREPOSITION:
         addlexentry(word, 'P', dict(prep=word)) #, sem=read_expr(r'\x.' + word + '(x)'))
 
+    CONDITIONP = 'when|if'.split('|')
+    for word in CONDITIONP:
+        addlexentry(word, 'P', dict(prep=word, conditional=True)) #, sem=read_expr(r'\x.' + word + '(x)'))
+
     addlexentry('with', 'WITH', {'presence':True})
     addlexentry('without', 'WITH', {'presence':False})
-
 
     GROUPS = "group|groups|clusters|cluster|arrays|array|series|" \
              "pairs|pair|row|rows|number|numbers|colonies".split('|')

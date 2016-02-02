@@ -1,0 +1,11 @@
+taxon,subject,subpart,category,value,mod,posit,phase,presence
+Test run,spine,,subject,spine,,,,
+Test run,spine,,variability,variable,,,,
+Test run,spine,,presence,absent,,,,
+Test run,spine,,dimension,"('7.2', 'cm.', 'long')",,,,
+Test run,spine,,course,straight,,,,
+Test run,spine,,coloration,ashen,,"[ obj  = [ category = 'shape'    ] ]
+[        [ orth     = 'elongate' ] ]
+[                                  ]
+[ prep = 'when'                    ]",,
+Test run,spine,,shape,inflated,[ deg = 'never' ],,,

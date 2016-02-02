@@ -621,7 +621,18 @@ def DumpChar(crec, struct, indent: int = 0, file=None):
         if category: crec.category = category
         if struct.get('posit'): crec.posit = struct.get('posit')
         if struct.get('phase'): crec.phase = struct.get('phase')
-        if struct.get('having'):
+        if struct.get('ISA'):
+            if struct.get('orth'):
+                crec.value = struct['orth']
+                if struct.get('mod'):
+                    crec.mod = struct.get('mod')
+                file.writerow(crec._asdict())
+            if struct.get('clist'):
+                crec.mod = ""
+                DumpChar(crec, struct.get('clist'), indent, file)
+            else:
+                return
+        elif struct.get('having'):
             having = struct.get('having')
             crec.presence = struct['presence']
             if struct.get('orth'):

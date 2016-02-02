@@ -3350,6 +3350,7 @@ ID,term,category,appliesTo,definition,category2,dataSource
 3512,shrublet,life-form,,,,
 3513,grey,coloration,,,,
 3514,greyish,coloration,,,,
+3514a,ashen,coloration,,,,
 3515,_lined,relief,,,,
 3516,foliage,structure,,,,
 3517,angustate,shape,,"Narrowed, mostly of leaf bases. (unusual term)",,

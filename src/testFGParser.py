@@ -13,9 +13,9 @@ import traceback
 
 trec = defaultdict(lambda: None)
 
-description = 'Pods 5-13 x 1.2-2.1 (2.8) cm., subcoriaceous'
+description = 'spines variable, absent, short or up to 7.2 cm. long, straight, ashen when elongate, never inflated'
 fromDB = True
-#fromDB = False
+fromDB = False
 parser = FeatureBottomUpLeftCornerChartParser
 #parser = FeatureEarleyChartParser
 #parser = FeatureTopDownChartParser
