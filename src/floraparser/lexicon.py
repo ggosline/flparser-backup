@@ -21,11 +21,12 @@ timing   =  Feature('timing', default=False)
 posit    =  Feature('posit', default='')
 makecomp =  Feature('makecomp', default=False)
 compar   =  Feature('compar', default=False)
-adjectival = Feature('adjectival', default=False)
-counted  = Feature('counted', default=False)
+adjectival   = Feature('adjectival', default=False)
+counted      = Feature('counted', default=False)
 conditional  = Feature('conditional', default=False)
+group        = Feature('group', default=False)    # nouns
 
-defaultfeatures = (position, timing, posit, makecomp, compar, adjectival, counted, conditional)
+defaultfeatures = (position, timing, posit, makecomp, compar, adjectival, counted, conditional, group)
 
 def pickle_lexicon():
     global lexicon, multiwords
@@ -171,7 +172,7 @@ def pickle_lexicon():
     FREQUENCY = "very|a_little|not_much|sometimes|often|usually|rarely|more_rarely|more_often|generally|never|always|" \
                 "soon|also|even|especially|?".split('|')
     addlexicon(FREQUENCY, 'DEG', dict(frequency=True))
-    DEGREE = "sparsely|densely|slightly|narrowly|widely|markedly|somewhat|rather|shallowly|scarcely|partly|partially|much|" \
+    DEGREE = "sparsely|densely|slightly|narrowly|widely|markedly|somewhat|rather|shallowly|scarcely|partly|partially|much|well|" \
              "dark|light|deep|bright".split('|')
     addlexicon(DEGREE, 'ADV', {})
     COMPARISON = "paler|darker|lighter|shorter|longer|wider|narrower|bigger|smaller|duller|shinier|higher|" \

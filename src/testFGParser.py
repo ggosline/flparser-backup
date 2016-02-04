@@ -13,7 +13,7 @@ import traceback
 
 trec = defaultdict(lambda: None)
 
-description = 'Corolla glabrous or puberulous'
+description = 'young branchlets puberulous and with very many minute brown glands'
 fromDB = True
 fromDB = False
 parser = FeatureBottomUpLeftCornerChartParser
@@ -43,7 +43,7 @@ if __name__ == '__main__':
         ttrace = 0
         draw = False
         ttaxa = FloraCorpusReader(db=r'..\resources\efloras.db3',
-                                  query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Acacia' and species = 'abyssinica' ;")
+                                  query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Acacia'  ;")
         of = open('testphrases.txt', 'w', encoding='utf-8')
 
     else:

@@ -6,11 +6,17 @@ Success:
  bark rough and fissured, brown to nearly black
 No. of trees: 4
 Success: 
- indumentum of branchlets variable, pubescent to shortly villous, grey or somewhat yellowish
+ epidermis not peeling on the twigs
 No. of trees: 2
 Success: 
+ bark on young trees papery
+No. of trees: 3
+Success: 
+ indumentum of branchlets variable, pubescent to shortly villous, grey or somewhat yellowish
+No. of trees: 1
+Success: 
  Stipules spinescent, other prickles absent
-No. of trees: 2
+No. of trees: 1
 Fail:
  spines variable, absent, short or up to 7.2 cm. long, straight, ashen when elongate, never inflated
 No. of trees: 7
@@ -19,22 +25,32 @@ Success:
 No. of trees: 1
 Success: 
  pinnae of well-developed leaves of mature shoots 15-51 pairs (reduced leaves with fewer pairs also present)
-No. of trees: 10
-Fail:
- leaflets up to 4 x 0.75 mm
 No. of trees: 2
 Success: 
+ leaflets up to 4 x 0.75 mm
+No. of trees: 1
+Success: 
  Flowers in heads
-No. of trees: 5
+No. of trees: 4
 Success: 
  stamens white
 No. of trees: 1
 Fail:
  calyx and corolla red (? always)
 No. of trees: 1
-Fail:
+Success: 
+ Corolla glabrous or inconspicuously puberulous on the lobes outside
+No. of trees: 2
+Success: 
  Pods 5-13 x 1.2-2.1 (2.8) cm., subcoriaceous, straight or slightly curved, grey or brown, longitudinally veined, ± glandular and sometimes puberulous, narrowed at the base and sometimes at the top
-No. of trees: 8
+No. of trees: 3
 Success: 
  Seeds ± oblique in the pod, olive-brown, 7-10 x 4-6 mm., smooth, elliptic, compressed, areole 6-7 x 2.5-4 mm
 No. of trees: 7
+TAXON:  Leguminosae Acacia adenocalyx
+Fail:
+ Plant is Compact shrub or small tree 1-5 m. high, sometimes low and spreading, or even scandent
+No. of trees: 4
+Success: 
+ young branchlets puberulous and with very many minute brown glands
+No. of trees: 2

@@ -1,1 +1,11 @@
 taxon,subject,subpart,category,value,mod,posit,phase,presence
+Test run,branchlet,,subject,branchlet,"[ category = 'age'   ]
+[ orth     = 'young' ]",,,
+Test run,branchlet,,pubescence,puberulous,,,,
+Test run,branchlet,gland,structure,puberulous,"[ AND = ([ AND = ([ category = 'count'          ]
+[                             ]
+[ mod      = [ deg = 'very' ] ]
+[                             ]
+[ orth     = 'many'           ], [ category = 'size'   ]
+[ orth     = 'minute' ]) ], [ category = 'coloration' ]
+[ orth     = 'brown'      ]) ]",,,True

@@ -2438,6 +2438,7 @@ ID,term,category,appliesTo,definition,category2,dataSource
 2530,stone,structure,,"The hard inner portion of a drupe, consisting of osseous endocarp and included seed.",STRUCTURE,
 2531,stone_fruit,structure,fruit,"Fleshy, indehiscent and derived from a single, superior, simple or compound ovary; having a soft outer wall (exocarp and mesocarp) and an osseous inner stone (endocarp) containing the seed(s) (usually only one).",nominative,
 2532,straight,course,,Lacking significant curves or bends.,course,
+2532,straight,shape,,Lacking significant curves or bends.,course,
 2533,strap-shaped,shape,,"Elongate and relatively thin with the opposite faces more or less plane and moderately narrow, their edges more or less straight and parallel over most of their length; resembling a strap.",shape,
 2534,streaked,coloration,,"Having an overall pattern of fine, more or less parallel lines of contrasting hue and/or intensity.",coloration,q
 2535,streaked,relief,,"Covered with very narrow and shallow, relatively long, more or less straight and parallel depressions.",coloration,q
@@ -2895,6 +2896,7 @@ ID,term,category,appliesTo,definition,category2,dataSource
 2999,crooked,shape,,,,
 3000,cuplike,shape,,,,
 3001,curled,shape,,,,
+3002,curved,course,,,,
 3002,curved,shape,,,,
 3003,curving,shape,,,,
 3004,cyan,coloration,,,,

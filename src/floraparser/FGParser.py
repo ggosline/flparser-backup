@@ -637,6 +637,8 @@ def DumpChar(crec, struct, indent: int = 0, file=None):
             crec.presence = struct['presence']
             if struct.get('orth'):
                 crec.subpart = struct['orth']
+                if struct.get('mod'):
+                    crec.mod = struct.get('mod')
                 if struct.get('clist'):
                     DumpChar(crec, struct.get('clist'), indent, file)
                 else:
