@@ -13,7 +13,7 @@ import traceback
 
 trec = defaultdict(lambda: None)
 
-description = 'spines variable, absent, short or up to 7.2 cm. long, straight, ashen when elongate, never inflated'
+description = 'Corolla glabrous or puberulous'
 fromDB = True
 fromDB = False
 parser = FeatureBottomUpLeftCornerChartParser

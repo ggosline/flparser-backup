@@ -153,7 +153,7 @@ def pickle_lexicon():
     ORDNUMBERS = "principal|primary|secondary|tertiary|1st|2nd|3rd|first|second|third|fourth|fifth|sixth|seventh|eigth|ninth|tenth".split(
         '|')
     addlexicon(ORDNUMBERS, 'A', dict(ordinal=True))
-    UNITS = "mm.|cm.|dm.|m.|km.".split('|')
+    UNITS = "mm.|cm.|dm.|m.|km.|mm|cm|dm|m|km".split('|')
     addlexicon(UNITS, 'UNIT', {})
     DIMENSION = "high|tall|long|wide|thick|diam.|diameter|diam|in_height|in_width|in_diameter|in_diam".split(
         '|')
