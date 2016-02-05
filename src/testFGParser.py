@@ -16,7 +16,7 @@ logging.basicConfig(filename='flparse.log', filemode='w', level=logging.INFO)
 trec = defaultdict(lambda: None)
 description = 'leaflets 6-15 pairs, (2)3-6·5 x 1-2(3) mm., ciliate on the margins, otherwise glabrous, eglandular except for a few inconspicuous glands on the margin near the apex, spinulose-mucronate at the apex'
 fromDB = True
-fromDB = False
+#fromDB = False
 parser = FeatureBottomUpLeftCornerChartParser
 #parser = FeatureEarleyChartParser
 #parser = FeatureTopDownChartParser
