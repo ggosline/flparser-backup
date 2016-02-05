@@ -3344,6 +3344,8 @@ ID,term,category,appliesTo,definition,category2,dataSource
 3504,cylindric-ellipsoid,shape,,,,
 3505,confluent,architecture,,,,
 3506,fawn,coloration,,,,
+3506,buff,coloration,,,,
+3506,mauve,coloration,,,,
 3507,united,fusion,,,,
 3508,loculus,structure,,,,
 3509,dichasial,architecture,inflorescence,,,

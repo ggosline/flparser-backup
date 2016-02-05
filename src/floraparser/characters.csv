@@ -1,11 +1,12 @@
 taxon,subject,subpart,category,value,mod,posit,phase,presence
-Test run,branchlet,,subject,branchlet,"[ category = 'age'   ]
-[ orth     = 'young' ]",,,
-Test run,branchlet,,pubescence,puberulous,,,,
-Test run,branchlet,gland,structure,puberulous,"[ AND = ([ AND = ([ category = 'count'          ]
-[                             ]
-[ mod      = [ deg = 'very' ] ]
-[                             ]
-[ orth     = 'many'           ], [ category = 'size'   ]
-[ orth     = 'minute' ]) ], [ category = 'coloration' ]
-[ orth     = 'brown'      ]) ]",,,True
+Test run,leaflet,,subject,leaflet,,,,
+Test run,leaflet,pairs,grouping,,"[ category = 'count' ]
+[ val      = '6-15'  ]",,,True
+Test run,leaflet,,dimension,"('(2)3-6·5', 'mm.', 'long')",,,,
+Test run,leaflet,,dimension,"('1-2(3)', 'mm.', 'wide')",,,,
+Test run,leaflet,,shape-margin,ciliate,,,,
+Test run,leaflet,,pubescence,glabrous,,,,
+Test run,leaflet,apex,partof,,"[ AND = ([ category = 'count' ]
+[ orth     = 'a_few' ], [ category = 'manifestation' ]
+[ orth     = 'inconspicuous' ]) ]",[ *posit* = 'near' ],,True
+Test run,leaflet,,shape-apex,mucronate,spinulose,[ *posit* = 'at_the_apex' ],,

@@ -8,6 +8,7 @@ from floraparser.inflect import singularize
 from floraparser.lexicon import lexicon, multiwords
 from nltk.grammar import FeatStructNonterminal, TYPE, SLASH
 from nltk.featstruct import FeatStructReader
+import logging
 
 # read_expr = Expression.fromstring
 # Expression._logic_parser.quote_chars = [('"', '"', r'\\', True)]
@@ -29,6 +30,7 @@ NUMWORD = re.compile(r'(?P<prefix>[0-9](?:-[0-9]))(?P<root>[-–][-a-z]*)')
 featurereader = FeatStructReader(fdict_class=FeatStructNonterminal)
 
 class FlTagger():
+
     def rootword(self, word):
         # hyphenated word
         # return list of words with last word first (the root?)
@@ -118,16 +120,16 @@ class FlTagger():
         root = self.rootword(word)
         if root:
             if (root[0],) in lexicon:  # xxx not handling synonym entries here !
-                le = lexicon[(root[0],)][0]
+                le = lexicon[(root[0],)][0].copy()
                 le['H', 'mod'] = root[1]
                 return root, le[TYPE], [le], (root[0],)
             if ('-' + root[0],) in lexicon:  # suffix
-                le = lexicon[('-' + root[0],)][0]
+                le = lexicon[('-' + root[0],)][0].copy()
                 le['H', 'mod'] = root[1]
                 return root, le[TYPE], [le], ('-' + root[0],)
 
         if word.endswith('ly'):
-            print ("UNK adverb:", word)
+            logging.info ("UNK adverb:" + word)
             return flword, 'ADV', [
                 featurereader.fromstring(
                 "ADV[H=[orth='" + word +"']]")], \
@@ -140,7 +142,7 @@ class FlTagger():
         # for sy in synsets:
         # pass
 
-        print ("UNK word:  ", word)
+        logging.info ("UNK word:  " + word)
         return word, 'UNK', [FeatStructNonterminal(features={TYPE: 'UNK', 'orth': word})], (word,)
 
         # def tag(self, blob):

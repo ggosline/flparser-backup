@@ -10,10 +10,11 @@ from nltk.parse import FeatureBottomUpChartParser, FeatureBottomUpLeftCornerChar
 from floraparser.FGParser import FGParser, cleanparsetree, FindNode, PrintStruct, DumpStruct, DumpChars
 import csv
 import traceback
+import logging
+logging.basicConfig(filename='flparse.log', filemode='w', level=logging.INFO)
 
 trec = defaultdict(lambda: None)
-
-description = 'young branchlets puberulous and with very many minute brown glands'
+description = 'leaflets 6-15 pairs, (2)3-6·5 x 1-2(3) mm., ciliate on the margins, otherwise glabrous, eglandular except for a few inconspicuous glands on the margin near the apex, spinulose-mucronate at the apex'
 fromDB = True
 fromDB = False
 parser = FeatureBottomUpLeftCornerChartParser
@@ -55,9 +56,10 @@ if __name__ == '__main__':
         print('\rTAXON: ', taxon.family, taxon.genus, taxon.species, file=of)
         # print('-'*80,  '\rTAXON: ', taxon.family, taxon.genus, taxon.species, file=cf)
         taxname = taxon.genus + ' ' + taxon.species
+        logging.info('TAXON:  ' + taxname)
         for sent in taxon.sentences:
             for i, phrase in enumerate(sent.phrases):
-                print('\rPARSING: ', phrase.text)
+                logging.info('PARSING: '+ phrase.text)
                 # print('\rPARSING: ', phrase.text, file=cf)
                 try:
                     trees = parser.parse(phrase.tokens, cleantree=cleantree, maxtrees=100)
