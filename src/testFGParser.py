@@ -14,7 +14,7 @@ import logging
 logging.basicConfig(filename='flparse.log', filemode='w', level=logging.INFO)
 
 trec = defaultdict(lambda: None)
-description = 'leaflets 6-15 pairs, (2)3-6·5 x 1-2(3) mm., ciliate on the margins, otherwise glabrous, eglandular except for a few inconspicuous glands on the margin near the apex, spinulose-mucronate at the apex'
+description = 'Plant is Conspicuously flat-crowned tree 6-15(20) m. high'
 fromDB = True
 #fromDB = False
 parser = FeatureBottomUpLeftCornerChartParser
@@ -44,7 +44,7 @@ if __name__ == '__main__':
         ttrace = 0
         draw = False
         ttaxa = FloraCorpusReader(db=r'..\resources\efloras.db3',
-                                  query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Acacia'  ;")
+                                  query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Acacia' and species = 'abyssinica' ;")
         of = open('testphrases.txt', 'w', encoding='utf-8')
 
     else:

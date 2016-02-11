@@ -82,10 +82,40 @@ def unify_heads(span, lhs, rhs):
 
     lhs['H'] = newH
 
-    # if not isinstance(rhead, FeatDict):
-    #     lhs['H'] = rhead
-    # else:
-    #     lhs['H'].update(head_prod[0]['H'])   # copy rather than unify which has trouble with lists
+def _naive_unify(fstruct1:FeatStruct, fstruct2:FeatStruct):
+
+    newfs = fstruct1.copy()
+    if _is_mapping(fstruct1) and _is_mapping(fstruct2):
+
+    # Unify any values that are defined in both fstruct1 and
+    # fstruct2.  Copy any values that are defined in fstruct2 but
+    # not in fstruct1 to fstruct1.  Note: sorting fstruct2's
+    # features isn't actually necessary; but we do it to give
+    # deterministic behavior, e.g. for tracing.
+        for fname, fval2 in sorted(fstruct2.items()):
+            if fname in fstruct1:
+                newfs[fname] = _naive_unify(fstruct1[fname], fval2)
+            else:
+                newfs[fname] = fval2
+
+            return newfs # Contains the unified value.
+
+    # Unifying two sequences:
+    elif _is_sequence(fstruct1) and _is_sequence(fstruct2):
+        # Concatenate the values !!
+        # Don't unify corresponding values in fstruct1 and fstruct2.
+        newfs += fstruct2
+        return newfs # Contains the unified value.
+
+    else:
+        return None
+
+def _is_mapping(v):
+    return hasattr(v, '__contains__') and hasattr(v, 'keys')
+
+def _is_sequence(v):
+    return (hasattr(v, '__iter__') and hasattr(v, '__len__') and
+            not isinstance(v, str))
 
 FeatureTreeEdge.__init__ = FGFeatureTreeEdge.__init__
 
