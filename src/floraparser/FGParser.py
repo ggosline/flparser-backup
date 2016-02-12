@@ -19,6 +19,7 @@ from nltk.parse import FeatureBottomUpChartParser, FeatureBottomUpLeftCornerChar
 from floracorpus import recordtype
 import copy
 
+
 class FGFeatureTreeEdge(FeatureTreeEdge):
 
     def __init__(self, span, lhs, rhs, dot=0, bindings=None):
@@ -358,6 +359,8 @@ class FGParser():
         # check for tokens added by the POS processor -- e.g. ADV
         newprod = False
         # Add a comma and a terminal token to beginning and end of phrase
+        COMMA = FGTerminal(',', 'COMMA', tokens[-1].slice.stop)
+        COMMA.lexentry = lexicon[(',',)]
         tokens = [FGTerminal('¢', 'EOP', 0)] + tokens + [COMMA] + [FGTerminal('$', 'EOP', tokens[-1].slice.stop)]
 
         for fltoken in tokens:
@@ -432,7 +435,7 @@ class FGParser():
         for charedge in charedges:
             for tree in self._chart.trees(charedge, complete=True, tree_class=Tree):
                 trees.append((tree, charedge.start(), charedge.end()))
-        return [(t, self._chart._tokens[start+1].slice.start, self._chart._tokens[end-1].slice.stop) for t, start, end in trees]
+        return [(t, self._chart._tokens[start].slice.start, self._chart._tokens[end-1].slice.stop) for t, start, end in trees]
 
     def listCHARs(self):
         '''
@@ -446,12 +449,12 @@ class FGParser():
 
         charedges = list(self.simple_select(is_complete=True, lhs='SUBJECT'))
 
-        charedge = max(charedges, key=lambda edge: edge.length())
-        # for charedge in charedges:
+        if charedges:
+            charedge = max(charedges, key=lambda edge: edge.length())
 
-        for tree in self._chart.trees(charedge, complete=True, tree_class=Tree):
-            trees.append((tree, charedge.start(), charedge.end()))
-            subjend = charedge.end()
+            for tree in self._chart.trees(charedge, complete=True, tree_class=Tree):
+                trees.append((tree, charedge.start(), charedge.end()))
+                subjend = charedge.end()
 
         charedges = [edge for edge in self.simple_select(is_complete=True, lhs='CHAR') if edge.start() >= subjend]
 
@@ -472,7 +475,7 @@ class FGParser():
                     if newtree:
                         trees.append((tree, charedge.start(), charedge.end()))
 
-        return [(t, self._chart._tokens[start+1].slice.start, self._chart._tokens[end-1].slice.stop) for t, start, end in trees]
+        return [(t, self._chart._tokens[start].slice.start, self._chart._tokens[end-1].slice.stop) for t, start, end in trees]
 
     def simple_select(self, **restrictions):
         """
@@ -514,8 +517,6 @@ class FGTerminal(FlToken):
     def __repr__(self):
         return self.text
 
-COMMA = FGTerminal(',', 'COMMA', -1)
-COMMA.lexentry = lexicon[(',',)]
 
 def cleanparsetree(tree):
     purgenodes(tree, ['CTERMINATOR'])
@@ -644,10 +645,10 @@ def DumpStruct(struct, indent: int = 0, file=None):
     else:
         pass
 
-CharRec = recordtype.recordtype('CharRec', 'taxon subject subpart category value mod posit phase presence', default=None)
+CharRec = recordtype.recordtype('CharRec', 'taxonNo taxon subject subpart category value mod posit phase presence start end', default=None)
 
-def DumpChars(taxon, subject, subpart, struct, indent: int = 0, file=None):
-    crec = CharRec(taxon, subject)
+def DumpChars(taxonNo, taxon, subject, subpart, struct, start, end, indent: int = 0, file=None):
+    crec = CharRec(taxonNo, taxon, subject, start=start, end=end)
     DumpChar(crec, struct, indent, file)
 
 def DumpChar(crec, struct, indent: int = 0, file=None):
@@ -720,3 +721,5 @@ def DumpChar(crec, struct, indent: int = 0, file=None):
             DumpChar(crec, subc, file=file)
 
 
+    else:
+        pass

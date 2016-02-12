@@ -14,7 +14,7 @@ import logging
 logging.basicConfig(filename='flparse.log', filemode='w', level=logging.INFO)
 
 trec = defaultdict(lambda: None)
-description = 'Corolla glabrous or inconspicuously puberulous on the lobes outside'
+description = 'Heads of flowers c. 8 mm. in diam., in an ample terminal panicle'
 fromDB = True
 #fromDB = False
 parser = FeatureBottomUpLeftCornerChartParser
@@ -26,6 +26,7 @@ ttrace = 1
 draw = False
 draw = True
 
+trec['taxonNo'] = 666
 trec['genus'] = 'Test'
 trec['species'] = 'run'
 trec['description'] = description
@@ -36,7 +37,7 @@ tfilebase = r'..\..\temp\tree'
 
 of = sys.stdout
 cf = open('characters.csv', 'w', encoding='utf-8', newline='')
-cfcsv = csv.DictWriter(cf, 'taxon subject subpart category value mod posit phase presence'.split())
+cfcsv = csv.DictWriter(cf, 'taxonNo taxon subject subpart category value mod posit phase presence start end'.split())
 cfcsv.writeheader()
 
 if __name__ == '__main__':
@@ -44,7 +45,7 @@ if __name__ == '__main__':
         ttrace = 0
         draw = False
         ttaxa = FloraCorpusReader(db=r'..\resources\efloras.db3',
-                                  query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Acacia' and species = 'abyssinica' ;")
+                                  query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Acacia'  ;")
         of = open('testphrases.txt', 'w', encoding='utf-8')
 
     else:
@@ -56,6 +57,7 @@ if __name__ == '__main__':
         print('\rTAXON: ', taxon.family, taxon.genus, taxon.species, file=of)
         # print('-'*80,  '\rTAXON: ', taxon.family, taxon.genus, taxon.species, file=cf)
         taxname = taxon.genus + ' ' + taxon.species
+        taxonNo = taxon.taxonNO
         logging.info('TAXON:  ' + taxname)
         for sent in taxon.sentences:
             for i, phrase in enumerate(sent.phrases):
@@ -85,7 +87,7 @@ if __name__ == '__main__':
                             print('failure to get H')
                             H = None
                         if H:
-                            DumpChars(taxname, subject, '', H, indent=1, file=cfcsv)
+                            DumpChars(taxonNo, taxname, subject, '', H, txtstart, txtend, indent=1, file=cfcsv)
 
                 if trees:
                     print('Success: \n ' + phrase.text, file=of)

@@ -5,7 +5,7 @@ CDELIM -> COMMA |
 
 DESCRIPTION[subject=?s, chars=?charlist] -> SUBJECT[H=?s] CDELIM CHARLIST[H=?charlist] '$'
 
-SUBJN[H=[category=subject, orth=?o]] -> N[category='structure', H=[orth=?o]] | N[category='life-form', H=[orth=?o]] | N[category='feature', H=[orth=?o]]
+SUBJN[H=[category=subject, orth=?o]] -> N[category='structure', H=[orth=?o]] | N[category='life-form', H=[orth=?o]] | N[category='feature', H=[orth=?o]] | N[category='structure-infl', H=[orth=?o]]
 SUBJN[H=[mod=(?m)]]  -> AP[H=?m] SUBJN[H=?head, +HD]
 SUBJN[H=[mod=(?m)]]  -> AP[H=?m] SUBJN[H=?head, +HD]
 SUBJN[H=[mod=(?of)]] -> SUBJN[H=?head, +HD] OFP[H=?of]
@@ -51,7 +51,7 @@ ISA -> IS
 
 CHR[category=dimension]   ->  SIZEB[+HD, H=?head]
 CHR[category=count]       ->  COUNT[+HD, H=?head]
-CHR[category=group, H=?h] ->  IN NP[H=?head, +HD, +*group*]
+CHR[category=group] ->  IN NP[H=?head, +HD, +*group*]
 
 CHRL[category=?c, H=?h]                   ->  CHR[H=?h, category=?c]
 CHRL[category=(?c+?d), H=[AND=(?ha+?hb)]] ->  CHR[H=?ha, category=?c] AND CHRL[H=?hb, category=?d]
@@ -166,8 +166,8 @@ AP[category=?d, H=[AND=(?ha+?hb)]]   -> AP[category=?c, H=?ha]  AP[category=?d, 
 WITHC[category=?c, H=[clist=?clist]] ->  NP[category=?c, H=?h, +HD] CHRL[H=?clist]
 WITHC[category=?c, H=[]]             ->  NP[category=?c, H=?h, +HD]
 
-WITHP[category=?c, H=[presence=?p, having = True ]]   -> WITH[presence=?p] WITHC[category=?c, +HD, H=?h]
-WITHP[category=?c, H=[presence=True, having = True ]] -> WITHC[category=?c, +HD, H=?h]
+WITHP[category=?c, H=[presence=?p ]]   -> WITH[presence=?p] WITHC[category=?c, +HD, H=?h]
+WITHP[category=?c, H=[presence=True ]] -> WITHC[category=?c, +HD, H=?h]
 
 WITHP[category=(?c+?d), H=[+presence, having=[AND=(?h1+?h2)]]] -> WITH WITHC[category=?c, H=?h1] AND  WITHC[category=?d, H=?h2]
 WITHP[category=(?c+?d), H=[+presence, having=[OR=(?h1+?h2)]]]  -> WITH WITHC[category=?c, H=?h1] OR  WITHC[category=?d, H=?h2]
@@ -177,7 +177,7 @@ COMPARISON[H=[category=?cat, orth=(?comp,?aa,?ab)]] -> ADV[+*makecomp*, H=[orth=
 OFP[category=?c, H=[prep=OF]] -> OF NP[category=?c, +HD, H=?head]
 
 
-PP[H=[prep=?prep, obj=?n]]    -> P[H=[orth=?prep]] NP[H=?n, -group]
+PP[H=[prep=?prep, obj=?n]]    -> P[H=[orth=?prep]] NP[H=?n]
 POSITION[H=[prep=?prep, obj=?n]]    -> P[H=[orth=?prep], +*conditional*] AP[H=?n]
 
 #PP[mod=?deg] -> DEG[H=[orth=?deg]] PP[+HD, H=?head]

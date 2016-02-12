@@ -373,6 +373,7 @@ ID,term,category,appliesTo,definition,category2,dataSource
 398,capitiform,shape,,Basically globose and resembling a head in the context of occurrence.,shape,
 399,capitulescence,architecture,,Mode or progressive pattern of bearing capitula (heads); most appropriately described using adjectival terms; esp. in Asteraceae (Compositae).,architecture,
 400,capitulum,structure-infl,inflorescence,"Having crowded, sessile or subsessile, small flowers (florets) borne upon an expanded, distally plane or convex, sometimes paleate, compound receptacle (torus), often with a surrounding involucre, and sometimes a subtending calyculus; characteristic of As",nominative,
+400,head,structure-infl,inflorescence,"",
 401,capitula,structure-infl,inflorescence,"Having crowded, sessile or subsessile, small flowers (florets) borne upon an expanded, distally plane or convex, sometimes paleate, compound receptacle (torus), often with a surrounding involucre, and sometimes a subtending calyculus; characteristic of As",nominative,
 402,capsular,architecture,fruit,Having the structure and texture of a capsule.,architecture,
 403,capsule,structure,fruit,"Dry, longitudinally or poricidally dehiscent, and derived from a compound ovary with one or more locules; containing one or more seeds.  See also pyxis.",nominative,
