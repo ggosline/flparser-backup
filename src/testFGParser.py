@@ -14,7 +14,7 @@ import logging
 logging.basicConfig(filename='flparse.log', filemode='w', level=logging.INFO)
 
 trec = defaultdict(lambda: None)
-description = 'Plant is Conspicuously flat-crowned tree 6-15(20) m. high'
+description = 'Corolla glabrous or inconspicuously puberulous on the lobes outside'
 fromDB = True
 #fromDB = False
 parser = FeatureBottomUpLeftCornerChartParser
@@ -35,7 +35,7 @@ trdr = [trec]
 tfilebase = r'..\..\temp\tree'
 
 of = sys.stdout
-cf = open('characters.csv', 'w', encoding='utf-8')
+cf = open('characters.csv', 'w', encoding='utf-8', newline='')
 cfcsv = csv.DictWriter(cf, 'taxon subject subpart category value mod posit phase presence'.split())
 cfcsv.writeheader()
 
@@ -64,7 +64,7 @@ if __name__ == '__main__':
                 try:
                     trees = parser.parse(phrase.tokens, cleantree=cleantree, maxtrees=100)
                 except:
-                    #e = sys.exc_info()
+                    # e = sys.exc_info()
                     print('Parser failure!')
                     traceback.print_exc()
                     continue

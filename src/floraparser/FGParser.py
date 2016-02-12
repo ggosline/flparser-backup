@@ -12,11 +12,12 @@ from nltk.grammar import FeatureValueType, is_nonterminal
 from nltk.featstruct import FeatStruct, Feature, FeatList, FeatDict, unify, FeatureValueTuple
 from floraparser.fltoken import FlToken
 from floraparser.lexicon import lexicon
-from floraparser.lexicon import defaultfeatures
+from floraparser.lexicon import defaultfeatures, posit
 from nltk import Tree
 from nltk.parse.earleychart import FeatureIncrementalChart, FeatureEarleyChartParser
 from nltk.parse import FeatureBottomUpChartParser, FeatureBottomUpLeftCornerChartParser, FeatureTopDownChartParser
 from floracorpus import recordtype
+import copy
 
 class FGFeatureTreeEdge(FeatureTreeEdge):
 
@@ -70,7 +71,8 @@ def unify_heads(span, lhs, rhs):
     rhead = head_prod[0]['H']
     lhead = lhs.get('H', FeatStructNonterminal([]))
     try:
-        newH = lhead.unify(rhead, trace=0)
+        # newH = lhead.unify(rhead, trace=0)
+        newH = _naive_unify(lhead, rhead)
         if not newH:
             newH = rhead
             print('FAIL to unify heads', lhs, rhs)
@@ -84,7 +86,7 @@ def unify_heads(span, lhs, rhs):
 
 def _naive_unify(fstruct1:FeatStruct, fstruct2:FeatStruct):
 
-    newfs = fstruct1.copy()
+    newfs = copy.deepcopy(fstruct1)
     if _is_mapping(fstruct1) and _is_mapping(fstruct2):
 
     # Unify any values that are defined in both fstruct1 and
@@ -98,7 +100,7 @@ def _naive_unify(fstruct1:FeatStruct, fstruct2:FeatStruct):
             else:
                 newfs[fname] = fval2
 
-            return newfs # Contains the unified value.
+        return newfs # Contains the unified value.
 
     # Unifying two sequences:
     elif _is_sequence(fstruct1) and _is_sequence(fstruct2):
@@ -443,10 +445,13 @@ class FGParser():
         subjend = 0
 
         charedges = list(self.simple_select(is_complete=True, lhs='SUBJECT'))
-        for charedge in charedges:
-            for tree in self._chart.trees(charedge, complete=True, tree_class=Tree):
-                trees.append((tree, charedge.start(), charedge.end()))
-                subjend = charedge.end()
+
+        charedge = max(charedges, key=lambda edge: edge.length())
+        # for charedge in charedges:
+
+        for tree in self._chart.trees(charedge, complete=True, tree_class=Tree):
+            trees.append((tree, charedge.start(), charedge.end()))
+            subjend = charedge.end()
 
         charedges = [edge for edge in self.simple_select(is_complete=True, lhs='CHAR') if edge.start() >= subjend]
 
@@ -649,7 +654,7 @@ def DumpChar(crec, struct, indent: int = 0, file=None):
     if isinstance(struct,FeatDict):
         category = struct.get('category')
         if category: crec.category = category
-        if struct.get('posit'): crec.posit = struct.get('posit')
+        if struct.get(posit): crec.posit = struct.get(posit)
         if struct.get('phase'): crec.phase = struct.get('phase')
         if struct.get('ISA'):
             if struct.get('orth'):

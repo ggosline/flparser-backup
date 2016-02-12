@@ -1,0 +1,81 @@
+taxon,subject,subpart,category,value,mod,posit,phase,presence
+Acacia abyssinica,plant,,subject,plant,,,,
+Acacia abyssinica,plant,,life-form,tree,"([ mod  = ([ orth = 'conspicuously' ]) ]
+[ orth = 'flat-crowned'               ])",,,
+Acacia abyssinica,plant,,dimension,"('6-15(20)', 'm.', 'high')",,,,
+Acacia abyssinica,bark,,subject,bark,,,,
+Acacia abyssinica,bark,,relief,rough,,,,
+Acacia abyssinica,bark,,relief,fissured,,,,
+Acacia abyssinica,bark,,coloration,brown TO black,,,,
+Acacia abyssinica,epidermis,,subject,epidermis,,,,
+Acacia abyssinica,epidermis,,,peeling,([ deg = 'not' ]),,,
+Acacia abyssinica,bark,,subject,bark,,,,
+Acacia abyssinica,bark,tree,texture,papery,"([ category = 'age'   ]
+[ orth     = 'young' ])",((on)),,True
+Acacia abyssinica,indumentum,,subject,indumentum,"([ category = 'structure' ]
+[ orth     = 'branchlet' ]
+[ prep     = 'OF'        ])",,,
+Acacia abyssinica,indumentum,,variability,variable,,,,
+Acacia abyssinica,indumentum,,pubescence,pubescent TO villous,,,,
+Acacia abyssinica,indumentum,,coloration,grey,,,,
+Acacia abyssinica,indumentum,,coloration,yellowish,([ orth = 'somewhat' ]),,,
+Acacia abyssinica,stipule,,subject,stipule,,,,
+Acacia abyssinica,stipule,,architecture,spinescent,,,,
+Acacia abyssinica,stipule,prickle,presence,absent,,,,True
+Acacia abyssinica,spine,,subject,spine,,,,
+Acacia abyssinica,spine,,variability,variable,,,,
+Acacia abyssinica,spine,,presence,absent,,,,
+Acacia abyssinica,spine,,dimension,"('7.2', 'cm.', 'long')",,,,
+Acacia abyssinica,spine,,course,straight,,,,
+Acacia abyssinica,spine,,shape,elongate,,,,
+Acacia abyssinica,spine,,shape,inflated,([ deg = 'never' ]),,,
+Acacia abyssinica,leaves,,subject,leaves,,,,
+Acacia abyssinica,leaves,petiole,dimension,"('2-5', 'mm.', 'long')",([ orth = ':' ]),,,True
+Acacia abyssinica,pinnae,,subject,pinnae,"([category='structure', mod=([ category = 'life-stage' ]
+[ orth     = 'mature'     ]), orth='shoot', prep='OF'], [category='structure', mod=([ category = 'development' ]
+[ mod      = 'well'        ]
+[ orth     = 'developed'   ]), orth='leaves', prep='OF'])",,,
+Acacia abyssinica,pinnae,pairs,grouping,,"([ category = 'count' ]
+[ val      = '15-51' ])",,,True
+Acacia abyssinica,leaflet,,subject,leaflet,,,,
+Acacia abyssinica,leaflet,,dimension,"('4', 'mm', 'long')",,,,
+Acacia abyssinica,leaflet,,dimension,"('0.75', 'mm', 'wide')",,,,
+Acacia abyssinica,flower,,subject,flower,,,,
+Acacia abyssinica,flower,,architecture,"[ category = 'structure-infl' ]
+[ orth     = 'head'           ]",,,,
+Acacia abyssinica,stamen,,subject,stamen,,,,
+Acacia abyssinica,stamen,,coloration,white,,,,
+Acacia abyssinica,calyx,,subject,calyx,,,,
+Acacia abyssinica,corolla,,subject,corolla,,,,
+Acacia abyssinica,corolla,,pubescence,glabrous,,"((outside), ([ obj = [ category = 'structure' ] ]
+[       [ orth     = 'lobe'      ] ]
+[                                  ]
+[ p   = 'on'                       ]))",,
+Acacia abyssinica,corolla,,pubescence,puberulous,([ orth = 'inconspicuously' ]),"((outside), ([ obj = [ category = 'structure' ] ]
+[       [ orth     = 'lobe'      ] ]
+[                                  ]
+[ p   = 'on'                       ]))",,
+Acacia abyssinica,pod,,subject,pod,,,,
+Acacia abyssinica,pod,,dimension,"('5-13', 'cm.', 'long')",,,,
+Acacia abyssinica,pod,,dimension,"('1.2-2.1 (2.8)', 'cm.', 'wide')",,,,
+Acacia abyssinica,pod,,texture,coriaceous,sub,,,
+Acacia abyssinica,pod,,course,straight,,,,
+Acacia abyssinica,pod,,course,curved,([ orth = 'slightly' ]),,,
+Acacia abyssinica,pod,,coloration,grey,,,,
+Acacia abyssinica,pod,,coloration,brown,,,,
+Acacia abyssinica,pod,,architecture,veined,([ orth = 'longitudinally' ]),,,
+Acacia abyssinica,pod,,pubescence,glandular,([ deg = '±' ]),,,
+Acacia abyssinica,pod,,pubescence,puberulous,([ deg = 'sometimes' ]),,,
+Acacia abyssinica,pod,,size,narrowed,,(),,
+Acacia abyssinica,seed,,subject,seed,,,,
+Acacia abyssinica,seed,,orientation,oblique,([ deg = '±' ]),,,
+Acacia abyssinica,seed,,architecture,"[ category = 'structure' ]
+[ orth     = 'pod'       ]",([ deg = '±' ]),,,
+Acacia abyssinica,seed,,coloration,olive-brown,,,,
+Acacia abyssinica,seed,,dimension,"('7-10', 'mm.', 'long')",,,,
+Acacia abyssinica,seed,,dimension,"('4-6', 'mm.', 'wide')",,,,
+Acacia abyssinica,seed,,relief,smooth,,,,
+Acacia abyssinica,seed,,shape,elliptic,,,,
+Acacia abyssinica,seed,,shape,compressed,,,,
+Acacia abyssinica,seed,areole,dimension,"('6-7', 'mm', 'long')",,,,True
+Acacia abyssinica,seed,areole,dimension,"('2.5-4', 'mm', 'wide')",,,,True
