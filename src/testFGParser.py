@@ -45,7 +45,7 @@ if __name__ == '__main__':
         ttrace = 0
         draw = False
         ttaxa = FloraCorpusReader(db=r'..\resources\efloras.db3',
-                                  query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Acacia'  ;")
+                                  query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Acacia' and species = 'albida'  ;")
         of = open('testphrases.txt', 'w', encoding='utf-8')
 
     else:
@@ -87,7 +87,7 @@ if __name__ == '__main__':
                             print('failure to get H')
                             H = None
                         if H:
-                            DumpChars(taxonNo, taxname, subject, '', H, txtstart, txtend, indent=1, file=cfcsv)
+                            DumpChars(taxonNo, taxname, subject, '', H, txtstart + sent.slice.start, txtend + sent.slice.start, indent=1, file=cfcsv)
 
                 if trees:
                     print('Success: \n ' + phrase.text, file=of)
