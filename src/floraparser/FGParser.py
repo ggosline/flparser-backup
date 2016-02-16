@@ -19,11 +19,12 @@ from nltk.parse import FeatureBottomUpChartParser, FeatureBottomUpLeftCornerChar
 from floracorpus import recordtype
 import copy
 
-
 class FGFeatureTreeEdge(FeatureTreeEdge):
 
     def __init__(self, span, lhs, rhs, dot=0, bindings=None):
+
         """
+        Most code just a copy of FeatureTreeEdge.__init__
         Construct a new edge.
         If complete copy head features in addition to the bindings
         """
@@ -39,36 +40,34 @@ class FGFeatureTreeEdge(FeatureTreeEdge):
             rhs = [self._bind(elt, bindings) for elt in rhs]
             bindings = {}
 
+        # Added code
         if dot == len(rhs):
-            unify_heads(span, lhs, rhs)
+            unify_heads(self, span, lhs, rhs)
+        # end of added code
 
         # Initialize the edge.
         TreeEdge.__init__(self, span, lhs, rhs, dot)
         self._bindings = bindings
         self._comparison_key = (self._comparison_key, tuple(sorted(bindings.items())))
 
-    # def nextsym_isvar(self):
-    #     ns = self.nextsym()
-    #     if not isinstance(ns, FeatStruct): return False
-    #     if isinstance(ns.get(TYPE), Variable):
-    #         return True
-    #     return False
-
-
-def unify_heads(span, lhs, rhs):
+def unify_heads(self, span, lhs, rhs):
     """
     If the edge is a ``FeatureTreeEdge``, and it is complete,
     then unify the head feature on the LHS with the head feature
     in the head daughter on the RHS.
     Head daughter marked with feature +HD.
     Head feature is H.
+
+    Save the span in the feature structure
     """
-    # if span[0] != span[1]:
-    #     lhs.update(span=((tokens[span[0]].slice.start), tokens[span[1] - 1].slice.stop-1))
+
+    #lhs['span'] = ((self.tokens[span[0]].slice.start), self.tokens[span[1] - 1].slice.stop)
+    #lhs['span'] = span
 
     head_prod = [prod for prod in rhs if isinstance(prod, FeatStruct) and prod.has_key("HD")]  # should be just one
 
-    if not head_prod: return
+    if not head_prod:
+        return
     rhead = head_prod[0]['H']
     lhead = lhs.get('H', FeatStructNonterminal([]))
     try:
@@ -119,7 +118,11 @@ def _is_mapping(v):
 def _is_sequence(v):
     return (hasattr(v, '__iter__') and hasattr(v, '__len__') and
             not isinstance(v, str))
-
+#
+# Monkey patch the  init with unify_heads
+#  This avoids duplicating all the FeatureChart code with FeatureTreeEdge replace by FGFeaturTreeEdge
+#  See commented out code below
+#
 FeatureTreeEdge.__init__ = FGFeatureTreeEdge.__init__
 
 #EdgeI.nextsym_isvar = FGFeatureTreeEdge.nextsym_isvar
@@ -622,104 +625,3 @@ class FeatListNonterminal(FeatList, Nonterminal):
 
     def symbol(self):
         return self
-
-def PrintStruct(struct, indent: int = 0, file=None):
-    if isinstance(struct,FeatDict):
-        for (fname, fval) in struct._items():
-            print('\t'*indent, fname.upper(), file=file)
-            PrintStruct(fval, indent+1, file=file)
-    elif isinstance(struct, tuple) or isinstance(struct, frozenset):
-        for listitem in struct:
-            PrintStruct(listitem, indent+1, file=file)
-    else:
-        print ('\t'*indent, struct, file=file)
-
-def DumpStruct(struct, indent: int = 0, file=None):
-    if isinstance(struct,FeatDict):
-        for (fname, fval) in struct._items():
-            print(fname.upper(), '\t', fval, file=file)
-            DumpStruct(fval, indent+1, file=file)
-    elif isinstance(struct, tuple) or isinstance(struct, frozenset):
-        for listitem in struct:
-            DumpStruct(listitem, indent+1, file=file)
-    else:
-        pass
-
-CharRec = recordtype.recordtype('CharRec', 'taxonNo taxon subject subpart category value mod posit phase presence start end', default=None)
-
-def DumpChars(taxonNo, taxon, subject, subpart, struct, start, end, indent: int = 0, file=None):
-    crec = CharRec(taxonNo, taxon, subject, start=start, end=end)
-    DumpChar(crec, struct, indent, file)
-
-def DumpChar(crec, struct, indent: int = 0, file=None):
-    if isinstance(struct,FeatDict):
-        category = struct.get('category')
-        if category: crec.category = category
-        if struct.get(posit): crec.posit = struct.get(posit)
-        if struct.get('phase'): crec.phase = struct.get('phase')
-        if struct.get('ISA'):
-            if struct.get('orth'):
-                crec.value = struct['orth']
-                if struct.get('mod'):
-                    crec.mod = struct.get('mod')
-                file.writerow(crec._asdict())
-            if struct.get('clist'):
-                crec.mod = ""
-                DumpChar(crec, struct.get('clist'), indent, file)
-            else:
-                return
-        elif struct.get('having'):
-            having = struct.get('having')
-            crec.presence = struct['presence']
-            if struct.get('orth'):
-                crec.subpart = struct['orth']
-                if struct.get('mod'):
-                    crec.mod = struct.get('mod')
-                if struct.get('clist'):
-                    DumpChar(crec, struct.get('clist'), indent, file)
-                else:
-                    file.writerow(crec._asdict())
-                return
-            elif having.get('AND'):
-                for subc in having.get('AND'):
-                    crec.subpart = subc.get('orth')
-                    DumpChar(crec, subc, file=file)
-                return
-        else:
-            if struct.get('mod'):
-                crec.mod = struct.get('mod')
-            if category == 'dimension':
-                crec.value = (struct.get('num'), struct.get('unit'), struct.get('dim'))
-            elif category == 'count':
-                crec.value = struct.get('val')
-            else:
-                crec.value =  struct.get('orth')
-            if crec.value:
-                file.writerow(crec._asdict())
-                return
-            if struct.get('OR'):
-                for subc in struct.get('OR'):
-                    DumpChar(crec, subc, file=file)
-            elif struct.get('AND'):
-                for subc in struct.get('AND'):
-                    DumpChar(crec, subc, file=file)
-            elif struct.get('TO'):
-                tolist = [str(subc.get('orth')) for subc in struct.get('TO')]
-                crec.value = ' TO '.join(tolist)
-                file.writerow(crec._asdict())
-
-
-        pass
-    #     for (fname, fval) in struct._items():
-    #         print(fname.upper(), '\t', fval, file=file)
-    #         DumpStruct(fval, indent+1, file=file)
-    # elif isinstance(struct, tuple) or isinstance(struct, frozenset):
-    #     for listitem in struct:
-    #         DumpStruct(listitem, indent+1, file=file)
-    elif isinstance(struct, FeatureValueTuple):
-        for subc in struct:
-            DumpChar(crec, subc, file=file)
-
-
-    else:
-        pass

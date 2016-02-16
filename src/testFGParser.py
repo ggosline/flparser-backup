@@ -17,7 +17,7 @@ logging.basicConfig(filename='flparse.log', filemode='w', level=logging.INFO)
 trec = defaultdict(lambda: None)
 description = 'Heads of flowers c. 8 mm. in diam., in an ample terminal panicle'
 fromDB = True
-#fromDB = False
+fromDB = False
 parser = FeatureBottomUpLeftCornerChartParser
 #parser = FeatureEarleyChartParser
 #parser = FeatureTopDownChartParser
