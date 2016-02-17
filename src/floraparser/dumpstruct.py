@@ -1,5 +1,6 @@
 from floracorpus import recordtype
 from nltk.featstruct import FeatDict, FeatureValueTuple
+from floraparser.lexicon import posit
 
 def PrintStruct(struct, indent: int = 0, file=None):
     if isinstance(struct,FeatDict):

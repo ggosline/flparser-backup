@@ -7,7 +7,8 @@ from floracorpus.reader import AbstractFloraCorpusReader , FloraCorpusReader
 from nltk.tree import Tree
 from nltk.parse import FeatureEarleyChartParser, FeatureIncrementalBottomUpLeftCornerChartParser, FeatureChartParser
 from nltk.parse import FeatureBottomUpChartParser, FeatureBottomUpLeftCornerChartParser, FeatureTopDownChartParser
-from floraparser.FGParser import FGParser, cleanparsetree, FindNode, PrintStruct, DumpStruct, DumpChars
+from floraparser.FGParser import FGParser, cleanparsetree, FindNode
+from floraparser.dumpstruct import PrintStruct, DumpStruct, DumpChars
 from floraparser.fltoken import FlTaxon
 import csv
 import traceback
