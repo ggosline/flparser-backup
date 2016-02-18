@@ -5,9 +5,8 @@ __author__ = 'gg12kg'
 import csv
 import pickle
 import os
-from nltk.featstruct import Feature, FeatStruct, FeatStructReader
-from nltk.grammar import FeatStructNonterminal, TYPE, SLASH
-# from nltk.sem import Expression
+from nltk.featstruct import Feature,  FeatStructReader
+from floraparser.FGFeatStructNonterminal import FGFeatStructNonterminal
 
 # read_expr = Expression.fromstring
 
@@ -29,6 +28,7 @@ group        = Feature('group', default=False)    # nouns
 defaultfeatures = (position, timing, posit, makecomp, compar, adjectival, counted, conditional, group)
 
 def pickle_lexicon():
+
     global lexicon, multiwords
     # class LexEntry():
     # def __init__(self, POS, wordlist, category=None, appliesto=None):
@@ -36,13 +36,14 @@ def pickle_lexicon():
     # self.wordlist = wordlist
     #         self.category = category
     #         self.appliesto = appliesto
-    featurereader = FeatStructReader(fdict_class=FeatStructNonterminal)
+    featurereader = FeatStructReader(fdict_class=FGFeatStructNonterminal)
 
     def addlexicon(words, POS, morefeatures):
         for word in words:
             addlexentry(word, POS, morefeatures)
 
     def addlexentry(word, POS, morefeatures):
+
         if word.startswith('_'):
             word = word.replace('_', '-', 1)
             morefeatures[counted] = True

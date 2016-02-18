@@ -12,12 +12,11 @@ from nltk.grammar import FeatureValueType, is_nonterminal
 from nltk.featstruct import FeatStruct, Feature, FeatList, FeatDict, unify, FeatureValueTuple
 from floraparser.fltoken import FlToken
 from floraparser.lexicon import lexicon
-from floraparser.lexicon import defaultfeatures, posit
+from floraparser.lexicon import defaultfeatures
+from floraparser.FGFeatStructNonterminal import FGFeatStructNonterminal
 from nltk import Tree
 from nltk.parse.chart import LeafEdge
 from nltk.parse.earleychart import FeatureIncrementalChart, FeatureEarleyChartParser
-from nltk.parse import FeatureBottomUpChartParser, FeatureBottomUpLeftCornerChartParser, FeatureTopDownChartParser
-from floracorpus import recordtype
 import copy
 import itertools
 
@@ -71,16 +70,18 @@ def unify_heads(self, span, lhs, rhs):
     if not head_prod:
         return
     rhead = head_prod[0]['H']
-    lhead = lhs.get('H', FeatStructNonterminal([]))
+    lhead = lhs.get('H', FGFeatStructNonterminal([]))
     try:
         # newH = lhead.unify(rhead, trace=0)
         newH = _naive_unify(lhead, rhead)
         if not newH:
             newH = rhead
             print('FAIL to unify heads', lhs, rhs)
-        lhs['span'] = span
+        #   lhs['span'] = span
+        newH.span = rhead.span
+        newH.tokens = rhead.tokens
     except:
-        newH = FeatStructNonterminal('H[]')
+        newH = FGFeatStructNonterminal('H[]')
 
     newH.remove_variables()     # get rid of unresolved variables
 
@@ -129,9 +130,13 @@ FeatureTreeEdge.__init__ = FGFeatureTreeEdge.__init__
 
 #EdgeI.nextsym_isvar = FGFeatureTreeEdge.nextsym_isvar
 #FeatureTreeEdge.nextsym_isvar = FGFeatureTreeEdge.nextsym_isvar
+
 class FGChart(FeatureChart):
 
     def pretty_format_edge(self, edge, width=None):
+        """
+        override to limit the mumber of characters printed
+        """
         line = FeatureIncrementalChart.pretty_format_edge(self, edge)
         return line[0:400]
 
@@ -164,8 +169,12 @@ class FGChart(FeatureChart):
         # then it will appear that the edge doesn't generate any trees.
         memo[edge] = []
         trees = []
+
+        ### only addition to overridden method
         lhs = edge.lhs().symbol().copy()
-        lhs['span'] = edge.span()
+        lhs.span = edge.span()
+        lhs.tokens = self._tokens       # make pointer to tokens available
+        ###
 
         # Each child pointer list can be used to form trees.
         for cpl in self.child_pointer_lists(edge):
@@ -192,92 +201,6 @@ class FGChart(FeatureChart):
         # Return the list of trees.
         return trees
 
-# class FGFeatureFundamentalRule(FundamentalRule):
-#     """
-#     A specialized version of the fundamental rule that operates on
-#     nonterminals whose symbols are ``FeatStructNonterminal``s.  Rather
-#     tha simply comparing the nonterminals for equality, they are
-#     unified.  Variable bindings from these unifications are collected
-#     and stored in the chart using a ``FeatureTreeEdge``.  When a
-#     complete edge is generated, these bindings are applied to all
-#     nonterminals in the edge.
-#
-#     The fundamental rule states that:
-#
-#     - ``[A -> alpha \* B1 beta][i:j]``
-#     - ``[B2 -> gamma \*][j:k]``
-#
-#     licenses the edge:
-#
-#     - ``[A -> alpha B3 \* beta][i:j]``
-#
-#     assuming that B1 and B2 can be unified to generate B3.
-#     """
-#     def apply(self, chart, grammar, left_edge, right_edge):
-#         # Make sure the rule is applicable.
-#         if not (left_edge.end() == right_edge.start() and
-#                 left_edge.is_incomplete() and
-#                 right_edge.is_complete() and
-#                 isinstance(left_edge, FeatureTreeEdge)):
-#             return
-#         found = right_edge.lhs()
-#         nextsym = left_edge.nextsym()
-#         if isinstance(right_edge, FeatureTreeEdge):
-#             if not is_nonterminal(nextsym): return
-#             # if nextsym()[TYPE] != found[TYPE]: return
-#             # Create a copy of the bindings.
-#             bindings = left_edge.bindings()
-#             # We rename vars here, because we don't want variables
-#             # from the two different productions to match.
-#             found = found.rename_variables(used_vars=left_edge.variables())
-#             # Unify B1 (left_edge.nextsym) with B2 (right_edge.lhs) to
-#             # generate B3 (result).
-#             result = unify(nextsym, found, bindings, rename_vars=False)
-#             if result is None: return
-#         else:
-#             if nextsym != found: return
-#             # Create a copy of the bindings.
-#             bindings = left_edge.bindings()
-#
-#         # Construct the new edge.
-#         new_edge = left_edge.move_dot_forward(right_edge.end(), bindings)
-#
-#         # Add it to the chart, with appropriate child pointers.
-#         if chart.insert_with_backpointer(new_edge, left_edge, right_edge):
-#             yield new_edge
-
-# class FGFeatureSingleEdgeFundamentalRule(SingleEdgeFundamentalRule):
-#     """
-#     A specialized version of the completer / single edge fundamental rule
-#     that operates on nonterminals whose symbols are ``FeatStructNonterminal``s.
-#     Rather than simply comparing the nonterminals for equality, they are
-#     unified.
-#     """
-#     _fundamental_rule = FGFeatureFundamentalRule()
-#
-#     def _apply_complete(self, chart, grammar, right_edge):
-#         fr = self._fundamental_rule
-#         for left_edge in chart.select(end=right_edge.start(),
-#                                       is_complete=False,
-#                                       nextsym=right_edge.lhs()):
-#             print(left_edge)
-#             for new_edge in fr.apply(chart, grammar, left_edge, right_edge):
-#                 yield new_edge
-#
-#         for left_edge in chart.select(end=right_edge.start(),
-#                                       is_complete=False,
-#                                       nextsym_isvar=True):
-#             for new_edge in fr.apply(chart, grammar, left_edge, right_edge):
-#                 yield new_edge
-#
-#     def _apply_incomplete(self, chart, grammar, left_edge):
-#         fr = self._fundamental_rule
-#         for right_edge in chart.select(start=left_edge.end(),
-#                                        is_complete=True,
-#                                        lhs=left_edge.nextsym()):
-#             for new_edge in fr.apply(chart, grammar, left_edge, right_edge):
-#                 yield new_edge
-
 
 class FGGrammar(FeatureGrammar):
     def __init__(self, start, productions):
@@ -286,66 +209,11 @@ class FGGrammar(FeatureGrammar):
         state and set of ``Productions``.
 
         :param start: The start symbol
-        :type start: FeatStructNonterminal
+        :type start: FGFeatStructNonterminal
         :param productions: The list of productions that defines the grammar
         :type productions: list(Production)
         """
         FeatureGrammar.__init__(self, start, productions)
-
-    # def _calculate_indexes(self):
-    #     super()._calculate_indexes()
-    #     self._lhs_var_productions = []
-    #     self._rhs_var_productions = []
-    #     for prod in self._productions:
-    #         # Left hand side.
-    #         lhs = self._get_type_if_possible(prod._lhs)
-    #         if isinstance(lhs, FeatureValueType) and isinstance(lhs._value, Variable):
-    #             self._lhs_var_productions.append(prod)
-    #         if prod._rhs:
-    #             # First item in right hand side.
-    #             rhs0 = self._get_type_if_possible(prod._rhs[0])
-    #             if isinstance(rhs0, FeatureValueType) and isinstance(rhs0._value, Variable):
-    #                 self._rhs_var_productions.append(prod)
-
-    # def productions(self, lhs=None, rhs=None, empty=False):
-    #     """
-    #     Return the grammar productions, filtered by the left-hand side
-    #     or the first item in the right-hand side.
-    #
-    #     :param lhs: Only return productions with the given left-hand side.
-    #     :param rhs: Only return productions with the given first item
-    #         in the right-hand side.
-    #     :param empty: Only return productions with an empty right-hand side.
-    #     :rtype: list(Production)
-    #     """
-    #     if rhs and empty:
-    #         raise ValueError("You cannot select empty and non-empty "
-    #                          "productions at the same time.")
-    #
-    #     # no constraints so return everything
-    #     if not lhs and not rhs:
-    #         if empty:
-    #             return self._empty_productions
-    #         else:
-    #             return self._productions
-    #
-    #     # only lhs specified so look up its index
-    #     elif lhs and not rhs:
-    #         if empty:
-    #             return self._empty_index.get(self._get_type_if_possible(lhs), [])
-    #         else:
-    #             return self._lhs_index.get(self._get_type_if_possible(lhs), []) + \
-    #                         self._lhs_var_productions
-    #
-    #     # only rhs specified so look up its index
-    #     elif rhs and not lhs:
-    #         return self._rhs_index.get(self._get_type_if_possible(rhs), []) + \
-    #                         self._rhs_var_productions
-    #
-    #     # intersect
-    #     else:
-    #         return [prod for prod in self._lhs_index.get(self._get_type_if_possible(lhs), [])
-    #                 if prod in self._rhs_index.get(self._get_type_if_possible(rhs), [])]
 
 
     @classmethod
@@ -366,7 +234,7 @@ class FGGrammar(FeatureGrammar):
             features = (TYPE, SLASH)
 
         if fstruct_reader is None:
-            fstruct_reader = FeatStructReader(features, FeatStructNonterminal, FeatListNonterminal,
+            fstruct_reader = FeatStructReader(features, FGFeatStructNonterminal, FeatListNonterminal,
                                               logic_parser=logic_parser)
         elif logic_parser is not None:
             raise Exception('\'logic_parser\' and \'fstruct_reader\' must '
@@ -567,6 +435,7 @@ class FGParser():
 
 
 class FGTerminal(FlToken):
+
     def __init__(self, char, type, position):
         self.lexword = char
         self.POS = 'EOP'

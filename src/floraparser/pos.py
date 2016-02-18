@@ -6,6 +6,7 @@ import copy
 
 from floraparser.inflect import singularize
 from floraparser.lexicon import lexicon, multiwords
+from floraparser.FGFeatStructNonterminal import FGFeatStructNonterminal
 from nltk.grammar import FeatStructNonterminal, TYPE, SLASH
 from nltk.featstruct import FeatStructReader
 import logging
@@ -27,7 +28,7 @@ NUMBERS = re.compile(r'^[-–0-9—.·()\s/]+$')
 
 NUMWORD = re.compile(r'(?P<prefix>[0-9](?:-[0-9]))(?P<root>[-–][-a-z]*)')
 
-featurereader = FeatStructReader(fdict_class=FeatStructNonterminal)
+featurereader = FeatStructReader(fdict_class=FGFeatStructNonterminal)
 
 class FlTagger():
 

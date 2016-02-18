@@ -26,11 +26,11 @@ def DumpStruct(struct, indent: int = 0, file=None):
 
 CharRec = recordtype.recordtype('CharRec', 'taxonNo taxon subject subpart category value mod posit phase presence start end', default=None)
 
-def DumpChars(taxonNo, taxon, subject, subpart, struct, start, end, indent: int = 0, file=None):
+def DumpChars(taxonNo, taxon, subject, subpart, struct, ptext: str, start, end, indent: int = 0, file=None):
     crec = CharRec(taxonNo, taxon, subject, start=start, end=end)
-    DumpChar(crec, struct, indent, file)
+    DumpChar(crec, struct, ptext, indent, file)
 
-def DumpChar(crec, struct, indent: int = 0, file=None):
+def DumpChar(crec, struct, ptext: str, indent: int = 0, file=None):
     if isinstance(struct,FeatDict):
         category = struct.get('category')
         if category: crec.category = category
@@ -66,7 +66,7 @@ def DumpChar(crec, struct, indent: int = 0, file=None):
                 return
         else:
             if struct.get('mod'):
-                crec.mod = struct.get('mod')
+                crec.mod = struct.text(ptext)
             if category == 'dimension':
                 crec.value = (struct.get('num'), struct.get('unit'), struct.get('dim'))
             elif category == 'count':
@@ -102,3 +102,4 @@ def DumpChar(crec, struct, indent: int = 0, file=None):
 
     else:
         pass
+

@@ -7,7 +7,7 @@ from nltk.tokenize.punkt import PunktSentenceTokenizer, PunktParameters, PunktLa
 
 # from floracorpus.SQLitedb import SQLitedb
 from floracorpus.ADO import ADOdb
-from floraparser.fltoken import FlToken, FlTokenizer, FlTaxon, FlPhrase
+from floraparser.fltoken import FlTokenizer, FlTaxon, FlPhrase
 
 
 class AbstractFloraCorpusReader(object):

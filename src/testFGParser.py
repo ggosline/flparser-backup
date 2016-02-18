@@ -89,7 +89,7 @@ if __name__ == '__main__':
                             print('failure to get H')
                             H = None
                         if H:
-                            DumpChars(taxonNo, taxname, subject, '', H, txtstart + sent.slice.start, txtend + sent.slice.start, indent=1, file=cfcsv)
+                            DumpChars(taxonNo, taxname, subject, '', H, sent.text, txtstart + sent.slice.start, txtend + sent.slice.start, indent=1, file=cfcsv)
 
                 if trees:
                     print('Success: \n ' + phrase.text, file=of)
