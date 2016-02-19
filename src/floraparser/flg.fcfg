@@ -24,7 +24,7 @@ CHAR[] -> CHRL[+HD, H=?head] CTERMINATOR
 
 # CHAR[H=[stage=?st]] -> STAGE[stage=?st] CHARLIST[+HD, H=?head]
 CHAR[H=[stage=?st]]                -> STAGE[stage=?st] CHRL[+HD, H=?head] CTERMINATOR
-CHAR[H=[stage=?st]]                ->  CHRL[+HD, H=?head] STAGE[stage=?st] CTERMINATOR
+CHAR[H=[stage=?st]]                -> CHRL[+HD, H=?head] STAGE[stage=?st] CTERMINATOR
 # CHR[H=[stage=?st]] ->  CHR[+HD, H=?head] STAGE[stage=?st]
 CHR[H=[OR=absent], presence=False] -> OR ABAR[category=presence, H=[orth='absent']]
 
@@ -95,11 +95,11 @@ SIZE[category=dimension, H=[category=dimension, num=?num, unit=?unit, dim=?dim]]
 SIZE[category=dimension, H=[category=dimension, num=?num, unit=?unit, dim=long]]  -> NUM[orth=?num] UNIT[H=[orth=?unit]]
 SIZE[category=dimension, H=[AND=([category=dimension, num=?num1, dim=long, unit=?unit],[category=dimension, num=?num2, dim=wide, unit=?unit])]]  -> NUM[orth=?num1] BYX NUM[orth=?num2] UNIT[H=[orth=?unit]]
 
-SIZEB[category=dimension, H=[AND=(?h1+?h2)]]   -> SIZE[H=?h1] AND SIZE[H=?h2]
-SIZEB[category=dimension, H=[AND=(?h1+?h2)]]   -> SIZE[H=?h1] COMMA SIZE[H=?h2]
-SIZEB[category=dimension, H=[qual=?deg]]       -> DEG[H=[orth=?deg]] SIZE[H=?h1, +HD]
+SIZEB[category=dimension, H=[AND=(?h1+?h2)]]   -> SIZE[H=?h1] AND      SIZE[H=?h2]
+SIZEB[category=dimension, H=[AND=(?h1+?h2)]]   -> SIZE[H=?h1] COMMA    SIZE[H=?h2]
+SIZEB[category=dimension, H=[qual=?deg]]       -> DEG[H=[orth=?deg]]   SIZE[H=?h1, +HD]
 SIZEB[category=dimension, H=[qual=?deg]]       -> RANGE[H=[orth=?deg]] SIZE[H=?h1, +HD]
-SIZEB[category=dimension]                      -> SIZE[H=?h1, +HD]
+SIZEB[category=dimension]                      -> SIZE[H=?h1,  +HD]
 SIZEB[category=dimension, H=[qual=(OR,?qual)]] -> SIZEB[H=?h1, +HD] OR A[+*compar*, H=[orth=?qual]]
 
 DIMEN[H=[dim=?dim]] -> IN DIM[H=[orth=?dim]]

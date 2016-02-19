@@ -16,7 +16,7 @@ import logging
 logging.basicConfig(filename='flparse.log', filemode='w', level=logging.INFO)
 
 trec = defaultdict(lambda: None)
-description = 'Heads of flowers c. 8 mm. in diam., in an ample terminal panicle'
+description = 'Heads of flowers c. 8 mm. in diam., in an ample terminal panicle; panicle red'
 fromDB = True
 fromDB = False
 parser = FeatureBottomUpLeftCornerChartParser
@@ -84,12 +84,13 @@ if __name__ == '__main__':
                             t.draw()
                         try:
                             H = t[()].label()['H']
+                            tokens = parser._chart._tokens
                             print(H.get('category'), H.get('orth'))
                         except:
                             print('failure to get H')
                             H = None
                         if H:
-                            DumpChars(taxonNo, taxname, subject, '', H, sent.text, txtstart + sent.slice.start, txtend + sent.slice.start, indent=1, file=cfcsv)
+                            DumpChars(taxonNo, taxname, subject, '', H, tokens, sent.text, txtstart + sent.slice.start, txtend + sent.slice.start, indent=1, file=cfcsv)
 
                 if trees:
                     print('Success: \n ' + phrase.text, file=of)

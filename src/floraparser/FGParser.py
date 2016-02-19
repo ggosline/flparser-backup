@@ -78,13 +78,12 @@ def unify_heads(self, span, lhs, rhs):
             newH = rhead
             print('FAIL to unify heads', lhs, rhs)
         #   lhs['span'] = span
-        newH.span = rhead.span
-        newH.tokens = rhead.tokens
+
     except:
         newH = FGFeatStructNonterminal('H[]')
 
     newH.remove_variables()     # get rid of unresolved variables
-
+    newH.span = span
     lhs['H'] = newH
 
 def _naive_unify(fstruct1:FeatStruct, fstruct2:FeatStruct):
@@ -171,9 +170,10 @@ class FGChart(FeatureChart):
         trees = []
 
         ### only addition to overridden method
-        lhs = edge.lhs().symbol().copy()
-        lhs.span = edge.span()
-        lhs.tokens = self._tokens       # make pointer to tokens available
+        lhs = edge.lhs().symbol()
+        # lhs = edge.lhs().symbol().copy()
+        # lhs.span = edge.span()
+        # lhs.tokens = self._tokens       # make pointer to tokens available
         ###
 
         # Each child pointer list can be used to form trees.
@@ -293,12 +293,14 @@ class FGParser():
         COMMA.lexentry = lexicon[(',',)]
         tokens = [FGTerminal('¢', 'EOP', 0)] + tokens + [COMMA] + [FGTerminal('$', 'EOP', tokens[-1].slice.stop)]
 
-        for fltoken in tokens:
+        for tokenindex, fltoken in enumerate(tokens):
             if not self._grammar._lexical_index.get(fltoken.lexword):
                 newprod = True
                 for lexent in fltoken.lexentry:
                     lexrhs = fltoken.lexword
                     newprod = Production(lexent, (lexrhs,))
+                    # newprod._lhs.span = (tokenindex, tokenindex+1)
+                    # newprod._lhs.tokens = tokens
                     self._grammar._productions.append(newprod)
         if newprod:
             self._grammar.__init__(self._grammar._start, self._grammar._productions)

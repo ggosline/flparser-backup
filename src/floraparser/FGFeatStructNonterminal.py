@@ -9,7 +9,7 @@ class FGFeatStructNonterminal(FeatStructNonterminal):
         self.span = (0,0)
         super().__init__(features, **morefeatures)
 
-    def text(self, ptext):
+    def text(self, tokens, ptext):
         starttoken, endtoken = self.span[0], self.span[1]-1
-        return ptext[self.tokens[starttoken].span.start: self.tokens[endtoken].span.end]
+        return ptext[tokens[starttoken].slice.start: tokens[endtoken].slice.stop]
 

@@ -26,11 +26,12 @@ def DumpStruct(struct, indent: int = 0, file=None):
 
 CharRec = recordtype.recordtype('CharRec', 'taxonNo taxon subject subpart category value mod posit phase presence start end', default=None)
 
-def DumpChars(taxonNo, taxon, subject, subpart, struct, ptext: str, start, end, indent: int = 0, file=None):
+def DumpChars(taxonNo, taxon, subject, subpart, struct, tokens, ptext: str, start, end, indent: int = 0, file=None):
     crec = CharRec(taxonNo, taxon, subject, start=start, end=end)
-    DumpChar(crec, struct, ptext, indent, file)
+    DumpChar(crec, struct, tokens, ptext, indent, file)
 
-def DumpChar(crec, struct, ptext: str, indent: int = 0, file=None):
+def DumpChar(crec, struct, tokens, ptext: str, indent: int = 0, file=None):
+
     if isinstance(struct,FeatDict):
         category = struct.get('category')
         if category: crec.category = category
@@ -44,7 +45,7 @@ def DumpChar(crec, struct, ptext: str, indent: int = 0, file=None):
                 file.writerow(crec._asdict())
             if struct.get('clist'):
                 crec.mod = ""
-                DumpChar(crec, struct.get('clist'), indent, file)
+                DumpChar(crec, struct.get('clist'), tokens, ptext, indent, file)
             else:
                 return
         elif struct.get('having'):
@@ -55,18 +56,18 @@ def DumpChar(crec, struct, ptext: str, indent: int = 0, file=None):
                 if struct.get('mod'):
                     crec.mod = struct.get('mod')
                 if struct.get('clist'):
-                    DumpChar(crec, struct.get('clist'), indent, file)
+                    DumpChar(crec, struct.get('clist'), tokens, ptext, indent, file)
                 else:
                     file.writerow(crec._asdict())
                 return
             elif having.get('AND'):
                 for subc in having.get('AND'):
                     crec.subpart = subc.get('orth')
-                    DumpChar(crec, subc, file=file)
+                    DumpChar(crec, subc, tokens, ptext, file=file)
                 return
         else:
             if struct.get('mod'):
-                crec.mod = struct.text(ptext)
+                crec.mod = struct.text(tokens, ptext)
             if category == 'dimension':
                 crec.value = (struct.get('num'), struct.get('unit'), struct.get('dim'))
             elif category == 'count':
@@ -97,9 +98,7 @@ def DumpChar(crec, struct, ptext: str, indent: int = 0, file=None):
     #         DumpStruct(listitem, indent+1, file=file)
     elif isinstance(struct, FeatureValueTuple):
         for subc in struct:
-            DumpChar(crec, subc, file=file)
-
-
+            DumpChar(crec, subc, tokens, ptext, file=file)
     else:
         pass
 
