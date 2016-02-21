@@ -41,7 +41,7 @@ def DumpChar(crec, struct, tokens, ptext: str, indent: int = 0, file=None):
             if struct.get('orth'):
                 crec.value = struct['orth']
                 if struct.get('mod'):
-                    crec.mod = struct.get('mod')
+                    crec.mod = tupletext(struct.get('mod'), tokens, ptext)
                 file.writerow(crec._asdict())
             if struct.get('clist'):
                 crec.mod = ""
@@ -67,7 +67,7 @@ def DumpChar(crec, struct, tokens, ptext: str, indent: int = 0, file=None):
                 return
         else:
             if struct.get('mod'):
-                crec.mod = '; '.join([m.text(tokens, ptext) for m in struct.get('mod')])
+                crec.mod = stext(struct.get('mod'), tokens, ptext)
             if category == 'dimension':
                 crec.value = (struct.get('num'), struct.get('unit'), struct.get('dim'))
             elif category == 'count':
@@ -79,10 +79,10 @@ def DumpChar(crec, struct, tokens, ptext: str, indent: int = 0, file=None):
                 return
             if struct.get('OR'):
                 for subc in struct.get('OR'):
-                    DumpChar(crec, subc, file=file)
+                    DumpChar(crec, subc, tokens, ptext, file=file)
             elif struct.get('AND'):
                 for subc in struct.get('AND'):
-                    DumpChar(crec, subc, file=file)
+                    DumpChar(crec, subc, tokens, ptext, file=file)
             elif struct.get('TO'):
                 tolist = [str(subc.get('orth')) for subc in struct.get('TO')]
                 crec.value = ' TO '.join(tolist)
@@ -102,3 +102,15 @@ def DumpChar(crec, struct, tokens, ptext: str, indent: int = 0, file=None):
     else:
         pass
 
+def tupletext(struct, tokens, ptext, delim='; '):
+    return delim.join([stext(m, tokens, ptext) for m in struct])
+
+def stext(struct, tokens, ptext):
+    if isinstance(struct, tuple):
+        return tupletext(struct, tokens, ptext)
+    elif isinstance(struct, str):
+        return struct
+    else:
+        if not struct.span:
+            return stext(list(struct.values())[0],tokens,ptext)
+        return struct.text(tokens,ptext)

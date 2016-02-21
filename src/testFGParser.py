@@ -18,7 +18,7 @@ logging.basicConfig(filename='flparse.log', filemode='w', level=logging.INFO)
 trec = defaultdict(lambda: None)
 description = 'Heads of flowers c. 8 mm. in diam., in an ample terminal panicle; panicle red'
 fromDB = True
-fromDB = False
+#fromDB = False
 parser = FeatureBottomUpLeftCornerChartParser
 #parser = FeatureEarleyChartParser
 #parser = FeatureTopDownChartParser
@@ -26,7 +26,7 @@ cleantree = False
 cleantree = True
 ttrace = 1
 draw = False
-draw = True
+#draw = True
 
 trec['taxonNo'] = 666
 trec['genus'] = 'Test'

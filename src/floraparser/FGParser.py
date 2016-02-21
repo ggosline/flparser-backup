@@ -390,7 +390,7 @@ class FGParser():
             charedge = max(charedges, key=lambda edge: edge.length())
 
             for tree in self._chart.trees(charedge, complete=True, tree_class=Tree):
-                trees.append((tree, charedge.start(), charedge.end()))
+                trees.append((tree, charedge.start()+1 , charedge.end())) # ignore the start of phrase token
                 subjend = charedge.end()
 
         charedges = [edge for edge in self.simple_select(is_complete=True, lhs='CHAR') if edge.start() >= subjend]

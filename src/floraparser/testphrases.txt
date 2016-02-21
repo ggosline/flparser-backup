@@ -1,0 +1,46 @@
+TAXON:  Leguminosae Acacia albida
+Success: 
+ Plant is Tree 6-30 m. high, with rough dark-brown or greenish-grey bark and spreading branches
+No. of trees: 8
+Success: 
+ young branchlets ashen to whitish
+No. of trees: 1
+Success: 
+ Stipules spinescent, up to 1·3(2·3) cm. long, straight, never enlarged and inflated
+No. of trees: 4
+Success: 
+ no prickles below the stipules
+No. of trees: 1
+Fail:
+ Leaves: rhachis with a single conspicuous gland at the junction of each of the (2)3-10 pairs of pinnae
+No. of trees: 2
+Success: 
+ no gland on the petiole
+No. of trees: 2
+Success: 
+ leaflets 6-23 pairs, (2·5)3·5-9(14) x 0·7-3(5) mm., rounded to subacute and mucronate at the apex
+No. of trees: 3
+Fail:
+ Flowers cream, sessile or to 0·5(2) mm. pedicellate, in inflorescences 3·5-14 cm. long on peduncles 1·3-3·5 cm. long
+No. of trees: 4
+Success: 
+ Calyx 1-1·7(2·5) mm. long
+No. of trees: 1
+Success: 
+ Corolla 3-3·5(4·5) mm. long, with 5 lobes 1·5-2·5 mm. long
+No. of trees: 1
+Fail:
+ Stamen-filaments 4-6 mm. long, connate for c. 1 mm. at the base
+No. of trees: 3
+Success: 
+ anthers 0·2-0·4 mm. across, eglandular even in bud
+No. of trees: 1
+Fail:
+ Pods bright orange, thick, indehiscent, 6-25 x (1·5)2-3·5(5) cm., glabrous or very rarely puberulous, falcate or curled into a circular coil
+No. of trees: 7
+Success: 
+ Seeds 9-11 x 6-8 mm., elliptic-lenticular
+No. of trees: 1
+Success: 
+ central areole large, 7-9 x 4-6 mm
+No. of trees: 1
