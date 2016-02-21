@@ -120,7 +120,7 @@ ADVB[+comp, category=adv, H=[orth=?o, mod=(?c)]] -> A[+*makecomp*, H=[orth=?c]] 
 
 MOD[H=[orth=?adv]]     -> ADVB[H=[orth=?adv]]
 MOD[H=[deg=?deg]]      -> DEG[H=[orth=?deg]]
-#MOD[H=[count=?adv]] -> COUNT[H=?adv]
+#MOD[H=[count=?adv]]   -> COUNT[H=?adv]
 AP[H=?count]           -> COUNT[H=?count]
 
 
@@ -200,12 +200,12 @@ STAGE[stage=?o] -> P[prep='at'] A[category='life-stage', orth=?o]
 STAGE[stage=?o] -> A[+*timing*, H=[orth=?o]]
 
 A[category=position, H=[orth=?o, category=position], +*position*] -> P[H=[orth=?o], +*position*, +*adjectival*]
-POSITION[H=[*posit*=(?o)]]            -> P[prep=?p, H=[orth=?o], +*position*]
+POSITION[H=[*posit*=(?o)]]                -> P[prep=?p, H=[orth=?o], +*position*]
 POSITION[H=[*posit*=([p=?prep, obj=?n])]] -> P[prep=?prep, +*position*] NP[H=?n]
-POSITION[H=[*posit*=(?o)]]            -> A[+*position*, H=[orth=?o]]
+POSITION[H=[*posit*=(?o)]]                -> A[+*position*, H=[orth=?o]]
 POSITION[H=[*posit*=([orth=?o, mod=(?deg)])]]  -> DEG[H=[orth=?deg]] A[+*position*, H=[orth=?o]]
-POSITION[H=[AND=(?h1+?h2)]]         -> POSITION[H=?h1] AND POSITION[H=?h2]
-MOD[H=[*posit*=(?o)]]                 -> ART A[+*position*, H=[orth=?o]] 'ones'
+POSITION[H=[AND=(?h1+?h2)]]               -> POSITION[H=?h1] AND POSITION[H=?h2]
+MOD[H=[*posit*=(?o)]]                     -> ART A[+*position*, H=[orth=?o]] 'ones'
 
 #SUBSET[stage=(?a+?n)] -> IN ABARL[orth=?a] N[orth=?n]
 SUBSET[subset=?a] -> IN NP[H=?a]

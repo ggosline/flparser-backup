@@ -1,5 +1,5 @@
 taxonNo,taxon,subject,subpart,category,value,mod,posit,phase,presence,start,end
-666,Test run,head,,subject,head,Heads of flowers,,,,0,16
+666,Test run,head,,subject,head,of flowers,,,,0,16
 666,Test run,head,,dimension,"('8', 'mm.', 'diam.')",,,,,17,35
 666,Test run,head,,architecture,"[ category = 'structure-infl'                                                                      ]
 [ mod      = ([ AND = ([ orth = 'ample' ], [ category = 'position' ]

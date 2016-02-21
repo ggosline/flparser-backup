@@ -37,7 +37,7 @@ trdr = [trec]
 
 tfilebase = r'..\..\temp\tree'
 
-of = sys.stdout
+outfile = sys.stdout
 cf = open('characters.csv', 'w', encoding='utf-8', newline='')
 cfcsv = csv.DictWriter(cf, 'taxonNo taxon subject subpart category value mod posit phase presence start end'.split())
 cfcsv.writeheader()
@@ -48,7 +48,7 @@ if __name__ == '__main__':
         draw = False
         ttaxa = FloraCorpusReader(db=r'..\resources\efloras.db3',
                                   query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Acacia' and species = 'albida'  ;")
-        of = open('testphrases.txt', 'w', encoding='utf-8')
+        outfile = open('testphrases.txt', 'w', encoding='utf-8')
 
     else:
         ttaxa = AbstractFloraCorpusReader(reader=trdr)
@@ -56,7 +56,7 @@ if __name__ == '__main__':
     parser = FGParser(parser=parser, trace=ttrace)
     for taxon in ttaxa.taxa:
         print('\rTAXON: ', taxon.family, taxon.genus, taxon.species)
-        print('\rTAXON: ', taxon.family, taxon.genus, taxon.species, file=of)
+        print('\rTAXON: ', taxon.family, taxon.genus, taxon.species, file=outfile)
         # print('-'*80,  '\rTAXON: ', taxon.family, taxon.genus, taxon.species, file=cf)
         taxname = taxon.genus + ' ' + taxon.species
         taxonNo = taxon.taxonNO
@@ -93,8 +93,8 @@ if __name__ == '__main__':
                             DumpChars(taxonNo, taxname, subject, '', H, tokens, sent.text, txtstart + sent.slice.start, txtend + sent.slice.start, indent=1, file=cfcsv)
 
                 if trees:
-                    print('Success: \n ' + phrase.text, file=of)
-                    print('No. of trees: %d' % len(trees), file=of)
+                    print('Success: \n ' + phrase.text, file=outfile)
+                    print('No. of trees: %d' % len(trees), file=outfile)
                     if ttrace:
                         for i, treex in enumerate(trees):
                             cleanparsetree(treex)
@@ -106,14 +106,14 @@ if __name__ == '__main__':
                                 tfile.close
                     # print(FindNode('SUBJECT', trees[0]))
                 else:
-                    print('Fail:\n ' + phrase.text, file=of)
+                    print('Fail:\n ' + phrase.text, file=outfile)
                     trees = parser.partialparses()
-                    print('No. of trees: %d' % len(trees), file=of)
+                    print('No. of trees: %d' % len(trees), file=outfile)
                     # if ttrace and draw:
                     #     for treex in trees[0:40]:
                     #         cleanparsetree(treex)
                     #         treex.draw()
                     if trees:
                         print(FindNode('SUBJECT', trees[0]))
-    of.close()
+    outfile.close()
     cf.close()

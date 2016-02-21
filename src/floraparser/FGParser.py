@@ -42,14 +42,21 @@ class FGFeatureTreeEdge(FeatureTreeEdge):
             bindings = {}
 
         # Added code
+        # Note that overridden deepcopy loses values of our SPAN!
         if dot == len(rhs):
             unify_heads(self, span, lhs, rhs)
+        lhs.span = span
         # end of added code
 
         # Initialize the edge.
-        TreeEdge.__init__(self, span, lhs, rhs, dot)
+        # TreeEdge.__init__(self, span, lhs, rhs, dot)
+        self._span = span
+        self._lhs = lhs
+        rhs = tuple(rhs)
+        self._rhs = rhs
+        self._dot = dot
         self._bindings = bindings
-        self._comparison_key = (self._comparison_key, tuple(sorted(bindings.items())))
+        self._comparison_key = ((span, lhs, rhs, dot), tuple(sorted(bindings.items())))
 
 def unify_heads(self, span, lhs, rhs):
     """
@@ -88,7 +95,7 @@ def unify_heads(self, span, lhs, rhs):
 
 def _naive_unify(fstruct1:FeatStruct, fstruct2:FeatStruct):
 
-    newfs = copy.deepcopy(fstruct1)
+    newfs = copy.copy(fstruct1)
     if _is_mapping(fstruct1) and _is_mapping(fstruct2):
 
     # Unify any values that are defined in both fstruct1 and
@@ -281,7 +288,7 @@ class FGParser():
         self._parser = parser(self._grammar, trace=trace, chart_class=FGChart)
         self._chart = None
 
-    def parse(self, tokens, cleantree=True, maxtrees=200):
+    def parse(self, phrasetokens, cleantree=True, maxtrees=200):
         '''
         :type tokens: builtins.generator
         :return:
@@ -289,9 +296,9 @@ class FGParser():
         # check for tokens added by the POS processor -- e.g. ADV
         newprod = False
         # Add a comma and a terminal token to beginning and end of phrase
-        COMMA = FGTerminal(',', 'COMMA', tokens[-1].slice.stop)
+        COMMA = FGTerminal(',', 'COMMA', phrasetokens[-1].slice.stop)
         COMMA.lexentry = lexicon[(',',)]
-        tokens = [FGTerminal('¢', 'EOP', 0)] + tokens + [COMMA] + [FGTerminal('$', 'EOP', tokens[-1].slice.stop)]
+        tokens = [FGTerminal('¢', 'EOP', 0)] + phrasetokens + [COMMA] + [FGTerminal('$', 'EOP', phrasetokens[-1].slice.stop)]
 
         for tokenindex, fltoken in enumerate(tokens):
             if not self._grammar._lexical_index.get(fltoken.lexword):
@@ -299,8 +306,6 @@ class FGParser():
                 for lexent in fltoken.lexentry:
                     lexrhs = fltoken.lexword
                     newprod = Production(lexent, (lexrhs,))
-                    # newprod._lhs.span = (tokenindex, tokenindex+1)
-                    # newprod._lhs.tokens = tokens
                     self._grammar._productions.append(newprod)
         if newprod:
             self._grammar.__init__(self._grammar._start, self._grammar._productions)

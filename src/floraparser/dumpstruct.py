@@ -67,7 +67,7 @@ def DumpChar(crec, struct, tokens, ptext: str, indent: int = 0, file=None):
                 return
         else:
             if struct.get('mod'):
-                crec.mod = struct.text(tokens, ptext)
+                crec.mod = '; '.join([m.text(tokens, ptext) for m in struct.get('mod')])
             if category == 'dimension':
                 crec.value = (struct.get('num'), struct.get('unit'), struct.get('dim'))
             elif category == 'count':
