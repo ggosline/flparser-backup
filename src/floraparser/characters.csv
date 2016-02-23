@@ -1,59 +1,80 @@
-taxonNo,taxon,subject,subpart,category,value,mod,posit,phase,presence,start,end
-2025,Acacia albida,plant,,subject,plant,,,,,0,5
-2025,Acacia albida,plant,,life-form,tree,,,,,6,27
-2025,Acacia albida,plant,,dimension,"('6-30', 'm.', 'high')",,,,,6,27
-2025,Acacia albida,plant,,structure,bark,rough; dark-brown; greenish-grey,,,,28,94
-2025,Acacia albida,plant,,structure,branch,spreading,,,,28,94
-2025,Acacia albida,branchlet,,subject,branchlet,young,,,,96,112
-2025,Acacia albida,branchlet,,coloration,ashen TO whitish,,,,,113,129
-2025,Acacia albida,stipule,,subject,stipule,,,,,131,139
-2025,Acacia albida,stipule,,architecture,spinescent,,,,,140,151
-2025,Acacia albida,stipule,,dimension,"('1·3(2·3)', 'cm.', 'long')",,,,,152,176
-2025,Acacia albida,stipule,,course,straight,,,,,177,186
-2025,Acacia albida,stipule,,size,enlarged,never,,,,187,214
-2025,Acacia albida,stipule,,shape,inflated,never,,,,187,214
-2025,Acacia albida,prickle,,subject,prickle,no,,,,216,227
-2025,Acacia albida,prickle,,structure,stipule,,((below)),,,228,246
-2025,Acacia albida,leaves,,subject,leaves,,,,,248,254
-2025,Acacia albida,leaves,,grouping,pairs,of pinnae; count,,,,323,350
-2025,Acacia albida,gland,,subject,gland,no,,,,352,360
-2025,Acacia albida,gland,,structure,petiole,,((on)),,,361,375
-2025,Acacia albida,leaflet,,subject,leaflet,,,,,377,385
-2025,Acacia albida,leaflet,,grouping,pairs,count,,,,386,397
-2025,Acacia albida,leaflet,,dimension,"('(2·5)3·5-9(14)', 'mm.', 'long')",,,,,398,428
-2025,Acacia albida,leaflet,,dimension,"('0·7-3(5)', 'mm.', 'wide')",,,,,398,428
-2025,Acacia albida,leaflet,,shape-apex,rounded TO None,,((at_the_apex)),,,429,474
-2025,Acacia albida,flower,,subject,flower,,,,,476,483
-2025,Acacia albida,flower,,coloration,cream,,,,,484,490
-2025,Acacia albida,flower,,architecture,pedicellate,,,,,516,528
-2025,Acacia albida,flower,,structure,peduncle,,((on)),,,563,592
-2025,Acacia albida,calyx,,subject,calyx,,,,,594,599
-2025,Acacia albida,calyx,,dimension,"('1-1·7(2·5)', 'mm.', 'long')",,,,,600,619
-2025,Acacia albida,corolla,,subject,corolla,,,,,621,628
-2025,Acacia albida,corolla,,dimension,"('3-3·5(4·5)', 'mm.', 'long')",,,,,629,649
-2025,Acacia albida,corolla,,structure,lobe,5,,,,650,679
-2025,Acacia albida,stamen-filaments,,subject,stamen-filaments,,,,,681,697
-2025,Acacia albida,stamen-filaments,,dimension,"('4-6', 'mm.', 'long')",,,,,698,711
-2025,Acacia albida,stamen-filaments,,dimension,"('1', 'mm.', 'long')",,((at_the_base)),,,724,744
-2025,Acacia albida,anther,,subject,anther,,,,,746,753
-2025,Acacia albida,anther,,dimension,"('0·2-0·4', 'mm.', 'long')",,((across)),,,754,773
-2025,Acacia albida,anther,,architecture,eglandular,,,,,774,796
-2025,Acacia albida,anther,,life-stage,in_bud,even,,,,774,796
-2025,Acacia albida,pod,,subject,pod,,,,,798,802
-2025,Acacia albida,pod,,coloration,bright,,,,,803,817
-2025,Acacia albida,pod,,coloration,orange,,,,,803,817
-2025,Acacia albida,pod,,thickness,thick,,,,,818,824
-2025,Acacia albida,pod,,dehiscence,indehiscent,,,,,825,837
-2025,Acacia albida,pod,,dimension,"('6-25', 'cm.', 'long')",,,,,838,863
-2025,Acacia albida,pod,,dimension,"('(1·5)2-3·5(5)', 'cm.', 'wide')",,,,,838,863
-2025,Acacia albida,pod,,pubescence,puberulous,rarely,,,,881,899
-2025,Acacia albida,pod,,shape,circular,,,,,925,938
-2025,Acacia albida,pod,,shape,coil,,,,,925,938
-2025,Acacia albida,seed,,subject,seed,,,,,940,945
-2025,Acacia albida,seed,,dimension,"('9-11', 'mm.', 'long')",,,,,946,961
-2025,Acacia albida,seed,,dimension,"('6-8', 'mm.', 'wide')",,,,,946,961
-2025,Acacia albida,seed,,shape,lenticular,elliptic,,,,962,981
-2025,Acacia albida,areole,,subject,areole,central,,,,983,997
-2025,Acacia albida,areole,,size,large,,,,,998,1004
-2025,Acacia albida,areole,,dimension,"('7-9', 'mm', 'long')",,,,,1005,1017
-2025,Acacia albida,areole,,dimension,"('4-6', 'mm', 'wide')",,,,,1005,1017
+taxonNo,family,taxon,subject,subpart,category,value,mod,posit,phase,presence,start,end
+227,Annonaceae, ,plant,,subject,plant,,,,,0,5
+227,Annonaceae, ,plant,,structure,indumentum,"of simple, stellate or lepidote hairs",,,,78,134
+227,Annonaceae, ,bark,,subject,bark,,,,,136,140
+227,Annonaceae, ,bark,,relief,smooth,usually,,,,141,167
+227,Annonaceae, ,bark,,shape-margin,entire,usually,,,,141,167
+227,Annonaceae, ,bark,,coloration,None TO brown,,,,,168,195
+227,Annonaceae, ,bark,,,lozenge-shaped,,,,,244,270
+227,Annonaceae, ,bark,,,striations,,,,,244,270
+227,Annonaceae, ,bark,,pubescence,pubescent,,,,,271,322
+227,Annonaceae, ,bark,,pubescence,tomentose,,,,,271,322
+227,Annonaceae, ,pith,,subject,pith,,,,,324,328
+227,Annonaceae, ,pith,,architecture,septate,,,,,329,337
+227,Annonaceae, ,pith,,feature,cell,oil,,,,338,355
+227,Annonaceae, ,leaves,,subject,leaves,,,,,357,363
+227,Annonaceae, ,leaves,,arrangement,alternate,,two rows,,,364,386
+227,Annonaceae, ,leaves,,shape-margin,entire,,,,,387,394
+227,Annonaceae, ,leaves,,nervation,penninerved,,,,,395,407
+227,Annonaceae, ,leaves,,texture,membranous TO coriaceous,,,,,408,433
+227,Annonaceae, ,leaves,,architecture,exstipulate,,,,,434,445
+227,Annonaceae, ,flower,,subject,flower,,,,,447,454
+227,Annonaceae, ,flower,,position,terminal,morphologically,,,,455,556
+227,Annonaceae, ,flower,,position,axillary,supra,,,,455,556
+227,Annonaceae, ,flower,,architecture,fasciculate,,,,,579,601
+227,Annonaceae, ,flower,,architecture,cymose,,,,,579,601
+227,Annonaceae, ,flower,,structure,wood,old,,,,618,627
+227,Annonaceae, ,flower,,architecture,sessile,,,,,628,651
+227,Annonaceae, ,flower,,architecture,pedicellate,,,,,628,651
+227,Annonaceae, ,flower,,architecture,pedunculate,more_rarely,,,,652,691
+227,Annonaceae, ,flower,,architecture,actinomorphic,more_rarely,,,,652,691
+227,Annonaceae, ,flower,,reproduction,bisexual,,,,,692,726
+227,Annonaceae, ,flower,,reproduction,unisexual,more_rarely,,,,692,726
+227,Annonaceae, ,flower,,odor,fragrant,often,,,,727,741
+227,Annonaceae, ,sepal,,subject,sepal,,,,,743,749
+227,Annonaceae, ,sepal,,count,3 (2),,,,,750,756
+227,Annonaceae, ,sepal,,dehiscence,valvate,usually,,,,757,780
+227,Annonaceae, ,sepal,,life-stage,in_bud,usually,,,,757,780
+227,Annonaceae, ,sepal,,fusion,free,,,,,781,797
+227,Annonaceae, ,sepal,,fusion,united,±,,,,781,797
+227,Annonaceae, ,petal,,subject,petal,,,,,799,805
+227,Annonaceae, ,petal,,count,6,,,,,871,873
+227,Annonaceae, ,petal,,aestivation,imbricate,,,,,883,925
+227,Annonaceae, ,petal,,aestivation,valvate,,,,,883,925
+227,Annonaceae, ,petal,,life-stage,in_bud,,,,,883,925
+227,Annonaceae, ,petal,,fusion,free,,at_the_base,,,926,955
+227,Annonaceae, ,petal,,fusion,united,±,at_the_base,,,926,955
+227,Annonaceae, ,petal,,structure,sepal,,,,,976,991
+227,Annonaceae, ,stamen,,subject,stamen,,,,,993,1000
+227,Annonaceae, ,stamen,,arrangement,spiral,,,,,1004,1011
+227,Annonaceae, ,stamen,,structure,anther,,,,,1056,1094
+227,Annonaceae, ,stamen,,dehiscence,extrorse,,,,,1106,1130
+227,Annonaceae, ,connective,,subject,connective,,,,,1132,1142
+227,Annonaceae, ,connective,,,prolonged,usually,the thecae,,,1143,1179
+227,Annonaceae, ,connective,,structure,apex,,,,,1180,1212
+227,Annonaceae, ,connective,,shape,oblique,,,,,1204,1230
+227,Annonaceae, ,connective,,shape,capitate,,,,,1204,1230
+227,Annonaceae, ,connective,,shape,convex,,,,,1204,1230
+227,Annonaceae, ,connective,,shape-base,acute,,,,,1242,1247
+227,Annonaceae, ,filament,,subject,filament,,,,,1249,1258
+227,Annonaceae, ,filament,,fusion,free,,,,,1289,1294
+227,Annonaceae, ,filament,,shape,elongate,more,over; a cone,,,1302,1365
+227,Annonaceae, ,filament,,fusion,united,more,over; a cone,,,1302,1365
+227,Annonaceae, ,carpel,,subject,carpel,,,,,1367,1374
+227,Annonaceae, ,carpel,,,?–1,,at_the_base,,,1375,1406
+227,Annonaceae, ,carpel,,fusion,free,,at_the_base,,,1375,1406
+227,Annonaceae, ,carpel,,fusion,united,,at_the_base,,,1375,1406
+227,Annonaceae, ,carpel,,structure,ovary,1-locular,,,,1436,1464
+227,Annonaceae, ,ovule,,subject,ovule,,,,,1466,1472
+227,Annonaceae, ,ovule,,structure,style,?–1; :,,,,1473,1500
+227,Annonaceae, ,fruit,,subject,fruit,,,,,1512,1517
+227,Annonaceae, ,fruit,,dehiscence,dehiscent,rarely,,,,1580,1597
+227,Annonaceae, ,fruit,,architecture,stipitate,,,,,1598,1619
+227,Annonaceae, ,fruit,,architecture,sessile,,,,,1598,1619
+227,Annonaceae, ,fruit,,architecture,-locular,1,,,,1677,1700
+227,Annonaceae, ,fruit,,architecture,?-seeded,1,,,,1677,1700
+227,Annonaceae, ,fruit,,structure,seed,,,,,1701,1730
+227,Annonaceae, ,fruit,,architecture,arillate,sometimes,,,,1731,1750
+227,Annonaceae, ,fruit,,structure,endosperm,abundant; ruminate,,,,1751,1783
+227,Annonaceae, ,embryo,,subject,embryo,,,,,1785,1791
+227,Annonaceae, ,embryo,,size,minute,,,,,1792,1798

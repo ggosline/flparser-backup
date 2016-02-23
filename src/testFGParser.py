@@ -15,8 +15,10 @@ import traceback
 import logging
 logging.basicConfig(filename='flparse.log', filemode='w', level=logging.INFO)
 
-trec = defaultdict(lambda: None)
-description = 'Heads of flowers c. 8 mm. in diam., in an ample terminal panicle; panicle red'
+description = 'Indumentum felted-tomentose on leaf under surfaces' #, araneose-tomentose elsewhere'#, consisting of many-celled uniseriate soft hairs with extremely long filiform white apical cells, their bases tending to become rigid and persistent.'
+# query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Acacia' and species = 'albida'  ;"
+query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'family' and family = 'Annonaceae' ;"
+
 fromDB = True
 #fromDB = False
 parser = FeatureBottomUpLeftCornerChartParser
@@ -26,9 +28,11 @@ cleantree = False
 cleantree = True
 ttrace = 1
 draw = False
-#draw = True
+draw = True
 
+trec = defaultdict(lambda: None)
 trec['taxonNo'] = 666
+trec['family'] = 'testfam'
 trec['genus'] = 'Test'
 trec['species'] = 'run'
 trec['description'] = description
@@ -39,15 +43,15 @@ tfilebase = r'..\..\temp\tree'
 
 outfile = sys.stdout
 cf = open('characters.csv', 'w', encoding='utf-8', newline='')
-cfcsv = csv.DictWriter(cf, 'taxonNo taxon subject subpart category value mod posit phase presence start end'.split())
+cfcsv = csv.DictWriter(cf, 'taxonNo family taxon subject subpart category value mod posit phase presence start end'.split())
 cfcsv.writeheader()
+
 
 if __name__ == '__main__':
     if fromDB:
         ttrace = 0
         draw = False
-        ttaxa = FloraCorpusReader(db=r'..\resources\efloras.db3',
-                                  query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Acacia' and species = 'albida'  ;")
+        ttaxa = FloraCorpusReader(db=r'..\resources\efloras.db3', query=query)
         outfile = open('testphrases.txt', 'w', encoding='utf-8')
 
     else:
@@ -58,6 +62,7 @@ if __name__ == '__main__':
         print('\rTAXON: ', taxon.family, taxon.genus, taxon.species)
         print('\rTAXON: ', taxon.family, taxon.genus, taxon.species, file=outfile)
         # print('-'*80,  '\rTAXON: ', taxon.family, taxon.genus, taxon.species, file=cf)
+        famname = taxon.family
         taxname = taxon.genus + ' ' + taxon.species
         taxonNo = taxon.taxonNO
         logging.info('TAXON:  ' + taxname)
@@ -90,7 +95,7 @@ if __name__ == '__main__':
                             print('failure to get H')
                             H = None
                         if H:
-                            DumpChars(taxonNo, taxname, subject, '', H, tokens, sent.text, txtstart + sent.slice.start, txtend + sent.slice.start, indent=1, file=cfcsv)
+                            DumpChars(taxonNo, famname, taxname, subject, '', H, tokens, sent.text, txtstart + sent.slice.start, txtend + sent.slice.start, indent=1, file=cfcsv)
 
                 if trees:
                     print('Success: \n ' + phrase.text, file=outfile)

@@ -1,46 +1,43 @@
-TAXON:  Leguminosae Acacia albida
+TAXON:  Annonaceae  
+Fail:
+ Plant is Trees, shrubs, or lianes (rarely rhizomatous shrublets), glabrous or with an indumentum of simple, stellate or lepidote hairs
+No. of trees: 3
+Fail:
+ bark usually smooth and entire, pale grey or buff to brown, the branches often reddish to purple-black with lozenge-shaped striations, pubescent or tomentose (rarely glabrous) when young
+No. of trees: 5
 Success: 
- Plant is Tree 6-30 m. high, with rough dark-brown or greenish-grey bark and spreading branches
+ pith septate, oil cells present
+No. of trees: 2
+Success: 
+ Leaves alternate in two rows, entire, penninerved, membranous to coriaceous, exstipulate
+No. of trees: 4
+Fail:
+ Flowers morphologically terminal (i.e. terminal, supra-axillary, extra-axillary or leaf-opposed) or axillary, solitary or paired to fasciculate or cymose, on the young or old wood, sessile or pedicellate, more rarely pedunculate, actinomorphic, bisexual or more rarely unisexual, often fragrant
 No. of trees: 8
 Success: 
- young branchlets ashen to whitish
-No. of trees: 1
-Success: 
- Stipules spinescent, up to 1·3(2·3) cm. long, straight, never enlarged and inflated
-No. of trees: 4
-Success: 
- no prickles below the stipules
-No. of trees: 1
-Fail:
- Leaves: rhachis with a single conspicuous gland at the junction of each of the (2)3-10 pairs of pinnae
-No. of trees: 2
-Success: 
- no gland on the petiole
-No. of trees: 2
-Success: 
- leaflets 6-23 pairs, (2·5)3·5-9(14) x 0·7-3(5) mm., rounded to subacute and mucronate at the apex
+ Sepals 3 (2), usually valvate in bud, free or ± united
 No. of trees: 3
 Fail:
- Flowers cream, sessile or to 0·5(2) mm. pedicellate, in inflorescences 3·5-14 cm. long on peduncles 1·3-3·5 cm. long
-No. of trees: 4
-Success: 
- Calyx 1-1·7(2·5) mm. long
-No. of trees: 1
-Success: 
- Corolla 3-3·5(4·5) mm. long, with 5 lobes 1·5-2·5 mm. long
-No. of trees: 1
+ Petals 6 (4) in two equal or ± unequal whorls (more rarely one whorl of 6, 4 or 3), imbricate or valvate (rarely open) in bud, free or ± united at the base, usually alternating with the sepals
+No. of trees: 5
 Fail:
- Stamen-filaments 4-6 mm. long, connate for c. 1 mm. at the base
+ Stamens ?, spiral, or 6–12 and whorled (sometimes staminodial) with anthers linear to semi-orbicular, lateral or extrorse (rarely apical)
+No. of trees: 4
+Fail:
+ connective usually prolonged beyond the thecae, with the apex truncate, oblique, capitate, convex, conical or acute
+No. of trees: 5
+Fail:
+ filaments usually very short or absent, free, rarely more elongate and united in a cone over the gynoecium (Xylopia)
+No. of trees: 4
+Fail:
+ Carpels ?–1 free or united at the base, or completely united to form a 1-locular ovary (Monodora)
 No. of trees: 3
 Success: 
- anthers 0·2-0·4 mm. across, eglandular even in bud
-No. of trees: 1
+ ovules ?–1: styles free or united, or absent
+No. of trees: 4
 Fail:
- Pods bright orange, thick, indehiscent, 6-25 x (1·5)2-3·5(5) cm., glabrous or very rarely puberulous, falcate or curled into a circular coil
+ Fruit apocarpous with ripe carpels baccate (fleshy or lignified) or rarely dehiscent, stipitate or sessile, or syncarpous with either aggregated 1-seeded carpels or 1-locular and ?-seeded, Seeds vertical to horizontal, sometimes arillate, with abundant ruminate endosperm
 No. of trees: 7
 Success: 
- Seeds 9-11 x 6-8 mm., elliptic-lenticular
-No. of trees: 1
-Success: 
- central areole large, 7-9 x 4-6 mm
+ embryo minute
 No. of trees: 1

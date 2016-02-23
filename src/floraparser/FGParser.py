@@ -371,8 +371,9 @@ class FGParser():
         charedges = list(self.simple_select(is_complete=True, lhs='SUBJECT'))
         for charedge in charedges:
             for tree in self._chart.trees(charedge, complete=True, tree_class=Tree):
-                trees.append((tree, charedge.start(), charedge.end()))
-        return [(t, self._chart._tokens[start].slice.start, self._chart._tokens[end-1].slice.stop) for t, start, end in trees]
+                trees.append((tree, charedge.start()+1, charedge.end()))
+
+        return [(t, self._chart._tokens[start].slice.start, self._chart._tokens[end - 1].slice.stop) for t, start, end in trees]
 
     def listCHARs(self):
         '''

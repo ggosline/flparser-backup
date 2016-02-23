@@ -24,10 +24,10 @@ def DumpStruct(struct, indent: int = 0, file=None):
     else:
         pass
 
-CharRec = recordtype.recordtype('CharRec', 'taxonNo taxon subject subpart category value mod posit phase presence start end', default=None)
+CharRec = recordtype.recordtype('CharRec', 'taxonNo  family taxon subject subpart category value mod posit phase presence start end', default=None)
 
-def DumpChars(taxonNo, taxon, subject, subpart, struct, tokens, ptext: str, start, end, indent: int = 0, file=None):
-    crec = CharRec(taxonNo, taxon, subject, start=start, end=end)
+def DumpChars(taxonNo, family, taxon, subject, subpart, struct, tokens, ptext: str, start, end, indent: int = 0, file=None):
+    crec = CharRec(taxonNo, family, taxon, subject, start=start, end=end)
     DumpChar(crec, struct, tokens, ptext, indent, file)
 
 def DumpChar(crec, struct, tokens, ptext: str, indent: int = 0, file=None):
@@ -35,13 +35,13 @@ def DumpChar(crec, struct, tokens, ptext: str, indent: int = 0, file=None):
     if isinstance(struct,FeatDict):
         category = struct.get('category')
         if category: crec.category = category
-        if struct.get(posit): crec.posit = struct.get(posit)
+        if struct.get(posit): crec.posit = stext(struct.get(posit), tokens, ptext)
         if struct.get('phase'): crec.phase = struct.get('phase')
         if struct.get('ISA'):
             if struct.get('orth'):
                 crec.value = struct['orth']
                 if struct.get('mod'):
-                    crec.mod = tupletext(struct.get('mod'), tokens, ptext)
+                    crec.mod = stext(struct.get('mod'), tokens, ptext)
                 file.writerow(crec._asdict())
             if struct.get('clist'):
                 crec.mod = ""
@@ -54,7 +54,7 @@ def DumpChar(crec, struct, tokens, ptext: str, indent: int = 0, file=None):
             if struct.get('orth'):
                 crec.subpart = struct['orth']
                 if struct.get('mod'):
-                    crec.mod = struct.get('mod')
+                    crec.mod = stext(struct.get('mod'), tokens, ptext)
                 if struct.get('clist'):
                     DumpChar(crec, struct.get('clist'), tokens, ptext, indent, file)
                 else:

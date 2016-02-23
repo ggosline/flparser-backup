@@ -162,18 +162,18 @@ def pickle_lexicon():
     addlexicon(DIMENSION, 'DIM', {})
     RANGE = 'up_to|at_least|to|more_than|less_than'.split('|')
     addlexicon(RANGE, 'RANGE', {})
-    POSITIONA = 'upper|lower|uppermost|lowermost|superior|inferior|outer|inner|outermost|innermost|various|' \
-                'above_and_beneath|at_the_apex|at_the_base|at_the_top'.split('|')
+    POSITIONA = 'upper|lower|under|uppermost|lowermost|superior|inferior|outer|inner|outermost|innermost|various|' \
+                'above_and_beneath|at_the_apex|at_the_base|at_the_top|elsewhere'.split('|')
     addlexicon(POSITIONA, 'A', {position:True, 'category':'position'})
 
-    POSITION = 'top|bottom|underside|base|apex|margin|front|back|both_sides|both_surfaces|each_side|section|rest_of'.split('|')
+    POSITION = 'top|bottom|underside|base|apex|margin|front|back|both_sides|under_surfaces|upper_surfaces|both_surfaces|each_side|section|rest_of'.split('|')
     addlexicon(POSITION, 'N', {position:True, 'category':'partof'})
     ACCURACY = "c.|about|more_or_less|±|exactly|almost|nearly|mostly".split('|')
     addlexicon(ACCURACY, 'DEG', dict(accuracy=True))
     FREQUENCY = "very|a_little|not_much|sometimes|often|usually|rarely|more_rarely|more_often|generally|never|always|" \
                 "soon|also|even|especially|?".split('|')
     addlexicon(FREQUENCY, 'DEG', dict(frequency=True))
-    DEGREE = "sparsely|densely|slightly|narrowly|widely|markedly|somewhat|rather|shallowly|scarcely|partly|partially|much|well|" \
+    DEGREE = "sparsely|densely|slightly|narrowly|widely|markedly|extremely|somewhat|rather|shallowly|scarcely|partly|partially|much|well|" \
              "dark|light|deep|bright".split('|')
     addlexicon(DEGREE, 'ADV', {})
     COMPARISON = "paler|darker|lighter|shorter|longer|wider|narrower|bigger|smaller|duller|shinier|higher|" \
@@ -186,8 +186,8 @@ def pickle_lexicon():
     addlexicon(SIZECOMP, 'A', dict(compar=True, category='size'))
     COMPADJ = "more|less|most|least".split('|')
     addlexicon(COMPADJ, 'ADV', dict(makecomp=True))
-    TIMING = "at_first|when_young|becoming|remaining|turning|in_age|at_maturity|later|at_length|eventually|when_fresh|when_dry".split(
-        '|')
+    TIMING = "at_first|when_young|becoming|tending_to_become|" \
+             "remaining|turning|in_age|at_maturity|later|at_length|eventually|when_fresh|when_dry".split('|')
     addlexicon(TIMING, 'A', {timing:True})
     PRESENCE = "present|absent".split('|')
     addlexicon(PRESENCE, 'A', dict(category='presence'))
