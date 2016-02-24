@@ -118,7 +118,7 @@ ADVB[H=[OR=(?o1,?o2)]] -> ADVB[H=?o1] OR ADVB[H=?o2]
 DEG                    -> COMPADJ DEG
 ADVB[+comp, category=adv, H=[orth=?o, mod=(?c)]] -> A[+*makecomp*, H=[orth=?c]] ADV[H=[orth=?o]]
 
-MOD[H=[orth=?adv]]     -> ADVB[H=[orth=?adv]]
+MOD[]                  -> ADVB[+HD, H=?head]
 MOD[H=[deg=?deg]]      -> DEG[H=[orth=?deg]]
 #MOD[H=[count=?adv]]   -> COUNT[H=?adv]
 AP[H=?count]           -> COUNT[H=?count]
@@ -138,7 +138,7 @@ APL[category=?c, H=[category=?c, OR=(?ha+?hb)]]   ->  AP[category=?c, H=?ha] OR 
 APL[category=?c, H=?h]                            ->  AP[category=?c, H=?h]
 APL[category=?c, H=[category=?c, TO=(?ha+?hb)]]   ->  AP[category=?c, H=?ha] TO APL[category=?c, H=?hb]
 
-#ABAR[category=?c, H=[category=?c, OR=(?o1+?h2)]] -> ABAR[category=?c, H=[orth=?o1]] OR WITHP[H=?h2]
+ABAR[category=?c, H=[category=?c, OR=(?o1+?h2)]] -> ABAR[category=?c, H=?o1] OR WITHP[category=?c, H=?h2]
 #ABAR[category=?c, H=[TO=(?ha+?hb), category=?c]]  -> ABAR[category=?c, H=?ha ] TO ABAR[category=?c, H=?hb]
 
 #ABAR[category=?c, H=[category=?c, orth=?o1, position=?p]] -> ABAR[category=?c, H=[orth=?o1]] POSITION[posit=?p]

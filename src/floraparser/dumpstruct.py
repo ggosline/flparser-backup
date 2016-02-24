@@ -26,6 +26,10 @@ def DumpStruct(struct, indent: int = 0, file=None):
 
 CharRec = recordtype.recordtype('CharRec', 'taxonNo  family taxon subject subpart category value mod posit phase presence start end', default=None)
 
+def DumpSubj(taxonNo, family, taxon, subject, subpart, struct, tokens, ptext: str, start, end, indent: int = 0, file=None):
+    crec = CharRec(taxonNo, family, taxon, subject, start=start, end=end)
+    DumpChar(crec, struct, tokens, ptext, indent, file)
+
 def DumpChars(taxonNo, family, taxon, subject, subpart, struct, tokens, ptext: str, start, end, indent: int = 0, file=None):
     crec = CharRec(taxonNo, family, taxon, subject, start=start, end=end)
     DumpChar(crec, struct, tokens, ptext, indent, file)
@@ -46,6 +50,9 @@ def DumpChar(crec, struct, tokens, ptext: str, indent: int = 0, file=None):
             if struct.get('clist'):
                 crec.mod = ""
                 DumpChar(crec, struct.get('clist'), tokens, ptext, indent, file)
+            if struct.get('OR'):
+                for subc in struct.get('OR'):
+                    DumpChar(crec, subc, tokens, ptext, file=file)
             else:
                 return
         elif struct.get('having'):

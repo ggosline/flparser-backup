@@ -15,18 +15,24 @@ import traceback
 import logging
 logging.basicConfig(filename='flparse.log', filemode='w', level=logging.INFO)
 
-description = 'Indumentum felted-tomentose on leaf under surfaces' #, araneose-tomentose elsewhere'#, consisting of many-celled uniseriate soft hairs with extremely long filiform white apical cells, their bases tending to become rigid and persistent.'
+description = 'Lamina  acute or acutely to subobtusely acuminate at the apex'#, with margin entire or shallowly rounded-denticulate, cuneate at the base'
+
+query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Salacia' and species = 'bussei' ;"
 # query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Acacia' and species = 'albida'  ;"
-query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'family' and family = 'Annonaceae' ;"
+# query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'family' and family = 'Annonaceae' ;"
 
 fromDB = True
-#fromDB = False
+# fromDB = False
+
 parser = FeatureBottomUpLeftCornerChartParser
 #parser = FeatureEarleyChartParser
 #parser = FeatureTopDownChartParser
+
 cleantree = False
 cleantree = True
+
 ttrace = 1
+
 draw = False
 draw = True
 
@@ -78,10 +84,15 @@ if __name__ == '__main__':
                     traceback.print_exc()
                     continue
                 if True:
+                    tokens = parser._chart._tokens
                     for t, txtstart, txtend in parser.listSUBJ():
                         cleanparsetree(t)
                         print('Text: ', sent.text[txtstart:txtend])
-                        subject = t[()].label()['H', 'orth']
+                        H = t[()].label()['H']
+                        subject = H['orth']
+                        DumpChars(taxonNo, famname, taxname, subject, '', H, tokens, sent.text,
+                                    phrase.slice.start + sent.slice.start, phrase.slice.stop + sent.slice.start, indent=1, file=cfcsv)
+
                     for t, txtstart, txtend in parser.listCHARs():
                         if cleantree: cleanparsetree(t)
                         print('Text: ', sent.text[txtstart:txtend])
@@ -89,13 +100,14 @@ if __name__ == '__main__':
                             t.draw()
                         try:
                             H = t[()].label()['H']
-                            tokens = parser._chart._tokens
+
                             print(H.get('category'), H.get('orth'))
                         except:
                             print('failure to get H')
                             H = None
                         if H:
-                            DumpChars(taxonNo, famname, taxname, subject, '', H, tokens, sent.text, txtstart + sent.slice.start, txtend + sent.slice.start, indent=1, file=cfcsv)
+                            DumpChars(taxonNo, famname, taxname, subject, '', H, tokens, sent.text,
+                                      txtstart + sent.slice.start, txtend + sent.slice.start, indent=1, file=cfcsv)
 
                 if trees:
                     print('Success: \n ' + phrase.text, file=outfile)

@@ -1,43 +1,61 @@
-TAXON:  Annonaceae  
+TAXON:  Celastraceae Salacia bussei
 Fail:
- Plant is Trees, shrubs, or lianes (rarely rhizomatous shrublets), glabrous or with an indumentum of simple, stellate or lepidote hairs
-No. of trees: 3
+ Plant is Shrubs, much branched, or shrublets with erect annual shoots from a woody ± creeping rootstock, 0·2–1 m. high (or higher and arborescent according to some collectors), sometimes forming colonies, without latex, glabrous
+No. of trees: 7
 Fail:
- bark usually smooth and entire, pale grey or buff to brown, the branches often reddish to purple-black with lozenge-shaped striations, pubescent or tomentose (rarely glabrous) when young
-No. of trees: 5
-Success: 
- pith septate, oil cells present
-No. of trees: 2
-Success: 
- Leaves alternate in two rows, entire, penninerved, membranous to coriaceous, exstipulate
+ stems subterete or ± flattened, almost smooth or striate, green at first, becoming purple-brown
 No. of trees: 4
+Success: 
+ Leaves alternate or the upper ones subopposite or opposite, petiolate
+No. of trees: 2
 Fail:
- Flowers morphologically terminal (i.e. terminal, supra-axillary, extra-axillary or leaf-opposed) or axillary, solitary or paired to fasciculate or cymose, on the young or old wood, sessile or pedicellate, more rarely pedunculate, actinomorphic, bisexual or more rarely unisexual, often fragrant
+ lamina bright green to olive-green, concolorous or rather paler green below, shining above or with both surfaces dull, (4·5)5·2–9·5(11) × (1·6)2–5·1(6·5) cm., elliptic or oblong-elliptic to obovate or oblanceolate, acute to obtuse or rounded and shortly apiculate at the apex, with margin entire or ± deeply curved-dentate, cuneate or decurrent at the base, papyraceous to coriaceous, with (6)7–8(9) lateral nerves and densely reticulate venation more prominent below than above
+No. of trees: 9
+Success: 
+ petiole 1–4 mm. long, with entire margins
+No. of trees: 1
+Success: 
+ stipules absent
+No. of trees: 1
+Success: 
+ Flowers (1–2)3–15 in axillary dichasial or subumbellate cymes, bisexual, 12–15 mm. in diam.
 No. of trees: 8
 Success: 
- Sepals 3 (2), usually valvate in bud, free or ± united
-No. of trees: 3
-Fail:
- Petals 6 (4) in two equal or ± unequal whorls (more rarely one whorl of 6, 4 or 3), imbricate or valvate (rarely open) in bud, free or ± united at the base, usually alternating with the sepals
-No. of trees: 5
-Fail:
- Stamens ?, spiral, or 6–12 and whorled (sometimes staminodial) with anthers linear to semi-orbicular, lateral or extrorse (rarely apical)
-No. of trees: 4
-Fail:
- connective usually prolonged beyond the thecae, with the apex truncate, oblique, capitate, convex, conical or acute
-No. of trees: 5
-Fail:
- filaments usually very short or absent, free, rarely more elongate and united in a cone over the gynoecium (Xylopia)
-No. of trees: 4
-Fail:
- Carpels ?–1 free or united at the base, or completely united to form a 1-locular ovary (Monodora)
-No. of trees: 3
-Success: 
- ovules ?–1: styles free or united, or absent
-No. of trees: 4
-Fail:
- Fruit apocarpous with ripe carpels baccate (fleshy or lignified) or rarely dehiscent, stipitate or sessile, or syncarpous with either aggregated 1-seeded carpels or 1-locular and ?-seeded, Seeds vertical to horizontal, sometimes arillate, with abundant ruminate endosperm
-No. of trees: 7
-Success: 
- embryo minute
+ buds 3–4 mm. long, ovoid-conic
 No. of trees: 1
+Success: 
+ peduncle 1–9(15) mm. long
+No. of trees: 1
+Fail:
+ pedicels 5–30 mm. long, articulated in the lower 1/2
+No. of trees: 3
+Success: 
+ bracts 0·5–1·5 mm. long, oblong to triangular, with margin entire to red-brown-scarious and denticulate, persistent
+No. of trees: 1
+Fail:
+ Sepals pale green with narrow whitish scarious entire or denticulate margin, 1–1·5 mm. long, unequal or sub-equal, ovate to oblong or semicircular, rounded, free
+No. of trees: 6
+Fail:
+ Petals pale green to yellowish, 4–7 mm. long, oblong to triangular, rounded, entire, united with the disk at the base
+No. of trees: 6
+Fail:
+ Disk dark to pale or yellowish green, shortly cylindric, round the bases of stamens and ovary, with margin broad and flat or concave, shallowly and ± irregularly 5-lobed
+No. of trees: 6
+Success: 
+ Stamens 3, with filaments up to 3 mm. long, slender, ± flattened
+No. of trees: 1
+Fail:
+ anthers pale to orange-yellow, dehiscing by 2 oblique or almost vertical clefts not confluent at the apex
+No. of trees: 3
+Success: 
+ Ovary ovoid-3-gonous or 3-lobed, with style narrow, elongated
+No. of trees: 2
+Success: 
+ stigma 3-lobed
+No. of trees: 2
+Success: 
+ ovules 2 per loculus
+No. of trees: 1
+Success: 
+ Fruit orange, 3·5–4 × 1·8–3·2 cm., subglobose to pyriform or irregular, apiculate, sometimes ridged, smooth, 1–3-seeded
+No. of trees: 2

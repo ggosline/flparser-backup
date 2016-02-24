@@ -85,16 +85,14 @@ def pickle_lexicon():
                 gid, term, category, appliesto = gentry['ID'], gentry['term'], gentry['category'].lower(), gentry[
                     'appliesTo'].lower()
                 # semterm = term.replace('-', '_').strip('.')
-                if category in ('structure', 'feature', 'character', 'structure-infl',
-                                'substance', 'life-form', 'plant', 'taxonomy', 'en', 'process'):
-                    POS = 'N'
+                POS = gentry['POS']
+                if POS == 'N':
                     # semexpr = read_expr(semterm)
                     if category == 'structure-infl':
                         morefeatures = {'group': True}
                     else:
                         morefeatures = {'group': False}
-                elif category != '':
-                    POS = 'A'
+                elif POS == 'A':
                     # semexpr = read_expr(category.replace('-', '_') + '(' + semterm + ')')
                     morefeatures = {position: False, timing: False, compar: False}
                 else:
