@@ -127,7 +127,7 @@ AP[H=?count]           -> COUNT[H=?count]
 MODL[H=[AND=(?ma+?mb)]] -> MODL[H=?ma] MOD[H=(?mb)]
 MODL[H=?ma]             -> MOD[H=?ma]
 
-ABAR[category=?c]               ->  A[category=?c, H=?h, +HD]
+ABAR[category=?c]                 -> A[category=?c, H=?h, +HD]
 A[category=?c, H=[orth=(?a1+?a2), category=?c]] -> A[category=?c, H=[orth=?a1]] A[category=?c, H=[orth=?a2]]
 ABAR[category=?c, H=[mod=(?adv)]] -> COUNT[H=[val=?adv]] A[+*counted*, category=?c, H=?h, +HD]
 
