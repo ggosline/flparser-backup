@@ -36,7 +36,9 @@ CTERMINATOR -> COMMA | '$'
 #CHR[category=?c, H=[stage=?st]] ->  CHR[category=?c, +HD, H=?head] STAGE[stage=?st]
 CHR[category=?c, H=[subset=?st]]      ->  CHR[category=?c, +HD, H=?head] SUBSET[stage=?st]
 CHR[category=?c, H=[*posit*=(?p)]]    ->  CHRL[category=?c, +HD, H=?head] POSITION[H=[*posit*=?p]]
+CHR[category=?c, H=[*posit*=(?p)]]    ->  WITH NL[category=position, H=[orth=?p]] CHRL[+HD, H=?head]
 CHR[category=clist, H=[*posit*=(?p)]] ->  POSITION[H=[*posit*=?p]] CHRL[+HD, H=?head]
+
 
 CHR[category=?c] ->  APL[category=?c, +HD, H=?head]
 CHR[category=?c] ->  AP[category=?c, +HD, H=?head]
@@ -166,7 +168,7 @@ ABAR[category=?d, H=[AND=(?ha,?hb)]]      -> ABAR[category=?c, H=?ha] AND ABAR[c
 AP[category=?d, H=[AND=(?ha,?hb)]]        -> AP[category=?c, H=?ha]  AP[category=?d, H=?hb]
 
 WITHC[category=?c, H=[clist=?clist]]   ->  NP[category=?c, H=?h, +HD] CHRL[H=?clist]
-WITHC[category=?c, H=[]]               ->  NP[category=?c, H=?h, +HD]
+WITHC[category=?c]                     ->  NP[category=?c, H=?h, +HD]
 
 WITHP[category=?c, H=[presence=?p ]]   -> WITH[presence=?p] WITHC[category=?c, +HD, H=?h]
 WITHP[category=?c, H=[presence=True ]] -> WITHC[category=?c, +HD, H=?h]
@@ -179,8 +181,8 @@ COMPARISON[H=[category=?cat, orth=(?comp,?aa,?ab)]] -> ADV[+*makecomp*, H=[orth=
 OFP[category=?c, H=[prep=OF]] -> OF NP[category=?c, +HD, H=?head]
 
 
-PP[H=[prep=?prep, obj=?n]]          -> P[H=[orth=?prep, -*posit*]] NP[H=?n]
-POSITION[H=[prep=?prep, obj=?n]]    -> P[H=[orth=?prep], +*conditional*] AP[H=?n]
+PP[H=[prep=?prep, obj=?n]]          -> P[H=[orth=?prep]] NP[H=?n]
+# POSITION[H=[prep=?prep, obj=?n]]    -> P[H=[orth=?prep], +*conditional*] AP[H=?n]
 
 #PP[mod=?deg] -> DEG[H=[orth=?deg]] PP[+HD, H=?head]
 

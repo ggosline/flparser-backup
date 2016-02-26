@@ -394,8 +394,8 @@ class FGParser():
                 # trees.append((tree, charedge.start()+1 , charedge.end())) # ignore the start of phrase token
                 subjend = charedge.end()
 
-        charedges = [edge for edge in self.simple_select(is_complete=True, lhs='CHAR') if edge.start() >= subjend]
-        charedges += [edge for edge in self.simple_select(is_complete=True, lhs='CHR') if edge.start() >= subjend]
+        charedges = [edge for edge in self.simple_select(is_complete=True, lhs='CHR') if edge.start() >= subjend]
+        charedges += [edge for edge in self.simple_select(is_complete=True, lhs='CHAR') if edge.start() >= subjend]
         for charedge in charedges:
             for tree in self._chart.trees(charedge, complete=True, tree_class=Tree):
                 newtree = False

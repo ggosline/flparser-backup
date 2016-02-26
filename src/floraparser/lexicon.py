@@ -165,7 +165,7 @@ def pickle_lexicon():
     addlexicon(POSITIONA, 'A', {position:True, 'category':'position'})
 
     POSITION = 'top|bottom|underside|base|apex|margin|front|back|both_sides|under_surfaces|upper_surfaces|both_surfaces|each_side|section|rest_of'.split('|')
-    addlexicon(POSITION, 'N', {position:True, 'category':'partof'})
+    addlexicon(POSITION, 'N', {position:True, 'category':'position'})
     ACCURACY = "c.|about|more_or_less|±|exactly|almost|nearly|mostly".split('|')
     addlexicon(ACCURACY, 'DEG', dict(accuracy=True))
     FREQUENCY = "very|a_little|not_much|sometimes|often|usually|rarely|more_rarely|more_often|generally|never|always|" \
