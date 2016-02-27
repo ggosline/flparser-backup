@@ -105,7 +105,7 @@ SIZEB[category=dimension, H=[qual=(OR,?qual)]] -> SIZEB[H=?h1, +HD] OR A[+*compa
 DIMEN[H=[dim=?dim]]                            -> IN DIM[H=[orth=?dim]]
 DIMEN[H=[dim=?dim]]                            -> DIM[H=[orth=?dim]]
 COUNT[category=count, H=[category=count, val=?num]]               -> NUM[orth=?num]
-COUNT[category=count, H=[category=count, +per, val=?num, obj=?h]] -> NUM[orth=?num] P[prep='per'] NBAR[H=?h]
+COUNT[category=count, H=[category=count, mod=('per', ?h), val=?num]] -> NUM[orth=?num] P[prep='per'] NBAR[H=?h]
 COUNT[category=count, H=[category=count, val=?num, group=?h]]     -> NUM[orth=?num] N[+*group*, H=[orth=?h]]
 #COUNT[H=[qual=?deg]]                                             -> DEG[orth=?deg] COUNT[+HD, H=?head]
 COUNT[H=[qual=?deg]]                                              -> RANGE[H=[orth=?deg]] COUNT[+HD, H=?head]
@@ -168,8 +168,9 @@ AP[category=?d, H=[AND=(?ha,?hb)]]        -> AP[category=?c, H=?ha]  AP[category
 WITHC[category=?c, H=[clist=?clist]]   ->  NP[category=?c, H=?h, +HD] CHRL[H=?clist]
 WITHC[category=?c, H=[]]               ->  NP[category=?c, H=?h, +HD]
 
-WITHP[category=?c, H=[presence=?p ]]   -> WITH[presence=?p] WITHC[category=?c, +HD, H=?h]
-WITHP[category=?c, H=[presence=True ]] -> WITHC[category=?c, +HD, H=?h]
+# WITHP[category=?c, H=[presence=?p ]]   -> WITH[presence=?p] WITHC[category=?c, +HD, H=?h]
+WITHP[category=?c, H=[presence=?p, having=?h]] -> WITH[presence=?p] WITHC[category=?c, H=?h]
+WITHP[category=?c, H=[+presence, having=?h]] -> WITHC[category=?c, H=?h]
 
 WITHP[category=(?c+?d), H=[+presence, having=[AND=(?h1+?h2)]]] -> WITH WITHC[category=?c, H=?h1] AND  WITHC[category=?d, H=?h2]
 WITHP[category=(?c+?d), H=[+presence, having=[OR=(?h1+?h2)]]]  -> WITH WITHC[category=?c, H=?h1] OR  WITHC[category=?d, H=?h2]

@@ -1,5 +1,0 @@
-taxonNo,family,taxon,subject,subpart,category,value,mod,posit,phase,presence,start,end
-666,testfam,Test run,lamina,,subject,lamina,,,,,1,49
-666,testfam,Test run,lamina,,partof,both_surfaces,,,,,26,49
-666,testfam,Test run,lamina,,reflectance,shining,,above,,,9,22
-666,testfam,Test run,lamina,,partof,both_surfaces,,,,,26,49
