@@ -15,14 +15,14 @@ import traceback
 import logging
 logging.basicConfig(filename='flparse.log', filemode='w', level=logging.INFO)
 
-description = 'Stamens 3, with filaments up to 3 mm. long, slender, ± flattened'
+description = 'Stamens dehiscing by 2 oblique or almost vertical clefts confluent'
 
 query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Salacia' and species = 'bussei' ;"
 # query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Acacia' and species = 'albida'  ;"
 # query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'family' and family = 'Annonaceae' ;"
 
 fromDB = True
-fromDB = False
+# fromDB = False
 
 parser = FeatureBottomUpLeftCornerChartParser
 #parser = FeatureEarleyChartParser

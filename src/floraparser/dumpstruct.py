@@ -81,6 +81,8 @@ def DumpChar(crec, struct: FeatDict, tokens, ptext: str, indent: int = 0, file=N
                 crec.value = (struct.get('num'), struct.get('unit'), struct.get('dim'))
             elif category == 'count':
                 crec.value = struct.get('val')
+            elif category == 'prep':
+                crec.value = stext(struct.get('prep'), tokens, ptext)
             else:
                 crec.value =  struct.get('orth')
             if crec.value:
