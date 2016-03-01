@@ -22,7 +22,7 @@ query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and ge
 # query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'family' and family = 'Annonaceae' ;"
 
 fromDB = True
-fromDB = False
+# fromDB = False
 
 parser = FeatureBottomUpLeftCornerChartParser
 #parser = FeatureEarleyChartParser

@@ -19,7 +19,7 @@ Success:
 No. of trees: 1
 Success: 
  Flowers (1–2)3–15 in axillary dichasial or subumbellate cymes, bisexual, 12–15 mm. in diam.
-No. of trees: 8
+No. of trees: 10
 Success: 
  buds 3–4 mm. long, ovoid-conic
 No. of trees: 1
@@ -31,22 +31,22 @@ Fail:
 No. of trees: 3
 Success: 
  bracts 0·5–1·5 mm. long, oblong to triangular, with margin entire to red-brown-scarious and denticulate, persistent
-No. of trees: 1
+No. of trees: 2
 Fail:
  Sepals pale green with narrow whitish scarious entire or denticulate margin, 1–1·5 mm. long, unequal or sub-equal, ovate to oblong or semicircular, rounded, free
 No. of trees: 6
-Fail:
+Success: 
  Petals pale green to yellowish, 4–7 mm. long, oblong to triangular, rounded, entire, united with the disk at the base
-No. of trees: 6
+No. of trees: 8
 Fail:
  Disk dark to pale or yellowish green, shortly cylindric, round the bases of stamens and ovary, with margin broad and flat or concave, shallowly and ± irregularly 5-lobed
 No. of trees: 6
 Success: 
  Stamens 3, with filaments up to 3 mm. long, slender, ± flattened
 No. of trees: 1
-Fail:
+Success: 
  anthers pale to orange-yellow, dehiscing by 2 oblique or almost vertical clefts not confluent at the apex
-No. of trees: 3
+No. of trees: 1
 Success: 
  Ovary ovoid-3-gonous or 3-lobed, with style narrow, elongated
 No. of trees: 2
@@ -55,7 +55,7 @@ Success:
 No. of trees: 2
 Success: 
  ovules 2 per loculus
-No. of trees: 1
+No. of trees: 2
 Success: 
  Fruit orange, 3·5–4 × 1·8–3·2 cm., subglobose to pyriform or irregular, apiculate, sometimes ridged, smooth, 1–3-seeded
 No. of trees: 2

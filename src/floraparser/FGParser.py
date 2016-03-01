@@ -382,7 +382,7 @@ class FGParser():
         parse must have been called first! to generate the chart
         '''
 
-        trees = []
+
         subjend = 0
 
         charedges = list(self.simple_select(is_complete=True, lhs='SUBJECT'))
@@ -394,26 +394,25 @@ class FGParser():
                 # trees.append((tree, charedge.start()+1 , charedge.end())) # ignore the start of phrase token
                 subjend = charedge.end()
 
+        tspans = [(None, (subjend, subjend))]  # A list of trees with span of starting and ending tokens covered
         charedges = [edge for edge in self.simple_select(is_complete=True, lhs='CHR') if edge.start() >= subjend]
         charedges += [edge for edge in self.simple_select(is_complete=True, lhs='CHAR') if edge.start() >= subjend]
         for charedge in charedges:
-            for tree in self._chart.trees(charedge, complete=True, tree_class=Tree):
-                newtree = False
-                if not trees:
-                    trees.append((tree, charedge.start(), charedge.end()))
-                else:
-                    for (t, tstart, tend) in trees[:]:
-                        if charedge.start() <= tstart and charedge.end() >= tend:  # subsumes
-                            trees.remove((t, tstart, tend))
-                        elif (charedge.start() >= tstart and charedge.end() < tend) \
-                                or (charedge.start() > tstart and charedge.end() <= tend):  # subsumed
-                            newtree = False
-                            continue
-                        newtree = True
-                    if newtree:
-                        trees.append((tree, charedge.start(), charedge.end()))
+            newspan = charedge.span()
+            for tspan in tspans:
+                if  treesubsumes(tspan[1], newspan):    # An existing edge covers this one; throw it out
+                    newspan = tuple()
+                    break
+            if not newspan:
+                continue                    # go to next edge here
 
-        return [(t, self._chart._tokens[start].slice.start, self._chart._tokens[end-1].slice.stop) for t, start, end in trees]
+            tspans = [t for t in tspans if not treesubsumes(newspan, t[1])] # throw out subsumed edges
+          # this span is new here -- add all the trees
+            for tree in self._chart.trees(charedge, complete=True, tree_class=Tree):
+                tspans.append((tree, newspan))
+                break                      # just get the first one!
+
+        return [(t, self._chart._tokens[start].slice.start, self._chart._tokens[end-1].slice.stop) for t, (start, end) in tspans]
 
     def simple_select(self, **restrictions):
         """
@@ -440,6 +439,15 @@ class FGParser():
                     break
             if matched:
                 yield edge
+
+def treesubsumes(t1, t2):
+    """
+    True if span t1 contains all the tokens of span t2
+    """
+    if t1[0] <= t2[0] and t1[1] >= t2[1]:  # subsumes
+        return True
+    else:
+        return False
 
 
 class FGTerminal(FlToken):
