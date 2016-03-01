@@ -15,7 +15,7 @@ import traceback
 import logging
 logging.basicConfig(filename='flparse.log', filemode='w', level=logging.INFO)
 
-description = ' lamina  shining above or with both surfaces dull'
+description = 'Stamens dehiscing by 2 oblique or almost vertical clefts confluent'
 
 query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Salacia' and species = 'bussei' ;"
 # query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Acacia' and species = 'albida'  ;"
@@ -93,7 +93,8 @@ if __name__ == '__main__':
                         DumpChars(taxonNo, famname, taxname, subject, '', H, tokens, sent.text,
                                     phrase.slice.start + sent.slice.start, phrase.slice.stop + sent.slice.start, indent=1, file=cfcsv)
 
-                    for t, txtstart, txtend in parser.listCHARs():
+                    charlist = parser.listCHARs()
+                    for t, txtstart, txtend in charlist:
                         if cleantree: cleanparsetree(t)
                         print('Text: ', sent.text[txtstart:txtend])
                         if draw:

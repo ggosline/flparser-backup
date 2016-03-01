@@ -34,13 +34,16 @@ def DumpChars(taxonNo, family, taxon, subject, subpart, struct, tokens, ptext: s
     crec = CharRec(taxonNo, family, taxon, subject, start=start, end=end)
     DumpChar(crec, struct, tokens, ptext, indent, file)
 
-def DumpChar(crec, struct, tokens, ptext: str, indent: int = 0, file=None):
+def DumpChar(crec, struct: FeatDict, tokens, ptext: str, indent: int = 0, file=None):
 
     if isinstance(struct,FeatDict):
         category = struct.get('category')
         if category: crec.category = category
         if struct.get(posit): crec.posit = stext(struct.get(posit), tokens, ptext)
         if struct.get('phase'): crec.phase = struct.get('phase')
+        if struct.has_key('presence'):
+            if struct['presence']: crec.presence = 'Present'
+            else: crec.presence = 'Absent'
         if struct.get('ISA'):
             if struct.get('orth'):
                 crec.value = struct['orth']
@@ -57,13 +60,12 @@ def DumpChar(crec, struct, tokens, ptext: str, indent: int = 0, file=None):
                 return
         elif struct.get('having'):
             having = struct.get('having')
-            crec.presence = struct['presence']
-            if struct.get('orth'):
-                crec.subpart = struct['orth']
-                if struct.get('mod'):
-                    crec.mod = stext(struct.get('mod'), tokens, ptext)
-                if struct.get('clist'):
-                    DumpChar(crec, struct.get('clist'), tokens, ptext, indent, file)
+            if having.get('orth'):
+                crec.subpart = having['orth']
+                if having.get('mod'):
+                    crec.mod = stext(having.get('mod'), tokens, ptext)
+                if having.get('clist'):
+                    DumpChar(crec, having.get('clist'), tokens, ptext, indent, file)
                 else:
                     file.writerow(crec._asdict())
                 return
@@ -79,6 +81,8 @@ def DumpChar(crec, struct, tokens, ptext: str, indent: int = 0, file=None):
                 crec.value = (struct.get('num'), struct.get('unit'), struct.get('dim'))
             elif category == 'count':
                 crec.value = struct.get('val')
+            elif category == 'prep':
+                crec.value = stext(struct.get('prep'), tokens, ptext)
             else:
                 crec.value =  struct.get('orth')
             if crec.value:
@@ -91,7 +95,7 @@ def DumpChar(crec, struct, tokens, ptext: str, indent: int = 0, file=None):
                 for subc in struct.get('AND'):
                     DumpChar(crec, subc, tokens, ptext, file=file)
             elif struct.get('TO'):
-                tolist = [str(subc.get('orth')) for subc in struct.get('TO')]
+                tolist = [stext(subc, tokens, ptext) for subc in struct.get('TO')]
                 crec.value = ' TO '.join(tolist)
                 file.writerow(crec._asdict())
 

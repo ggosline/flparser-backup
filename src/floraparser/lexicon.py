@@ -120,9 +120,9 @@ def pickle_lexicon():
     addlexicon(PRONOUN, 'PRO', {})
 
     PREP_POSITION = 'among|amongst|around|at|between|beyond|by|' \
-                  'from|in|into|near|on|onto|out_of|over|through|throughout|toward|' \
-                  'outside|inside|between|before|after|behind|across|along|from|' \
-                  'towards|up'.split('|')
+                    'from|in|into|near|on|onto|out_of|over|through|throughout|toward|' \
+                    'outside|inside|between|before|after|behind|across|along|from|' \
+                    'towards|up'.split('|')
     for word in PREP_POSITION:
         addlexentry(word, 'P', {'prep':word, position:True, adjectival:False}) #, sem=read_expr(r'\x.' + word + '(x)'))
     POSITIONADJ = 'outside|inside|above|below|beneath|within|throughout|upward'.split('|')
@@ -131,8 +131,9 @@ def pickle_lexicon():
         #addlexentry(word, 'P', prep=word, position=True, sem=read_expr(r'\x.' + word + '(x)'))
 
     PREPOSITION = 'as|during|for|from|in|off|on|onto|out|over|per|through|throughout|' \
-              'towards|up|upward|when|owing_to|due_to|according_to|on_account_of|' \
-              'tipped_by|to_form|attached_to|immersed_in'.split('|')
+                    'towards|up|upward|when|owing_to|due_to|according_to|on_account_of|' \
+                    'united_with|joined_to|' \
+                    'tipped_by|to_form|attached_to|immersed_in'.split('|')
     for word in PREPOSITION:
         addlexentry(word, 'P', dict(prep=word)) #, sem=read_expr(r'\x.' + word + '(x)'))
 
