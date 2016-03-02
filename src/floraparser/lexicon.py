@@ -89,12 +89,12 @@ def pickle_lexicon():
                 if POS == 'N':
                     # semexpr = read_expr(semterm)
                     if category == 'structure-infl':
-                        morefeatures = {'group': True}
-                    else:
-                        morefeatures = {'group': False}
+                        morefeatures = {group: True}
                 elif POS == 'A':
+                    if category == 'structure-infl':
+                        morefeatures = {group: True}
                     # semexpr = read_expr(category.replace('-', '_') + '(' + semterm + ')')
-                    morefeatures = {position: False, timing: False, compar: False}
+                    # morefeatures = {position: False, timing: False, compar: False}
                 else:
                     POS = 'UNK'
                 morefeatures['category']=category    # semexpr = None
@@ -165,7 +165,7 @@ def pickle_lexicon():
                 'above_and_beneath|at_the_apex|at_the_base|at_the_top|elsewhere'.split('|')
     addlexicon(POSITIONA, 'A', {position:True, 'category':'position'})
 
-    POSITION = 'top|bottom|underside|base|apex|margin|front|back|both_sides|under_surfaces|upper_surfaces|both_surfaces|each_side|section|rest_of'.split('|')
+    POSITION = 'top|bottom|underside|base|apex|margin|edge|front|back|both_sides|under_surfaces|upper_surfaces|both_surfaces|each_side|section|rest_of'.split('|')
     addlexicon(POSITION, 'N', {position:True, 'category':'position'})
     ACCURACY = "c.|about|more_or_less|±|exactly|almost|nearly|mostly".split('|')
     addlexicon(ACCURACY, 'DEG', dict(accuracy=True))
@@ -192,7 +192,7 @@ def pickle_lexicon():
     addlexicon(PRESENCE, 'A', dict(category='presence'))
     ISA = "is|consisting_of".split('|')
     addlexicon(ISA, 'IS', dict(category='ISA'))
-    GERUND = "covering|closing|enveloping|surrounding|forming|terminating|dehiscing_by|dividing|" \
+    GERUND = "covering|closing|enveloping|surrounding|forming|terminating_in|dehiscing_by|dividing|" \
              "ending|varying_in|arranged_in".split('|')
     addlexicon(GERUND, 'P', dict(verb=True))
 

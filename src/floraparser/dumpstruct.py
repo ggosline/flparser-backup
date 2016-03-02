@@ -40,6 +40,7 @@ def DumpChar(crec, struct: FeatDict, tokens, ptext: str, indent: int = 0, file=N
         category = struct.get('category')
         if category: crec.category = category
         if struct.get(posit): crec.posit = stext(struct.get(posit), tokens, ptext)
+        if struct.get('stage'): crec.phase = stext(struct.get('stage'), tokens, ptext)
         if struct.get('phase'): crec.phase = struct.get('phase')
         if struct.has_key('presence'):
             if struct['presence']: crec.presence = 'Present'
@@ -63,7 +64,8 @@ def DumpChar(crec, struct: FeatDict, tokens, ptext: str, indent: int = 0, file=N
             if having.get('orth'):
                 crec.subpart = having['orth']
                 if having.get('mod'):
-                    crec.mod = stext(having.get('mod'), tokens, ptext)
+                    if having.get('mod') != having.get('clist'):
+                        crec.mod = stext(having.get('mod'), tokens, ptext)
                 if having.get('clist'):
                     DumpChar(crec, having.get('clist'), tokens, ptext, indent, file)
                 else:
