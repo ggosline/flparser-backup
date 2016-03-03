@@ -118,9 +118,9 @@ def pickle_lexicon():
     addlexicon([','], 'COMMA', {})
     PRONOUN = 'it|one|ones|form|forms|part|parts'.split('|')
     addlexicon(PRONOUN, 'PRO', {})
-
+    # 'in' poosibly should be in following lists, but masks IN below
     PREP_POSITION = 'among|amongst|around|at|between|beyond|by|' \
-                    'from|in|into|near|on|onto|out_of|over|through|throughout|toward|' \
+                    'from|into|near|on|onto|out_of|over|through|throughout|toward|' \
                     'outside|inside|between|before|after|behind|across|along|from|' \
                     'towards|up'.split('|')
     for word in PREP_POSITION:
@@ -130,7 +130,7 @@ def pickle_lexicon():
         addlexentry(word, 'P', {'prep':word, position:True, adjectival:True})
         #addlexentry(word, 'P', prep=word, position=True, sem=read_expr(r'\x.' + word + '(x)'))
 
-    PREPOSITION = 'as|during|for|from|in|off|on|onto|out|over|per|through|throughout|' \
+    PREPOSITION = 'as|during|for|from|off|on|onto|out|over|per|through|throughout|' \
                     'towards|up|upward|when|owing_to|due_to|according_to|on_account_of|' \
                     'united_with|joined_to|' \
                     'tipped_by|to_form|attached_to|immersed_in'.split('|')

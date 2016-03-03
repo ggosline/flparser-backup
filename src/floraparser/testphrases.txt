@@ -1,61 +1,46 @@
-TAXON:  Celastraceae Salacia bussei
+TAXON:  Leguminosae Acacia albida
+Success: 
+ Plant is Tree 6-30 m. high, with rough dark-brown or greenish-grey bark and spreading branches
+No. of trees: 6
+Success: 
+ young branchlets ashen to whitish
+No. of trees: 1
+Success: 
+ Stipules spinescent, up to 1·3(2·3) cm. long, straight, never enlarged and inflated
+No. of trees: 4
+Success: 
+ no prickles below the stipules
+No. of trees: 1
 Fail:
- Plant is Shrubs, much branched, or shrublets with erect annual shoots from a woody ± creeping rootstock, 0·2–1 m. high (or higher and arborescent according to some collectors), sometimes forming colonies, without latex, glabrous
+ Leaves: rhachis with a single conspicuous gland at the junction of each of the (2)3-10 pairs of pinnae
+No. of trees: 2
+Success: 
+ no gland on the petiole
+No. of trees: 1
+Success: 
+ leaflets 6-23 pairs, (2·5)3·5-9(14) x 0·7-3(5) mm., rounded to subacute and mucronate at the apex
+No. of trees: 3
+Fail:
+ Flowers cream, sessile or to 0·5(2) mm. pedicellate, in inflorescences 3·5-14 cm. long on peduncles 1·3-3·5 cm. long
+No. of trees: 4
+Success: 
+ Calyx 1-1·7(2·5) mm. long
+No. of trees: 1
+Success: 
+ Corolla 3-3·5(4·5) mm. long, with 5 lobes 1·5-2·5 mm. long
+No. of trees: 1
+Fail:
+ Stamen-filaments 4-6 mm. long, connate for c. 1 mm. at the base
+No. of trees: 3
+Fail:
+ anthers 0·2-0·4 mm. across, eglandular even in bud
+No. of trees: 2
+Fail:
+ Pods bright orange, thick, indehiscent, 6-25 x (1·5)2-3·5(5) cm., glabrous or very rarely puberulous, falcate or curled into a circular coil
 No. of trees: 7
 Success: 
- stems subterete or ± flattened, almost smooth or striate, green at first, becoming purple-brown
-No. of trees: 2
-Success: 
- Leaves alternate or the upper ones subopposite or opposite, petiolate
-No. of trees: 2
-Fail:
- lamina bright green to olive-green, concolorous or rather paler green below, shining above or with both surfaces dull, (4·5)5·2–9·5(11) × (1·6)2–5·1(6·5) cm., elliptic or oblong-elliptic to obovate or oblanceolate, acute to obtuse or rounded and shortly apiculate at the apex, with margin entire or ± deeply curved-dentate, cuneate or decurrent at the base, papyraceous to coriaceous, with (6)7–8(9) lateral nerves and densely reticulate venation more prominent below than above
-No. of trees: 9
-Success: 
- petiole 1–4 mm. long, with entire margins
-No. of trees: 2
-Success: 
- stipules absent
-No. of trees: 1
-Fail:
- Flowers (1–2)3–15 in axillary dichasial or subumbellate cymes, bisexual, 12–15 mm. in diam.
-No. of trees: 3
-Success: 
- buds 3–4 mm. long, ovoid-conic
+ Seeds 9-11 x 6-8 mm., elliptic-lenticular
 No. of trees: 1
 Success: 
- peduncle 1–9(15) mm. long
+ central areole large, 7-9 x 4-6 mm
 No. of trees: 1
-Fail:
- pedicels 5–30 mm. long, articulated in the lower 1/2
-No. of trees: 3
-Success: 
- bracts 0·5–1·5 mm. long, oblong to triangular, with margin entire to red-brown-scarious and denticulate, persistent
-No. of trees: 1
-Fail:
- Sepals pale green with narrow whitish scarious entire or denticulate margin, 1–1·5 mm. long, unequal or sub-equal, ovate to oblong or semicircular, rounded, free
-No. of trees: 6
-Success: 
- Petals pale green to yellowish, 4–7 mm. long, oblong to triangular, rounded, entire, united with the disk at the base
-No. of trees: 16
-Fail:
- Disk dark to pale or yellowish green, shortly cylindric, round the bases of stamens and ovary, with margin broad and flat or concave, shallowly and ± irregularly 5-lobed
-No. of trees: 6
-Success: 
- Stamens 3, with filaments up to 3 mm. long, slender, ± flattened
-No. of trees: 2
-Success: 
- anthers pale to orange-yellow, dehiscing by 2 oblique or almost vertical clefts not confluent at the apex
-No. of trees: 2
-Success: 
- Ovary ovoid-3-gonous or 3-lobed, with style narrow, elongated
-No. of trees: 4
-Success: 
- stigma 3-lobed
-No. of trees: 2
-Success: 
- ovules 2 per loculus
-No. of trees: 3
-Success: 
- Fruit orange, 3·5–4 × 1·8–3·2 cm., subglobose to pyriform or irregular, apiculate, sometimes ridged, smooth, 1–3-seeded
-No. of trees: 4

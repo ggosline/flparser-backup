@@ -124,6 +124,10 @@ def stext(struct, tokens, ptext):
     elif isinstance(struct, str):
         return struct
     else:
-        if not struct.span:
-            return stext(list(struct.values())[0],tokens,ptext)
-        return struct.text(tokens,ptext)
+        if not hasattr(struct, 'span') or not struct.span:
+            if hasattr(struct, 'values'):
+                return stext(list(struct.values())[0],tokens,ptext)
+            else:
+                return ''     # probaly an uninstantiated variable
+        else:
+            return struct.text(tokens,ptext)

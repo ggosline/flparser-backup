@@ -1340,7 +1340,7 @@
 "#","A","infrapetiolar","insertion","bud","Axillary and surrounded by the petiole base at maturity.","position","q"
 "1396","A","infrapetiolar","position","bud","Axillary and surrounded by the petiole base at maturity.","position","q"
 "1397","N","infructescence","structure",,"A mature (fruiting) inflorescence (static sense).","STRUCTURE",
-"1398","N","infructescence","structure",,"A compound fruit derived from the connate or coherent ovaries and accessory tissue(s), if any, of two or more adjacent flowers.","STRUCTURE",
+"#","N","infructescence","structure",,"A compound fruit derived from the connate or coherent ovaries and accessory tissue(s), if any, of two or more adjacent flowers.","STRUCTURE",
 "1399","A","infundibular","shape","perianth, calyx, corolla","Having a narrowly obconic tube and a spreading limb, the transition between them smooth.","shape",
 "1400","A","insect-pollinated","reproduction","plant, strobilus, flower","Having the pollen normally transported between strobili or flowers by insects.","reproduction",
 "1401","A","insectivorous","nutrition","plant, structure","Capturing insects, digesting their tissues by means of exoenzymes secreted by specialized cells or tissues, and assimilating the digested substances as nourishment, especially for nitrogen.","nutrition",
@@ -2420,7 +2420,7 @@
 "2507","N","stilt_root","structure",,"A relatively stout or strong adventitious root arising from a woody stem branch and extending downward directly toward the substrate, within which it ultimately becomes anchored, thus supporting the branch of origin; as in some Ficus (Moraceae).","STRUCTURE",
 "2508","A","stilt-rooted","architecture","plant","Bearing and partly supported by stilt roots.","architecture",
 "2509","A","stinging","habit","trichome","Setaceous or capillate and ejecting an irritating fluid when the apex is dislocated by external pressure, the ejection accomplished by release of existing internal fluid pressure or by contraction of the whole trichome.","habit",
-"2510","N","stipe","structure",,"A small, slender connection between a pollinium caudicle and a viscidium; in Orchidaceae.","STRUCTURE",
+"2510","N","stipe","structure","Orchidaceae","A small, slender connection between a pollinium caudicle and a viscidium; in Orchidaceae.","STRUCTURE",
 "2511","N","stipe","structure",,"A stalk of or supporting a frond, inflorescence, or gynoecium.","STRUCTURE",
 "2512","N","stipel","structure",,"A stipular analogue subtending a leaflet.","STRUCTURE",
 "2513","A","stipitate","architecture","structure","Having a stipe.","architecture",
