@@ -130,7 +130,8 @@ def pickle_lexicon():
         addlexentry(word, 'P', {'prep':word, position:True, adjectival:True})
         #addlexentry(word, 'P', prep=word, position=True, sem=read_expr(r'\x.' + word + '(x)'))
 
-    PREPOSITION = 'as|during|for|from|off|on|onto|out|over|per|through|throughout|' \
+    # should 'on' be here?
+    PREPOSITION = 'as|during|for|from|off|onto|out|over|per|through|throughout|' \
                     'towards|up|upward|when|owing_to|due_to|according_to|on_account_of|' \
                     'united_with|joined_to|' \
                     'tipped_by|to_form|attached_to|immersed_in'.split('|')
@@ -142,7 +143,9 @@ def pickle_lexicon():
         addlexentry(word, 'P', dict(prep=word, conditional=True)) #, sem=read_expr(r'\x.' + word + '(x)'))
 
     addlexentry('with', 'WITH', {'presence':True})
+    addlexentry(':', 'WITH', {'presence':True})
     addlexentry('without', 'WITH', {'presence':False})
+    addlexentry('no', 'WITH', {'presence':False})
 
     GROUPS = "group|groups|clusters|cluster|arrays|array|series|" \
              "pairs|pair|row|rows|number|numbers|colonies".split('|')

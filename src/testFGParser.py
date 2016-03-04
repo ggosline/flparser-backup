@@ -15,7 +15,7 @@ import traceback
 import logging
 logging.basicConfig(filename='flparse.log', filemode='w', level=logging.INFO)
 
-description = 'Stems with scarcely prominent lenticels'
+description = 'Tree 6-30 m. high, with rough dark-brown or greenish-grey bark and spreading branches'
 
 # query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Salacia' ;"
 # query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Salacia' and species = 'bussei' ;"
@@ -23,7 +23,7 @@ query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and ge
 # query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'family' and family = 'Annonaceae' ;"
 
 fromDB = True
-#fromDB = False
+fromDB = False
 
 parser = FeatureBottomUpLeftCornerChartParser
 #parser = FeatureEarleyChartParser

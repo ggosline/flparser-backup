@@ -1,6 +1,8 @@
+
 from floracorpus import recordtype
 from nltk.featstruct import FeatDict, FeatureValueTuple
 from floraparser.lexicon import posit
+from nltk.sem import Variable
 
 def PrintStruct(struct, indent: int = 0, file=None):
     if isinstance(struct,FeatDict):
@@ -63,10 +65,11 @@ def DumpChar(crec, struct: FeatDict, tokens, ptext: str, indent: int = 0, file=N
             having = struct.get('having')
             if having.get('orth'):
                 crec.subpart = having['orth']
-                if having.get('mod'):
+                crec.category = 'presence'
+                if having.get('mod') and not isinstance(having.get('mod'),Variable):
                     if having.get('mod') != having.get('clist'):
                         crec.mod = stext(having.get('mod'), tokens, ptext)
-                if having.get('clist'):
+                if having.get('clist') and not isinstance(having.get('clist'),Variable):
                     DumpChar(crec, having.get('clist'), tokens, ptext, indent, file)
                 else:
                     file.writerow(crec._asdict())

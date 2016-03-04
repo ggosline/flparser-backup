@@ -8,13 +8,13 @@ No. of trees: 1
 Success: 
  Stipules spinescent, up to 1·3(2·3) cm. long, straight, never enlarged and inflated
 No. of trees: 4
-Success: 
+Fail:
  no prickles below the stipules
 No. of trees: 1
 Fail:
  Leaves: rhachis with a single conspicuous gland at the junction of each of the (2)3-10 pairs of pinnae
 No. of trees: 2
-Success: 
+Fail:
  no gland on the petiole
 No. of trees: 1
 Success: 
