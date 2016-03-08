@@ -412,7 +412,7 @@ class FGParser():
                 tspans.append((tree, newspan))
                 break                      # just get the first one!
 
-        return [(t, self._chart._tokens[start].slice.start, self._chart._tokens[end-1].slice.stop) for t, (start, end) in tspans]
+        return [(t, self._chart._tokens[start].slice.start, self._chart._tokens[end-1].slice.stop) for t, (start, end) in tspans if t]
 
     def simple_select(self, **restrictions):
         """

@@ -15,11 +15,11 @@ import traceback
 import logging
 logging.basicConfig(filename='flparse.log', filemode='w', level=logging.INFO)
 
-description = 'Tree 6-30 m. high, with rough dark-brown or greenish-grey bark and spreading branches'
+description = 'anthers blue to orange-yellow, dehiscing by 2 oblique or almost vertical clefts not confluent at the apex.'
 
 # query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Salacia' ;"
-# query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Salacia' and species = 'bussei' ;"
-query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Acacia' and species = 'albida'  ;"
+query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Salacia' and species = 'bussei' ;"
+# query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Acacia' and species = 'albida'  ;"
 # query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'family' and family = 'Annonaceae' ;"
 
 fromDB = True

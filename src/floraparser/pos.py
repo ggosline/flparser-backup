@@ -77,7 +77,7 @@ class FlTagger():
                 flword.slice = slice(words[iword].slice.start, words[windx + iword].slice.stop)
                 for wn in words[iword + 1: windx + iword + 1]:
                     wn.slice = slice(0, 0)  # mark as null word
-                # need to delete the words here but in the middle of a for loop
+                # need to delete the words here but in the middle of a for loop so can't
                 return wlist
 
         return (word,)
@@ -117,7 +117,7 @@ class FlTagger():
                 if lexent:
                     return flword, 'NP', lexent, ws
 
-        # Try taking the word apart at dashes
+        # Try taking the word apart at dashes or prefix, suffix
         root = self.rootword(word)
         if root:
             if (root[0],) in lexicon:  # xxx not handling synonym entries here !

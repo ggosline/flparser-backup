@@ -1,5 +1,5 @@
 taxonNo,family,taxon,subject,subpart,category,value,mod,posit,phase,presence,start,end
-666,testfam,Test run,tree,,subject,tree,,,,,0,85
-666,testfam,Test run,tree,,dimension,"('6-30', 'm.', 'high')",,,,,5,18
-666,testfam,Test run,tree,bark,structure,bark,rough; dark-brown or greenish-grey,,,Present,19,85
-666,testfam,Test run,tree,branch,structure,branch,spreading,,,Present,19,85
+666,testfam,Test run,anther,,subject,anther,,,,,0,105
+666,testfam,Test run,anther,,count,2,,,,,44,53
+666,testfam,Test run,anther,,orientation,oblique,,,,,44,53
+666,testfam,Test run,anther,,coloration,blue TO orange-yellow,,,,,8,30
