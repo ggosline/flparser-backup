@@ -173,6 +173,8 @@ def recordtype(typename, field_names, default=NO_DEFAULT, rename=False,
                           for name, default in fields.with_defaults])
     reprtxt = ', '.join('{0}={{{0}}}'.format(f) for f in all_field_names)
     dicttxt = ', '.join('{0!r}:self.{0}'.format(f) for f in all_field_names)
+    listtxt = ', '.join('self.{0}'.format(f) for f in all_field_names)
+
 
     # These values change depending on whether or not we have any fields.
     if all_field_names:
@@ -216,6 +218,9 @@ def recordtype(typename, field_names, default=NO_DEFAULT, rename=False,
         def _asdict(self):
             return {{{dicttxt}}}
 
+        def _aslist(self):
+            return ({listtxt})
+
         def __repr__(self):
             return "{typename}(" + "{reprtxt}".format(**self._asdict()) + ")"
 
@@ -241,6 +246,7 @@ def recordtype(typename, field_names, default=NO_DEFAULT, rename=False,
                                    initargs=initargs,
                                    inittxt=inittxt,
                                    dicttxt=dicttxt,
+                                   listtxt=listtxt,
                                    reprtxt=reprtxt,
                                    eqtxt=eqtxt,
                                    num_fields=len(all_field_names),

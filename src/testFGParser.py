@@ -12,10 +12,11 @@ from floraparser.dumpstruct import PrintStruct, DumpStruct, DumpChars
 from floraparser.fltoken import FlTaxon
 import csv
 import traceback
+import ordered_set
 import logging
 logging.basicConfig(filename='flparse.log', filemode='w', level=logging.INFO)
 
-description = 'anthers blue to orange-yellow, dehiscing by 2 oblique or almost vertical clefts not confluent at the apex.'
+description = 'anthers  dehiscing by 2 oblique or almost vertical clefts not confluent at the apex.'
 
 # query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Salacia' ;"
 query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Salacia' and species = 'bussei' ;"
@@ -23,14 +24,14 @@ query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and ge
 # query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'family' and family = 'Annonaceae' ;"
 
 fromDB = True
-fromDB = False
+#fromDB = False
 
 parser = FeatureBottomUpLeftCornerChartParser
 #parser = FeatureEarleyChartParser
 #parser = FeatureTopDownChartParser
 
 cleantree = False
-cleantree = True
+#cleantree = True
 
 ttrace = 1
 
@@ -50,9 +51,11 @@ tfilebase = r'..\..\temp\tree'
 
 outfile = sys.stdout
 cf = open('characters.csv', 'w', encoding='utf-8', newline='')
-cfcsv = csv.DictWriter(cf, 'taxonNo family taxon subject subpart category value mod posit phase presence start end'.split())
-cfcsv.writeheader()
-
+#cfcsv = csv.DictWriter(cf, 'taxonNo family taxon subject subpart category value mod posit phase presence start end'.split())
+#cfcsv.writeheader()
+cfcsv = csv.writer(cf)
+cfcsv.writerow('taxonNo family taxon subject subpart category value mod posit phase presence start end'.split())
+cfset = ordered_set.OrderedSet()
 
 if __name__ == '__main__':
     if fromDB:
@@ -92,7 +95,7 @@ if __name__ == '__main__':
                         H = t[()].label()['H']
                         subject = H['orth']
                         DumpChars(taxonNo, famname, taxname, subject, '', H, tokens, sent.text,
-                                    phrase.slice.start + sent.slice.start, phrase.slice.stop + sent.slice.start, indent=1, file=cfcsv)
+                                    phrase.slice.start + sent.slice.start, phrase.slice.stop + sent.slice.start, indent=1, file=cfset)
 
                     charlist = parser.listCHARs()
                     for t, txtstart, txtend in charlist:
@@ -109,7 +112,9 @@ if __name__ == '__main__':
                             H = None
                         if H:
                             DumpChars(taxonNo, famname, taxname, subject, '', H, tokens, sent.text,
-                                      txtstart + sent.slice.start, txtend + sent.slice.start, indent=1, file=cfcsv)
+                                      txtstart + sent.slice.start, txtend + sent.slice.start, indent=1, file=cfset)
+
+                            cfcsv.writerows(cfset)
 
                 if trees:
                     print('Success: \n ' + phrase.text, file=outfile)

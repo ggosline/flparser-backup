@@ -400,13 +400,13 @@ class FGParser():
         for charedge in charedges:
             newspan = charedge.span()
             for tspan in tspans:
-                if  treesubsumes(tspan[1], newspan):    # An existing edge covers this one; throw it out
+                if  treesubsumes(tspan[1], newspan) and tspan[1] != newspan:    # An existing edge covers this one; throw it out
                     newspan = tuple()
                     break
             if not newspan:
                 continue                    # go to next edge here
 
-            tspans = [t for t in tspans if not treesubsumes(newspan, t[1])] # throw out subsumed edges
+            tspans = [t for t in tspans if (not treesubsumes(newspan, t[1])) or newspan == t[1]] # throw out subsumed edges
           # this span is new here -- add all the trees
             for tree in self._chart.trees(charedge, complete=True, tree_class=Tree):
                 tspans.append((tree, newspan))

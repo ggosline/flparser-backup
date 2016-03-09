@@ -38,6 +38,7 @@ def DumpChars(taxonNo, family, taxon, subject, subpart, struct, tokens, ptext: s
 
 def DumpChar(crec, struct: FeatDict, tokens, ptext: str, indent: int = 0, file=None):
 
+    file.clear()
     if isinstance(struct,FeatDict):
         category = struct.get('category')
         if category: crec.category = category
@@ -52,7 +53,7 @@ def DumpChar(crec, struct: FeatDict, tokens, ptext: str, indent: int = 0, file=N
                 crec.value = struct['orth']
                 if struct.get('mod'):
                     crec.mod = stext(struct.get('mod'), tokens, ptext)
-                file.writerow(crec._asdict())
+                file.append(tuple(crec._aslist()))
             if struct.get('clist'):
                 crec.mod = ""
                 DumpChar(crec, struct.get('clist'), tokens, ptext, indent, file)
@@ -72,7 +73,7 @@ def DumpChar(crec, struct: FeatDict, tokens, ptext: str, indent: int = 0, file=N
                 if having.get('clist') and not isinstance(having.get('clist'),Variable):
                     DumpChar(crec, having.get('clist'), tokens, ptext, indent, file)
                 else:
-                    file.writerow(crec._asdict())
+                    file.append(tuple(crec._aslist()))
                 return
             elif having.get('AND'):
                 for subc in having.get('AND'):
@@ -91,7 +92,7 @@ def DumpChar(crec, struct: FeatDict, tokens, ptext: str, indent: int = 0, file=N
             else:
                 crec.value =  struct.get('orth')
             if crec.value:
-                file.writerow(crec._asdict())
+                file.append(tuple(crec._aslist()))
                 return
             if struct.get('OR'):
                 for subc in struct.get('OR'):
@@ -102,7 +103,7 @@ def DumpChar(crec, struct: FeatDict, tokens, ptext: str, indent: int = 0, file=N
             elif struct.get('TO'):
                 tolist = [stext(subc, tokens, ptext) for subc in struct.get('TO')]
                 crec.value = ' TO '.join(tolist)
-                file.writerow(crec._asdict())
+                file.append(tuple(crec._aslist()))
 
 
         pass

@@ -135,7 +135,7 @@ ABAR[category=?c, H=[mod=(?adv)]] -> COUNT[H=[val=?adv]] A[+*counted*, category=
 ORDELIM -> COMMA | OR | COMMA OR
 ABARL[category=?c, H=[category=?c, OR=(?ha+?hb)]]   ->  ABAR[category=?c, H=?ha] ORDELIM ABARL[category=?c, H=?hb]
 ABARL[category=?c, H=?h]                            ->  ABAR[category=?c, H=?h]
-# APL[category=?c, H=[category=?c, OR=(?ha+?hb)]]     ->  AP[category=?c, H=?ha] OR APL[category=?c, H=?hb]
+APL[category=?c, H=[category=?c, OR=(?ha+?hb)]]     ->  AP[category=?c, H=?ha] OR APL[category=?c, H=?hb]
 APL[category=?c, H=?h]                              ->  AP[category=?c, H=?h]
 APL[category=?c, H=[category=?c, TO=(?ha+?hb)]]     ->  AP[category=?c, H=?ha] TO APL[category=?c, H=?hb]
 
@@ -164,9 +164,9 @@ AP[category=?c, H=[mod=(?mod)]] -> MODL[H=?mod] ABARL[category=?c, +HD, H=?head]
 ABAR[category=?d, H=[AND=(?ha,?hb)]]        -> ABAR[category=?c, H=?ha] AND ABAR[category=?d, H=?hb]
 #AP[category=(?c+?d), H=[AND=(?ha+?hb)]]   -> AP[category=?c, H=?ha]  AP[category=?d, H=?hb]
 #AP[category=?d, H=[AND=(?ha+?hb)]]        -> AP[category=?c, H=?ha]  AP[category=?d, H=?hb]
-AP[category=?d, H=[AND=(?ha,?hb)]]           -> AP[category=?c, H=?ha]  AP[category=?d, H=?hb]
+AP[category=(?c,?d), H=[AND=(?ha,?hb)]]           -> AP[category=?c, H=?ha]  APL[category=?d, H=?hb]
 
-WITHC[category=?c, H=[orth=?o, mod=?mod, clist=?clist, category=?c]]        ->  NP[category=?c, H=[orth=?o, mod=?mod, category=?c], +HD] CHRL[H=?clist]
+WITHC[category=?c, H=[clist=?clist]]        ->  NP[category=?c, H=?head, +HD] CHRL[H=?clist]
 #WITHC[category=?c, H=[*posit*=?p]]          ->  WITHC[category=?c, H=?h, +HD] POSITION[H=[*posit*=?p]]
 #WITHC[category=?c, H=[stage=?p]]            ->  WITHC[category=?c, H=?h, +HD] STAGE[H=[stage=?p]]
 WITHC[category=?c]                          ->  NP[category=?c, H=[orth=?o, mod=?mod, clist=?mod, category=?c], +HD]
