@@ -150,14 +150,19 @@ def pickle_lexicon():
     GROUPS = "group|groups|clusters|cluster|arrays|array|series|" \
              "pairs|pair|row|rows|number|numbers|colonies".split('|')
     addlexicon(GROUPS, 'N', dict(group=True, category='grouping'))
-    LITNUMBERS = "zero|one|two|half|three|thirds|four|fourths|quarter|" \
-                 "five|fifths|six|sixths|seven|sevenths|eight|eighths|" \
-                 "nine|ninths|tenths|1/2|1/3|2/3|1/4|1/5|2/5".split('|')
+    LITNUMBERS = "zero|one|two|three|four|" \
+                 "five|six|seven|eight|" \
+                 "nine|ten".split('|')
     addlexicon(LITNUMBERS, 'NUM', dict(literal=True))
+    FRACTIONS = "twice|third|fourth|fifth|sixth|seventh|eighth|tenth|" \
+                "half|thirds|fourths|quarter|" \
+                 "fifths|sixths|sevenths|eighths|ninths|tenths" \
+                 "|1/2|1/3|2/3|1/4|1/5|2/5|3/5|4/5".split('|')
+    addlexicon(FRACTIONS, 'FRACTION', {})
     ORDNUMBERS = "principal|primary|secondary|tertiary|1st|2nd|3rd|first|second|third|fourth|fifth|sixth|seventh|eigth|ninth|tenth".split(
         '|')
     addlexicon(ORDNUMBERS, 'A', dict(ordinal=True))
-    UNITS = "mm.|cm.|dm.|m.|km.|mm|cm|dm|m|km".split('|')
+    UNITS = "mm.|cm.|dm.|m.|km.|in.|ft.|mm|cm|dm|m|km".split('|')
     addlexicon(UNITS, 'UNIT', {})
     DIMENSION = "high|tall|long|wide|thick|diam.|diameter|diam|in_height|in_width|in_diameter|in_diam".split(
         '|')
@@ -180,11 +185,11 @@ def pickle_lexicon():
     addlexicon(DEGREE, 'ADV', {})
     COMPARISON = "paler|darker|lighter|shorter|longer|wider|narrower|bigger|smaller|duller|shinier|higher|" \
                  "older|younger|" \
-                 "as_many_as|exceeding|equalling|as_long_as|indistinguishable_from|similar".split('|')
+                 "exceeding|equalling|indistinguishable_from|similar".split('|')
     addlexicon(COMPARISON, 'A', dict(compar=True, category='compar'))
     COLOURCOMP = "paler|darker|lighter|duller|shinier".split('|')
     addlexicon(COLOURCOMP, 'A', dict(compar=True, category='coloration'))
-    SIZECOMP = "shorter|longer|wider|narrower|bigger|smaller|higher|as_long".split('|')
+    SIZECOMP = "shorter|longer|wider|narrower|bigger|smaller|higher".split('|')
     addlexicon(SIZECOMP, 'A', dict(compar=True, category='size'))
     COMPADJ = "more|less|most|least".split('|')
     addlexicon(COMPADJ, 'ADV', dict(makecomp=True))

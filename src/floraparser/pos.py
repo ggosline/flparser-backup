@@ -102,7 +102,7 @@ class FlTagger():
         # lexicon matches punctuation, including single parentheses; so do before numbers
         if NUMBERS.match(word):
             return flword, 'NUM', [featurereader.fromstring(
-                "NUM[+numeric, orth='" + word +"']")], (word,)
+                "NUM[H=[+numeric, orth='" + word +"']]")], (word,)
                     # features={TYPE: 'NUM', 'numeric': True, 'orth': word, 'sem': read_expr('num("' + word + '")')})], \
                     #     (word,)
         ws = FlTagger.singularize(self, word)

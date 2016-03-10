@@ -16,7 +16,7 @@ import ordered_set
 import logging
 logging.basicConfig(filename='flparse.log', filemode='w', level=logging.INFO)
 
-description = 'anthers  dehiscing by 2 oblique or almost vertical clefts not confluent at the apex.'
+description = 'pedicels equalling or to 1/3 as long as leaf'
 
 # query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Salacia' ;"
 query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Salacia' and species = 'bussei' ;"
@@ -24,7 +24,7 @@ query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and ge
 # query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'family' and family = 'Annonaceae' ;"
 
 fromDB = True
-#fromDB = False
+fromDB = False
 
 parser = FeatureBottomUpLeftCornerChartParser
 #parser = FeatureEarleyChartParser
@@ -89,6 +89,7 @@ if __name__ == '__main__':
                     continue
                 if True:
                     tokens = parser._chart._tokens
+                    cfset.clear()
                     for t, txtstart, txtend in parser.listSUBJ():
                         cleanparsetree(t)
                         print('Text: ', sent.text[txtstart:txtend])
@@ -114,7 +115,7 @@ if __name__ == '__main__':
                             DumpChars(taxonNo, famname, taxname, subject, '', H, tokens, sent.text,
                                       txtstart + sent.slice.start, txtend + sent.slice.start, indent=1, file=cfset)
 
-                            cfcsv.writerows(cfset)
+                    cfcsv.writerows(cfset)
 
                 if trees:
                     print('Success: \n ' + phrase.text, file=outfile)

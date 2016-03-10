@@ -38,7 +38,6 @@ def DumpChars(taxonNo, family, taxon, subject, subpart, struct, tokens, ptext: s
 
 def DumpChar(crec, struct: FeatDict, tokens, ptext: str, indent: int = 0, file=None):
 
-    file.clear()
     if isinstance(struct,FeatDict):
         category = struct.get('category')
         if category: crec.category = category
@@ -89,11 +88,17 @@ def DumpChar(crec, struct: FeatDict, tokens, ptext: str, indent: int = 0, file=N
                 crec.value = struct.get('val')
             elif category == 'prep':
                 crec.value = stext(struct.get('prep'), tokens, ptext)
+            elif category == 'compar':
+                if struct.get('orth'):
+                    crec.value = struct['orth']
+                elif struct.get('comparison'):
+                    crec.value = (struct.get('comparison'), stext(struct.get('compto'), tokens, ptext))
             else:
                 crec.value =  struct.get('orth')
             if crec.value:
                 file.append(tuple(crec._aslist()))
                 return
+
             if struct.get('OR'):
                 for subc in struct.get('OR'):
                     DumpChar(crec, subc, tokens, ptext, file=file)

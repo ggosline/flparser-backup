@@ -11,7 +11,7 @@ No. of trees: 4
 Fail:
  lamina bright green to olive-green, concolorous or rather paler green below, shining above or with both surfaces dull, (4·5)5·2–9·5(11) × (1·6)2–5·1(6·5) cm., elliptic or oblong-elliptic to obovate or oblanceolate, acute to obtuse or rounded and shortly apiculate at the apex, with margin entire or ± deeply curved-dentate, cuneate or decurrent at the base, papyraceous to coriaceous, with (6)7–8(9) lateral nerves and densely reticulate venation more prominent below than above
 No. of trees: 9
-Fail:
+Success: 
  petiole 1–4 mm. long, with entire margins
 No. of trees: 2
 Success: 
@@ -34,7 +34,7 @@ Success:
 No. of trees: 2
 Fail:
  Sepals pale green with narrow whitish scarious entire or denticulate margin, 1–1·5 mm. long, unequal or sub-equal, ovate to oblong or semicircular, rounded, free
-No. of trees: 5
+No. of trees: 6
 Success: 
  Petals pale green to yellowish, 4–7 mm. long, oblong to triangular, rounded, entire, united with the disk at the base
 No. of trees: 62
