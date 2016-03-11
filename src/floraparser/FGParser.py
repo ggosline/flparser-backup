@@ -4,8 +4,9 @@ from nltk.parse.featurechart import FeatureSingleEdgeFundamentalRule, FeatureTre
     BU_LC_FEATURE_STRATEGY, FeatureBottomUpPredictCombineRule, FeatureEmptyPredictRule, FeatureChartParser
 
 from nltk.grammar import FeatureGrammar, FeatStructNonterminal, FeatStructReader,\
-    read_grammar, SLASH, TYPE, Production, \
+    SLASH, TYPE, Production, \
     Nonterminal
+from floraparser.flgrammarreader import read_grammar
 from nltk.sem import Variable
 from nltk.parse.chart import TreeEdge, FundamentalRule, SingleEdgeFundamentalRule, LeafInitRule, EdgeI
 from nltk.grammar import FeatureValueType, is_nonterminal
@@ -44,8 +45,10 @@ class FGFeatureTreeEdge(FeatureTreeEdge):
         # Added code
         # Note that overridden deepcopy loses values of our SPAN!
         if dot == len(rhs):
+            # purge variables!
+            lhs = remove_variables(lhs)
             unify_heads(self, span, lhs, rhs)
-        lhs.span = span
+            lhs.span = span
         # end of added code
 
         # Initialize the edge.
@@ -77,6 +80,7 @@ def unify_heads(self, span, lhs, rhs):
     if not head_prod:
         return
     rhead = head_prod[0]['H']
+    rhead = remove_variables(rhead)
     lhead = lhs.get('H', FGFeatStructNonterminal([]))
     try:
         # newH = lhead.unify(rhead, trace=0)
@@ -89,7 +93,6 @@ def unify_heads(self, span, lhs, rhs):
     except:
         newH = FGFeatStructNonterminal('H[]')
 
-    newH.remove_variables()     # get rid of unresolved variables
     newH.span = span
     lhs['H'] = newH
 
@@ -116,10 +119,47 @@ def _naive_unify(fstruct1:FeatStruct, fstruct2:FeatStruct):
         # Concatenate the values !!
         # Don't unify corresponding values in fstruct1 and fstruct2.
         newfs += fstruct2
+        newfs = [t for t in newfs if not isinstance(t, Variable)]
         return newfs # Contains the unified value.
 
     else:
         return None
+
+# modify remove_variables to handle tuple types with variables
+# drop them if they are empty when done!
+
+def remove_variables(fstruct, fs_class='default'):
+    """
+    :rtype: FeatStruct
+    :return: The feature structure that is obtained by deleting
+        all features whose values are ``Variables``.
+    """
+    if fs_class == 'default': fs_class = FeatStruct
+    return _remove_variables(copy.deepcopy(fstruct), fs_class, set())
+
+def _remove_variables(fstruct, fs_class, visited):
+    if id(fstruct) in visited:
+        return
+    visited.add(id(fstruct))
+
+    if _is_mapping(fstruct):
+        items = list(fstruct.items())
+    elif _is_sequence(fstruct):
+        items = list(enumerate(fstruct))
+    else:
+        raise ValueError('Expected mapping or sequence')
+
+    for (fname, fval) in items:
+        if isinstance(fval, Variable):
+            del fstruct[fname]
+        elif isinstance(fval, fs_class):
+            _remove_variables(fval, fs_class, visited)
+        elif _is_sequence(fval):
+            fstruct[fname] = FeatureValueTuple([i for i in fval if not isinstance(i,Variable)])
+            if not fstruct[fname]:
+                del fstruct[fname]
+
+    return fstruct
 
 def _is_mapping(v):
     return hasattr(v, '__contains__') and hasattr(v, 'keys')
@@ -127,6 +167,9 @@ def _is_mapping(v):
 def _is_sequence(v):
     return (hasattr(v, '__iter__') and hasattr(v, '__len__') and
             not isinstance(v, str))
+
+def _is_variable(v):
+    return isinstance(v, Variable)
 #
 # Monkey patch the  init with unify_heads
 #  This avoids duplicating all the FeatureChart code with FeatureTreeEdge replace by FGFeaturTreeEdge

@@ -7,7 +7,7 @@ DESCRIPTION[subject=?s, chars=?charlist] -> SUBJECT[H=?s] CDELIM CHARLIST[H=?cha
 
 SUBJN[H=[category=subject, orth=?o]] -> N[category='structure', H=[orth=?o]] | N[category='life-form', H=[orth=?o]] | N[category='feature', H=[orth=?o]] | N[category='structure-infl', H=[orth=?o]]
 SUBJN[H=[mod=(?m)]]  -> AP[H=?m] SUBJN[H=?head, +HD]
-SUBJN[H=[mod=(?m)]]  -> AP[H=?m] SUBJN[H=?head, +HD]
+
 SUBJN[H=[mod=(?of)]] -> SUBJN[H=?head, +HD] OFP[H=?of]
 SUBJECT[]            -> CBEGINNER SUBJN[H=?head, +HD]
 
@@ -46,8 +46,8 @@ CHR[category=?c] ->  GROUPING[category=?c, +HD, H=?head]
 CHR[+anaph, H=[anaph=?a]] -> ANAPH[anaph=?a] CHRL[+HD, H=?head]
 #CHR[+anaph, H=[anaph=?a]] -> ANAPH[anaph=?a] CHARLIST[+HD, H=?head]
 
-CHR[category=ISA, H=[+ISA, clist=?clist]] -> ISA NPL[category=?c, +HD, H=?head] CHRL[H=?clist]
-CHR[category=ISA, H=[+ISA]]               -> ISA NPL[category=?c, +HD, H=?head]
+CHR[category=ISA, H=[+ISA, clist=?clist]] -> ISA NPL[category=?c, +HD, H=?head] [CHRL[H=?clist]]
+# CHR[category=ISA, H=[+ISA]]               -> ISA NPL[category=?c, +HD, H=?head]
 ISA -> IS
 
 CHR[category=dimension]   ->  SIZEB[+HD, H=?head]
@@ -92,16 +92,16 @@ NPL[category=?c, H=?h]                   -> NP[H=?h, category=?c]
 BYX -> CONJ[conj='×']
 BYX -> CONJ[conj='x']
 
-SIZE[category=dimension, H=[category=dimension, num=?num, unit=?unit, dim=?dim]]  -> NUM[H=[orth=?num]] UNIT[H=[orth=?unit]] DIMEN[H=[dim=?dim]]
-SIZE[category=dimension, H=[category=dimension, num=?num, unit=?unit, dim=long]]  -> NUM[H=[orth=?num]] UNIT[H=[orth=?unit]]
-SIZE[category=dimension, H=[category=dimension, num=?num, unit=?unit, dim=long]]  -> FRACTION[H=[orth=?num]] UNIT[H=[orth=?unit]]
+SIZE[category=dimension, H=[category=dimension, num=?num, unit=?unit, dim=?dim]]  -> NUM[H=[orth=?num]] UNIT[H=[orth=?unit]]  [ DIMEN[H=[dim=?dim]] ]
+# SIZE[category=dimension, H=[category=dimension, num=?num, unit=?unit, dim=long]]  -> NUM[H=[orth=?num]] UNIT[H=[orth=?unit]]
+SIZE[category=dimension, H=[category=dimension, num=?num, unit=?unit, dim=long, mod=?mod]]  -> FRACTIONAL[H=[orth=?num, mod=?mod]] UNIT[H=[orth=?unit]]
 SIZE[category=dimension, H=[AND=([category=dimension, num=?num1, dim=long, unit=?unit],[category=dimension, num=?num2, dim=wide, unit=?unit])]]  -> NUM[H=[orth=?num1]] BYX NUM[H=[orth=?num2]] UNIT[H=[orth=?unit]]
 
 SIZEB[category=dimension, H=[AND=(?h1+?h2)]]    -> SIZE[H=?h1] AND      SIZE[H=?h2]
 SIZEB[category=dimension, H=[AND=(?h1+?h2)]]    -> SIZE[H=?h1] COMMA    SIZE[H=?h2]
-SIZEB[category=dimension, H=[mod=?deg]]         -> DEG[H=[orth=?deg]]   SIZE[H=?h1, +HD]
-SIZEB[category=dimension, H=[mod=?deg]]         -> RANGE[H=[orth=?deg]] SIZE[H=?h1, +HD]
-SIZEB[category=dimension]                       -> SIZE[H=?h1,  +HD]
+SIZEB[category=dimension, H=[mod=?deg]]         -> [ DEG[H=[orth=?deg]] ] [ RANGE[H=[orth=?deg]] ] SIZE[H=?h1, +HD]
+# SIZEB[category=dimension, H=[mod=?deg]]         -> RANGE[H=[orth=?deg]] SIZE[H=?h1, +HD]
+# SIZEB[category=dimension]                       -> SIZE[H=?h1,  +HD]
 SIZEB[category=dimension, H=[mod=(OR,?comp)]]   -> SIZEB[H=?h1, +HD] OR A[+*compar*, H=[orth=?comp]]
 
 DIMEN[H=[dim=?dim]]                             -> IN DIM[H=[orth=?dim]]
@@ -112,9 +112,9 @@ COUNT[category=count, H=[category=count, val=?num, group=?h]]       -> NUM[H=[or
 #COUNT[H=[mod=?deg]]                                                -> DEG[orth=?deg] COUNT[+HD, H=?head]
 COUNT[H=[mod=?deg]]                                                 -> RANGE[H=[orth=?deg]] COUNT[+HD, H=?head]
 
-FRACTION[H=[mod=(?num)]]  -> NUM[+literal, H=[orth=?num] ] FRACTION[+HD, H=?head]
-FRACTION[H=[mod=(?deg)]]  -> DEG[H=[orth=?deg]] FRACTION[+HD, H=?head]
-FRACTION[H=[mod=(?deg)]]  -> RANGE[H=[orth=?deg]] FRACTION[+HD, H=?head]
+FRACTIONAL[H=[mod=(?deg,?rng,?num)]]  -> [DEG[H=[orth=?deg]]] [RANGE[H=[orth=?rng]]] [NUM[+literal, H=[orth=?num]]] FRACTION[+HD, H=?head]
+# FRACTION[H=[mod=(?deg)]]  -> DEG[H=[orth=?deg]] FRACTION[+HD, H=?head]
+# FRACTION[H=[mod=(?deg)]]  -> RANGE[H=[orth=?deg]] FRACTION[+HD, H=?head]
 
 ADVB[H=[orth=?o]]      -> ADV[H=[orth=?o]]
 ADVB[H=[TO=(?h1,?h2)]] -> ADVB[H=?h1] TO ADVB[H=?h2]
@@ -161,13 +161,13 @@ ABAR[category=compar, H=[category=compar, compto=?h, comparison=?c]] -> COMPARIS
 COMPARATOR[category=dimension, H=[orth=?dim]] -> 'as' DIMEN[H=[dim=?dim]] 'as'
 COMPARATOR[category=count, H=[orth='many']] -> 'as' 'many' 'as'
 
-COMPARISON[category=?c, H=[comp=[multiplier=?f, mod=?m, dim=?dim]]] -> FRACTION[H=[orth=?f, mod=?m]] COMPARATOR[category=?c, H=[orth=?dim]]
+COMPARISON[category=?c, H=[comp=[multiplier=?f, mod=?m, dim=?dim]]] -> FRACTIONAL[H=[orth=?f, mod=?m]] COMPARATOR[category=?c, H=[orth=?dim]]
 
 ABAR              -> NUM TIMES A[+*compar*] NP
 ABAR[category=?c] -> ABAR[category=?c, +HD, H=?head] PAREXP
 
-AP[category=?c]   -> ABARL[category=?c, +HD, H=?head]
-AP[category=?c, H=[mod=(?mod)]] -> MODL[H=?mod] ABARL[category=?c, +HD, H=?head]
+# AP[category=?c]   -> ABARL[category=?c, +HD, H=?head]
+AP[category=?c, H=[mod=(?mod)]] -> [MODL[H=?mod]] ABARL[category=?c, +HD, H=?head]
 
 #AP[category=?c, H=?h]                     -> AP[category=?c, H=?h] PAREXP
 #AP[category=(?c+?d), H=[AND=(?ha+?hb)]]   -> AP[category=?c, H=?ha] AND AP[category=?d, H=?hb]
@@ -175,7 +175,7 @@ AP[category=?c, H=[mod=(?mod)]] -> MODL[H=?mod] ABARL[category=?c, +HD, H=?head]
 ABAR[category=?d, H=[AND=(?ha,?hb)]]        -> ABAR[category=?c, H=?ha] AND ABAR[category=?d, H=?hb]
 #AP[category=(?c+?d), H=[AND=(?ha+?hb)]]   -> AP[category=?c, H=?ha]  AP[category=?d, H=?hb]
 #AP[category=?d, H=[AND=(?ha+?hb)]]        -> AP[category=?c, H=?ha]  AP[category=?d, H=?hb]
-AP[category=(?c,?d), H=[AND=(?ha,?hb)]]           -> AP[category=?c, H=?ha]  APL[category=?d, H=?hb]
+AP[category=(?c,?d), H=[AND=(?ha,?hb)]]     -> AP[category=?c, H=?ha]  APL[category=?d, H=?hb]
 
 WITHC[category=?c, H=[clist=?clist]]        ->  NP[category=?c, H=?head, +HD] CHRL[H=?clist]
 #WITHC[category=?c, H=[*posit*=?p]]          ->  WITHC[category=?c, H=?h, +HD] POSITION[H=[*posit*=?p]]
@@ -209,7 +209,7 @@ PAREXP -> PUNC[punc='('] CHRL PUNC[punc=')']
 
 AND -> CONJ[conj=and]
 OR  -> CONJ[conj=or]
-CONJUNCTION -> CONJ[conj='and'] | CONJ[conj='but']
+# CONJUNCTION -> CONJ[conj='and'] | CONJ[conj='but']
 
 STAGE[stage=?o] -> P[prep='in'] A[category='life-stage', orth=?o]
 STAGE[stage=?o] -> P[prep='when'] A[category='life-stage', orth=?o]
@@ -224,7 +224,7 @@ POSITION[H=[*posit*=(?o)]]                -> A[+*position*, H=[orth=?o]]
 POSITION[H=[*posit*=([orth=?o, mod=(?deg)])]]  -> DEG[H=[orth=?deg]] A[+*position*, H=[orth=?o]]
 POSITION[H=[AND=(?h1+?h2)]]               -> POSITION[H=?h1] AND POSITION[H=?h2]
 MOD[H=[*posit*=(?o)]]                     -> ART A[+*position*, H=[orth=?o]] 'ones'
-POSITION[H=[*posit*=('in the', ?p, ?f)]]  -> IN ART A[+*position*, H=[orth=?p]] FRACTION[H=[orth=?f]]
+POSITION[H=[*posit*=('in the', ?p, ?f)]]  -> IN ART A[+*position*, H=[orth=?p]] FRACTIONAL[H=[orth=?f]]
 
 GROUPING[category=?c, H=[having=[+*group*, orth='grouping', clist=[mod=?mod, orth=?o, category=?c]]]] -> IN NP[category=?c, H=[+*group*, mod=?mod, orth=?o, category=?c]]
 

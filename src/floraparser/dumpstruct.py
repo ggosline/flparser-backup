@@ -39,6 +39,7 @@ def DumpChars(taxonNo, family, taxon, subject, subpart, struct, tokens, ptext: s
 def DumpChar(crec, struct: FeatDict, tokens, ptext: str, indent: int = 0, file=None):
 
     if isinstance(struct,FeatDict):
+        struct.remove_variables()
         category = struct.get('category')
         if category: crec.category = category
         if struct.get(posit): crec.posit = stext(struct.get(posit), tokens, ptext)

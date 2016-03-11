@@ -16,7 +16,7 @@ import ordered_set
 import logging
 logging.basicConfig(filename='flparse.log', filemode='w', level=logging.INFO)
 
-description = 'pedicels equalling or to 1/3 as long as leaf'
+description = 'Sepals pale green with narrow whitish scarious entire or denticulate margin, 1–1·5 mm. long, unequal or sub-equal, ovate to oblong or semicircular, rounded, free'
 
 # query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Salacia' ;"
 query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Salacia' and species = 'bussei' ;"
