@@ -1,9 +1,3 @@
 taxonNo,family,taxon,subject,subpart,category,value,mod,posit,phase,presence,start,end
-666,testfam,Test run,sepal,,subject,sepal,,,,,0,161
-666,testfam,Test run,sepal,,coloration,green,pale,,,,7,17
-666,testfam,Test run,sepal,margin,presence,,narrow; whitish; scarious; entire or denticulate,,,Present,18,76
-666,testfam,Test run,sepal,,dimension,"('1–1·5', 'mm.', 'long')",,,,,77,92
-666,testfam,Test run,sepal,,comparison,unequal,,,,,93,114
-666,testfam,Test run,sepal,,comparison,sub-equal,,,,,93,114
-666,testfam,Test run,sepal,,shape,"ovate TO oblong or semicircular, rounded",,,,,115,156
-666,testfam,Test run,sepal,,fusion,free,,,,,157,161
+666,testfam,Test run,sepal,,subject,sepal,,,,,1,13
+666,testfam,Test run,sepal,,coloration,brown,,,,,8,13

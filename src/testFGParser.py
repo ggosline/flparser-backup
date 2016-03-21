@@ -16,10 +16,10 @@ import ordered_set
 import logging
 logging.basicConfig(filename='flparse.log', filemode='w', level=logging.INFO)
 
-description = 'Sepals pale green with narrow whitish scarious entire or denticulate margin, 1–1·5 mm. long, unequal or sub-equal, ovate to oblong or semicircular, rounded, free'
+description = ' Sepals brown'
 
-# query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Salacia' ;"
-query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Salacia' and species = 'bussei' ;"
+query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Salacia' ;"
+# query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Salacia' and species = 'bussei' ;"
 # query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Acacia' and species = 'albida'  ;"
 # query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'family' and family = 'Annonaceae' ;"
 

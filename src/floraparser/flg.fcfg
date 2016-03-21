@@ -219,7 +219,7 @@ STAGE[stage=?o] -> A[+*timing*, H=[orth=?o]]
 
 A[category=position, H=[orth=?o, category=position], +*position*] -> P[H=[orth=?o], +*position*, +*adjectival*]
 POSITION[H=[*posit*=(?o)]]                -> P[prep=?p, H=[orth=?o], +*position*, +*adjectival*]
-POSITION[H=[*posit*=([p=?prep, obj=?o, mod=?m])]] -> P[prep=?prep, +*position*, -*adjectival*] NP[H=[-*group*, orth=?o, mod=?m]]
+POSITION[H=[*posit*=(?o), mod=(?prep,?m)]] -> P[prep=?prep, +*position*, -*adjectival*] NP[H=[-*group*, +*position*, orth=?o, mod=?m]]
 POSITION[H=[*posit*=(?o)]]                -> A[+*position*, H=[orth=?o]]
 POSITION[H=[*posit*=([orth=?o, mod=(?deg)])]]  -> DEG[H=[orth=?deg]] A[+*position*, H=[orth=?o]]
 POSITION[H=[AND=(?h1+?h2)]]               -> POSITION[H=?h1] AND POSITION[H=?h2]

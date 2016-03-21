@@ -119,7 +119,7 @@ def _naive_unify(fstruct1:FeatStruct, fstruct2:FeatStruct):
         # Concatenate the values !!
         # Don't unify corresponding values in fstruct1 and fstruct2.
         newfs += fstruct2
-        newfs = [t for t in newfs if not isinstance(t, Variable)]
+        newfs = tuple([t for t in newfs if not isinstance(t, Variable)])
         return newfs # Contains the unified value.
 
     else:

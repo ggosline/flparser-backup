@@ -119,7 +119,7 @@ def pickle_lexicon():
     PRONOUN = 'it|one|ones|form|forms|part|parts'.split('|')
     addlexicon(PRONOUN, 'PRO', {})
     # 'in' poosibly should be in following lists, but masks IN below
-    PREP_POSITION = 'among|amongst|around|at|between|beyond|by|' \
+    PREP_POSITION = 'at|among|amongst|around|at|between|beyond|by|' \
                     'from|into|near|on|onto|out_of|over|through|throughout|toward|' \
                     'outside|inside|between|before|after|behind|across|along|from|' \
                     'towards|up'.split('|')
@@ -169,11 +169,13 @@ def pickle_lexicon():
     addlexicon(DIMENSION, 'DIM', {})
     RANGE = 'up_to|at_least|to|more_than|less_than'.split('|')
     addlexicon(RANGE, 'RANGE', {})
-    POSITIONA = 'upper|lower|under|uppermost|lowermost|superior|inferior|outer|inner|outermost|innermost|various|' \
-                'above_and_beneath|at_the_apex|at_the_base|at_the_top|elsewhere'.split('|')
+    POSITIONA = 'upper|lower|under|uppermost|lowermost|superior|inferior|outer|inner|outermost|innermost|various'.split('|')
+                # 'above_and_beneath|at_the_apex|at_the_base|at_the_top|elsewhere'.split('|')
     addlexicon(POSITIONA, 'A', {position:True, 'category':'position'})
 
-    POSITION = 'top|bottom|underside|base|apex|margin|edge|front|back|both_sides|under_surfaces|upper_surfaces|both_surfaces|each_side|section|rest_of'.split('|')
+    POSITION = 'top|bottom|underside|base|apex|margin|edge|front|back|both_sides|under_surfaces|' \
+               'above_and_beneath|elsewhere|' \
+               'upper_surfaces|both_surfaces|each_side|section|rest_of'.split('|')
     addlexicon(POSITION, 'N', {position:True, 'category':'position'})
     ACCURACY = "c.|about|more_or_less|±|exactly|almost|nearly|mostly".split('|')
     addlexicon(ACCURACY, 'DEG', dict(accuracy=True))
