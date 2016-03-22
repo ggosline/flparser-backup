@@ -145,7 +145,6 @@ def pickle_lexicon():
     addlexentry('with', 'WITH', {'presence':True})
     addlexentry(':', 'WITH', {'presence':True})
     addlexentry('without', 'WITH', {'presence':False})
-    addlexentry('no', 'WITH', {'presence':False})
 
     GROUPS = "group|groups|clusters|cluster|arrays|array|series|" \
              "pairs|pair|row|rows|number|numbers|colonies".split('|')
@@ -164,7 +163,7 @@ def pickle_lexicon():
     addlexicon(ORDNUMBERS, 'A', dict(ordinal=True))
     UNITS = "mm.|cm.|dm.|m.|km.|in.|ft.|mm|cm|dm|m|km".split('|')
     addlexicon(UNITS, 'UNIT', {})
-    DIMENSION = "high|tall|long|wide|thick|diam.|diameter|diam|in_height|in_width|in_diameter|in_diam".split(
+    DIMENSION = "high|tall|long|wide|across|thick|diam.|diameter|diam|in_height|in_width|in_diameter|in_diam".split(
         '|')
     addlexicon(DIMENSION, 'DIM', {})
     RANGE = 'up_to|at_least|to|more_than|less_than'.split('|')
@@ -175,16 +174,17 @@ def pickle_lexicon():
 
     POSITION = 'top|bottom|underside|base|apex|margin|edge|front|back|both_sides|under_surfaces|' \
                'above_and_beneath|elsewhere|' \
-               'upper_surfaces|both_surfaces|each_side|section|rest_of'.split('|')
+               'upper_surfaces|both_surfaces|each_side|section|rest_of|junction'.split('|')
     addlexicon(POSITION, 'N', {position:True, 'category':'position'})
     ACCURACY = "c.|about|more_or_less|±|exactly|almost|nearly|mostly".split('|')
-    addlexicon(ACCURACY, 'DEG', dict(accuracy=True))
+    addlexicon(ACCURACY, 'DEG', dict(category='accuracy'))
     FREQUENCY = "very|a_little|not_much|sometimes|often|usually|rarely|more_rarely|more_often|generally|never|always|" \
                 "soon|also|even|especially|?".split('|')
-    addlexicon(FREQUENCY, 'DEG', dict(frequency=True))
-    DEGREE = "sparsely|densely|slightly|narrowly|widely|markedly|extremely|somewhat|rather|shallowly|scarcely|partly|partially|much|well|" \
-             "dark|light|deep|bright|pale".split('|')
+    addlexicon(FREQUENCY, 'DEG', dict(category='frequency'))
+    DEGREE = "sparsely|densely|slightly|narrowly|widely|markedly|extremely|somewhat|rather|shallowly|scarcely|partly|partially|much|well".split('|')
     addlexicon(DEGREE, 'ADV', {})
+    COLOURDEG = "dark|light|deep|bright|pale".split('|')
+    addlexicon(COLOURDEG, 'ADV', dict(category='coloration'))
     COMPARISON = "paler|darker|lighter|shorter|longer|wider|narrower|bigger|smaller|duller|shinier|higher|" \
                  "older|younger|" \
                  "exceeding|equalling|indistinguishable_from|similar".split('|')
@@ -196,7 +196,7 @@ def pickle_lexicon():
     COMPADJ = "more|less|most|least".split('|')
     addlexicon(COMPADJ, 'ADV', dict(makecomp=True))
     TIMING = "at_first|when_young|becoming|tending_to_become|" \
-             "remaining|turning|in_age|at_maturity|later|at_length|eventually|when_fresh|when_dry".split('|')
+             "remaining|turning|in_age|at_maturity|later|at_length|eventually|when_fresh|when_dry|drying".split('|')
     addlexicon(TIMING, 'A', {timing:True})
     PRESENCE = "present|absent".split('|')
     addlexicon(PRESENCE, 'A', dict(category='presence'))
@@ -208,6 +208,7 @@ def pickle_lexicon():
 
     addlexicon(['to'], 'TO', {})
     addlexicon(['not'], 'DEG', dict(frequency=True, timing=False))
+    addlexicon(['no'], 'NO', {})
     addlexicon(['in'], 'IN', {})
     addlexicon(['than'], 'THAN', {})
     addlexicon(['for'], 'FOR', {})

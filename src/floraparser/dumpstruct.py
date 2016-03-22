@@ -26,13 +26,13 @@ def DumpStruct(struct, indent: int = 0, file=None):
     else:
         pass
 
-CharRec = recordtype.recordtype('CharRec', 'taxonNo  family taxon subject subpart category value mod posit phase presence start end', default=None)
+CharRec = recordtype.recordtype('CharRec', 'taxonNo  family taxon mainsubject subject subpart category value mod posit phase presence start end', default=None)
 
-def DumpSubj(taxonNo, family, taxon, subject, subpart, struct, tokens, ptext: str, start, end, indent: int = 0, file=None):
-    crec = CharRec(taxonNo, family, taxon, subject, start=start, end=end)
+def DumpSubj(taxonNo, family, taxon, mainsubject, subject, subpart, struct, tokens, ptext: str, start, end, indent: int = 0, file=None):
+    crec = CharRec(taxonNo, family, taxon, mainsubject, subject, start=start, end=end)
     DumpChar(crec, struct, tokens, ptext, indent, file)
 
-def DumpChars(taxonNo, family, taxon, subject, subpart, struct, tokens, ptext: str, start, end, indent: int = 0, file=None):
+def DumpChars(taxonNo, family, taxon, mainsubject, subject, subpart, struct, tokens, ptext: str, start, end, indent: int = 0, file=None):
     crec = CharRec(taxonNo, family, taxon, subject, start=start, end=end)
     DumpChar(crec, struct, tokens, ptext, indent, file)
 
@@ -42,7 +42,8 @@ def DumpChar(crec, struct: FeatDict, tokens, ptext: str, indent: int = 0, file=N
         struct.remove_variables()
         category = struct.get('category')
         if category: crec.category = category
-        if struct.get(posit): crec.posit = stext(struct.get(posit), tokens, ptext)
+        if struct.get(posit):
+            crec.posit = stext(struct.get(posit), tokens, ptext)
         if struct.get('stage'): crec.phase = stext(struct.get('stage'), tokens, ptext)
         if struct.get('phase'): crec.phase = struct.get('phase')
         if struct.has_key('presence'):
@@ -136,7 +137,7 @@ def stext(struct, tokens, ptext):
     else:
         if not hasattr(struct, 'span') or not struct.span:
             if hasattr(struct, 'values'):
-                return stext(list(struct.values())[0],tokens,ptext)
+                return '; '.join([stext(m, tokens, ptext) for m in struct.values()])
             else:
                 return ''     # probaly an uninstantiated variable
         else:

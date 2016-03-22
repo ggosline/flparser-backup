@@ -16,22 +16,21 @@ import ordered_set
 import logging
 logging.basicConfig(filename='flparse.log', filemode='w', level=logging.INFO)
 
-description = ' Sepals brown'
-
-query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Salacia' ;"
-# query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Salacia' and species = 'bussei' ;"
+description = 'rhachis with a single conspicuous gland at the junction of each of the (2)3-10 pairs of pinnae'
+# query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Salacia' ;"
+query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Salacia' and species = 'bussei' ;"
 # query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Acacia' and species = 'albida'  ;"
 # query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'family' and family = 'Annonaceae' ;"
 
 fromDB = True
-fromDB = False
+#fromDB = False
 
 parser = FeatureBottomUpLeftCornerChartParser
 #parser = FeatureEarleyChartParser
 #parser = FeatureTopDownChartParser
 
 cleantree = False
-#cleantree = True
+cleantree = True
 
 ttrace = 1
 
@@ -54,7 +53,7 @@ cf = open('characters.csv', 'w', encoding='utf-8', newline='')
 #cfcsv = csv.DictWriter(cf, 'taxonNo family taxon subject subpart category value mod posit phase presence start end'.split())
 #cfcsv.writeheader()
 cfcsv = csv.writer(cf)
-cfcsv.writerow('taxonNo family taxon subject subpart category value mod posit phase presence start end'.split())
+cfcsv.writerow('taxonNo family taxon mainsubject subject subpart category value mod posit phase presence start end'.split())
 cfset = ordered_set.OrderedSet()
 
 if __name__ == '__main__':
@@ -77,7 +76,7 @@ if __name__ == '__main__':
         taxonNo = taxon.taxonNO
         logging.info('TAXON:  ' + taxname)
         for sent in taxon.sentences:
-            for i, phrase in enumerate(sent.phrases):
+            for iphrase, phrase in enumerate(sent.phrases):
                 logging.info('PARSING: '+ phrase.text)
                 # print('\rPARSING: ', phrase.text, file=cf)
                 try:
@@ -95,7 +94,9 @@ if __name__ == '__main__':
                         print('Text: ', sent.text[txtstart:txtend])
                         H = t[()].label()['H']
                         subject = H['orth']
-                        DumpChars(taxonNo, famname, taxname, subject, '', H, tokens, sent.text,
+                        if iphrase == 0:
+                            mainsubject = subject
+                        DumpChars(taxonNo, famname, taxname, mainsubject, subject, '', H, tokens, sent.text,
                                     phrase.slice.start + sent.slice.start, phrase.slice.stop + sent.slice.start, indent=1, file=cfset)
 
                     charlist = parser.listCHARs()
@@ -112,7 +113,7 @@ if __name__ == '__main__':
                             print('failure to get H')
                             H = None
                         if H:
-                            DumpChars(taxonNo, famname, taxname, subject, '', H, tokens, sent.text,
+                            DumpChars(taxonNo, famname, taxname, mainsubject, subject, '', H, tokens, sent.text,
                                       txtstart + sent.slice.start, txtend + sent.slice.start, indent=1, file=cfset)
 
                     cfcsv.writerows(cfset)
