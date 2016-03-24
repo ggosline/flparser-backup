@@ -16,14 +16,14 @@ import ordered_set
 import logging
 logging.basicConfig(filename='flparse.log', filemode='w', level=logging.INFO)
 
-description = 'bark frequently with a very characteristic impressed pattern of small lozenges on the young shoots'
+description = 'Carpels usually numerous, oblong or cylindric, with 1 (rarely 2) ovules in Asiatic species but 1–5 in African species'
 # query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Salacia' ;"
 # query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Salacia' and species = 'bussei' ;"
 # query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Acacia' and species = 'albida'  ;"
-query="Select * from AllTaxa where flora_name = 'FTEA' and rank = 'genus' and family = 'Annonaceae' ;"
+query="Select * from AllTaxa where flora_name = 'FTEA' and rank = 'genus' and family = 'Annonaceae'  ;"
 
 fromDB = True
-#fromDB = False
+fromDB = False
 
 parser = FeatureBottomUpLeftCornerChartParser
 #parser = FeatureEarleyChartParser

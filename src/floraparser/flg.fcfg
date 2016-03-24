@@ -89,6 +89,7 @@ COUNT[category=count, H=[category=count, val=?num]]                 -> NUM[H=[or
 COUNT[category=count, H=[category=count, mod=('per', ?h), val=?num]] -> NUM[H=[orth=?num]] P[prep='per'] NBAR[H=?h]
 COUNT[category=count, H=[category=count, val=?num, group=?h]]       -> NUM[H=[orth=?num]] N[+*group*, H=[orth=?h]]
 COUNT[H=[mod=?deg]]                                                 -> RANGE[H=[orth=?deg]] COUNT[+HD, H=?head]
+COUNT[H=[mod=?deg]]                                                 -> DEG[H=[orth=?deg]] COUNT[+HD, H=?head]
 
 FRACTIONAL[H=[mod=(?deg,?rng,?num)]]  -> [DEG[H=[orth=?deg]]] [RANGE[H=[orth=?rng]]] [NUM[+literal, H=[orth=?num]]] FRACTION[+HD, H=?head]
 
@@ -106,8 +107,10 @@ AP[H=?count]           -> COUNT[H=?count]
 MODL[H=[AND=(?ma+?mb)]] -> MOD[H=?ma] MODL[H=?mb]
 MODL[H=?ma]             -> MOD[H=?ma]
 
-ABAR[category=?c, H=[*group*=?g, mod=(?mod)]]       -> [MODL[H=?mod]] A[*group*=?g, category=?c, H=?h, +HD]
-A[category=?c, H=[orth=?a2, mod=(?a1), category=?c]]     -> A[+compar, H=[orth=?a1]] A[category=?c, H=[orth=?a2]]
+ABAR[category=?c, H=[mod=(?mod)]]       -> [MODL[H=?mod]] A[category=?c, H=?h, +HD]
+# arranged serially
+ABAR[category=?c, H=[mod=(?mod)]]       -> A[category=?c, H=?h, +HD] ADVB[H=?mod]
+A[category=?c, H=[orth=?a2, mod=(?a1), category=?c]] -> A[+compar, H=[orth=?a1]] A[category=?c, H=[orth=?a2]]
 ABAR[category=?c, H=[mod=(?adv)]]                   -> COUNT[H=[val=?adv]] A[+*counted*, category=?c, H=?h, +HD]
 
 ORDELIM -> COMMA | OR | COMMA OR
@@ -149,6 +152,7 @@ ABAR[category=?d, H=[AND=(?ha,?hb)]]        -> ABAR[category=?c, H=?ha] AND ABAR
 
 WITHC[category=?c, H=[clist=?clist]]        ->  NP[category=?c, H=?head, +HD] CHRL[H=?clist]
 WITHC[category=?c]                          ->  NP[category=?c, H=?head, +HD]
+WITHC[category=?c, H=[mod=(?count)]]        ->  COUNT[H=?count] WITHC[category=?c, H=?head, +HD]
 
 WITHP[category=?c, H=[presence=?p, having=?h, mod=(?mod)]] -> [DEG[H=[orth=?deg]]] WITH[presence=?p] WITHC[category=?c, H=?h]
 WITHP[category=?c, H=[+presence, having=?h]]   -> WITHC[category=?c, H=?h]

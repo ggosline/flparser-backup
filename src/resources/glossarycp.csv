@@ -2289,6 +2289,7 @@
 "2374","A","solitary","arrangement",,"Disposed singly, each remote from any others.","habit",
 "2375","A","solitary","habit","plants","Growing singly; not aggregated.","habit",
 "2375a","A","solitary","architecture",,"habit",,
+"2375a","A","solitary","structure-infl",,,,
 "2376","N","sorus","structure",,"A cluster of sporangia borne upon a fertile frond, usually on its abaxial surface; often covered during maturation by a protective membrane, the indusium, that is an outgrowth from the epidermis; in Polypodiophyta.","STRUCTURE",
 "2377","N","sori","structure",,"A cluster of sporangia borne upon a fertile frond, usually on its abaxial surface; often covered during maturation by a protective membrane, the indusium, that is an outgrowth from the epidermis; in Polypodiophyta.","STRUCTURE",
 "2378","A","spadicate","structure-infl","inflorescence","Generally spicate but with the flowers embedded in a thick, fleshy axis, the whole subtended and usually partially or wholly enveloped by a large bract (spathe).","architecture",
@@ -3514,3 +3515,5 @@
 "1531","N","pattern","FEATURE",,,,
 "1531","A","underground","location",,,,
 "1531","N","monocarp","structure","Annonaceae",,,
+"1531","N","prolongation","structure","Annonaceae",,,
+"1531","A","arranged","architecture",,,,

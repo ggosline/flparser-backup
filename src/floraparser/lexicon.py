@@ -92,7 +92,7 @@ def pickle_lexicon():
                         morefeatures = {group: True}
                 elif POS == 'A':
                     if category == 'structure-infl':
-                        morefeatures = {group: True}
+                        morefeatures = {'group': True}
                     # semexpr = read_expr(category.replace('-', '_') + '(' + semterm + ')')
                     # morefeatures = {position: False, timing: False, compar: False}
                 else:
@@ -152,7 +152,7 @@ def pickle_lexicon():
     LITNUMBERS = "zero|one|two|three|four|" \
                  "five|six|seven|eight|" \
                  "nine|ten|" \
-                 "few|many|numerous".split('|')
+                 "few|many|numerous|several".split('|')
     addlexicon(LITNUMBERS, 'NUM', dict(literal=True))
     FRACTIONS = "twice|third|fourth|fifth|sixth|seventh|eighth|tenth|" \
                 "half|thirds|fourths|quarter|" \
@@ -205,7 +205,7 @@ def pickle_lexicon():
     addlexicon(ISA, 'IS', dict(category='ISA'))
     GERUND = "covering|closing|enveloping|surrounding|forming|terminating_in|dehiscing_by|dividing|" \
              "ending|varying_in|arranged_in|prolonged_beyond|alternating_with|" \
-             "united_to_form|unitied_into".split('|')
+             "united_to_form|unitied_into|enclosing".split('|')
     addlexicon(GERUND, 'P', dict(verb=True))
 
     addlexicon(['to'], 'TO', {})
@@ -221,6 +221,7 @@ def pickle_lexicon():
     addlexicon(['of'], 'OF', {})
     addlexicon(['in_outline'], 'NULL', {})
     addlexicon(['either'], 'NULL', {})
+    addlexicon(['situated'], 'NULL', {})
 
     readcpglossary()
     # for wlist in multiwords.values():

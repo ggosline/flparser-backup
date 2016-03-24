@@ -29,9 +29,9 @@ No. of trees: 3
 Fail:
  connective-prolongation obliquely capitate, dilated or ± apiculate
 No. of trees: 4
-Fail:
+Success: 
  Carpels numerous, ± united, cylindrical, with 1 erect basal ovule
-No. of trees: 6
+No. of trees: 3
 Success: 
  styles clavate
 No. of trees: 1
@@ -83,7 +83,7 @@ Success:
 No. of trees: 1
 Fail:
  Carpels numerous, cylindrical, ± united, immersed in the receptacle at the base with 1 basal ovule
-No. of trees: 8
+No. of trees: 6
 Success: 
  style short and thick, enlarged above
 No. of trees: 2
@@ -100,9 +100,9 @@ No. of trees: 12
 Fail:
  Plant is Climbing or erect shrubs, rarely small trees with an indumentum of simple hairs or glabrous
 No. of trees: 4
-Fail:
+Success: 
  Flowers hermaphrodite, pedicellate, solitary or in extra-axillary cymes, rarely terminal, mostly borne on very characteristic thickened hooked peduncles
-No. of trees: 7
+No. of trees: 2
 Success: 
  buds ovoid
 No. of trees: 1
@@ -127,18 +127,18 @@ No. of trees: 1
 Fail:
  connective-appendages dilated, truncate
 No. of trees: 2
-Fail:
+Success: 
  Carpels mostly numerous, free, ovoid or ellipsoid, with 2 basal ovules
-No. of trees: 6
+No. of trees: 2
 Fail:
  styles linear-oblong, shorter than or equalling the ovary
 No. of trees: 5
 Success: 
  Monocarps indehiscent, cylindric or ellipsoid, mostly not stipitate, 1–2-seeded, usually fleshy
 No. of trees: 4
-Fail:
+Success: 
  Seeds held vertically, collateral
-No. of trees: 3
+No. of trees: 1
 Fail:
  aril absent.A rather large genus of about 100 species occurring in tropical Africa and Asia
 No. of trees: 4
@@ -175,7 +175,7 @@ Success:
 No. of trees: 2
 Success: 
  Carpels 10–22, free, with several biseriate ovules
-No. of trees: 2
+No. of trees: 4
 Fail:
  style complicatedly laterally folded in from both ends, stigmatose along upper margins with innermost parts of folds projecting
 No. of trees: 7
@@ -191,7 +191,7 @@ Success:
 No. of trees: 4
 Success: 
  Flowers large, hermaphrodite, several in racemes on short axillary peduncles
-No. of trees: 1
+No. of trees: 3
 Success: 
  buds elongate
 No. of trees: 1
@@ -231,13 +231,13 @@ Fail:
 No. of trees: 1
 Success: 
  Flowers solitary, opening after the leaves have fallen, axillary, sessile
-No. of trees: 48
+No. of trees: 64
 Fail:
  buds globose, supported by 4–5 biseriate persistent bracteoles
-No. of trees: 5
+No. of trees: 4
 Fail:
  Calyx entire and completely enclosing the petals in bud, glabrous, splitting into (2)3 equal lobes
-No. of trees: 6
+No. of trees: 5
 Fail:
  Petals 6, in 2 whorls of 3, the outer valvate, the inner imbricate and slightly smaller, spreading, free
 No. of trees: 8
@@ -272,9 +272,9 @@ No. of trees: 1
 Success: 
  Plant is Trees or shrubs, glabrous or with a few simple hairs
 No. of trees: 4
-Fail:
+Success: 
  Flowers hermaphrodite, in few-flowered fascicles either sessile or pedunculate and appearing umbellate, axillary, pedicellate
-No. of trees: 7
+No. of trees: 2
 Fail:
  bracts and bracteoles usually deciduous
 No. of trees: 2
@@ -311,7 +311,7 @@ Fail:
 No. of trees: 4
 Success: 
  Flowers hermaphrodite or rarely only male, solitary (?always) on leafless shoots, axillary, shortly pedicellate
-No. of trees: 12
+No. of trees: 16
 Fail:
  buds globose,enclosed by 2 bracteoles and when very young sessile and enveloped by several calyptrate bracts
 No. of trees: 3
@@ -329,13 +329,13 @@ Fail:
 No. of trees: 1
 Success: 
  connective prolongations obliquely capitate, apiculate
-No. of trees: 2
+No. of trees: 4
 Success: 
  filaments short
 No. of trees: 1
 Success: 
  Carpel solitary, cylindric, with numerous biseriate ovules
-No. of trees: 3
+No. of trees: 8
 Success: 
  style absent
 No. of trees: 2
@@ -456,9 +456,9 @@ No. of trees: 5
 Fail:
  indumentum sparse and of simple hairs
 No. of trees: 2
-Fail:
+Success: 
  Flowers polygamous, hermaphrodite or male, solitary or in few-several-flowered fascicles, leaf-opposed
-No. of trees: 6
+No. of trees: 2
 Fail:
  bracts and bracteoles present, the latter placed just under the calyx
 No. of trees: 4
@@ -534,7 +534,7 @@ Fail:
 No. of trees: 2
 Success: 
  Carpels (1–)3–12, free, with numerous biseriate ovules
-No. of trees: 2
+No. of trees: 4
 Success: 
  style very short
 No. of trees: 1
@@ -635,7 +635,7 @@ Success:
 No. of trees: 1
 Success: 
  Carpels several, free, obovoid, 2-ovulate
-No. of trees: 1
+No. of trees: 3
 Success: 
  style well developed, almost obconic, bearing an apical rugulose stigmatic surface
 No. of trees: 2
@@ -701,9 +701,9 @@ No. of trees: 2
 Success: 
  foliage ± glossy and glabrescent
 No. of trees: 2
-Fail:
+Success: 
  Flowers hermaphrodite, solitary or in few-flowered cymes, extra-axillary
-No. of trees: 5
+No. of trees: 1
 Success: 
  bracteoles present
 No. of trees: 1
@@ -725,9 +725,9 @@ No. of trees: 6
 Fail:
  filaments short but distinct
 No. of trees: 3
-Fail:
+Success: 
  Carpels numerous, columnar, longitudinally ribbed, hairy particularly on the ribs, with 4–6 uniseriate ovules
-No. of trees: 8
+No. of trees: 6
 Fail:
  style oblong, rounded at the apex, consisting of a flat plate with the ends folded in, thus appearing deeply grooved on one side
 No. of trees: 8
@@ -746,7 +746,7 @@ Fail:
 No. of trees: 1
 Fail:
  Leaves in some species with 2 marginal glands at the base of the limb
-No. of trees: 4
+No. of trees: 2
 Fail:
  Flowers hermaphrodite or, in one small group, unisexual (not in East Africa), mostly small, solitary, fascicled or in dense to very lax few-flowered cymes, mostly supra-axillary or extra-axillary, rarely axillary, mostly pedicellate
 No. of trees: 13
@@ -758,13 +758,13 @@ Fail:
 No. of trees: 7
 Fail:
  Petals (4–)6, variously arranged, variously all in 1 whorl, in 2 distinct whorls or inserted in 1 whorl at the base but overlapping and appearing to be in 2 whorls above, valvate, free, or slightly united at the base, mostly rather thick, the outer often at length ± spreading, the inner smaller or sometimes very small, often somewhat clawed, connivent and erect
-No. of trees: 20
+No. of trees: 19
 Fail:
  Androecium often fiat and hexagonal
 No. of trees: 2
 Fail:
  stamens 6 to fairly numerous, in 1–several whorls, or sometimes 6 alternating with 6 reduced stamens or staminodes
-No. of trees: 8
+No. of trees: 6
 Fail:
  stamens linear or more usually obovate-obconic, clavate or cuneiform
 No. of trees: 4
@@ -773,10 +773,10 @@ Fail:
 No. of trees: 4
 Fail:
  anther-cells parallel, extrorse or introrse, attached to the thickened connectives, which are sometimes appendaged laterally, but never have thickened apical appendages which form a continuous pavement completelyhiding the anther-cells from above
-No. of trees: 8
+No. of trees: 9
 Fail:
  Carpels few to rather numerous, free, cylindric, ellipsoid or obconie, with 1–8 uniseriate ovules
-No. of trees: 9
+No. of trees: 8
 Fail:
  style cylindric, obconic or ellipsoid, as long as or shorter than the ovary, stigma bifurcate or grooved
 No. of trees: 8
@@ -798,7 +798,7 @@ Fail:
 No. of trees: 5
 Fail:
  Flowers hermaphrodite, solitary or less often in 2–few-flowered cymes, terminal or extra-axillary or on shoots from which leaves have fallen, pedicellate, sometimes very conspicuously so
-No. of trees: 8
+No. of trees: 7
 Success: 
  bracteole single, often large and leafy, usually amplexicaul, persistent
 No. of trees: 2
@@ -828,7 +828,7 @@ Success:
 No. of trees: 2
 Success: 
  Fruit syncarpous, globose, ellipsoid or obovoid, with numerous seeds and leathery or woody pericarp
-No. of trees: 16
+No. of trees: 24
 Success: 
  Seeds irregularly arranged, mostly shining brown
 No. of trees: 2
@@ -841,7 +841,7 @@ Fail:
 No. of trees: 6
 Fail:
  Flowers hermaphrodite, scented, solitary or in fascicles on leafy shoots or mostly on the older branches, pedicellate
-No. of trees: 7
+No. of trees: 6
 Success: 
  buds subglobose, with prominent angles at sepal junctions
 No. of trees: 3
@@ -884,7 +884,7 @@ Success:
 No. of trees: 4
 Fail:
  Flowers hermaphrodite, solitary or in 2–many-flowered cymes or fascicles, extra-axillary, axillary or leaf-opposed or sometimes on leafless branches or on the trunk
-No. of trees: 9
+No. of trees: 8
 Fail:
  bracts and bracteoles present
 No. of trees: 2
@@ -954,7 +954,7 @@ Fail:
 No. of trees: 3
 Fail:
  Carpels 5–20, free, oblong-cylindric or compressed, with ± 20–25 biseriate ovules
-No. of trees: 6
+No. of trees: 5
 Success: 
  stigmas sessile, capitate, bilobed or dilated and dorsally compressed
 No. of trees: 12
@@ -968,9 +968,9 @@ No. of trees: 1
 Success: 
  Plant is Climbing shrubs with an indumentum of simple hairs
 No. of trees: 4
-Fail:
+Success: 
  Flowers hermaphrodite, axillary, solitary or in 2–3-flowered cymes borne on the leafy shoots
-No. of trees: 5
+No. of trees: 3
 Success: 
  buds ovate-oblong
 No. of trees: 1
@@ -982,38 +982,38 @@ Fail:
 No. of trees: 9
 Fail:
  Petals 6–10, either in 2 definite whorls or 2–3 irregular whorls, imbricate, free, subequal
-No. of trees: 8
+No. of trees: 6
 Fail:
  Stamens very numerous, arranged horizontally on a remarkably developed cylindrical androgynophore, linear or cuneiform
-No. of trees: 6
+No. of trees: 5
 Fail:
  connectives thick, expanded or distinctly capitate above the anther-cells
 No. of trees: 5
 Fail:
  Carpels numerous, situated at the apex of the androgynophore, ovoid-oblong, with 6–20 biseriate or uniseriate ovules
-No. of trees: 6
+No. of trees: 5
 Fail:
  style linear-oblong or obsolete, the stigma simple or with 2–several lobes
-No. of trees: 6
+No. of trees: 4
 Success: 
  Monocarps ellipsoid to cylindric, several-seeded, longitudinally ribbed
 No. of trees: 2
-Fail:
+Success: 
  seeds ellipsoid, arranged biseriately
-No. of trees: 3
+No. of trees: 1
 TAXON:  Annonaceae Uvaria 
 Fail:
  Plant is Climbing, straggling or erect shrubs or small (less often quite large) trees, quite often covered with stellate and sometimes also simple hairs
 No. of trees: 7
-Fail:
+Success: 
  Flowers usually hermaphrodite, solitary or in few-flowered cymes, these terminal, axillary, extra-axillary or leaf-opposed, more rarely borne on the old wood, sessile or stalked
-No. of trees: 9
+No. of trees: 8
 Fail:
  bracteoles 2, respectively basal and median or at the base of the calyx, often deciduous
 No. of trees: 5
 Fail:
  Sepals 3, valvate, often ± joined at the base, or calyx cupular in bud and remaining ± unlobed in anthesis or splitting into 3 often irregular lobes
-No. of trees: 9
+No. of trees: 8
 Fail:
  Petals 6, imbricate, in 2 whorls of 3, equal or those of the outer whorl slightly larger, free or scarcely joined at the base
 No. of trees: 10
@@ -1117,7 +1117,7 @@ Success:
 No. of trees: 2
 Fail:
  Carpels numerous, cylindric, with numerous mostly biseriate ovules or in one species practically in 1 row
-No. of trees: 7
+No. of trees: 6
 Fail:
  style very short or more developed, consisting of a plicate or involute lamina, the apical margin being the stigmatic surface
 No. of trees: 5
@@ -1133,7 +1133,7 @@ Success:
 No. of trees: 2
 Fail:
  Flowers unisexual (or at most a few stamens present in ♀ flowers), monoecious or dioecious, axillary, solitary or in fascicles, often on the old wood, pedicellate
-No. of trees: 10
+No. of trees: 9
 Fail:
  bracteoles 2, one basal the other median, ± persistent
 No. of trees: 5
@@ -1155,9 +1155,9 @@ No. of trees: 1
 Fail:
  connective not or scarcely prolonged
 No. of trees: 2
-Fail:
+Success: 
  Carpels numerous, obovoid or subcylindric, with several to numerous biseriate ovules
-No. of trees: 5
+No. of trees: 6
 Success: 
  stigma sessile, cylindric, depressed obconic, lunate or horseshoe-shaped
 No. of trees: 8
