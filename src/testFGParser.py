@@ -16,11 +16,11 @@ import ordered_set
 import logging
 logging.basicConfig(filename='flparse.log', filemode='w', level=logging.INFO)
 
-description = 'rhachis with a single conspicuous gland at the junction of each of the (2)3-10 pairs of pinnae'
+description = 'bark frequently with a very characteristic impressed pattern of small lozenges on the young shoots'
 # query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Salacia' ;"
-query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Salacia' and species = 'bussei' ;"
+# query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Salacia' and species = 'bussei' ;"
 # query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Acacia' and species = 'albida'  ;"
-# query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'family' and family = 'Annonaceae' ;"
+query="Select * from AllTaxa where flora_name = 'FTEA' and rank = 'genus' and family = 'Annonaceae' ;"
 
 fromDB = True
 #fromDB = False
@@ -43,7 +43,7 @@ trec['family'] = 'testfam'
 trec['genus'] = 'Test'
 trec['species'] = 'run'
 trec['description'] = description
-
+mainsubject = 'testing'
 trdr = [trec]
 
 tfilebase = r'..\..\temp\tree'

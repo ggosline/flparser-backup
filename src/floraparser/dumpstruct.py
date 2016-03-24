@@ -33,7 +33,7 @@ def DumpSubj(taxonNo, family, taxon, mainsubject, subject, subpart, struct, toke
     DumpChar(crec, struct, tokens, ptext, indent, file)
 
 def DumpChars(taxonNo, family, taxon, mainsubject, subject, subpart, struct, tokens, ptext: str, start, end, indent: int = 0, file=None):
-    crec = CharRec(taxonNo, family, taxon, subject, start=start, end=end)
+    crec = CharRec(taxonNo, family, taxon, mainsubject, subject, start=start, end=end)
     DumpChar(crec, struct, tokens, ptext, indent, file)
 
 def DumpChar(crec, struct: FeatDict, tokens, ptext: str, indent: int = 0, file=None):

@@ -147,11 +147,12 @@ def pickle_lexicon():
     addlexentry('without', 'WITH', {'presence':False})
 
     GROUPS = "group|groups|clusters|cluster|arrays|array|series|" \
-             "pairs|pair|row|rows|number|numbers|colonies".split('|')
+             "pairs|pair|row|rows|number|numbers|colonies|whorl|whorls".split('|')
     addlexicon(GROUPS, 'N', dict(group=True, category='grouping'))
     LITNUMBERS = "zero|one|two|three|four|" \
                  "five|six|seven|eight|" \
-                 "nine|ten".split('|')
+                 "nine|ten|" \
+                 "few|many|numerous".split('|')
     addlexicon(LITNUMBERS, 'NUM', dict(literal=True))
     FRACTIONS = "twice|third|fourth|fifth|sixth|seventh|eighth|tenth|" \
                 "half|thirds|fourths|quarter|" \
@@ -176,10 +177,10 @@ def pickle_lexicon():
                'above_and_beneath|elsewhere|' \
                'upper_surfaces|both_surfaces|each_side|section|rest_of|junction'.split('|')
     addlexicon(POSITION, 'N', {position:True, 'category':'position'})
-    ACCURACY = "c.|about|more_or_less|±|exactly|almost|nearly|mostly".split('|')
+    ACCURACY = "c.|about|more_or_less|±|exactly|almost|nearly".split('|')
     addlexicon(ACCURACY, 'DEG', dict(category='accuracy'))
     FREQUENCY = "very|a_little|not_much|sometimes|often|usually|rarely|more_rarely|more_often|generally|never|always|" \
-                "soon|also|even|especially|?".split('|')
+                "mostly|frequently|soon|also|even|especially|?".split('|')
     addlexicon(FREQUENCY, 'DEG', dict(category='frequency'))
     DEGREE = "sparsely|densely|slightly|narrowly|widely|markedly|extremely|somewhat|rather|shallowly|scarcely|partly|partially|much|well".split('|')
     addlexicon(DEGREE, 'ADV', {})
@@ -203,7 +204,8 @@ def pickle_lexicon():
     ISA = "is|consisting_of".split('|')
     addlexicon(ISA, 'IS', dict(category='ISA'))
     GERUND = "covering|closing|enveloping|surrounding|forming|terminating_in|dehiscing_by|dividing|" \
-             "ending|varying_in|arranged_in".split('|')
+             "ending|varying_in|arranged_in|prolonged_beyond|alternating_with|" \
+             "united_to_form|unitied_into".split('|')
     addlexicon(GERUND, 'P', dict(verb=True))
 
     addlexicon(['to'], 'TO', {})
@@ -218,6 +220,7 @@ def pickle_lexicon():
     addlexicon(['NUM'], 'NUM', {})
     addlexicon(['of'], 'OF', {})
     addlexicon(['in_outline'], 'NULL', {})
+    addlexicon(['either'], 'NULL', {})
 
     readcpglossary()
     # for wlist in multiwords.values():
