@@ -42,10 +42,10 @@ CHR[category=?c] ->  GROUPING[category=?c, +HD, H=?head]
 CHR[+anaph, H=[anaph=?a]] -> ANAPH[anaph=?a] CHRL[+HD, H=?head]
 
 CHR[category=ISA, H=[+ISA, clist=?clist]] -> ISA NPL[category=?c, +HD, H=?head] [CHRL[H=?clist]]
-ISA -> IS
+#ISA -> IS
 
 CHR[category=dimension]   ->  SIZEB[+HD, H=?head]
-CHR[category=count]       ->  COUNT[+HD, H=?head]
+# CHR[category=count]       ->  COUNT[+HD, H=?head]
 
 CHRL[category=?c, H=?h]                   ->  CHR[H=?h, category=?c]
 CHRL[category=(?c+?d), H=[AND=(?ha+?hb)]] ->  CHR[H=?ha, category=?c] AND CHRL[H=?hb, category=?d]

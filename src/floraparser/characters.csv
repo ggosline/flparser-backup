@@ -1,9 +1,5 @@
 taxonNo,family,taxon,mainsubject,subject,subpart,category,value,mod,posit,phase,presence,start,end
-666,testfam,Test run,carpel,carpel,,subject,carpel,,,,,0,117
-666,testfam,Test run,carpel,carpel,ovule,presence,,count; 1,,,Present,47,71
-666,testfam,Test run,carpel,carpel,species,presence,,Asiatic,,,Present,75,90
-666,testfam,Test run,carpel,carpel,,count,1–5,,,,,95,98
-666,testfam,Test run,carpel,carpel,,count,numerous,usually,,,,8,25
-666,testfam,Test run,carpel,carpel,,shape,oblong,,,,,26,46
-666,testfam,Test run,carpel,carpel,,shape,cylindric,,,,,26,46
-666,testfam,Test run,carpel,carpel,species,presence,,African,,,Present,102,117
+666,testfam,Test run,stamen,stamen,,subject,stamen,,,,,0,42
+666,testfam,Test run,stamen,stamen,,count,numerous,,,,,8,17
+666,testfam,Test run,stamen,stamen,,shape,linear,,,,,18,42
+666,testfam,Test run,stamen,stamen,,shape,clavate,linear,,,,18,42

@@ -103,9 +103,11 @@ def DumpChar(crec, struct: FeatDict, tokens, ptext: str, indent: int = 0, file=N
 
             if struct.get('OR'):
                 for subc in struct.get('OR'):
+                    crec.mod = None
                     DumpChar(crec, subc, tokens, ptext, file=file)
             elif struct.get('AND'):
                 for subc in struct.get('AND'):
+                    crec.mod = None
                     DumpChar(crec, subc, tokens, ptext, file=file)
             elif struct.get('TO'):
                 tolist = [stext(subc, tokens, ptext) for subc in struct.get('TO')]

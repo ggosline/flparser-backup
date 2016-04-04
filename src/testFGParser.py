@@ -16,7 +16,7 @@ import ordered_set
 import logging
 logging.basicConfig(filename='flparse.log', filemode='w', level=logging.INFO)
 
-description = 'Carpels usually numerous, oblong or cylindric, with 1 (rarely 2) ovules in Asiatic species but 1–5 in African species'
+description = 'Stamens numerous, linear or linear-clavate.'
 # query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Salacia' ;"
 # query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Salacia' and species = 'bussei' ;"
 # query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Acacia' and species = 'albida'  ;"
@@ -30,7 +30,7 @@ parser = FeatureBottomUpLeftCornerChartParser
 #parser = FeatureTopDownChartParser
 
 cleantree = False
-cleantree = True
+#cleantree = True
 
 ttrace = 1
 
@@ -89,6 +89,7 @@ if __name__ == '__main__':
                 if True:
                     tokens = parser._chart._tokens
                     cfset.clear()
+                    subject = ''
                     for t, txtstart, txtend in parser.listSUBJ():
                         cleanparsetree(t)
                         print('Text: ', sent.text[txtstart:txtend])
@@ -107,7 +108,6 @@ if __name__ == '__main__':
                             t.draw()
                         try:
                             H = t[()].label()['H']
-
                             print(H.get('category'), H.get('orth'))
                         except:
                             print('failure to get H')

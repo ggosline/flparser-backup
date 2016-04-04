@@ -1,7 +1,7 @@
 TAXON:  Annonaceae Annona 
-Success: 
+Fail:
  Plant is Trees, shrubs or subshrubs, with simple or stellate hairs or glabrous
-No. of trees: 2
+No. of trees: 4
 Fail:
  Flowers usually hermaphrodite, solitary, fasciculate or in few-flowered cymes, terminal, leaf-opposed or extra-axillary, pedicellate
 No. of trees: 8
@@ -62,7 +62,7 @@ Success:
 No. of trees: 2
 Success: 
  bracteoles 2, opposite at base of calyx, at first enclosing the buds
-No. of trees: 2
+No. of trees: 4
 Fail:
  Sepals 3, valvate, united at the base, smaller than the petals
 No. of trees: 7
@@ -75,9 +75,9 @@ No. of trees: 5
 Fail:
  anther-cells linear, extrorse
 No. of trees: 2
-Fail:
+Success: 
  connective with an enlarged disc-like prolongation
-No. of trees: 2
+No. of trees: 1
 Success: 
  filaments very short
 No. of trees: 1
@@ -99,10 +99,10 @@ No. of trees: 12
 TAXON:  Annonaceae Artabotrys 
 Fail:
  Plant is Climbing or erect shrubs, rarely small trees with an indumentum of simple hairs or glabrous
-No. of trees: 4
-Success: 
+No. of trees: 3
+Fail:
  Flowers hermaphrodite, pedicellate, solitary or in extra-axillary cymes, rarely terminal, mostly borne on very characteristic thickened hooked peduncles
-No. of trees: 2
+No. of trees: 6
 Success: 
  buds ovoid
 No. of trees: 1
@@ -129,7 +129,7 @@ Fail:
 No. of trees: 2
 Success: 
  Carpels mostly numerous, free, ovoid or ellipsoid, with 2 basal ovules
-No. of trees: 2
+No. of trees: 6
 Fail:
  styles linear-oblong, shorter than or equalling the ovary
 No. of trees: 5
@@ -141,11 +141,11 @@ Success:
 No. of trees: 1
 Fail:
  aril absent.A rather large genus of about 100 species occurring in tropical Africa and Asia
-No. of trees: 4
+No. of trees: 3
 TAXON:  Annonaceae Asteranthe 
-Success: 
+Fail:
  Plant is Shrubs or small trees
-No. of trees: 1
+No. of trees: 2
 Fail:
  indumentum of simple hairs
 No. of trees: 1
@@ -186,9 +186,9 @@ Fail:
  Seeds irregularly ellipsoid, with a small terminal opening around the hilum
 No. of trees: 3
 TAXON:  Annonaceae Cananga 
-Success: 
+Fail:
  Plant is Trees with simple indumentum
-No. of trees: 4
+No. of trees: 2
 Success: 
  Flowers large, hermaphrodite, several in racemes on short axillary peduncles
 No. of trees: 3
@@ -225,7 +225,7 @@ No. of trees: 1
 TAXON:  Annonaceae Cleistochlamys 
 Fail:
  Plant is Erect or straggling deciduous shrub or small tree
-No. of trees: 3
+No. of trees: 2
 Fail:
  indumentum of simple hairs
 No. of trees: 1
@@ -269,9 +269,9 @@ Success:
  Seed vertical, cylindrical, without an aril
 No. of trees: 1
 TAXON:  Annonaceae Cleistopholis 
-Success: 
+Fail:
  Plant is Trees or shrubs, glabrous or with a few simple hairs
-No. of trees: 4
+No. of trees: 3
 Success: 
  Flowers hermaphrodite, in few-flowered fascicles either sessile or pedunculate and appearing umbellate, axillary, pedicellate
 No. of trees: 2
@@ -287,7 +287,7 @@ No. of trees: 11
 Fail:
  Stamens numerous, sessile, cuneiform, the anther-cells linear, extrorse
 No. of trees: 6
-Fail:
+Success: 
  connective with a thick truncate prolongation
 No. of trees: 2
 Success: 
@@ -308,7 +308,7 @@ No. of trees: 2
 TAXON:  Annonaceae Dielsiothamnus 
 Fail:
  Plant is Shrub, small tree or sometimes a scrambling shrub, with both stellate and some simple hairs
-No. of trees: 4
+No. of trees: 5
 Success: 
  Flowers hermaphrodite or rarely only male, solitary (?always) on leafless shoots, axillary, shortly pedicellate
 No. of trees: 16
@@ -317,7 +317,7 @@ Fail:
 No. of trees: 3
 Success: 
  Sepals 3, valvate, enclosing the petals in bud
-No. of trees: 24
+No. of trees: 42
 Fail:
  Petals 6, valvate, in 2 whorls of 3, those of the outer whorl slightly larger, those of the inner somewhat narrowed to the base, free
 No. of trees: 11
@@ -329,7 +329,7 @@ Fail:
 No. of trees: 1
 Success: 
  connective prolongations obliquely capitate, apiculate
-No. of trees: 4
+No. of trees: 6
 Success: 
  filaments short
 No. of trees: 1
@@ -349,9 +349,9 @@ Success:
  Seeds horizontal, without an aril
 No. of trees: 1
 TAXON:  Annonaceae Enantia 
-Success: 
+Fail:
  Plant is Trees with yellow wood and sap
-No. of trees: 5
+No. of trees: 2
 Fail:
  indumentum composed of simple fasciculate or stellate hairs
 No. of trees: 1
@@ -430,7 +430,7 @@ Fail:
 No. of trees: 4
 Fail:
  Carpels usually numerous, oblong or cylindric, with 1 (rarely 2) ovules in Asiatic species but 1–5 in African species
-No. of trees: 9
+No. of trees: 7
 Success: 
  style distinct
 No. of trees: 1
@@ -479,7 +479,7 @@ Fail:
 No. of trees: 1
 Fail:
  prolongation of connective ovate, oblong, tongue-like or very short, flattened laterally, sometimes toothed, not in any way broadly laterally truncate
-No. of trees: 9
+No. of trees: 11
 Success: 
  Carpels 10–20, free, linear or oblong, 1–3-ovuled
 No. of trees: 4
@@ -502,9 +502,9 @@ Fail:
  endosperm penetrated by very numerous spine-like projections from inner seed-integument
 No. of trees: 4
 TAXON:  Annonaceae Hexalobus 
-Success: 
+Fail:
  Plant is Erect shrubs or trees, the indumentum composed of simple hairs
-No. of trees: 2
+No. of trees: 3
 Fail:
  Flowers hermaphrodite, solitary or few in clusters, axillary, sessile or shortly pedicellate
 No. of trees: 6
@@ -516,7 +516,7 @@ Success:
 No. of trees: 4
 Success: 
  Sepals 3, valvate, free, enclosing the petals in bud, densely pubescent with brown hairs
-No. of trees: 24
+No. of trees: 42
 Fail:
  Petals 6, slightly imbricate, in 2 whorls of 3, equal or subequal,joined at the base into a cup, transversely folded in the bud
 No. of trees: 11
@@ -529,9 +529,9 @@ No. of trees: 1
 Fail:
  anther-cells extrorse
 No. of trees: 1
-Fail:
+Success: 
  prolongation of the connective capitate
-No. of trees: 2
+No. of trees: 4
 Success: 
  Carpels (1–)3–12, free, with numerous biseriate ovules
 No. of trees: 4
@@ -548,12 +548,12 @@ Success:
  Seeds horizontal, without an aril
 No. of trees: 1
 TAXON:  Annonaceae Isolona 
-Success: 
+Fail:
  Plant is Shrubs or trees, glabrous or with an indumentum of simple hairs
-No. of trees: 4
+No. of trees: 3
 Fail:
  Flowers hermaphrodite, solitary or paired, axillary, supra-axillary or borne on the older leafless stems or trunks, stalked or subsessile
-No. of trees: 8
+No. of trees: 7
 Success: 
  bracteoles small, imbricate
 No. of trees: 2
@@ -603,9 +603,9 @@ Success:
  testa often shining
 No. of trees: 1
 TAXON:  Annonaceae Lettowianthus 
-Success: 
+Fail:
  Plant is Tree
-No. of trees: 1
+No. of trees: 2
 Success: 
  foliage with sparse indumentum of simple hairs
 No. of trees: 2
@@ -646,9 +646,9 @@ Success:
  Seeds subglobose or plano-convex
 No. of trees: 2
 TAXON:  Annonaceae Melodorum 
-Success: 
+Fail:
  Plant is Shrubs or climbing shrubs, glabrous or with an indumentum of simple hairs
-No. of trees: 4
+No. of trees: 3
 Success: 
  Flowers hermaphrodite, solitary or paired, terminal or axillary, stalked
 No. of trees: 8
@@ -692,9 +692,9 @@ Fail:
  testal intrusions into the endosperm lamelliform
 No. of trees: 1
 TAXON:  Annonaceae Mkilua 
-Success: 
+Fail:
  Plant is Shrub or small tree
-No. of trees: 1
+No. of trees: 2
 Fail:
  indumentum sparse, of simple hairs
 No. of trees: 2
@@ -738,9 +738,9 @@ Fail:
  Seeds slightly oblique, overlapping each other at the ends, ellipsoid-cylindrical, flattened at one or both ends where they overlap, with a conspicuous apical aril made up of fibres
 No. of trees: 9
 TAXON:  Annonaceae Monanthotaxis 
-Success: 
+Fail:
  Plant is Small trees, shrubs or woody climbers, glabrescent to densely silky
-No. of trees: 2
+No. of trees: 4
 Fail:
  indumentum of simple hairs
 No. of trees: 1
@@ -790,9 +790,9 @@ Fail:
  testal intrusions into the endosperm lamelli-form
 No. of trees: 2
 TAXON:  Annonaceae Monodora 
-Success: 
+Fail:
  Plant is Trees or shrubs, sometimes climbing or scrambling, glabrous or with simple hairs
-No. of trees: 8
+No. of trees: 4
 Fail:
  young stems often glaucous, frequently drying black as do the young leaves
 No. of trees: 5
@@ -845,12 +845,12 @@ No. of trees: 6
 Success: 
  buds subglobose, with prominent angles at sepal junctions
 No. of trees: 3
-Fail:
+Success: 
  bracteoles ± 10, biseriate, tightly imbricate, pubescent and ciliate, persistent
-No. of trees: 6
+No. of trees: 8
 Success: 
  Sepals 3, valvate, free, enclosing the petals in bud, rather thick, densely covered with brown hairs
-No. of trees: 24
+No. of trees: 42
 Fail:
  Petals 6, imbricate above, open at the base, in 2 whorls of 3, subequal, conspicuously clawed, the inner with a conspicuous brush of fleshy brown setiform processes borne on a thick ridge at the junction of the lamina and the claw
 No. of trees: 11
@@ -862,7 +862,7 @@ Fail:
 No. of trees: 5
 Success: 
  Stamens very numerous (several hundred),oblong, the connective not produced at the apex, obtuse
-No. of trees: 16
+No. of trees: 24
 Success: 
  Carpels 10–15 (–18), free, 4–6(–11)-ovulate, pilose
 No. of trees: 2
@@ -879,7 +879,7 @@ Success:
  Seeds ± vertical, overlapping
 No. of trees: 2
 TAXON:  Annonaceae Polyalthla 
-Success: 
+Fail:
  Plant is Trees or shrubs, not climbing, glabrous or with an indumentum of simple hairs
 No. of trees: 4
 Fail:
@@ -896,7 +896,7 @@ Fail:
 No. of trees: 19
 Success: 
  Stamens mostly numerous, cuneiform
-No. of trees: 1
+No. of trees: 3
 Success: 
  filaments very short
 No. of trees: 1
@@ -919,9 +919,9 @@ Success:
  Seeds sometimes with a longitudinal circumferential groove
 No. of trees: 2
 TAXON:  Annonaceae Polyceratocarpus 
-Success: 
+Fail:
  Plant is Trees, shrubs or less often woody lianes
-No. of trees: 2
+No. of trees: 3
 Fail:
  indumentum composed of simple hairs
 No. of trees: 1
@@ -952,9 +952,9 @@ No. of trees: 4
 Fail:
  filaments very short or obsolete
 No. of trees: 3
-Fail:
+Success: 
  Carpels 5–20, free, oblong-cylindric or compressed, with ± 20–25 biseriate ovules
-No. of trees: 5
+No. of trees: 4
 Success: 
  stigmas sessile, capitate, bilobed or dilated and dorsally compressed
 No. of trees: 12
@@ -965,12 +965,12 @@ Success:
  Seeds horizontal, ellipsoid, compressed, not arillate
 No. of trees: 1
 TAXON:  Annonaceae Toussaintia 
-Success: 
+Fail:
  Plant is Climbing shrubs with an indumentum of simple hairs
-No. of trees: 4
+No. of trees: 2
 Success: 
  Flowers hermaphrodite, axillary, solitary or in 2–3-flowered cymes borne on the leafy shoots
-No. of trees: 3
+No. of trees: 2
 Success: 
  buds ovate-oblong
 No. of trees: 1
@@ -1004,8 +1004,8 @@ No. of trees: 1
 TAXON:  Annonaceae Uvaria 
 Fail:
  Plant is Climbing, straggling or erect shrubs or small (less often quite large) trees, quite often covered with stellate and sometimes also simple hairs
-No. of trees: 7
-Success: 
+No. of trees: 6
+Fail:
  Flowers usually hermaphrodite, solitary or in few-flowered cymes, these terminal, axillary, extra-axillary or leaf-opposed, more rarely borne on the old wood, sessile or stalked
 No. of trees: 8
 Fail:
@@ -1051,9 +1051,9 @@ No. of trees: 5
 Fail:
  modestum</i> Diels)
 No. of trees: 1
-Success: 
+Fail:
  Flowers hermaphrodite or rarely unisexual, axillary, solitary or paired, sometimes borne on the old wood
-No. of trees: 4
+No. of trees: 5
 Success: 
  buds conical
 No. of trees: 1
@@ -1062,16 +1062,16 @@ Success:
 No. of trees: 4
 Fail:
  Sepals 3, valvate, free, enclosing the petals in bud, at which time the margins form wing-like ridges (see below), often densely ferruginous pubescent
-No. of trees: 9
+No. of trees: 8
 Fail:
  Petals 6, in 2 whorls of 3, usually both valvate but with inner whorl imbricate in one species, free, subequal
 No. of trees: 9
 Fail:
  Stamens numerous, linear, the cells lateral or extrorse
 No. of trees: 5
-Fail:
+Success: 
  prolongation of the connective ± capitate
-No. of trees: 2
+No. of trees: 4
 Success: 
  filaments very short
 No. of trees: 1
@@ -1091,9 +1091,9 @@ Success:
  Seeds ± horizontal, without an aril
 No. of trees: 1
 TAXON:  Annonaceae Uvariodendron 
-Success: 
+Fail:
  Plant is Shrubs or trees with an indumentum of simple hairs
-No. of trees: 4
+No. of trees: 2
 Fail:
  Flowers hermaphrodite, solitary or fascicled, axillary on leafy shoots and/or also on the old wood, sessile or stalked
 No. of trees: 6
@@ -1108,7 +1108,7 @@ Fail:
 No. of trees: 13
 Success: 
  Stamens very numerous, linear
-No. of trees: 2
+No. of trees: 6
 Fail:
  anther-cells lateral or extrorse
 No. of trees: 2
@@ -1128,9 +1128,9 @@ Success:
  Seeds ± horizontal, ellipsoid
 No. of trees: 1
 TAXON:  Annonaceae Uvariopsis 
-Success: 
+Fail:
  Plant is Trees or shrubs, the indumentum of simple hairs
-No. of trees: 2
+No. of trees: 3
 Fail:
  Flowers unisexual (or at most a few stamens present in ♀ flowers), monoecious or dioecious, axillary, solitary or in fascicles, often on the old wood, pedicellate
 No. of trees: 9
@@ -1170,7 +1170,7 @@ No. of trees: 1
 TAXON:  Annonaceae Xylopia 
 Fail:
  Plant is Trees, shrubs or subshrubs, only rarely climbing, glabrous or with an indumentum of simple or rarely 2-branched hairs
-No. of trees: 6
+No. of trees: 5
 Fail:
  Flowers hermaphrodite, solitary, fasciculate or in cymes, axillary, sessile or stalked
 No. of trees: 7
@@ -1191,7 +1191,7 @@ Fail:
 No. of trees: 4
 Fail:
  filaments articulated, sometimes partly united at the base and enclosing the gynoecium
-No. of trees: 5
+No. of trees: 4
 Fail:
  anther-cells extrorse,transversely septate
 No. of trees: 2

@@ -167,7 +167,7 @@ def pickle_lexicon():
     DIMENSION = "high|tall|long|wide|across|thick|diam.|diameter|diam|in_height|in_width|in_diameter|in_diam".split(
         '|')
     addlexicon(DIMENSION, 'DIM', {})
-    RANGE = 'up_to|at_least|to|more_than|less_than'.split('|')
+    RANGE = 'up_to|at_least|to|more_than|less_than|attaining'.split('|')
     addlexicon(RANGE, 'RANGE', {})
     POSITIONA = 'upper|lower|under|uppermost|lowermost|superior|inferior|outer|inner|outermost|innermost|various'.split('|')
                 # 'above_and_beneath|at_the_apex|at_the_base|at_the_top|elsewhere'.split('|')
@@ -201,7 +201,7 @@ def pickle_lexicon():
     addlexicon(TIMING, 'A', {timing:True})
     PRESENCE = "present|absent".split('|')
     addlexicon(PRESENCE, 'A', dict(category='presence'))
-    ISA = "is|consisting_of".split('|')
+    ISA = "is|consisting_of|of".split('|')
     addlexicon(ISA, 'IS', dict(category='ISA'))
     GERUND = "covering|closing|enveloping|surrounding|forming|terminating_in|dehiscing_by|dividing|" \
              "ending|varying_in|arranged_in|prolonged_beyond|alternating_with|" \
@@ -222,6 +222,8 @@ def pickle_lexicon():
     addlexicon(['in_outline'], 'NULL', {})
     addlexicon(['either'], 'NULL', {})
     addlexicon(['situated'], 'NULL', {})
+    addlexicon(['located'], 'NULL', {})
+    addlexicon(['borne'], 'NULL', {})
 
     readcpglossary()
     # for wlist in multiwords.values():
