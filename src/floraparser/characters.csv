@@ -1,5 +1,5 @@
 taxonNo,family,taxon,mainsubject,subject,subpart,category,value,mod,posit,phase,presence,start,end
-666,testfam,Test run,stamen,stamen,,subject,stamen,,,,,0,42
-666,testfam,Test run,stamen,stamen,,count,numerous,,,,,8,17
-666,testfam,Test run,stamen,stamen,,shape,linear,,,,,18,42
-666,testfam,Test run,stamen,stamen,,shape,clavate,linear,,,,18,42
+666,testfam,Test run,plant,plant,,subject,plant,,,,,0,57
+666,testfam,Test run,plant,plant,,life-form,shrub,Much-branched,,,,6,45
+666,testfam,Test run,plant,plant,,life-form,tree,small,,,,6,45
+666,testfam,Test run,plant,plant,,dimension,"('1–5', 'm.', 'tall')",,,,,46,57

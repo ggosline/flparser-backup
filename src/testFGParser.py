@@ -16,11 +16,11 @@ import ordered_set
 import logging
 logging.basicConfig(filename='flparse.log', filemode='w', level=logging.INFO)
 
-description = 'Stamens numerous, linear or linear-clavate.'
+description = 'plant is a Much-branched shrub or small tree, 1–5 m. tall.'
 # query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Salacia' ;"
 # query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Salacia' and species = 'bussei' ;"
 # query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Acacia' and species = 'albida'  ;"
-query="Select * from AllTaxa where flora_name = 'FTEA' and rank = 'genus' and family = 'Annonaceae'  ;"
+query="Select * from AllTaxa where flora_name = 'FTEA' and rank = 'species' and genus = 'Allophylus' ;"
 
 fromDB = True
 fromDB = False
@@ -30,7 +30,7 @@ parser = FeatureBottomUpLeftCornerChartParser
 #parser = FeatureTopDownChartParser
 
 cleantree = False
-#cleantree = True
+cleantree = True
 
 ttrace = 1
 

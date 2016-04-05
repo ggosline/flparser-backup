@@ -117,7 +117,8 @@
 "122","N","anthela","structure-infl","inflorescence","A cyme with the main axis markedly shorter than the lateral axes, appearing generally paniculate when compound; esp. in Juncaceae.","nominative",
 "123","N","anthelae","structure-infl","inflorescence","A cyme with the main axis markedly shorter than the lateral axes, appearing generally paniculate when compound; esp. in Juncaceae.","nominative",
 "124","A","anthelate","architecture","inflorescence","Comprising one or more anthelae; esp. in Juncaceae.","architecture",
-"125","N","anther","structure",,"The fertile, loculate, pollen-bearing portion of a stamen, containing one, two, or four thecae (pollen sacs), when that portion is differentiated from and borne at the summit of a narrower supporting stalk (filament), or when such differentiation is deeme","STRUCTURE",
+"125","N","anther","structure",,,"STRUCTURE",
+"125","N","anther-cell","structure",,"The fertile, loculate, pollen-bearing portion of a stamen, containing one, two, or four thecae (pollen sacs), when that portion is differentiated from and borne at the summit of a narrower supporting stalk (filament), or when such differentiation is deeme","STRUCTURE",
 "126","A","anther-bearing","architecture","floral structure","Bearing anthers.","architecture",
 "127","N","antheridium","structure",,"A male gametangium; a multicellular fertile organ of a mature gametophyte within which male gametes (antherozoids, spermatozoids) are produced and from which they are discharged, in some taxa forcibly, through a pore.  Technically present but highly reduc","STRUCTURE",
 "128","N","antheridia","structure",,"A male gametangium; a multicellular fertile organ of a mature gametophyte within which male gametes (antherozoids, spermatozoids) are produced and from which they are discharged, in some taxa forcibly, through a pore.  Technically present but highly reduc","STRUCTURE",
@@ -634,6 +635,7 @@
 "669","A","fascicled","architecture","inflorescence","Comprising one or more fascicles.","architecture","q"
 "670","A","fascicled","arrangement",,"Disposed in one or more fascicles, the members of each inserted close together and only slightly if at all divergent from one another.","architecture","q"
 "671","A","fasciculate","architecture","inflorescence","Comprising one or more fascicles.","architecture","q"
+"671","A","fasciculate","structure-infl","inflorescence","Comprising one or more fascicles.","architecture","q"
 "672","A","fasciculate","arrangement",,"Disposed in one or more fascicles, the members of each inserted close together and only slightly if at all divergent from one another.","architecture","q"
 "673","A","fastigiate","arrangement","branches","Closely parallel to one another and to the axis of origin over most of their lengths.","arrangement",
 "674","A","fatiscent","texture",,"Easily disintegrating in relatively small pieces, either spontaneously or under pressure.","texture",
@@ -926,6 +928,8 @@
 "967","A","exstipulate","architecture","leaf","Lacking stipules.","architecture",
 "968","N","extent","CHARACTER",,"Reach of the septum or septa within the ovary or fruit, relative to the ovary wall or pericarp and its center.","CHARACTER",
 "#","A","extrafloral","insertion",,"Outside  and proximal to the flower; esp. nectaries.","position","q"
+"969","A","extraaxillary","position",,"Outside  and proximal to the axils","position","q"
+"969","A","extra-axillary","position",,"Outside  and proximal to the axils","position","q"
 "970","A","extrafloral","position",,"Outside  and proximal to the flower; esp. nectaries.","position","q"
 "#","A","extravaginal","insertion",,"Distal to or outside the leaf sheath.","position","q"
 "972","A","extravaginal","position",,"Distal to or outside the leaf sheath.","position","q"
@@ -1448,6 +1452,7 @@
 "1503","A","latticed","architecture","foliaceous structure","Having portions of the blade naturally devoid of any but vascular tissue, which forms an open lattice in those areas.","architecture",
 "1504","A","lax","architecture",,"Having equivalent constituent parts disposed distant from one another.","shape",
 "1505","N","leaf","structure",,"A principal, vegetative shoot organ borne laterally from a stem node; its vascular tissues, if any, continuous with those of the stem; undergoing no significant secondary growth; usually more or less bilaterally symmetrical; comprising a distal, usually l","STRUCTURE",
+"1505","N","leaf-blades","structure",,"leaf lamina","STRUCTURE",
 "1506","N","leaves","structure",,"A principal, vegetative shoot organ borne laterally from a stem node; its vascular tissues, if any, continuous with those of the stem; undergoing no significant secondary growth; usually more or less bilaterally symmetrical; comprising a distal, usually l","STRUCTURE",
 "1509","N","leaf_scar","FEATURE",,"A scar on a twig or stem due to abscission of a megaphyll; having an outline like that of a transverse section through the base of the petiole, sheath, or blade that was inserted there.","FEATURE",
 "1510","A","leaf-bearing","architecture","plant, axis","Bearing leaves.","architecture",
@@ -1466,6 +1471,7 @@
 "1523","N","lemmas","structure",,"The proximal bract of the (usually) two that immediately subtend the flower in a grass (Poaceae) floret; the other is the palea.","STRUCTURE",
 "1525","A","lens-shaped","shape",,"Relatively thin with two round, convex, opposite broad faces intersecting acutely at the circumferential edge; like a double-convex lens.  See also disciform (discoid), meniscoid.","shape",
 "1526","N","lenticel","structure",,"A specialized, anatomically distinct structure within the periderm of a stem, consisting of comparatively spongy, sometimes suberized tissue distinct from others of the periderm; extending radially through the periderm and visible as a circular to elongat","STRUCTURE",
+"1526","A","lenticellate","texture","bark","Having lenticels",,
 "1528","A","lenticular","shape",,"Relatively thin with two round, convex, opposite broad faces intersecting acutely at the circumferential edge; like a double-convex lens.  See also disciform (discoid), meniscoid.","shape",
 "1529","A","lentiginose","coating",,"Covered with a more or less even deposit of minute, dry, macroscopically indistinguishable particles.  See also pulverulent (granuliferous, powdery), which is not clearly distinct in its application.","coating",
 "1530","A","lentiginous","coating",,"Covered with a more or less even deposit of minute, dry, macroscopically indistinguishable particles.  See also pulverulent (granuliferous, powdery), which is not clearly distinct in its application.","coating",
@@ -2620,6 +2626,7 @@
 "2709","N","tiller","structure",,"An erect or ascending stem that branches from the base of another at or below the surface of the ground; esp. in Poaceae (Gramineae) and other monocotyledons (Liliidae).","STRUCTURE",
 "2710","A","tillering","architecture","plant, stem","Producing tillers; esp. in Poaceae (Gramineae) and other monocotyledons (Liliidae).","architecture",
 "2711","A","tomentose","pubescence",,"Bearing dense, short, stiff, capillate trichomes.  See also tomentulose.","pubescence",
+"2711","A","tomentellous","pubescence",,"Shortly tomentose.","pubescence",
 "2712","A","tomentulose","pubescence",,"Finely tomentose.","pubescence",
 "2713","A","tongue-shaped","shape",,"Broadly elongate and compressed, one broad face more or less plane and the other convex, the edges rounded between them; like a tongue.","shape",
 "2714","N","tooth","structure",,"One of a series of regularly spaced, angular, marginal convexities oriented more or less perpendicular to the generalized perimeter of a laminar structure.  See also  sawtooth, sawtoothlet, scallop (crena), scalloplet (crenule), toothlet.","STRUCTURE",
@@ -3315,6 +3322,7 @@
 "3462","A","brownish-yellow","coloration",,,,
 "3463","A","chocolate-brown-","coloration",,,,
 "3464","A","cream-white","coloration",,,,
+"3464","A","ferruginous","coloration",,,,
 "3465","A","glaucous-green","coloration",,,,
 "3466","A","greenish-brown","coloration",,,,
 "3467","A","greenish-cream","coloration",,,,

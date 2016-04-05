@@ -176,7 +176,7 @@ def pickle_lexicon():
     POSITION = 'top|bottom|underside|base|apex|margin|edge|front|back|both_sides|under_surfaces|' \
                'above_and_beneath|elsewhere|' \
                'upper_surfaces|both_surfaces|each_side|section|rest_of|junction'.split('|')
-    addlexicon(POSITION, 'N', {position:True, 'category':'position'})
+    addlexicon(POSITION, 'N', {'category':'position'})
     ACCURACY = "c.|about|more_or_less|±|exactly|almost|nearly".split('|')
     addlexicon(ACCURACY, 'DEG', dict(category='accuracy'))
     FREQUENCY = "very|a_little|not_much|sometimes|often|usually|rarely|more_rarely|more_often|generally|never|always|" \
@@ -186,22 +186,21 @@ def pickle_lexicon():
     addlexicon(DEGREE, 'ADV', {})
     COLOURDEG = "dark|light|deep|bright|pale".split('|')
     addlexicon(COLOURDEG, 'ADV', dict(category='coloration'))
-    COMPARISON = "paler|darker|lighter|shorter|longer|wider|narrower|bigger|smaller|duller|shinier|higher|" \
-                 "older|younger|" \
+    COMPARISON = "older|younger|" \
                  "exceeding|equalling|indistinguishable_from|similar".split('|')
-    addlexicon(COMPARISON, 'A', dict(compar=True, category='compar'))
+    addlexicon(COMPARISON, 'A', {compar:True, 'category':'compar'})
     COLOURCOMP = "paler|darker|lighter|duller|shinier".split('|')
-    addlexicon(COLOURCOMP, 'A', dict(compar=True, category='coloration'))
+    addlexicon(COLOURCOMP, 'A', {compar:True, 'category':'coloration'})
     SIZECOMP = "shorter|longer|wider|narrower|bigger|smaller|higher".split('|')
-    addlexicon(SIZECOMP, 'A', dict(compar=True, category='size'))
+    addlexicon(SIZECOMP, 'A', {compar:True, 'category':'size'})
     COMPADJ = "more|less|most|least".split('|')
-    addlexicon(COMPADJ, 'ADV', dict(makecomp=True))
+    addlexicon(COMPADJ, 'ADV', {makecomp:True})
     TIMING = "at_first|when_young|becoming|tending_to_become|" \
              "remaining|turning|in_age|at_maturity|later|at_length|eventually|when_fresh|when_dry|drying".split('|')
     addlexicon(TIMING, 'A', {timing:True})
     PRESENCE = "present|absent".split('|')
     addlexicon(PRESENCE, 'A', dict(category='presence'))
-    ISA = "is|consisting_of|of".split('|')
+    ISA = "is|is_a|consisting_of|of".split('|')
     addlexicon(ISA, 'IS', dict(category='ISA'))
     GERUND = "covering|closing|enveloping|surrounding|forming|terminating_in|dehiscing_by|dividing|" \
              "ending|varying_in|arranged_in|prolonged_beyond|alternating_with|" \

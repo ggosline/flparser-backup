@@ -1,1215 +1,930 @@
-TAXON:  Annonaceae Annona 
+TAXON:  Sapindaceae Allophylus abyssinicus
 Fail:
- Plant is Trees, shrubs or subshrubs, with simple or stellate hairs or glabrous
-No. of trees: 4
-Fail:
- Flowers usually hermaphrodite, solitary, fasciculate or in few-flowered cymes, terminal, leaf-opposed or extra-axillary, pedicellate
+ Plant is Medium to fairly large tree, rarely shrubby, (4.5–)6–21(–25) m. tall and with slender bole 30–90 cm. diameter, sometimes slightly buttressed at the base (e.g. in Chyulu Hills)
 No. of trees: 8
-Success: 
- buds globose, ovoid or elongate, 3-angled
-No. of trees: 2
-Success: 
- bracteoles 0–2, persistent
-No. of trees: 2
 Fail:
- Sepals 3, valvate, free, smaller than the petals
-No. of trees: 6
-Fail:
- Petals usually 6 in 1–2 whorls, both valvate or the inner one imbricate, subequal or the inner ones reduced or absent, free or united at the base, thick and coriaceous, mostly suberect or connivent
-No. of trees: 13
-Success: 
- Stamens numerous, linear or linear-clavate
-No. of trees: 6
-Success: 
- filaments short
-No. of trees: 1
-Fail:
- anther-cells sometimes unequal, extrorse
-No. of trees: 3
-Fail:
- connective-prolongation obliquely capitate, dilated or ± apiculate
-No. of trees: 4
-Success: 
- Carpels numerous, ± united, cylindrical, with 1 erect basal ovule
-No. of trees: 3
-Success: 
- styles clavate
-No. of trees: 1
-Success: 
- stigmas muricate
-No. of trees: 1
-Success: 
- Fruit pedicellate, syncarpous, fleshy, indehiscent, ovoid-globose or cylindrical
-No. of trees: 4
-Success: 
- Seeds numerous, irregularly arranged
-No. of trees: 3
-Fail:
- aril terminal, compressed, annular or grooved and ridged so as to appear fibrillated
+ crown dark green, open to dense, irregular or rounded
 No. of trees: 5
-TAXON:  Annonaceae Anonidium 
 Fail:
- Plant is Medium-sized to large trees with an indumentum of simple hairs
-No. of trees: 3
-Fail:
- Flowers hermaphrodite or male in many-flowered cymes borne on leafless branches or on trunk
-No. of trees: 3
-Success: 
- buds subglobose
-No. of trees: 1
-Success: 
- bracts cucullate
-No. of trees: 2
-Success: 
- bracteoles 2, opposite at base of calyx, at first enclosing the buds
-No. of trees: 4
-Fail:
- Sepals 3, valvate, united at the base, smaller than the petals
+ bark grey or greyish white, smooth or slightly rough or granular, sometimes peeling in small to large flakes
 No. of trees: 7
 Fail:
- Petals 6, in 2 whorls of 3, the outer valvate, the inner somewhat smaller and slightly imbricate
-No. of trees: 6
+ slash pale brownish pink or pale orange darkening to reddish brown and smelling of pepper, also described ( <i>Ede</i> 1,T7) as off-white with pinky brown green-edged lines
+No. of trees: 11
+Success: 
+ sapwood white
+No. of trees: 1
+Success: 
+ young branches minutely ferruginous tomentellous and densely lenticellate
+No. of trees: 4
 Fail:
- Stamens numerous (less so in hermaphrodite flowers), linear or cuneiform
+ Leaves trifoliolate, drying dull and dark above, thinly coriaceous
+No. of trees: 3
+Fail:
+ petiole 2.5–10.5 mm. long, minutely tomentellous or less often more distinctly pubescent
+No. of trees: 4
+Fail:
+ leaflets elliptic to obovate, (2.8–)5.5–21 cm. long, (1.2–)3–11 cm. wide, acute to acuminate at the apex, attenuate to cuneate at the base, shallowly crenulate to toothed, adpressed velvety pilose when very young, later glabrescent or glabrous to minutely puberulous, less often pubescent
+No. of trees: 11
+Fail:
+ tufts of hairs in axils of nerves and veins usually conspicuous beneath
+No. of trees: 3
+Fail:
+ Inflorescences 5–22 cm. long, with 2–10 branches, some again branched, usually finely tomentose
 No. of trees: 5
 Fail:
- anther-cells linear, extrorse
+ cymules subsessile
+No. of trees: 1
+Success: 
+ pedicels 1–3 mm. long
 No. of trees: 2
-Success: 
- connective with an enlarged disc-like prolongation
-No. of trees: 1
-Success: 
- filaments very short
-No. of trees: 1
 Fail:
- Carpels numerous, cylindrical, ± united, immersed in the receptacle at the base with 1 basal ovule
-No. of trees: 6
+ Flowers said to be lily-scented or scentless
+No. of trees: 3
+Fail:
+ outer sepals elliptic, 1.2–1.5 mm. long, 1 mm. wide, puberulous, inner elliptic to round, 1.5–2 mm. long, 1.5 mm. wide
+No. of trees: 5
 Success: 
- style short and thick, enlarged above
+ petals dirty white or yellowish, 1.5 mm. long, 1 mm. wide
+No. of trees: 24
+Success: 
+ Filaments 2–3 mm. long, glabrous
 No. of trees: 2
 Success: 
- stigma subglobose
-No. of trees: 1
-Success: 
- Fruit large, syncarpous, fleshy, indehiscent, subcylindrical to ovoid-globose, reticulate
+ Style 2–3 mm. long, ± glabrous
 No. of trees: 2
 Success: 
- Seeds numerous, vertically arranged, ovoid or subreniform, compressed, often large (up to 4 cm. long)
+ stigma 1–1.5 mm. long
+No. of trees: 2
+Success: 
+ Fruit red or orange, subglobose, oblong or elliptic, 6–8 mm. long and wide, with very sparse hairs
 No. of trees: 12
-TAXON:  Annonaceae Artabotrys 
-Fail:
- Plant is Climbing or erect shrubs, rarely small trees with an indumentum of simple hairs or glabrous
-No. of trees: 3
-Fail:
- Flowers hermaphrodite, pedicellate, solitary or in extra-axillary cymes, rarely terminal, mostly borne on very characteristic thickened hooked peduncles
-No. of trees: 6
 Success: 
- buds ovoid
-No. of trees: 1
+ Seed ellipsoid, 5–5.5 mm. long, 5.5–6 mm. wide
+No. of trees: 6
+TAXON:  Sapindaceae Allophylus africanus
 Fail:
- bracts and bracteoles small, mostly numerous, usually deciduous
+ Plant is Shrub or tree (2–)4.5–10 m. tall, with heavy spreading crown
+No. of trees: 3
+Success: 
+ bark black or grey to reddish, smooth or rough
 No. of trees: 4
 Fail:
- Sepals 3, valvate, free or ± united at the base, equalling or smaller than the petals
-No. of trees: 7
-Fail:
- Petals 6, in 2 whorls of 3, both valvate, subequal, free, usually concave at the base and connivent over the stamens and carpels
-No. of trees: 9
-Fail:
- Stamens numerous (sometimes the outer ones staminodes), linear-oblong or cuneiform
-No. of trees: 5
-Fail:
- filaments very short or absent
-No. of trees: 3
-Fail:
- anther-cells extrorse
-No. of trees: 1
-Fail:
- connective-appendages dilated, truncate
+ slash yellow with pink tinge
 No. of trees: 2
 Success: 
- Carpels mostly numerous, free, ovoid or ellipsoid, with 2 basal ovules
+ branchlets ± glabrous to puberulous or pubescent, lenticellate
+No. of trees: 2
+Fail:
+ Leaves trifoliolate, typically ± glabrous but hairy in variety, very discolorous, when glabrous dark and shiny above
 No. of trees: 6
 Fail:
- styles linear-oblong, shorter than or equalling the ovary
-No. of trees: 5
-Success: 
- Monocarps indehiscent, cylindric or ellipsoid, mostly not stipitate, 1–2-seeded, usually fleshy
-No. of trees: 4
-Success: 
- Seeds held vertically, collateral
-No. of trees: 1
-Fail:
- aril absent.A rather large genus of about 100 species occurring in tropical Africa and Asia
-No. of trees: 3
-TAXON:  Annonaceae Asteranthe 
-Fail:
- Plant is Shrubs or small trees
-No. of trees: 2
-Fail:
- indumentum of simple hairs
-No. of trees: 1
-Success: 
- Flowers hermaphrodite, solitary or paired, extra-axillary, shortly stalked
-No. of trees: 4
-Success: 
- bracteoles 2, eventually deciduous
-No. of trees: 4
-Success: 
- Sepals 3, valvate, free
-No. of trees: 6
-Fail:
- Petals 6, valvate, longitudinally folded in bud, quickly expanding and much larger than the sepals, joined at the extreme base
-No. of trees: 8
-Success: 
- Stamens numerous
-No. of trees: 3
-Success: 
- filaments very short
-No. of trees: 1
-Fail:
- anther-cells linear
-No. of trees: 1
-Success: 
- connective-prolongation truncate at the apex, pubescent
-No. of trees: 2
-Success: 
- Carpels 10–22, free, with several biseriate ovules
-No. of trees: 4
-Fail:
- style complicatedly laterally folded in from both ends, stigmatose along upper margins with innermost parts of folds projecting
-No. of trees: 7
-Success: 
- Monocarps indehiscent, sub cylindrical, somewhat narrowed towards the apex, subsessile, 3–10-seeded, slightly constricted between the seeds, ± dry
-No. of trees: 6
-Fail:
- Seeds irregularly ellipsoid, with a small terminal opening around the hilum
-No. of trees: 3
-TAXON:  Annonaceae Cananga 
-Fail:
- Plant is Trees with simple indumentum
-No. of trees: 2
-Success: 
- Flowers large, hermaphrodite, several in racemes on short axillary peduncles
-No. of trees: 3
-Success: 
- buds elongate
-No. of trees: 1
-Fail:
- Sepals 3, valvate, somewhat united at the base
-No. of trees: 5
-Fail:
- Petals 6, in 2 whorls of 3, both valvate, the inner subequal or slightly smaller, linear-lanceolate
-No. of trees: 8
-Success: 
- Stamens numerous, linear
-No. of trees: 6
-Fail:
- anthers lateral or subintrorse
-No. of trees: 3
-Fail:
- connective-appendages distinctly produced and apiculate
-No. of trees: 2
-Fail:
- Carpels many, free, oblong, with numerous biseriate ovules
-No. of trees: 4
-Fail:
- styles slender, the stigmas agglutinated to form a disc, each oneclub-shaped with a U-shaped groove which is continued down the inner side of the ovary
-No. of trees: 8
-Success: 
- Monocarps oblong or ellipsoid, succulent, stipitate
-No. of trees: 2
-Success: 
- Seeds compressed, pitted
-No. of trees: 1
-TAXON:  Annonaceae Cleistochlamys 
-Fail:
- Plant is Erect or straggling deciduous shrub or small tree
-No. of trees: 2
-Fail:
- indumentum of simple hairs
-No. of trees: 1
-Success: 
- Flowers solitary, opening after the leaves have fallen, axillary, sessile
-No. of trees: 64
-Fail:
- buds globose, supported by 4–5 biseriate persistent bracteoles
-No. of trees: 4
-Fail:
- Calyx entire and completely enclosing the petals in bud, glabrous, splitting into (2)3 equal lobes
-No. of trees: 5
-Fail:
- Petals 6, in 2 whorls of 3, the outer valvate, the inner imbricate and slightly smaller, spreading, free
-No. of trees: 8
-Fail:
- Stamens ± 30–40 (or ?fewer), obtriangular
-No. of trees: 4
-Success: 
- filaments almost obsolete
-No. of trees: 1
-Fail:
- anther-cells extrorse
-No. of trees: 1
-Success: 
- connective-prolongations broadly capitate
-No. of trees: 2
-Success: 
- Carpels 6–12, ovoid, with a single basal ovule
-No. of trees: 2
-Fail:
- style cylindric, almost as long as the carpel
-No. of trees: 4
-Success: 
- stigma capitate
-No. of trees: 2
-Success: 
- Monocarps indehiscent, ellipsoid-cylindrical, stipitate, 1-seeded, fleshy
-No. of trees: 2
-Success: 
- Seed vertical, cylindrical, without an aril
-No. of trees: 1
-TAXON:  Annonaceae Cleistopholis 
-Fail:
- Plant is Trees or shrubs, glabrous or with a few simple hairs
-No. of trees: 3
-Success: 
- Flowers hermaphrodite, in few-flowered fascicles either sessile or pedunculate and appearing umbellate, axillary, pedicellate
-No. of trees: 2
-Fail:
- bracts and bracteoles usually deciduous
-No. of trees: 2
-Success: 
- Sepals 3, valvate, free
-No. of trees: 6
-Fail:
- Petals 6, in 2 series, free, those of the outer series oblong-elliptic, valvate, mostly spreading, the inner ones imbricate, much shorter, concave and recurved over the androecium and gynoecium
-No. of trees: 11
-Fail:
- Stamens numerous, sessile, cuneiform, the anther-cells linear, extrorse
-No. of trees: 6
-Success: 
- connective with a thick truncate prolongation
-No. of trees: 2
-Success: 
- Carpels 6–many, free, oblong or linear-oblong, 1–2-ovulate
-No. of trees: 4
-Success: 
- styles mostly obsolete
-No. of trees: 1
-Success: 
- stigma discoid or punctiform
-No. of trees: 2
-Fail:
- Monocarps indehiscent, subglobose or ovoid or somewhat transverse, subsessile or distinctly stipitate, 1–2-seeded, if 2-seeded then slightly constricted between the seeds
+ leaflets narrowly elliptic to elliptic, 2–14.5 cm. long, 1–7 cm. wide, rounded to acuminate at the apex, attenuate to cuneate at the base, subentire to crenate or coarsely and irregularly dentate, subcoriaceous, sometimes with hairy domatia beneath
 No. of trees: 9
 Success: 
- Seeds globose or plano-convex according to number
+ petiole (1–)2–7.5 cm. long
 No. of trees: 2
-TAXON:  Annonaceae Dielsiothamnus 
 Fail:
- Plant is Shrub, small tree or sometimes a scrambling shrub, with both stellate and some simple hairs
+ Inflorescences 4.5–15 cm. long, unbranched or usually with 1–6 branches, usually pale fulvous pubescent
+No. of trees: 5
+Fail:
+ cymules subsessile
+No. of trees: 1
+Success: 
+ pedicels (0.5–)1.5–2 mm. long, often glabrous
+No. of trees: 2
+Success: 
+ Flowers white, greenish white or yellowish green, scented
+No. of trees: 2
+Fail:
+ outer sepals broadly elliptic, ± 1 mm. long and wide, inner oblate, 1 mm. long, 1–1.5 mm. wide, ± glabrous
 No. of trees: 5
 Success: 
- Flowers hermaphrodite or rarely only male, solitary (?always) on leafless shoots, axillary, shortly pedicellate
+ petal spathulate, 1 mm. long, 0.5 mm. wide
+No. of trees: 6
+Success: 
+ Filaments ± 2 mm. long, hairy at base
+No. of trees: 2
+Success: 
+ Style 1 mm. long, hairy
+No. of trees: 2
+Success: 
+ stigma 0.5 mm. long
+No. of trees: 2
+Success: 
+ Fruit ellipsoid, 5–7 mm. long, 4–4.5 mm. wide, very sparsely hairy
+No. of trees: 6
+Success: 
+ Seed ellipsoid, 5.5–6 mm. long, 4.5 mm. wide
+No. of trees: 6
+TAXON:  Sapindaceae Allophylus chaunostachys
+Fail:
+ Plant is Shrub, often straggling or scrambling or a distinct climber, less often a small tree (see note), (0.6–)1.5–4.5(–6) m. tall or long
+No. of trees: 7
+Success: 
+ stems very lenticellate, pubescent when young then glabrescent or ferruginous velvety
+No. of trees: 9
+Fail:
+ Leaves trifoliolate
+No. of trees: 1
+Success: 
+ petiole 2–7 cm. long, glabrous to densely pubescent
+No. of trees: 2
+Fail:
+ petiolules 0.2–1.5 cm. long or lateral leaflets often ± sessile
+No. of trees: 2
+Fail:
+ leaflets very discolorous, drying leaden grey above with the venation yellow and pale greenish or often bright brownish beneath, elliptic, oblong, rhombic or narrowly oblanceolate, 4–15.5 cm. long, 2–6 cm. wide, acute or acuminate at the apex, cuneate at the base, the laterals mostly very asymmetric, subentire to ± remotely serrate, crenate-serrate or coarsely serrate, glabrous to densely almost velvety ferruginous hairy and with tufts of hairs in axes of lateral nerves beneath
 No. of trees: 16
 Fail:
- buds globose,enclosed by 2 bracteoles and when very young sessile and enveloped by several calyptrate bracts
-No. of trees: 3
-Success: 
- Sepals 3, valvate, enclosing the petals in bud
-No. of trees: 42
-Fail:
- Petals 6, valvate, in 2 whorls of 3, those of the outer whorl slightly larger, those of the inner somewhat narrowed to the base, free
-No. of trees: 11
-Success: 
- Stamens numerous, linear-obconic
-No. of trees: 3
-Fail:
- anther-cells lateral
-No. of trees: 1
-Success: 
- connective prolongations obliquely capitate, apiculate
-No. of trees: 6
-Success: 
- filaments short
-No. of trees: 1
-Success: 
- Carpel solitary, cylindric, with numerous biseriate ovules
-No. of trees: 8
-Success: 
- style absent
-No. of trees: 2
-Success: 
- stigma bilobed
-No. of trees: 1
-Success: 
- Fruit indehiscent, oblong-ellipsoidal, sessile or subsessile, many-seeded, not constricted between the seeds, oily
-No. of trees: 4
-Success: 
- Seeds horizontal, without an aril
-No. of trees: 1
-TAXON:  Annonaceae Enantia 
-Fail:
- Plant is Trees with yellow wood and sap
-No. of trees: 2
-Fail:
- indumentum composed of simple fasciculate or stellate hairs
-No. of trees: 1
-Success: 
- Flowers hermaphrodite, solitary or rarely paired, extra-axillary, shortly stalked
-No. of trees: 4
-Success: 
- buds conical
-No. of trees: 1
-Success: 
- bracteoles 1–2, mostly deciduous
-No. of trees: 4
-Fail:
- Sepals 3, valvate, free, lanceolate, mostly smaller than the petals
-No. of trees: 7
-Fail:
- Petals 3, opposite the sepals, valvate, free, thick, concave inside at the base to form an area which encloses the stamens and carpels
-No. of trees: 11
-Success: 
- Receptacle convex
-No. of trees: 1
-Success: 
- Stamens numerous, linear-oblong
-No. of trees: 3
-Success: 
- filaments almost obsolete
-No. of trees: 1
-Fail:
- anther-cells lateral or extrorse
-No. of trees: 2
-Success: 
- connective-prolongation ovoid, subpyramidal or truncate-capitate
-No. of trees: 2
-Fail:
- Carpels numerous, free, mostly cylindrical, with 1 basal ovule,pubescent
-No. of trees: 6
-Success: 
- style short
-No. of trees: 1
-Success: 
- stigma linear, capitate or clavate
-No. of trees: 4
-Success: 
- Monocarps indehiscent, oblong-ellipsoid, distinctly stipitate, 1-seeded
-No. of trees: 1
-Success: 
- Seed vertical, oblong-ellipsoid, often with raised ridge
-No. of trees: 1
-Fail:
- projections of inner layer of testa entering the endosperm ± spinous, not lamelliform
-No. of trees: 3
-TAXON:  Annonaceae Friesodielsia 
-Fail:
- Plant is Typically woody climbers or in Africa often shrubs, glabrous or with an indumentum of simple or rarely (in the single East African species) with forked or ± stellate hairs
-No. of trees: 8
-Fail:
- Flowers hermaphrodite, solitary, fascicled or in cymes, typically extra-axillary
-No. of trees: 6
-Fail:
- bracts and bracteoles sometimes developed
-No. of trees: 2
-Success: 
- Sepals 3, valvate, often venose
-No. of trees: 6
-Fail:
- Petals 6, valvate, typically very unequal, the outer large and elongate, the inner much smaller, ovate-lanceolate or oblong, connivent over the stamens and ovaries with margins adhering, but in African species the petals are often much less unequal and the inner ones scarcely connivent
-No. of trees: 9
-Fail:
- Stamens numerous to very numerous, forming a hemispherical or subglabose androecium
-No. of trees: 4
-Success: 
- filaments usually short
-No. of trees: 1
-Fail:
- connective-appendages flattened and covering the anther-cells, nearly always hiding them and typically forming a flat tight pavement
-No. of trees: 4
-Fail:
- Carpels usually numerous, oblong or cylindric, with 1 (rarely 2) ovules in Asiatic species but 1–5 in African species
-No. of trees: 7
-Success: 
- style distinct
-No. of trees: 1
-Success: 
- stigma capitate or clavate, grooved
-No. of trees: 2
-Fail:
- Monocarps with 1 article or up to 5 in African species
-No. of trees: 4
-Fail:
- articles cylindric, ellipsoid or sausage-shaped
-No. of trees: 2
-Success: 
- Seeds similarly shaped, smooth
-No. of trees: 2
-Fail:
- testal intrusions into the endosperm lamelliform
-No. of trees: 1
-TAXON:  Annonaceae Greenwayodendron 
-Fail:
- Plant is Tall trees, sometimes attaining 45 m. or shrubs
+ lateral nerves in 8–10 pairs, venation raised and reticulate above (impressed in life <i>fide</i> Milne-Redhead & Taylor) and strongly so beneath
 No. of trees: 5
 Fail:
- indumentum sparse and of simple hairs
+ Inflorescences unbranched or rarely branched, 5–17(–24) cm. long, including peduncle 1–8 cm. long, glabrous or spreading pubescent, the 1–few-flowered cymules usually well spaced
+No. of trees: 6
+Fail:
+ cymule stalk and rhachis 0.5–1 mm. long, pedicels 1–3 mm. long
+No. of trees: 2
+Fail:
+ Flowers usually ± large for the genus
+No. of trees: 3
+Fail:
+ outer sepals elliptic, 1.5 mm. long, 1 mm. wide, inner subcircular 1.5–1.8 mm. long, 1.5–3 mm. wide, glabrous or slightly pubescent
+No. of trees: 5
+Success: 
+ petals white or greenish yellow, spathulate, 1.5 mm. long, 1 mm. wide
+No. of trees: 12
+Success: 
+ Filaments 1.8 mm. long
 No. of trees: 2
 Success: 
- Flowers polygamous, hermaphrodite or male, solitary or in few-several-flowered fascicles, leaf-opposed
+ staminodes 0.5 mm. long
+No. of trees: 2
+Success: 
+ Ovary 2-lobed, pubescent
+No. of trees: 2
+Success: 
+ style 2 mm. long
 No. of trees: 2
 Fail:
- bracts and bracteoles present, the latter placed just under the calyx
+ Fruits yellow or red, of 1–2 mericarps, each subglobose or obovoid, 6–6.5 mm. long, 5 mm. wide, minutely pubescent or glabrous
+No. of trees: 6
+TAXON:  Sapindaceae Allophylus chirindensis
+Fail:
+ Plant is Much-branched shrub or tree 3–15 m. tall
+No. of trees: 2
+Success: 
+ bark silvery grey
+No. of trees: 2
+Success: 
+ branchlets pale greyish, lenticellate, glabrous
+No. of trees: 1
+Success: 
+ Leaves trifoliate
+No. of trees: 1
+Success: 
+ petiole 3–16 cm. long, grooved, glabrous or minutely puberulous
 No. of trees: 4
+Success: 
+ petiolule of terminal leaflet 1.2–2 cm. long
+No. of trees: 2
 Fail:
- Sepals 3, very slightly imbricate, slightly united at the base, much smaller than the petals
-No. of trees: 7
+ leaflets drying pale bright green, elliptic or elliptic-oblong, 9–19.5 cm. long, 3.5–9 cm. wide, rounded to acuminate at the apex, narrowly cuneate at the base, subentire, coarsely undulate-crenate and shortly denticulate (the teeth hydathodes) or serrate, thin, glabrous or minutely puberulent on nerves beneath with white hairs and sometimes with tufts in the nerve axils beneath
+No. of trees: 12
 Fail:
- Petals 6, in 2 whorls of 3, the outer whorl valvate at the apex in bud but open and revealing inner petals at base, the inner whorl almost imbricate, not distinctly valvate, free, subequal, mostly lanceolate or linear, pubescent on both sides save at base inside
+ lateral nerves in 7–13 pairs
+No. of trees: 2
+Success: 
+ Inflorescences up to 28 cm. long, much branched, the branches 10–14 cm. long, glabrous or sparsely white-puberulous
 No. of trees: 16
-Fail:
- Stamens numerous in ♂ flowers, less numerous in hermaphrodite flowers, linear or linear-oblong
-No. of trees: 6
 Success: 
- filaments very short
-No. of trees: 1
-Fail:
- anther-cells extrorse
-No. of trees: 1
-Fail:
- prolongation of connective ovate, oblong, tongue-like or very short, flattened laterally, sometimes toothed, not in any way broadly laterally truncate
-No. of trees: 11
-Success: 
- Carpels 10–20, free, linear or oblong, 1–3-ovuled
-No. of trees: 4
-Success: 
- style obsolete
-No. of trees: 1
-Success: 
- stigma globose or rhombic, compressed, obscurely lobulate, pubescent at the apex
+ peduncle 14–20 cm. long
 No. of trees: 2
 Fail:
- Monocarps 2–18, indehiscent, globose, distinctly stipitate, l–2(–3)-seeded
+ cymules few-flowered, sessile
+No. of trees: 2
+Success: 
+ pedicels 3–4 mm. long, glabrous
+No. of trees: 2
+Success: 
+ Flowers white or yellow
+No. of trees: 2
+Fail:
+ outer sepals round, 1.8 mm.diameter, inner elliptic, 1.8 mm. long, 1 mm. wide, glabrous
 No. of trees: 6
 Success: 
- endocarp often densely filled with orange-red glands
-No. of trees: 1
-Success: 
- Seeds depressed globose, very distinctly rugose and often with a circumferential groove
-No. of trees: 1
-Fail:
- endosperm penetrated by very numerous spine-like projections from inner seed-integument
-No. of trees: 4
-TAXON:  Annonaceae Hexalobus 
-Fail:
- Plant is Erect shrubs or trees, the indumentum composed of simple hairs
-No. of trees: 3
-Fail:
- Flowers hermaphrodite, solitary or few in clusters, axillary, sessile or shortly pedicellate
+ petals spathulate, 1.5 mm. long, 1 mm. wide, with hairy scale
 No. of trees: 6
 Success: 
- buds ovoid-conic
-No. of trees: 1
+ Filaments 2 mm. long
+No. of trees: 2
+Fail:
+ staminodes in female flowers 0.6 mm. long
+No. of trees: 2
 Success: 
- bracteoles 2–several, biseriate, deciduous
+ Ovary 2-lobed, minutely pubescent
+No. of trees: 2
+Success: 
+ style 1.5 mm. long
+No. of trees: 2
+Success: 
+ Fruit red, subglobose, 7 mm. in diameter, minutely puberulous when young or ± glabrous
+No. of trees: 1
+TAXON:  Sapindaceae Allophylus congolanus
+Fail:
+ Plant is Slender several-stemmed erect scrambling or ± scandent shrub or small tree, 1.5–6 m. tall, monoecious ( <i>fide</i> Hauman)
 No. of trees: 4
 Success: 
- Sepals 3, valvate, free, enclosing the petals in bud, densely pubescent with brown hairs
-No. of trees: 42
-Fail:
- Petals 6, slightly imbricate, in 2 whorls of 3, equal or subequal,joined at the base into a cup, transversely folded in the bud
-No. of trees: 11
-Success: 
- Stamens numerous, linear or obconic
-No. of trees: 6
-Success: 
- filaments short
-No. of trees: 1
-Fail:
- anther-cells extrorse
-No. of trees: 1
-Success: 
- prolongation of the connective capitate
-No. of trees: 4
-Success: 
- Carpels (1–)3–12, free, with numerous biseriate ovules
-No. of trees: 4
-Success: 
- style very short
-No. of trees: 1
-Success: 
- stigma bilobed with short clavate lobes
-No. of trees: 1
-Fail:
- Monocarps indehiscent, obovoid, cylindrical or ellipsoid, subsessile, several-seeded, not or slightly constricted between the seeds, rather fleshy
+ bark grey-brown or purplish black, smooth, conspicuously lenticellate
 No. of trees: 8
 Success: 
- Seeds horizontal, without an aril
-No. of trees: 1
-TAXON:  Annonaceae Isolona 
-Fail:
- Plant is Shrubs or trees, glabrous or with an indumentum of simple hairs
-No. of trees: 3
-Fail:
- Flowers hermaphrodite, solitary or paired, axillary, supra-axillary or borne on the older leafless stems or trunks, stalked or subsessile
-No. of trees: 7
-Success: 
- bracteoles small, imbricate
-No. of trees: 2
-Success: 
- buds subglobose
-No. of trees: 1
-Fail:
- Sepals 3, valvate, much smaller than the petals
-No. of trees: 5
-Fail:
- Petals 6 in 1 whorl, valvate, equal, distinctly united at the base
-No. of trees: 7
-Success: 
- Stamens numerous, cuneiform
-No. of trees: 3
-Success: 
- filaments short
-No. of trees: 1
-Fail:
- anther-cells lateral and extrorse
-No. of trees: 1
-Fail:
- connective-prolongation broadened and truncate, those of the inner stamens longer and more developed
-No. of trees: 4
-Fail:
- Carpels united in a 1-locular ovary, which is ovoid or ellipsoid and with numerous ovules
-No. of trees: 5
-Fail:
- placentation parietal
+ branchlets ferruginous-velvety-tomentose
 No. of trees: 1
 Success: 
- styles obsolete
-No. of trees: 1
-Fail:
- stigmas joined to form an irregular or peltate mass larger than the ovary
-No. of trees: 5
-Success: 
- Fruit syncarpous, globose, ovoid or ellipsoid
-No. of trees: 2
-Success: 
- pericarp often woody when dry, smooth or rugose
-No. of trees: 2
-Success: 
- Seeds numerous, ellipsoid, immersed in a resinous pulp
-No. of trees: 6
-Success: 
- testa often shining
-No. of trees: 1
-TAXON:  Annonaceae Lettowianthus 
-Fail:
- Plant is Tree
-No. of trees: 2
-Success: 
- foliage with sparse indumentum of simple hairs
-No. of trees: 2
-Fail:
- Flowers rather large, hermaphrodite, solitary in the axils of fallen leaves, pedunculate
-No. of trees: 6
-Success: 
- Sepals 3, slightly imbricate, almost completely free
-No. of trees: 4
-Fail:
- Petals 6, slightly imbricate, in 2 whorls, the inner 3 slightly larger, free, soon spreading
-No. of trees: 8
-Fail:
- petals 7–9 in pleiomerous flowers
-No. of trees: 3
-Fail:
- Stamens numerous, forming a hemisphere, narrowly obconic
-No. of trees: 4
-Fail:
- anther-cells lateral
-No. of trees: 1
-Success: 
- connective-prolongation truncate
-No. of trees: 2
-Success: 
- filaments almost obsolete
-No. of trees: 1
-Success: 
- Carpels several, free, obovoid, 2-ovulate
-No. of trees: 3
-Success: 
- style well developed, almost obconic, bearing an apical rugulose stigmatic surface
-No. of trees: 2
-Fail:
- Monocarps indehiscent, globose, on long stipes, 1–2-seeded
-No. of trees: 5
-Success: 
- Seeds subglobose or plano-convex
-No. of trees: 2
-TAXON:  Annonaceae Melodorum 
-Fail:
- Plant is Shrubs or climbing shrubs, glabrous or with an indumentum of simple hairs
-No. of trees: 3
-Success: 
- Flowers hermaphrodite, solitary or paired, terminal or axillary, stalked
-No. of trees: 8
-Success: 
- bracteole small
-No. of trees: 1
-Fail:
- Sepals 3, valvate, free or ± connate, persistent in fruit
-No. of trees: 6
-Fail:
- Petals 6, valvate or the inner somewhat imbricate, coriaceous, concave, the outer spreading, the inner slightly to distinctly smaller, remaining for a long time closed over the androecium and gynoecium
-No. of trees: 9
-Success: 
- Stamens numerous, forming a hemispherical androecium
-No. of trees: 3
-Fail:
- filaments absent or very short
-No. of trees: 3
-Fail:
- anther-cells linear
-No. of trees: 1
-Fail:
- connective-prolongation thick, hexagonal, truncate, completely covering the anther-cells
-No. of trees: 4
-Fail:
- Carpels fairly numerous, cylindric or oblong, with 1, rarely 2, ovules near the base
-No. of trees: 7
-Fail:
- style short or equalling the ovary, narrow, grooved, the stigma not much developed
-No. of trees: 7
-Fail:
- Monocarps of 1, rarely 2, articles, cylindric or ellipsoid
-No. of trees: 5
-Success: 
- stipe well developed, slender
-No. of trees: 1
-Success: 
- Seeds ellipsoid, smooth, shining
-No. of trees: 2
-Fail:
- testal intrusions into the endosperm lamelliform
-No. of trees: 1
-TAXON:  Annonaceae Mkilua 
-Fail:
- Plant is Shrub or small tree
-No. of trees: 2
-Fail:
- indumentum sparse, of simple hairs
-No. of trees: 2
-Success: 
- foliage ± glossy and glabrescent
-No. of trees: 2
-Success: 
- Flowers hermaphrodite, solitary or in few-flowered cymes, extra-axillary
-No. of trees: 1
-Success: 
- bracteoles present
-No. of trees: 1
-Fail:
- Sepals 3, valvate, entirely covering petals only in very young buds
-No. of trees: 5
-Fail:
- Petals in 2 whorls of 3, open at the base in bud, very slightly imbricate at apex or the outer valvate
-No. of trees: 7
-Fail:
- Stamens very numerous, forming a hemispherical mass, oblong
-No. of trees: 4
-Fail:
- anther-cells lateral, very distinctly locellate when dry
-No. of trees: 2
-Fail:
- connective-prolongation covering the anther-cells, irregularly shaped in plan view, truncate, puberulous
-No. of trees: 6
-Fail:
- filaments short but distinct
-No. of trees: 3
-Success: 
- Carpels numerous, columnar, longitudinally ribbed, hairy particularly on the ribs, with 4–6 uniseriate ovules
-No. of trees: 6
-Fail:
- style oblong, rounded at the apex, consisting of a flat plate with the ends folded in, thus appearing deeply grooved on one side
-No. of trees: 8
-Fail:
- Monocarps ultimately dehiscent on drying, subcylindrical, but tapering towards the apex, straight, subsessile, 1–6-seeded, not markedly constricted between the seeds
-No. of trees: 9
-Fail:
- Seeds slightly oblique, overlapping each other at the ends, ellipsoid-cylindrical, flattened at one or both ends where they overlap, with a conspicuous apical aril made up of fibres
-No. of trees: 9
-TAXON:  Annonaceae Monanthotaxis 
-Fail:
- Plant is Small trees, shrubs or woody climbers, glabrescent to densely silky
-No. of trees: 4
-Fail:
- indumentum of simple hairs
-No. of trees: 1
-Fail:
- Leaves in some species with 2 marginal glands at the base of the limb
-No. of trees: 2
-Fail:
- Flowers hermaphrodite or, in one small group, unisexual (not in East Africa), mostly small, solitary, fascicled or in dense to very lax few-flowered cymes, mostly supra-axillary or extra-axillary, rarely axillary, mostly pedicellate
-No. of trees: 13
-Fail:
- bracteole present, often persistent, quite conspicuously leafy and usually situated on the lower half of the pedicel, but frequently minute
-No. of trees: 8
-Fail:
- Sepals (2–)3, valvate, free or ± united at the base, much shorter than the petals
-No. of trees: 7
-Fail:
- Petals (4–)6, variously arranged, variously all in 1 whorl, in 2 distinct whorls or inserted in 1 whorl at the base but overlapping and appearing to be in 2 whorls above, valvate, free, or slightly united at the base, mostly rather thick, the outer often at length ± spreading, the inner smaller or sometimes very small, often somewhat clawed, connivent and erect
-No. of trees: 19
-Fail:
- Androecium often fiat and hexagonal
-No. of trees: 2
-Fail:
- stamens 6 to fairly numerous, in 1–several whorls, or sometimes 6 alternating with 6 reduced stamens or staminodes
-No. of trees: 6
-Fail:
- stamens linear or more usually obovate-obconic, clavate or cuneiform
-No. of trees: 4
-Fail:
- filaments usually present, sometimes longer than the anther-cells
-No. of trees: 4
-Fail:
- anther-cells parallel, extrorse or introrse, attached to the thickened connectives, which are sometimes appendaged laterally, but never have thickened apical appendages which form a continuous pavement completelyhiding the anther-cells from above
-No. of trees: 9
-Fail:
- Carpels few to rather numerous, free, cylindric, ellipsoid or obconie, with 1–8 uniseriate ovules
-No. of trees: 8
-Fail:
- style cylindric, obconic or ellipsoid, as long as or shorter than the ovary, stigma bifurcate or grooved
-No. of trees: 8
-Fail:
- Monocarps indehiscent, often fleshy, cylindrical (to rarely sub-globose), mostly stipitate, 1–8-seeded, mostly conspicuously constricted between the seeds, the articles easily breaking off
-No. of trees: 10
-Success: 
- Seeds oblong-ellipsoid, ovoid or subglobose, vertical
-No. of trees: 2
-Fail:
- testal intrusions into the endosperm lamelli-form
-No. of trees: 2
-TAXON:  Annonaceae Monodora 
-Fail:
- Plant is Trees or shrubs, sometimes climbing or scrambling, glabrous or with simple hairs
-No. of trees: 4
-Fail:
- young stems often glaucous, frequently drying black as do the young leaves
-No. of trees: 5
-Fail:
- Flowers hermaphrodite, solitary or less often in 2–few-flowered cymes, terminal or extra-axillary or on shoots from which leaves have fallen, pedicellate, sometimes very conspicuously so
-No. of trees: 7
-Success: 
- bracteole single, often large and leafy, usually amplexicaul, persistent
-No. of trees: 2
-Fail:
- Sepals 3, valvate, free, shorter than the petals
-No. of trees: 6
-Fail:
- Petals 6 in 2 whorls of 3, both valvate, unequal, all united at the base, very often with markedly crisped or undulate margins, the outer broad at the base, usually spreading or curved, inner ± clawed, often with the apices connivent at the tips until flower is very mature
-No. of trees: 17
-Fail:
- Stamens numerous, oblong, cuneiform or almost globose
-No. of trees: 5
-Success: 
- filaments absent
-No. of trees: 2
-Fail:
- anther-cells extrorse
-No. of trees: 1
-Success: 
- connective-prolongation thickened
-No. of trees: 1
-Fail:
- Carpels several, united into a conical or globose 1-celled ovary with numerous ovules and parietal placentation
-No. of trees: 5
-Success: 
- stigmas sessile, radiating
-No. of trees: 2
-Success: 
- Fruit syncarpous, globose, ellipsoid or obovoid, with numerous seeds and leathery or woody pericarp
-No. of trees: 24
-Success: 
- Seeds irregularly arranged, mostly shining brown
-No. of trees: 2
-Success: 
- aril absent
-No. of trees: 2
-TAXON:  Annonaceae Ophrypetalum 
-Fail:
- Plant is Shrub or small tree, deciduous and often flowering when leafless, glabrous save for inflorescence which bears simple hairs
-No. of trees: 6
-Fail:
- Flowers hermaphrodite, scented, solitary or in fascicles on leafy shoots or mostly on the older branches, pedicellate
-No. of trees: 6
-Success: 
- buds subglobose, with prominent angles at sepal junctions
-No. of trees: 3
-Success: 
- bracteoles ± 10, biseriate, tightly imbricate, pubescent and ciliate, persistent
-No. of trees: 8
-Success: 
- Sepals 3, valvate, free, enclosing the petals in bud, rather thick, densely covered with brown hairs
-No. of trees: 42
-Fail:
- Petals 6, imbricate above, open at the base, in 2 whorls of 3, subequal, conspicuously clawed, the inner with a conspicuous brush of fleshy brown setiform processes borne on a thick ridge at the junction of the lamina and the claw
-No. of trees: 11
-Fail:
- petals and stamens cohering together so that all are removable together
-No. of trees: 3
-Fail:
- Receptacle flat in staminal area but excavated beneath the carpels
-No. of trees: 5
-Success: 
- Stamens very numerous (several hundred),oblong, the connective not produced at the apex, obtuse
-No. of trees: 24
-Success: 
- Carpels 10–15 (–18), free, 4–6(–11)-ovulate, pilose
-No. of trees: 2
-Success: 
- style cylindrical, slightly curved
-No. of trees: 2
-Success: 
- stigma minute
-No. of trees: 1
-Fail:
- Monocarps ± fusiform, narrowed at both ends but scarcely stipitate
-No. of trees: 5
-Success: 
- Seeds ± vertical, overlapping
-No. of trees: 2
-TAXON:  Annonaceae Polyalthla 
-Fail:
- Plant is Trees or shrubs, not climbing, glabrous or with an indumentum of simple hairs
-No. of trees: 4
-Fail:
- Flowers hermaphrodite, solitary or in 2–many-flowered cymes or fascicles, extra-axillary, axillary or leaf-opposed or sometimes on leafless branches or on the trunk
-No. of trees: 8
-Fail:
- bracts and bracteoles present
-No. of trees: 2
-Fail:
- Sepals 3, valvate, much smaller than the petals
-No. of trees: 5
-Fail:
- Petals 6, in 2 whorls of 3, both valvate, free, subequal or the outer slightly larger, variously shaped, linear, lanceolate, ovate, elliptic, oblong or obovate, often quite large and showy, red, orange, yellow, green or white
-No. of trees: 19
-Success: 
- Stamens mostly numerous, cuneiform
-No. of trees: 3
-Success: 
- filaments very short
-No. of trees: 1
-Fail:
- connective-prolongations flat-topped or slightly convex, covering the anther-cells, rhomboid or round in plan
-No. of trees: 6
-Success: 
- Carpels few to numerous, free, oblong, 1–5-ovuled, the ovules basal or superposed
+ Leaves 1-foliolate or 3-foliolate with lateral leaflets very­ much reduced
 No. of trees: 20
-Fail:
- style absent or almost so
+Success: 
+ petiole 2–4(–7) mm. long, ferruginous-tomentose
 No. of trees: 2
-Fail:
- stigma rectangular, globose or irregularly shaped, with a faint groove on inner side running down inner side of the ovary
-No. of trees: 8
-Fail:
- Monocarps few to many, indehiscent, ellipsoid, ovoid or subglobose, stipitate or subsessile, 1–5-seeded
-No. of trees: 7
 Success: 
- Seeds sometimes with a longitudinal circumferential groove
+ petiolules up to 2 mm. long
 No. of trees: 2
-TAXON:  Annonaceae Polyceratocarpus 
-Fail:
- Plant is Trees, shrubs or less often woody lianes
-No. of trees: 3
-Fail:
- indumentum composed of simple hairs
-No. of trees: 1
 Success: 
- Flowers usually hermaphrodite or sometimes only male, solitary or paired, axillary or extra-axillary, pedicellate
-No. of trees: 8
-Success: 
- buds subglobose
-No. of trees: 1
-Success: 
- bracteoles present
-No. of trees: 1
+ terminal leaflet elliptic or obovate-elliptic, 5–17.5 cm. long, 3–10.5 cm. wide, acute, subacuminate or obtuse at the apex, cuneate to rounded at the base, serrulate or crenulate-serrulate, velvety-tomentose on both surfaces or eventually pilose or pubescent above
+No. of trees: 50
 Fail:
- Sepals 3, valvate, smaller than the petals, joined at the base
-No. of trees: 7
-Fail:
- Petals 6, in 2 whorls of 3, valvate, subequal or the outer slightly larger, free, thick
+ lateral nerves in 8–12 pairs
+No. of trees: 2
+Success: 
+ lateral leaflets ± rounded, 1–3 cm. long and wide
 No. of trees: 9
-Fail:
- Stamens numerous, linear or cuneiform
-No. of trees: 4
-Fail:
- anther-cells lateral or extrorse
-No. of trees: 2
-Fail:
- connective-prolongation enlarged, capitate or truncate
-No. of trees: 4
-Fail:
- filaments very short or obsolete
-No. of trees: 3
 Success: 
- Carpels 5–20, free, oblong-cylindric or compressed, with ± 20–25 biseriate ovules
-No. of trees: 4
+ Inflorescences slender, unbranched, 6–20 cm. long, including 2–6 cm. long peduncle
+No. of trees: 6
 Success: 
- stigmas sessile, capitate, bilobed or dilated and dorsally compressed
-No. of trees: 12
-Fail:
- Monocarps indehiscent, cylindrical, sessile or stipes almost obsolete, many-seeded, usually long, mostly curved or arcuate and twisted together
-No. of trees: 8
-Success: 
- Seeds horizontal, ellipsoid, compressed, not arillate
-No. of trees: 1
-TAXON:  Annonaceae Toussaintia 
-Fail:
- Plant is Climbing shrubs with an indumentum of simple hairs
+ flowers several in subsessile glomerules
 No. of trees: 2
 Success: 
- Flowers hermaphrodite, axillary, solitary or in 2–3-flowered cymes borne on the leafy shoots
+ pedicels up to 1.5 mm. long, pubescent
 No. of trees: 2
 Success: 
- buds ovate-oblong
+ Sepals yellow-green
 No. of trees: 1
 Fail:
- bracts and bracteoles round to elliptic, persistent
+ outer ± round, 1.1 mm. long, 1 mm. wide, pubescent
 No. of trees: 3
 Fail:
- Sepals 3, valvate, thick, free, entirely covering the petals in the bud, the margins of the sepals sometimes distinctly raised so that the buds are 3-ribbed
-No. of trees: 9
-Fail:
- Petals 6–10, either in 2 definite whorls or 2–3 irregular whorls, imbricate, free, subequal
-No. of trees: 6
-Fail:
- Stamens very numerous, arranged horizontally on a remarkably developed cylindrical androgynophore, linear or cuneiform
-No. of trees: 5
-Fail:
- connectives thick, expanded or distinctly capitate above the anther-cells
-No. of trees: 5
-Fail:
- Carpels numerous, situated at the apex of the androgynophore, ovoid-oblong, with 6–20 biseriate or uniseriate ovules
-No. of trees: 5
-Fail:
- style linear-oblong or obsolete, the stigma simple or with 2–several lobes
-No. of trees: 4
-Success: 
- Monocarps ellipsoid to cylindric, several-seeded, longitudinally ribbed
+ inner 1 mm. long, 0.7 mm. wide pubescent
 No. of trees: 2
 Success: 
- seeds ellipsoid, arranged biseriately
-No. of trees: 1
-TAXON:  Annonaceae Uvaria 
-Fail:
- Plant is Climbing, straggling or erect shrubs or small (less often quite large) trees, quite often covered with stellate and sometimes also simple hairs
+ petals white, spathulate, 1.2 mm. long, 0.5 mm. wide
 No. of trees: 6
+Success: 
+ Filaments 1.5 mm. long
+No. of trees: 2
+Success: 
+ ovary 1.5 mm. long hairy
+No. of trees: 3
+Success: 
+ styles greenish white, 1.5 mm. long
+No. of trees: 2
 Fail:
- Flowers usually hermaphrodite, solitary or in few-flowered cymes, these terminal, axillary, extra-axillary or leaf-opposed, more rarely borne on the old wood, sessile or stalked
+ Fruits green becoming orange then bright orange-vermilion, of 1–2 mericarps, each globose, 7 mm. diameter, sparsely pubescent
+No. of trees: 7
+TAXON:  Sapindaceae Allophylus delicatulus
+Fail:
+ Plant is Shrub 2–4 m. tall, almost glabrous
+No. of trees: 3
+Success: 
+ bark pale grey or brownish grey
+No. of trees: 4
+Fail:
+ Leaves trifoliolate
+No. of trees: 1
+Success: 
+ petiole 3–6.5 cm. long, grooved, slightly pubescent at apex of junction of leaflets
 No. of trees: 8
+Success: 
+ petiolules ± absent, the lamina bases decurrent
+No. of trees: 18
 Fail:
- bracteoles 2, respectively basal and median or at the base of the calyx, often deciduous
-No. of trees: 5
-Fail:
- Sepals 3, valvate, often ± joined at the base, or calyx cupular in bud and remaining ± unlobed in anthesis or splitting into 3 often irregular lobes
-No. of trees: 8
-Fail:
- Petals 6, imbricate, in 2 whorls of 3, equal or those of the outer whorl slightly larger, free or scarcely joined at the base
+ leaflets drying bright green, elliptic or oblong-elliptic, 4–11 cm. long, 1.3–4 cm. wide, narrowly acutely acuminate at the apex, narrowly cuneate at the base, thin, serrate except at base, virtually glabrous
 No. of trees: 10
 Fail:
- Stamens numerous, the outer sometimes sterile and leaf-like, linear or obconic
+ reticulation not raised, lateral nerves in 8–11 pairs
 No. of trees: 4
-Fail:
- anther-cells lateral or extrorse
+Success: 
+ Inflorescences very slender, up to 16 cm. long, branched, the side branches few, ± 4 cm. long
+No. of trees: 12
+Success: 
+ peduncle up to 8 cm. long
 No. of trees: 2
 Fail:
- connective truncate or prolonged into a tapering appendage
+ cymule bases 0.5–3 mm. long, slender, 1–2-flowered
+No. of trees: 3
+Success: 
+ pedicels very slender, 2–2.5 mm. long
+No. of trees: 2
+Fail:
+ all axes virtually glabrous or micropuberulous
+No. of trees: 1
+Fail:
+ Outer sepals oblate, 1 mm. long, 1.8 mm. wide, glabrous or with few small marginal hairs
 No. of trees: 3
 Fail:
- filaments very short or absent
-No. of trees: 3
-Fail:
- Carpels mostly numerous, free, linear or cylindric, with numerous biseriate ovules (rarely with only 1–3)
+ inner sepals round, convex, ± 1 mm. long and wide, petals obovate, 1 mm. long, the scale densely hairy
 No. of trees: 6
+Success: 
+ Filaments 1 mm. long, hairy at base
+No. of trees: 2
+Success: 
+ anthers 0.5 mm. long
+No. of trees: 2
+Success: 
+ Fruit not seen
+No. of trees: 1
+TAXON:  Sapindaceae Allophylus dummeri
 Fail:
- style absent or scarcely developed
-No. of trees: 3
+ Plant is Shrub or spreading tree 2.5–9 m. tall
+No. of trees: 2
+Success: 
+ branches glabrous, lenticellate
+No. of trees: 1
 Fail:
- stigma horseshoe-shaped or funnel-shaped with a slit down the inner side
-No. of trees: 4
+ slash red-brown exuding off-white sap
+No. of trees: 1
 Fail:
- Monocarps indehiscent, globose to cylindrical, stipitate or subsessile, 1–many-seeded, sometimes grooved between the seeds, dry or sometimes fleshy when ripe, often sweet and edible
+ Leaves trifoliolate, drying bright green
+No. of trees: 2
+Success: 
+ petiole 4–14 cm. long
+No. of trees: 2
+Fail:
+ leaflets elliptic, elliptic-oblong or elliptic-obovate, 7.5–25 cm. long, 4–10.5 cm. wide, acuminate at the apex, cuneate at the base, entire or remotely coarsely serrate, thin to slightly thick, glabrous or with indistinct hairy domatia in nerve-axils beneath
 No. of trees: 11
 Fail:
- Seeds horizontal or oblique, with or without a small aril
-No. of trees: 3
-TAXON:  Annonaceae Uvariastrum 
-Fail:
- Plant is Shrubs or small trees, glabrous or with an indumentum of simple hairs (or also stellate in <i>U
-No. of trees: 5
-Fail:
- modestum</i> Diels)
-No. of trees: 1
-Fail:
- Flowers hermaphrodite or rarely unisexual, axillary, solitary or paired, sometimes borne on the old wood
-No. of trees: 5
-Success: 
- buds conical
-No. of trees: 1
-Success: 
- bracteole 1, usually deciduous
-No. of trees: 4
-Fail:
- Sepals 3, valvate, free, enclosing the petals in bud, at which time the margins form wing-like ridges (see below), often densely ferruginous pubescent
-No. of trees: 8
-Fail:
- Petals 6, in 2 whorls of 3, usually both valvate but with inner whorl imbricate in one species, free, subequal
-No. of trees: 9
-Fail:
- Stamens numerous, linear, the cells lateral or extrorse
-No. of trees: 5
-Success: 
- prolongation of the connective ± capitate
+ lateral nerves in 5–12 pairs, venation fine and closely reticulate, raised on both sides
 No. of trees: 4
 Success: 
- filaments very short
-No. of trees: 1
-Fail:
- Carpels 3–15 (or more), cylindric or obconic, sometimes angular, free, with numerous biseriate ovules
-No. of trees: 6
+ Inflorescence rather robust, 6–24.5 cm. long, including peduncles 5–8.5 cm. long, with 3–4 main branches
+No. of trees: 16
 Success: 
- style very short
-No. of trees: 1
-Success: 
- stigma broadened, bilobed or irregular, rugose or verrucose
-No. of trees: 4
-Success: 
- Monocarps indehiscent, ellipsoid or cylindric, stipitate, few–many-seeded, somewhat constricted between the seeds, usually succulent
-No. of trees: 2
-Success: 
- Seeds ± horizontal, without an aril
-No. of trees: 1
-TAXON:  Annonaceae Uvariodendron 
-Fail:
- Plant is Shrubs or trees with an indumentum of simple hairs
-No. of trees: 2
-Fail:
- Flowers hermaphrodite, solitary or fascicled, axillary on leafy shoots and/or also on the old wood, sessile or stalked
-No. of trees: 6
-Fail:
- bracteoles 2–6, often forming an involucre in the case of sessile flowers
-No. of trees: 5
-Fail:
- Sepals 3, valvate, free or united at the base, in most species not enclosing the petals in bud
-No. of trees: 6
-Fail:
- Petals 6, in 2 whorls of 3, the outer valvate, and at length spreading, the inner valvate or somewhat imbricate above, open below, often remaining connivent at apex long after flowers have opened, free, mostly very thick and fleshy, often brittle, subequal
-No. of trees: 13
-Success: 
- Stamens very numerous, linear
-No. of trees: 6
-Fail:
- anther-cells lateral or extrorse
-No. of trees: 2
-Success: 
- connective-prolongations capitate
-No. of trees: 2
-Fail:
- Carpels numerous, cylindric, with numerous mostly biseriate ovules or in one species practically in 1 row
-No. of trees: 6
-Fail:
- style very short or more developed, consisting of a plicate or involute lamina, the apical margin being the stigmatic surface
-No. of trees: 5
-Success: 
- Monocarps indehiscent, ovoid, ellipsoid or broadly to narrowly cylindric, straight, subsessile or shortly stipitate, many-seeded, often constricted between the seeds
-No. of trees: 8
-Success: 
- Seeds ± horizontal, ellipsoid
-No. of trees: 1
-TAXON:  Annonaceae Uvariopsis 
-Fail:
- Plant is Trees or shrubs, the indumentum of simple hairs
+ axes with short ferruginous pubescence, cymules 3–6-flowered, mostly densely placed
 No. of trees: 3
-Fail:
- Flowers unisexual (or at most a few stamens present in ♀ flowers), monoecious or dioecious, axillary, solitary or in fascicles, often on the old wood, pedicellate
-No. of trees: 9
-Fail:
- bracteoles 2, one basal the other median, ± persistent
-No. of trees: 5
-Fail:
- Sepals 2, connate to form a bilobed calyx, much shorter than the petals in bud
-No. of trees: 6
-Fail:
- Petals 4, valvate, in one whorl, eventually spreading, free or somewhat joined, rather thick, those of the female flowers mostly larger
-No. of trees: 9
 Success: 
- Stamens numerous, oblong to oblong-ovoid
-No. of trees: 3
-Fail:
- filaments absent or very short
-No. of trees: 3
-Fail:
- anther-cells extrorse
-No. of trees: 1
-Fail:
- connective not or scarcely prolonged
+ Flowers cream, white or greenish
 No. of trees: 2
 Success: 
- Carpels numerous, obovoid or subcylindric, with several to numerous biseriate ovules
+ calyx sparsely pubescent
+No. of trees: 1
+Fail:
+ outer sepals round, 1 mm. diameter
+No. of trees: 2
+Fail:
+ inner oblate, 2 mm. long and wide
+No. of trees: 2
+Success: 
+ petals spathulate, 2 mm. long, 0.8 mm. wide, ciliate
 No. of trees: 6
 Success: 
- stigma sessile, cylindric, depressed obconic, lunate or horseshoe-shaped
-No. of trees: 8
+ Fruits orange-yellow to red-brown, globose, ± 6 mm. diameter, with very sparse adpressed hairs or glabrous
+No. of trees: 2
+TAXON:  Sapindaceae Allophylus ferrugineus
 Fail:
- Monocarps indehiscent, cylindric, ellipsoid or obovoid, stipitate, several-seeded, often somewhat constricted between the sieeds, usually succulent
-No. of trees: 9
-Success: 
- Seeds horizontal, without an aril
-No. of trees: 1
-TAXON:  Annonaceae Xylopia 
-Fail:
- Plant is Trees, shrubs or subshrubs, only rarely climbing, glabrous or with an indumentum of simple or rarely 2-branched hairs
-No. of trees: 5
-Fail:
- Flowers hermaphrodite, solitary, fasciculate or in cymes, axillary, sessile or stalked
+ Plant is Tree or shrub or sometimes a climber or creeper 0.9–9 m. long or tall, monoecious
 No. of trees: 7
 Success: 
- buds ovoid, subglobose or more usually narrowly conical and 3-angled
-No. of trees: 3
-Success: 
- bracteoles 1–5, deciduous or persistent
+ bark grey, brown or reddish, smooth
 No. of trees: 4
 Fail:
- Sepals 3, valvate, ± united, very much smaller than the external petals
+ slash white
+No. of trees: 1
+Success: 
+ young branchlets pubescent
+No. of trees: 1
+Fail:
+ Leaves trifoliolate
+No. of trees: 1
+Success: 
+ petiole (1–)2–10 cm. long
+No. of trees: 2
+Success: 
+ petiolule of terminal leaflet often well developed, 0.8–1.3(–2) cm. long
+No. of trees: 4
+Fail:
+ leaflets drying bright green, elliptic, ovate-oblong, rhomboid, obovate or oblanceolate, (2.5–) 6–22 cm. long, (0.9–)2.5–11 cm. wide, acute to acuminate at the apex, attenuate to cuneate at the base, the laterals very asymmetric, regularly toothed or serrate, glabrous, pubescent, ferruginous hairy or velvety, with or without hairy domatia in the axils of nerves beneath
+No. of trees: 18
+Fail:
+ lateral nerves in 5–10 pairs
+No. of trees: 2
+Success: 
+ Inflorescences (3.5–)7.5–34(–47) cm. long (see note), usually unbranched, often slender and drooping
+No. of trees: 4
+Success: 
+ peduncles 1.5–5 cm. long
+No. of trees: 2
+Fail:
+ cymules 1–6-flowered, the stalks 1.5–5 mm. long, usually well-spaced
+No. of trees: 3
+Success: 
+ pedicels 1.5–3(–5) mm. long, minutely puberulous
+No. of trees: 2
+Success: 
+ Flowers green, white, greenish white or yellow
+No. of trees: 2
+Fail:
+ outer sepals elliptic, 1–1.5 mm. long, 1 mm. wide, sparsely puberulous, inner ± round, 1.5–2 mm. diameter
+No. of trees: 5
+Success: 
+ petals spathulate, 2 mm. long, 1 mm. wide
 No. of trees: 6
 Fail:
- Petals 6 in 2 whorls of 3, both valvate, subequal or the outer ones larger, free, thick, flattened or angular, enlarged and ± concave at the base, the inner petals sometimes with a fleshy part covering the stamens and gynoecium
+ Filaments ± 2 mm. long, hairy in basal half
+No. of trees: 4
+Success: 
+ Style ± 1 mm. long, with few hairs
+No. of trees: 4
+Success: 
+ stigma 0.5–1 mm. long
+No. of trees: 2
+Fail:
+ Fruit orange to scarlet, often of 2–3 mericarps, each ellipsoid, obovoid or globose, 5–8 mm
+No. of trees: 7
+Fail:
+ long., 4–6.5 mm. wide, or 7.5 mm. diameter, at first sparsely hairy, glabrescent
+No. of trees: 5
+TAXON:  Sapindaceae Allophylus fulvotomentosus
+Fail:
+ Plant is Tree or shrub 1.8–7.5 m. tall, bark black or grey-brown, rough
+No. of trees: 4
+Success: 
+ stems usually densely ferruginous velvety, later ± glabrous
+No. of trees: 2
+Fail:
+ Leaves trifoliolate
+No. of trees: 1
+Success: 
+ petiole 1.5–6 cm. long, mostly ferruginous velvety
+No. of trees: 4
+Fail:
+ leaflets drying darker grey-brown above, pale brown beneath, elliptic to oblong or obovate, 2.5–12 cm. long, 1.5–8 cm. wide, subacute to rounded or ± truncate at the apex, cuneate to rounded at the base, mostly subcoriaceous, often densely ferruginous velvety at first, later hairy only on venation beneath or ± glabrous
+No. of trees: 11
+Fail:
+ venation reticulate and ± prominent above, the nerves ± impressed, very prominent beneath
+No. of trees: 3
+Success: 
+ Inflorescences 3.5–11(–15) cm. long, including 1–5 cm. long peduncle, branched, the axes ferruginous velvety
+No. of trees: 48
+Fail:
+ cymules subsessile, 3–10-flowered, extremely densely placed so that apices of inflorescence-branches are solid with flowers and spadix-like, the rhachis entirely obscured but often more open at base of branches and often altogether laxer in intermediates with <i>A
+No. of trees: 8
+Fail:
+ africanus</i>
+No. of trees: 1
+Fail:
+ Flowers yellow-green, subsessile or pedicels only 0.5 mm. long
+No. of trees: 5
+Fail:
+ inner sepals 1.5 mm. wide
+No. of trees: 1
+Success: 
+ petals spathulate, 1.5 mm. long, 0.8 mm. wide, the scale densely pilose
+No. of trees: 18
+Success: 
+ Filaments 2 mm. long, hairy at base
+No. of trees: 2
+Success: 
+ Fruits pale orange, subglobose-obovoid, 7 mm. long, 6 mm. wide, pubescent, subsessile
+No. of trees: 6
+TAXON:  Sapindaceae Allophylus grotei
+Fail:
+ Plant is Much-branched tree to 9 m. tall
+No. of trees: 2
+Success: 
+ branchlets pale grey-brown, ± pubescent near nodes, glabrescent
+No. of trees: 1
+Success: 
+ Leaves unifoliolate, thin, drying brown, darker above, elliptic to oblong-elliptic, 6.5–12.5 cm. long, 2.5–5.7 cm. wide, narrowly acuminate at the apex, cuneate at the base, undulate or almost entire, glabrous
+No. of trees: 50
+Success: 
+ main lateral nerves ± 6
+No. of trees: 2
+Success: 
+ petiole 0.9–1.5 cm. long
+No. of trees: 2
+Success: 
+ petiolule ± thickened and channelled, 3–5 mm. long
+No. of trees: 4
+Fail:
+ Inflorescences unbranched, 4–7 cm. long, including the 2–2.5 cm. long peduncle
+No. of trees: 6
+Fail:
+ cymules 3–?-flowered with stalks 2–4 mm. long
+No. of trees: 1
+Success: 
+ pedicels 1.5 mm. long
+No. of trees: 2
+Fail:
+ all partsfinely adpressed puberulous
+No. of trees: 1
+Success: 
+ Flowers greenish white
+No. of trees: 1
+Fail:
+ outer sepals ± round, 1.2 mm. long, ± 1 mm. wide, inner similar but wider, all minutely adpressed puberulous
+No. of trees: 4
+Fail:
+ Fruits (see note) ellipsoid, 9.5 mm. long, 5.5 mm. wide, basally slightly ribbed in dry state, glabrous save for very sparse short adpressed hairs
+No. of trees: 7
+Success: 
+ Seeds chestnut, ± ovoid, 5 mm. long
+No. of trees: 2
+TAXON:  Sapindaceae Allophylus melliodorus
+Fail:
+ Plant is Tree 5–12 m. tall with rough bark
+No. of trees: 3
+Fail:
+ young branchlets dark with pale lenticels, puberulous but soon glabrous
+No. of trees: 4
+Success: 
+ wood yellowish, hard
+No. of trees: 1
+Fail:
+ Leaves unifoliolate, ± thin, elliptic to elliptic-lanceolate, 3.8–14(–18) cm. long, 2–7 cm. wide, rounded or obtuse to mostly acuminate at the apex, cuneate at the base, remotely serrate or crenate-serrate, glabrous except for the conspicuous tufts of hair in the main nerve-axils beneath and often in secondary axils also, not shiny above
 No. of trees: 13
 Fail:
- Stamens numerous, linear, the outer and inner ones often flattened and staminodial
+ lateral nerves in 8–9 pairs, the venation not or scarcely raised above
 No. of trees: 4
+Success: 
+ petiole 1.5–3 cm. long
+No. of trees: 2
 Fail:
- filaments articulated, sometimes partly united at the base and enclosing the gynoecium
-No. of trees: 4
+ Inflorescences 6–12 cm. long, simple or with two or more branches
+No. of trees: 5
+Success: 
+ rhachis puberulous
+No. of trees: 1
 Fail:
- anther-cells extrorse,transversely septate
+ cymules sessile but pedicels 1.5 mm. long
 No. of trees: 2
 Success: 
- connective-prolongation capitate
+ Flowers yellow-green or pale yellow
 No. of trees: 2
-Fail:
- Carpels few to many or rarely solitary, free, ovoid-oblong or flattened, with 1–many 1–2-seriate ovules
-No. of trees: 8
 Success: 
- styles linear or narrowly clavate, aggregated
+ Sepals rounded, outer ovate, 1 mm. long, 0.8 mm. wide, inner 1.5 mm. long, 1.2 mm. wide
+No. of trees: 100
+Success: 
+ Petals spathulate, 1 mm. long, ciliate
+No. of trees: 2
+Success: 
+ Filaments pubescent at base
+No. of trees: 1
+Success: 
+ Ovary 1 mm. diameter, pubescent
 No. of trees: 2
 Fail:
- Monocarps dehiscent or indehiscent, obovoid to cylindric, sessile or mostly stipitate, 1–8(–many)-seeded, ± fleshy
+ style and stigma together ± 1.5 mm. long
+No. of trees: 2
+Success: 
+ Fruit subglobose, 5.5 mm. diameter, finely pubescent
+No. of trees: 2
+TAXON:  Sapindaceae Allophylus pervillei
+Fail:
+ Plant is Almost invariably a small or medium-sized shrub, but occasionally a small tree or even described as a climber ( <i>Bally</i> 4691) or prostrate shrub ( <i>Adams</i> 74), usually 0.9–4(–5) m. tall (but 6–9 m. in Seychelles)
+No. of trees: 14
+Fail:
+ bark pale, smooth or rough
+No. of trees: 2
+Fail:
+ Leaves drying discolorous, often bright brown beneath, sometimes somewhat shiny, unifoliolate or trifoliolate with lateral leaflets very much reduced
+No. of trees: 6
+Success: 
+ petiole 0.5–1.5 cm. long
+No. of trees: 2
+Fail:
+ terminal leaflet elliptic or oblong to obovate or obovate-oblanceolate, 3.7–17(–20) cm. long, 1.5–9.6 cm. wide, ± obtuse to acute or acuminate at the apex, cuneate at the base, almost entire to repand-dentate, the nerves ending in hydathodes, or ± coarsely undulate-lobed, rarely distinctly serrate, glabrous save for hairy domatia beneath on some leaves
+No. of trees: 12
+Fail:
+ lateral nerves in 5–7 pairs, often much paler both above and beneath, yellowish, together with the closely reticulate venation, prominent on both surfaces when dry
+No. of trees: 7
+Success: 
+ Inflorescences unbranched, 2–12.5 cm. long, including peduncle 1–4 cm. long (see note)
+No. of trees: 16
+Fail:
+ cymules closely placed, 2–7-flowered, the stalks 0–1.2 mm. long
+No. of trees: 3
+Success: 
+ axes glabrous or puberulous
+No. of trees: 2
+Success: 
+ pedicels ± 1 mm. long
+No. of trees: 2
+Success: 
+ Flowers greenish, white or cream
+No. of trees: 2
+Fail:
+ sepals green, the outer ± round, 1.2 mm. long, 1 mm. wide
+No. of trees: 4
+Fail:
+ inner ± oblate, 1–1.5 mm. long, 1.2–2 mm. wide, finely adpressed-pubescent or glabrous
+No. of trees: 3
+Fail:
+ petals spathulate, 1.5 mm. long, 0.8 mm. wide, mostly densely white hairy or ciliate to ± glabrous
+No. of trees: 6
+Success: 
+ disk glabrous
+No. of trees: 1
+Success: 
+ Filaments, ovary and style densely hairy
+No. of trees: 3
+Success: 
+ Fruits bright red, globose or ± obovoid, 7–9 mm. long, 6–7 mm. wide, finely pubescent
+No. of trees: 12
+TAXON:  Sapindaceae Allophylus pseudopaniculatus
+Fail:
+ Plant is Much-branched monoecious spreading tree or less often a shrub or climbing shrub, 3–15 m. tall
+No. of trees: 4
+Success: 
+ branches with brown lenticels, glabrous or glabrescent
+No. of trees: 2
+Fail:
+ Leaves drying very discolorous, dark purplish brown above, dark green beneath, trifoliolate
+No. of trees: 4
+Success: 
+ petiole 5–7 cm. long, glabrescent or ± tomentose
+No. of trees: 4
+Fail:
+ petiolule of terminal leaflet 1–3 mm. long, of laterals ± 1 mm. long
 No. of trees: 6
 Fail:
- Seeds vertical to horizontal, collateral or 2-seriate
+ leaflets elliptic, oblong or obovate, 3–18 cm. long, 1.5–9 cm. wide, narrowly acutely acuminate at the apex, cuneate (or in laterals ± rounded and asymmetric) at the base, finely toothed, especially in the upper third
+No. of trees: 11
+Fail:
+ lateral nerves in ± 12 pairs
+No. of trees: 2
+Fail:
+ Inflorescences (5–)10–15 cm. long, simple or with 2 side branches up to 10 cm. long, axillary or appearing paniculate
+No. of trees: 6
+Success: 
+ peduncle 2–4 cm. long
+No. of trees: 2
+Success: 
+ axes with long hairs
+No. of trees: 1
+Fail:
+ cymules 4–7-flowered, the stalks ± 1 mm. long
+No. of trees: 2
+Success: 
+ pedicels 1–1.5 mm. long, glabrous
+No. of trees: 2
+Success: 
+ Flowers cream or yellow-green
+No. of trees: 2
+Fail:
+ outer sepals elliptic, inner oblate ± 1.8 mm. wide, glabrous or slightly pubescent
+No. of trees: 4
+Success: 
+ petals spathulate, 1 mm. long, the claw ciliate and scale covered with long hairs
+No. of trees: 32
+Success: 
+ disk lobed, glabrous
+No. of trees: 2
+Success: 
+ Stamens 2–2.5 mm. long, glabrous
+No. of trees: 2
+Success: 
+ staminodes 1.2 mm. long
+No. of trees: 2
+Fail:
+ Fruits green, of (1–)2–3 mericarps each subglobose, 5 mm. diameter, glabrous or with sparse hairs
+No. of trees: 6
+TAXON:  Sapindaceae Allophylus richardsiae
+Fail:
+ Plant is Shrub or small tree 2.5–7.5 m. tall
+No. of trees: 2
+Success: 
+ branchlets ferruginous pubescent
+No. of trees: 2
+Fail:
+ older ones purplish brown, ridged, lenticellate, ± glabrous
 No. of trees: 4
 Fail:
- aril present but often inconspicuous
+ Leaves trifoliolate
+No. of trees: 1
+Success: 
+ petiole 3–7 cm. long, ferruginous pubescent
+No. of trees: 4
+Fail:
+ leaflets discolorous, drying purplish brown above, elliptic, elliptic-oblong or ± obovate, 3.5–10 cm. long, 1.5–4.5 cm. wide, acuminate at the apex, cuneate at the base, shallowly crenate with upwardly directed teeth at tips of crenae, thin, ± adpressed pilose above, rather sparsely pilose to ± densely pubescent beneath with adpressed white hairs and tufts in the axils of the nerves and also along the nerves at secondary nerve junctions
+No. of trees: 18
+Fail:
+ lateral nerves in 8–10 pairs
+No. of trees: 2
+Success: 
+ Inflorescences slender, 5–13 cm. long, unbranched, pubescent
+No. of trees: 2
+Success: 
+ peduncles 4–5 cm. long
+No. of trees: 2
+Fail:
+ cymules 2–3-flowered, subsessile
+No. of trees: 2
+Success: 
+ pedicels 2–3 mm. long
+No. of trees: 2
+Success: 
+ Flowers white, cream or pale green
+No. of trees: 2
+Fail:
+ outer sepals 1.3 mm. long, 1.1 mm. wide, inner oblate, 1.5 mm. long, 2–2.5 mm. wide, ± glabrous
+No. of trees: 4
+Success: 
+ petals spathulate, 1.2 mm. long, 0.8 mm. wide, long-ciliate
+No. of trees: 6
+Fail:
+ Filaments 1–1.5 mm. long in male flowers, 0.8 mm. long in female
+No. of trees: 5
+Success: 
+ Ovary hairy
+No. of trees: 1
+Success: 
+ style 1.2 mm. long
+No. of trees: 2
+Success: 
+ Fruit subglobose or ellipsoid, 5–7 mm. long, 4–6 mm. wide, with sparse hairs
+No. of trees: 12
+TAXON:  Sapindaceae Allophylus rubifolius
+Fail:
+ Plant is Shrub or small to medium-sized tree 3–7(–12) m. tall, also occasionally described as a creeper
+No. of trees: 6
+Success: 
+ bark grey, smooth or rough
+No. of trees: 2
+Success: 
+ branchlets glabrous to sparsely pubescent or subtomentose
+No. of trees: 2
+Fail:
+ Leaves trifoliolate, mostly discolorous and drying deep or purplish brown above, grey-green beneath
+No. of trees: 4
+Success: 
+ petiole 0.8–5(–6.5) cm. long
+No. of trees: 2
+Fail:
+ leaflets elliptic, distinctly obovate or ± round, 1–10(–14) cm. long, 0.8–5.5(–8) cm. wide but predominantly small, emarginate to acute (mostly rather obtuse) at the apex, attenuate to cuneate at the base, shallowly crenate to irregularly dentate or serrate, glabrous to densely pubescent or velvety and often with conspicuous hair-tufts in nerve-axils beneath
+No. of trees: 11
+Fail:
+ indumentum usually greyish
+No. of trees: 1
+Fail:
+ Inflorescences usually unbranched, 2–18(–22) cm. long, but occasionally with a few branches 1–3(–12) cm. long
+No. of trees: 4
+Success: 
+ peduncles 1.2–5.5 cm. long
+No. of trees: 2
+Fail:
+ cymules 1–5-flowered, subsessile, usually closely placed, sometimes very dense
+No. of trees: 4
+Success: 
+ pedicels 1–2(–3) mm. long, pubescent or glabrous
+No. of trees: 4
+Success: 
+ Flowers green or yellowish white
+No. of trees: 4
+Fail:
+ outer sepals broadly elliptic, ± 1 mm. long and wide, inner ± round, 1 mm. long, 1–1.5 mm. wide
+No. of trees: 4
+Success: 
+ petals spathulate, 1 mm. long, 0.5 mm. wide
+No. of trees: 6
+Success: 
+ Filaments 1–2 mm. long, hairy at base
+No. of trees: 2
+Success: 
+ Style 1 mm. long, hairy
+No. of trees: 2
+Success: 
+ stigma 0.5 mm. long
+No. of trees: 2
+Fail:
+ Fruits orange to bright red, of 1–2 mericarps, each ellipsoid, obovoid or subglobose, 6–8 mm. long, 5–6 mm. wide, finely pilose
+No. of trees: 7
+TAXON:  Sapindaceae Allophylus sp.
+Fail:
+ Plant is Shrubto 1 m. tall
 No. of trees: 3
+Fail:
+ branchlets sparsely adpressed-pubescent but soon glabrous
+No. of trees: 3
+Success: 
+ Leaves drying pale green
+No. of trees: 3
+Success: 
+ petioles 2.5–6.5 mm. long, shortly pubescent
+No. of trees: 2
+Fail:
+ leaflets ovate, 5–11 cm. long, 3–6 cm. wide, acuminate at the apex, cuneate at the base, the laterals distinctly asymmetric, rather regularly shortly toothed, sparsely adpressed-pubescent becoming ± glabrous
+No. of trees: 10
+Success: 
+ Inflorescences 11–17 cm. long, with some branches held at ± right angles 2.5–4.5 cm. long
+No. of trees: 32
+Fail:
+ cymules few-flowered with stalks 2 mm. long
+No. of trees: 1
+Success: 
+ pedicels 3–5 mm. long
+No. of trees: 2
+TAXON:  Sapindaceae Allophylus tanzaniensis
+Fail:
+ Plant is Much-branched shrub or small tree, 1–5 m. tall
+No. of trees: 3
+Fail:
+ branches pale to medium brown with brown lenticels
+No. of trees: 3
+Success: 
+ youngest shoots pubescent, soon glabrous
+No. of trees: 1
+Fail:
+ Leaves drying pale green or ± darker above, trifoliolate
+No. of trees: 2
+Success: 
+ petiole (2–)5–9 cm. long, slender, puberulous or glabrous
+No. of trees: 4
+Fail:
+ petiolule of terminal leaflet 2–7 mm. long, of lateral 0–3 mm. long
+No. of trees: 6
+Fail:
+ leaflets discolorous, drying brown or brownish green above, subequal or laterals 1/2 to 4/5 length of the terminal one, elliptic or elliptic-oblong, (1.5–)5–9 cm. long,(0.9–)2.3–4.2 cm. wide, ± rounded to shortly obtusely acuminate at apex, terminal one cuneate at the base, laterals asymmetrically rounded, entire or crenate or toothed for upper 1/2 or 2/3, ± thin, glabrous or with few hairs on nerves beneath
+No. of trees: 19
+Fail:
+ hairy domatia sometimes present
+No. of trees: 2
+Fail:
+ lateral nerves in ± 7 pairs, rather inconspicuous
+No. of trees: 3
+Fail:
+ Inflorescences slender, (3–)8–12(–17) cm. long inclusive, unbranched or with 1–2 short branches, the axes quite glabrous, puberulous or in some specimens pubescent
+No. of trees: 9
+Fail:
+ cymules 3–9-flowered, somewhat spaced, subsessile
+No. of trees: 3
+Success: 
+ peduncles (1–)2.5–5.5 cm. long, pedicels 1–1.8 mm. long
+No. of trees: 8
+Success: 
+ Flowers white or yellow
+No. of trees: 2
+Success: 
+ sepals ± round, outer 1 mm. diameter, inner 1.2–1.5 mm. diameter
+No. of trees: 4
+Success: 
+ petals spathulate, 1 mm. long, 0.5–0.8 mm. wide, long white-ciliate at base
+No. of trees: 12
+Success: 
+ Filaments 1.5 mm. long, glabrous
+No. of trees: 2
+Success: 
+ Fruit red, globose, 5.5 mm. diameter
+No. of trees: 2
+TAXON:  Sapindaceae Allophylus vestitus
+Fail:
+ Plant is Small tree 3.6–4 mm. tall with young stems, leaves, petioles, inflorescences, fruits, etc. very densely covered with soft but ± bristle-like hairs up to 3 mm. long, spreading on the stems etc., but ± adpressed on the leaves
+No. of trees: 13
+Fail:
+ older stems grey or purplish brown, densely lenticellate, glabrescent
+No. of trees: 3
+Fail:
+ Leaves discolorous, ± thin, 3-foliolate but with lateral leaflets very much smaller than terminal one or virtually absent
+No. of trees: 7
+Success: 
+ petiole 4–6 cm. long
+No. of trees: 2
+Success: 
+ terminal petiolule 0.4–1.1 cm. long, lateral petiolules 0–1 mm. long
+No. of trees: 16
+Fail:
+ terminal leaflet elliptic or ovate-elliptic, 20–30 cm. long, 9–15 cm. wide, tapering to a narrow acute apex, cuneate at the base, irregularly serrate or crenate-serrate
+No. of trees: 7
+Fail:
+ lateral nerves in 9–15 pairs
+No. of trees: 2
+Success: 
+ lateral leaflets 1.5–4 cm. long, 0.5–2 cm. wide
+No. of trees: 6
+Fail:
+ Inflorescences unbranched, ± 6 cm. long, with closely placed 5–10-flowered sessile cymules, their persistent rhachises ± 1 mm. long, prominently scarred
+No. of trees: 9
+Fail:
+ peduncles up to ± 1 cm. long
+No. of trees: 3
+Success: 
+ Sepals up to 2 mm. long and wide, glabrous
+No. of trees: 3
+Success: 
+ Style 1 mm. long, hairy
+No. of trees: 2
+Fail:
+ stigma-branches 0.8 mm. long
+No. of trees: 2
+Success: 
+ Fruits subglobose, 8 mm. long, 6 mm. wide, spreading hairy
+No. of trees: 12

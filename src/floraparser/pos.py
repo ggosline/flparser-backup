@@ -53,6 +53,8 @@ class FlTagger():
         if ms:
             return ms.group('root'), ms.group('suffix')
 
+        return None
+
     def singularize(self, word):  # Using textblob Word here
         """
         :param word: str
@@ -123,7 +125,8 @@ class FlTagger():
             if (root[0],) in lexicon:  # xxx not handling synonym entries here !
                 le = lexicon[(root[0],)][0].copy()
                 le['H', 'mod'] = root[1]
-                return root, le[TYPE], [le], (root[0],)
+                #return root, le[TYPE], [le], (root[0],)
+                return root, le[TYPE], [le], (word,)
             if ('-' + root[0],) in lexicon:  # suffix
                 le = lexicon[('-' + root[0],)][0].copy()
                 le['H', 'mod'] = root[1]
