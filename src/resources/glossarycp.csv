@@ -796,6 +796,8 @@
 "833","A","dodeca_","prefix",,"Indicating presence of or constitution by twelve entities of the type denoted by the term's stem; as in  dodecandrous, dodecalocular, dodecastylous.","prefix",
 "834","A","dolabrate","shape",,"Like an axehead oriented cutting edge downward.  This term is not semantically distinct from dolabriform, but botanically they have had somewhat different applications.","shape",
 "835","A","dolabriform","shape",,"Elongate, basally terete, becoming strongly compressed toward an abruptly and unilaterally broader apex; like an axe (handle plus head).  This term is not semantically distinct from dolabrate, but botanically they have had somewhat different applications.","shape",
+"835","N","domatia","FEATURE",,,,
+"835","N","domatium","FEATURE",,,,
 "836","A","dome-shaped","shape",,"Convex overall, broadest at the base, and transversely more or less circular to elliptical throughout.","shape",
 "#","A","dorsal","insertion",,"On or pertaining to the side or portion of a lateral structure that faces (or would face) away from the bearing axis when (or if) the axis of the lateral structure is (or were) oriented in the same general direction as the bearing axis.","position","q"
 "838","A","dorsal","position",,"On or pertaining to the side or portion of a lateral structure that faces (or would face) away from the bearing axis when (or if) the axis of the lateral structure is (or were) oriented in the same general direction as the bearing axis.","position","q"
@@ -2279,6 +2281,7 @@
 "2355","N","sinuses","FEATURE",,"The space, indentation, or invagination (or, for some descriptive purposes, the outline thereof) between and delimiting any two consecutive or adjacent lobes or teeth of a structure.","FEATURE",
 "2356","A","six_","prefix",,"Indicating presence of or constitution by six entities of the type denoted by the term's stem; as in six-angled, six-sepaled, six-styled.","prefix",
 "2357","N","size","CHARACTER",,"Nature as to absolute or comparative extent in any one dimension or in area or volume.","CHARACTER",
+"2358","N","slash","FEATURE",,,,
 "2358","A","slashed","shape",,"Having relatively close, more or less straight lines of separation exending inward from the margin.  See also cleft (dissected, divided, lobate, lobed, parted, partite, segmented).","shape",
 "2359","A","slipper-shaped","shape",,"Relatively thin-walled with an essentially hollow interior that is open on one side at the broader end.","shape",
 "2360","A","small-beaked","shape",,"Diminutively beaked (rostrate).","shape",

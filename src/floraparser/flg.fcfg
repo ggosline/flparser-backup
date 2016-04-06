@@ -9,9 +9,10 @@ DESCRIPTION[subject=?s, chars=?charlist] -> SUBJECT[H=?s] CDELIM CHARLIST[H=?cha
 DESCRIPTION[subject=?s, chars=?charlist] -> SUBJECT[H=?s] COMMA CTERMINATOR
 # DESCRIPTION[subject=?s, chars=?charlist] -> SUBJECT[H=?s] CDELIM CHARLIST[H=?charlist] '$'
 
-SUBJN[H=[category=subject, orth=?o]] -> N[category='structure', H=[orth=?o]] |N[category='life-form', H=[orth=?o]] | N[category='feature', H=[orth=?o]] | N[category='CHARACTER', H=[orth=?o]] | N[category='structure-infl', H=[orth=?o]]
+SUBJN[H=[category=subject, orth=?o]] -> N[category='structure', H=[orth=?o]] | N[category='life-form', H=[orth=?o]] | N[category='feature', H=[orth=?o]] | N[category='CHARACTER', H=[orth=?o]] | N[category='structure-infl', H=[orth=?o]]
 
-SUBJN[H=[mod=(?m)]]  -> AP[H=?m] SUBJN[H=?head, +HD]
+SUBJN[H=[mod=(?m)]]      -> AP[H=?m] SUBJN[H=?head, +HD]
+SUBJN[H=[mod=(?m)]]      -> POSITION[H=?m] SUBJN[H=?head, +HD]
 SUBJN[H=[mod=(Absent)]]  -> NO SUBJN[H=?head, +HD]
 SUBJN[H=[*posit*=(?p)]]  -> SUBJN[H=?head, +HD] POSITION[H=?p]
 
