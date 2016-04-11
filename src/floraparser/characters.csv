@@ -1,3 +1,0 @@
-taxonNo,family,taxon,mainsubject,subject,subpart,category,value,mod,posit,phase,presence,start,end
-666,testfam,Test run,sepal,sepal,,subject,sepal,outer,,,,0,18
-666,testfam,Test run,sepal,sepal,,shape,round,,,,,13,18

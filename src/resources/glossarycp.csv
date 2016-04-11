@@ -133,6 +133,7 @@
 "137","A","antrorse","orientation",,"Directed forward or upward, toward the distal end of the context of reference, parallel or at an acute angle to the bearing structure.","orientation",
 "138","A","apetalous","architecture","flower, perianth","Lacking petals.","architecture",
 "139","N","apex","structure",,"Configuration of the uppermost, distal, or terminal portion of a structure, its extent determined somewhat subjectively in relation to the shape of the structure as a whole.  The concept of apex varies from one descriptive context to another, since the ap","shape",
+"139","N","tip","structure",,"Configuration of the uppermost, distal, or terminal portion of a structure, its extent determined somewhat subjectively in relation to the shape of the structure as a whole.  The concept of apex varies from one descriptive context to another, since the ap","shape",
 "140","N","apices","structure",,"Configuration of the uppermost, distal, or terminal portion of a structure, its extent determined somewhat subjectively in relation to the shape of the structure as a whole.  The concept of apex varies from one descriptive context to another, since the ap","CHARACTER",
 "141","A","aphyllous","architecture","plant, axis","Not bearing leaves.","architecture",
 "#","A","apical","insertion",,"At or very near the developmental end or tip (apex) of a structure.","position",

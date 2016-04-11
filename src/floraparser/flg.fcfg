@@ -32,8 +32,8 @@ CHR[category=?c,H=[stage=?st]]     -> CHRL[category=?c,+HD, H=?head] STAGE[H=?st
 
 #CHR[category=?c, H=[stage=?st]]        ->  CHR[category=?c, +HD, H=?head] STAGE[stage=?st]
 #CHR[category=?c, H=[subset=?st]]        ->  CHR[category=?c, +HD, H=?head] SUBSET[stage=?st]
-CHR[category=?c, H=[*posit*=(?p)]]      ->  CHRL[category=?c, +HD, H=?head] POSITION[H=?p]
-CHR[category=?c, H=[*posit*=(?p)]]      ->  POSITION[H=?p] CHRL[category=?c, +HD, H=?head]
+CHR[category=?c, H=[*posit*=(?p)]]      ->  CHRL[category=?c, +HD, H=?head] POSITION[H=?p, fix=post]
+CHR[category=?c, H=[*posit*=(?p)]]      ->  POSITION[H=?p, fix=pre] CHRL[category=?c, +HD, H=?head]
 
 CHR[category=?c] ->  APL[category=?c, +HD, H=?head]
 # CHR[category=?c] ->  AP[category=?c, +HD, H=?head]
@@ -81,7 +81,7 @@ SIZE[category=dimension, H=[category=dimension, num=?num, unit=?unit, dim=long, 
 SIZE[category=dimension, H=[AND=([category=dimension, num=?num1, dim=long, unit=?unit],[category=dimension, num=?num2, dim=wide, unit=?unit])]]  -> NUM[H=[orth=?num1]] BYX NUM[H=[orth=?num2]] UNIT[H=[orth=?unit]]
 
 SIZEB[category=dimension, H=[AND=(?h1+?h2)]]    -> SIZE[H=?h1] AND      SIZE[H=?h2]
-SIZEB[category=dimension, H=[AND=(?h1+?h2)]]    -> SIZE[H=?h1] COMMA    SIZE[H=?h2]
+# SIZEB[category=dimension, H=[AND=(?h1+?h2)]]    -> SIZE[H=?h1] COMMA    SIZE[H=?h2]
 SIZEB[category=dimension, H=[mod=?deg]]         -> [ DEG[H=[orth=?deg]] ] [ RANGE[H=[orth=?deg]] ] SIZE[H=?h1, +HD]
 SIZEB[category=dimension, H=[mod=(OR,?comp)]]   -> SIZEB[H=?h1, +HD] OR A[+*compar*, H=[orth=?comp]]
 
@@ -177,7 +177,7 @@ P[H=[orth=[OR=(?pa+?pb), +*position*]]] -> P[orth=?pa, +*position*] OR P[orth=?p
 
 PAREXP -> PUNC[punc='('] CHRL PUNC[punc=')']
 
-AND -> CONJ[conj=and]
+AND -> CONJ[conj=and] | CONJ[conj='and_also']
 OR  -> CONJ[conj=or]
 
 STAGE[] -> [P[prep='in']] A[category='life-stage', +HD, H=?head]
@@ -187,16 +187,17 @@ STAGE[] -> P[prep='at'] A[category='life-stage', +HD, H=?head]
 STAGE[] -> A[+*timing*, +HD, H=?head]
 STAGE[H=[mod=?deg]] -> DEG[H=?deg] STAGE[+HD, H=?head]
 
-A[category=position, H=[orth=?o, category=position], +*position*] -> P[H=[orth=?o], +*position*, +*adjectival*]
-A[category=position, H=[orth=?o, category=position], +*position*] -> POSITION[H=[*posit*=(?o)]]
-POSITION[H=[*posit*=(?o)]]                 -> P[prep=?p, H=[orth=?o], +*position*, +*adjectival*]
-POSITION[H=[*posit*=(?o), mod=(?prep,?m)]] -> P[prep=?prep, +*position*, -*adjectival*] NP[H=[-*group*, orth=?o, mod=?m]]
-POSITION[H=[*posit*=(?o), mod=(?prep,?m,of,?of)]] -> P[prep=?prep, +*position*, -*adjectival*] NP[H=[-*group*, +*position*, orth=?o, mod=?m]] OF NPL[H=?of]
-POSITION[H=[*posit*=(?o)]]                -> A[+*position*, H=[orth=?o]]
-POSITION[H=[*posit*=([orth=?o, mod=(?deg)])]]  -> DEG[H=[orth=?deg]] A[+*position*, H=[orth=?o]]
-POSITION[H=[AND=(?h1+?h2)]]               -> POSITION[H=?h1] AND POSITION[H=?h2]
-MOD[H=[*posit*=(?o)]]                     -> ART A[+*position*, H=[orth=?o]] 'ones'
-POSITION[H=[*posit*=('in the', ?p, ?f)]]  -> IN ART A[+*position*, H=[orth=?p]] FRACTIONAL[H=[orth=?f]]
+#A[category=position, H=[orth=?o, category=position], +*position*] -> P[H=[orth=?o], +*position*, +*adjectival*]
+#A[category=position, H=[orth=?o, category=position], +*position*] -> POSITION[H=[*posit*=(?o)]]
+POSITION[H=[*posit*=(?o)], fix=?fix]                -> A[+*position*, H=[orth=?o], category=position, fix=?fix]
+POSITION[H=[*posit*=(?o), mod=(?prep,?m)]]          -> P[prep=?prep, +*position*, -*adjectival*] NP[H=[-*group*, orth=?o, mod=?m]]
+POSITION[H=[*posit*=(?o), mod=(?prep,?m,of,?of)]]   -> P[prep=?prep, +*position*, -*adjectival*] NP[H=[-*group*, +*position*, orth=?o, mod=?m]] OF NPL[H=?of]
+#POSITION[H=[*posit*=(?o)]]                -> A[+*position*, H=[orth=?o]]
+POSITION[H=[*posit*=([orth=?o, mod=(?deg)])]]       -> DEG[H=[orth=?deg]] A[+*position*, H=[orth=?o]]
+POSITION[H=[AND=(?h1+?h2)]]                         -> POSITION[H=?h1] AND POSITION[H=?h2]
+MOD[H=[*posit*=(?o)]]                               -> ART A[+*position*, H=[orth=?o]] 'ones'
+POSITION[H=[*posit*=('in the', ?p, ?f)]]            -> IN ART A[+*position*, H=[orth=?p]] FRACTIONAL[H=[orth=?f]]
+P[prep='in', +*position*, -*adjectival*]            -> IN
 
 GROUPING[category=?c, H=[having=[+*group*, orth='grouping', clist=[mod=?mod, orth=?o, category=?c]]]] -> IN NP[category=?c, H=[+*group*, mod=?mod, orth=?o, category=?c]]
 

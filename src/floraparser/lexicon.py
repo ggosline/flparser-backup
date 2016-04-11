@@ -102,7 +102,7 @@ def pickle_lexicon():
                 if '-' in term:     # assume people may have left the dash out of terms (see colours)
                     addlexentry(term.replace('-','_'), POS, morefeatures)
 
-    COORDCONJUNCTION = 'and|or|and/or|neither|nor|otherwise|but|except|except_for|×|x'.split('|')
+    COORDCONJUNCTION = 'and|and_also|or|and/or|neither|nor|otherwise|but|except|except_for|×|x'.split('|')
     for word in COORDCONJUNCTION:
         addlexentry(word, 'CONJ', dict(conj=word, coord=True))
     SUBCONJUNCTION = 'but|for|yet|so|although|because|since|unless|if'.split('|')
@@ -118,17 +118,6 @@ def pickle_lexicon():
     addlexicon([','], 'COMMA', {})
     PRONOUN = 'it|one|ones|form|forms|part|parts'.split('|')
     addlexicon(PRONOUN, 'PRO', {})
-    # 'in' poosibly should be in following lists, but masks IN below
-    PREP_POSITION = 'at|among|amongst|around|at|between|beyond|by|' \
-                    'from|into|near|on|onto|out_of|over|through|throughout|toward|' \
-                    'outside|inside|between|before|after|behind|across|along|from|' \
-                    'towards|up'.split('|')
-    for word in PREP_POSITION:
-        addlexentry(word, 'P', {'prep':word, position:True, adjectival:False}) #, sem=read_expr(r'\x.' + word + '(x)'))
-    POSITIONADJ = 'outside|inside|above|below|beneath|within|throughout|upward'.split('|')
-    for word in POSITIONADJ:
-        addlexentry(word, 'P', {'prep':word, position:True, adjectival:True})
-        #addlexentry(word, 'P', prep=word, position=True, sem=read_expr(r'\x.' + word + '(x)'))
 
     # should 'on' be here?
     PREPOSITION = 'as|during|for|from|off|onto|out|over|per|through|throughout|' \
@@ -169,15 +158,33 @@ def pickle_lexicon():
     addlexicon(DIMENSION, 'DIM', {})
     RANGE = 'up_to|at_least|to|more_than|less_than|attaining'.split('|')
     addlexicon(RANGE, 'RANGE', {})
-    POSITIONA = 'upper|lower|under|uppermost|lowermost|superior|inferior|outer|inner|outermost|innermost|various'.split('|')
-                # 'above_and_beneath|at_the_apex|at_the_base|at_the_top|elsewhere'.split('|')
-    addlexicon(POSITIONA, 'A', {position:True, 'category':'position'})
 
-    POSITION = 'top|bottom|underside|base|apex|margin|edge|front|back|both_sides|under_surfaces|' \
-               'above_and_beneath|elsewhere|' \
+    POSITIONPRE = 'upper|lower|under|uppermost|lowermost|superior|inferior|outer|inner|outermost|innermost|various'.split('|')
+    addlexicon(POSITIONPRE, 'A', {position:True, 'category':'position', 'fix':'pre'})
+    POSITIONPOST = 'above_and_beneath|at_the_apex|at_the_base|at_the_top|elsewhere|' \
+                    'outside|inside|above|below|beneath|within|throughout|upward'.split('|')
+    addlexicon(POSITIONPOST, 'A', {position: True, 'category': 'position', 'fix':'post'})
+
+    POSITIONN = 'top|bottom|underside|base|apex|margin|edge|front|back|both_sides|under_surfaces|' \
+               'outside|inside|' \
                'upper_surfaces|both_surfaces|each_side|section|rest_of|junction'.split('|')
-    addlexicon(POSITION, 'N', {'category':'position'})
-    ACCURACY = "c.|about|more_or_less|±|exactly|almost|nearly".split('|')
+    addlexicon(POSITIONN, 'N', {'category':'position'})
+
+    # 'in' poosibly should be in following lists, but masks IN below
+    PREP_POSITION = 'at|among|amongst|around|at|between|beyond|by|' \
+                    'from|into|near|on|onto|out_of|over|through|throughout|toward|' \
+                    'outside|inside|between|before|after|behind|across|along|from|' \
+                    'towards|up'.split('|')
+    for word in PREP_POSITION:
+        addlexentry(word, 'P', {'prep':word, position:True, adjectival:False}) #, sem=read_expr(r'\x.' + word + '(x)'))
+
+    # POSITIONADJ = 'outside|inside|above|below|beneath|within|throughout|upward'.split('|')
+    # for word in POSITIONADJ:
+    #     addlexentry(word, 'P', {'prep':word, position:True, adjectival:True})
+        #addlexentry(word, 'P', prep=word, position=True, sem=read_expr(r'\x.' + word + '(x)'))
+
+
+    ACCURACY = "c.|about|more_or_less|±|exactly|almost|nearly|appearing".split('|')
     addlexicon(ACCURACY, 'DEG', dict(category='accuracy'))
     FREQUENCY = "very|a_little|not_much|sometimes|often|usually|rarely|more_rarely|more_often|generally|never|always|" \
                 "mostly|frequently|soon|also|even|especially|?".split('|')
@@ -200,7 +207,7 @@ def pickle_lexicon():
     addlexicon(TIMING, 'A', {timing:True})
     PRESENCE = "present|absent".split('|')
     addlexicon(PRESENCE, 'A', dict(category='presence'))
-    ISA = "is|is_a|consisting_of|of".split('|')
+    ISA = "is|is_a|consisting_of".split('|')
     addlexicon(ISA, 'IS', dict(category='ISA'))
     GERUND = "covering|closing|enveloping|surrounding|forming|terminating_in|dehiscing_by|dividing|" \
              "ending|varying_in|arranged_in|prolonged_beyond|alternating_with|" \

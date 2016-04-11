@@ -16,11 +16,12 @@ import ordered_set
 import logging
 logging.basicConfig(filename='flparse.log', filemode='w', level=logging.INFO)
 
-description = 'outer sepals round'
+description = 'leaflets discolorous, drying purplish brown above, elliptic, elliptic-oblong or ± obovate, 3.5–10 cm. long, 1.5–4.5 cm. wide, acuminate at the apex, cuneate at the base, shallowly crenate with upwardly directed teeth at tips of crenae, thin, ± adpressed pilose above, rather sparsely pilose to ± densely pubescent beneath with adpressed white hairs and tufts in the axils of the nerves and also along the nerves at secondary nerve junctions'
 # query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Salacia' ;"
 # query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Salacia' and species = 'bussei' ;"
 # query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Acacia' and species = 'albida'  ;"
-query="Select * from AllTaxa where flora_name = 'FTEA' and rank = 'species' and genus = 'Allophylus' ;"
+# query="Select * from AllTaxa where flora_name = 'FTEA' and rank = 'species' and genus = 'Allophylus' ;"
+query="Select * from AllTaxa where flora_name = 'FTEA' and rank = 'species' and family = 'Sapindaceae' ;"
 
 fromDB = True
 fromDB = False
@@ -35,7 +36,7 @@ cleantree = True
 ttrace = 1
 
 draw = False
-draw = True
+#draw = True
 
 trec = defaultdict(lambda: None)
 trec['taxonNo'] = 666
