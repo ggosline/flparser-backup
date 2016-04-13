@@ -78,6 +78,8 @@ def unify_heads(self, span, lhs, rhs):
     head_prod = [prod for prod in rhs if isinstance(prod, FeatStruct) and prod.has_key("HD")]  # should be just one
 
     if not head_prod:
+        if lhs.get('H'):
+            lhs['H'].span = span
         return
     rhead = head_prod[0]['H']
     rhead = remove_variables(rhead)

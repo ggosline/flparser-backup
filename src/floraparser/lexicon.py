@@ -198,7 +198,7 @@ def pickle_lexicon():
     addlexicon(COMPARISON, 'A', {compar:True, 'category':'compar'})
     COLOURCOMP = "paler|darker|lighter|duller|shinier".split('|')
     addlexicon(COLOURCOMP, 'A', {compar:True, 'category':'coloration'})
-    SIZECOMP = "shorter|longer|wider|narrower|bigger|smaller|higher".split('|')
+    SIZECOMP = "shorter|longer|wider|narrower|bigger|smaller|higher|larger".split('|')
     addlexicon(SIZECOMP, 'A', {compar:True, 'category':'size'})
     COMPADJ = "more|less|most|least".split('|')
     addlexicon(COMPADJ, 'ADV', {makecomp:True})
