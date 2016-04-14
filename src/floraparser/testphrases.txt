@@ -1,7 +1,7 @@
 TAXON:  Celastraceae Salacia bussei
 Fail:
  Plant is Shrubs, much branched, or shrublets with erect annual shoots from a woody ± creeping rootstock, 0·2–1 m. high (or higher and arborescent according to some collectors), sometimes forming colonies, without latex, glabrous
-No. of trees: 12
+No. of trees: 9
 Success: 
  stems subterete or ± flattened, almost smooth or striate, green at first, becoming purple-brown
 No. of trees: 1
@@ -10,7 +10,7 @@ Success:
 No. of trees: 2
 Fail:
  lamina bright green to olive-green, concolorous or rather paler green below, shining above or with both surfaces dull, (4·5)5·2–9·5(11) × (1·6)2–5·1(6·5) cm., elliptic or oblong-elliptic to obovate or oblanceolate, acute to obtuse or rounded and shortly apiculate at the apex, with margin entire or ± deeply curved-dentate, cuneate or decurrent at the base, papyraceous to coriaceous, with (6)7–8(9) lateral nerves and densely reticulate venation more prominent below than above
-No. of trees: 14
+No. of trees: 13
 Success: 
  petiole 1–4 mm. long, with entire margins
 No. of trees: 1
@@ -29,12 +29,12 @@ No. of trees: 1
 Success: 
  pedicels 5–30 mm. long, articulated in the lower 1/2
 No. of trees: 1
-Success: 
+Fail:
  bracts 0·5–1·5 mm. long, oblong to triangular, with margin entire to red-brown-scarious and denticulate, persistent
-No. of trees: 3
+No. of trees: 6
 Success: 
  Sepals pale green with narrow whitish scarious entire or denticulate margin, 1–1·5 mm. long, unequal or sub-equal, ovate to oblong or semicircular, rounded, free
-No. of trees: 15
+No. of trees: 3
 Success: 
  Petals pale green to yellowish, 4–7 mm. long, oblong to triangular, rounded, entire, united with the disk at the base
 No. of trees: 3

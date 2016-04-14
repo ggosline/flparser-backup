@@ -120,7 +120,7 @@ def pickle_lexicon():
     addlexicon(PRONOUN, 'PRO', {})
 
     # should 'on' be here?
-    PREPOSITION = 'as|during|for|from|off|onto|out|over|per|through|throughout|' \
+    PREPOSITION = 'as|during|for|off|onto|out|over|per|through|throughout|' \
                     'towards|up|upward|when|owing_to|due_to|according_to|on_account_of|' \
                     'united_with|joined_to|' \
                     'tipped_by|to_form|attached_to|immersed_in'.split('|')
