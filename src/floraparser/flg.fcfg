@@ -1,10 +1,11 @@
 
 Start -> DESCRIPTION
 
-CDELIM -> COMMA |
+CDELIM -> COMMA
 CBEGINNER -> '¢'
 CTERMINATOR -> COMMA | '$'
 
+DESCRIPTION[subject=?s, chars=?charlist] -> SUBJECT[H=?s] CHARLIST[H=?charlist]
 DESCRIPTION[subject=?s, chars=?charlist] -> SUBJECT[H=?s] CDELIM CHARLIST[H=?charlist]
 DESCRIPTION[subject=?s, chars=?charlist] -> SUBJECT[H=?s] COMMA CTERMINATOR
 # DESCRIPTION[subject=?s, chars=?charlist] -> SUBJECT[H=?s] CDELIM CHARLIST[H=?charlist] '$'
@@ -14,7 +15,7 @@ SUBJN[H=[category=subject, orth=?o]] -> N[category='structure', H=[orth=?o]] | N
 SUBJN[H=[mod=(?m)]]      -> AP[H=?m] SUBJN[H=?head, +HD]
 SUBJN[H=[mod=(?m)]]      -> POSITION[H=?m] SUBJN[H=?head, +HD]
 SUBJN[H=[mod=(Absent)]]  -> NO SUBJN[H=?head, +HD]
-SUBJN[H=[*posit*=(?p)]]  -> SUBJN[H=?head, +HD] POSITION[H=?p]
+SUBJN[H=[posit=(?p)]]  -> SUBJN[H=?head, +HD] POSITION[H=?p]
 
 SUBJN[H=[mod=(?of)]] -> SUBJN[H=?head, +HD] OFP[H=?of]
 SUBJECT[]            -> CBEGINNER SUBJN[H=?head, +HD]
@@ -32,8 +33,8 @@ CHR[category=?c,H=[stage=?st]]     -> CHRL[category=?c,+HD, H=?head] STAGE[H=?st
 
 #CHR[category=?c, H=[stage=?st]]        ->  CHR[category=?c, +HD, H=?head] STAGE[stage=?st]
 #CHR[category=?c, H=[subset=?st]]        ->  CHR[category=?c, +HD, H=?head] SUBSET[stage=?st]
-CHR[category=?c, H=[*posit*=(?p)]]      ->  CHRL[category=?c, +HD, H=?head] POSITION[H=?p, fix=post]
-CHR[category=?c, H=[*posit*=(?p)]]      ->  POSITION[H=?p, fix=pre] CHRL[category=?c, +HD, H=?head]
+CHR[category=?c, H=[posit=(?p)]]      ->  CHRL[category=?c, +HD, H=?head] POSITION[H=?p, fix=post]
+CHR[category=?c, H=[posit=(?p)]]      ->  POSITION[H=?p, fix=pre] CHRL[category=?c, +HD, H=?head]
 
 CHR[category=?c] ->  AP[category=?c, +HD, H=?head]
 # CHR[category=?c] ->  AP[category=?c, +HD, H=?head]
@@ -51,7 +52,7 @@ CHR[category=dimension]   ->  SIZEB[+HD, H=?head]
 
 CHRL[category=?c, H=?h]                   ->  CHR[H=?h, category=?c]
 CHRL[category=(?c+?d), H=[AND=(?ha+?hb)]] ->  CHR[H=?ha, category=?c] AND CHRL[H=?hb, category=?d]
-CHR[category=?c, H=[TO=(?ha+?hb)]] ->  CHR[H=?ha, category=?c] TO CHR[H=?hb, category=?c]
+#CHR[category=?c, H=[TO=(?ha+?hb)]] ->  CHR[H=?ha, category=?c] TO CHR[H=?hb, category=?c]
 
 NL[category=?c, H=[orth=(?o+?ol), mod=(?o)]]    -> NL[H=[orth = ?o]] N[category=?c, H=[orth=?ol]]
 NL[category=?c]                                 -> N[*position*=?p, category=?c, *group*=?g, H=?head, +HD]
@@ -60,7 +61,7 @@ NBAR[category=?c, H=[mod=(?m)]]     -> AP[H=?m] NL[category=?c, +HD, H=?head]
 NBAR[category=?c]                   -> NL[category=?c, +HD, H=?head]
 NBAR[category=?c, H=[mod=(?of)]]    -> NBAR[category=?c, +HD, H=?head] OFP[H=?of]
 #NBAR[category=?c, H=[mod=(?prep)]]  -> NBAR[category=?c, +HD, H=?head] PP[H=?prep]
-NBAR[category=?c, H=[mod=(?prep)]]  -> NBAR[category=?c, +HD, H=?head] AP[H=?prep]
+#NBAR[category=?c, H=[mod=(?prep)]]  -> NBAR[category=?c, +HD, H=?head] AP[H=?prep]
 
 NBAR[category=?c]                   -> NBAR[category=?c, +HD, H=?head] PAREXP
 NBAR[category=pro, H=[category=pro]] -> PRO[H=?h, +HD]
@@ -104,7 +105,7 @@ ADVB[+comp, category=adv, H=[orth=?o, mod=(?c)]] -> A[+*makecomp*, H=[orth=?c]] 
 
 MOD[]                  -> ADVB[+HD, H=?head]
 MOD[]                  -> DEG[+HD, H=?head]
-AP[H=?count]           -> COUNT[H=?count]
+A[category=count]      -> COUNT[+HD, H=?count]
 
 MODL[H=[AND=(?ma+?mb)]] -> MOD[H=?ma] MODL[H=?mb]
 MODL[H=?ma]             -> MOD[H=?ma]
@@ -188,16 +189,16 @@ STAGE[] -> A[+*timing*, +HD, H=?head]
 STAGE[H=[mod=?deg]] -> DEG[H=?deg] STAGE[+HD, H=?head]
 
 #A[category=position, H=[orth=?o, category=position], +*position*] -> P[H=[orth=?o], +*position*, +*adjectival*]
-#A[category=position, H=[orth=?o, category=position], +*position*] -> POSITION[H=[*posit*=(?o)]]
-POSITION[H=[*posit*=(?o)], fix=?fix]                -> A[+*position*, H=[orth=?o], category=position, fix=?fix]
-POSITION[H=[*posit*=(?o), mod=(?prep,?m)], fix=post]          -> P[prep=?prep, +*position*, -*adjectival*] NP[H=[-*group*, orth=?o, mod=?m]]
-POSITION[H=[*posit*=(?o), mod=(?prep,?m,of,?of)], fix=post]   -> P[prep=?prep, +*position*, -*adjectival*] NP[H=[-*group*, +*position*, orth=?o, mod=?m]] OF NPL[H=?of]
-#POSITION[H=[*posit*=(?o)]]                -> A[+*position*, H=[orth=?o]]
-POSITION[H=[*posit*=([orth=?o, mod=(?deg)])], fix=?fix]       -> DEG[H=[orth=?deg]] A[+*position*, H=[orth=?o], fix=?fix]
+#A[category=position, H=[orth=?o, category=position], +*position*] -> POSITION[H=[posit=(?o)]]
+POSITION[H=[posit=(?o)], fix=?fix]                          -> A[+*position*, H=[orth=?o], category=position, fix=?fix]
+POSITION[H=[posit=(?o), mod=(?prep,?m)], fix=post]          -> P[prep=?prep, +*position*, -*adjectival*] NP[H=[-*group*, orth=?o, mod=?m]]
+POSITION[H=[posit=(?o), mod=(?prep,?m,of,?of)], fix=post]   -> P[prep=?prep, +*position*, -*adjectival*] NP[H=[-*group*, +*position*, orth=?o, mod=?m]] OF NPL[H=?of]
+#POSITION[H=[posit=(?o)]]                -> A[+*position*, H=[orth=?o]]
+POSITION[H=[posit=([orth=?o, mod=(?deg)])], fix=?fix]       -> DEG[H=[orth=?deg]] A[+*position*, H=[orth=?o], fix=?fix]
 POSITION[H=[AND=(?h1+?h2)], fix=?fix]                         -> POSITION[H=?h1, fix=?fix] AND POSITION[H=?h2]
 POSITION[H=[AND=(?h1+?h2)], fix=?fix]                         -> POSITION[H=?h1, fix=?fix] POSITION[H=?h2]
-MOD[H=[*posit*=(?o)]]                               -> ART A[+*position*, H=[orth=?o]] 'ones'
-POSITION[H=[*posit*=('in the', ?p, ?f)], fix=post]            -> IN ART A[+*position*, H=[orth=?p]] FRACTIONAL[H=[orth=?f]]
+MOD[H=[posit=(?o)]]                                         -> ART A[+*position*, H=[orth=?o]] 'ones'
+POSITION[H=[posit=('in the', ?p, ?f)], fix=post]            -> IN ART A[+*position*, H=[orth=?p]] FRACTIONAL[H=[orth=?f]]
 P[prep='in', +*position*, -*adjectival*]            -> IN
 
 GROUPING[category=?c, H=[having=[+*group*, orth='grouping', clist=[mod=?mod, orth=?o, category=?c]]]] -> IN NP[category=?c, H=[+*group*, mod=?mod, orth=?o, category=?c]]

@@ -17,7 +17,7 @@ multiwords = {}
 # Our features with default values (usually False)
 position =  Feature('position', default=False)
 timing   =  Feature('timing', default=False)
-posit    =  Feature('posit', default='')
+# posit    =  Feature('posit', default='')
 makecomp =  Feature('makecomp', default=False)
 compar   =  Feature('compar', default=False)
 adjectival   = Feature('adjectival', default=False)
@@ -25,7 +25,7 @@ counted      = Feature('counted', default=False)
 conditional  = Feature('conditional', default=False)
 group        = Feature('group', default=False)    # nouns
 
-defaultfeatures = (position, timing, posit, makecomp, compar, adjectival, counted, conditional, group)
+defaultfeatures = (position, timing, makecomp, compar, adjectival, counted, conditional, group)
 
 def pickle_lexicon():
 
@@ -102,7 +102,7 @@ def pickle_lexicon():
                 if '-' in term:     # assume people may have left the dash out of terms (see colours)
                     addlexentry(term.replace('-','_'), POS, morefeatures)
 
-    COORDCONJUNCTION = 'and|and_also|or|and/or|neither|nor|otherwise|but|except|except_for|×|x'.split('|')
+    COORDCONJUNCTION = 'and|and_also|or|and/or|neither|nor|otherwise|but|×|x'.split('|')
     for word in COORDCONJUNCTION:
         addlexentry(word, 'CONJ', dict(conj=word, coord=True))
     SUBCONJUNCTION = 'but|for|yet|so|although|because|since|unless|if'.split('|')
@@ -123,7 +123,8 @@ def pickle_lexicon():
     PREPOSITION = 'as|during|for|off|onto|out|over|per|through|throughout|' \
                     'towards|up|upward|when|owing_to|due_to|according_to|on_account_of|' \
                     'united_with|joined_to|' \
-                    'tipped_by|to_form|attached_to|immersed_in'.split('|')
+                    'tipped_by|to_form|attached_to|immersed_in|' \
+                    'except|except_for|save_for'.split('|')
     for word in PREPOSITION:
         addlexentry(word, 'P', dict(prep=word)) #, sem=read_expr(r'\x.' + word + '(x)'))
 
@@ -148,7 +149,7 @@ def pickle_lexicon():
                  "fifths|sixths|sevenths|eighths|ninths|tenths" \
                  "|1/2|1/3|2/3|1/4|1/5|2/5|3/5|4/5".split('|')
     addlexicon(FRACTIONS, 'FRACTION', {})
-    ORDNUMBERS = "principal|primary|secondary|tertiary|1st|2nd|3rd|first|second|third|fourth|fifth|sixth|seventh|eigth|ninth|tenth".split(
+    ORDNUMBERS = "principal|main|primary|secondary|tertiary|1st|2nd|3rd|first|second|third|fourth|fifth|sixth|seventh|eigth|ninth|tenth".split(
         '|')
     addlexicon(ORDNUMBERS, 'A', dict(ordinal=True))
     UNITS = "mm.|cm.|dm.|m.|km.|in.|ft.|mm|cm|dm|m|km".split('|')

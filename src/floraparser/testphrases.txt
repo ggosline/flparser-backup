@@ -1,61 +1,930 @@
-TAXON:  Celastraceae Salacia bussei
+TAXON:  Sapindaceae Allophylus abyssinicus
 Fail:
- Plant is Shrubs, much branched, or shrublets with erect annual shoots from a woody ± creeping rootstock, 0·2–1 m. high (or higher and arborescent according to some collectors), sometimes forming colonies, without latex, glabrous
+ Plant is Medium to fairly large tree, rarely shrubby, (4.5–)6–21(–25) m. tall and with slender bole 30–90 cm. diameter, sometimes slightly buttressed at the base (e.g. in Chyulu Hills)
+No. of trees: 4
+Success: 
+ crown dark green, open to dense, irregular or rounded
+No. of trees: 1
+Fail:
+ bark grey or greyish white, smooth or slightly rough or granular, sometimes peeling in small to large flakes
+No. of trees: 4
+Fail:
+ slash pale brownish pink or pale orange darkening to reddish brown and smelling of pepper, also described ( <i>Ede</i> 1,T7) as off-white with pinky brown green-edged lines
+No. of trees: 4
+Success: 
+ sapwood white
+No. of trees: 1
+Success: 
+ young branches minutely ferruginous tomentellous and densely lenticellate
+No. of trees: 1
+Fail:
+ Leaves trifoliolate, drying dull and dark above, thinly coriaceous
+No. of trees: 2
+Fail:
+ petiole 2.5–10.5 mm. long, minutely tomentellous or less often more distinctly pubescent
+No. of trees: 3
+Fail:
+ leaflets elliptic to obovate, (2.8–)5.5–21 cm. long, (1.2–)3–11 cm. wide, acute to acuminate at the apex, attenuate to cuneate at the base, shallowly crenulate to toothed, adpressed velvety pilose when very young, later glabrescent or glabrous to minutely puberulous, less often pubescent
+No. of trees: 10
+Fail:
+ tufts of hairs in axils of nerves and veins usually conspicuous beneath
+No. of trees: 6
+Fail:
+ Inflorescences 5–22 cm. long, with 2–10 branches, some again branched, usually finely tomentose
+No. of trees: 5
+Fail:
+ cymules subsessile
+No. of trees: 1
+Success: 
+ pedicels 1–3 mm. long
+No. of trees: 1
+Fail:
+ Flowers said to be lily-scented or scentless
+No. of trees: 2
+Success: 
+ outer sepals elliptic, 1.2–1.5 mm. long, 1 mm. wide, puberulous, inner elliptic to round, 1.5–2 mm. long, 1.5 mm. wide
+No. of trees: 1
+Success: 
+ petals dirty white or yellowish, 1.5 mm. long, 1 mm. wide
+No. of trees: 1
+Success: 
+ Filaments 2–3 mm. long, glabrous
+No. of trees: 1
+Success: 
+ Style 2–3 mm. long, ± glabrous
+No. of trees: 1
+Success: 
+ stigma 1–1.5 mm. long
+No. of trees: 1
+Success: 
+ Fruit red or orange, subglobose, oblong or elliptic, 6–8 mm. long and wide, with very sparse hairs
+No. of trees: 1
+Success: 
+ Seed ellipsoid, 5–5.5 mm. long, 5.5–6 mm. wide
+No. of trees: 1
+TAXON:  Sapindaceae Allophylus africanus
+Success: 
+ Plant is Shrub or tree (2–)4.5–10 m. tall, with heavy spreading crown
+No. of trees: 1
+Success: 
+ bark black or grey to reddish, smooth or rough
+No. of trees: 1
+Fail:
+ slash yellow with pink tinge
+No. of trees: 2
+Success: 
+ branchlets ± glabrous to puberulous or pubescent, lenticellate
+No. of trees: 1
+Fail:
+ Leaves trifoliolate, typically ± glabrous but hairy in variety, very discolorous, when glabrous dark and shiny above
+No. of trees: 4
+Fail:
+ leaflets narrowly elliptic to elliptic, 2–14.5 cm. long, 1–7 cm. wide, rounded to acuminate at the apex, attenuate to cuneate at the base, subentire to crenate or coarsely and irregularly dentate, subcoriaceous, sometimes with hairy domatia beneath
 No. of trees: 9
 Success: 
- stems subterete or ± flattened, almost smooth or striate, green at first, becoming purple-brown
+ petiole (1–)2–7.5 cm. long
+No. of trees: 1
+Fail:
+ Inflorescences 4.5–15 cm. long, unbranched or usually with 1–6 branches, usually pale fulvous pubescent
+No. of trees: 4
+Fail:
+ cymules subsessile
 No. of trees: 1
 Success: 
- Leaves alternate or the upper ones subopposite or opposite, petiolate
+ pedicels (0.5–)1.5–2 mm. long, often glabrous
+No. of trees: 1
+Success: 
+ Flowers white, greenish white or yellowish green, scented
+No. of trees: 1
+Success: 
+ outer sepals broadly elliptic, ± 1 mm. long and wide, inner oblate, 1 mm. long, 1–1.5 mm. wide, ± glabrous
+No. of trees: 1
+Success: 
+ petal spathulate, 1 mm. long, 0.5 mm. wide
+No. of trees: 1
+Success: 
+ Filaments ± 2 mm. long, hairy at base
+No. of trees: 1
+Success: 
+ Style 1 mm. long, hairy
+No. of trees: 1
+Success: 
+ stigma 0.5 mm. long
+No. of trees: 1
+Success: 
+ Fruit ellipsoid, 5–7 mm. long, 4–4.5 mm. wide, very sparsely hairy
+No. of trees: 1
+Success: 
+ Seed ellipsoid, 5.5–6 mm. long, 4.5 mm. wide
+No. of trees: 1
+TAXON:  Sapindaceae Allophylus chaunostachys
+Fail:
+ Plant is Shrub, often straggling or scrambling or a distinct climber, less often a small tree (see note), (0.6–)1.5–4.5(–6) m. tall or long
+No. of trees: 5
+Fail:
+ stems very lenticellate, pubescent when young then glabrescent or ferruginous velvety
+No. of trees: 3
+Fail:
+ Leaves trifoliolate
+No. of trees: 1
+Success: 
+ petiole 2–7 cm. long, glabrous to densely pubescent
+No. of trees: 1
+Fail:
+ petiolules 0.2–1.5 cm. long or lateral leaflets often ± sessile
 No. of trees: 2
 Fail:
- lamina bright green to olive-green, concolorous or rather paler green below, shining above or with both surfaces dull, (4·5)5·2–9·5(11) × (1·6)2–5·1(6·5) cm., elliptic or oblong-elliptic to obovate or oblanceolate, acute to obtuse or rounded and shortly apiculate at the apex, with margin entire or ± deeply curved-dentate, cuneate or decurrent at the base, papyraceous to coriaceous, with (6)7–8(9) lateral nerves and densely reticulate venation more prominent below than above
-No. of trees: 13
+ leaflets very discolorous, drying leaden grey above with the venation yellow and pale greenish or often bright brownish beneath, elliptic, oblong, rhombic or narrowly oblanceolate, 4–15.5 cm. long, 2–6 cm. wide, acute or acuminate at the apex, cuneate at the base, the laterals mostly very asymmetric, subentire to ± remotely serrate, crenate-serrate or coarsely serrate, glabrous to densely almost velvety ferruginous hairy and with tufts of hairs in axes of lateral nerves beneath
+No. of trees: 14
+Fail:
+ lateral nerves in 8–10 pairs, venation raised and reticulate above (impressed in life <i>fide</i> Milne-Redhead & Taylor) and strongly so beneath
+No. of trees: 4
 Success: 
- petiole 1–4 mm. long, with entire margins
+ Inflorescences unbranched or rarely branched, 5–17(–24) cm. long, including peduncle 1–8 cm. long, glabrous or spreading pubescent, the 1–few-flowered cymules usually well spaced
 No. of trees: 1
-Success: 
- stipules absent
+Fail:
+ cymule stalk and rhachis 0.5–1 mm. long, pedicels 1–3 mm. long
 No. of trees: 2
-Success: 
- Flowers (1–2)3–15 in axillary dichasial or subumbellate cymes, bisexual, 12–15 mm. in diam.
-No. of trees: 1
-Success: 
- buds 3–4 mm. long, ovoid-conic
-No. of trees: 1
-Success: 
- peduncle 1–9(15) mm. long
-No. of trees: 1
-Success: 
- pedicels 5–30 mm. long, articulated in the lower 1/2
-No. of trees: 1
 Fail:
- bracts 0·5–1·5 mm. long, oblong to triangular, with margin entire to red-brown-scarious and denticulate, persistent
-No. of trees: 6
-Success: 
- Sepals pale green with narrow whitish scarious entire or denticulate margin, 1–1·5 mm. long, unequal or sub-equal, ovate to oblong or semicircular, rounded, free
-No. of trees: 3
-Success: 
- Petals pale green to yellowish, 4–7 mm. long, oblong to triangular, rounded, entire, united with the disk at the base
-No. of trees: 3
+ Flowers usually ± large for the genus
+No. of trees: 2
 Fail:
- Disk dark to pale or yellowish green, shortly cylindric, round the bases of stamens and ovary, with margin broad and flat or concave, shallowly and ± irregularly 5-lobed
+ outer sepals elliptic, 1.5 mm. long, 1 mm. wide, inner subcircular 1.5–1.8 mm. long, 1.5–3 mm. wide, glabrous or slightly pubescent
 No. of trees: 7
 Success: 
- Stamens 3, with filaments up to 3 mm. long, slender, ± flattened
+ petals white or greenish yellow, spathulate, 1.5 mm. long, 1 mm. wide
+No. of trees: 1
+Success: 
+ Filaments 1.8 mm. long
+No. of trees: 1
+Success: 
+ staminodes 0.5 mm. long
+No. of trees: 1
+Success: 
+ Ovary 2-lobed, pubescent
+No. of trees: 2
+Success: 
+ style 2 mm. long
+No. of trees: 1
+Fail:
+ Fruits yellow or red, of 1–2 mericarps, each subglobose or obovoid, 6–6.5 mm. long, 5 mm. wide, minutely pubescent or glabrous
+No. of trees: 7
+TAXON:  Sapindaceae Allophylus chirindensis
+Success: 
+ Plant is Much-branched shrub or tree 3–15 m. tall
+No. of trees: 1
+Success: 
+ bark silvery grey
+No. of trees: 1
+Success: 
+ branchlets pale greyish, lenticellate, glabrous
+No. of trees: 2
+Success: 
+ Leaves trifoliate
+No. of trees: 1
+Success: 
+ petiole 3–16 cm. long, grooved, glabrous or minutely puberulous
+No. of trees: 1
+Success: 
+ petiolule of terminal leaflet 1.2–2 cm. long
+No. of trees: 1
+Fail:
+ leaflets drying pale bright green, elliptic or elliptic-oblong, 9–19.5 cm. long, 3.5–9 cm. wide, rounded to acuminate at the apex, narrowly cuneate at the base, subentire, coarsely undulate-crenate and shortly denticulate (the teeth hydathodes) or serrate, thin, glabrous or minutely puberulent on nerves beneath with white hairs and sometimes with tufts in the nerve axils beneath
+No. of trees: 11
+Success: 
+ lateral nerves in 7–13 pairs
+No. of trees: 2
+Success: 
+ Inflorescences up to 28 cm. long, much branched, the branches 10–14 cm. long, glabrous or sparsely white-puberulous
+No. of trees: 1
+Success: 
+ peduncle 14–20 cm. long
+No. of trees: 1
+Fail:
+ cymules few-flowered, sessile
+No. of trees: 2
+Success: 
+ pedicels 3–4 mm. long, glabrous
+No. of trees: 1
+Success: 
+ Flowers white or yellow
+No. of trees: 1
+Success: 
+ outer sepals round, 1.8 mm.diameter, inner elliptic, 1.8 mm. long, 1 mm. wide, glabrous
+No. of trees: 1
+Success: 
+ petals spathulate, 1.5 mm. long, 1 mm. wide, with hairy scale
+No. of trees: 1
+Success: 
+ Filaments 2 mm. long
+No. of trees: 1
+Success: 
+ staminodes in female flowers 0.6 mm. long
+No. of trees: 1
+Success: 
+ Ovary 2-lobed, minutely pubescent
+No. of trees: 2
+Success: 
+ style 1.5 mm. long
+No. of trees: 1
+Fail:
+ Fruit red, subglobose, 7 mm. in diameter, minutely puberulous when young or ± glabrous
+No. of trees: 5
+TAXON:  Sapindaceae Allophylus congolanus
+Success: 
+ Plant is Slender several-stemmed erect scrambling or ± scandent shrub or small tree, 1.5–6 m. tall, monoecious ( <i>fide</i> Hauman)
+No. of trees: 2
+Success: 
+ bark grey-brown or purplish black, smooth, conspicuously lenticellate
+No. of trees: 4
+Success: 
+ branchlets ferruginous-velvety-tomentose
+No. of trees: 1
+Fail:
+ Leaves 1-foliolate or 3-foliolate with lateral leaflets very­ much reduced
+No. of trees: 2
+Success: 
+ petiole 2–4(–7) mm. long, ferruginous-tomentose
+No. of trees: 1
+Success: 
+ petiolules up to 2 mm. long
+No. of trees: 1
+Fail:
+ terminal leaflet elliptic or obovate-elliptic, 5–17.5 cm. long, 3–10.5 cm. wide, acute, subacuminate or obtuse at the apex, cuneate to rounded at the base, serrulate or crenulate-serrulate, velvety-tomentose on both surfaces or eventually pilose or pubescent above
+No. of trees: 9
+Success: 
+ lateral nerves in 8–12 pairs
+No. of trees: 2
+Success: 
+ lateral leaflets ± rounded, 1–3 cm. long and wide
+No. of trees: 3
+Fail:
+ Inflorescences slender, unbranched, 6–20 cm. long, including 2–6 cm. long peduncle
+No. of trees: 5
+Success: 
+ flowers several in subsessile glomerules
+No. of trees: 2
+Success: 
+ pedicels up to 1.5 mm. long, pubescent
+No. of trees: 1
+Success: 
+ Sepals yellow-green
+No. of trees: 1
+Fail:
+ outer ± round, 1.1 mm. long, 1 mm. wide, pubescent
+No. of trees: 4
+Fail:
+ inner 1 mm. long, 0.7 mm. wide pubescent
+No. of trees: 2
+Success: 
+ petals white, spathulate, 1.2 mm. long, 0.5 mm. wide
+No. of trees: 1
+Success: 
+ Filaments 1.5 mm. long
+No. of trees: 1
+Fail:
+ ovary 1.5 mm. long hairy
+No. of trees: 2
+Success: 
+ styles greenish white, 1.5 mm. long
+No. of trees: 1
+Fail:
+ Fruits green becoming orange then bright orange-vermilion, of 1–2 mericarps, each globose, 7 mm. diameter, sparsely pubescent
+No. of trees: 6
+TAXON:  Sapindaceae Allophylus delicatulus
+Success: 
+ Plant is Shrub 2–4 m. tall, almost glabrous
+No. of trees: 1
+Success: 
+ bark pale grey or brownish grey
+No. of trees: 4
+Fail:
+ Leaves trifoliolate
+No. of trees: 1
+Success: 
+ petiole 3–6.5 cm. long, grooved, slightly pubescent at apex of junction of leaflets
+No. of trees: 4
+Success: 
+ petiolules ± absent, the lamina bases decurrent
+No. of trees: 4
+Fail:
+ leaflets drying bright green, elliptic or oblong-elliptic, 4–11 cm. long, 1.3–4 cm. wide, narrowly acutely acuminate at the apex, narrowly cuneate at the base, thin, serrate except at base, virtually glabrous
+No. of trees: 10
+Success: 
+ reticulation not raised, lateral nerves in 8–11 pairs
+No. of trees: 1
+Success: 
+ Inflorescences very slender, up to 16 cm. long, branched, the side branches few, ± 4 cm. long
+No. of trees: 1
+Success: 
+ peduncle up to 8 cm. long
+No. of trees: 1
+Fail:
+ cymule bases 0.5–3 mm. long, slender, 1–2-flowered
+No. of trees: 3
+Success: 
+ pedicels very slender, 2–2.5 mm. long
+No. of trees: 1
+Fail:
+ all axes virtually glabrous or micropuberulous
+No. of trees: 1
+Success: 
+ Outer sepals oblate, 1 mm. long, 1.8 mm. wide, glabrous or with few small marginal hairs
+No. of trees: 2
+Success: 
+ inner sepals round, convex, ± 1 mm. long and wide, petals obovate, 1 mm. long, the scale densely hairy
+No. of trees: 1
+Success: 
+ Filaments 1 mm. long, hairy at base
+No. of trees: 1
+Success: 
+ anthers 0.5 mm. long
+No. of trees: 1
+Success: 
+ Fruit not seen
+No. of trees: 1
+TAXON:  Sapindaceae Allophylus dummeri
+Success: 
+ Plant is Shrub or spreading tree 2.5–9 m. tall
+No. of trees: 1
+Success: 
+ branches glabrous, lenticellate
+No. of trees: 1
+Success: 
+ slash red-brown exuding off-white sap
+No. of trees: 1
+Fail:
+ Leaves trifoliolate, drying bright green
+No. of trees: 2
+Success: 
+ petiole 4–14 cm. long
+No. of trees: 1
+Fail:
+ leaflets elliptic, elliptic-oblong or elliptic-obovate, 7.5–25 cm. long, 4–10.5 cm. wide, acuminate at the apex, cuneate at the base, entire or remotely coarsely serrate, thin to slightly thick, glabrous or with indistinct hairy domatia in nerve-axils beneath
+No. of trees: 10
+Success: 
+ lateral nerves in 5–12 pairs, venation fine and closely reticulate, raised on both sides
+No. of trees: 6
+Success: 
+ Inflorescence rather robust, 6–24.5 cm. long, including peduncles 5–8.5 cm. long, with 3–4 main branches
+No. of trees: 2
+Success: 
+ axes with short ferruginous pubescence, cymules 3–6-flowered, mostly densely placed
+No. of trees: 1
+Success: 
+ Flowers cream, white or greenish
+No. of trees: 1
+Success: 
+ calyx sparsely pubescent
+No. of trees: 1
+Success: 
+ outer sepals round, 1 mm. diameter
+No. of trees: 1
+Fail:
+ inner oblate, 2 mm. long and wide
+No. of trees: 2
+Success: 
+ petals spathulate, 2 mm. long, 0.8 mm. wide, ciliate
+No. of trees: 1
+Fail:
+ Fruits orange-yellow to red-brown, globose, ± 6 mm. diameter, with very sparse adpressed hairs or glabrous
+No. of trees: 5
+TAXON:  Sapindaceae Allophylus ferrugineus
+Fail:
+ Plant is Tree or shrub or sometimes a climber or creeper 0.9–9 m. long or tall, monoecious
+No. of trees: 3
+Success: 
+ bark grey, brown or reddish, smooth
+No. of trees: 2
+Success: 
+ slash white
+No. of trees: 1
+Success: 
+ young branchlets pubescent
+No. of trees: 1
+Fail:
+ Leaves trifoliolate
+No. of trees: 1
+Success: 
+ petiole (1–)2–10 cm. long
+No. of trees: 1
+Success: 
+ petiolule of terminal leaflet often well developed, 0.8–1.3(–2) cm. long
+No. of trees: 1
+Fail:
+ leaflets drying bright green, elliptic, ovate-oblong, rhomboid, obovate or oblanceolate, (2.5–) 6–22 cm. long, (0.9–)2.5–11 cm. wide, acute to acuminate at the apex, attenuate to cuneate at the base, the laterals very asymmetric, regularly toothed or serrate, glabrous, pubescent, ferruginous hairy or velvety, with or without hairy domatia in the axils of nerves beneath
+No. of trees: 16
+Success: 
+ lateral nerves in 5–10 pairs
 No. of trees: 2
 Fail:
- anthers pale to orange-yellow, dehiscing by 2 oblique or almost vertical clefts not confluent at the apex
+ Inflorescences (3.5–)7.5–34(–47) cm. long (see note), usually unbranched, often slender and drooping
+No. of trees: 4
+Success: 
+ peduncles 1.5–5 cm. long
+No. of trees: 1
+Fail:
+ cymules 1–6-flowered, the stalks 1.5–5 mm. long, usually well-spaced
 No. of trees: 3
 Success: 
- Ovary ovoid-3-gonous or 3-lobed, with style narrow, elongated
+ pedicels 1.5–3(–5) mm. long, minutely puberulous
+No. of trees: 1
+Success: 
+ Flowers green, white, greenish white or yellow
+No. of trees: 1
+Success: 
+ outer sepals elliptic, 1–1.5 mm. long, 1 mm. wide, sparsely puberulous, inner ± round, 1.5–2 mm. diameter
+No. of trees: 1
+Success: 
+ petals spathulate, 2 mm. long, 1 mm. wide
+No. of trees: 1
+Fail:
+ Filaments ± 2 mm. long, hairy in basal half
+No. of trees: 2
+Success: 
+ Style ± 1 mm. long, with few hairs
+No. of trees: 2
+Success: 
+ stigma 0.5–1 mm. long
+No. of trees: 1
+Fail:
+ Fruit orange to scarlet, often of 2–3 mericarps, each ellipsoid, obovoid or globose, 5–8 mm
+No. of trees: 5
+Fail:
+ long., 4–6.5 mm. wide, or 7.5 mm. diameter, at first sparsely hairy, glabrescent
+No. of trees: 5
+TAXON:  Sapindaceae Allophylus fulvotomentosus
+Success: 
+ Plant is Tree or shrub 1.8–7.5 m. tall, bark black or grey-brown, rough
+No. of trees: 2
+Success: 
+ stems usually densely ferruginous velvety, later ± glabrous
+No. of trees: 1
+Fail:
+ Leaves trifoliolate
+No. of trees: 1
+Success: 
+ petiole 1.5–6 cm. long, mostly ferruginous velvety
+No. of trees: 1
+Fail:
+ leaflets drying darker grey-brown above, pale brown beneath, elliptic to oblong or obovate, 2.5–12 cm. long, 1.5–8 cm. wide, subacute to rounded or ± truncate at the apex, cuneate to rounded at the base, mostly subcoriaceous, often densely ferruginous velvety at first, later hairy only on venation beneath or ± glabrous
+No. of trees: 11
+Fail:
+ venation reticulate and ± prominent above, the nerves ± impressed, very prominent beneath
+No. of trees: 3
+Fail:
+ Inflorescences 3.5–11(–15) cm. long, including 1–5 cm. long peduncle, branched, the axes ferruginous velvety
+No. of trees: 5
+Fail:
+ cymules subsessile, 3–10-flowered, extremely densely placed so that apices of inflorescence-branches are solid with flowers and spadix-like, the rhachis entirely obscured but often more open at base of branches and often altogether laxer in intermediates with <i>A
+No. of trees: 4
+Fail:
+ africanus</i>
+No. of trees: 1
+Fail:
+ Flowers yellow-green, subsessile or pedicels only 0.5 mm. long
 No. of trees: 3
 Success: 
- stigma 3-lobed
+ inner sepals 1.5 mm. wide
+No. of trees: 1
+Success: 
+ petals spathulate, 1.5 mm. long, 0.8 mm. wide, the scale densely pilose
+No. of trees: 1
+Success: 
+ Filaments 2 mm. long, hairy at base
+No. of trees: 1
+Success: 
+ Fruits pale orange, subglobose-obovoid, 7 mm. long, 6 mm. wide, pubescent, subsessile
+No. of trees: 2
+TAXON:  Sapindaceae Allophylus grotei
+Success: 
+ Plant is Much-branched tree to 9 m. tall
+No. of trees: 1
+Success: 
+ branchlets pale grey-brown, ± pubescent near nodes, glabrescent
 No. of trees: 2
 Success: 
- ovules 2 per loculus
+ Leaves unifoliolate, thin, drying brown, darker above, elliptic to oblong-elliptic, 6.5–12.5 cm. long, 2.5–5.7 cm. wide, narrowly acuminate at the apex, cuneate at the base, undulate or almost entire, glabrous
 No. of trees: 2
 Success: 
- Fruit orange, 3·5–4 × 1·8–3·2 cm., subglobose to pyriform or irregular, apiculate, sometimes ridged, smooth, 1–3-seeded
+ main lateral nerves ± 6
+No. of trees: 4
+Success: 
+ petiole 0.9–1.5 cm. long
+No. of trees: 1
+Success: 
+ petiolule ± thickened and channelled, 3–5 mm. long
 No. of trees: 2
+Fail:
+ Inflorescences unbranched, 4–7 cm. long, including the 2–2.5 cm. long peduncle
+No. of trees: 4
+Fail:
+ cymules 3–?-flowered with stalks 2–4 mm. long
+No. of trees: 1
+Success: 
+ pedicels 1.5 mm. long
+No. of trees: 1
+Fail:
+ all partsfinely adpressed puberulous
+No. of trees: 1
+Success: 
+ Flowers greenish white
+No. of trees: 1
+Fail:
+ outer sepals ± round, 1.2 mm. long, ± 1 mm. wide, inner similar but wider, all minutely adpressed puberulous
+No. of trees: 5
+Fail:
+ Fruits (see note) ellipsoid, 9.5 mm. long, 5.5 mm. wide, basally slightly ribbed in dry state, glabrous save for very sparse short adpressed hairs
+No. of trees: 5
+Success: 
+ Seeds chestnut, ± ovoid, 5 mm. long
+No. of trees: 1
+TAXON:  Sapindaceae Allophylus melliodorus
+Fail:
+ Plant is Tree 5–12 m. tall with rough bark
+No. of trees: 2
+Fail:
+ young branchlets dark with pale lenticels, puberulous but soon glabrous
+No. of trees: 3
+Success: 
+ wood yellowish, hard
+No. of trees: 1
+Fail:
+ Leaves unifoliolate, ± thin, elliptic to elliptic-lanceolate, 3.8–14(–18) cm. long, 2–7 cm. wide, rounded or obtuse to mostly acuminate at the apex, cuneate at the base, remotely serrate or crenate-serrate, glabrous except for the conspicuous tufts of hair in the main nerve-axils beneath and often in secondary axils also, not shiny above
+No. of trees: 10
+Fail:
+ lateral nerves in 8–9 pairs, the venation not or scarcely raised above
+No. of trees: 5
+Success: 
+ petiole 1.5–3 cm. long
+No. of trees: 1
+Fail:
+ Inflorescences 6–12 cm. long, simple or with two or more branches
+No. of trees: 3
+Success: 
+ rhachis puberulous
+No. of trees: 1
+Fail:
+ cymules sessile but pedicels 1.5 mm. long
+No. of trees: 1
+Success: 
+ Flowers yellow-green or pale yellow
+No. of trees: 3
+Success: 
+ Sepals rounded, outer ovate, 1 mm. long, 0.8 mm. wide, inner 1.5 mm. long, 1.2 mm. wide
+No. of trees: 3
+Success: 
+ Petals spathulate, 1 mm. long, ciliate
+No. of trees: 1
+Success: 
+ Filaments pubescent at base
+No. of trees: 1
+Success: 
+ Ovary 1 mm. diameter, pubescent
+No. of trees: 1
+Fail:
+ style and stigma together ± 1.5 mm. long
+No. of trees: 2
+Success: 
+ Fruit subglobose, 5.5 mm. diameter, finely pubescent
+No. of trees: 1
+TAXON:  Sapindaceae Allophylus pervillei
+Fail:
+ Plant is Almost invariably a small or medium-sized shrub, but occasionally a small tree or even described as a climber ( <i>Bally</i> 4691) or prostrate shrub ( <i>Adams</i> 74), usually 0.9–4(–5) m. tall (but 6–9 m. in Seychelles)
+No. of trees: 3
+Success: 
+ bark pale, smooth or rough
+No. of trees: 1
+Fail:
+ Leaves drying discolorous, often bright brown beneath, sometimes somewhat shiny, unifoliolate or trifoliolate with lateral leaflets very much reduced
+No. of trees: 5
+Success: 
+ petiole 0.5–1.5 cm. long
+No. of trees: 1
+Fail:
+ terminal leaflet elliptic or oblong to obovate or obovate-oblanceolate, 3.7–17(–20) cm. long, 1.5–9.6 cm. wide, ± obtuse to acute or acuminate at the apex, cuneate at the base, almost entire to repand-dentate, the nerves ending in hydathodes, or ± coarsely undulate-lobed, rarely distinctly serrate, glabrous save for hairy domatia beneath on some leaves
+No. of trees: 11
+Fail:
+ lateral nerves in 5–7 pairs, often much paler both above and beneath, yellowish, together with the closely reticulate venation, prominent on both surfaces when dry
+No. of trees: 7
+Fail:
+ Inflorescences unbranched, 2–12.5 cm. long, including peduncle 1–4 cm. long (see note)
+No. of trees: 4
+Fail:
+ cymules closely placed, 2–7-flowered, the stalks 0–1.2 mm. long
+No. of trees: 3
+Success: 
+ axes glabrous or puberulous
+No. of trees: 1
+Success: 
+ pedicels ± 1 mm. long
+No. of trees: 1
+Success: 
+ Flowers greenish, white or cream
+No. of trees: 1
+Fail:
+ sepals green, the outer ± round, 1.2 mm. long, 1 mm. wide
+No. of trees: 5
+Fail:
+ inner ± oblate, 1–1.5 mm. long, 1.2–2 mm. wide, finely adpressed-pubescent or glabrous
+No. of trees: 4
+Fail:
+ petals spathulate, 1.5 mm. long, 0.8 mm. wide, mostly densely white hairy or ciliate to ± glabrous
+No. of trees: 5
+Success: 
+ disk glabrous
+No. of trees: 1
+Success: 
+ Filaments, ovary and style densely hairy
+No. of trees: 1
+Success: 
+ Fruits bright red, globose or ± obovoid, 7–9 mm. long, 6–7 mm. wide, finely pubescent
+No. of trees: 1
+TAXON:  Sapindaceae Allophylus pseudopaniculatus
+Fail:
+ Plant is Much-branched monoecious spreading tree or less often a shrub or climbing shrub, 3–15 m. tall
+No. of trees: 3
+Success: 
+ branches with brown lenticels, glabrous or glabrescent
+No. of trees: 1
+Fail:
+ Leaves drying very discolorous, dark purplish brown above, dark green beneath, trifoliolate
+No. of trees: 4
+Success: 
+ petiole 5–7 cm. long, glabrescent or ± tomentose
+No. of trees: 1
+Fail:
+ petiolule of terminal leaflet 1–3 mm. long, of laterals ± 1 mm. long
+No. of trees: 4
+Fail:
+ leaflets elliptic, oblong or obovate, 3–18 cm. long, 1.5–9 cm. wide, narrowly acutely acuminate at the apex, cuneate (or in laterals ± rounded and asymmetric) at the base, finely toothed, especially in the upper third
+No. of trees: 8
+Success: 
+ lateral nerves in ± 12 pairs
+No. of trees: 4
+Fail:
+ Inflorescences (5–)10–15 cm. long, simple or with 2 side branches up to 10 cm. long, axillary or appearing paniculate
+No. of trees: 4
+Success: 
+ peduncle 2–4 cm. long
+No. of trees: 1
+Success: 
+ axes with long hairs
+No. of trees: 1
+Fail:
+ cymules 4–7-flowered, the stalks ± 1 mm. long
+No. of trees: 2
+Success: 
+ pedicels 1–1.5 mm. long, glabrous
+No. of trees: 1
+Success: 
+ Flowers cream or yellow-green
+No. of trees: 1
+Fail:
+ outer sepals elliptic, inner oblate ± 1.8 mm. wide, glabrous or slightly pubescent
+No. of trees: 4
+Fail:
+ petals spathulate, 1 mm. long, the claw ciliate and scale covered with long hairs
+No. of trees: 4
+Success: 
+ disk lobed, glabrous
+No. of trees: 2
+Success: 
+ Stamens 2–2.5 mm. long, glabrous
+No. of trees: 1
+Success: 
+ staminodes 1.2 mm. long
+No. of trees: 1
+Fail:
+ Fruits green, of (1–)2–3 mericarps each subglobose, 5 mm. diameter, glabrous or with sparse hairs
+No. of trees: 5
+TAXON:  Sapindaceae Allophylus richardsiae
+Success: 
+ Plant is Shrub or small tree 2.5–7.5 m. tall
+No. of trees: 1
+Success: 
+ branchlets ferruginous pubescent
+No. of trees: 1
+Fail:
+ older ones purplish brown, ridged, lenticellate, ± glabrous
+No. of trees: 4
+Fail:
+ Leaves trifoliolate
+No. of trees: 1
+Success: 
+ petiole 3–7 cm. long, ferruginous pubescent
+No. of trees: 1
+Fail:
+ leaflets discolorous, drying purplish brown above, elliptic, elliptic-oblong or ± obovate, 3.5–10 cm. long, 1.5–4.5 cm. wide, acuminate at the apex, cuneate at the base, shallowly crenate with upwardly directed teeth at tips of crenae, thin, ± adpressed pilose above, rather sparsely pilose to ± densely pubescent beneath with adpressed white hairs and tufts in the axils of the nerves and also along the nerves at secondary nerve junctions
+No. of trees: 13
+Success: 
+ lateral nerves in 8–10 pairs
+No. of trees: 2
+Success: 
+ Inflorescences slender, 5–13 cm. long, unbranched, pubescent
+No. of trees: 1
+Success: 
+ peduncles 4–5 cm. long
+No. of trees: 1
+Fail:
+ cymules 2–3-flowered, subsessile
+No. of trees: 2
+Success: 
+ pedicels 2–3 mm. long
+No. of trees: 1
+Success: 
+ Flowers white, cream or pale green
+No. of trees: 3
+Success: 
+ outer sepals 1.3 mm. long, 1.1 mm. wide, inner oblate, 1.5 mm. long, 2–2.5 mm. wide, ± glabrous
+No. of trees: 1
+Success: 
+ petals spathulate, 1.2 mm. long, 0.8 mm. wide, long-ciliate
+No. of trees: 1
+Fail:
+ Filaments 1–1.5 mm. long in male flowers, 0.8 mm. long in female
+No. of trees: 3
+Success: 
+ Ovary hairy
+No. of trees: 1
+Success: 
+ style 1.2 mm. long
+No. of trees: 1
+Success: 
+ Fruit subglobose or ellipsoid, 5–7 mm. long, 4–6 mm. wide, with sparse hairs
+No. of trees: 1
+TAXON:  Sapindaceae Allophylus rubifolius
+Fail:
+ Plant is Shrub or small to medium-sized tree 3–7(–12) m. tall, also occasionally described as a creeper
+No. of trees: 3
+Success: 
+ bark grey, smooth or rough
+No. of trees: 1
+Success: 
+ branchlets glabrous to sparsely pubescent or subtomentose
+No. of trees: 1
+Fail:
+ Leaves trifoliolate, mostly discolorous and drying deep or purplish brown above, grey-green beneath
+No. of trees: 3
+Success: 
+ petiole 0.8–5(–6.5) cm. long
+No. of trees: 1
+Fail:
+ leaflets elliptic, distinctly obovate or ± round, 1–10(–14) cm. long, 0.8–5.5(–8) cm. wide but predominantly small, emarginate to acute (mostly rather obtuse) at the apex, attenuate to cuneate at the base, shallowly crenate to irregularly dentate or serrate, glabrous to densely pubescent or velvety and often with conspicuous hair-tufts in nerve-axils beneath
+No. of trees: 9
+Fail:
+ indumentum usually greyish
+No. of trees: 1
+Fail:
+ Inflorescences usually unbranched, 2–18(–22) cm. long, but occasionally with a few branches 1–3(–12) cm. long
+No. of trees: 4
+Success: 
+ peduncles 1.2–5.5 cm. long
+No. of trees: 1
+Fail:
+ cymules 1–5-flowered, subsessile, usually closely placed, sometimes very dense
+No. of trees: 4
+Success: 
+ pedicels 1–2(–3) mm. long, pubescent or glabrous
+No. of trees: 1
+Success: 
+ Flowers green or yellowish white
+No. of trees: 2
+Success: 
+ outer sepals broadly elliptic, ± 1 mm. long and wide, inner ± round, 1 mm. long, 1–1.5 mm. wide
+No. of trees: 1
+Success: 
+ petals spathulate, 1 mm. long, 0.5 mm. wide
+No. of trees: 1
+Success: 
+ Filaments 1–2 mm. long, hairy at base
+No. of trees: 1
+Success: 
+ Style 1 mm. long, hairy
+No. of trees: 1
+Success: 
+ stigma 0.5 mm. long
+No. of trees: 1
+Fail:
+ Fruits orange to bright red, of 1–2 mericarps, each ellipsoid, obovoid or subglobose, 6–8 mm. long, 5–6 mm. wide, finely pilose
+No. of trees: 8
+TAXON:  Sapindaceae Allophylus sp.
+Fail:
+ Plant is Shrubto 1 m. tall
+No. of trees: 2
+Fail:
+ branchlets sparsely adpressed-pubescent but soon glabrous
+No. of trees: 2
+Success: 
+ Leaves drying pale green
+No. of trees: 2
+Success: 
+ petioles 2.5–6.5 mm. long, shortly pubescent
+No. of trees: 1
+Fail:
+ leaflets ovate, 5–11 cm. long, 3–6 cm. wide, acuminate at the apex, cuneate at the base, the laterals distinctly asymmetric, rather regularly shortly toothed, sparsely adpressed-pubescent becoming ± glabrous
+No. of trees: 9
+Fail:
+ Inflorescences 11–17 cm. long, with some branches held at ± right angles 2.5–4.5 cm. long
+No. of trees: 3
+Fail:
+ cymules few-flowered with stalks 2 mm. long
+No. of trees: 1
+Success: 
+ pedicels 3–5 mm. long
+No. of trees: 1
+TAXON:  Sapindaceae Allophylus tanzaniensis
+Success: 
+ Plant is Much-branched shrub or small tree, 1–5 m. tall
+No. of trees: 1
+Fail:
+ branches pale to medium brown with brown lenticels
+No. of trees: 2
+Success: 
+ youngest shoots pubescent, soon glabrous
+No. of trees: 1
+Fail:
+ Leaves drying pale green or ± darker above, trifoliolate
+No. of trees: 2
+Success: 
+ petiole (2–)5–9 cm. long, slender, puberulous or glabrous
+No. of trees: 1
+Fail:
+ petiolule of terminal leaflet 2–7 mm. long, of lateral 0–3 mm. long
+No. of trees: 4
+Fail:
+ leaflets discolorous, drying brown or brownish green above, subequal or laterals 1/2 to 4/5 length of the terminal one, elliptic or elliptic-oblong, (1.5–)5–9 cm. long,(0.9–)2.3–4.2 cm. wide, ± rounded to shortly obtusely acuminate at apex, terminal one cuneate at the base, laterals asymmetrically rounded, entire or crenate or toothed for upper 1/2 or 2/3, ± thin, glabrous or with few hairs on nerves beneath
+No. of trees: 11
+Success: 
+ hairy domatia sometimes present
+No. of trees: 1
+Success: 
+ lateral nerves in ± 7 pairs, rather inconspicuous
+No. of trees: 4
+Fail:
+ Inflorescences slender, (3–)8–12(–17) cm. long inclusive, unbranched or with 1–2 short branches, the axes quite glabrous, puberulous or in some specimens pubescent
+No. of trees: 6
+Fail:
+ cymules 3–9-flowered, somewhat spaced, subsessile
+No. of trees: 3
+Success: 
+ peduncles (1–)2.5–5.5 cm. long, pedicels 1–1.8 mm. long
+No. of trees: 1
+Success: 
+ Flowers white or yellow
+No. of trees: 1
+Success: 
+ sepals ± round, outer 1 mm. diameter, inner 1.2–1.5 mm. diameter
+No. of trees: 1
+Success: 
+ petals spathulate, 1 mm. long, 0.5–0.8 mm. wide, long white-ciliate at base
+No. of trees: 1
+Success: 
+ Filaments 1.5 mm. long, glabrous
+No. of trees: 1
+Success: 
+ Fruit red, globose, 5.5 mm. diameter
+No. of trees: 1
+TAXON:  Sapindaceae Allophylus vestitus
+Fail:
+ Plant is Small tree 3.6–4 mm. tall with young stems, leaves, petioles, inflorescences, fruits, etc. very densely covered with soft but ± bristle-like hairs up to 3 mm. long, spreading on the stems etc., but ± adpressed on the leaves
+No. of trees: 9
+Fail:
+ older stems grey or purplish brown, densely lenticellate, glabrescent
+No. of trees: 3
+Fail:
+ Leaves discolorous, ± thin, 3-foliolate but with lateral leaflets very much smaller than terminal one or virtually absent
+No. of trees: 4
+Success: 
+ petiole 4–6 cm. long
+No. of trees: 1
+Success: 
+ terminal petiolule 0.4–1.1 cm. long, lateral petiolules 0–1 mm. long
+No. of trees: 1
+Fail:
+ terminal leaflet elliptic or ovate-elliptic, 20–30 cm. long, 9–15 cm. wide, tapering to a narrow acute apex, cuneate at the base, irregularly serrate or crenate-serrate
+No. of trees: 7
+Success: 
+ lateral nerves in 9–15 pairs
+No. of trees: 2
+Success: 
+ lateral leaflets 1.5–4 cm. long, 0.5–2 cm. wide
+No. of trees: 1
+Fail:
+ Inflorescences unbranched, ± 6 cm. long, with closely placed 5–10-flowered sessile cymules, their persistent rhachises ± 1 mm. long, prominently scarred
+No. of trees: 6
+Fail:
+ peduncles up to ± 1 cm. long
+No. of trees: 2
+Success: 
+ Sepals up to 2 mm. long and wide, glabrous
+No. of trees: 1
+Success: 
+ Style 1 mm. long, hairy
+No. of trees: 1
+Fail:
+ stigma-branches 0.8 mm. long
+No. of trees: 1
+Success: 
+ Fruits subglobose, 8 mm. long, 6 mm. wide, spreading hairy
+No. of trees: 1

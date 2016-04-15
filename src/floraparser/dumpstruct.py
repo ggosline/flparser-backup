@@ -1,7 +1,6 @@
 
 from floracorpus import recordtype
 from nltk.featstruct import FeatDict, FeatureValueTuple
-from floraparser.lexicon import posit
 from nltk.sem import Variable
 
 def PrintStruct(struct, indent: int = 0, file=None):
@@ -42,8 +41,8 @@ def DumpChar(crec, struct: FeatDict, tokens, ptext: str, indent: int = 0, file=N
         struct.remove_variables()
         category = struct.get('category')
         if category: crec.category = category
-        if struct.get(posit):
-            crec.posit = stext(struct.get(posit), tokens, ptext)
+        if struct.get('posit'):
+            crec.posit = stext(struct.get('posit'), tokens, ptext)
         if struct.get('stage'): crec.phase = stext(struct.get('stage'), tokens, ptext)
         if struct.get('phase'): crec.phase = struct.get('phase')
         if struct.has_key('presence'):
