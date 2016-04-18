@@ -64,6 +64,8 @@ def pickle_lexicon():
 
         featstring = POS + "[H=[ category= '" + category + "', orth='" + word + "']] "
         newfeature = featurereader.fromstring(featstring)
+        if 'appliesto' in morefeatures:
+            newfeature['H', 'appliesto'] = morefeatures['appliesto']
         newfeature.update(morefeatures)
 
         # head = FeatStructNonterminal({'orth': word})
@@ -82,8 +84,7 @@ def pickle_lexicon():
                 if gentry['ID'] == '#':
                     continue
                 morefeatures = {}
-                gid, term, category, appliesto = gentry['ID'], gentry['term'], gentry['category'].lower(), gentry[
-                    'appliesTo'].lower()
+                gid, term, category, appliesto = gentry['ID'], gentry['term'], gentry['category'].lower(), gentry['appliesTo'].lower()
                 # semterm = term.replace('-', '_').strip('.')
                 POS = gentry['POS']
                 if POS == 'N':
@@ -98,6 +99,7 @@ def pickle_lexicon():
                 else:
                     POS = 'UNK'
                 morefeatures['category']=category    # semexpr = None
+                morefeatures['appliesto']=appliesto    # semexpr = None
                 addlexentry(term, POS,  morefeatures)
                 if '-' in term:     # assume people may have left the dash out of terms (see colours)
                     addlexentry(term.replace('-','_'), POS, morefeatures)
@@ -162,7 +164,7 @@ def pickle_lexicon():
 
     POSITIONPRE = 'upper|lower|under|uppermost|lowermost|superior|inferior|outer|inner|outermost|innermost|various'.split('|')
     addlexicon(POSITIONPRE, 'A', {position:True, 'category':'position', 'fix':'pre'})
-    POSITIONPOST = 'above_and_beneath|at_the_apex|at_the_base|at_the_top|elsewhere|' \
+    POSITIONPOST = 'above_and_beneath|at_the_top|elsewhere|' \
                     'outside|inside|above|below|beneath|within|throughout|upward'.split('|')
     addlexicon(POSITIONPOST, 'A', {position: True, 'category': 'position', 'fix':'post'})
 
@@ -172,7 +174,7 @@ def pickle_lexicon():
     addlexicon(POSITIONN, 'N', {'category':'position'})
 
     # 'in' poosibly should be in following lists, but masks IN below
-    PREP_POSITION = 'at|among|amongst|around|at|between|beyond|by|' \
+    PREP_POSITION = 'among|amongst|around|at|between|beyond|by|' \
                     'from|into|near|on|onto|out_of|over|through|throughout|toward|' \
                     'outside|inside|between|before|after|behind|across|along|from|' \
                     'towards|up'.split('|')
