@@ -16,19 +16,19 @@ import ordered_set
 import logging
 logging.basicConfig(filename='flparse.log', filemode='w', level=logging.INFO)
 
-description = 'lamina acute to obtuse or rounded and shortly apiculate at the apex'
+description = 'slash pale brownish pink or pale orange darkening to reddish brown'
 # description = 'anthers 3, pale to orange-yellow, dehiscing by 2 oblique or almost vertical clefts not confluent at the apex'
 # query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Salacia' ;"
-query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Salacia' and species = 'bussei' ;"
+# query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Salacia' and species = 'bussei' ;"
 # query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Acacia' and species = 'albida'  ;"
-# query="Select * from AllTaxa where flora_name = 'FTEA' and rank = 'species' and genus = 'Allophylus' ;"
+query="Select * from AllTaxa where flora_name = 'FTEA' and rank = 'species' and genus = 'Allophylus' and species = 'abyssinicus' ;"
 # query="Select * from AllTaxa where flora_name = 'FTEA' and rank = 'species' and family = 'Sapindaceae' ;"
 
 fromDB = True
-fromDB = False
+#fromDB = False
 
 draw = False
-#draw = True
+draw = True
 
 parser = FeatureBottomUpLeftCornerChartParser
 #parser = FeatureEarleyChartParser

@@ -28,8 +28,9 @@ CHAR[category=?c]       ->  CHRL[category=?c, +HD, H=?head] CDELIM
 #CHAR[category=presence] -> OR ABAR[category=presence, +HD, H=?head]
 #CHAR[category=presence] -> ABAR[category=presence, +HD, H=?head] OR
 
-CHR[category=?c,H=[stage=?st]]     -> STAGE[H=?st] CHRL[category=?c,+HD, H=?head]
-CHR[category=?c,H=[stage=?st]]     -> CHRL[category=?c, +HD, H=?head] STAGE[H=?st]
+CHR[category=?c,H=[stage=?st]]     -> STAGE[H=?st, fix=pre] CHRL[category=?c,+HD, H=?head]
+CHR[category=?c,H=[stage=?st]]     -> STAGE[H=?st, fix=prepost] CHRL[category=?c,+HD, H=?head]
+CHR[category=?c,H=[stage=?st]]     -> CHRL[category=?c, +HD, H=?head] STAGE[H=?st, fix=prepost]
 
 #CHR[category=?c, H=[stage=?st]]        ->  CHR[category=?c, +HD, H=?head] STAGE[stage=?st]
 #CHR[category=?c, H=[subset=?st]]       ->  CHR[category=?c, +HD, H=?head] SUBSET[stage=?st]
@@ -101,7 +102,8 @@ ADVB[H=[TO=(?h1,?h2)]] -> ADVB[H=?h1] TO ADVB[H=?h2]
 ADVB[H=[OR=(?o1,?o2)]] -> ADVB[H=?o1] OR ADVB[H=?o2]
 
 DEG                    -> COMPADJ DEG
-ADVB[+comp, category=adv, H=[orth=?o, mod=(?c)]] -> A[+*makecomp*, H=[orth=?c]] ADV[H=[orth=?o]]
+ADVB[+comp, category=adv, H=[orth=?o, mod=(?c)]] -> ADV[+*makecomp*, H=[orth=?c]] ADV[H=[orth=?o]]
+MOD[category=adv, H=[orth=?o, mod=(?c)]] -> ADV[+*makecomp*, H=[orth=?c]]MOD[H=[orth=?o]]
 
 MOD[]                  -> ADVB[+HD, H=?head]
 MOD[]                  -> DEG[+HD, H=?head]
@@ -114,12 +116,12 @@ ABAR[category=?c, appliesto=?a, H=[mod=(?mod)]]       -> [MODL[H=?mod]] A[catego
 # arranged serially
 ABAR[category=?c,  appliesto=?a, H=[mod=(?mod)]]       -> A[category=?c,  appliesto=?a, H=?h, +HD] ADVB[H=?mod]
 A[category=?c, appliesto=?a, H=[orth=?a2, mod=(?a1), category=?c]] -> A[+*compar*, H=[orth=?a1]] A[category=?c, appliesto=?a, H=[orth=?a2]]
-ABAR[category=?c, H=[mod=(?adv)]]                   -> COUNT[H=[val=?adv]] A[+*counted*, category=?c, H=?h, +HD]
+ABAR[category=?c, H=[mod=(?adv)]]                      -> COUNT[H=[val=?adv]] A[+*counted*, category=?c, H=?h, +HD]
 
 ORDELIM -> COMMA | OR | COMMA OR
-ABARL[category=?c, appliesto=?a, H=[category=?c, OR=(?ha+?hb)]]   ->   ABARL[category=?c, appliesto=?a, H=?ha] OR ABARL[category=?c, appliesto=?a, H=?hb]
-ABARL[category=?c, appliesto=?a, H=[category=?c, AND=(?ha+?hb)]]   ->  ABARL[category=?d, H=?ha] ABAR[category=?c, appliesto=?a, H=?hb]
-ABARL[category=?c, appliesto=?a, H=?h]                            ->   ABAR[category=?c, appliesto=?a, H=?h]
+ABARL[category=?c, appliesto=?a, H=[category=?c, OR=(?ha+?hb)]]     ->   ABARL[category=?c, appliesto=?a, H=?ha] OR ABARL[category=?c, appliesto=?a, H=?hb]
+ABARL[category=?c, appliesto=?a, H=[mod=(?ha)]]                     ->   ABARL[category=?d, H=?ha] ABAR[category=?c, appliesto=?a, +HD, H=?hb]
+ABARL[category=?c, appliesto=?a]                                    ->   ABAR[category=?c, appliesto=?a, +HD, H=?h]
 #APL[category=?c, H=[category=?c, OR=(?ha+?hb)]]     ->  AP[category=?c, H=?ha] OR APL[category=?c, H=?hb]
 AP[category=?c]                                     ->   ABARL[category=?c, +HD, H=?head]
 #APL[category=?c, H=?h]                              ->  AP[category=?c, H=?h]
@@ -185,7 +187,7 @@ STAGE[] -> [P[prep='in']] A[category='life-stage', +HD, H=?head]
 STAGE[] -> P[prep='when'] A[category='life-stage', +HD, H=?head]
 STAGE[] -> P[prep='in'] A[category='life-stage', +HD, H=?head] 'state'
 STAGE[] -> P[prep='at'] A[category='life-stage', +HD, H=?head]
-STAGE[] -> A[+*timing*, +HD, H=?head]
+STAGE[fix=pre] -> P[+*timing*, +HD, H=?head, fix=pre]
 STAGE[H=[mod=?deg]] -> DEG[H=?deg] STAGE[+HD, H=?head]
 
 #A[category=position, H=[orth=?o, category=position], +*position*] -> P[H=[orth=?o], +*position*, +*adjectival*]

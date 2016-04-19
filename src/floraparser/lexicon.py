@@ -46,7 +46,7 @@ def pickle_lexicon():
 
         if word.startswith('_'):
             word = word.replace('_', '-', 1)
-            morefeatures[counted] = True
+            #morefeatures[counted] = True
         ws = word.split('_')
         if len(ws) > 1:
             firstword = ws[0]
@@ -203,11 +203,14 @@ def pickle_lexicon():
     addlexicon(COLOURCOMP, 'A', {compar:True, 'category':'coloration'})
     SIZECOMP = "shorter|longer|wider|narrower|bigger|smaller|higher|larger".split('|')
     addlexicon(SIZECOMP, 'A', {compar:True, 'category':'size'})
-    COMPADJ = "more|less|most|least".split('|')
-    addlexicon(COMPADJ, 'ADV', {makecomp:True})
-    TIMING = "at_first|when_young|becoming|tending_to_become|" \
-             "remaining|turning|in_age|at_maturity|later|at_length|eventually|when_fresh|when_dry|drying".split('|')
-    addlexicon(TIMING, 'A', {timing:True})
+    COMPADV = "more|less|most|least".split('|')
+    addlexicon(COMPADV, 'ADV', {makecomp:True})
+    TIMING = "at_first|when_young|" \
+             "in_age|at_maturity|later|at_length|eventually|when_fresh|when_dry".split('|')
+    addlexicon(TIMING, 'A', {timing:True, "fix":"prepost"})
+    TRANSITION = "becoming|tending_to_become|" \
+             "remaining|turning|drying|darkening_to".split('|')
+    addlexicon(TRANSITION, 'P', {timing:True, 'fix':'pre'})
     PRESENCE = "present|absent".split('|')
     addlexicon(PRESENCE, 'A', dict(category='presence'))
     ISA = "is|is_a|consisting_of".split('|')
