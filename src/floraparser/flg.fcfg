@@ -12,7 +12,7 @@ DESCRIPTION[subject=?s, chars=?charlist] -> SUBJECT[H=?s] COMMA CTERMINATOR
 
 SUBJN[H=[category=subject, orth=?o]] -> N[category='structure', H=[orth=?o]] | N[category='life-form', H=[orth=?o]] | N[category='feature', H=[orth=?o]] | N[category='CHARACTER', H=[orth=?o]] | N[category='structure-infl', H=[orth=?o]]
 
-SUBJN[H=[mod=(?m)]]      -> AP[H=?m] SUBJN[H=?head, +HD]
+SUBJN[H=[mod=(?m)]]      -> ABAR[H=?m] SUBJN[H=?head, +HD]
 SUBJN[H=[mod=(?m)]]      -> POSITION[H=?m] SUBJN[H=?head, +HD]
 SUBJN[H=[mod=(Absent)]]  -> NO SUBJN[H=?head, +HD]
 SUBJN[H=[posit=(?p)]]    -> SUBJN[H=?head, +HD] POSITION[H=?p]
@@ -34,8 +34,8 @@ CHR[category=?c,H=[stage=?st]]     -> CHRL[category=?c, +HD, H=?head] STAGE[H=?s
 
 #CHR[category=?c, H=[stage=?st]]        ->  CHR[category=?c, +HD, H=?head] STAGE[stage=?st]
 #CHR[category=?c, H=[subset=?st]]       ->  CHR[category=?c, +HD, H=?head] SUBSET[stage=?st]
-CHR[category=?c, H=[posit=(?p)]]      ->  CHRL[category=?c, appliesto=?pc, +HD, H=?h] POSITION[H=?p, fix=post, category=?pc]
-CHR[category=?c, H=[posit=(?p)]]      ->  POSITION[H=?p, fix=pre, category=?pc] CHRL[category=?c, appliesto=?pc, +HD, H=?h]
+CHR[category=?c, pos=?p, H=[posit=(?p)]]      ->  CHRL[category=?c, appliesto=?pc, +HD, H=?h] POSITION[H=?p, fix=post, category=?pc]
+CHR[category=?c, pos=?p, H=[posit=(?p)]]      ->  POSITION[H=?p, fix=pre, category=?pc] CHRL[category=?c, appliesto=?pc, +HD, H=?h]
 
 CHR[category=?c, appliesto=?a] ->  AP[category=?c, appliesto=?a, +HD, H=?head]
 # CHR[category=?c] ->  AP[category=?c, +HD, H=?head]
@@ -139,6 +139,7 @@ ABAR[category=prep, H=[mod=(?deg)]]     -> [DEG[orth=?deg]] PP[H=?p, +HD]
 
 ABAR[category=compar, H=[category=compar, compto=?h, comparison=?o]] -> A[+*compar*, category=?cat, H=[orth=?o]] THAN NP[ H=?h]
 ABAR[category=compar, H=[category=compar, compto=?h, comparison=?o]] -> A[+*compar*, H=[orth=?o]] NP[ H=?h]
+ABAR[category=compar, H=[category=compar, orth=?o]] -> A[+*compar*, H=[orth=?o]]
 ABAR[category=compar, H=[category=compar, compto=?h, comparison=?c]] -> COMPARISON[ H=[comp=?c]] NP[ H=?h]
 
 COMPARATOR[category=dimension, H=[orth=?dim]] -> 'as' DIMEN[H=[dim=?dim]] 'as'
@@ -151,13 +152,15 @@ ABAR[category=?c] -> ABAR[category=?c, +HD, H=?head] PAREXP
 
 # AP[category=?c, H=[mod=(?mod)]] -> [MODL[H=?mod]] ABARL[category=?c, +HD, H=?head]
 
-AP[category=?c, H=?h]                       -> AP[category=?c, H=?h] PAREXP
+AP[category=?c, H=?h]                        -> AP[category=?c, H=?h] PAREXP
 ABARL[category=?d, H=[AND=(?ha,?hb)]]        -> ABAR[category=?c, H=?ha] AND ABAR[category=?d, H=?hb]
 #AP[category=(?c,?d), H=[AND=(?ha,?hb)]]     -> AP[category=?c, H=?ha]  APL[category=?d, H=?hb]
 
 WITHC[category=?c, H=[clist=?clist]]        ->  NP[category=?c, H=?head, +HD] CHRL[H=?clist]
 WITHC[category=?c]                          ->  NP[category=?c, H=?head, +HD]
 WITHC[category=?c, H=[mod=(?count)]]        ->  COUNT[H=?count] WITHC[category=?c, H=?head, +HD]
+
+# WITHC[category=position, H=[category=position, orth=?pos, clist=?clist]] -> CHRL[H=?clist] P[prep='at'] ART N[+*position*, +lam, H=[orth=?pos]]
 
 WITHP[category=?c, H=[presence=?p, having=?h, mod=(?mod)]] -> [DEG[H=[orth=?deg]]] WITH[presence=?p] WITHC[category=?c, H=?h]
 WITHP[category=?c, H=[+presence, having=?h]]   -> WITHC[category=?c, H=?h]
@@ -177,24 +180,26 @@ POSITION[H=[prep=(?prep, ?n), obj=?n]]  -> P[H=[orth=?prep], +*conditional*] AP[
 P[H=[orth=(?p, 'to')]]                  -> A[category=fusion, H=[orth=?p]] TO
 P[H=[orth=(?p, 'with')]]                -> A[category=fusion, H=[orth=?p]] WITH
 P[H=[orth=[OR=(?pa+?pb), +*position*]]] -> P[orth=?pa, +*position*] OR P[orth=?pb, +*position*]
+P[H=[orth=[AND=(?pa+?pb), +*position*]]] -> P[orth=?pa, +*position*] AND P[orth=?pb, +*position*]
 
 PAREXP -> PUNC[punc='('] CHRL PUNC[punc=')']
 
 AND -> CONJ[conj=and] | CONJ[conj='and_also']
 OR  -> CONJ[conj=or]
 
-STAGE[] -> [P[prep='in']] A[category='life-stage', +HD, H=?head]
-STAGE[] -> P[prep='when'] A[category='life-stage', +HD, H=?head]
-STAGE[] -> P[prep='in'] A[category='life-stage', +HD, H=?head] 'state'
-STAGE[] -> P[prep='at'] A[category='life-stage', +HD, H=?head]
+STAGE[fix=prepost] -> [P[prep='in']] A[category='life-stage', +HD, H=?head]
+STAGE[fix=prepost] -> P[prep='when'] A[category='life-stage', +HD, H=?head]
+STAGE[fix=prepost] -> P[prep='in'] A[category='life-stage', +HD, H=?head] 'state'
+STAGE[fix=prepost] -> P[prep='at'] A[category='life-stage', +HD, H=?head]
 STAGE[fix=pre] -> P[+*timing*, +HD, H=?head, fix=pre]
+STAGE[fix=prepost] -> A[+*timing*, +HD, H=?head, fix=prepost]
 STAGE[H=[mod=?deg]] -> DEG[H=?deg] STAGE[+HD, H=?head]
 
 #A[category=position, H=[orth=?o, category=position], +*position*] -> P[H=[orth=?o], +*position*, +*adjectival*]
 #A[category=position, H=[orth=?o, category=position], +*position*] -> POSITION[H=[posit=(?o)]]
-POSITION[H=[posit=(?o)], fix=?fix, category=?c]             -> A[+*position*, H=[orth=?o], appliesto=?c, fix=?fix]
-POSITION[H=[posit=(?o), mod=(?prep,?m)], fix=post, category=?o] -> P[prep=?prep, +*position*, -*adjectival*] NP[H=[-*group*, orth=?o, mod=?m]]
-POSITION[H=[posit=(?o), mod=(?prep,?m,of,?of)], fix=post]   -> P[prep=?prep, +*position*, -*adjectival*] NP[H=[-*group*, +*position*, orth=?o, mod=?m]] OF NPL[H=?of]
+POSITION[H=[posit=?o], fix=?fix, category=?c]             -> A[+*position*, H=[orth=?o], appliesto=?c, fix=?fix]
+POSITION[H=[posit=?o, mod=(?prep,?m)], fix=post, category=?o] -> P[prep=?prep, +*position*, -*adjectival*] NP[H=[-*group*, orth=?o, mod=?m]]
+#POSITION[H=[posit=?o, mod=(?prep,?m,of,?of)], fix=post]   -> P[prep=?prep, +*position*, -*adjectival*] NP[H=[-*group*, +*position*, orth=?o, mod=?m]] OF NPL[H=?of]
 #POSITION[H=[posit=(?o)]]                                    -> A[+*position*, H=[orth=?o]]
 POSITION[H=[posit=([orth=?o, mod=(?deg)])], fix=?fix]       -> DEG[H=[orth=?deg]] A[+*position*, H=[orth=?o], fix=?fix]
 POSITION[H=[AND=(?h1+?h2)], fix=?fix]                       -> POSITION[H=?h1, fix=?fix] AND POSITION[H=?h2]

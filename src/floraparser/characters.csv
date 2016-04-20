@@ -1,114 +1,12 @@
 taxonNo,family,taxon,mainsubject,subject,subpart,category,value,mod,posit,phase,presence,start,end
-51692,Sapindaceae,Allophylus abyssinicus,plant,plant,,subject,plant,,,,,0,184
-51692,Sapindaceae,Allophylus abyssinicus,plant,plant,,,buttressed,sometimes slightly,at the base,,,120,161
-51692,Sapindaceae,Allophylus abyssinicus,plant,plant,,,e.g.,,,,,163,167
-51692,Sapindaceae,Allophylus abyssinicus,plant,plant,,,hills,Chyulu,,,,171,183
-51692,Sapindaceae,Allophylus abyssinicus,plant,plant,,life-form,tree,Medium to fairly large,,,,6,37
-51692,Sapindaceae,Allophylus abyssinicus,plant,plant,,habit,shrubby,rarely,,,,38,53
-51692,Sapindaceae,Allophylus abyssinicus,plant,plant,,dimension,"('(4.5–)6–21(–25)', 'm.', 'tall')",,,,,54,119
-51692,Sapindaceae,Allophylus abyssinicus,plant,plant,bole,dimension,"('30–90', 'cm.', 'diameter')",slender,,,Present,54,119
-51692,Sapindaceae,Allophylus abyssinicus,plant,crown,,subject,crown,,,,,186,239
-51692,Sapindaceae,Allophylus abyssinicus,plant,crown,,architecture,open,,,,,204,208
-51692,Sapindaceae,Allophylus abyssinicus,plant,crown,,coloration,green,dark,,,,192,203
-51692,Sapindaceae,Allophylus abyssinicus,plant,crown,,architecture,dense,,,,,212,218
-51692,Sapindaceae,Allophylus abyssinicus,plant,crown,,shape,irregular,,,,,219,239
-51692,Sapindaceae,Allophylus abyssinicus,plant,crown,,shape,rounded,,,,,219,239
-51692,Sapindaceae,Allophylus abyssinicus,plant,bark,,subject,bark,,,,,241,349
-51692,Sapindaceae,Allophylus abyssinicus,plant,bark,,relief,smooth,,,,,269,293
-51692,Sapindaceae,Allophylus abyssinicus,plant,bark,,relief,rough,slightly,,,,269,293
-51692,Sapindaceae,Allophylus abyssinicus,plant,bark,,coloration,white,grey or greyish,,,,246,268
-51692,Sapindaceae,Allophylus abyssinicus,plant,bark,,coloration,grey,,,,,246,268
-51692,Sapindaceae,Allophylus abyssinicus,plant,bark,,coloration,white,greyish,,,,246,268
-51692,Sapindaceae,Allophylus abyssinicus,plant,bark,,texture,granular,,,,,297,306
-51692,Sapindaceae,Allophylus abyssinicus,plant,bark,,,peeling,sometimes,in small to large flakes,,,307,349
-51692,Sapindaceae,Allophylus abyssinicus,plant,slash,,subject,slash,,,,,351,523
-51692,Sapindaceae,Allophylus abyssinicus,plant,slash,,coloration,pink,pale brownish,,,,357,390
-51692,Sapindaceae,Allophylus abyssinicus,plant,slash,,coloration,orange,pale,,,,357,390
-51692,Sapindaceae,Allophylus abyssinicus,plant,slash,,coloration,orange,pale brownish pink or pale,,,,357,390
-51692,Sapindaceae,Allophylus abyssinicus,plant,slash,,coloration,brown,reddish,,darkening to,,391,430
-51692,Sapindaceae,Allophylus abyssinicus,plant,slash,,odor,smelling,,,darkening to,,391,430
-51692,Sapindaceae,Allophylus abyssinicus,plant,slash,,,described,also,,,,442,456
-51692,Sapindaceae,Allophylus abyssinicus,plant,slash,,,t7,,,,,472,474
-51692,Sapindaceae,Allophylus abyssinicus,plant,slash,,coloration,white,off,,,,479,488
-51692,Sapindaceae,Allophylus abyssinicus,plant,slash,,,pepper,,,,,434,441
-51692,Sapindaceae,Allophylus abyssinicus,plant,slash,,count,1,<i>Ede</i>,,,,459,472
-51692,Sapindaceae,Allophylus abyssinicus,plant,slash,lines,presence,,pinky brown green-edged,,,Present,489,523
-51692,Sapindaceae,Allophylus abyssinicus,plant,sapwood,,subject,sapwood,,,,,525,538
-51692,Sapindaceae,Allophylus abyssinicus,plant,sapwood,,coloration,white,,,,,533,538
-51692,Sapindaceae,Allophylus abyssinicus,plant,branch,,subject,branch,young,,,,540,613
-51692,Sapindaceae,Allophylus abyssinicus,plant,branch,,pubescence,tomentellous,minutely ferruginous,,,,555,613
-51692,Sapindaceae,Allophylus abyssinicus,plant,branch,,texture,lenticellate,densely,,,,555,613
-51692,Sapindaceae,Allophylus abyssinicus,leaves,leaves,,subject,leaves,,,,,615,681
-51692,Sapindaceae,Allophylus abyssinicus,leaves,leaves,,architecture,-foliolate,tri,,,,622,635
-51692,Sapindaceae,Allophylus abyssinicus,leaves,leaves,,reflectance,dull,,above,drying,,636,663
-51692,Sapindaceae,Allophylus abyssinicus,leaves,leaves,,coloration,dark,,above,drying,,636,663
-51692,Sapindaceae,Allophylus abyssinicus,leaves,leaves,,reflectance,dull,,,drying,,636,663
-51692,Sapindaceae,Allophylus abyssinicus,leaves,leaves,,texture,coriaceous,thinly,,,,664,681
-51692,Sapindaceae,Allophylus abyssinicus,leaves,petiole,,subject,petiole,,,,,683,771
-51692,Sapindaceae,Allophylus abyssinicus,leaves,petiole,,dimension,"('2.5–10.5', 'mm.', 'long')",,,,,691,709
-51692,Sapindaceae,Allophylus abyssinicus,leaves,petiole,,pubescence,tomentellous,minutely,,,,710,771
-51692,Sapindaceae,Allophylus abyssinicus,leaves,petiole,,pubescence,pubescent,less often more distinctly,,,,710,771
-51692,Sapindaceae,Allophylus abyssinicus,leaves,leaflet,,subject,leaflet,,,,,773,1061
-51692,Sapindaceae,Allophylus abyssinicus,leaves,leaflet,,shape,crenulate,shallowly,,,,913,932
-51692,Sapindaceae,Allophylus abyssinicus,leaves,leaflet,,pubescence,pilose,adpressed velvety,,,,945,969
-51692,Sapindaceae,Allophylus abyssinicus,leaves,leaflet,,shape,elliptic TO obovate,,,,,782,802
-51692,Sapindaceae,Allophylus abyssinicus,leaves,leaflet,,dimension,"('(2.8–)5.5–21', 'cm.', 'long')",,,,,803,825
-51692,Sapindaceae,Allophylus abyssinicus,leaves,leaflet,,dimension,"('(1.2–)3–11', 'cm.', 'wide')",,,,,826,846
-51692,Sapindaceae,Allophylus abyssinicus,leaves,leaflet,,shape,acute TO acuminate,,at the apex,,,847,878
-51692,Sapindaceae,Allophylus abyssinicus,leaves,leaflet,,shape,attenuate TO cuneate,,at the base,,,879,912
-51692,Sapindaceae,Allophylus abyssinicus,leaves,leaflet,,shape,toothed,,,,,936,944
-51692,Sapindaceae,Allophylus abyssinicus,leaves,leaflet,,age,young,very,,,,975,986
-51692,Sapindaceae,Allophylus abyssinicus,leaves,leaflet,,pubescence,glabrescent,,,,,993,1040
-51692,Sapindaceae,Allophylus abyssinicus,leaves,leaflet,,pubescence,glabrous TO minutely puberulous,,,,,993,1040
-51692,Sapindaceae,Allophylus abyssinicus,leaves,leaflet,,pubescence,pubescent,less often,,,,1041,1061
-51692,Sapindaceae,Allophylus abyssinicus,leaves,tuft,,subject,tuft,,,,,1063,1134
-51692,Sapindaceae,Allophylus abyssinicus,leaves,tuft,,subject,tuft,of hairs,,,,1063,1134
-51692,Sapindaceae,Allophylus abyssinicus,leaves,tuft,,subject,tuft,of hairs,in axils,,,1063,1134
-51692,Sapindaceae,Allophylus abyssinicus,leaves,tuft,,subject,tuft,of nerves; of hairs,in axils,,,1063,1134
-51692,Sapindaceae,Allophylus abyssinicus,leaves,tuft,,subject,tuft,of hairs,in axils of nerves,,,1063,1134
-51692,Sapindaceae,Allophylus abyssinicus,leaves,tuft,vein,manifestation,conspicuous,usually,beneath,,Present,1101,1134
-51692,Sapindaceae,Allophylus abyssinicus,inflorescence,inflorescence,,subject,inflorescence,,,,,1136,1231
-51692,Sapindaceae,Allophylus abyssinicus,inflorescence,inflorescence,,dimension,"('5–22', 'cm.', 'long')",,,,,1151,1165
-51692,Sapindaceae,Allophylus abyssinicus,inflorescence,inflorescence,branch,presence,,2–10,,,Present,1166,1185
-51692,Sapindaceae,Allophylus abyssinicus,inflorescence,inflorescence,,architecture,branched,again,,,,1191,1206
-51692,Sapindaceae,Allophylus abyssinicus,inflorescence,inflorescence,,pubescence,tomentose,usually finely,,,,1207,1231
-51692,Sapindaceae,Allophylus abyssinicus,inflorescence,,cymule,architecture,subsessile,,,,Present,1233,1251
-51692,Sapindaceae,Allophylus abyssinicus,inflorescence,pedicel,,subject,pedicel,,,,,1253,1274
-51692,Sapindaceae,Allophylus abyssinicus,inflorescence,pedicel,,dimension,"('1–3', 'mm.', 'long')",,,,,1262,1274
-51692,Sapindaceae,Allophylus abyssinicus,flower,flower,,subject,flower,,,,,1276,1320
-51692,Sapindaceae,Allophylus abyssinicus,flower,flower,,odor,scented,,,,,1284,1320
-51692,Sapindaceae,Allophylus abyssinicus,flower,flower,,odor,scentless,,,,,1284,1320
-51692,Sapindaceae,Allophylus abyssinicus,flower,sepal,,subject,sepal,outer,,,,1322,1440
-51692,Sapindaceae,Allophylus abyssinicus,flower,sepal,,shape,elliptic,,,,,1335,1344
-51692,Sapindaceae,Allophylus abyssinicus,flower,sepal,,dimension,"('1.2–1.5', 'mm.', 'long')",,,,,1345,1362
-51692,Sapindaceae,Allophylus abyssinicus,flower,sepal,,dimension,"('1', 'mm.', 'wide')",,,,,1363,1374
-51692,Sapindaceae,Allophylus abyssinicus,flower,sepal,,pubescence,puberulous,,,,,1375,1386
-51692,Sapindaceae,Allophylus abyssinicus,flower,sepal,,shape,elliptic TO round,,inner,,,1387,1411
-51692,Sapindaceae,Allophylus abyssinicus,flower,sepal,,dimension,"('1.5–2', 'mm.', 'long')",,,,,1412,1427
-51692,Sapindaceae,Allophylus abyssinicus,flower,sepal,,dimension,"('1.5', 'mm.', 'wide')",,,,,1428,1440
-51692,Sapindaceae,Allophylus abyssinicus,flower,petal,,subject,petal,,,,,1442,1499
-51692,Sapindaceae,Allophylus abyssinicus,flower,petal,,coloration,white,dirty,,,,1449,1474
-51692,Sapindaceae,Allophylus abyssinicus,flower,petal,,coloration,yellowish,,,,,1449,1474
-51692,Sapindaceae,Allophylus abyssinicus,flower,petal,,dimension,"('1.5', 'mm.', 'long')",,,,,1475,1488
-51692,Sapindaceae,Allophylus abyssinicus,flower,petal,,dimension,"('1', 'mm.', 'wide')",,,,,1489,1499
-51692,Sapindaceae,Allophylus abyssinicus,filament,filament,,subject,filament,,,,,1501,1533
-51692,Sapindaceae,Allophylus abyssinicus,filament,filament,,dimension,"('2–3', 'mm.', 'long')",,,,,1511,1524
-51692,Sapindaceae,Allophylus abyssinicus,filament,filament,,pubescence,glabrous,,,,,1525,1533
-51692,Sapindaceae,Allophylus abyssinicus,style,style,,subject,style,,,,,1535,1565
-51692,Sapindaceae,Allophylus abyssinicus,style,style,,dimension,"('2–3', 'mm.', 'long')",,,,,1541,1554
-51692,Sapindaceae,Allophylus abyssinicus,style,style,,pubescence,glabrous,±,,,,1555,1565
-51692,Sapindaceae,Allophylus abyssinicus,style,stigma,,subject,stigma,,,,,1567,1588
-51692,Sapindaceae,Allophylus abyssinicus,style,stigma,,dimension,"('1–1.5', 'mm.', 'long')",,,,,1574,1588
-51692,Sapindaceae,Allophylus abyssinicus,fruit,fruit,,subject,fruit,,,,,1590,1688
-51692,Sapindaceae,Allophylus abyssinicus,fruit,fruit,,coloration,red,,,,,1596,1610
-51692,Sapindaceae,Allophylus abyssinicus,fruit,fruit,,coloration,orange,,,,,1596,1610
-51692,Sapindaceae,Allophylus abyssinicus,fruit,fruit,,shape,subglobose,,,,,1611,1622
-51692,Sapindaceae,Allophylus abyssinicus,fruit,fruit,,shape,oblong,,,,,1623,1642
-51692,Sapindaceae,Allophylus abyssinicus,fruit,fruit,,shape,elliptic,,,,,1623,1642
-51692,Sapindaceae,Allophylus abyssinicus,fruit,fruit,,dimension,"('6–8', 'mm.', 'long')",,,,,1643,1665
-51692,Sapindaceae,Allophylus abyssinicus,fruit,fruit,,size,wide,,,,,1643,1665
-51692,Sapindaceae,Allophylus abyssinicus,fruit,fruit,hair,presence,,very sparse,,,Present,1666,1688
-51692,Sapindaceae,Allophylus abyssinicus,seed,seed,,subject,seed,,,,,1690,1736
-51692,Sapindaceae,Allophylus abyssinicus,seed,seed,,shape,ellipsoid,,,,,1695,1705
-51692,Sapindaceae,Allophylus abyssinicus,seed,seed,,dimension,"('5–5.5', 'mm.', 'long')",,,,,1706,1721
-51692,Sapindaceae,Allophylus abyssinicus,seed,seed,,dimension,"('5.5–6', 'mm.', 'wide')",,,,,1722,1736
+666,testfam,Test run,leaf-blades,leaf-blades,,subject,leaf-blades,larger,,,,0,197
+666,testfam,Test run,leaf-blades,leaf-blades,,shape,rounded,±,,,,79,99
+666,testfam,Test run,leaf-blades,leaf-blades,,shape,cuneate,,,,,79,99
+666,testfam,Test run,leaf-blades,leaf-blades,,size,narrowed,,,,,125,133
+666,testfam,Test run,leaf-blades,leaf-blades,,pubescence,glabrous,,,,,164,172
+666,testfam,Test run,leaf-blades,leaf-blades,,shape,narrowly elliptic TO elliptic,,,,,19,49
+666,testfam,Test run,leaf-blades,leaf-blades,,dimension,"('2–7.5', 'cm.', 'long')",,,,,50,70
+666,testfam,Test run,leaf-blades,leaf-blades,,dimension,"('0.5–3.5', 'cm.', 'wide')",,,,,50,70
+666,testfam,Test run,leaf-blades,leaf-blades,,texture,papery,,,,,71,78
+666,testfam,Test run,leaf-blades,leaf-blades,base,presence,,small deltoid,,,Present,103,124
+666,testfam,Test run,leaf-blades,leaf-blades,apex,presence,,subacuminate acute,,,Present,137,163

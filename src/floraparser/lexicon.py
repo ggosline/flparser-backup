@@ -168,10 +168,12 @@ def pickle_lexicon():
                     'outside|inside|above|below|beneath|within|throughout|upward'.split('|')
     addlexicon(POSITIONPOST, 'A', {position: True, 'category': 'position', 'fix':'post'})
 
-    POSITIONN = 'top|bottom|underside|base|apex|margin|edge|front|back|both_sides|under_surfaces|' \
+    POSITIONN = 'top|bottom|underside|base|apex|tip|margin|edge|front|back|both_sides|under_surfaces|' \
                'outside|inside|' \
                'upper_surfaces|both_surfaces|each_side|section|rest_of|junction'.split('|')
     addlexicon(POSITIONN, 'N', {'category':'position'})
+    # POSITIONLAM = 'top|bottom|underside|base|apex|margin'.split('|')
+    # addlexicon(POSITIONLAM, 'N', {'category':'position', 'lam':True})
 
     # 'in' poosibly should be in following lists, but masks IN below
     PREP_POSITION = 'among|amongst|around|at|between|beyond|by|' \

@@ -132,7 +132,7 @@
 "136","A","antisepalous","position","equivalent floral structures","Each inserted directly above or below a sepal.  In place of this term, the phrase 'opposite the sepals' is often used, but that contradicts the sense of opposite as otherwise employed (arrangement of lateral structures along an axis) and should be avoided","position",
 "137","A","antrorse","orientation",,"Directed forward or upward, toward the distal end of the context of reference, parallel or at an acute angle to the bearing structure.","orientation",
 "138","A","apetalous","architecture","flower, perianth","Lacking petals.","architecture",
-"139","N","apex","structure",,"Configuration of the uppermost, distal, or terminal portion of a structure, its extent determined somewhat subjectively in relation to the shape of the structure as a whole.  The concept of apex varies from one descriptive context to another, since the ap","shape",
+"#","N","apex","structure",,"Configuration of the uppermost, distal, or terminal portion of a structure, its extent determined somewhat subjectively in relation to the shape of the structure as a whole.  The concept of apex varies from one descriptive context to another, since the ap","shape",
 "139","N","tip","structure",,"Configuration of the uppermost, distal, or terminal portion of a structure, its extent determined somewhat subjectively in relation to the shape of the structure as a whole.  The concept of apex varies from one descriptive context to another, since the ap","shape",
 "140","N","apices","structure",,"Configuration of the uppermost, distal, or terminal portion of a structure, its extent determined somewhat subjectively in relation to the shape of the structure as a whole.  The concept of apex varies from one descriptive context to another, since the ap","CHARACTER",
 "141","A","aphyllous","architecture","plant, axis","Not bearing leaves.","architecture",
@@ -3324,6 +3324,7 @@
 "#","A","undulate-denticulate","shape","margin",,,
 "#","A","undulate-truncate","shape","margin",,,
 "3457","A","apple-green","coloration",,,,
+"3457","A","crimson","coloration",,,,
 "#","A","blackish-purple","coloration",,,,
 "#","A","bluish-green","coloration",,,,
 "#","A","brownish-green","coloration",,,,
@@ -3406,7 +3407,7 @@
 "3552","A","at_anthesis","life-stage",,"time of fertilisation of the flower; time of receptivity of stigma or distribution of pollen; used more loosely for the time when the flower opens",,"KG"
 "3553",,"appearing",,,,,"KG"
 "3556","N","point_of_attachment","structure",,,,"KG"
-"3557","N","bases","structure",,,,"KG"
+"#","N","bases","structure",,,,"KG"
 "3558",,"bearing",,,,,"KG"
 "3560","A","bicornute","shape",,"with two horns",,"KG"
 "3561","A","borne","architecture",,"carried",,"KG"
