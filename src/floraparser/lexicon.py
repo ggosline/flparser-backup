@@ -122,13 +122,17 @@ def pickle_lexicon():
     addlexicon(PRONOUN, 'PRO', {})
 
     # should 'on' be here?
-    PREPOSITION = 'as|during|for|off|onto|out|over|per|through|throughout|' \
-                    'towards|up|upward|when|owing_to|due_to|according_to|on_account_of|' \
+    PREPOSITION = 'as|for|off|onto|out|over|per|through|throughout|' \
+                    'towards|up|upward|owing_to|due_to|according_to|on_account_of|' \
                     'united_with|joined_to|' \
                     'tipped_by|to_form|attached_to|immersed_in|' \
                     'except|except_for|save_for'.split('|')
     for word in PREPOSITION:
         addlexentry(word, 'P', dict(prep=word)) #, sem=read_expr(r'\x.' + word + '(x)'))
+
+    STAGEP = 'during|while|when'.split('|')
+    for word in STAGEP:
+        addlexentry(word, 'P', dict(prep=word, timing=True)) #, sem=read_expr(r'\x.' + word + '(x)'))
 
     CONDITIONP = 'when|if'.split('|')
     for word in CONDITIONP:
@@ -145,7 +149,7 @@ def pickle_lexicon():
                  "five|six|seven|eight|" \
                  "nine|ten|" \
                  "few|many|numerous|several".split('|')
-    addlexicon(LITNUMBERS, 'NUM', dict(literal=True))
+    addlexicon(LITNUMBERS, 'NUM', dict(number=True, literal=True))
     FRACTIONS = "twice|third|fourth|fifth|sixth|seventh|eighth|tenth|" \
                 "half|thirds|fourths|quarter|" \
                  "fifths|sixths|sevenths|eighths|ninths|tenths" \
@@ -213,7 +217,7 @@ def pickle_lexicon():
     TRANSITION = "becoming|tending_to_become|" \
              "remaining|turning|drying|darkening_to".split('|')
     addlexicon(TRANSITION, 'P', {timing:True, 'fix':'pre'})
-    PRESENCE = "present|absent".split('|')
+    PRESENCE = "present|absent|not_seen".split('|')
     addlexicon(PRESENCE, 'A', dict(category='presence'))
     ISA = "is|is_a|consisting_of".split('|')
     addlexicon(ISA, 'IS', dict(category='ISA'))
@@ -227,6 +231,7 @@ def pickle_lexicon():
     addlexicon(['no'], 'NO', {})
     addlexicon(['in'], 'IN', {})
     addlexicon(['than'], 'THAN', {})
+    addlexicon(['as'], 'AS', {})
     addlexicon(['for'], 'FOR', {})
     addlexicon(['that'], 'RCOMP', {})
     addlexicon(['that'], 'COMP', {})
@@ -238,6 +243,7 @@ def pickle_lexicon():
     addlexicon(['situated'], 'NULL', {})
     addlexicon(['located'], 'NULL', {})
     addlexicon(['borne'], 'NULL', {})
+    addlexicon(['fig.'], 'NULL', {})
 
     readcpglossary()
     # for wlist in multiwords.values():

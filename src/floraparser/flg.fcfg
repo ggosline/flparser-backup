@@ -142,10 +142,12 @@ ABAR[category=compar, H=[category=compar, compto=?h, comparison=?o]] -> A[+*comp
 ABAR[category=compar, H=[category=compar, orth=?o]] -> A[+*compar*, H=[orth=?o]]
 ABAR[category=compar, H=[category=compar, compto=?h, comparison=?c]] -> COMPARISON[ H=[comp=?c]] NP[ H=?h]
 
-COMPARATOR[category=dimension, H=[orth=?dim]] -> 'as' DIMEN[H=[dim=?dim]] 'as'
-COMPARATOR[category=count, H=[orth='many']] -> 'as' 'many' 'as'
+COMPARATOR[category=dimension, H=[orth=?dim]] -> AS DIMEN[H=[dim=?dim]] AS
+COMPARATOR[category=?c] -> ABAR[category=?c, +compar, +HD, H=?h] THAN
+COMPARATOR[category=count, H=[orth='as_many_as']] -> AS NUM[H=[orth='many']] AS
 
-COMPARISON[category=?c, H=[comp=[multiplier=?f, mod=?m, dim=?dim]]] -> FRACTIONAL[H=[orth=?f, mod=?m]] COMPARATOR[category=?c, H=[orth=?dim]]
+COMPARISON[category=?c, H=[comp=[multiplier=?f, mod=?m, dim=?dim, compto=?ct]]] -> [FRACTIONAL[H=[orth=?f, mod=?m]]] COMPARATOR[category=?c, H=[orth=?dim]] NP[H=?ct]
+COMPARISON[category=?c, H=[comp=[multiplier=?f, mod=?m, dim=?dim]]] -> [FRACTIONAL[H=[orth=?f, mod=?m]]] COMPARATOR[category=?c, H=[orth=?dim]]
 
 ABAR              -> NUM TIMES A[+*compar*] NP
 ABAR[category=?c] -> ABAR[category=?c, +HD, H=?head] PAREXP
@@ -162,14 +164,15 @@ WITHC[category=?c, H=[mod=(?count)]]        ->  COUNT[H=?count] WITHC[category=?
 
 # WITHC[category=position, H=[category=position, orth=?pos, clist=?clist]] -> CHRL[H=?clist] P[prep='at'] ART N[+*position*, +lam, H=[orth=?pos]]
 
-WITHP[category=?c, H=[presence=?p, having=?h, mod=(?mod)]] -> [DEG[H=[orth=?deg]]] WITH[presence=?p] WITHC[category=?c, H=?h]
-WITHP[category=?c, H=[+presence, having=?h]]   -> WITHC[category=?c, H=?h]
+WITHP[category=?c, H=[presence=?p, having=?h, mod=(?mod)]]  -> [DEG[H=[orth=?deg]]] WITH[presence=?p] WITHC[category=?c, H=?h]
+WITHP[category=?c, H=[+presence, having=?h]]                -> WITHC[category=?c, H=?h]
 
 WITHP[category=(?c+?d), H=[+presence, having=[AND=(?h1+?h2)]]] -> WITH WITHC[category=?c, H=?h1] AND  WITHC[category=?d, H=?h2]
 WITHP[category=(?c+?d), H=[+presence, having=[OR=(?h1+?h2)]]]  -> WITH WITHC[category=?c, H=?h1] OR   WITHC[category=?d, H=?h2]
 
-WITHP[category=presence, H=[category=presence, -presence, orth='Absent']] -> ABAR[category=presence, H=[orth='absent']]
+#WITHP[category=presence, H=[category=presence, -presence, orth='Absent']] -> ABAR[category=presence, H=[orth='absent']]
 
+COMPARISON[H=[category=?cat, orth=(?comp,?aa,?ab)]] -> ADV[+*makecomp*, H=[orth=?comp]] ABAR[H=?aa, category=?cat] THAN AP[H=?ab]
 COMPARISON[H=[category=?cat, orth=(?comp,?aa,?ab)]] -> ADV[+*makecomp*, H=[orth=?comp]] ABAR[H=?aa, category=?cat] THAN AP[H=?ab]
 
 OFP[category=?c, H=[prep=OF]] -> OF NP[category=?c, +HD, H=?head]

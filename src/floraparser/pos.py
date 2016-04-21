@@ -41,7 +41,7 @@ class FlTagger():
                 return m.group('root'), m.group('prefix')
             else:
                 parts = word.split('-')
-                if (parts[-1],) in lexicon:
+                if (parts[-1],) in lexicon or ('-'+parts[-1],) in lexicon:
                     return parts[-1], word[0:word.rindex('-')]
 
         # prefix or suffix

@@ -1,12 +1,3 @@
 taxonNo,family,taxon,mainsubject,subject,subpart,category,value,mod,posit,phase,presence,start,end
-666,testfam,Test run,leaf-blades,leaf-blades,,subject,leaf-blades,larger,,,,0,197
-666,testfam,Test run,leaf-blades,leaf-blades,,shape,rounded,±,,,,79,99
-666,testfam,Test run,leaf-blades,leaf-blades,,shape,cuneate,,,,,79,99
-666,testfam,Test run,leaf-blades,leaf-blades,,size,narrowed,,,,,125,133
-666,testfam,Test run,leaf-blades,leaf-blades,,pubescence,glabrous,,,,,164,172
-666,testfam,Test run,leaf-blades,leaf-blades,,shape,narrowly elliptic TO elliptic,,,,,19,49
-666,testfam,Test run,leaf-blades,leaf-blades,,dimension,"('2–7.5', 'cm.', 'long')",,,,,50,70
-666,testfam,Test run,leaf-blades,leaf-blades,,dimension,"('0.5–3.5', 'cm.', 'wide')",,,,,50,70
-666,testfam,Test run,leaf-blades,leaf-blades,,texture,papery,,,,,71,78
-666,testfam,Test run,leaf-blades,leaf-blades,base,presence,,small deltoid,,,Present,103,124
-666,testfam,Test run,leaf-blades,leaf-blades,apex,presence,,subacuminate acute,,,Present,137,163
+666,testfam,Test run,fruit,fruit,,subject,fruit,,,,,0,17
+666,testfam,Test run,fruit,fruit,,architecture,-seeded,many,,,,6,17

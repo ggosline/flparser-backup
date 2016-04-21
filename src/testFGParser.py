@@ -16,13 +16,13 @@ import ordered_set
 import logging
 logging.basicConfig(filename='flparse.log', filemode='w', level=logging.INFO)
 
-description = 'larger leaf-blades narrowly elliptic to elliptic, 2–7.5 × 0.5–3.5 cm., papery, ± rounded or cuneate to a small deltoid base, narrowed to a subacuminate acute apex, glabrous or nearly so at maturity'
+description = 'fruit many-seeded'
 # description = 'anthers 3, pale to orange-yellow, dehiscing by 2 oblique or almost vertical clefts not confluent at the apex'
 # query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Salacia' ;"
 # query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Salacia' and species = 'bussei' ;"
 # query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Acacia' and species = 'albida'  ;"
 # query="Select * from AllTaxa where flora_name = 'FTEA' and rank = 'species' and genus = 'Allophylus' and species = 'abyssinicus' ;"
-query="Select * from AllTaxa where flora_name = 'FTEA' and rank = 'species' and family = 'Rhizophoraceae' ;"
+query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'genus' and family = 'Annonaceae' ;"
 
 fromDB = True
 fromDB = False
@@ -38,8 +38,6 @@ cleantree = False
 cleantree = True
 
 ttrace = 1
-
-
 
 trec = defaultdict(lambda: None)
 trec['taxonNo'] = 666
