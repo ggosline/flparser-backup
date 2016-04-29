@@ -1,559 +1,61 @@
-TAXON:  Annonaceae Annona 
-Fail:
- Plant is Trees, shrubs or shrublets, not climbing, glabrous or with simple or stellate hairs
-No. of trees: 4
+TAXON:  Celastraceae Salacia erecta
 Success: 
- Buds globose to conic or triquetrous
+ Plant is Glabrous shrub or liane to 15 m. in height
 No. of trees: 1
 Fail:
- Flowers usually bisexual, solitary or in few-flowered cymes or fascicles, terminal or extra-axillary or sometimes on the old wood, pedicellate
-No. of trees: 5
-Success: 
- Bracteoles 0–2, persistent
+ Latex threads absent
 No. of trees: 1
 Fail:
- Sepals 3, valvate, much shorter than the petals, free
-No. of trees: 5
-Fail:
- Petals 6, free or connate at the base, in two equal or ± unequal whorls, or the inner whorl sometimes absent, both valvate or the inner whorl imbricate, thick, coriaceous, connivent or suberect, concave at the base or throughout
-No. of trees: 9
-Fail:
- Stamens ?, linear or linear-clavate, with thecae extrorse and often unequal at the base, and connective-prolongation obliquely capitate or apiculate, sometimes ± papillose
-No. of trees: 5
+ Stems 4-angled or with paired ridges, green or purplish, becoming terete, dark purplish grey, smooth, or rough with conspicuous raised lenticels
+No. of trees: 7
 Success: 
- filaments short
+ Leaves opposite, subopposite or alternate, petiolate
 No. of trees: 1
 Fail:
- Carpels numerous, free at first or united from the beginning, ± cylindric, with a single basal ovule
-No. of trees: 5
-Success: 
- style clavate
-No. of trees: 1
-Success: 
- stigma muricate
-No. of trees: 1
-Success: 
- Fruit a fleshy syncarp, ovoid-globose to cylindric, many-seeded
-No. of trees: 2
-Fail:
- Seeds irregularly arranged in the syncarp
+ petiole 3–6 mm. long with conspicuously undulate margins
 No. of trees: 2
 Success: 
- aril carunculoid
-No. of trees: 1
-TAXON:  Annonaceae Artabotrys 
-Fail:
- Plant is Shrubs or rarely small trees, usually climbing or scrambling, with simple hairs
-No. of trees: 4
-Success: 
- Buds ovoid
-No. of trees: 1
-Fail:
- Flowers bisexual, solitary or in condensed cymes, extra-axillary (rarely terminal), pedicellate, on usually hooked and flattened peduncles
-No. of trees: 6
-Fail:
- Bracts and bracteoles small, often caducous
-No. of trees: 3
-Fail:
- Sepals 3, valvate, equal to the petals or shorter
-No. of trees: 4
-Fail:
- Petals 6, free, in two equal or unequal whorls, both valvate, usually thick, erect or spreading, flat or ± subulate, usually ± concave at the base and enclosing the reproductive parts
-No. of trees: 9
-Fail:
- Stamens ?, oblong or cuneiform, with thecae extrorse and connective-prolongation broadened and truncate, the outer ones sometimes staminodial
-No. of trees: 4
-Fail:
- filaments very short or absent
-No. of trees: 2
-Success: 
- Carpels few (6) to numerous, free
-No. of trees: 2
-Success: 
- ovary ovoid or ellipsoid, with 2 basal ovules
-No. of trees: 2
-Fail:
- style as long as the ovary or shorter, cylindric or ± flattened, oblique
-No. of trees: 4
-Success: 
- stigma small
-No. of trees: 1
-Success: 
- Ripe carpels indehiscent, succulent, cylindric or ellipsoid, 1–2-seeded
-No. of trees: 1
-Success: 
- Seeds vertical, collateral
-No. of trees: 1
-Success: 
- aril absent
-No. of trees: 2
-TAXON:  Annonaceae Cleistochlamys 
-Success: 
- Plant is Shrub or small tree, erect or straggling, with simple hairs
-No. of trees: 3
-Success: 
- Buds globose
-No. of trees: 1
-Success: 
- Flowers bisexual, solitary, axillary, sessile
+ blade papery or subcoriaceous, usually glossy dark green above, paler beneath, usually elliptic, sometimes lanceolate, (2.5–)3.5–11(–15) cm. long, 1.7–4.5(–9) cm. wide, usually bluntly acuminate, rarely obtuse or retuse, cuneate to almost rounded at the base, with fine slightly prominent reticulate veins beneath
 No. of trees: 8
-Success: 
- Bracteoles 4–5, biseriate, persistent
+Fail:
+ margin serrate to subentire
 No. of trees: 1
 Fail:
- Calyx entire and completely enclosing the petals in bud, splitting into 3 (rarely 2) ± equal sepals, glabrous
-No. of trees: 4
-Fail:
- Petals 6, in two whorls the outer valvate, the inner imbricate and somewhat shorter, expanding and spreading at anthesis, free
-No. of trees: 6
-Fail:
- Stamens c. 30–40, cuneate-quadrate, with thecae extrorse, divergent and connective-prolongation broadly and obliquely capitate
-No. of trees: 5
-Fail:
- filaments absent or almost so
+ Inflorescence glabrous, consisting of few-flowered sessile or shortly pedunculate axillary fascicles
+No. of trees: 3
+Success: 
+ bracts ovate, ± 0.5–1 mm. long, fimbriate
 No. of trees: 1
 Success: 
- Carpels 6–10, free, ovoid, with a single basal ovule
+ pedicels 4–8(–10) mm. long at anthesis, articulated at the base
+No. of trees: 1
+Success: 
+ Buds ovoid or conical, 2–3 mm. long
 No. of trees: 1
 Fail:
- style cylindric, oblique, almost as long as the ovary
-No. of trees: 4
-Success: 
- stigma capitate
-No. of trees: 2
-Success: 
- Ripe carpels indehiscent, succulent, cylindric, stipitate, 1-seeded
-No. of trees: 1
-Success: 
- Seed vertical
-No. of trees: 1
-Success: 
- aril absent
-No. of trees: 2
-TAXON:  Annonaceae Dielsiothamnus 
-Success: 
- Plant is Shrub or small tree, sometimes climbing, with stellate and sparse simple hairs
+ Flowers greenish yellow (? sometimes orange), ± 7–9 mm. in diameter, sepals free or very shortly joined at the base, unequal, ovate to semicircular, 0.5–1 mm. long, rounded, fimbriate
 No. of trees: 9
 Success: 
- Buds globose
-No. of trees: 1
-Success: 
- Flowers bisexual (rarely male), solitary, axillary, shortly pedicellate
-No. of trees: 8
-Success: 
- Bracteoles 2, enclosing the bud
-No. of trees: 1
-Success: 
- Sepals 3, valvate, enclosing the petals in bud
-No. of trees: 8
-Fail:
- Petals 6, in 2 whorls, both valvate, free, the outer whorl slightly larger
-No. of trees: 6
-Fail:
- Stamens ?, linear-obconic with thecae lateral and connective-prolongations obliquely capitate, apiculate
+ Petals oblong, 3–4 mm. long, rounded, entire
 No. of trees: 3
 Success: 
- filaments short
-No. of trees: 1
-Success: 
- Carpel solitary, cylindric, with numerous ovules in two rows
-No. of trees: 16
-Success: 
- style absent
+ Disc a fleshy convex pad ± 2–2.5 mm. in diameter
 No. of trees: 2
 Success: 
- stigma bilobed
+ Stamens with slender flattened filaments 1.5–2 mm. long, widened at the base
 No. of trees: 1
 Success: 
- Ripe carpel indehiscent, sessile or subsessile, many-seeded
+ Ovary trigonous or 3-lobed, with a conical style ± 0.5 mm. long
 No. of trees: 1
 Success: 
- Seeds horizontal
+ stigma punctiform
 No. of trees: 1
 Success: 
- aril absent
+ ovules (2–)4–6 per locule
 No. of trees: 2
-TAXON:  Annonaceae Enneastemon 
-Success: 
- Plant is Shrubs or lianes with simple appressed ferrugineous hairs
-No. of trees: 3
-Success: 
- Leaves frequently bearing 2 basal glands
-No. of trees: 1
-Success: 
- Buds broadly ovoid or depressed-subglobose
-No. of trees: 1
 Fail:
- Flowers bisexual, solitary or in 2- to several-flowered cymes or fascicles, axillary or supra-axillary (more rarely extra-axillary), pedicellate
-No. of trees: 5
-Fail:
- Bracteole single, persistent, near the base of the pedicel, small
-No. of trees: 5
-Fail:
- Sepals 3, valvate, fused at the base, much shorter than the petals in bud
-No. of trees: 5
-Fail:
- Petals 6, slightly united at the base to form a single whorl or almost free, but forming two whorls above in bud, both valvate, thick, ± spreading at anthesis, usually concave, not or scarcely connivent, the inner smaller, sometimes shortly clawed
-No. of trees: 11
-Fail:
- Stamens 8–11 in a single whorl, obconic-clavate or quadrate, with thecae extrorse, parallel and connective frequently prolonged backwards over the ovaries, not broadened between the thecae
-No. of trees: 6
-Success: 
- filaments usually present, longer than the anthers
-No. of trees: 1
-Success: 
- Carpels 6–11, free
-No. of trees: 1
-Success: 
- ovary ovoid or ellipsoid, with 1–5 uniseriate ovules
-No. of trees: 2
-Success: 
- style ± cylindric, oblique, shorter than the ovary
-No. of trees: 3
-Fail:
- stigma subcapitate or tapering, usually bifurcating
-No. of trees: 3
-Success: 
- Ripe carpels indehiscent, succulent, cylindric-torulose, stipitate, 1–5-seeded
-No. of trees: 1
-Success: 
- Seeds vertical, serial
-No. of trees: 1
-Success: 
- aril absent
-No. of trees: 2
-TAXON:  Annonaceae Hexalobus 
-Success: 
- Plant is Shrubs or trees, not climbing, with simple hairs
-No. of trees: 3
-Success: 
- Buds ovoid-conic
-No. of trees: 1
-Fail:
- Flowers bisexual, solitary, axillary, sessile or shortly pedicellate
-No. of trees: 5
-Success: 
- Bracteoles 2 to several, biseriate, caducous
-No. of trees: 3
-Fail:
- Sepals 3, valvate, free, enclosing the petals in bud, with margins not or scarcely bent outwards, densely brown- or fawn-pubescent
+ Fruit orange, ± globose or oblong at maturity, often apiculate, 1–2.5(–3) cm. in diameter, smooth or sometimes warted, especially towards the apex
 No. of trees: 7
 Fail:
- Petals 6, in two whorls, both valvate, transversely plicate in bud, expanding and spreading at anthesis, connate at the base, equal or subequal
-No. of trees: 8
-Fail:
- Stamens ?, linear or obconic, with thecae extrorse and connective-prolongation capitate
-No. of trees: 3
-Success: 
- filaments short
-No. of trees: 1
-Fail:
- Carpels (1?) 3–12, free, cylindric-ellipsoid, with numerous biseriate ovules
-No. of trees: 5
-Success: 
- style very short
-No. of trees: 1
-Fail:
- stigma bilobed with shortly clavate lobes
-No. of trees: 2
-Fail:
- Ripe carpels indehiscent, succulent, cylindric-ellipsoid to obovoid, usually not or scarcely constricted, subsessile, several-seeded
-No. of trees: 7
-Success: 
- Seeds horizontal
-No. of trees: 1
-Success: 
- aril absent
-No. of trees: 2
-TAXON:  Annonaceae Monodora 
-Fail:
- Plant is Trees or shrubs, sometimes climbing or scrambling, glabrous or with simple hairs, with young shoots which frequently blacken and become brittle on drying
-No. of trees: 4
-Success: 
- Buds ovoid
-No. of trees: 1
-Fail:
- Flowers bisexual, solitary or more rarely paired or in few-flowered cymes, terminal or extra-axillary or in the axils of fallen leaves, pedicellate
-No. of trees: 5
-Success: 
- Bracteole solitary, usually amplexicaul, persistent, often foliaceous
-No. of trees: 4
-Fail:
- Sepals 3, valvate, much shorter than the petals, free
-No. of trees: 5
-Fail:
- Petals 6, in two unequal whorls, both valvate, all united at the base, often with undulate margins, the outer ones broad at the base, usually spreading or reflexed, the inner ones ± unguiculate, usually connivent at the apices or erect
-No. of trees: 10
-Fail:
- Stamens ?, oblong or cuneiform to ± orbicular, with thecae extrorse, and connective-prolongation thickened
-No. of trees: 4
-Success: 
- filaments absent
-No. of trees: 2
-Fail:
- Carpels several, united to form a 1-locular globose or conic ovary with parietal placentation and numerous ovules
-No. of trees: 3
-Success: 
- stigmas sessile, radiating
-No. of trees: 2
-Success: 
- Fruit a coriaceous or ligneous berry, globose to ellipsoid or obovoid, many-seeded
-No. of trees: 1
-Success: 
- Seeds irregularly arranged, shining
-No. of trees: 1
-Success: 
- aril absent
-No. of trees: 2
-TAXON:  Annonaceae Popowia 
-Fail:
- Plant is Shrubs or small trees, often climbing or scrambling, with simple (very rarely also forked or stellate) hairs
-No. of trees: 4
-Success: 
- Leaves rarely bearing 2 small basal glands
-No. of trees: 1
-Success: 
- Flower-buds broadly ovoid or depressed-globose
-No. of trees: 1
-Fail:
- Flowers bisexual or more rarely unisexual, solitary or in 2- to many-flowered cymes, extra-axillary or occasionally axillary, sometimes on leafless branches, pedicellate
-No. of trees: 6
-Fail:
- Bracteole 1, persistent, on the lower half of the pedicel, sometimes foliaceous
-No. of trees: 5
-Fail:
- Sepals 3, valvate, free or ± united, much shorter than the petals in bud, usually pubescent
-No. of trees: 6
-Fail:
- Petals 6, in two ± unequal whorls, both valvate or rarely the inner imbricate, thick, free, the outer ± spreading at anthesis, the inner smaller, concave, often somewhat connivent and erect, usually shortly clawed
-No. of trees: 11
-Fail:
- Stamens 8 to few (6–8), cuneate-quadrate (rarely linear) or flattened and staminodial, with thecae extrorse, ± parallel, and connective broadened, with or without an obliquely capitate prolongation
-No. of trees: 7
-Fail:
- filaments usually present, sometimes longer than the anthers
-No. of trees: 3
-Success: 
- Carpels rather numerous to few (6), free
-No. of trees: 4
-Fail:
- ovary clyindric or ellipsoid to obconic, with 1–4 (5) uniseriate ovules
-No. of trees: 3
-Fail:
- style as long as the ovary or shorter, cylindric or obconic, oblique
-No. of trees: 4
-Fail:
- stigma sub-capitate or tapering, often bifurcating
-No. of trees: 3
-Success: 
- Ripe carpels indehiscent, succulent, cylindric-torulose, stipitate, 1–4-seeded
-No. of trees: 1
-Success: 
- Seeds vertical, serial
-No. of trees: 1
-Success: 
- aril absent
-No. of trees: 2
-TAXON:  Annonaceae Uvaria 
-Fail:
- Plant is Shrubs or small trees, usually climbing or scrambling, with stellate and sometimes also simple hairs
-No. of trees: 4
-Success: 
- Buds conic or ± globose
-No. of trees: 1
-Fail:
- Flowers usually bisexual, solitary or in few-flowered cymes, terminal or extra-axillary (often leaf-opposed), rarely on old branches, sessile or pedicellate
-No. of trees: 6
-Fail:
- Bracteoles 2, respectively basal and median or at the base of the calyx, often caducous
-No. of trees: 4
-Success: 
- Sepals 3, valvate, often ± connate
-No. of trees: 4
-Fail:
- Petals 6, in two whorls, both imbricate, equal or the outer whorl slightly longer, expanding and spreading at anthesis, free or rarely connate at the base
-No. of trees: 7
-Fail:
- Stamens ?, the outer sometimes sterile and foliar, linear or obconic, with thecae lateral or extrorse and connective prolongations thin, tapering, rounded or truncate, rarely capitate
-No. of trees: 7
-Fail:
- filaments very short or absent
-No. of trees: 2
-Fail:
- Carpels ?, free, linear or cylindric, with numerous ovules in 2 rows, rarely with 1–3 ovules
-No. of trees: 5
-Fail:
- style very short or absent
-No. of trees: 2
-Fail:
- stigma horse-shoe-shaped or funnel-shaped with a slit down the inner side
-No. of trees: 2
-Fail:
- Ripe carpels indehiscent, dry or succulent, often sweet and edible, globular to cylindric, usually on median or lateral stipes, many- to few-seeded
-No. of trees: 7
-Fail:
- Seeds horizontal or oblique
-No. of trees: 2
-Success: 
- aril small, carunculoid
-No. of trees: 1
-TAXON:  Annonaceae Uvariastrum 
-Fail:
- Plant is Shrubs or trees, not climbing, glabrous or with simple hairs (and also stellate hairs in U. modestum Diels)
-No. of trees: 3
-Success: 
- Buds conic
-No. of trees: 1
-Fail:
- Flowers bisexual (rarely unisexual), solitary or paired, axillary, sometimes on the old wood
-No. of trees: 5
-Success: 
- Bracteole 1, usually caducous
-No. of trees: 1
-Success: 
- Sepals 3, valvate, free, enclosing the petals and with the margins folded to form three ± prominent longitudinal wings in bud, often densely brown-pubescent
-No. of trees: 32
-Fail:
- Petals 6, in two whorls, both valvate (or the inner one imbricate in U. hexaloboides (R.E.Fr.) R.E.Fr.), expanding and spreading at anthesis, free, subequal (the outer whorl usually slightly longer)
-No. of trees: 5
-Fail:
- Stamens ?, linear, with thecae extrorse and connective-prolongations ± capitate
-No. of trees: 3
-Fail:
- Carpels 3–10 or sometimes more numerous, free, cylindric or obconic, sometimes ± angular, with numerous ovules in two rows
-No. of trees: 6
-Fail:
- style very short or absent
-No. of trees: 2
-Success: 
- stigma ± expanded, bilobed or irregular
-No. of trees: 1
-Fail:
- Ripe carpels indehiscent, succulent (? or sometimes dry), ellipsoid to cylindric, shortly stipitate, many- to few-seeded
-No. of trees: 5
-Success: 
- Seeds ± horizontal
-No. of trees: 1
-Success: 
- aril absent
-No. of trees: 2
-TAXON:  Annonaceae Uvariodendron 
-Success: 
- Plant is Shrubs or trees, not climbing, with simple hairs
-No. of trees: 3
-Success: 
- Buds depressed-globose
-No. of trees: 1
-Fail:
- Flowers bisexual, solitary or paired, axillary, sometimes on the old wood
-No. of trees: 5
-Success: 
- Bracteoles 2–6, usually biseriate, forming an involucre in sessile flowers
-No. of trees: 2
-Fail:
- Sepals 3, valvate, free or united at the base, not enclosing the petals in bud, with plane margins, densely brown- or golden-sericeous outside, glabrous within
-No. of trees: 8
-Fail:
- Petals 6, in two whorls, the outer valvate, the inner valvate above and open below, expanding and spreading at anthesis or the inner whorl remaining connivent at the apex, free, subequal, thick
-No. of trees: 9
-Fail:
- Stamens very numerous, linear, with thecae lateral or extrorse and connective-prolongations capitate
-No. of trees: 4
-Fail:
- Carpels ?, cylindric, with numerous ovules in two rows
-No. of trees: 3
-Success: 
- style very short
-No. of trees: 1
-Success: 
- stigma truncate, horse-shoe-shaped
-No. of trees: 2
-Success: 
- Ripe carpels indehiscent, ovoid or ellipsoid to cylindric, straight, subsessile, many-seeded
-No. of trees: 2
-Success: 
- Seeds ± horizontal
-No. of trees: 1
-Success: 
- aril absent
-No. of trees: 2
-TAXON:  Annonaceae Uvariopsis 
-Success: 
- Plant is Shrubs or trees, not climbing, with simple hairs
-No. of trees: 3
-Fail:
- Flowers monoecious or dioecious, solitary or in fascicles, axillary, sometimes on the old wood, pedicellate, female larger than male
-No. of trees: 7
-Success: 
- Bracteoles 2, respectively basal and median, ± persistent
-No. of trees: 2
-Fail:
- Sepals 2, connate to form a bilobed or patelliform calyx, much shorter than the petals in bud
-No. of trees: 4
-Fail:
- Petals 4, in one whorl, valvate, expanding and spreading at anthesis, free or ± connate, subequal, thick
-No. of trees: 8
-Success: 
- Stamens very numerous, oblong to oblong-obovoid, with thecae extrorse
-No. of trees: 2
-Fail:
- connective-prolongation absent or very short
-No. of trees: 2
-Fail:
- filaments absent or very short
-No. of trees: 2
-Success: 
- Carpels numerous, free, obovoid, pubescent, with numerous biseriate ovules
-No. of trees: 2
-Success: 
- stigma sessile, cylindric or depressed-obconic
-No. of trees: 2
-Success: 
- Ripe carpels indehiscent, succulent, cylindric or ellipsoid to obovoid, frequently constricted, stipitate, several-seeded
-No. of trees: 1
-Success: 
- Seeds horizontal
-No. of trees: 1
-Success: 
- aril absent
-No. of trees: 2
-TAXON:  Annonaceae Xylopia 
-Fail:
- Plant is Trees, shrubs or shrublets, not climbing, with simple or rarely forked hairs
-No. of trees: 4
-Success: 
- Buds triquetrous or conic
-No. of trees: 1
-Fail:
- Flowers bisexual, solitary or in cymes or fascicles, axillary, pedicellate or sessile, often (? always) fragrant
-No. of trees: 6
-Success: 
- Bracteoles (1) 2–5, caducous or persistent
-No. of trees: 1
-Fail:
- Sepals 3, valvate, much shorter than the petals, ± united
-No. of trees: 5
-Fail:
- Petals 6, free, in two subequal or unequal whorls, both valvate, thick, erect or spreading, flat or triquetrous and often linear above, broad and ± concave at the base, the inner ones sometimes with a fleshy pad covering the reproductive parts
-No. of trees: 10
-Fail:
- Stamens ?, linear, with thecae extrorse, septate and connective-prolongation, capitate, the outer and inner ones often flattened and staminodial
-No. of trees: 6
-Fail:
- filaments articulated, the bases sometimes united, enclosing the gynoecium
-No. of trees: 4
-Success: 
- Carpels ? to few (rarely solitary), free, ovoid-cylindric or ± flattened, with several 1-seriate or biseriate ovules
-No. of trees: 64
-Success: 
- styles cylindric or narrowly clavate, aggregated
-No. of trees: 1
-Success: 
- Ripe carpels dehiscent, ± succulent, cylindric or obovoid, 1–8-seeded
-No. of trees: 1
-Fail:
- Seeds vertical to horizontal, collateral or biseriate
-No. of trees: 3
-Success: 
- aril present (sometimes inconspicuous)
+ Fig. 8/4, p. 35
 No. of trees: 2
