@@ -11,10 +11,10 @@ class FlTaxon():
     Flora taxon
     '''
     _sent_tokenizer = None
-    descriptionPrefix = 'Plant is '
+    # descriptionPrefix = 'Plant is '
 
     def __init__(self, trec,
-                 sentence_tokenizer=None):
+                 sentence_tokenizer=None, prefixdesc=None):
         self.flora = trec['flora_name']
         self.taxonNO = trec['taxonNo']
         self.rank = trec['rank']
@@ -24,8 +24,8 @@ class FlTaxon():
         self.infrarank = trec['infrarank']
         self.infraepi = trec['infraepi']
         self.description = trec['description']
-        if self.rank != None:
-            self.description =  self.descriptionPrefix + self.description
+        if prefixdesc != None:
+             self.description =  prefixdesc + self.description
         self.sentences = [FlSentence(self, sl[0], sl[1]) for sl in
                           sentence_tokenizer(self.description)] if self.description else []
 

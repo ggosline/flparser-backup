@@ -12,7 +12,8 @@ from floraparser.fltoken import FlTokenizer, FlTaxon, FlPhrase
 
 class AbstractFloraCorpusReader(object):
     def __init__(self, reader=None,
-                 sent_tokenizer=LazyLoader(r'..\resources\FloraPunkt.pickle')):
+                 sent_tokenizer=LazyLoader(r'..\resources\FloraPunkt.pickle'),
+                 prefixdesc=None):
         self._reader = reader  # file reader
         self._word_tokenize = FlTokenizer().span_tokenize
         # punkt_param = PunktParameters()
@@ -20,7 +21,7 @@ class AbstractFloraCorpusReader(object):
         # self._sent_tokenize = PunktSentenceTokenizer(punkt_param).tokenize
         self._sent_tokenize = sent_tokenizer.span_tokenize
         PunktLanguageVars.sent_end_chars = ('.',)  # don't break on question marks !
-        self._taxa = list(FlTaxon(f, sentence_tokenizer=self._sent_tokenize) for f in self._reader)
+        self._taxa = list(FlTaxon(f, sentence_tokenizer=self._sent_tokenize, prefixdesc=prefixdesc) for f in self._reader)
 
     @property
     def taxa(self, taxonids=None):
@@ -38,7 +39,7 @@ class FloraCorpusReader(AbstractFloraCorpusReader):
         self.dbr = ADOdb(Accessdbname)
         self.dbr.OpenTable(query, fieldlst)
         self.rdr = self.dbr.NextRec()
-        super().__init__(reader=self.rdr, **kwargs)
+        super().__init__(reader=self.rdr, prefixdesc = 'Plant is ', **kwargs)
 
 
 if __name__ == "__main__":

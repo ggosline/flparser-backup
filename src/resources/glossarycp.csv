@@ -341,7 +341,7 @@
 "358","A","butterfly-like","architecture","corolla","Having a relatively large, erect adaxial (upper) petal (the standard, banner or vexillum), two smaller lateral petals (the wings or alae), and two individually smaller but connate or coherent abaxial (lower) petals that together form a carinate structure","architecture",
 "359","A","caducous","duration","structure","Deciduous upon or immediately after emergence, with little or no evident senescence beforehand.","duration",
 "360","A","caesious","coloration",,"Greenish pruinose; covered with a thin, opaque, greenish deposit (bloom) of macroscopically indistinguishable waxy particles that rubs off easily.  See also glaucescent, glaucous.","coating",
-"361","A","caespitose","habit",,"See cespitose.","habit",
+"361","A","caespitose","architecture",,"See cespitose.","habit",
 "362","A","calcarate","shape",,"Having a relatively slender protrusion resembling a spur.","shape",
 "363","A","calceolate","shape",,"Relatively thin-walled with an essentially hollow interior that is open on one side at the broader end.","shape",
 "364","A","callose","texture",,"Hard-leathery; callose tissue usually is also thicker than comparable adjacent tissue.","texture",
@@ -1106,6 +1106,7 @@
 "1145","A","_gonous","shape",,"Elongate with the number of longitudinal angles indicated by the prefix, the intervening sides transversely straight to concave; as in hexagonous, trigonous.  See also deltoid, ...gonal (...angular), obdeltoid, triquetrous.","shape",
 "1146","N","grain","structure","fruit","The achene of a grass [Poaceae (Gramineae)]  Although in traditional use grain (or caryopsis) has been treated as a type separate from achene, they do not differ in basic morphology.","nominative",
 "1147","A","granular","texture",,"Composed of grain-like particles; loose, dry, and coarsely particulate.","texture",
+"1147","A","granular","relief",,"Composed of grain-like particles; loose, dry, and coarsely particulate.","texture",
 "1148","A","granulate","texture",,"Composed of grain-like particles; loose, dry, and coarsely particulate.","texture",
 "1149","A","granuliferous","coating",,"Covered with a more or less even deposit of fine, dry particles.  See also lentiginous (dusty, lentiginose), which is not clearly distinct in its application.","coating",
 "1150","A","granulose","texture",,"Composed of grain-like particles; loose, dry, and coarsely particulate.","texture",
@@ -2271,7 +2272,7 @@
 "2341","N","silique","structure","fruit","Like a silicle, but broader than long; esp. in Brassicaceae (Cruciferae), Capparaceae.","nominative",
 "2342","A","silky","pubescence",,"Of or bearing long, fine, appressed, capillate trichomes and like silk to the touch.","pubescence",
 "2343","A","simple","architecture",,"Externally unitary and comprising only one basic morphological unit; not compound in either sense of that term.","architecture",
-"2344","A","simple","architecture","trichome","Unicellular and unbranched.","architecture",
+"#","A","simple","architecture","trichome","Unicellular and unbranched.","architecture",
 "2345","A","simple-craspedodromous","venation",,"Having a midvein that branches to either side along the length of the lamina, the secondary veins and their branches all running toward and terminating at the margin.","venation",
 "2346","A","simple-lipped","architecture","stomate","Having subsidiary cells not derived from the primary stoma mother cell and thus not immediately related ontogenetically to the guard cells.","architecture",
 "2347","A","single_","prefix",,"Indicating presence of or constitution by one entity of the type denoted by the term's stem; as in single-celled, single-headed, single-seeded.  See also entries for particular terms with this prefix whose meanings, at least in some applications, are more","prefix",
@@ -2469,6 +2470,7 @@
 "2539","A","strigillose","pubescence",,"Finely strigose.","pubescence",
 "2540","A","strigose","pubescence",,"Bearing sharp, rigid, appressed, capillate trichomes.  See also strigillose (strigulose).","pubescence",
 "2541","A","strigulose","pubescence",,"Finely strigose.","pubescence",
+"2542","N","stripe","feature","color","Having one or more elongate, relatively narrow and, when multiple, more or less parallel, areas of contrasting hue and/or intensity.","coloration",
 "2542","A","striped","coloration",,"Having one or more elongate, relatively narrow and, when multiple, more or less parallel, areas of contrasting hue and/or intensity.","coloration",
 "2543","A","strobiloid","architecture","flower","Characterized by a general lack of adnation among the different sets of basic floral structures, any significant degree of fusion limited to connation within sets, thus with ovary(ies) superior and lacking a floral tube.","architecture",
 "2544","N","strobilus","structure",,"A compound or complex reproductive structure consisting of a central axis bearing congested sporophylls and sometimes other lateral members (e.g., bracts) that are sterile.","STRUCTURE",
@@ -2638,6 +2640,7 @@
 "2714","N","tooth","structure",,"One of a series of regularly spaced, angular, marginal convexities oriented more or less perpendicular to the generalized perimeter of a laminar structure.  See also  sawtooth, sawtoothlet, scallop (crena), scalloplet (crenule), toothlet.","STRUCTURE",
 "2715","N","teeth","structure",,"One of a series of regularly spaced, angular, marginal convexities oriented more or less perpendicular to the generalized perimeter of a laminar structure.  See also  sawtooth, sawtoothlet, scallop (crena), scalloplet (crenule), toothlet.","STRUCTURE",
 "2716","A","toothed","shape",,"Having regularly spaced, angular convexities oriented more or less perpendicular to the generalized perimeter.  See also small-toothed (denticulate); See also sawtoothed (serrate), scalloped (crenate), small-sawtoothed (serrulate), small-scalloped (crenul","shape",
+"2716","A","toothed","shape","margin","Having regularly spaced, angular convexities oriented more or less perpendicular to the generalized perimeter.  See also small-toothed (denticulate); See also sawtoothed (serrate), scalloped (crenate), small-sawtoothed (serrulate), small-scalloped (crenul","shape",
 "2718","A","_toothed","shape",,"Having the number of orders of teeth (dentes) indicated by the prefix, one upon another; as in twice-toothed.  See also ...-sawtoothed (...serrate), ...-scalloped (...crenate).","shape",
 "2719","N","toothlet","structure",,"A diminutive tooth (dens).  See also sawtooth, sawtoothlet, scallop (crena), scalloplet (crenule).","STRUCTURE",
 "2720","A","top-shaped","shape",,"Broadly obovoid-obconic; like a spinning top.  See also pear-shaped (pyriform), obturbinate.","shape",
@@ -2931,7 +2934,7 @@
 "3010","A","decreasing","count",,,,
 "#","A","deep","depth",,,,
 "3012","A","delicate","fragility",,,,
-"3013","A","dense","architecture","crown",,,
+"3013","A","dense","architecture",,,,
 "3014","A","developed","development",,,,
 "3015","A","dichasiform","arrangement",,,,
 "3016","A","diminished","manifestation",,,,
@@ -3406,7 +3409,7 @@
 "3545","A","accessory","architecture","buds, branches, fruits","<b> 1. </b>(of buds) additional to axillary buds, and assuming their function; <b>2. </b>(of branches) secondary branches; <b>3. </b>(of fruits) false fruits, conspicuous but without function other than attraction; <b>4.</b> a fruit (or group of fruits) c",,"KG"
 "3548","N","acumen","structure",,"a rather abruptly tapering point from an otherwise rounded or obtuse apex",,"KG"
 "3551","N","angles","structure",,,,"KG"
-"3552","A","at_anthesis","life-stage",,"time of fertilisation of the flower; time of receptivity of stigma or distribution of pollen; used more loosely for the time when the flower opens",,"KG"
+"3552","A","anthesis","life-stage",,"time of fertilisation of the flower; time of receptivity of stigma or distribution of pollen; used more loosely for the time when the flower opens",,"KG"
 "3553",,"appearing",,,,,"KG"
 "3556","N","point_of_attachment","structure",,,,"KG"
 "#","N","bases","structure",,,,"KG"

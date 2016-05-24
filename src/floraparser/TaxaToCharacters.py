@@ -20,13 +20,16 @@ def charactersFromDB(query):
     outfile = open('testphrases.txt', 'w', encoding='utf-8')
     parseTaxa(ttaxa, outfile=outfile)
 
-def charactersFromText(trdr, draw=True, ttrace=1, cleantree=True, parser=FeatureBottomUpLeftCornerChartParser):
-    ttaxa = AbstractFloraCorpusReader(reader=trdr)
-    parseTaxa(ttaxa, draw=draw, outfile=None, cleantree=cleantree, ttrace=ttrace, projparser=parser)
+def charactersFromText(trdr, draw=True, ttrace=1, testphrases=False, cleantree=True, prefixdesc=None,
+                       parser=FeatureBottomUpLeftCornerChartParser):
+    ttaxa = AbstractFloraCorpusReader(reader=trdr, prefixdesc=prefixdesc)
+    outfile = sys.stdout
+    if testphrases:
+        outfile = open('testphrases.txt', 'w', encoding='utf-8')
+    parseTaxa(ttaxa, draw=draw, outfile=outfile, cleantree=cleantree, ttrace=ttrace, projparser=parser)
 
 def parseTaxa(ttaxa, draw=False, outfile=None, ttrace=0, cleantree=True, projparser=FeatureBottomUpLeftCornerChartParser):
     tfilebase = r'..\..\temp\tree'
-    outfile = sys.stdout
     cf = open('characters.csv', 'w', encoding='utf-8', newline='')
     # cfcsv = csv.DictWriter(cf, 'taxonNo family taxon subject subpart category value mod posit phase presence start end'.split())
     # cfcsv.writeheader()

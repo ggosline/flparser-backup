@@ -1,61 +1,64 @@
-TAXON:  Celastraceae Salacia erecta
-Success: 
- Plant is Glabrous shrub or liane to 15 m. in height
-No. of trees: 1
+TAXON:  Sapindaceae Allophylus abyssinicus
 Fail:
- Latex threads absent
-No. of trees: 1
-Fail:
- Stems 4-angled or with paired ridges, green or purplish, becoming terete, dark purplish grey, smooth, or rough with conspicuous raised lenticels
-No. of trees: 7
+ Plant is Medium to fairly large tree, rarely shrubby, (4.5–)6–21(–25) m. tall and with slender bole 30–90 cm. diameter, sometimes slightly buttressed at the base (e.g. in Chyulu Hills)
+No. of trees: 4
 Success: 
- Leaves opposite, subopposite or alternate, petiolate
-No. of trees: 1
-Fail:
- petiole 3–6 mm. long with conspicuously undulate margins
-No. of trees: 2
+ crown dark green, open to dense, irregular or rounded
+No. of trees: 4
 Success: 
- blade papery or subcoriaceous, usually glossy dark green above, paler beneath, usually elliptic, sometimes lanceolate, (2.5–)3.5–11(–15) cm. long, 1.7–4.5(–9) cm. wide, usually bluntly acuminate, rarely obtuse or retuse, cuneate to almost rounded at the base, with fine slightly prominent reticulate veins beneath
+ bark grey or greyish white, smooth or slightly rough or granular, sometimes peeling in small to large flakes
 No. of trees: 8
 Fail:
- margin serrate to subentire
-No. of trees: 1
-Fail:
- Inflorescence glabrous, consisting of few-flowered sessile or shortly pedunculate axillary fascicles
-No. of trees: 3
+ slash pale brownish pink or pale orange darkening to reddish brown and smelling of pepper, also described ( <i>Ede</i> 1,T7) as off-white with pinky brown green-edged lines
+No. of trees: 4
 Success: 
- bracts ovate, ± 0.5–1 mm. long, fimbriate
+ sapwood white
 No. of trees: 1
 Success: 
- pedicels 4–8(–10) mm. long at anthesis, articulated at the base
+ young branches minutely ferruginous tomentellous and densely lenticellate
 No. of trees: 1
 Success: 
- Buds ovoid or conical, 2–3 mm. long
-No. of trees: 1
-Fail:
- Flowers greenish yellow (? sometimes orange), ± 7–9 mm. in diameter, sepals free or very shortly joined at the base, unequal, ovate to semicircular, 0.5–1 mm. long, rounded, fimbriate
-No. of trees: 9
-Success: 
- Petals oblong, 3–4 mm. long, rounded, entire
-No. of trees: 3
-Success: 
- Disc a fleshy convex pad ± 2–2.5 mm. in diameter
-No. of trees: 2
-Success: 
- Stamens with slender flattened filaments 1.5–2 mm. long, widened at the base
-No. of trees: 1
-Success: 
- Ovary trigonous or 3-lobed, with a conical style ± 0.5 mm. long
-No. of trees: 1
-Success: 
- stigma punctiform
-No. of trees: 1
-Success: 
- ovules (2–)4–6 per locule
-No. of trees: 2
-Fail:
- Fruit orange, ± globose or oblong at maturity, often apiculate, 1–2.5(–3) cm. in diameter, smooth or sometimes warted, especially towards the apex
+ Leaves trifoliolate, drying dull and dark above, thinly coriaceous
 No. of trees: 7
-Fail:
- Fig. 8/4, p. 35
+Success: 
+ petiole 2.5–10.5 mm. long, minutely tomentellous or less often more distinctly pubescent
 No. of trees: 2
+Fail:
+ leaflets elliptic to obovate, (2.8–)5.5–21 cm. long, (1.2–)3–11 cm. wide, acute to acuminate at the apex, attenuate to cuneate at the base, shallowly crenulate to toothed, adpressed velvety pilose when very young, later glabrescent or glabrous to minutely puberulous, less often pubescent
+No. of trees: 10
+Fail:
+ tufts of hairs in axils of nerves and veins usually conspicuous beneath
+No. of trees: 6
+Fail:
+ Inflorescences 5–22 cm. long, with 2–10 branches, some again branched, usually finely tomentose
+No. of trees: 5
+Fail:
+ cymules subsessile
+No. of trees: 1
+Success: 
+ pedicels 1–3 mm. long
+No. of trees: 1
+Success: 
+ Flowers said to be lily-scented or scentless
+No. of trees: 2
+Success: 
+ outer sepals elliptic, 1.2–1.5 mm. long, 1 mm. wide, puberulous, inner elliptic to round, 1.5–2 mm. long, 1.5 mm. wide
+No. of trees: 2
+Success: 
+ petals dirty white or yellowish, 1.5 mm. long, 1 mm. wide
+No. of trees: 1
+Success: 
+ Filaments 2–3 mm. long, glabrous
+No. of trees: 1
+Success: 
+ Style 2–3 mm. long, ± glabrous
+No. of trees: 1
+Success: 
+ stigma 1–1.5 mm. long
+No. of trees: 1
+Success: 
+ Fruit red or orange, subglobose, oblong or elliptic, 6–8 mm. long and wide, with very sparse hairs
+No. of trees: 1
+Success: 
+ Seed ellipsoid, 5–5.5 mm. long, 5.5–6 mm. wide
+No. of trees: 1

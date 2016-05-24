@@ -160,7 +160,7 @@ def pickle_lexicon():
     addlexicon(ORDNUMBERS, 'A', dict(ordinal=True))
     UNITS = "mm.|cm.|dm.|m.|km.|in.|ft.|mm|cm|dm|m|km".split('|')
     addlexicon(UNITS, 'UNIT', {})
-    DIMENSION = "high|tall|long|wide|across|thick|diam.|diameter|diam|in_height|in_width|in_diameter|in_diam".split(
+    DIMENSION = "high|tall|long|wide|across|thick|diam.|diameter|diam|in_height|in_width|in length|in_diameter|in_diam.".split(
         '|')
     addlexicon(DIMENSION, 'DIM', {})
     RANGE = 'up_to|at_least|to|more_than|less_than|attaining'.split('|')
@@ -193,7 +193,7 @@ def pickle_lexicon():
         #addlexentry(word, 'P', prep=word, position=True, sem=read_expr(r'\x.' + word + '(x)'))
 
 
-    ACCURACY = "c.|about|more_or_less|±|exactly|almost|nearly|appearing".split('|')
+    ACCURACY = "c.|ca.|about|more_or_less|±|exactly|almost|nearly|appearing".split('|')
     addlexicon(ACCURACY, 'DEG', dict(category='accuracy'))
     FREQUENCY = "very|a_little|not_much|sometimes|often|usually|rarely|more_rarely|more_often|generally|never|always|" \
                 "mostly|frequently|soon|also|even|especially|?".split('|')

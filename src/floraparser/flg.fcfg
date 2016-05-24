@@ -79,6 +79,7 @@ BYX -> CONJ[conj='×']
 BYX -> CONJ[conj='x']
 
 SIZE[category=dimension, H=[category=dimension, num=?num, unit=?unit, dim=?dim]]  -> NUM[H=[orth=?num]] UNIT[H=[orth=?unit]]  DIMEN[H=[dim=?dim]]
+SIZE[category=dimension, H=[category=dimension, num=?num, unit=?unit, dim=default]]  -> NUM[H=[orth=?num]] UNIT[H=[orth=?unit]]
 SIZE[category=dimension, H=[category=dimension, num=?num, unit=?unit, dim=long, mod=?mod]]  -> FRACTIONAL[H=[orth=?num, mod=?mod]] UNIT[H=[orth=?unit]]
 SIZE[category=dimension, H=[AND=([category=dimension, num=?num1, dim=long, unit=?unit],[category=dimension, num=?num2, dim=wide, unit=?unit])]]  -> NUM[H=[orth=?num1]] BYX NUM[H=[orth=?num2]] UNIT[H=[orth=?unit]]
 
@@ -120,6 +121,7 @@ ABAR[category=?c, H=[mod=(?adv)]]                      -> COUNT[H=[val=?adv]] A[
 
 ORDELIM -> COMMA | OR | COMMA OR
 ABARL[category=?c, appliesto=?a, H=[category=?c, OR=(?ha+?hb)]]     ->   ABARL[category=?c, appliesto=?a, H=?ha] OR ABARL[category=?c, appliesto=?a, H=?hb]
+ABARL[category=?c, appliesto=?a, H=[category=?c, TO=(?ha+?hb)]]     ->   ABARL[category=?c, appliesto=?a, H=?ha] TO ABARL[category=?c, appliesto=?a, H=?hb]
 ABARL[category=?c, appliesto=?a, H=[mod=(?ha)]]                     ->   ABARL[category=?d, H=?ha] ABAR[category=?c, appliesto=?a, +HD, H=?hb]
 ABARL[category=?c, appliesto=?a]                                    ->   ABAR[category=?c, appliesto=?a, +HD, H=?h]
 #APL[category=?c, H=[category=?c, OR=(?ha+?hb)]]     ->  AP[category=?c, H=?ha] OR APL[category=?c, H=?hb]
@@ -192,6 +194,7 @@ OR  -> CONJ[conj=or]
 
 STAGE[fix=prepost] -> [P[prep='in']] A[category='life-stage', +HD, H=?head]
 STAGE[fix=prepost] -> P[prep='when'] A[category='life-stage', +HD, H=?head]
+STAGE[fix=prepost] -> P[prep='during'] A[category='life-stage', +HD, H=?head]
 STAGE[fix=prepost] -> P[prep='in'] A[category='life-stage', +HD, H=?head] 'state'
 STAGE[fix=prepost] -> P[prep='at'] A[category='life-stage', +HD, H=?head]
 STAGE[fix=pre] -> P[+*timing*, +HD, H=?head, fix=pre]
