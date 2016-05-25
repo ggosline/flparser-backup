@@ -1,9 +1,4 @@
 taxonNo,family,taxon,mainsubject,subject,subpart,category,value,mod,posit,phase,presence,start,end
-666,testfam,Test run,leaves,leaves,,subject,leaves,,,,,0,99
-666,testfam,Test run,leaves,leaves,,architecture,-foliolate,tri,,,,7,20
-666,testfam,Test run,leaves,leaves,,coloration,discolorous,mostly,above,,,21,80
-666,testfam,Test run,leaves,leaves,,coloration,deep,,above,drying,,21,80
-666,testfam,Test run,leaves,leaves,,coloration,brown,purplish,above,drying,,21,80
-666,testfam,Test run,leaves,leaves,,coloration,discolorous,mostly,,,,21,80
-666,testfam,Test run,leaves,leaves,,coloration,brown,deep or purplish,above,drying,,21,80
-666,testfam,Test run,leaves,leaves,,coloration,green,grey,beneath,,,81,99
+666,testfam,Test run,leaflet,leaflet,,subject,leaflet,,,,,0,58
+666,testfam,Test run,leaflet,leaflet,,dimension,"('6–11(–17)', 'cm.', 'long')",,,,,9,28
+666,testfam,Test run,leaflet,leaflet,,dimension,"('2–4(–5.5)', 'cm.', 'wide')",OR; shorter,,,,29,58

@@ -144,7 +144,7 @@ def pickle_lexicon():
 
     GROUPS = "group|groups|clusters|cluster|arrays|array|series|" \
              "pairs|pair|row|rows|number|numbers|colonies|whorl|whorls".split('|')
-    addlexicon(GROUPS, 'N', dict(group=True, category='grouping'))
+    addlexicon(GROUPS, 'N', {group:True, 'category':'grouping'})
     LITNUMBERS = "zero|one|two|three|four|" \
                  "five|six|seven|eight|" \
                  "nine|ten|" \
@@ -223,7 +223,7 @@ def pickle_lexicon():
     addlexicon(ISA, 'IS', dict(category='ISA'))
     GERUND = "covering|closing|enveloping|surrounding|forming|terminating_in|dehiscing_by|dividing|" \
              "ending|varying_in|arranged_in|prolonged_beyond|alternating_with|" \
-             "united_to_form|unitied_into|enclosing".split('|')
+             "united_to_form|unitied_into|enclosing|covered_in|covered_with".split('|')
     addlexicon(GERUND, 'P', dict(verb=True))
 
     addlexicon(['to'], 'TO', {})

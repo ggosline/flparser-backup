@@ -28,7 +28,7 @@ else:
     # Achenes columnar, sparsely pubescent, apex truncate, slightly narrower to base, ca. 2 mm in female florets and ca. 1.5 mm in bisexual florets, with 4 ribs.
     # Pappus grayish white, chaffy, of 4 or 5 bristles.
     # '''
-    description = 'Leaves trifoliolate, mostly discolorous and drying deep or purplish brown above, grey-green beneath'
+    description = 'leaflets 6–11(–17) cm. long, 2–4(–5.5) cm. wide (the lower shorter than the upper)'
 
     parser = FeatureBottomUpLeftCornerChartParser
     # parser = FeatureEarleyChartParser
@@ -41,6 +41,7 @@ else:
     testphrases = True
     prefixdesc = 'Plant is '
     prefixdesc = None
+
     trec = defaultdict(lambda: None)
     trec['taxonNo'] = 666
     trec['family'] = 'testfam'

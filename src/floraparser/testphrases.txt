@@ -1,4 +1,4 @@
 TAXON:  testfam Test run
 Success: 
- Leaves trifoliolate, mostly discolorous and drying deep or purplish brown above, grey-green beneath
-No. of trees: 6
+ leaflets 6–11(–17) cm. long, 2–4(–5.5) cm. wide or shorter
+No. of trees: 1
