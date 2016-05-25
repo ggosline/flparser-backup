@@ -420,13 +420,12 @@ class FGParser():
 
         return [(t, self._chart._tokens[start].slice.start, self._chart._tokens[end - 1].slice.stop) for t, start, end in trees]
 
-    def listCHARs(self):
+    def listCHARs(self, getCHR=True):
         '''
         List all trees labelled with CHAR
         Choose the longest edges!
         parse must have been called first! to generate the chart
         '''
-
 
         subjend = 0
 
@@ -440,7 +439,10 @@ class FGParser():
                 subjend = charedge.end()
 
         tspans = [(None, (subjend, subjend))]  # A list of trees with span of starting and ending tokens covered
-        charedges = [edge for edge in self.simple_select(is_complete=True, lhs='CHR') if edge.start() >= subjend]
+        if getCHR:
+            charedges = [edge for edge in self.simple_select(is_complete=True, lhs='CHR') if edge.start() >= subjend]
+        else:
+            charedges = []
         charedges += [edge for edge in self.simple_select(is_complete=True, lhs='CHAR') if edge.start() >= subjend]
         for charedge in charedges:
             newspan = charedge.span()

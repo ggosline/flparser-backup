@@ -3,15 +3,15 @@ __author__ = 'Geoge'
 from floraparser.TaxaToCharacters import *
 
 fromdb = False
-fromdb = True
+#fromdb = True
 
 if fromdb:
 
     # query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Salacia' ;"
-    query = "Select * from AllTaxa where flora_name = 'FTEA' and rank = 'species' and genus = 'Salacia' and species = 'erecta' ;"
+    # query = "Select * from AllTaxa where flora_name = 'FTEA' and rank = 'species' and genus = 'Salacia' and species = 'erecta' ;"
     # query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'species' and genus = 'Acacia' and species = 'albida'  ;"
-    query="Select * from AllTaxa where flora_name = 'FTEA' and rank = 'species' and genus = 'Allophylus' and species = 'abyssinicus' ;"
-    # query="Select * from AllTaxa where flora_name = 'FZ' and rank = 'genus' and genus = 'Oxalis' ;"
+    # query="Select * from AllTaxa where flora_name = 'FTEA' and rank = 'species' and genus = 'Allophylus' and species = 'abyssinicus' ;"
+    query="Select * from AllTaxa where flora_name = 'FTEA' and rank = 'species' and family = 'Sapindaceae' ;"
 
     charactersFromDB(query)
 
@@ -28,7 +28,7 @@ else:
     # Achenes columnar, sparsely pubescent, apex truncate, slightly narrower to base, ca. 2 mm in female florets and ca. 1.5 mm in bisexual florets, with 4 ribs.
     # Pappus grayish white, chaffy, of 4 or 5 bristles.
     # '''
-    description = 'cymules subsessile'
+    description = 'Leaves trifoliolate, mostly discolorous and drying deep or purplish brown above, grey-green beneath'
 
     parser = FeatureBottomUpLeftCornerChartParser
     # parser = FeatureEarleyChartParser

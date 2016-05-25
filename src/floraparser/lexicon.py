@@ -201,7 +201,7 @@ def pickle_lexicon():
     DEGREE = "sparsely|densely|slightly|narrowly|widely|markedly|extremely|somewhat|rather|shallowly|scarcely|partly|partially|much|well".split('|')
     addlexicon(DEGREE, 'ADV', {})
     COLOURDEG = "dark|light|deep|bright|pale".split('|')
-    addlexicon(COLOURDEG, 'ADV', dict(category='coloration'))
+    addlexicon(COLOURDEG, 'A', dict(category='coloration'))
     COMPARISON = "older|younger|" \
                  "exceeding|equalling|indistinguishable_from|similar".split('|')
     addlexicon(COMPARISON, 'A', {compar:True, 'category':'compar'})

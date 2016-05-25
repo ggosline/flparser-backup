@@ -48,9 +48,11 @@ def parseTaxa(ttaxa, draw=False, outfile=None, ttrace=0, cleantree=True, projpar
         taxonNo = taxon.taxonNO
         logging.info('TAXON:  ' + taxname)
         for sent in taxon.sentences:
+            mainsubject = 'testing'
             for iphrase, phrase in enumerate(sent.phrases):
                 logging.info('PARSING: ' + phrase.text)
                 # print('\rPARSING: ', phrase.text, file=cf)
+
                 try:
                     trees = parser.parse(phrase.tokens, cleantree=cleantree, maxtrees=100)
                 except:
@@ -61,7 +63,7 @@ def parseTaxa(ttaxa, draw=False, outfile=None, ttrace=0, cleantree=True, projpar
                 if True:
                     tokens = parser._chart._tokens
                     cfset.clear()
-                    mainsubject = 'testing'
+
                     subject = ''
                     for t, txtstart, txtend in parser.listSUBJ():
                         cleanparsetree(t)
@@ -74,7 +76,7 @@ def parseTaxa(ttaxa, draw=False, outfile=None, ttrace=0, cleantree=True, projpar
                                   phrase.slice.start + sent.slice.start, phrase.slice.stop + sent.slice.start, indent=1,
                                   file=cfset)
 
-                    charlist = parser.listCHARs()
+                    charlist = parser.listCHARs(getCHR=True if trees else False)
                     for t, txtstart, txtend in charlist:
                         if cleantree: cleanparsetree(t)
                         print('Text: ', sent.text[txtstart:txtend])

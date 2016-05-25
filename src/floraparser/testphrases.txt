@@ -1,64 +1,4 @@
-TAXON:  Sapindaceae Allophylus abyssinicus
-Fail:
- Plant is Medium to fairly large tree, rarely shrubby, (4.5–)6–21(–25) m. tall and with slender bole 30–90 cm. diameter, sometimes slightly buttressed at the base (e.g. in Chyulu Hills)
-No. of trees: 4
+TAXON:  testfam Test run
 Success: 
- crown dark green, open to dense, irregular or rounded
-No. of trees: 4
-Success: 
- bark grey or greyish white, smooth or slightly rough or granular, sometimes peeling in small to large flakes
-No. of trees: 8
-Fail:
- slash pale brownish pink or pale orange darkening to reddish brown and smelling of pepper, also described ( <i>Ede</i> 1,T7) as off-white with pinky brown green-edged lines
-No. of trees: 4
-Success: 
- sapwood white
-No. of trees: 1
-Success: 
- young branches minutely ferruginous tomentellous and densely lenticellate
-No. of trees: 1
-Success: 
- Leaves trifoliolate, drying dull and dark above, thinly coriaceous
-No. of trees: 7
-Success: 
- petiole 2.5–10.5 mm. long, minutely tomentellous or less often more distinctly pubescent
-No. of trees: 2
-Fail:
- leaflets elliptic to obovate, (2.8–)5.5–21 cm. long, (1.2–)3–11 cm. wide, acute to acuminate at the apex, attenuate to cuneate at the base, shallowly crenulate to toothed, adpressed velvety pilose when very young, later glabrescent or glabrous to minutely puberulous, less often pubescent
-No. of trees: 10
-Fail:
- tufts of hairs in axils of nerves and veins usually conspicuous beneath
+ Leaves trifoliolate, mostly discolorous and drying deep or purplish brown above, grey-green beneath
 No. of trees: 6
-Fail:
- Inflorescences 5–22 cm. long, with 2–10 branches, some again branched, usually finely tomentose
-No. of trees: 5
-Fail:
- cymules subsessile
-No. of trees: 1
-Success: 
- pedicels 1–3 mm. long
-No. of trees: 1
-Success: 
- Flowers said to be lily-scented or scentless
-No. of trees: 2
-Success: 
- outer sepals elliptic, 1.2–1.5 mm. long, 1 mm. wide, puberulous, inner elliptic to round, 1.5–2 mm. long, 1.5 mm. wide
-No. of trees: 2
-Success: 
- petals dirty white or yellowish, 1.5 mm. long, 1 mm. wide
-No. of trees: 1
-Success: 
- Filaments 2–3 mm. long, glabrous
-No. of trees: 1
-Success: 
- Style 2–3 mm. long, ± glabrous
-No. of trees: 1
-Success: 
- stigma 1–1.5 mm. long
-No. of trees: 1
-Success: 
- Fruit red or orange, subglobose, oblong or elliptic, 6–8 mm. long and wide, with very sparse hairs
-No. of trees: 1
-Success: 
- Seed ellipsoid, 5–5.5 mm. long, 5.5–6 mm. wide
-No. of trees: 1
