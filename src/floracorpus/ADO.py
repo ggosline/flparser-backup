@@ -1,9 +1,7 @@
-import string
 
 from win32com.client import Dispatch, constants
 import win32com.client
 
-win32com.client.gencache.is_readonly = False
 
 class ADOdb(object):
 
@@ -14,6 +12,9 @@ class ADOdb(object):
     
 
     def __init__(self, databasename):
+
+        win32com.client.gencache.is_readonly = False
+
         global connection, command
         connection = Dispatch("ADODB.Connection")
         command = Dispatch("ADODB.Command")

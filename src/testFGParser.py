@@ -3,7 +3,7 @@ __author__ = 'Geoge'
 from floraparser.TaxaToCharacters import *
 
 fromdb = False
-#fromdb = True
+fromdb = True
 
 if fromdb:
 
@@ -28,7 +28,8 @@ else:
     # Achenes columnar, sparsely pubescent, apex truncate, slightly narrower to base, ca. 2 mm in female florets and ca. 1.5 mm in bisexual florets, with 4 ribs.
     # Pappus grayish white, chaffy, of 4 or 5 bristles.
     # '''
-    description = 'leaflets 6–11(–17) cm. long, 2–4(–5.5) cm. wide (the lower shorter than the upper)'
+
+    description = 'lateral nerves in 8–10 pairs, venation raised and reticulate above (impressed in life <i>fide</i> Milne-Redhead & Taylor) and strongly so beneath'
 
     parser = FeatureBottomUpLeftCornerChartParser
     # parser = FeatureEarleyChartParser
@@ -38,6 +39,7 @@ else:
     cleantree = True
     ttrace = 1
     draw=True
+    # draw=False
     testphrases = True
     prefixdesc = 'Plant is '
     prefixdesc = None
@@ -52,4 +54,4 @@ else:
 
     trdr = [trec]
 
-    charactersFromText(trdr, draw=draw, ttrace=1, cleantree=cleantree, parser=parser, testphrases= testphrases, prefixdesc=prefixdesc)
+    charactersFromText(trdr, draw=draw, ttrace=ttrace, cleantree=cleantree, parser=parser, testphrases= testphrases, prefixdesc=prefixdesc)

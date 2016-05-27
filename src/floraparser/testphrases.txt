@@ -1,4 +1,3534 @@
-TAXON:  testfam Test run
+TAXON:  FTEA Sapindaceae Allophylus abyssinicus
 Success: 
- leaflets 6–11(–17) cm. long, 2–4(–5.5) cm. wide or shorter
-No. of trees: 1
+ Plant is Medium to fairly large tree, rarely shrubby, (4.5–)6–21(–25) m. tall and with slender bole 30–90 cm. diameter, sometimes slightly buttressed at the base (e.g. in Chyulu Hills)
+No. of trees: 4 ptime: 1.6380105
+Success: 
+ crown dark green, open to dense, irregular or rounded
+No. of trees: 4 ptime: 0.5616035999999998
+Success: 
+ bark grey or greyish white, smooth or slightly rough or granular, sometimes peeling in small to large flakes
+No. of trees: 8 ptime: 1.3104084
+Fail:
+ slash pale brownish pink or pale orange darkening to reddish brown and smelling of pepper, also described ( <i>Ede</i> 1,T7) as off-white with pinky brown green-edged lines
+No. of trees: 4 ptime: 2.3712152
+Success: 
+ sapwood white
+No. of trees: 1 ptime: 0.1092006999999997
+Success: 
+ young branches minutely ferruginous tomentellous and densely lenticellate
+No. of trees: 1 ptime: 0.6240040000000002
+Success: 
+ Leaves trifoliolate, drying dull and dark above, thinly coriaceous
+No. of trees: 14 ptime: 0.8892056999999998
+Success: 
+ petiole 2.5–10.5 mm. long, minutely tomentellous or less often more distinctly pubescent
+No. of trees: 2 ptime: 0.6552042
+Fail:
+ leaflets elliptic to obovate, (2.8–)5.5–21 cm. long, (1.2–)3–11 cm. wide, acute to acuminate at the apex, attenuate to cuneate at the base, shallowly crenulate to toothed, adpressed velvety pilose when very young, later glabrescent or glabrous to minutely puberulous, less often pubescent
+No. of trees: 10 ptime: 1.684810800000001
+Fail:
+ tufts of hairs in axils of nerves and veins usually conspicuous beneath
+No. of trees: 6 ptime: 1.1388072999999999
+Fail:
+ Inflorescences 5–22 cm. long, with 2–10 branches, some again branched, usually finely tomentose
+No. of trees: 5 ptime: 0.5616035999999998
+Fail:
+ cymules subsessile
+No. of trees: 1 ptime: 0.09360060000000026
+Success: 
+ pedicels 1–3 mm. long
+No. of trees: 1 ptime: 0.1872012000000005
+Success: 
+ Flowers said to be lily-scented or scentless
+No. of trees: 2 ptime: 0.37440239999999925
+Success: 
+ outer sepals elliptic, 1.2–1.5 mm. long, 1 mm. wide, puberulous, inner elliptic to round, 1.5–2 mm. long, 1.5 mm. wide
+No. of trees: 2 ptime: 0.7332046999999999
+Success: 
+ petals dirty white or yellowish, 1.5 mm. long, 1 mm. wide
+No. of trees: 1 ptime: 0.45240289999999916
+Success: 
+ Filaments 2–3 mm. long, glabrous
+No. of trees: 1 ptime: 0.2184014000000012
+Success: 
+ Style 2–3 mm. long, ± glabrous
+No. of trees: 1 ptime: 0.26520169999999865
+Success: 
+ stigma 1–1.5 mm. long
+No. of trees: 1 ptime: 0.1872012000000023
+Success: 
+ Fruit red or orange, subglobose, oblong or elliptic, 6–8 mm. long and wide, with very sparse hairs
+No. of trees: 1 ptime: 0.7176045999999978
+Success: 
+ Seed ellipsoid, 5–5.5 mm. long, 5.5–6 mm. wide
+No. of trees: 1 ptime: 0.280801799999999
+TAXON:  FTEA Sapindaceae Allophylus africanus
+Success: 
+ Plant is Shrub or tree (2–)4.5–10 m. tall, with heavy spreading crown
+No. of trees: 1 ptime: 0.6708043000000004
+Success: 
+ bark black or grey to reddish, smooth or rough
+No. of trees: 3 ptime: 0.5460035000000012
+Fail:
+ slash yellow with pink tinge
+No. of trees: 2 ptime: 0.17160110000000017
+Success: 
+ branchlets ± glabrous to puberulous or pubescent, lenticellate
+No. of trees: 3 ptime: 0.608403899999999
+Fail:
+ Leaves trifoliolate, typically ± glabrous but hairy in variety, very discolorous, when glabrous dark and shiny above
+No. of trees: 5 ptime: 0.8112051999999998
+Success: 
+ leaflets narrowly elliptic to elliptic, 2–14.5 cm. long, 1–7 cm. wide, rounded to acuminate at the apex, attenuate to cuneate at the base, subentire to crenate or coarsely and irregularly dentate, subcoriaceous, sometimes with hairy domatia beneath
+No. of trees: 24 ptime: 2.0280130000000014
+Success: 
+ petiole (1–)2–7.5 cm. long
+No. of trees: 1 ptime: 0.1872012000000005
+Fail:
+ Inflorescences 4.5–15 cm. long, unbranched or usually with 1–6 branches, usually pale fulvous pubescent
+No. of trees: 4 ptime: 0.8268052999999966
+Fail:
+ cymules subsessile
+No. of trees: 1 ptime: 0.0780005000000017
+Success: 
+ pedicels (0.5–)1.5–2 mm. long, often glabrous
+No. of trees: 1 ptime: 0.26520169999999865
+Success: 
+ Flowers white, greenish white or yellowish green, scented
+No. of trees: 2 ptime: 0.5460035000000012
+Success: 
+ outer sepals broadly elliptic, ± 1 mm. long and wide, inner oblate, 1 mm. long, 1–1.5 mm. wide, ± glabrous
+No. of trees: 1 ptime: 0.7956050999999995
+Success: 
+ petal spathulate, 1 mm. long, 0.5 mm. wide
+No. of trees: 1 ptime: 0.2652017000000022
+Success: 
+ Filaments ± 2 mm. long, hairy at base
+No. of trees: 1 ptime: 0.4056026000000017
+Success: 
+ Style 1 mm. long, hairy
+No. of trees: 1 ptime: 0.20280130000000085
+Success: 
+ stigma 0.5 mm. long
+No. of trees: 1 ptime: 0.17160110000000017
+Success: 
+ Fruit ellipsoid, 5–7 mm. long, 4–4.5 mm. wide, very sparsely hairy
+No. of trees: 1 ptime: 0.4212026999999985
+Success: 
+ Seed ellipsoid, 5.5–6 mm. long, 4.5 mm. wide
+No. of trees: 1 ptime: 0.29640189999999933
+TAXON:  FTEA Sapindaceae Allophylus chaunostachys
+Fail:
+ Plant is Shrub, often straggling or scrambling or a distinct climber, less often a small tree (see note), (0.6–)1.5–4.5(–6) m. tall or long
+No. of trees: 5 ptime: 0.9204058999999987
+Fail:
+ stems very lenticellate, pubescent when young then glabrescent or ferruginous velvety
+No. of trees: 3 ptime: 0.4524029000000027
+Success: 
+ Leaves trifoliolate
+No. of trees: 1 ptime: 0.09360060000000203
+Success: 
+ petiole 2–7 cm. long, glabrous to densely pubescent
+No. of trees: 2 ptime: 0.3588023000000007
+Fail:
+ petiolules 0.2–1.5 cm. long or lateral leaflets often ± sessile
+No. of trees: 2 ptime: 0.6396040999999997
+Fail:
+ leaflets very discolorous, drying leaden grey above with the venation yellow and pale greenish or often bright brownish beneath, elliptic, oblong, rhombic or narrowly oblanceolate, 4–15.5 cm. long, 2–6 cm. wide, acute or acuminate at the apex, cuneate at the base, the laterals mostly very asymmetric, subentire to ± remotely serrate, crenate-serrate or coarsely serrate, glabrous to densely almost velvety ferruginous hairy and with tufts of hairs in axes of lateral nerves beneath
+No. of trees: 14 ptime: 17.300510899999995
+Success: 
+ lateral nerves in 8–10 pairs, venation raised and reticulate above (impressed in life <i>fide</i> Milne-Redhead & Taylor) and strongly so beneath
+No. of trees: 4 ptime: 3.6816236000000018
+Success: 
+ Inflorescences unbranched or rarely branched, 5–17(–24) cm. long, including peduncle 1–8 cm. long, glabrous or spreading pubescent, the 1–few-flowered cymules usually well spaced
+No. of trees: 1 ptime: 1.4196090999999953
+Fail:
+ cymule stalk and rhachis 0.5–1 mm. long, pedicels 1–3 mm. long
+No. of trees: 2 ptime: 0.7176046000000014
+Fail:
+ Flowers usually ± large for the genus
+No. of trees: 2 ptime: 0.280801799999999
+Fail:
+ outer sepals elliptic, 1.5 mm. long, 1 mm. wide, inner subcircular 1.5–1.8 mm. long, 1.5–3 mm. wide, glabrous or slightly pubescent
+No. of trees: 7 ptime: 0.6708043000000004
+Success: 
+ petals white or greenish yellow, spathulate, 1.5 mm. long, 1 mm. wide
+No. of trees: 2 ptime: 0.5772036999999983
+Success: 
+ Filaments 1.8 mm. long
+No. of trees: 1 ptime: 0.2028013000000044
+Success: 
+ staminodes 0.5 mm. long
+No. of trees: 1 ptime: 0.18720119999999696
+Success: 
+ Ovary 2-lobed, pubescent
+No. of trees: 2 ptime: 0.29640189999999933
+Success: 
+ style 2 mm. long
+No. of trees: 1 ptime: 0.17160110000000373
+Fail:
+ Fruits yellow or red, of 1–2 mericarps, each subglobose or obovoid, 6–6.5 mm. long, 5 mm. wide, minutely pubescent or glabrous
+No. of trees: 7 ptime: 0.7176046000000014
+TAXON:  FTEA Sapindaceae Allophylus chirindensis
+Success: 
+ Plant is Much-branched shrub or tree 3–15 m. tall
+No. of trees: 1 ptime: 0.5928037999999987
+Success: 
+ bark silvery grey
+No. of trees: 1 ptime: 0.17160109999999662
+Success: 
+ branchlets pale greyish, lenticellate, glabrous
+No. of trees: 2 ptime: 0.29640189999999933
+Success: 
+ Leaves trifoliate
+No. of trees: 1 ptime: 0.10920070000000237
+Success: 
+ petiole 3–16 cm. long, grooved, glabrous or minutely puberulous
+No. of trees: 1 ptime: 0.374402400000001
+Success: 
+ petiolule of terminal leaflet 1.2–2 cm. long
+No. of trees: 1 ptime: 0.4836030999999963
+Fail:
+ leaflets drying pale bright green, elliptic or elliptic-oblong, 9–19.5 cm. long, 3.5–9 cm. wide, rounded to acuminate at the apex, narrowly cuneate at the base, subentire, coarsely undulate-crenate and shortly denticulate (the teeth hydathodes) or serrate, thin, glabrous or minutely puberulent on nerves beneath with white hairs and sometimes with tufts in the nerve axils beneath
+No. of trees: 11 ptime: 3.9000249999999994
+Success: 
+ lateral nerves in 7–13 pairs
+No. of trees: 1 ptime: 0.374402400000001
+Success: 
+ Inflorescences up to 28 cm. long, much branched, the branches 10–14 cm. long, glabrous or sparsely white-puberulous
+No. of trees: 2 ptime: 0.7800050000000027
+Success: 
+ peduncle 14–20 cm. long
+No. of trees: 1 ptime: 0.21840139999999764
+Fail:
+ cymules few-flowered, sessile
+No. of trees: 2 ptime: 0.14040090000000305
+Success: 
+ pedicels 3–4 mm. long, glabrous
+No. of trees: 1 ptime: 0.23400149999999798
+Success: 
+ Flowers white or yellow
+No. of trees: 1 ptime: 0.17160109999999662
+Success: 
+ outer sepals round, 1.8 mm.diameter, inner elliptic, 1.8 mm. long, 1 mm. wide, glabrous
+No. of trees: 1 ptime: 0.5148033000000041
+Success: 
+ petals spathulate, 1.5 mm. long, 1 mm. wide, with hairy scale
+No. of trees: 1 ptime: 0.4368028000000024
+Success: 
+ Filaments 2 mm. long
+No. of trees: 1 ptime: 0.15600099999998918
+Success: 
+ staminodes in female flowers 0.6 mm. long
+No. of trees: 1 ptime: 0.4056026000000088
+Success: 
+ Ovary 2-lobed, minutely pubescent
+No. of trees: 2 ptime: 0.2808017999999919
+Success: 
+ style 1.5 mm. long
+No. of trees: 1 ptime: 0.17160110000000373
+Fail:
+ Fruit red, subglobose, 7 mm. in diameter, minutely puberulous when young or ± glabrous
+No. of trees: 5 ptime: 0.3588023000000078
+TAXON:  FTEA Sapindaceae Allophylus congolanus
+Fail:
+ Plant is Slender several-stemmed erect scrambling or ± scandent shrub or small tree, 1.5–6 m. tall, monoecious ( <i>fide</i> Hauman)
+No. of trees: 4 ptime: 0.8424053999999899
+Success: 
+ bark grey-brown or purplish black, smooth, conspicuously lenticellate
+No. of trees: 4 ptime: 0.561603599999998
+Success: 
+ branchlets ferruginous-velvety-tomentose
+No. of trees: 1 ptime: 0.10920070000000237
+Fail:
+ Leaves 1-foliolate or 3-foliolate with lateral leaflets very­ much reduced
+No. of trees: 2 ptime: 0.8580055000000044
+Success: 
+ petiole 2–4(–7) mm. long, ferruginous-tomentose
+No. of trees: 1 ptime: 0.23400150000000508
+Success: 
+ petiolules up to 2 mm. long
+No. of trees: 1 ptime: 0.21840139999999053
+Fail:
+ terminal leaflet elliptic or obovate-elliptic, 5–17.5 cm. long, 3–10.5 cm. wide, acute, subacuminate or obtuse at the apex, cuneate to rounded at the base, serrulate or crenulate-serrulate, velvety-tomentose on both surfaces or eventually pilose or pubescent above
+No. of trees: 9 ptime: 1.3104084
+Success: 
+ lateral nerves in 8–12 pairs
+No. of trees: 1 ptime: 0.3588023000000078
+Success: 
+ lateral leaflets ± rounded, 1–3 cm. long and wide
+No. of trees: 3 ptime: 0.608403899999999
+Fail:
+ Inflorescences slender, unbranched, 6–20 cm. long, including 2–6 cm. long peduncle
+No. of trees: 5 ptime: 0.4524028999999956
+Fail:
+ flowers several in subsessile glomerules
+No. of trees: 2 ptime: 0.29640190000000644
+Success: 
+ pedicels up to 1.5 mm. long, pubescent
+No. of trees: 1 ptime: 0.23400149999999087
+Success: 
+ Sepals yellow-green
+No. of trees: 1 ptime: 0.12480080000000271
+Fail:
+ outer ± round, 1.1 mm. long, 1 mm. wide, pubescent
+No. of trees: 4 ptime: 0.34320219999999324
+Fail:
+ inner 1 mm. long, 0.7 mm. wide pubescent
+No. of trees: 2 ptime: 0.2808018000000061
+Success: 
+ petals white, spathulate, 1.2 mm. long, 0.5 mm. wide
+No. of trees: 1 ptime: 0.3276021000000071
+Success: 
+ Filaments 1.5 mm. long
+No. of trees: 1 ptime: 0.15600099999998918
+Fail:
+ ovary 1.5 mm. long hairy
+No. of trees: 2 ptime: 0.2028013000000044
+Success: 
+ styles greenish white, 1.5 mm. long
+No. of trees: 1 ptime: 0.23400150000000508
+Fail:
+ Fruits green becoming orange then bright orange-vermilion, of 1–2 mericarps, each globose, 7 mm. diameter, sparsely pubescent
+No. of trees: 6 ptime: 0.7176046000000014
+TAXON:  FTEA Sapindaceae Allophylus delicatulus
+Success: 
+ Plant is Shrub 2–4 m. tall, almost glabrous
+No. of trees: 1 ptime: 0.42120269999999493
+Success: 
+ bark pale grey or brownish grey
+No. of trees: 4 ptime: 0.8112052000000034
+Success: 
+ Leaves trifoliolate
+No. of trees: 1 ptime: 0.0780005000000017
+Success: 
+ petiole 3–6.5 cm. long, grooved, slightly pubescent at apex of junction of leaflets
+No. of trees: 2 ptime: 0.8892056999999909
+Success: 
+ petiolules ± absent, the lamina bases decurrent
+No. of trees: 1 ptime: 0.3588023000000078
+Fail:
+ leaflets drying bright green, elliptic or oblong-elliptic, 4–11 cm. long, 1.3–4 cm. wide, narrowly acutely acuminate at the apex, narrowly cuneate at the base, thin, serrate except at base, virtually glabrous
+No. of trees: 10 ptime: 1.0140064999999936
+Success: 
+ reticulation not raised, lateral nerves in 8–11 pairs
+No. of trees: 1 ptime: 0.4836030999999963
+Success: 
+ Inflorescences very slender, up to 16 cm. long, branched, the side branches few, ± 4 cm. long
+No. of trees: 2 ptime: 0.7956051000000031
+Success: 
+ peduncle up to 8 cm. long
+No. of trees: 1 ptime: 0.24960160000000542
+Fail:
+ cymule bases 0.5–3 mm. long, slender, 1–2-flowered
+No. of trees: 3 ptime: 0.3276020999999929
+Success: 
+ pedicels very slender, 2–2.5 mm. long
+No. of trees: 1 ptime: 0.24960160000000542
+Fail:
+ all axes virtually glabrous or micropuberulous
+No. of trees: 1 ptime: 0.3588022999999936
+Fail:
+ Outer sepals oblate, 1 mm. long, 1.8 mm. wide, glabrous or with few small marginal hairs
+No. of trees: 5 ptime: 0.748804800000002
+Success: 
+ inner sepals round, convex, ± 1 mm. long and wide, petals obovate, 1 mm. long, the scale densely hairy
+No. of trees: 1 ptime: 0.8268053000000037
+Success: 
+ Filaments 1 mm. long, hairy at base
+No. of trees: 1 ptime: 0.2496015999999912
+Success: 
+ anthers 0.5 mm. long
+No. of trees: 1 ptime: 0.2028013000000044
+Success: 
+ Fruit not seen
+No. of trees: 1 ptime: 0.12480080000000271
+TAXON:  FTEA Sapindaceae Allophylus dummeri
+Success: 
+ Plant is Shrub or spreading tree 2.5–9 m. tall
+No. of trees: 1 ptime: 0.6240039999999993
+Success: 
+ branches glabrous, lenticellate
+No. of trees: 1 ptime: 0.10920070000000237
+Success: 
+ slash red-brown exuding off-white sap
+No. of trees: 1 ptime: 0.4056025999999946
+Success: 
+ Leaves trifoliolate, drying bright green
+No. of trees: 1 ptime: 0.18720120000000406
+Success: 
+ petiole 4–14 cm. long
+No. of trees: 1 ptime: 0.2028013000000044
+Fail:
+ leaflets elliptic, elliptic-oblong or elliptic-obovate, 7.5–25 cm. long, 4–10.5 cm. wide, acuminate at the apex, cuneate at the base, entire or remotely coarsely serrate, thin to slightly thick, glabrous or with indistinct hairy domatia in nerve-axils beneath
+No. of trees: 10 ptime: 1.2480079999999987
+Success: 
+ lateral nerves in 5–12 pairs, venation fine and closely reticulate, raised on both sides
+No. of trees: 3 ptime: 0.7644048999999882
+Success: 
+ Inflorescence rather robust, 6–24.5 cm. long, including peduncles 5–8.5 cm. long, with 3–4 main branches
+No. of trees: 2 ptime: 0.8892057000000051
+Success: 
+ axes with short ferruginous pubescence, cymules 3–6-flowered, mostly densely placed
+No. of trees: 1 ptime: 0.5928037999999987
+Success: 
+ Flowers cream, white or greenish
+No. of trees: 1 ptime: 0.21840140000000474
+Success: 
+ calyx sparsely pubescent
+No. of trees: 1 ptime: 0.1560010000000034
+Success: 
+ outer sepals round, 1 mm. diameter
+No. of trees: 1 ptime: 0.21840139999999053
+Fail:
+ inner oblate, 2 mm. long and wide
+No. of trees: 2 ptime: 0.21840140000000474
+Success: 
+ petals spathulate, 2 mm. long, 0.8 mm. wide, ciliate
+No. of trees: 1 ptime: 0.3744023999999939
+Fail:
+ Fruits orange-yellow to red-brown, globose, ± 6 mm. diameter, with very sparse adpressed hairs or glabrous
+No. of trees: 5 ptime: 0.7332047000000017
+TAXON:  FTEA Sapindaceae Allophylus ferrugineus
+Fail:
+ Plant is Tree or shrub or sometimes a climber or creeper 0.9–9 m. long or tall, monoecious
+No. of trees: 3 ptime: 0.5304033999999973
+Success: 
+ bark grey, brown or reddish, smooth
+No. of trees: 2 ptime: 0.24960160000000542
+Success: 
+ slash white
+No. of trees: 1 ptime: 0.0780005000000017
+Success: 
+ young branchlets pubescent
+No. of trees: 1 ptime: 0.17160110000000373
+Success: 
+ Leaves trifoliolate
+No. of trees: 1 ptime: 0.09360059999998782
+Success: 
+ petiole (1–)2–10 cm. long
+No. of trees: 1 ptime: 0.2028013000000044
+Success: 
+ petiolule of terminal leaflet often well developed, 0.8–1.3(–2) cm. long
+No. of trees: 1 ptime: 0.5304033999999973
+Fail:
+ leaflets drying bright green, elliptic, ovate-oblong, rhomboid, obovate or oblanceolate, (2.5–) 6–22 cm. long, (0.9–)2.5–11 cm. wide, acute to acuminate at the apex, attenuate to cuneate at the base, the laterals very asymmetric, regularly toothed or serrate, glabrous, pubescent, ferruginous hairy or velvety, with or without hairy domatia in the axils of nerves beneath
+No. of trees: 16 ptime: 2.386815300000009
+Success: 
+ lateral nerves in 5–10 pairs
+No. of trees: 1 ptime: 0.3588022999999936
+Success: 
+ Inflorescences (3.5–)7.5–34(–47) cm. long (see note), usually unbranched, often slender and drooping
+No. of trees: 8 ptime: 0.7332047000000017
+Success: 
+ peduncles 1.5–5 cm. long
+No. of trees: 1 ptime: 0.2028013000000044
+Fail:
+ cymules 1–6-flowered, the stalks 1.5–5 mm. long, usually well-spaced
+No. of trees: 3 ptime: 0.4836030999999963
+Success: 
+ pedicels 1.5–3(–5) mm. long, minutely puberulous
+No. of trees: 1 ptime: 0.2808017999999919
+Success: 
+ Flowers green, white, greenish white or yellow
+No. of trees: 1 ptime: 0.29640190000000644
+Success: 
+ outer sepals elliptic, 1–1.5 mm. long, 1 mm. wide, sparsely puberulous, inner ± round, 1.5–2 mm. diameter
+No. of trees: 1 ptime: 0.5928037999999987
+Success: 
+ petals spathulate, 2 mm. long, 1 mm. wide
+No. of trees: 1 ptime: 0.26520170000000576
+Fail:
+ Filaments ± 2 mm. long, hairy in basal half
+No. of trees: 2 ptime: 0.39000249999999426
+Success: 
+ Style ± 1 mm. long, with few hairs
+No. of trees: 2 ptime: 0.42120269999999493
+Success: 
+ stigma 0.5–1 mm. long
+No. of trees: 1 ptime: 0.1560010000000034
+Fail:
+ Fruit orange to scarlet, often of 2–3 mericarps, each ellipsoid, obovoid or globose, 5–8 mm
+No. of trees: 6 ptime: 0.4368028000000095
+Fail:
+ long., 4–6.5 mm. wide, or 7.5 mm. diameter, at first sparsely hairy, glabrescent
+No. of trees: 5 ptime: 0.3744023999999939
+TAXON:  FTEA Sapindaceae Allophylus fulvotomentosus
+Success: 
+ Plant is Tree or shrub 1.8–7.5 m. tall, bark black or grey-brown, rough
+No. of trees: 2 ptime: 0.748804800000002
+Success: 
+ stems usually densely ferruginous velvety, later ± glabrous
+No. of trees: 1 ptime: 0.42120269999999493
+Success: 
+ Leaves trifoliolate
+No. of trees: 1 ptime: 0.0780005000000017
+Success: 
+ petiole 1.5–6 cm. long, mostly ferruginous velvety
+No. of trees: 1 ptime: 0.3120020000000068
+Fail:
+ leaflets drying darker grey-brown above, pale brown beneath, elliptic to oblong or obovate, 2.5–12 cm. long, 1.5–8 cm. wide, subacute to rounded or ± truncate at the apex, cuneate to rounded at the base, mostly subcoriaceous, often densely ferruginous velvety at first, later hairy only on venation beneath or ± glabrous
+No. of trees: 11 ptime: 2.433615599999996
+Fail:
+ venation reticulate and ± prominent above, the nerves ± impressed, very prominent beneath
+No. of trees: 3 ptime: 0.7956051000000031
+Fail:
+ Inflorescences 3.5–11(–15) cm. long, including 1–5 cm. long peduncle, branched, the axes ferruginous velvety
+No. of trees: 5 ptime: 0.6552042
+Fail:
+ cymules subsessile, 3–10-flowered, extremely densely placed so that apices of inflorescence-branches are solid with flowers and spadix-like, the rhachis entirely obscured but often more open at base of branches and often altogether laxer in intermediates with <i>A
+No. of trees: 4 ptime: 1.3104084
+Fail:
+ africanus</i>
+No. of trees: 1 ptime: 0.10920069999998816
+Fail:
+ Flowers yellow-green, subsessile or pedicels only 0.5 mm. long
+No. of trees: 3 ptime: 0.26520170000000576
+Success: 
+ inner sepals 1.5 mm. wide
+No. of trees: 1 ptime: 0.21840140000000474
+Success: 
+ petals spathulate, 1.5 mm. long, 0.8 mm. wide, the scale densely pilose
+No. of trees: 1 ptime: 0.4524028999999956
+Success: 
+ Filaments 2 mm. long, hairy at base
+No. of trees: 1 ptime: 0.2496015999999912
+Success: 
+ Fruits pale orange, subglobose-obovoid, 7 mm. long, 6 mm. wide, pubescent, subsessile
+No. of trees: 2 ptime: 0.5616036000000122
+TAXON:  FTEA Sapindaceae Allophylus grotei
+Success: 
+ Plant is Much-branched tree to 9 m. tall
+No. of trees: 1 ptime: 0.5304033999999973
+Success: 
+ branchlets pale grey-brown, ± pubescent near nodes, glabrescent
+No. of trees: 2 ptime: 0.42120269999999493
+Success: 
+ Leaves unifoliolate, thin, drying brown, darker above, elliptic to oblong-elliptic, 6.5–12.5 cm. long, 2.5–5.7 cm. wide, narrowly acuminate at the apex, cuneate at the base, undulate or almost entire, glabrous
+No. of trees: 8 ptime: 1.3416086000000007
+Success: 
+ main lateral nerves ± 6
+No. of trees: 2 ptime: 0.5304033999999973
+Success: 
+ petiole 0.9–1.5 cm. long
+No. of trees: 1 ptime: 0.2028013000000044
+Success: 
+ petiolule ± thickened and channelled, 3–5 mm. long
+No. of trees: 2 ptime: 0.4056025999999946
+Fail:
+ Inflorescences unbranched, 4–7 cm. long, including the 2–2.5 cm. long peduncle
+No. of trees: 4 ptime: 0.4056026000000088
+Fail:
+ cymules 3–?-flowered with stalks 2–4 mm. long
+No. of trees: 1 ptime: 0.4524028999999956
+Success: 
+ pedicels 1.5 mm. long
+No. of trees: 1 ptime: 0.1560010000000034
+Fail:
+ all partsfinely adpressed puberulous
+No. of trees: 1 ptime: 0.18720119999998985
+Success: 
+ Flowers greenish white
+No. of trees: 1 ptime: 0.1560010000000034
+Fail:
+ outer sepals ± round, 1.2 mm. long, ± 1 mm. wide, inner similar but wider, all minutely adpressed puberulous
+No. of trees: 6 ptime: 0.6864044000000007
+Fail:
+ Fruits (see note) ellipsoid, 9.5 mm. long, 5.5 mm. wide, basally slightly ribbed in dry state, glabrous save for very sparse short adpressed hairs
+No. of trees: 5 ptime: 1.497609600000004
+Success: 
+ Seeds chestnut, ± ovoid, 5 mm. long
+No. of trees: 1 ptime: 0.2964018999999922
+TAXON:  FTEA Sapindaceae Allophylus melliodorus
+Fail:
+ Plant is Tree 5–12 m. tall with rough bark
+No. of trees: 2 ptime: 0.46800300000001016
+Fail:
+ young branchlets dark with pale lenticels, puberulous but soon glabrous
+No. of trees: 3 ptime: 0.5304033999999973
+Success: 
+ wood yellowish, hard
+No. of trees: 1 ptime: 0.17160110000000373
+Fail:
+ Leaves unifoliolate, ± thin, elliptic to elliptic-lanceolate, 3.8–14(–18) cm. long, 2–7 cm. wide, rounded or obtuse to mostly acuminate at the apex, cuneate at the base, remotely serrate or crenate-serrate, glabrous except for the conspicuous tufts of hair in the main nerve-axils beneath and often in secondary axils also, not shiny above
+No. of trees: 10 ptime: 2.1684138999999902
+Fail:
+ lateral nerves in 8–9 pairs, the venation not or scarcely raised above
+No. of trees: 3 ptime: 0.561603599999998
+Success: 
+ petiole 1.5–3 cm. long
+No. of trees: 1 ptime: 0.17160110000000373
+Fail:
+ Inflorescences 6–12 cm. long, simple or with two or more branches
+No. of trees: 3 ptime: 0.34320220000000745
+Success: 
+ rhachis puberulous
+No. of trees: 1 ptime: 0.07800049999998748
+Fail:
+ cymules sessile but pedicels 1.5 mm. long
+No. of trees: 1 ptime: 0.26520170000000576
+Success: 
+ Flowers yellow-green or pale yellow
+No. of trees: 4 ptime: 0.561603599999998
+Success: 
+ Sepals rounded, outer ovate, 1 mm. long, 0.8 mm. wide, inner 1.5 mm. long, 1.2 mm. wide
+No. of trees: 3 ptime: 0.7176046000000014
+Success: 
+ Petals spathulate, 1 mm. long, ciliate
+No. of trees: 1 ptime: 0.2028013000000044
+Success: 
+ Filaments pubescent at base
+No. of trees: 1 ptime: 0.18720120000000406
+Success: 
+ Ovary 1 mm. diameter, pubescent
+No. of trees: 1 ptime: 0.2028012999999902
+Fail:
+ style and stigma together ± 1.5 mm. long
+No. of trees: 2 ptime: 0.42120270000000914
+Success: 
+ Fruit subglobose, 5.5 mm. diameter, finely pubescent
+No. of trees: 1 ptime: 0.2496015999999912
+TAXON:  FTEA Sapindaceae Allophylus pervillei
+Fail:
+ Plant is Almost invariably a small or medium-sized shrub, but occasionally a small tree or even described as a climber ( <i>Bally</i> 4691) or prostrate shrub ( <i>Adams</i> 74), usually 0.9–4(–5) m. tall (but 6–9 m. in Seychelles)
+No. of trees: 3 ptime: 2.199614100000005
+Success: 
+ bark pale, smooth or rough
+No. of trees: 2 ptime: 0.2964018999999922
+Fail:
+ Leaves drying discolorous, often bright brown beneath, sometimes somewhat shiny, unifoliolate or trifoliolate with lateral leaflets very much reduced
+No. of trees: 5 ptime: 0.8424054000000041
+Success: 
+ petiole 0.5–1.5 cm. long
+No. of trees: 1 ptime: 0.21840140000000474
+Fail:
+ terminal leaflet elliptic or oblong to obovate or obovate-oblanceolate, 3.7–17(–20) cm. long, 1.5–9.6 cm. wide, ± obtuse to acute or acuminate at the apex, cuneate at the base, almost entire to repand-dentate, the nerves ending in hydathodes, or ± coarsely undulate-lobed, rarely distinctly serrate, glabrous save for hairy domatia beneath on some leaves
+No. of trees: 11 ptime: 3.6660234999999943
+Fail:
+ lateral nerves in 5–7 pairs, often much paler both above and beneath, yellowish, together with the closely reticulate venation, prominent on both surfaces when dry
+No. of trees: 5 ptime: 0.9048057999999912
+Success: 
+ Inflorescences unbranched, 2–12.5 cm. long, including peduncle 1–4 cm. long (see note)
+No. of trees: 8 ptime: 0.7800050000000169
+Fail:
+ cymules closely placed, 2–7-flowered, the stalks 0–1.2 mm. long
+No. of trees: 3 ptime: 0.46800299999998174
+Success: 
+ axes glabrous or puberulous
+No. of trees: 1 ptime: 0.2028013000000044
+Success: 
+ pedicels ± 1 mm. long
+No. of trees: 1 ptime: 0.24960160000000542
+Success: 
+ Flowers greenish, white or cream
+No. of trees: 1 ptime: 0.17160110000000373
+Fail:
+ sepals green, the outer ± round, 1.2 mm. long, 1 mm. wide
+No. of trees: 5 ptime: 0.3588023000000078
+Fail:
+ inner ± oblate, 1–1.5 mm. long, 1.2–2 mm. wide, finely adpressed-pubescent or glabrous
+No. of trees: 4 ptime: 0.46800299999998174
+Fail:
+ petals spathulate, 1.5 mm. long, 0.8 mm. wide, mostly densely white hairy or ciliate to ± glabrous
+No. of trees: 5 ptime: 0.5616036000000122
+Success: 
+ disk glabrous
+No. of trees: 1 ptime: 0.14040090000000305
+Success: 
+ Filaments, ovary and style densely hairy
+No. of trees: 1 ptime: 0.249601599999977
+Success: 
+ Fruits bright red, globose or ± obovoid, 7–9 mm. long, 6–7 mm. wide, finely pubescent
+No. of trees: 1 ptime: 0.5928038000000129
+TAXON:  FTEA Sapindaceae Allophylus pseudopaniculatus
+Fail:
+ Plant is Much-branched monoecious spreading tree or less often a shrub or climbing shrub, 3–15 m. tall
+No. of trees: 3 ptime: 0.6864043999999865
+Success: 
+ branches with brown lenticels, glabrous or glabrescent
+No. of trees: 1 ptime: 0.2808018000000061
+Success: 
+ Leaves drying very discolorous, dark purplish brown above, dark green beneath, trifoliolate
+No. of trees: 4 ptime: 0.7956051000000173
+Success: 
+ petiole 5–7 cm. long, glabrescent or ± tomentose
+No. of trees: 1 ptime: 0.31200199999997835
+Fail:
+ petiolule of terminal leaflet 1–3 mm. long, of laterals ± 1 mm. long
+No. of trees: 4 ptime: 0.6552042000000142
+Fail:
+ leaflets elliptic, oblong or obovate, 3–18 cm. long, 1.5–9 cm. wide, narrowly acutely acuminate at the apex, cuneate (or in laterals ± rounded and asymmetric) at the base, finely toothed, especially in the upper third
+No. of trees: 9 ptime: 1.7628113000000099
+Success: 
+ lateral nerves in ± 12 pairs
+No. of trees: 2 ptime: 0.6864043999999865
+Fail:
+ Inflorescences (5–)10–15 cm. long, simple or with 2 side branches up to 10 cm. long, axillary or appearing paniculate
+No. of trees: 4 ptime: 1.1544073999999966
+Success: 
+ peduncle 2–4 cm. long
+No. of trees: 1 ptime: 0.17160110000000373
+Success: 
+ axes with long hairs
+No. of trees: 1 ptime: 0.18720120000000406
+Fail:
+ cymules 4–7-flowered, the stalks ± 1 mm. long
+No. of trees: 2 ptime: 0.46800300000001016
+Success: 
+ pedicels 1–1.5 mm. long, glabrous
+No. of trees: 1 ptime: 0.2028013000000044
+Success: 
+ Flowers cream or yellow-green
+No. of trees: 1 ptime: 0.1560010000000034
+Fail:
+ outer sepals elliptic, inner oblate ± 1.8 mm. wide, glabrous or slightly pubescent
+No. of trees: 4 ptime: 0.5304034000000115
+Success: 
+ petals spathulate, 1 mm. long, the claw ciliate and scale covered with long hairs
+No. of trees: 2 ptime: 0.9828062999999929
+Success: 
+ disk lobed, glabrous
+No. of trees: 2 ptime: 0.2028013000000044
+Success: 
+ Stamens 2–2.5 mm. long, glabrous
+No. of trees: 1 ptime: 0.24960160000000542
+Success: 
+ staminodes 1.2 mm. long
+No. of trees: 1 ptime: 0.17160110000000373
+Fail:
+ Fruits green, of (1–)2–3 mericarps each subglobose, 5 mm. diameter, glabrous or with sparse hairs
+No. of trees: 5 ptime: 0.5304033999999831
+TAXON:  FTEA Sapindaceae Allophylus richardsiae
+Success: 
+ Plant is Shrub or small tree 2.5–7.5 m. tall
+No. of trees: 1 ptime: 0.6396041000000139
+Success: 
+ branchlets ferruginous pubescent
+No. of trees: 1 ptime: 0.14040090000000305
+Fail:
+ older ones purplish brown, ridged, lenticellate, ± glabrous
+No. of trees: 4 ptime: 0.296401899999978
+Success: 
+ Leaves trifoliolate
+No. of trees: 1 ptime: 0.0780005000000017
+Success: 
+ petiole 3–7 cm. long, ferruginous pubescent
+No. of trees: 1 ptime: 0.29640190000000644
+Fail:
+ leaflets discolorous, drying purplish brown above, elliptic, elliptic-oblong or ± obovate, 3.5–10 cm. long, 1.5–4.5 cm. wide, acuminate at the apex, cuneate at the base, shallowly crenate with upwardly directed teeth at tips of crenae, thin, ± adpressed pilose above, rather sparsely pilose to ± densely pubescent beneath with adpressed white hairs and tufts in the axils of the nerves and also along the nerves at secondary nerve junctions
+No. of trees: 13 ptime: 7.8312501999999995
+Success: 
+ lateral nerves in 8–10 pairs
+No. of trees: 1 ptime: 0.34320220000000745
+Success: 
+ Inflorescences slender, 5–13 cm. long, unbranched, pubescent
+No. of trees: 2 ptime: 0.35880229999997937
+Success: 
+ peduncles 4–5 cm. long
+No. of trees: 1 ptime: 0.2028013000000044
+Fail:
+ cymules 2–3-flowered, subsessile
+No. of trees: 2 ptime: 0.1560010000000034
+Success: 
+ pedicels 2–3 mm. long
+No. of trees: 1 ptime: 0.17160110000000373
+Success: 
+ Flowers white, cream or pale green
+No. of trees: 4 ptime: 0.4524029000000098
+Success: 
+ outer sepals 1.3 mm. long, 1.1 mm. wide, inner oblate, 1.5 mm. long, 2–2.5 mm. wide, ± glabrous
+No. of trees: 1 ptime: 0.6864043999999865
+Success: 
+ petals spathulate, 1.2 mm. long, 0.8 mm. wide, long-ciliate
+No. of trees: 1 ptime: 0.3588023000000078
+Fail:
+ Filaments 1–1.5 mm. long in male flowers, 0.8 mm. long in female
+No. of trees: 3 ptime: 0.5148033000000112
+Success: 
+ Ovary hairy
+No. of trees: 1 ptime: 0.07800049999997327
+Success: 
+ style 1.2 mm. long
+No. of trees: 1 ptime: 0.14040090000000305
+Success: 
+ Fruit subglobose or ellipsoid, 5–7 mm. long, 4–6 mm. wide, with sparse hairs
+No. of trees: 1 ptime: 0.5148033000000112
+TAXON:  FTEA Sapindaceae Allophylus rubifolius
+Fail:
+ Plant is Shrub or small to medium-sized tree 3–7(–12) m. tall, also occasionally described as a creeper
+No. of trees: 3 ptime: 0.6240039999999851
+Success: 
+ bark grey, smooth or rough
+No. of trees: 1 ptime: 0.23400150000000508
+Success: 
+ branchlets glabrous to sparsely pubescent or subtomentose
+No. of trees: 3 ptime: 0.5304034000000115
+Success: 
+ Leaves trifoliolate, mostly discolorous and drying deep or purplish brown above, grey-green beneath
+No. of trees: 6 ptime: 1.0920069999999953
+Success: 
+ petiole 0.8–5(–6.5) cm. long
+No. of trees: 1 ptime: 0.2028013000000044
+Fail:
+ leaflets elliptic, distinctly obovate or ± round, 1–10(–14) cm. long, 0.8–5.5(–8) cm. wide but predominantly small, emarginate to acute (mostly rather obtuse) at the apex, attenuate to cuneate at the base, shallowly crenate to irregularly dentate or serrate, glabrous to densely pubescent or velvety and often with conspicuous hair-tufts in nerve-axils beneath
+No. of trees: 9 ptime: 2.340014999999994
+Fail:
+ indumentum usually greyish
+No. of trees: 1 ptime: 0.17160110000000373
+Fail:
+ Inflorescences usually unbranched, 2–18(–22) cm. long, but occasionally with a few branches 1–3(–12) cm. long
+No. of trees: 4 ptime: 0.6864043999999865
+Success: 
+ peduncles 1.2–5.5 cm. long
+No. of trees: 1 ptime: 0.21840140000000474
+Fail:
+ cymules 1–5-flowered, subsessile, usually closely placed, sometimes very dense
+No. of trees: 4 ptime: 0.42120270000000914
+Success: 
+ pedicels 1–2(–3) mm. long, pubescent or glabrous
+No. of trees: 1 ptime: 0.3120020000000068
+Success: 
+ Flowers green or yellowish white
+No. of trees: 2 ptime: 0.3276020999999787
+Success: 
+ outer sepals broadly elliptic, ± 1 mm. long and wide, inner ± round, 1 mm. long, 1–1.5 mm. wide
+No. of trees: 1 ptime: 0.7644049000000166
+Success: 
+ petals spathulate, 1 mm. long, 0.5 mm. wide
+No. of trees: 1 ptime: 0.26520170000000576
+Success: 
+ Filaments 1–2 mm. long, hairy at base
+No. of trees: 1 ptime: 0.249601599999977
+Success: 
+ Style 1 mm. long, hairy
+No. of trees: 1 ptime: 0.2028013000000044
+Success: 
+ stigma 0.5 mm. long
+No. of trees: 1 ptime: 0.1560010000000034
+Fail:
+ Fruits orange to bright red, of 1–2 mericarps, each ellipsoid, obovoid or subglobose, 6–8 mm. long, 5–6 mm. wide, finely pilose
+No. of trees: 8 ptime: 0.8424054000000183
+TAXON:  FTEA Sapindaceae Allophylus sp.
+Fail:
+ Plant is Shrubto 1 m. tall
+No. of trees: 2 ptime: 0.21840139999997632
+Fail:
+ branchlets sparsely adpressed-pubescent but soon glabrous
+No. of trees: 2 ptime: 0.18720120000000406
+Success: 
+ Leaves drying pale green
+No. of trees: 2 ptime: 0.2808018000000061
+Success: 
+ petioles 2.5–6.5 mm. long, shortly pubescent
+No. of trees: 1 ptime: 0.29640190000000644
+Fail:
+ leaflets ovate, 5–11 cm. long, 3–6 cm. wide, acuminate at the apex, cuneate at the base, the laterals distinctly asymmetric, rather regularly shortly toothed, sparsely adpressed-pubescent becoming ± glabrous
+No. of trees: 9 ptime: 1.263608099999999
+Fail:
+ Inflorescences 11–17 cm. long, with some branches held at ± right angles 2.5–4.5 cm. long
+No. of trees: 3 ptime: 0.9048057999999912
+Fail:
+ cymules few-flowered with stalks 2 mm. long
+No. of trees: 1 ptime: 0.2808018000000061
+Success: 
+ pedicels 3–5 mm. long
+No. of trees: 1 ptime: 0.17160110000000373
+TAXON:  FTEA Sapindaceae Allophylus tanzaniensis
+Success: 
+ Plant is Much-branched shrub or small tree, 1–5 m. tall
+No. of trees: 1 ptime: 0.4212026999999807
+Fail:
+ branches pale to medium brown with brown lenticels
+No. of trees: 2 ptime: 0.39000250000000847
+Success: 
+ youngest shoots pubescent, soon glabrous
+No. of trees: 1 ptime: 0.2808018000000061
+Success: 
+ Leaves drying pale green or ± darker above, trifoliolate
+No. of trees: 4 ptime: 0.9516060999999922
+Success: 
+ petiole (2–)5–9 cm. long, slender, puberulous or glabrous
+No. of trees: 1 ptime: 0.34320220000000745
+Fail:
+ petiolule of terminal leaflet 2–7 mm. long, of lateral 0–3 mm. long
+No. of trees: 4 ptime: 0.6240039999999851
+Fail:
+ leaflets discolorous, drying brown or brownish green above, subequal or laterals 1/2 to 4/5 length of the terminal one, elliptic or elliptic-oblong, (1.5–)5–9 cm. long,(0.9–)2.3–4.2 cm. wide, ± rounded to shortly obtusely acuminate at apex, terminal one cuneate at the base, laterals asymmetrically rounded, entire or crenate or toothed for upper 1/2 or 2/3, ± thin, glabrous or with few hairs on nerves beneath
+No. of trees: 11 ptime: 2.7456176000000028
+Success: 
+ hairy domatia sometimes present
+No. of trees: 1 ptime: 0.26520170000000576
+Success: 
+ lateral nerves in ± 7 pairs, rather inconspicuous
+No. of trees: 2 ptime: 0.7800049999999885
+Fail:
+ Inflorescences slender, (3–)8–12(–17) cm. long inclusive, unbranched or with 1–2 short branches, the axes quite glabrous, puberulous or in some specimens pubescent
+No. of trees: 6 ptime: 0.92040590000002
+Fail:
+ cymules 3–9-flowered, somewhat spaced, subsessile
+No. of trees: 3 ptime: 0.2808018000000061
+Success: 
+ peduncles (1–)2.5–5.5 cm. long, pedicels 1–1.8 mm. long
+No. of trees: 1 ptime: 0.3744023999999797
+Success: 
+ Flowers white or yellow
+No. of trees: 1 ptime: 0.17160110000000373
+Success: 
+ sepals ± round, outer 1 mm. diameter, inner 1.2–1.5 mm. diameter
+No. of trees: 1 ptime: 0.4056026000000088
+Success: 
+ petals spathulate, 1 mm. long, 0.5–0.8 mm. wide, long white-ciliate at base
+No. of trees: 1 ptime: 0.4524028999999814
+Success: 
+ Filaments 1.5 mm. long, glabrous
+No. of trees: 1 ptime: 0.2028013000000044
+Success: 
+ Fruit red, globose, 5.5 mm. diameter
+No. of trees: 1 ptime: 0.2028013000000044
+TAXON:  FTEA Sapindaceae Allophylus vestitus
+Fail:
+ Plant is Small tree 3.6–4 mm. tall with young stems, leaves, petioles, inflorescences, fruits, etc. very densely covered with soft but ± bristle-like hairs up to 3 mm. long, spreading on the stems etc., but ± adpressed on the leaves
+No. of trees: 9 ptime: 1.6848108000000082
+Success: 
+ older stems grey or purplish brown, densely lenticellate, glabrescent
+No. of trees: 2 ptime: 0.7956050999999889
+Fail:
+ Leaves discolorous, ± thin, 3-foliolate but with lateral leaflets very much smaller than terminal one or virtually absent
+No. of trees: 4 ptime: 0.6084039000000132
+Success: 
+ petiole 4–6 cm. long
+No. of trees: 1 ptime: 0.17160110000000373
+Success: 
+ terminal petiolule 0.4–1.1 cm. long, lateral petiolules 0–1 mm. long
+No. of trees: 1 ptime: 0.5928037999999844
+Fail:
+ terminal leaflet elliptic or ovate-elliptic, 20–30 cm. long, 9–15 cm. wide, tapering to a narrow acute apex, cuneate at the base, irregularly serrate or crenate-serrate
+No. of trees: 7 ptime: 1.1856075999999973
+Success: 
+ lateral nerves in 9–15 pairs
+No. of trees: 1 ptime: 0.3276021000000071
+Success: 
+ lateral leaflets 1.5–4 cm. long, 0.5–2 cm. wide
+No. of trees: 1 ptime: 0.4056026000000088
+Fail:
+ Inflorescences unbranched, ± 6 cm. long, with closely placed 5–10-flowered sessile cymules, their persistent rhachises ± 1 mm. long, prominently scarred
+No. of trees: 6 ptime: 1.5912101999999777
+Fail:
+ peduncles up to ± 1 cm. long
+No. of trees: 2 ptime: 0.23400150000000508
+Success: 
+ Sepals up to 2 mm. long and wide, glabrous
+No. of trees: 1 ptime: 0.3588023000000078
+Success: 
+ Style 1 mm. long, hairy
+No. of trees: 1 ptime: 0.18720120000000406
+Fail:
+ stigma-branches 0.8 mm. long
+No. of trees: 1 ptime: 0.21840140000000474
+Success: 
+ Fruits subglobose, 8 mm. long, 6 mm. wide, spreading hairy
+No. of trees: 1 ptime: 0.34320219999997903
+TAXON:  FTEA Sapindaceae Aporrhiza paniculata
+Success: 
+ Plant is Tree 4.5–22 m. tall
+No. of trees: 1 ptime: 0.3588023000000078
+Success: 
+ bark smooth, grey
+No. of trees: 2 ptime: 0.1560010000000034
+Fail:
+ young parts and fruits with a short, velvety, reddish or grey-green pubescence
+No. of trees: 3 ptime: 0.4056026000000088
+Success: 
+ Petiole 1–9 cm. long, woody
+No. of trees: 1 ptime: 0.249601599999977
+Success: 
+ rhachis 10–36 cm. long
+No. of trees: 1 ptime: 0.21840140000000474
+Success: 
+ leaflets in 3–5 pairs, subopposite
+No. of trees: 1 ptime: 0.3120020000000068
+Success: 
+ petiolules fleshy, sparsely pilose
+No. of trees: 2 ptime: 0.26520170000000576
+Fail:
+ blade oblong-elliptic or elliptic, the terminal pair largest, 9–25 cm. long, 5–9 cm. wide, the other pairs progressively smaller, shortly and bluntly acuminate, the base acute, coriaceous, glabrous throughout or some hairs on the veins beneath
+No. of trees: 10 ptime: 1.3260085000000004
+Success: 
+ lateral veins in 8–11 pairs, prominent beneath, impressed above
+No. of trees: 1 ptime: 0.4368028000000095
+Success: 
+ Inflorescence-axes 20–50 cm. long
+No. of trees: 1 ptime: 0.21840139999997632
+Success: 
+ branches 2–16 cm. long
+No. of trees: 1 ptime: 0.21840140000000474
+Success: 
+ Calyx-lobes green, 2 mm. long, silky hairy
+No. of trees: 1 ptime: 0.3120020000000068
+Success: 
+ petals yellow or white, equalling the sepals, claw 1 mm. long, limb 1.5 mm. long, ovate, scale bilobed, ciliate
+No. of trees: 1 ptime: 0.8112051999999892
+Success: 
+ Stamens 7–8
+No. of trees: 1 ptime: 0.14040090000000305
+Fail:
+ filaments bent into a zigzag in bud, pilose throughout, 2.8 mm. long at maturity
+No. of trees: 4 ptime: 0.42120270000000914
+Fail:
+ Ovary rudiment in male flowers similar to but much smaller than the ovary
+No. of trees: 2 ptime: 0.5460034999999834
+Success: 
+ Mericarps 2, semicircular in outline, compressed, 1.5–2 cm. long, 1–1.2 cm. wide, densely finely adpressed-pubescent, internally glabrous and shining
+No. of trees: 2 ptime: 0.7020045000000152
+Fail:
+ Seed black, ± 1.3 cm. long, 5 mm. wide, 4/5 covered by an orange aril
+No. of trees: 5 ptime: 0.5772036999999841
+Fail:
+ Fig. 5
+No. of trees: 1 ptime: 0.09360060000000203
+TAXON:  FTEA Sapindaceae Blighia unijugata
+Fail:
+ Plant is Tree, probably dioecious, usually 6–9 m. but sometimes reaching 30 m. tall, with a dense crown
+No. of trees: 5 ptime: 0.6864044000000149
+Success: 
+ bark grey-brown smooth, thin, with warts and horizontal ridges
+No. of trees: 4 ptime: 0.7020044999999868
+Fail:
+ slash white, pale red or brown with white streaks
+No. of trees: 3 ptime: 0.4524029000000098
+Success: 
+ young twigs golden-hairy, glabrescent, dark grey
+No. of trees: 2 ptime: 0.39000250000000847
+Success: 
+ Leaves reddish when young, drying bright green or brownish
+No. of trees: 1 ptime: 0.34320219999997903
+Success: 
+ petiole up to 4 cm. long
+No. of trees: 1 ptime: 0.21840140000000474
+Success: 
+ rhachis 0.6–10 cm. long
+No. of trees: 1 ptime: 0.21840140000000474
+Success: 
+ petiolules 1–2 mm. long
+No. of trees: 1 ptime: 0.1560010000000034
+Fail:
+ leaflets in (1–)2–4(–5) pairs, elliptic, oblong, obovate or oblanceolate, the upper pair 3–26 cm. long, 1.2–9.5 cm. wide (but in West Africa up to 30×13 cm.), the lowest either similar (usually when there are only 2 pairs) or as small as 2×1.2 cm., acuminate at apex and tapering or sometimes rounded at the extreme tip, the midrib visible as a raised line on the upper surface, glabrous apart from some hairs on the veins plus tufts in the nerve axils
+No. of trees: 9 ptime: 5.522435400000006
+Success: 
+ lateral veins in 6–10(–12) pairs, curving and ending well inside the leaflet margin, usually whitish beneath, glabrous
+No. of trees: 7 ptime: 1.9968127999999865
+Fail:
+ Inflorescences borne in axils of current leaves, 5–10 cm. long, flowers singly inserted or in cymose groups
+No. of trees: 7 ptime: 0.7176046000000156
+Fail:
+ pedicels 1–5(–10 in fruit) mm. long, pubescent
+No. of trees: 3 ptime: 0.3744023999999797
+Success: 
+ Flowers whitish to yellow, sweet-scented
+No. of trees: 2 ptime: 0.24960160000000542
+Fail:
+ calyxdivided ± halfway, lobes 2 mm. long, 1 mm. wide
+No. of trees: 3 ptime: 0.4368028000000095
+Success: 
+ petals rhomboid in outline, 1.5 mm. long, 1.5–2 mm. wide, scale bilobed, shaggy hairy
+No. of trees: 1 ptime: 0.4992031999999824
+Success: 
+ Stamens 6–8
+No. of trees: 1 ptime: 0.09360060000000203
+Success: 
+ filaments 4.5 mm. long, the basal part strikingly white hairy
+No. of trees: 1 ptime: 0.7332047000000159
+Fail:
+ Capsule reddish, (2–)3(–4)-gonous and -locular, 1.7–3 cm. long, 1.9–3 cm. wide, glabrescent, the angles acute or with wings up to 2 mm. broad
+No. of trees: 7 ptime: 0.8268052999999895
+Fail:
+ style and sepals persistent
+No. of trees: 2 ptime: 0.14040090000000305
+Fail:
+ endocarp pink with yellow margins, glabrous or nearly so
+No. of trees: 3 ptime: 0.34320220000000745
+Fail:
+ Seeds, dark brown or black, ovoid 1.5–2 cm. long, 6–8 mm. wide
+No. of trees: 5 ptime: 0.46800299999998174
+Success: 
+ aril bright yellow, up to 1 cm. long
+No. of trees: 1 ptime: 0.2808018000000061
+Fail:
+ Fig. 7
+No. of trees: 1 ptime: 0.046800300000001016
+TAXON:  FTEA Sapindaceae Blighia welwitschii
+Fail:
+ Plant is Dioecious tree 20–25(–35) m. tall, with grey bark showing small reticulate fissures or thin, smooth, hard and flaking
+No. of trees: 5 ptime: 1.357208700000001
+Fail:
+ slash orange and yellow-brown mottled with scattered white pock marks
+No. of trees: 2 ptime: 0.6240040000000135
+Fail:
+ young twigs orange-pubescent but soon glabrescent and dark brown
+No. of trees: 2 ptime: 0.7332046999999875
+Success: 
+ Petiole up to 16 cm. long, flattened, narrowly winged
+No. of trees: 2 ptime: 0.4524029000000098
+Success: 
+ rhachis 4–15 cm. long
+No. of trees: 1 ptime: 0.23400149999997666
+Fail:
+ leaflets olive-green, in 2–4 pairs, narrowly elliptic to oblong-elliptic, the uppermost 8–40 cm. long, 3.5–10 cm. wide, with lower pairs becoming smaller with lowermost as little as half the size, shortly and bluntly acuminate at the apex, sometimes asymmetric at the base, glabrous apart from scattered hairs on the undersides of the veins
+No. of trees: 10 ptime: 2.6364169000000004
+Success: 
+ midrib impressed above, prominent beneath
+No. of trees: 1 ptime: 0.18720120000000406
+Success: 
+ lateral nerves in 7–10(–20) pairs, curving and sometimes joining inside the margin
+No. of trees: 5 ptime: 1.1856075999999973
+Success: 
+ Inflorescence-axis 3–10 cm. long
+No. of trees: 1 ptime: 0.23400150000000508
+Fail:
+ flowers in small groups or single
+No. of trees: 2 ptime: 0.24960160000000542
+Fail:
+ pedicels 5–8(–10 in fruit) mm. long
+No. of trees: 2 ptime: 0.29640190000000644
+Fail:
+ Sepals joined for 1/4 of their length, lobes 2 mm. long, 1 mm. wide
+No. of trees: 4 ptime: 0.4524028999999814
+Fail:
+ petals rhomboid, 5 mm. long, 3 mm. wide, the scale equal to and joined to it to form a funnel-shaped compound petal
+No. of trees: 5 ptime: 0.967206200000021
+Success: 
+ Stamens 7–8
+No. of trees: 1 ptime: 0.0780005000000017
+Fail:
+ filaments hairy in the lower part.Ovary 3-lobed
+No. of trees: 2 ptime: 0.6240039999999851
+Success: 
+ style entire, equalling the ovary
+No. of trees: 1 ptime: 0.2028013000000044
+Success: 
+ Capsule reddish or bright red, turbinate, 3–4-angled and -locular, up to 5.5–6(–8) cm. long, glabrous
+No. of trees: 2 ptime: 0.7956050999999889
+Success: 
+ endocarp creamy-velvety-pubescent
+No. of trees: 1 ptime: 0.1560010000000034
+Success: 
+ Seeds black or dark brown, 2.5 cm. long, 1.5 cm. wide
+No. of trees: 4 ptime: 0.7800050000000169
+Success: 
+ aril up to 2 cm. long
+No. of trees: 1 ptime: 0.21840140000000474
+TAXON:  FTEA Sapindaceae Camptolepis ramiflora
+Fail:
+ Plant is Dioecious, much-branched small tree, ± 3 m. tall in Tanzania but 12–30 m. tall in Somalia and Madagascar
+No. of trees: 4 ptime: 0.7488047999999878
+Success: 
+ young twigs densely pubescent at first, later glabrous, with bark whitish, smooth, later fissuring vertically to become red-brown
+No. of trees: 4 ptime: 0.9204058999999916
+Fail:
+ older bark peeling like a plane tree
+No. of trees: 2 ptime: 0.49920320000001084
+Success: 
+ Leaf-rhachis 2–8(–12.5) cm. long, somewhat flattened and with raised lateral lines, pilose or glabrous
+No. of trees: 1 ptime: 0.6864043999999865
+Success: 
+ petiolules 2–8 mm. long, channelled, swollen
+No. of trees: 1 ptime: 0.2808018000000061
+Fail:
+ leaflets in 2–4(–5) pairs, opposite, ovate to narrowly elliptic, 0.5–1.4 cm. long, 1.5–4 cm. wide, the uppermost pair largest, the lowermost slightly to 1/3 smaller, shortly and bluntly acuminate, the base cuneate and usually asymmetric, thick, leathery, drying purplish-brown beneath, glabrous apart from scattered hairs on the midrib
+No. of trees: 14 ptime: 2.714417400000002
+Fail:
+ midrib sunken above, prominent beneath, lateral nerves looping inside the margin with smaller veins between the loops and the margins, venation raised and reticulate beneath
+No. of trees: 5 ptime: 1.5600100000000054
+Success: 
+ Flowers 5–6 mm. long, borne in fascicles of cymes
+No. of trees: 1 ptime: 0.39000250000000847
+Fail:
+ inflorescence-axes 1.5–6 cm. long, the branches ± 1 cm. long, both yellowish pubescent, abruptly transitional to glabrous
+No. of trees: 5 ptime: 0.7488047999999878
+Fail:
+ pedicels 1–2 mm. long, deciduous with the (male) flowers
+No. of trees: 3 ptime: 0.34320220000000745
+Success: 
+ Sepals unequal, orbicular, 2–4 mm. long, concave, glabrous
+No. of trees: 2 ptime: 0.3744023999999797
+Fail:
+ petals 5, white, slightly exceeding the sepals, ovoid, briefly clawed, 4 mm. long, 3.5 mm. broad, the scale half as long as the limb, villous-hairy
+No. of trees: 10 ptime: 1.060806800000023
+Success: 
+ Stamens 12, shortly exserted
+No. of trees: 1 ptime: 0.21840139999997632
+Success: 
+ anthers oblong, 1.3 mm. long, briefly auriculate at the base
+No. of trees: 1 ptime: 0.4368028000000095
+Success: 
+ filaments flattened, glabrous
+No. of trees: 1 ptime: 0.10920070000000237
+Success: 
+ Ovary rudiment minute
+No. of trees: 1 ptime: 0.2028013000000044
+Fail:
+ Female flowers and fruits not seen (see note)
+No. of trees: 2 ptime: 0.43680279999998106
+Fail:
+ Fig. 16
+No. of trees: 1 ptime: 0.031200200000000677
+TAXON:  FTEA Sapindaceae Cardiospermum corindum
+Success: 
+ Plant is Annual herbaceous to slightly woody climber, 0.3–4.5 m. tall
+No. of trees: 2 ptime: 1.0296066000000224
+Success: 
+ stems deeply grooved, densely shortly pubescent
+No. of trees: 1 ptime: 0.31200199999997835
+Fail:
+ Leaves stipulate, biternate or pinnate, triangular or ovate in outline, up to 9 cm. long, 10 cm. wide, mostly densely velvety pubescent, in biternate examples composed of 3 main divisions, the median larger than the laterals
+No. of trees: 9 ptime: 1.2480079999999987
+Success: 
+ petiole 0.3–2(–3) cm. long
+No. of trees: 1 ptime: 0.2808018000000061
+Success: 
+ first order petiolules 0.1–3 cm. long, second order petiolules 0–1 cm. long
+No. of trees: 2 ptime: 1.0452066999999943
+Success: 
+ terminal leaflet ovate, 1–5.2 cm. long, 0.5–4.5 cm. wide, acute to acuminate and apiculate at the apex, attenuate-decurrent to truncate or cordate at the base, crenate to serrate or deeply lobed
+No. of trees: 54 ptime: 3.728423900000024
+Fail:
+ Inflorescences corymbose to paniculate, the rhachis with 3–5, few-flowered corymbiform racemoid thyrses, grey-pubescent, or a paniculate thyrse 0.4–1.5 cm. long with 6–12 racemoid thyrses 0.2–1.1 cm. long
+No. of trees: 6 ptime: 1.4976095999999757
+Fail:
+ peduncle below tendrils (2–)3–12 cm. long, above 0.2–1.3 cm. long
+No. of trees: 4 ptime: 0.37440240000000813
+Success: 
+ secondary peduncles 0.2–1.4 cm. long
+No. of trees: 1 ptime: 0.37440240000000813
+Success: 
+ pedicels 2–4 mm. long
+No. of trees: 1 ptime: 0.17160110000000373
+Success: 
+ Sepals unequal
+No. of trees: 1 ptime: 0.0780005000000017
+Fail:
+ outer broadly elliptic to ± round, 1.5–2 mm. long, 1.5 mm. wide, inner elliptic, 3–5.5 mm. long, 2–3 mm. wide
+No. of trees: 6 ptime: 0.7644048999999882
+Success: 
+ petals white or cream, elliptic, (3–)4–6 mm. long, 2–3.5 mm. wide
+No. of trees: 1 ptime: 0.46800300000001016
+Success: 
+ appendage orange
+No. of trees: 1 ptime: 0.1560010000000034
+Success: 
+ Stamens 8, with filaments 3–4 mm. long, pilose
+No. of trees: 1 ptime: 0.34320219999997903
+Success: 
+ Ovary 2–3 mm. long
+No. of trees: 1 ptime: 0.17160110000000373
+Success: 
+ style 0.5–1 mm. long
+No. of trees: 1 ptime: 0.1560010000000034
+Success: 
+ stigmas ± 0.5 mm. long
+No. of trees: 1 ptime: 0.3276021000000071
+Success: 
+ Fruit green to orange or rusty red, ovoid or usually ellipsoid, (2–)2.5–3.5(–4) cm. long, (1.5–)2–3.3 cm. wide, finely velvety when young
+No. of trees: 7 ptime: 1.4664094000000034
+Fail:
+ septa elliptic, longer than wide
+No. of trees: 3 ptime: 0.20280129999997598
+Success: 
+ Seeds black, 4.5–5 mm. diameter
+No. of trees: 1 ptime: 0.2808018000000061
+Fail:
+ hilum white, reniform or cordate, 3 mm. long, 3.5 mm. wide
+No. of trees: 5 ptime: 0.37440240000000813
+TAXON:  FTEA Sapindaceae Cardiospermum grandiflorum
+Success: 
+ Plant is Herbaceous or slightly woody climber, 0.9–8 m. long
+No. of trees: 1 ptime: 0.5928038000000129
+Fail:
+ stems deeply ridged, with short curled pubescence or with long spreading brown or golden brown hairs 3–5 mm. long
+No. of trees: 3 ptime: 2.6520169999999723
+Success: 
+ Leaves biternate or less often ternate, up to 18 cm. long, with deeply 3-lobed leaflets
+No. of trees: 2 ptime: 1.2012076999999977
+Success: 
+ petiole up to 6 cm. long, grooved, glabrous or pubescent
+No. of trees: 1 ptime: 0.34320220000000745
+Fail:
+ first order petiolules 1–3 cm. long, the central one longer or shorter than the laterals, those of ultimate leaflets 0–1 cm. long
+No. of trees: 4 ptime: 1.0140064999999936
+Fail:
+ leaflets ovate-rhombic, 1.5–9 cm. long, 1.2–4.3 cm. wide, acuminate at the apex, tapering at the base, coarsely crenate, ± glabrous or with tufts of hairs in the nerve axils beneath (can be velvety in South America)
+No. of trees: 8 ptime: 1.9656126000000427
+Success: 
+ lateral nerves 5–12, weak
+No. of trees: 1 ptime: 0.26520169999997734
+Success: 
+ Inflorescences spreading horizontally, paniculate, with a pair of tendrils at the apex of the peduncle
+No. of trees: 1 ptime: 0.8268053000000464
+Success: 
+ peduncle 5–10 cm. long
+No. of trees: 1 ptime: 0.1716010999999753
+Success: 
+ axis 5–10 cm. long
+No. of trees: 1 ptime: 0.23400149999997666
+Success: 
+ pedicels sometimes orange, 1–5 mm. long
+No. of trees: 1 ptime: 0.20280130000003282
+Success: 
+ Flowers sweetly scented, 6–11 mm. long
+No. of trees: 1 ptime: 0.2808018000000061
+Fail:
+ sepals 4, greenish white sometimes crimson flushed outside, unequal, the shorter 3–3.5 mm. long, 2.5 mm. wide, the longer petaloid, 6–7 mm. long, 5 mm. wide
+No. of trees: 9 ptime: 1.3884089000000017
+Fail:
+ petals white, ovate, 8–9 mm. long, scale orange-yellow, contiguous in the centre of the flower to form a cup or corona enclosing the stamens or ovary
+No. of trees: 6 ptime: 0.7956050999999889
+Fail:
+ disk extrastaminal, formed of 2 adjacent club-shaped parts 5 mm. long
+No. of trees: 3 ptime: 0.45240290000003824
+Success: 
+ Stamens white
+No. of trees: 1 ptime: 0.07800050000003012
+Success: 
+ Stigma linear, 2–5 mm. long
+No. of trees: 2 ptime: 0.296401899999978
+Success: 
+ Fruits green, ellipsoid, 4.5–7 cm. long, 2–3 cm. wide, membranous, inflated, strongly venose
+No. of trees: 1 ptime: 0.49920320000001084
+Fail:
+ septa 3, white or pale brown, papery, 5 cm. long, 3 cm. wide, remaining after dehiscence and each bearing a seed, forming a wind sailing wing
+No. of trees: 8 ptime: 1.185607599999969
+Success: 
+ Seed black, globose, 7 mm. diameter, glabrous, with a white rounded-ovate hilum 1.5–2 mm. long
+No. of trees: 1 ptime: 0.8892056999999909
+Fail:
+ Fig. 25/5–7
+No. of trees: 1 ptime: 0.1716010999999753
+TAXON:  FTEA Sapindaceae Cardiospermum halicacabum
+Success: 
+ Plant is Annual herbaceous or slightly woody climber, 0.3–3 mm. long
+No. of trees: 2 ptime: 1.0296066000000224
+Fail:
+ stems deeply grooved, straw-coloured with grooves green
+No. of trees: 3 ptime: 0.3120020000000068
+Fail:
+ Leaves pale green, stipulate, thin, biternate, triangular in outline, (3–)5–10 cm. long, 5–12 cm. wide, composed of 3 ± equal divisions each of a petiolule and 3 leaflets or deeply trifid leaflet
+No. of trees: 9 ptime: 1.3260085000000004
+Success: 
+ petiole 0.4–6 cm. long, pubescent
+No. of trees: 1 ptime: 0.2808018000000061
+Fail:
+ first order petiolules 0.5–3 cm. long, subequal or often the lateral ones somewhat longer than median one
+No. of trees: 2 ptime: 0.6084038999999848
+Fail:
+ leaflets sessile or with short secondary petiolules, sparsely pubescent when young, later glabrescent except for main nerves, the terminal one ovate, 1.5–6.5 cm. long, 0.8–2.5 cm. wide, acute to acuminate or rarely rounded at the apex, apiculate, attenuate to rounded at the base, serrate to deeply dentate or pinnatipartite, rarely ± entire
+No. of trees: 12 ptime: 2.340014999999994
+Success: 
+ Inflorescences corymbose, the rhachis bearing 3–4, 2–5-flowered raceme-like thyrses
+No. of trees: 2 ptime: 0.7332046999999875
+Fail:
+ peduncle below tendrils 1.5–10.5 cm. long, the part above 0.2–1.2 cm. long
+No. of trees: 4 ptime: 0.49920320000001084
+Success: 
+ secondary peduncles 0.3–1.7 cm. long
+No. of trees: 1 ptime: 0.39000249999998005
+Fail:
+ pedicels (0–)1–2 mm. long, lengthening to 5 mm. in fruit
+No. of trees: 3 ptime: 0.4368028000000095
+Fail:
+ Flowers said not to be scented
+No. of trees: 2 ptime: 0.1716010999999753
+Fail:
+ sepals yellow-green, unequal, the outer ± round, 1 mm. diameter, the inner larger and ovate, 2–3 mm. long, 1–2 mm. wide
+No. of trees: 8 ptime: 0.670804300000043
+Success: 
+ petals white, cream, greenish or yellow, elliptic to obovate, 2–3 mm. long
+No. of trees: 2 ptime: 0.4056026000000088
+Success: 
+ appendages yellow at tip, hairy
+No. of trees: 2 ptime: 0.24960160000000542
+Fail:
+ disk of 2 curved elements 1 mm. long
+No. of trees: 2 ptime: 0.5148032999999828
+Success: 
+ Stamens 8
+No. of trees: 1 ptime: 0.09360060000000203
+Success: 
+ filaments ± 2 mm. long, pilose
+No. of trees: 1 ptime: 0.296401899999978
+Success: 
+ Ovary ± 2 mm. diameter
+No. of trees: 1 ptime: 0.2652017000000342
+Success: 
+ style 0.5 mm. long, with yellow stigma equalling it
+No. of trees: 1 ptime: 0.4524028999999814
+Fail:
+ Fruit yellow-green turning greenish brown to reddish or dark brown, obtetrahedral, 1–3.5 cm. long, 1.8–4 cm. wide, dehiscing into 3 segments, at first densely puberulous or pubescent
+No. of trees: 7 ptime: 3.08881980000001
+Fail:
+ Seeds black, globose, 5 mm. diameter, with a reniform or crescentic hilar area, 3–4 mm. wide
+No. of trees: 6 ptime: 0.5616036000000122
+Fail:
+ Fig. 25/1–4
+No. of trees: 1 ptime: 0.1716010999999753
+TAXON:  FTEA Sapindaceae Chytranthus atroviolaceus
+Success: 
+ Plant is Tree 5–18 m. tall
+No. of trees: 1 ptime: 0.37440240000000813
+Success: 
+ Leaf-rhachis 0.4–1 m. long, ribbed, brown-pubescent or glabrous
+No. of trees: 2 ptime: 0.4212026999999807
+Success: 
+ petiole 20–50 cm. long, 7 mm. diameter
+No. of trees: 1 ptime: 0.24960160000000542
+Success: 
+ petiolules 0.7–1.5 cm. long
+No. of trees: 1 ptime: 0.2340015000000335
+Fail:
+ leaflets (2–)4–6-jugate, elliptic or oblong, 14–42(–46) cm. long, 6.5–17 cm. wide, shortly acuminate to caudate-acuminate at the apex, asymmetrically cuneate or, especially in the lower leaflets, truncate at the base, glabrous and shiny above, minutely pubescent or glabrous beneath
+No. of trees: 10 ptime: 1.6848107999999797
+Success: 
+ lateral veins in 15–25 pairs, prominent beneath
+No. of trees: 1 ptime: 0.4524028999999814
+Fail:
+ Inflorescences purplish, borne on the trunk at base or up to 50 cm. from ground, thyrsoid, (6–)10–15(–35) cm. long
+No. of trees: 5 ptime: 0.5148032999999828
+Success: 
+ buds purple
+No. of trees: 1 ptime: 0.1560010000000034
+Success: 
+ pedicels 2 mm. long
+No. of trees: 1 ptime: 0.17160110000003215
+Success: 
+ Calyx purple, 8–10 mm. long, 2-lipped, densely shortly velvety pubescent
+No. of trees: 1 ptime: 0.6084038999999848
+Fail:
+ petals 4–6, obovate-spathulate or oblanceolate, 7.4–9.5 mm. long, including a 1.2 mm. claw, 3 mm. wide, scale 5 mm. long, emarginate, sometimes with a bifid appendage arising just below the apex
+No. of trees: 9 ptime: 1.3416085999999723
+Success: 
+ disk asymmetric, glabrous
+No. of trees: 2 ptime: 0.1716010999999753
+Fail:
+ Stamens 7–10, the basal 2/3 of the filaments hairy
+No. of trees: 3 ptime: 0.29640190000003486
+Success: 
+ anthers glabrous
+No. of trees: 1 ptime: 0.07800050000003012
+Fail:
+ Ovary 5–6-lobed, 5–6-locular, bristly with purple hairs
+No. of trees: 4 ptime: 0.499203199999954
+Success: 
+ rudimentary ovary absent
+No. of trees: 1 ptime: 0.23400149999997666
+Fail:
+ Fruit ± star-shaped, pyriform in outline, 7–13.3 cm. wide, 4–6-lobed or winged, densely rough brown or purple spreading hairy
+No. of trees: 6 ptime: 1.5132097000000044
+Success: 
+ Seeds brown, subovate in outline, very compressed, 1.9–3.2 cm. long, 1.1–1.8 cm. wide, 6 mm. thick
+No. of trees: 1 ptime: 0.5304034000000115
+TAXON:  FTEA Sapindaceae Chytranthus longibracteatus
+Success: 
+ Plant is Small dioecious tree
+No. of trees: 1 ptime: 0.28080179999994925
+Success: 
+ bark grey
+No. of trees: 1 ptime: 0.09360060000000203
+Success: 
+ Leaves with petiole 6 cm. long, 1 cm. wide at base, woody, ribbed, shortly pubescent in the grooves
+No. of trees: 2 ptime: 0.8268053000000464
+Success: 
+ rhachis up to 1 m. long, tapering, angular
+No. of trees: 2 ptime: 0.39000249999998005
+Fail:
+ leaflets crowded, ± 12-jugate, the uppermost oblong-oblanceolate or oblong, 20–33 cm. long, 5–8 cm. wide, the lowermost elliptic, 7–8 cm. long, 3–5 cm. wide, obtuse to acute or shortly acuminate at the apex, truncate at the base, glabrous
+No. of trees: 12 ptime: 1.8564119000000119
+Success: 
+ lateral veins in ± 8 pairs in small leaflets, ± 20 in upper larger leaflets, prominent
+No. of trees: 4 ptime: 2.0124129000000153
+Fail:
+ Inflorescences borne on trunk near ground and lower parts of the branches, 10–25 cm. long, at first brownish velvety
+No. of trees: 5 ptime: 0.6396040999999855
+Fail:
+ male not known
+No. of trees: 1 ptime: 0.2340015000000335
+Fail:
+ female flowers borne singly or in pairs subtended by a subulate bract up to 2 cm. long
+No. of trees: 2 ptime: 0.7644048999999882
+Fail:
+ Calyx 2-lipped with 2 triangular sepals 5 mm. long, separated by a sinus of 2 mm. and 3 sepals 4 mm. long, separated by sinuses of 1.2 mm., increasing slightly in fruit, densely pubescent
+No. of trees: 6 ptime: 1.6380105000000071
+Fail:
+ petals 4, drying reddish, oblong, 8 mm. long, 2 mm. wide with claw 0.7 mm. long
+No. of trees: 6 ptime: 0.5460034999999834
+Fail:
+ scattered hairs present, especially at the junction of the scale, scale ligulate, 4 mm. long, slightly narrower than petal-limb, hooded at the apex, with a shallowly lobed appendage
+No. of trees: 8 ptime: 1.9188123000000132
+Success: 
+ disk reniform
+No. of trees: 1 ptime: 0.07800049999997327
+Success: 
+ Staminodes with pilose filaments and glabrous anthers
+No. of trees: 2 ptime: 0.5616036000000122
+Success: 
+ Ovary triangular
+No. of trees: 1 ptime: 0.09360059999994519
+Success: 
+ Immature fruit ovoid, 2.5 cm. long, 3-ribbed, 3-locular, orange-brown velvety tomentose and with longer hairs
+No. of trees: 1 ptime: 0.9204059000000484
+Success: 
+ pedicels 6 mm. long
+No. of trees: 1 ptime: 0.1716010999999753
+TAXON:  FTEA Sapindaceae Chytranthus obliquinervis
+Fail:
+ Plant is Dioecious or ?monoecious tree or suffrutex, 1.2–6(–15) m. tall, mostly unbranched with apical rosette-like crown of very large leaves
+No. of trees: 4 ptime: 1.1232072000000244
+Success: 
+ bark grey-brown, smooth or somewhat wrinkled
+No. of trees: 1 ptime: 0.3276020999999787
+Success: 
+ Leaves drooping and purplish when young, with 7–12 pairs of leaflets
+No. of trees: 6 ptime: 0.8268053000000464
+Fail:
+ leaf-buds purplish
+No. of trees: 1 ptime: 0.1560010000000034
+Success: 
+ petiole 1–3 cm. long, ± woody, pubescent
+No. of trees: 1 ptime: 0.26520169999997734
+Success: 
+ rhachis 35–100 cm. long
+No. of trees: 1 ptime: 0.23400149999997666
+Success: 
+ petiolules swollen, ± 1 cm. long
+No. of trees: 1 ptime: 0.26520169999997734
+Success: 
+ leaflets opposite or alternate, elliptic, oblanceolate or oblong-lanceolate, (3–)5.5–45 cm.long, (1.5–)4–14 cm. wide, shortly acuminate at the apex, rounded to cuneate at the base, coriaceous, glabrous save for scattered long hairs on the venation beneath
+No. of trees: 4 ptime: 2.4804159000000254
+Success: 
+ midrib sunken on upper surface
+No. of trees: 1 ptime: 0.296401899999978
+Fail:
+ Inflorescences clusters of thyrses borne on the trunk and branches, pinkish green, 5–15 cm. long, the male and female possibly sometimes on the same plant
+No. of trees: 5 ptime: 1.0452066999999943
+Success: 
+ buds cream
+No. of trees: 1 ptime: 0.07800049999997327
+Success: 
+ Calyx pale green velvety, somewhat 2-lipped, tube 3–4 mm. long, lobes very unequal, 2.5–4 mm. long
+No. of trees: 2 ptime: 0.9828062999999929
+Fail:
+ petals white or yellow-green, oblong, 4–5 mm. long, emarginate or lobed, scale 3.5 mm. long, bent forward but not hooded at the tip, bearing a short simple appendage, hairy at the junction with the petal limb
+No. of trees: 9 ptime: 1.7784113999999818
+Fail:
+ disk reniform, deeply lobed opposite the petals
+No. of trees: 3 ptime: 0.35880229999997937
+Success: 
+ Stamens 8
+No. of trees: 1 ptime: 0.09360060000000203
+Fail:
+ filaments and anthers pilose
+No. of trees: 2 ptime: 0.1560010000000034
+Success: 
+ Ovary 3-lobed, 3-locular
+No. of trees: 2 ptime: 0.3120020000000068
+Fail:
+ Mature fruit unknown but very young ones are velvety tomentose and with longer white hairs as well
+No. of trees: 1 ptime: 0.8268052999999895
+TAXON:  FTEA Sapindaceae Chytranthus prieurianus
+Fail:
+ Plant is Slender single-stemmed dioecious shrub, (0.2–)1–2 m. tall, from a thick starchy root
+No. of trees: 4 ptime: 0.7644048999999882
+Fail:
+ bark slightly rough with raised lenticels which when young are covered with quartered or stellate cork cell masses
+No. of trees: 2 ptime: 5.007632099999967
+Success: 
+ Leaves up to 50 cm. long, with 3–6 pairs of leaflets
+No. of trees: 2 ptime: 0.6240040000000135
+Success: 
+ petiole 5–15 cm. long, ± woody, brownish puberulous
+No. of trees: 1 ptime: 0.3276020999999787
+Success: 
+ rhachis 9–19 cm. long
+No. of trees: 1 ptime: 0.23400149999997666
+Success: 
+ petiolules ± thickened, 6–8 mm. long, brown-pubescent
+No. of trees: 1 ptime: 0.2652017000000342
+Fail:
+ leaflets opposite or alternate, the leaves sometimes appearing pseudo-imparipinnate, oblanceolate, obovate-lanceolate or elliptic-oblong, 4.5–23(–?32) cm. long, 2.9–8(–?11.5) cm. wide, acuminate at the apex, the actual tip ± obtuse or slightly acute, cuneate to truncate or very slightly subcordate at the base, glabrous save occasionally for few hairs on midrib beneath
+No. of trees: 11 ptime: 6.052838799999961
+Fail:
+ Inflorescences pseudoracemose, borne on the stems just above or below ground-level, 4.5–30 cm. long, brown-puberulous
+No. of trees: 5 ptime: 0.5148032999999828
+Success: 
+ peduncle 7.5–25 cm. long
+No. of trees: 1 ptime: 0.17160110000003215
+Fail:
+ individual cymules numerous, up to ± 50, each 3–6-flowered
+No. of trees: 3 ptime: 0.4368028000000095
+Success: 
+ Flowers sweet-scented
+No. of trees: 1 ptime: 0.07800049999997327
+Success: 
+ buds grey-tomentose
+No. of trees: 1 ptime: 0.1560010000000034
+Success: 
+ pedicels up to 1.3(–2) mm. long
+No. of trees: 1 ptime: 0.32760210000003553
+Success: 
+ calyx pale green, campanulate to cylindric, 3–5.5 mm. long, shortly densely pilose, lobes unequal, 1–1.5 mm. long, 0.75–1.75 mm. wide
+No. of trees: 4 ptime: 0.9516060999999922
+Fail:
+ petals 4–5, cream, narrowly clawed, the claw linear (0.5–)1–2.5 mm. long, limb elliptic-oblong, (2–)4–5.5 mm. long, (0.5–)2 mm. wide, lobulate at the apex, margin crenulate, scale very variable, up to 1/3 the length of limb, adnate at the base or sometimes throughout, entire or bilobed at the apex, lobes simple, triangular, 0.5 m. long, a narrow horn-like crest sometimes present
+No. of trees: 17 ptime: 2.2776145999999926
+Success: 
+ disk semilunar, unilateral
+No. of trees: 3 ptime: 0.26520169999997734
+Success: 
+ Stamens 7–9
+No. of trees: 1 ptime: 0.09360060000000203
+Success: 
+ filaments 3–5 mm. long, pubescent
+No. of trees: 1 ptime: 0.20280130000003282
+Success: 
+ Ovary ellipsoid, 2.5 mm. long, 2 mm. wide, 3-angled, 3-locular
+No. of trees: 1 ptime: 0.4368028000000095
+Success: 
+ style conical, 2.5 mm. long, 1 mm. wide, the stigmatose apex clavate and sulcate
+No. of trees: 3 ptime: 0.8112051999999608
+Fail:
+ Fruiting inflorescence mostly prostrate on ground
+No. of trees: 2 ptime: 0.29640190000003486
+Fail:
+ fruit fleshy, orange, 3-angled-subglobose or obtetrahedral, 3-lobed, (2.7–)3.6–5 cm. long and wide, acuminate at apex, rounded at base, the lobe margins acute, minutely pubescent
+No. of trees: 10 ptime: 2.340014999999994
+Success: 
+ Seed ellipsoid or subdiscoid, 1.5–1.8 cm. long, 1–1.5 cm. wide, 4–6 mm. thick, distinctly compressed, pale brown
+No. of trees: 2 ptime: 0.764404900000045
+Success: 
+ hilum linear, 9 mm. long
+No. of trees: 2 ptime: 0.2184013999999479
+Success: 
+ testa scurfy-reticulate when dry
+No. of trees: 1 ptime: 0.21840140000000474
+Fail:
+ Fig. 21
+No. of trees: 1 ptime: 0.10920070000003079
+TAXON:  FTEA Sapindaceae Deinbollia borbonica
+Fail:
+ Plant is Shrub or small tree 0.6–4.5 m. tall with simple stem, monoecious
+No. of trees: 3 ptime: 0.8424054000000183
+Success: 
+ branchlets brownish or blackish, golden hairy when young, later glabrescent
+No. of trees: 1 ptime: 0.43680279999995264
+Fail:
+ Leaves terminal with petiole 7–15 cm. long
+No. of trees: 2 ptime: 0.35880229999997937
+Success: 
+ rhachis 20–42 cm. long
+No. of trees: 1 ptime: 0.24960160000000542
+Success: 
+ petiolules 0–4 mm. long
+No. of trees: 1 ptime: 0.2340015000000335
+Fail:
+ leaflets (3–)6–10-jugate, alternate or subopposite, oblong-elliptic to elliptic or sometimes obovate to oblanceolate, 5–23 cm. long, 1.9–8.5 cm. wide, mostly rounded or subacute at the apex, cuneate to rounded at the base or rarely subcordate, often densely ferruginous pubescent beneath when very young, but mostly glabrous save for a few adpressed hairs on the main nerves beneath but rarely ± densely ferruginous pubescent beneath
+No. of trees: 10 ptime: 3.9624253999999723
+Fail:
+ lateral nerves in 5–9(–12) pairs, venation very prominent on both sides, particularly beneath
+No. of trees: 3 ptime: 0.6396040999999855
+Fail:
+ Inflorescences terminal, 30–32(–60) cm. long, shortly branched at the base or much branched
+No. of trees: 4 ptime: 0.577203700000041
+Fail:
+ ultimate cymules (2–)4–6-flowered
+No. of trees: 1 ptime: 0.21840140000000474
+Success: 
+ rhachis velvety ferruginous
+No. of trees: 1 ptime: 0.14040089999997463
+Success: 
+ pedicels 1–3 mm. long
+No. of trees: 1 ptime: 0.17160110000003215
+Success: 
+ Calyx densely dark brown or silvery to creamy-ferruginous pubescent outside
+No. of trees: 12 ptime: 4.492828799999984
+Success: 
+ sepals elliptic to round, 4–5 mm. long, 2.5–4.5 mm. wide
+No. of trees: 2 ptime: 0.35880229999997937
+Success: 
+ petals white, drying red-brown, elliptic, 5.5–6 mm. long, 2.8–3 mm. wide, with long white cilia, scale 4 mm. long
+No. of trees: 1 ptime: 0.8892057000000477
+Success: 
+ Stamens 15–17
+No. of trees: 1 ptime: 0.1716010999999753
+Success: 
+ filaments white, hairy
+No. of trees: 1 ptime: 0.12480080000000271
+Success: 
+ anthers pale yellow
+No. of trees: 2 ptime: 0.23400149999997666
+Success: 
+ staminodes short
+No. of trees: 1 ptime: 0.07800050000003012
+Fail:
+ Ovary densely pubescent or glabrous in a Madagascan form (see general note)
+No. of trees: 2 ptime: 0.6084038999999848
+Fail:
+ style and stigma pale green
+No. of trees: 2 ptime: 0.34320220000000745
+Success: 
+ ovary rudiment very reduced
+No. of trees: 1 ptime: 0.20280129999997598
+Success: 
+ Fruiting inflorescence up to 40 cm. long
+No. of trees: 1 ptime: 0.3900025000000369
+Success: 
+ mericarps 2–3, yellow or white, red or golden brown, ovoid or subglobose, 1–1.4 cm. long, densely pale brown hairy when young, becoming thinly hairy
+No. of trees: 4 ptime: 1.560009999999977
+Success: 
+ flesh white, mucilaginous
+No. of trees: 2 ptime: 0.2340015000000335
+TAXON:  FTEA Sapindaceae Deinbollia fulvo-tomentella
+Success: 
+ Plant is Slender monoecious tree or shrub, 1.2–9 m. tall
+No. of trees: 1 ptime: 0.5616035999999553
+Success: 
+ bark grey or pale brown, thin, smooth
+No. of trees: 16 ptime: 0.8268053000000464
+Success: 
+ slash brown
+No. of trees: 1 ptime: 0.09360060000000203
+Success: 
+ Leaves up to 0.9–1.2 m. long
+No. of trees: 1 ptime: 0.28080179999994925
+Success: 
+ petiole 6–40 cm. long
+No. of trees: 1 ptime: 0.2340015000000335
+Success: 
+ rhachis up to 70 cm. long
+No. of trees: 1 ptime: 0.296401899999978
+Success: 
+ petiolules 0–5 mm. long
+No. of trees: 1 ptime: 0.2808018000000061
+Success: 
+ leaflets in 5–10 pairs, alternate, oblanceolate to oblong, oblong-lanceolate or elliptic, 6.5–40 cm. long, 2.7–11.8 cm. wide, acute at the apex, truncate or slightly subcordate at the base, densely yellow-brown pubescent on both surfaces
+No. of trees: 4 ptime: 1.6224104000000352
+Success: 
+ Inflorescences extensive, up to 1 m. long
+No. of trees: 1 ptime: 0.296401899999978
+Success: 
+ major axes up to 40 cm. long, with secondary axes ± 12 cm. long, densely dark ferruginous pubescent (golden pubescent in life)
+No. of trees: 6 ptime: 1.8876121000000126
+Success: 
+ buds similarly pubescent
+No. of trees: 1 ptime: 0.21840140000000474
+Fail:
+ flowers fragrant, single or in clusters on the axes
+No. of trees: 3 ptime: 0.34320220000000745
+Fail:
+ pedicels 2–5 mm. long, enlarging in fruit to 2 cm
+No. of trees: 3 ptime: 0.4368028000000095
+Success: 
+ Sepals elliptic, 4 mm. long, 3–3.5 mm. wide, silky dark brown-pubescent outside
+No. of trees: 4 ptime: 0.6552042000000142
+Success: 
+ petals white, elliptic, 6–7 mm. long, pubescent outside and ciliate
+No. of trees: 2 ptime: 0.4368028000000095
+Fail:
+ Fruit golden yellow, depressed globose, of 1–2 mature mericarps, 1.5–1.8 cm. long, 1.7–2.5 cm. wide, with fairly dense spreading pubescence
+No. of trees: 7 ptime: 1.076406899999995
+TAXON:  FTEA Sapindaceae Deinbollia kilimandscharica
+Success: 
+ Plant is Small tree or shrub 1.2–12 m. tall, with simple trunk
+No. of trees: 2 ptime: 0.858005500000047
+Success: 
+ bark brownish grey
+No. of trees: 1 ptime: 0.1560010000000034
+Fail:
+ Leaves with petiole 5–20 cm. long and rhachis 15–40 cm. long, both mottled brown or green and straw-coloured towards the base when dry, adpressed-pubescent when young
+No. of trees: 4 ptime: 2.6208168
+Success: 
+ petiolules 3–10 mm. long, at first pubescent
+No. of trees: 1 ptime: 0.28080179999994925
+Success: 
+ leaflets in (3–)5–7 pairs, subopposite or alternate, oblanceolate to oblong-elliptic, 4–27(–30) cm. long, 1.9–10.2(–16) cm. wide, acuminate (with actual tip rounded) or broadly rounded to truncate at the apex, cuneate to rounded at the base and often asymmetric, glabrous
+No. of trees: 100 ptime: 5.31963410000003
+Success: 
+ lateral nerves in 8–13 pairs, prominent and often drying yellowish beneath
+No. of trees: 3 ptime: 0.7800050000000169
+Fail:
+ venation prominently raised-reticulate
+No. of trees: 1 ptime: 0.18720120000000406
+Fail:
+ Inflorescences 9–30(–60) cm. long, with spreading or ascending main branches up to 35 cm. long, ± glabrous or ferruginous (in life and dry) pubescent, sometimes only at the nodes
+No. of trees: 5 ptime: 1.8408117999999831
+Fail:
+ flowers in dense clusters on very short side branchlets, pedicels said to be ‘brown at base but white above joint’ 0–3 mm. long, lengthening to 5 mm. in fruit
+No. of trees: 4 ptime: 1.6068103000000065
+Fail:
+ Sepals drying cream or brown, 4.5 mm. long, 2.8 mm. wide, the outer strongly overlapping the inner, petaloid, glabrous to densely dark ferruginous-pubescent outside, but always ciliate
+No. of trees: 7 ptime: 1.1544073999999682
+Success: 
+ petals white or cream, sometimes tinged pink, obovate, 4–5 mm. long, 2.5 mm. wide, shaggy ciliate below, scale 3 mm. long
+No. of trees: 1 ptime: 0.9360059999999635
+Success: 
+ Stamens 14–18, with filaments white hairy
+No. of trees: 1 ptime: 0.37440240000000813
+Fail:
+ Fruit ± globose, 1.2–1.5 cm. long, 1.2–1.8 cm. wide, usually only one mericarp developing, the two aborted ones persistent at the base, glabrous
+No. of trees: 7 ptime: 0.7176046000000156
+Success: 
+ Seed 1 cm. long
+No. of trees: 1 ptime: 0.17160110000003215
+TAXON:  FTEA Sapindaceae Dodonaea viscosa
+Success: 
+ Plant is Monoecious or dioecious semi-prostrate shrub or small tree, 0.5–9 m. tall
+No. of trees: 1 ptime: 0.6864044000000149
+Success: 
+ bark black or brown, ± rough
+No. of trees: 2 ptime: 0.3120020000000068
+Success: 
+ twigs black or reddish brown, glandular, glabrescent, ridged and developing vertical fissures
+No. of trees: 12 ptime: 1.279208199999971
+Success: 
+ Leaves simple, variable
+No. of trees: 2 ptime: 0.1560010000000034
+Fail:
+ blades oblanceolate or broadly to narrowly elliptic, (1–)4–13 cm. long, (0.4–)1.3–4.2 cm. wide, widest at or above the midpoint, obtuse and minutely apiculate at apex, gradually narrowed below the middle to a narrowly cuneate base
+No. of trees: 7 ptime: 1.3416085999999723
+Fail:
+ margin entire, recurved (in dried specimens)
+No. of trees: 2 ptime: 0.3276020999999787
+Fail:
+ both surfaces glabrous and glandular, coated especially when young with viscid glandular exudate
+No. of trees: 2 ptime: 0.9828062999999929
+Success: 
+ lateral nerves 15–20(–30), often indistinct
+No. of trees: 1 ptime: 0.32760210000003553
+Success: 
+ petioles 0–2.5 mm. long
+No. of trees: 1 ptime: 0.24960160000000542
+Fail:
+ Flowers greenish yellow, unisexual or bisexual, in loose thyrsoid panicles at the ends of twigs
+No. of trees: 4 ptime: 0.6864043999999581
+Success: 
+ pedicels 0.8–1.5 cm. long in flower and fruit, glabrous and glandular
+No. of trees: 6 ptime: 0.9360060000000203
+Fail:
+ Male flowers: sepals 3–4, straw-coloured or greenish yellow, 2–2.5 mm. long, spreading
+No. of trees: 5 ptime: 0.5928038000000129
+Success: 
+ stamens 7(–9)
+No. of trees: 1 ptime: 0.1716010999999753
+Success: 
+ anthers 2–3 mm. long
+No. of trees: 1 ptime: 0.17160110000003215
+Success: 
+ ovary rudiment minute
+No. of trees: 1 ptime: 0.14040089999997463
+Fail:
+ Female flowers: calyx green, cup-like but sepals free
+No. of trees: 3 ptime: 0.49920320000001084
+Fail:
+ staminodes lacking or with anthers ± 1.5 mm. long
+No. of trees: 2 ptime: 0.4836031000000389
+Success: 
+ ovary green, oblong in outline, flattened, bilobed, glandular
+No. of trees: 3 ptime: 0.29640190000003486
+Success: 
+ style 2–3-lobed, equalling the ovary
+No. of trees: 2 ptime: 0.35880229999997937
+Success: 
+ disk inconspicuous
+No. of trees: 1 ptime: 0.07800050000003012
+Fail:
+ Bisexual flowers similar: sepals 3–4, greenish yellow, ovate, 2–2.5 mm. long, spreading
+No. of trees: 6 ptime: 0.4836030999999821
+Success: 
+ anthers 1.6–1.9 mm. long
+No. of trees: 1 ptime: 0.2340015000000335
+Fail:
+ Fruit disk-shaped, the body 1.5–2.3 cm. long, 8–11 mm. wide, with an encircling papery venose wing 3–7 mm. wide or a few with 3(–4) locules and wings
+No. of trees: 5 ptime: 1.4976096000000325
+Fail:
+ Seeds 2 per locule, black, subspherical, or somewhat compressed with a raised dorsal rim, 2–3 mm. diameter, 1.5–3 mm. thick
+No. of trees: 7 ptime: 0.8424054000000183
+TAXON:  FTEA Sapindaceae Eriocoelum kerstingii
+Success: 
+ Plant is Tree or shrub 8–18(–30) tall
+No. of trees: 1 ptime: 0.46800300000001016
+Success: 
+ bark grey-brown
+No. of trees: 1 ptime: 0.09360060000000203
+Success: 
+ foliage appearing dark
+No. of trees: 4 ptime: 0.4212026999999807
+Success: 
+ young stems, petioles, inflorescences etc. covered with dense ferruginous or golden brown hairs
+No. of trees: 2 ptime: 1.8564119000000119
+Fail:
+ Leaves with 2–3 pairs of opposite or subopposite leaflets, the lowest pair stipuliform, often soon deciduous but leaving scars
+No. of trees: 4 ptime: 1.3416086000000291
+Fail:
+ leaflet-blades oblong, oblong-elliptic, obovate or oblanceolate, 2–20 cm. long, 1.5–8.6 cm. wide, subacute, obtuse or rounded at the apex, cuneate and often unequal or ± rounded at the base, ± glabrous above, ± pilose or pubescent on the venation beneath or eventually glabrous
+No. of trees: 10 ptime: 1.747211200000038
+Fail:
+ Panicles large, ± divided from the base, 8–12(–20) cm. long, 10–15 cm. wide, with primary branches up to 8 cm. long
+No. of trees: 5 ptime: 0.9828062999999929
+Success: 
+ pedicels 4 mm. long
+No. of trees: 1 ptime: 0.1716010999999753
+Fail:
+ all axes densely ferruginous pubescent
+No. of trees: 1 ptime: 0.26520169999997734
+Success: 
+ Flowers ± 4 mm. wide
+No. of trees: 1 ptime: 0.26520169999997734
+Success: 
+ sepals oblong, 1.5 mm. long, 0.5 mm. wide, pubescent on both faces
+No. of trees: 1 ptime: 0.46800300000001016
+Fail:
+ petals white, linear-lanceolate, 2.5 mm. long, scales very hairy, scarcely as wide as the limb
+No. of trees: 6 ptime: 0.6552042000000142
+Success: 
+ disk 1 mm. tall
+No. of trees: 1 ptime: 0.1716010999999753
+Success: 
+ Stamens 4 mm. long
+No. of trees: 1 ptime: 0.17160110000003215
+Success: 
+ staminodes 2 mm. long
+No. of trees: 1 ptime: 0.1560010000000034
+Success: 
+ Ovary globose, 2.5 mm. diameter, densely ferruginous pubescent
+No. of trees: 1 ptime: 0.3276020999999787
+Success: 
+ style 3 mm. long
+No. of trees: 1 ptime: 0.1560010000000034
+Success: 
+ rudimentary ovary reduced to few hairs
+No. of trees: 1 ptime: 0.46800300000001016
+Success: 
+ Fruit light brown, yellow or red, depressed globose, ± woody, 1.8–3 cm. diameter, at first hairy, eventually smooth and glabrous
+No. of trees: 6 ptime: 1.185607599999969
+Fail:
+ valves 2–2.5 cm. wide, 2.5–3 mm. thick, woolly at base inside
+No. of trees: 3 ptime: 0.5928038000000129
+Fail:
+ Seeds 3, black, 1.25 cm. long, shiny with red arillode
+No. of trees: 5 ptime: 0.4368028000000095
+Fail:
+ Fig. 8
+No. of trees: 1 ptime: 0.04680030000002944
+TAXON:  FTEA Sapindaceae Filicium decipiens
+Success: 
+ Plant is Slender tree 4.5–20(–30) m. tall
+No. of trees: 1 ptime: 0.5148032999999828
+Success: 
+ bark smooth, whitish
+No. of trees: 2 ptime: 0.1560010000000034
+Success: 
+ Petiole winged, 1.5–11 cm. long
+No. of trees: 2 ptime: 0.35880229999997937
+Fail:
+ rhachis 15–30 cm. long, winged each side to 1 cm. wide, tapering below each leaflet pair
+No. of trees: 4 ptime: 0.7800050000000169
+Fail:
+ leaflets in 5–10 pairs, sessile, lanceolate to linear or narrowly oblong-elliptic, 5–16 cm. long, 0.5–4 cm. wide, acute, entire but crisped-undulate at the margin, glabrous, resinous when young
+No. of trees: 10 ptime: 1.1232071999999675
+Success: 
+ lateral nerves in 30–50 pairs, faint
+No. of trees: 1 ptime: 0.4368028000000095
+Success: 
+ Inflorescence 6–20 cm. long
+No. of trees: 1 ptime: 0.1560010000000034
+Success: 
+ pedicels 2–4 mm. long
+No. of trees: 1 ptime: 0.1716010999999753
+Success: 
+ Sepals 1.3 mm. long, herbaceous, puberulous inside, ciliate
+No. of trees: 4 ptime: 0.4836030999999821
+Success: 
+ petals yellow, 1.3 mm. long, ciliate, apparently caducous
+No. of trees: 1 ptime: 0.3588023000000362
+Success: 
+ Stamens exserted from the calyx
+No. of trees: 1 ptime: 0.20280129999997598
+Success: 
+ staminodes not exserted
+No. of trees: 1 ptime: 0.14040090000003147
+Fail:
+ Ovary 2-locular with 2 ovules, one only developing
+No. of trees: 3 ptime: 0.4212026999999807
+Success: 
+ Fruit ellipsoid or subglobose, 9–10 mm. long, 6–8 mm. wide, with persistent style and reflexed sepals
+No. of trees: 2 ptime: 0.8424054000000183
+Fail:
+ Fig. 2
+No. of trees: 1 ptime: 0.046800299999972594
+TAXON:  FTEA Sapindaceae Glenniea africana
+Success: 
+ Plant is Dioecious deciduous shrub or tree, (3–)7–24 m. tall
+No. of trees: 2 ptime: 0.7956050999999889
+Success: 
+ bark grey, smooth
+No. of trees: 2 ptime: 0.1560010000000034
+Success: 
+ slash orange
+No. of trees: 1 ptime: 0.07800050000003012
+Success: 
+ Leaves yellow when young, turning pink-flushed then pale green
+No. of trees: 2 ptime: 0.7644048999999882
+Fail:
+ leaf-rhachis 3–12 cm. long, the lowest leaflets near the base forming pseudo-stipules1.5–4 cm. long
+No. of trees: 3 ptime: 0.5304034000000115
+Fail:
+ leaflets in (1?–)2–3(–4?) pairs, oblanceolate, elliptic, ovate or lanceolate, 3–25 cm. long, 1.5–11 cm. wide, the uppermost the largest, the lowermost much smaller, acute or obtuse at the apex, cuneate to truncate at the base, the margin sometimes undulate, glabrous save for main nervation beneath
+No. of trees: 13 ptime: 2.07481329999996
+Success: 
+ main lateral nerves in 4–14 pairs
+No. of trees: 1 ptime: 0.4836031000000389
+Fail:
+ Inflorescences terminal, axillary or cauliflorous
+No. of trees: 3 ptime: 0.23400149999997666
+Fail:
+ main axis 5–15 cm. long, elongating to 30 cm. in fruit, usually branched, the branches 3–5 cm. long, pseudo-racemose with flowers single or in short cymes
+No. of trees: 6 ptime: 1.154407400000025
+Success: 
+ pedicels 2–9 mm. long
+No. of trees: 1 ptime: 0.2340015000000335
+Success: 
+ Flowers brownish yellow, yellowish white, pinkish yellow or brownish red
+No. of trees: 2 ptime: 0.6396040999999855
+Success: 
+ sepals 4, ovate, 1.5–2 mm. long, spreading, pubescent outside, nearly glabrous inside
+No. of trees: 4 ptime: 0.7956050999999889
+Success: 
+ petals lacking
+No. of trees: 1 ptime: 0.07800050000003012
+Success: 
+ disk yellow
+No. of trees: 1 ptime: 0.09360060000000203
+Success: 
+ Stamens 5, well exserted
+No. of trees: 1 ptime: 0.15600099999994654
+Success: 
+ filaments 3–8 mm. long, glabrous
+No. of trees: 1 ptime: 0.2808018000000061
+Success: 
+ staminodes with filaments 1 mm. long
+No. of trees: 1 ptime: 0.32760210000003553
+Success: 
+ Ovary yellow-pubescent
+No. of trees: 1 ptime: 0.1716010999999753
+Success: 
+ style 2(–3)-lobed, glabrous, drying dark coloured
+No. of trees: 4 ptime: 0.5616036000000122
+Fail:
+ Fruit orange, drying ferruginous pubescent, of 1–2 mericarps, single ones usually asymmetrically ovoid, 2–2.5 cm. long
+No. of trees: 6 ptime: 0.5148033000000396
+Success: 
+ pulp fleshy
+No. of trees: 2 ptime: 0.21840140000000474
+Fail:
+ Fig. 18
+No. of trees: 1 ptime: 0.04680030000002944
+TAXON:  FTEA Sapindaceae Haplocoelopsis africana
+Success: 
+ Plant is Evergreen shrub or small tree to 10 m. tall
+No. of trees: 1 ptime: 0.8580054999999902
+Success: 
+ branches slender, grey-brown, initially coarsely hairy
+No. of trees: 1 ptime: 0.3276020999999787
+Success: 
+ Petiole 0–0.5 cm. long
+No. of trees: 1 ptime: 0.24960160000000542
+Success: 
+ rhachis 3–8 cm. long, with white or brown bristly hairs
+No. of trees: 1 ptime: 0.5304034000000115
+Success: 
+ petiolules 0–5 mm. long, fleshy, moderately or sparsely hairy
+No. of trees: 2 ptime: 0.4836030999999821
+Fail:
+ lowermost leaflet reniform or ovate, 0.5–2 cm. long, 0.4–2.5 cm. wide, the second leaflet of the pair often inserted further up the rhachis and somewhat larger
+No. of trees: 5 ptime: 2.043613100000016
+Success: 
+ uppermost leaflets rhomboid-elliptic or lanceolate, acute or rounded at the extreme apex and almost acuminate, 5–16 cm. long, 2–7 cm. wide
+No. of trees: 4 ptime: 1.3416086000000291
+Fail:
+ blade olive-green, glabrous apart from themidrib
+No. of trees: 3 ptime: 0.2808018000000061
+Success: 
+ lateral veins faint, in 7–10 pairs
+No. of trees: 1 ptime: 0.34320220000000745
+Success: 
+ Inflorescence 3.5–11 cm. long, with up to 2 branches
+No. of trees: 2 ptime: 0.5148032999999828
+Fail:
+ rhachis and pedicels pilose
+No. of trees: 2 ptime: 0.14040089999997463
+Fail:
+ flowers in clusters of 2–3, subtended by caducous bracts 0.5 mm. long
+No. of trees: 3 ptime: 0.4368028000000095
+Success: 
+ pedicels 1.6–2 mm. long
+No. of trees: 1 ptime: 0.24960160000000542
+Fail:
+ Calyx-lobes oblong-ovate, the 2–3 larger ones 1.5–2 mm. long, 1–1.2 mm. wide, externally pubescent (very sparsely so in Angola) and slightly pubescent inside at the top
+No. of trees: 5 ptime: 2.0904133999999885
+Success: 
+ Male flowers: petals narrowly elliptic-oblong, 2 mm. long, 1.5 mm. wide
+No. of trees: 1 ptime: 0.49920320000001084
+Success: 
+ filaments 1.3 mm. long, glabrous
+No. of trees: 1 ptime: 0.20280130000003282
+Success: 
+ rudimentary ovary 0.5 mm. long
+No. of trees: 1 ptime: 0.3276020999999787
+Success: 
+ Female flower: petals narrowly elliptic-lanceolate to ovate, 2–3 mm. long, 1–1.5 mm. wide, glabrous, ± venose, with an obtriangular slightly thickened claw 0.8 mm. long and inflexed scale with ciliate and erose margin
+No. of trees: 24 ptime: 8.658055499999989
+Success: 
+ staminodes 2 mm. long
+No. of trees: 1 ptime: 0.18720120000000406
+Success: 
+ ovary ovoid, 2 mm. long and wide, pubescent or almost glabrous
+No. of trees: 1 ptime: 0.39000249999998005
+Success: 
+ style ± 1 mm. long
+No. of trees: 1 ptime: 0.2808018000000061
+Success: 
+ Fruit yellow, subglobose, 2.5 cm. wide, grooved between the seeds
+No. of trees: 1 ptime: 0.32760210000003553
+Success: 
+ pedicels to 6 mm. long
+No. of trees: 1 ptime: 0.23400149999997666
+Fail:
+ Fig. 9
+No. of trees: 1 ptime: 0.04680030000002944
+TAXON:  FTEA Sapindaceae Haplocoelum foliolosum
+Success: 
+ Plant is Shrub or tree 4–13.5(–20) m. tall
+No. of trees: 1 ptime: 0.592803799999956
+Success: 
+ bark grey, smooth
+No. of trees: 2 ptime: 0.1560010000000034
+Success: 
+ wood reddish
+No. of trees: 1 ptime: 0.07800050000003012
+Fail:
+ branchlets dark grey-brown to black, together with the leaf-rhachises grey to golden brown pubescent
+No. of trees: 3 ptime: 0.9672061999999642
+Fail:
+ Leaves often pinkish when young, 2–10 cm. long, mostly borne on short spur-shoots
+No. of trees: 4 ptime: 0.4368028000000095
+Success: 
+ petiole 0.3–1.5 cm. long, pubescent
+No. of trees: 1 ptime: 0.2808018000000061
+Success: 
+ petiolules 0–0.5 mm. long
+No. of trees: 1 ptime: 0.1560010000000034
+Fail:
+ leaflets in 2–16 pairs, obliquely oblong or elliptic, 1.5–6 cm. long, 3–9 mm. wide (terminal ones largest), obtuse and usually emarginate at the apex, ± truncate or asymmetrically obtuse or cuneate at the base, attached almost at the corner, entire, glabrous to sparsely pubescent mainly on the midrib
+No. of trees: 9 ptime: 2.324414899999965
+Success: 
+ lateral nerves numerous, ± closely spaced, venation reticulate
+No. of trees: 1 ptime: 0.39000249999998005
+Fail:
+ Flowers white, cream or yellow, often appearing before the leaves in axillary clusters or crowded on the spur-shoots
+No. of trees: 4 ptime: 0.6240040000000135
+Fail:
+ pedicels 1–3 mm. long in male, 5–10 mm. long in female, articulated at the base, pubescent
+No. of trees: 5 ptime: 0.5460034999999834
+Success: 
+ Sepals 5, oblong, 2 mm. long, 1 mm. wide, pubescent
+No. of trees: 1 ptime: 0.39000249999998005
+Fail:
+ Stamens 4–5 with filaments 2–5 mm. long
+No. of trees: 2 ptime: 0.2808018000000061
+Success: 
+ Ovary rounded or somewhat trigonous
+No. of trees: 1 ptime: 0.37440240000000813
+Success: 
+ style up to 1 mm. long
+No. of trees: 1 ptime: 0.21840140000000474
+Fail:
+ Fruit orange to red, also described as chestnut or purple, ovoid or subglobose, 1.5–1.8 cm. long, 1.2 cm. wide, apiculate, glabrescent or glabrous
+No. of trees: 8 ptime: 0.7332046999999875
+Success: 
+ Seeds chestnut, ellipsoid, 1–1.7 cm. long, 6 mm. wide
+No. of trees: 1 ptime: 0.39000249999998005
+Success: 
+ aril striate
+No. of trees: 2 ptime: 0.21840140000000474
+TAXON:  FTEA Sapindaceae Haplocoelum inoploeum
+Fail:
+ Plant is Semideciduous or ± evergreen shrub or small tree 2.4–15 m. tall, occasionally reported to be subscandent with stout interlacing grey-brown branches, with shoots sparsely to densely brownish-pubescent at first, later glabrescent
+No. of trees: 5 ptime: 1.5132097000000044
+Fail:
+ bark grey, grey-brown or blackish, smooth to rough, somewhat fissured, flaking or peeling in irregular patches
+No. of trees: 6 ptime: 0.7332047000000443
+Success: 
+ wood very hard
+No. of trees: 1 ptime: 0.12480080000000271
+Success: 
+ Leaves tufted on short shoots
+No. of trees: 2 ptime: 0.46800300000001016
+Success: 
+ rhachis 0.4–3(–4) cm. long, narrowly winged, sparsely to densely pubescent
+No. of trees: 2 ptime: 0.5460034999999834
+Success: 
+ petioles 1–1.1 cm. long
+No. of trees: 1 ptime: 0.29640190000003486
+Success: 
+ petiolules 0.1–2 mm. long, pubescent
+No. of trees: 1 ptime: 0.296401899999978
+Fail:
+ leaflets yellow-green in 1–2(–3) pairs, opposite or not, oblong, ovate, round or elliptic, 0.5–11.5 cm. long, 1–5.7 cm. wide, obtuse and ± emarginate at the apex, asymmetrically obtuse or acute at base with one side convex and the other concave, glabrous
+No. of trees: 10 ptime: 1.6068103000000065
+Success: 
+ lateral nerves in 8–15 pairs, the venation finely reticulate above
+No. of trees: 2 ptime: 0.7956051000000457
+Fail:
+ Flowers white, cream, yellow or greenish, sweet-scented in clusters of cymes in the leaf-axils, or often appearing on short shoots before the leaves
+No. of trees: 6 ptime: 0.9204058999999916
+Success: 
+ pedicels 2–9 mm. long
+No. of trees: 1 ptime: 0.17160110000003215
+Success: 
+ Male flowers: sepals linear-lanceolate or oblong, 1–1.5 mm. long, pubescent
+No. of trees: 1 ptime: 0.5460034999999834
+Success: 
+ stamens 5, much exserted, glabrous
+No. of trees: 1 ptime: 0.18720120000000406
+Success: 
+ Female flowers: staminodes short
+No. of trees: 1 ptime: 0.2808018000000061
+Success: 
+ ovary very acutely trigonous, glabrous
+No. of trees: 1 ptime: 0.21840140000000474
+Success: 
+ stigma 3-fid
+No. of trees: 1 ptime: 0.24960160000000542
+Fail:
+ Fruit red, orange or yellow, ellipsoidal, at first trigonous, usually becoming rounded at maturity but some retain 2–3 blunt keels particularly near the style base, 1.2–2 cm. long, 0.6–1.2 cm. wide, acuminate, glabrous, not truly dehiscent but breaking irregularly
+No. of trees: 11 ptime: 1.6380104999999503
+Success: 
+ Seeds brown, irregularly ovoid or ellipsoid, 7.5–13 mm. long, 4–9 mm. wide
+No. of trees: 1 ptime: 0.5148032999999828
+TAXON:  FTEA Sapindaceae Lecaniodiscus cupanioides
+Success: 
+ Plant is Small tree ± 12 m. tall, with spreading crown
+No. of trees: 1 ptime: 0.7176046000000156
+Success: 
+ branches dull brown
+No. of trees: 1 ptime: 0.14040089999997463
+Success: 
+ twigs initially pubescent and glandular
+No. of trees: 6 ptime: 0.6240040000000135
+Success: 
+ Petiole 4–12 cm. long, flattened
+No. of trees: 1 ptime: 0.2808018000000061
+Success: 
+ rhachis 18–26 cm. long, puberulent
+No. of trees: 1 ptime: 0.3276020999999787
+Success: 
+ petiolules 2–8 mm. long
+No. of trees: 1 ptime: 0.1716010999999753
+Fail:
+ leaflets in 5–7 pairs, ovate-elliptic, elliptic or oblanceolate, the lowermost relatively broader in relation to its length, the middle and upper leaflets 9–18 cm. long, 3–9 cm. wide, shortly acuminate, the base obtuse, glabrous
+No. of trees: 10 ptime: 1.7784114000000386
+Success: 
+ lateral nerves in 10–15 pairs
+No. of trees: 1 ptime: 0.32760210000003553
+Success: 
+ Inflorescence-axis 7–11 cm. long, all parts initially golden-pubescent
+No. of trees: 1 ptime: 0.39000249999998005
+Success: 
+ Male flowers: pedicels 5–6 mm. long
+No. of trees: 1 ptime: 0.46800300000001016
+Fail:
+ calyx ovoid-spherical in bud, 3.2 mm. long, the lobes very short, then opening nearly to the base and reflexed
+No. of trees: 5 ptime: 0.7488047999999594
+Success: 
+ disk conspicuous, fleshy
+No. of trees: 2 ptime: 0.14040089999997463
+Success: 
+ stamens exserted
+No. of trees: 1 ptime: 0.09360060000000203
+Success: 
+ Female flowers: pedicels 2–3 mm. long, not accrescent in fruit
+No. of trees: 1 ptime: 0.7020045000000437
+Fail:
+ calyx ovate-oblong in bud, as in the male,scarcely visibly lobed at this stage, later opening fully and reflexed
+No. of trees: 4 ptime: 0.8112051999999608
+Fail:
+ disk obscured by the pinkish- or brownish-pubescent ovary
+No. of trees: 2 ptime: 0.3120020000000068
+Success: 
+ staminodes rudimentary, the anthers degenerate
+No. of trees: 1 ptime: 0.3276020999999787
+Success: 
+ Fruit orange when fresh, drying orange-ferruginous, asymmetrically ovoid, 2–2.2 cm. long, 1.5–1.7 cm. wide, indumentum velvety
+No. of trees: 1 ptime: 0.6084038999999848
+Success: 
+ seed slightly compressed, 1.1 cm. long, 1.2 mm. wide
+No. of trees: 1 ptime: 0.32760210000003553
+TAXON:  FTEA Sapindaceae Lecaniodiscus fraxinifolius
+Fail:
+ Plant is Untidy tree to 20(–30) m. tall with pale grey bark, sometimes slightly buttressed
+No. of trees: 3 ptime: 0.9516060999999922
+Success: 
+ young twigs, petioles, rhachides and petiolules tawny-pubescent and sometimes with sessile glands
+No. of trees: 4 ptime: 1.076406899999995
+Fail:
+ Leaves often pink when very young
+No. of trees: 2 ptime: 0.20280130000003282
+Success: 
+ petiole 1–6 cm. long, rhachis 2–15 cm. long
+No. of trees: 1 ptime: 0.4368028000000095
+Success: 
+ petiolules 0–3(–5) mm. long
+No. of trees: 1 ptime: 0.24960160000000542
+Fail:
+ leaflets in 2–6 pairs, opposite or alternate, very varied in shape (see subspecies below), lanceolate, elliptic, ovate or obovate, the uppermost pair the largest, 4–12 cm. long, 2–3.5 cm. wide, variously long tapering to rounded at the apex, often slightly asymmetric at the base, undulate in dried specimens, glabrescent or sparsely pilose, with or without sessile glands
+No. of trees: 15 ptime: 2.5116160999999693
+Success: 
+ lateral nerves in 5–16 pairs, prominent beneath
+No. of trees: 1 ptime: 0.3744023999999513
+Success: 
+ Inflorescences axillary on the main stems and in the axils of immature leaves on short shoots
+No. of trees: 3 ptime: 1.9188123000000132
+Fail:
+ axes (1–)4–12 cm. long, with or without lateral branches
+No. of trees: 3 ptime: 0.37440240000000813
+Success: 
+ pedicels 1–3(–5) mm. long, densely pubescent
+No. of trees: 1 ptime: 0.3276020999999787
+Success: 
+ Sepals 4, 2.5–3 mm. long, pubescent outside
+No. of trees: 2 ptime: 0.32760210000003553
+Success: 
+ disk ciliate
+No. of trees: 1 ptime: 0.09360060000000203
+Success: 
+ Stamens 8–11, exserted
+No. of trees: 1 ptime: 0.12480080000000271
+Success: 
+ staminodes with shorter filaments
+No. of trees: 1 ptime: 0.20280129999997598
+Success: 
+ Ovary flask-shaped, 2–3 mm. long, densely tomentose
+No. of trees: 1 ptime: 0.39000249999998005
+Success: 
+ style truncate, persisting on the fruit
+No. of trees: 2 ptime: 0.3588023000000362
+Success: 
+ Fruit pink when fresh, greyish tomentose when dry, 1–1.5 cm. long, said to be blue internally
+No. of trees: 2 ptime: 0.6864044000000149
+Success: 
+ Seed ellipsoid, 1–1.2 cm. long, 8 mm. wide
+No. of trees: 1 ptime: 0.26520169999997734
+TAXON:  FTEA Sapindaceae Lepisanthes senegalensis
+Fail:
+ Plant is Monoecious evergreen tree, 6–21 m. tall with heavy crown
+No. of trees: 3 ptime: 0.5460034999999834
+Success: 
+ bark grey or pale brown, smooth
+No. of trees: 8 ptime: 0.6708042999999861
+Success: 
+ slash pale orange
+No. of trees: 2 ptime: 0.21840140000000474
+Success: 
+ Foliage with petioles etc. and base of midribs crimson when young
+No. of trees: 9 ptime: 2.6052166999999713
+Fail:
+ leaf-rhachis 0–10 cm. long, including 0–5 cm. long petiole
+No. of trees: 3 ptime: 0.45240290000003824
+Success: 
+ petiolules 0–1 cm. long
+No. of trees: 1 ptime: 0.1716010999999753
+Success: 
+ leaflets in 1–3 pairs (sometimes reduced to 1 leaflet), the lowest pair not noticeably reduced, the upper pair opposite, drying greyish green above and paler green beneath, elliptic, 6.5–27 cm. long, 2–10 cm. wide, rounded to acuminate at the apex, cuneate at the base, entire, glabrous
+No. of trees: 100 ptime: 7.800049999999999
+Success: 
+ secondary nerves in 12–20 pairs, ± indistinct
+No. of trees: 1 ptime: 0.5304034000000115
+Fail:
+ Inflorescence said to be ± unpleasantly scented, often appearing terminal and accompanying a new flush of leaves, paniculate, 5–20 cm. long, 5–15 cm. wide, the branches thyrsoid with both clusters and single flowers
+No. of trees: 7 ptime: 1.4820095000000038
+Success: 
+ axes at first golden pubescent, elongating in fruit
+No. of trees: 1 ptime: 0.29640190000003486
+Fail:
+ pedicels 0–3 mm. long, enlarging to 7 mm. in fruit
+No. of trees: 3 ptime: 0.35880229999997937
+Success: 
+ Flower greenish yellow
+No. of trees: 1 ptime: 0.1560010000000034
+Fail:
+ sepals 5, the outer 2 shorter than the inner, ovate or round, 2–3.5 mm. long, 1.5–3 mm. wide, glabrous apart from the white margin
+No. of trees: 6 ptime: 0.7800050000000169
+Fail:
+ petals 5 (rarely absent), ovate, 2–3 mm. long and wide, clawed, scale half as long as the limb, fringed with hairs
+No. of trees: 7 ptime: 0.9828062999999929
+Success: 
+ disk pentagonal, 3.6 mm. in diameter, lobed
+No. of trees: 2 ptime: 0.3120020000000068
+Fail:
+ Stamens 5–7, hairy at base, glabrous for most of length
+No. of trees: 4 ptime: 0.3276020999999787
+Success: 
+ Ovary 2(–3)-lobed
+No. of trees: 2 ptime: 0.23400149999997666
+Success: 
+ style entire
+No. of trees: 1 ptime: 0.07800050000003012
+Fail:
+ ovary rudiment in male flowers a cushion of hairs
+No. of trees: 2 ptime: 0.39000249999998005
+Fail:
+ Mericarps crimson, 2(–3), developed ones ellipsoid, 1–1.8 cm. long, 0.8–1.5 cm. wide, but 1–2 abortive at base
+No. of trees: 7 ptime: 0.6240040000000135
+Success: 
+ Seeds black, ± 1.2 cm. long, 9 mm. wide
+No. of trees: 1 ptime: 0.34320220000000745
+Fail:
+ Fig. 17
+No. of trees: 1 ptime: 0.12480079999994587
+TAXON:  FTEA Sapindaceae Lychnodiscus cerospermus
+Fail:
+ Plant is Slender tree 3–20 m. tall (or, according to Eggeling, partly scandent)
+No. of trees: 2 ptime: 0.5928038000000129
+Fail:
+ bark smooth, greyish white with patches of orange
+No. of trees: 3 ptime: 0.24960160000000542
+Fail:
+ young parts chocolate- or rusty-tomentose with spreading to ascending hairs
+No. of trees: 1 ptime: 0.45240289999992456
+Success: 
+ Petiole up to 10 cm. long
+No. of trees: 1 ptime: 0.21840140000006159
+Success: 
+ rhachis 10–20 cm. long
+No. of trees: 1 ptime: 0.296401899999978
+Success: 
+ leaflets in 6–7 pairs, opposite or alternate
+No. of trees: 1 ptime: 0.32760210000003553
+Success: 
+ petiolules 3–6 mm. long, fleshy, hairy
+No. of trees: 2 ptime: 0.2652017000000342
+Fail:
+ blade oblong-elliptic, ovate-oblong or the lowermost pair of leaflets elliptic, middle leaflets largest, 11–15 cm. long, 3–5 cm. wide, the uppermost a little smaller, the lowermost 6–10 cm. long, 3–5 cm. wide, apex with a sharp acumen 5–25 mm. long or acute, toothed throughout or only towards the apex, the teeth 1–2 mm. deep, or the margin merely sinuate, glabrous apart from the midrib and some or all veins beneath
+No. of trees: 14 ptime: 2.449215699999968
+Success: 
+ lateral veins in 10–16(–22) pairs, curving just inside the margin and terminating in the teeth
+No. of trees: 3 ptime: 1.4352092000000312
+Success: 
+ midrib impressed above, prominent beneath
+No. of trees: 1 ptime: 0.18720120000000406
+Success: 
+ Inflorescences golden brown, axillary and terminal, the main axes 14–45 cm. long, the main branches 5–10 cm. long
+No. of trees: 2 ptime: 1.1544073999999682
+Fail:
+ flowers grey-white in groups of 1–4 subtended by4–6 mm. long lanceolate bracts
+No. of trees: 2 ptime: 0.5460034999999834
+Success: 
+ pedicels 4–6 mm. long
+No. of trees: 1 ptime: 0.15600100000006023
+Fail:
+ Sepals 2.5 mm. long, spreading flat in the male flower, glabrescent on the inner surface
+No. of trees: 4 ptime: 0.6396040999999286
+Success: 
+ petals funnel-shaped, 2.8–3.5 mm. long, 3–3.5 mm. wide, white, the scale equalling the limb
+No. of trees: 1 ptime: 0.6396041000000423
+Success: 
+ disk 1 mm. high
+No. of trees: 1 ptime: 0.23400149999997666
+Success: 
+ Stamens 13, glabrous throughout
+No. of trees: 1 ptime: 0.24960160000000542
+Success: 
+ filaments 4 mm. long
+No. of trees: 1 ptime: 0.1716010999999753
+Success: 
+ Ovary 3-lobed
+No. of trees: 2 ptime: 0.23400149999997666
+Fail:
+ style entire with 3 stigmatic grooves
+No. of trees: 2 ptime: 0.4212026999999807
+Fail:
+ ovary rudiment in male flowers a small cushion of hairs
+No. of trees: 2 ptime: 0.40560260000006565
+Success: 
+ Fruiting pedicels usually enlarging, 0.4–1.3 cm. long
+No. of trees: 1 ptime: 0.3900024999999232
+Fail:
+ capsule bright red when ripe, 3-lobed with rounded angles, 1.6–2 cm. long and wide, externally with some coarser hairs amongst the fine tomentum
+No. of trees: 5 ptime: 1.0296066000000792
+Success: 
+ Seeds dark, (1-)3, 1.3–1.8 cm. long, 1–1.3 cm. wide
+No. of trees: 2 ptime: 0.4368027999998958
+Success: 
+ aril red
+No. of trees: 1 ptime: 0.09360060000005888
+Fail:
+ Fig. 6
+No. of trees: 1 ptime: 0.031200199999943834
+TAXON:  FTEA Sapindaceae Macphersonia gracilis
+Success: 
+ Plant is Small tree or shrub to 10 m. tall
+No. of trees: 1 ptime: 0.577203700000041
+Fail:
+ Young axes densely golden-hairy with crisped short hairs and long spreading coarse hairs
+No. of trees: 2 ptime: 1.1544073999999682
+Success: 
+ older twigs glabrous, grey or black
+No. of trees: 1 ptime: 0.3120020000000068
+Success: 
+ Leaves bipinnate, superficially legume-like
+No. of trees: 1 ptime: 0.2652017000000342
+Success: 
+ petiole 0.3–0.8 cm. long
+No. of trees: 1 ptime: 0.24960160000000542
+Success: 
+ primary rhachis (4–)6–20 cm. long, pubescent
+No. of trees: 1 ptime: 0.45240290000003824
+Fail:
+ secondary rhachides in 4–10 pairs, mostly opposite, pubescent
+No. of trees: 3 ptime: 0.4368028000000095
+Fail:
+ leaflets in (3–)8–18 pairs, sessile, the lowermost shorter, otherwise oblong, 1–2.5 cm. long, 2.5–8 mm. wide, apex rounded or slightly emarginate or very minutely apiculate or (not in East Africa) finely acuminate, the base obliquely wedge-shaped, glabrous and glossy apart from hairs on the margin and midrib
+No. of trees: 10 ptime: 3.01081929999998
+Success: 
+ midrib conspicuous, lateral nerves fern-like, closely-set and not prominent
+No. of trees: 2 ptime: 0.49920320000001084
+Fail:
+ Thyrse unbranched, 4–13(–20) cm. long
+No. of trees: 2 ptime: 0.35880229999997937
+Fail:
+ flowers single and in groups of 2–4
+No. of trees: 2 ptime: 0.20280130000003282
+Fail:
+ pedicels of male flowers 1 mm., of female flowers 2 mm. long
+No. of trees: 4 ptime: 0.577203700000041
+Success: 
+ subtending bracts 0.2–0.5 mm. long
+No. of trees: 1 ptime: 0.35880230000009306
+Success: 
+ Sepals broadly ovate, concave, unequal, 1.3–2 mm. long, thin-textured, glabrous apart from ciliate margin
+No. of trees: 2 ptime: 0.70200449999993
+Success: 
+ petals broadly triangular, 1–1.5 mm. long, 1.5–1.8 mm. wide, toothed, the lateral margins infolded, very densely hairy
+No. of trees: 2 ptime: 0.9360060000000203
+Success: 
+ Stamens 7–8, exserted
+No. of trees: 1 ptime: 0.12480080000000271
+Success: 
+ anthers 0.8 mm. long, glabrous
+No. of trees: 1 ptime: 0.20280130000003282
+Fail:
+ Ovary rudiment in male flowers very reduced
+No. of trees: 2 ptime: 0.3432021999999506
+Success: 
+ Capsule red or purple, 1.1–1.5 cm. wide, glabrous
+No. of trees: 1 ptime: 0.3900025000000369
+Success: 
+ Seed single
+No. of trees: 1 ptime: 0.07800050000003012
+TAXON:  FTEA Sapindaceae Majidea fosteri
+Fail:
+ Plant is Tree 15–35 m. tall with a broad sometimes buttressed trunk
+No. of trees: 2 ptime: 0.7176045999999587
+Fail:
+ bole clean up to 18 m., 2 m. girth
+No. of trees: 3 ptime: 0.35880229999997937
+Fail:
+ bark grey, grey-brown or yellowish, thin, smooth, densely lenticulate, slightly flaking, said to smell of thymol
+No. of trees: 8 ptime: 0.6084038999999848
+Success: 
+ slash creamy yellow or yellow-brown
+No. of trees: 1 ptime: 0.40560259999995196
+Success: 
+ Leaf-rhachis 15–20 cm. long
+No. of trees: 1 ptime: 0.2652017000000342
+Fail:
+ leaflets in 5–9 pairs, dull green tending to olive when dry, lanceolate or oblong-lanceolate, 5–10.5 cm. long, 1.5–3 cm. wide, tapering to a narrow, usually acuminate tip, glabrous
+No. of trees: 9 ptime: 1.1232072000000244
+Fail:
+ Inflorescence-axes overall mid-olive to brown, up to 13 cm. long, densely covered in fasciculate hairs
+No. of trees: 4 ptime: 0.7956050999999889
+Success: 
+ Flowers green, tinged pink
+No. of trees: 1 ptime: 0.1716010999999753
+Success: 
+ Disk of male flowers very conspicuous, convex, broad, red, drying black
+No. of trees: 1 ptime: 0.5304033999999547
+Fail:
+ Fruit reddish outside, bright pink or scarlet inside, 3.5–4 cm. long, 5 cm. wide
+No. of trees: 5 ptime: 0.6864044000000149
+Success: 
+ Seeds purplish, 1.4 cm. across, velvety
+No. of trees: 1 ptime: 0.296401899999978
+TAXON:  FTEA Sapindaceae Majidea zanguebarica
+Success: 
+ Plant is Shrub or tree 2–22 m. tall
+No. of trees: 1 ptime: 0.5304034000000684
+Success: 
+ bark rough or ± smooth, whitish buff
+No. of trees: 1 ptime: 0.4836030999999821
+Success: 
+ slash cream to pale orange
+No. of trees: 6 ptime: 0.5616036000000122
+Success: 
+ twigs with raised whitish lenticels
+No. of trees: 1 ptime: 0.32760209999992185
+Success: 
+ Leaf-rhachis 10–30 cm. long, 4-angled in cross-section
+No. of trees: 1 ptime: 0.4368028000000095
+Success: 
+ petiolules 1 mm. long
+No. of trees: 1 ptime: 0.15600100000006023
+Fail:
+ leaflets drying bright green, drooping when young, in 5–7 pairs, arranged regularly or tending to be alternate, ovate-lanceolate, 5–7 cm. long, 2–3 cm. wide, shortly bluntly acuminate or acute, asymmetrically cuneate at the base, glabrous and shining
+No. of trees: 11 ptime: 1.4976095999999188
+Success: 
+ lateral veins in 7–15 faint pairs
+No. of trees: 1 ptime: 0.40560259999995196
+Success: 
+ Inflorescence with main axes 8–15(–30) cm. long, all parts densely velvety pubescent
+No. of trees: 1 ptime: 0.9204058999999916
+Success: 
+ flowers pleasantly scented
+No. of trees: 1 ptime: 0.21840140000006159
+Success: 
+ bracts elliptic to lanceolate-elliptic, 1.3–1.7 cm. long, 6–8 mm. wide, pedicels 3–6 mm. long
+No. of trees: 2 ptime: 0.6084038999999848
+Fail:
+ Sepals ovate, 5–7 mm. long, the outermost largerthan the other 4
+No. of trees: 4 ptime: 0.37440240000000813
+Fail:
+ petals 4, yellow-green to red with white hairs, elliptic, 6 mm. long, 2 mm. wide, soon falling
+No. of trees: 7 ptime: 0.6708042999999861
+Fail:
+ disk hardly visible in the female flowers, pink-tinged and conspicuous in the male
+No. of trees: 3 ptime: 0.6396041000000423
+Success: 
+ Stamens exserted
+No. of trees: 1 ptime: 0.09360059999994519
+Success: 
+ filaments yellow-green to orange-red, 6 mm. long
+No. of trees: 2 ptime: 0.35880229999997937
+Success: 
+ staminodes very short
+No. of trees: 1 ptime: 0.12480080000000271
+Success: 
+ Male flowers without an ovary rudiment
+No. of trees: 1 ptime: 0.32760210000003553
+Success: 
+ Fruit a thinly woody trigonous apiculate capsule, externally brownish yellow, internally bright pink, 3–3.5 cm. long, 3.5–4.5 cm. wide
+No. of trees: 1 ptime: 1.2012076999999408
+Success: 
+ Seeds bluish black, ovoid, 1.2 cm. long, finely silky pubescent, ± persistent
+No. of trees: 1 ptime: 0.6396041000000423
+Fail:
+ Mature fruits and male flowers commonly occur together in the inflorescence
+No. of trees: 2 ptime: 1.5132096999999476
+Fail:
+ Fig. 4
+No. of trees: 1 ptime: 0.046800299999972594
+TAXON:  FTEA Sapindaceae Melicoccus bijugatus
+Success: 
+ Plant is Glabrous tree to 25 m. tall and bole to 1.7 m. diameter, with spreading branches and smooth grey bark
+No. of trees: 8 ptime: 3.026419400000009
+Success: 
+ Leaves 10–16 cm. long
+No. of trees: 1 ptime: 0.2652017000000342
+Success: 
+ rhachis flattened above, not winged
+No. of trees: 2 ptime: 0.28080179999994925
+Fail:
+ leaflets in 2–3 pairs, the lower ovate, ± 5–8(–12) cm. long, 2–4(–6) cm. wide, the upper elliptic-lanceolate to elliptic, 8–11 cm. long, 2.5–5 cm. wide, acute
+No. of trees: 9 ptime: 1.1232072000000244
+Fail:
+ in young and vigorous leaves the petiole and rhachis may be ± broadly winged and leaflets up to 18 cm. long, 8 cm. wide
+No. of trees: 2 ptime: 12.12127769999995
+Success: 
+ Male inflorescences with several elongate racemose branches, 6–10 cm. long
+No. of trees: 3 ptime: 1.2168077999999696
+Fail:
+ female usually ± simple
+No. of trees: 1 ptime: 0.3120020000000068
+Success: 
+ Flower whitish, 5–8 mm. wide
+No. of trees: 1 ptime: 0.1716010999999753
+Success: 
+ Fruits green or yellow, sub-globose, plum-like, 2.5 cm. long, 1.5–2.5 cm. wide, with rather scanty flesh
+No. of trees: 1 ptime: 0.7332046999999875
+Fail:
+ seed yellowish white, large or 2 hemispherical seeds
+No. of trees: 3 ptime: 0.49920320000001084
+Fail:
+ aril salmon-coloured or yellowish
+No. of trees: 2 ptime: 0.21840140000006159
+TAXON:  FTEA Sapindaceae Pancovia golungensis
+Fail:
+ Plant is Shrub or small tree 1.8–18 m. tall with glabrous branches
+No. of trees: 2 ptime: 0.7956050999999889
+Fail:
+ bark pale grey-brown, described as rough or smooth
+No. of trees: 3 ptime: 0.3432021999999506
+Success: 
+ twigs densely lenticellate
+No. of trees: 1 ptime: 0.12480080000000271
+Success: 
+ Leaves often drying grey-green
+No. of trees: 1 ptime: 0.14040089999991778
+Success: 
+ petiole slender, 2.5–15 cm. long, thickened at base, glabrous
+No. of trees: 1 ptime: 0.40560260000006565
+Success: 
+ rhachis 6–12 cm. long
+No. of trees: 1 ptime: 0.15600099999994654
+Success: 
+ petiolules 5–7 mm. long
+No. of trees: 1 ptime: 0.171601100000089
+Fail:
+ leaflets in (2–)3–5 pairs, rarely 2 but probably always some with more (see note), oblanceolate to broadly elliptic-oblong, obovate or elliptic, 5.5–27+ cm. long, 1.7–7(–12) cm. wide, rounded to subacute or distinctly acuminate or rarely emarginate at the apex, cuneate at the base, glabrous
+No. of trees: 9 ptime: 1.575610099999949
+Fail:
+ Inflorescences axillary and on the older wood, narrowly thyrsoid with single flowers or subsessile ± 3-flowered cymules spaced at intervals, ferruginous pubescent
+No. of trees: 4 ptime: 1.2636080999999422
+Fail:
+ male 2–20.5 cm. long, pedicels 0–2.5 mm. long
+No. of trees: 2 ptime: 0.3900025000000369
+Fail:
+ female mostly shorter, 2.5–5(–7) cm. long, pedicels 2–2.5 mm. long (in Flora area – 5–7 mm. in Natal)
+No. of trees: 2 ptime: 0.7176045999999587
+Success: 
+ Male flowers: calyx-tube 1–2 mm. long, lobes triangular, 2–3 mm. long, velvety brown-pubescent outside
+No. of trees: 2 ptime: 1.060806800000023
+Fail:
+ petals white or cream, obovate, the limb 2 mm. long and wide, scale bilobed, with a pair of simple or forked ligulate appendages
+No. of trees: 6 ptime: 1.1388072999999395
+Success: 
+ disk semicircular
+No. of trees: 1 ptime: 0.07800050000003012
+Fail:
+ stamens 8 with pilose filaments 7 mm. long
+No. of trees: 2 ptime: 0.4212026999999807
+Success: 
+ Female flowers: ovary 1.8 mm. long, ferruginous pubescent
+No. of trees: 1 ptime: 0.5460034999999834
+Fail:
+ style and stigma 3 mm. long
+No. of trees: 2 ptime: 0.2652017000000342
+Fail:
+ Fruit orange-yellow, with 1–3 mericarps developing, joined for up to 2/3 their length, each ellipsoid, compressed, 1.5–2 cm. long, 1.1–1.5 cm. wide, up to 1.1 cm. thick, sometimes only one developing then other 2 remaining at its base, ± 6 mm. long
+No. of trees: 11 ptime: 1.1232072000000244
+Success: 
+ pedicels ± 3 mm. long
+No. of trees: 1 ptime: 0.2652017000000342
+Success: 
+ Seeds pale brown or dark, compressed ellipsoid, 1.2–1.8 cm. long, 0.8–1.3 cm. wide, up to 8 mm. thick
+No. of trees: 4 ptime: 1.1544073999999682
+TAXON:  FTEA Sapindaceae Pancovia hildebrandtii
+Success: 
+ Plant is Scandent shrub, the floriferous branchlets 2.5–3 cm. in diameter
+No. of trees: 1 ptime: 0.6084038999999848
+Success: 
+ Leaves unknown
+No. of trees: 1 ptime: 0.09360060000005888
+Fail:
+ Inflorescences 2–6-fasciculate, borne at thickened leafless nodes, paniculate or pseudoracemose, 5–7 cm. long, the rhachis pale ferruginous tomentose with very dense stiff sharply pointed hairs
+No. of trees: 6 ptime: 2.043613100000016
+Fail:
+ individual cymules subcapitate, 3–5-flowered with stalks 5–8 mm. long
+No. of trees: 2 ptime: 0.5148033000000396
+Success: 
+ pedicels 2 mm. long
+No. of trees: 1 ptime: 0.15600099999994654
+Success: 
+ bracts ± 2 mm. long
+No. of trees: 1 ptime: 0.2652017000000342
+Fail:
+ Male flowers: calyx-lobes 5, joined to middle, elliptic, 5 mm. long, 1.8(–4) mm. wide (see note), broadly imbricate, subacute, densely pale ferruginous tomentose outside
+No. of trees: 9 ptime: 2.1216135999999324
+Fail:
+ petals 4, slightly exceeding the sepals (or only 2.5×1.5 mm. – see note) the lower 1/3 comprising a thick claw, blade membranous, the margin crenate-lobulate, scale adnate to petal above the claw, with a variable deeply lobed or lobulate crest slightly exceeding the margin of the scale
+No. of trees: 7 ptime: 2.3556151000000227
+Fail:
+ stamens 7 (3 mm. long in fragment) with elongate pilose filaments slightly exceeding the petals
+No. of trees: 2 ptime: 0.6396040999999286
+Fail:
+ anthers large (1.5 mm. long in fragment), glabrous, dorsally affixed, the connective drying black, dilated
+No. of trees: 5 ptime: 0.6240040000000135
+Success: 
+ disk fleshy, very excentric, lobulate, glabrous
+No. of trees: 2 ptime: 0.37440240000000813
+Success: 
+ rudimentary ovary absent
+No. of trees: 1 ptime: 0.15600099999994654
+Fail:
+ Female flowers and fruits unknown
+No. of trees: 2 ptime: 0.23400149999997666
+TAXON:  FTEA Sapindaceae Pancovia holtzii
+Success: 
+ Plant is Dioecious tree or shrub, (0.5–)4–20 m. tall, with blackish bark
+No. of trees: 1 ptime: 0.5928038000000697
+Success: 
+ young shoots ± pubescent
+No. of trees: 1 ptime: 0.2184013999999479
+Success: 
+ Leaves drying grey-green
+No. of trees: 1 ptime: 0.10920069999997395
+Success: 
+ petiole 6–14 cm. long
+No. of trees: 1 ptime: 0.2652017000000342
+Success: 
+ rhachis 3.5–12 cm. long, glabrous or minutely pubescent
+No. of trees: 1 ptime: 0.40560259999995196
+Success: 
+ petiolules 0.5–1.1 cm. long, thickened and ± wrinkled, pubescent
+No. of trees: 2 ptime: 0.5148033000000396
+Fail:
+ leaflets usually in 3–4 pairs (see note), oblong-oblanceolate, oblong or rarely obovate to oblong-elliptic, 5–22 cm. long, 2–8 cm. wide, often broadest just below apex, acuminate at the apex, the actual tip rounded or acute, cuneate at the base, coriaceous
+No. of trees: 11 ptime: 2.5896165999999994
+Success: 
+ midrib glabrous or pubescent near base, lateral nerves in 6–10 pairs
+No. of trees: 1 ptime: 0.6240040000000135
+Fail:
+ Inflorescences axillary and on older wood
+No. of trees: 2 ptime: 0.2652017000000342
+Fail:
+ male condensed, 1–3 cm. long, with no space between individual flowers, densely orange-brown velvety pubescent
+No. of trees: 4 ptime: 0.6396041000000423
+Fail:
+ female 3–3.5(–8.5) cm. long, with darker ferruginous indumentum and flowers or cymules more scattered
+No. of trees: 2 ptime: 0.8892057000000477
+Success: 
+ pedicels ± 2 mm. long
+No. of trees: 1 ptime: 0.2652016999999205
+Success: 
+ bracts 3 mm. long, 1–2 mm. wide
+No. of trees: 1 ptime: 0.24960160000000542
+Success: 
+ Male flowers: calyx-tube 5 mm. long, with unequal ovate lobes 1–3 mm. long
+No. of trees: 1 ptime: 0.9984064000000217
+Fail:
+ petals 4, yellowish white with ovate lamina and long hairy claw, 7–10 mm. long, up to 5 mm. wide, scale bilobed, 5 mm. long, apically erose and often with a long forked appendage from each lobe
+No. of trees: 8 ptime: 2.5740164999999706
+Success: 
+ disk reniform, flat, 2 mm. wide
+No. of trees: 1 ptime: 0.2184013999999479
+Success: 
+ stamens 6–11
+No. of trees: 1 ptime: 0.09360060000005888
+Success: 
+ filaments 2.4 mm. long
+No. of trees: 1 ptime: 0.2652016999999205
+Success: 
+ Female flowers: calyx-tube 2 mm. long, lobes 2–2.5 mm. long
+No. of trees: 1 ptime: 0.6396041000000423
+Success: 
+ fertilised ovary ovoid, 3 mm. long, densely pubescent
+No. of trees: 1 ptime: 0.4836030999999821
+Fail:
+ style and stigma 3 mm. long
+No. of trees: 2 ptime: 0.23400149999997666
+Success: 
+ staminodes ± 2 mm. long
+No. of trees: 1 ptime: 0.2652017000000342
+Success: 
+ Fruit greenish yellow, obtriangular, 3 cm. long, 2 cm. wide, deeply 3-lobed
+No. of trees: 2 ptime: 0.6396040999999286
+Success: 
+ endocarp acutely triangular in section
+No. of trees: 1 ptime: 0.3432022000000643
+Success: 
+ Seeds oblong, 1.7 cm. long, 7 mm. wide, finely reticulate
+No. of trees: 1 ptime: 0.3432021999999506
+TAXON:  FTEA Sapindaceae Pancovia sp. a
+Success: 
+ Plant is Tree 5–6 m. tall
+No. of trees: 1 ptime: 0.296401899999978
+Success: 
+ bark whitish grey, smooth
+No. of trees: 2 ptime: 0.21840140000006159
+Fail:
+ innovations ferruginous hairy, otherwise glabrous
+No. of trees: 2 ptime: 0.28080179999994925
+Success: 
+ Leaves with 2–3 pairs of leaflets
+No. of trees: 2 ptime: 0.45240290000003824
+Success: 
+ petiole 2.2–9 cm.
+No. of trees: 1 ptime: 0.2652016999999205
+Success: 
+ rhachis 2–10 cm.
+No. of trees: 1 ptime: 0.10920070000008764
+Success: 
+ petiolules 6 mm.
+No. of trees: 1 ptime: 0.10920069999997395
+Fail:
+ leaflets elliptic, somewhat acuminate, the base cuneate, the uppermost pair slightly larger than the lower, 7.5–20×2–7 cm
+No. of trees: 5 ptime: 0.6552041999999574
+TAXON:  FTEA Sapindaceae Pancovia sp. b
+Success: 
+ Plant is Tree 10–15 m. tall
+No. of trees: 1 ptime: 0.3120020000000068
+Success: 
+ bark brown, smooth
+No. of trees: 2 ptime: 0.15600100000006023
+Success: 
+ slash pale brown, granular, slightly layered
+No. of trees: 4 ptime: 0.49920320000001084
+Fail:
+ Leaflets 1–2-jugate, narrowly elliptic-lanceolate, 5–8(–14 in Malawi) cm. long, 1.3–2.3(–3.8 in Malawi) cm. wide, acuminate at the apex, cuneate at the base
+No. of trees: 7 ptime: 0.9516060999999354
+Fail:
+ Young male inflorescences 1.2 cm. long, but flower clusters will be scattered at maturity (one inflorescence in Malawi specimen reduced to a single flower sessile in axil of fallen leaf
+No. of trees: 3 ptime: 2.371215199999938
+Success: 
+ sepals triangular, 1.5 mm. long
+No. of trees: 1 ptime: 0.18720120000000406
+Fail:
+ filaments 4 mm. long)
+No. of trees: 1 ptime: 0.14040090000003147
+TAXON:  FTEA Sapindaceae Pancovia turbinata
+Fail:
+ Plant is Tree 4–15(–25 <i>fide</i> Troupin) m. tall or shrub in West Africa, sometimes said to be sprawling or with gnarled trunk
+No. of trees: 3 ptime: 1.2012076999999408
+Success: 
+ crown dense
+No. of trees: 1 ptime: 0.07800050000003012
+Success: 
+ bark brown or red-brown, thin, smooth, horizontally striated
+No. of trees: 4 ptime: 0.5148032999999259
+Success: 
+ young shoots ferruginous pubescent
+No. of trees: 1 ptime: 0.24960160000000542
+Fail:
+ slash (in Uganda) granular, pale brown or off-white, vaguely mottled with orange-brown
+No. of trees: 4 ptime: 0.6396041000000423
+Fail:
+ Leaves drying grey-green, with (1–)2(–3) pairs of leaflets or abnormally pseudo-trifoliolate
+No. of trees: 3 ptime: 0.5616036000000122
+Success: 
+ petiole dark brown, 1.5–10 cm. long, puberulous or glabrescent
+No. of trees: 2 ptime: 0.5772036999999273
+Success: 
+ rhachis 1–5 cm. long
+No. of trees: 1 ptime: 0.1716010999999753
+Success: 
+ petiolules ± thickened, 2–10 mm. long
+No. of trees: 1 ptime: 0.21840140000006159
+Fail:
+ leaflets equal or upper pair up to twice as large, oblanceolate-obovate, elliptic or lanceolate, 3.5–15(–20) cm. long, 1.7–6.3(–7.5) cm. wide, rounded to mostly shortly acuminate at the apex, the tip rounded or acute, cuneate at the base, ± coriaceous, glabrous
+No. of trees: 11 ptime: 2.340014999999994
+Success: 
+ lateral nerves in 8–12 pairs
+No. of trees: 1 ptime: 0.32760210000003553
+Fail:
+ Inflorescences single or 2–3 closely placed, axillary or at nodes when leaves have fallen, 0.3–5 cm. long, densely dark ferruginous pubescent
+No. of trees: 5 ptime: 1.5756101000000626
+Fail:
+ flowers spaced, either single or in 3-flowered clusters
+No. of trees: 3 ptime: 0.3432022000000643
+Fail:
+ pedicels ± 1 mm. long, but buds subsessile
+No. of trees: 3 ptime: 0.32760210000003553
+Success: 
+ bracts ovate, 1.5 mm. long and wide
+No. of trees: 1 ptime: 0.24960160000000542
+Success: 
+ Male flowers: calyx-tube ± 1 mm. long, with triangular lobes 1.5–2 mm. long
+No. of trees: 1 ptime: 0.9828062999999929
+Fail:
+ petals 5, white, cream or greenish yellow, ± 2–2.5 mm. long, the claw ± 1 mm. long, scale half as long as the limb, entire or bifid with lobed ciliate appendage
+No. of trees: 8 ptime: 1.6068103000000065
+Fail:
+ disk circular or unilateral, reniform
+No. of trees: 3 ptime: 0.3432021999999506
+Success: 
+ stamens 7–8(–9)
+No. of trees: 1 ptime: 0.20280130000003282
+Success: 
+ filaments 3.5 mm. long (but probably longer in adult flowers), pilose below
+No. of trees: 2 ptime: 0.5616036000000122
+Success: 
+ Female flowers: ovary deeply 3-lobed
+No. of trees: 2 ptime: 0.7332047000001012
+Success: 
+ stigma capitate
+No. of trees: 2 ptime: 0.23400149999997666
+Success: 
+ staminodes 8, very reduced
+No. of trees: 1 ptime: 0.15600099999994654
+Fail:
+ Fruits not seen (ellipsoid, 1 cm. long ex icon
+No. of trees: 3 ptime: 0.468003000000067
+Fail:
+ Troupin)
+No. of trees: 0 ptime: 0.031200199999943834
+Fail:
+ Fig. 20
+No. of trees: 1 ptime: 0.046800299999972594
+TAXON:  FTEA Sapindaceae Pappea capensis
+Success: 
+ Plant is Much-branched shrub or tree to 15 m. tall
+No. of trees: 1 ptime: 0.6552042000000711
+Success: 
+ crown thick and rounded
+No. of trees: 6 ptime: 0.4368028000000095
+Fail:
+ bark dark grey, reticulate, rough or smooth save for small tesselations, variable according to fire regime
+No. of trees: 5 ptime: 0.6708042999999861
+Fail:
+ twigs tawny-pubescent when young, knobbly with raised leaf-scars, soon glabrescent, dark grey
+No. of trees: 5 ptime: 0.5148033000000396
+Success: 
+ Petiole 0.3–1.7 cm. long, pubescent
+No. of trees: 1 ptime: 0.23400149999997666
+Success: 
+ petioles 0.7–1.8 cm. long
+No. of trees: 1 ptime: 0.28080180000006294
+Fail:
+ leaf-blades yellow-green, oblong or broadly or narrowly elliptic or obovate or occasionally oblong-lanceolate, 3–18 cm. long, 1.3–8 cm. wide, apex obtuse or emarginate or shortly acuminate, rarely acute, base asymmetric, truncate or rounded or cordate on one side, entire and undulate or rather rarely sharply serrate, the teeth 1–2.5 mm. deep, glabrous above apart from hairs on the larger veins, the lower surface softly hairy and glandular
+No. of trees: 13 ptime: 5.00763209999991
+Success: 
+ lateral nerves in 12–20 pairs, strongly branched, venation closely reticulate
+No. of trees: 2 ptime: 0.6240040000000135
+Fail:
+ Inflorescences spicate, in leaf-axils on short lateral shoots
+No. of trees: 3 ptime: 0.4368028000000095
+Fail:
+ axes 3–15(–25) cm. long, with dense subsessile clusters of white, yellow-green or yellow flowers
+No. of trees: 4 ptime: 0.70200449999993
+Success: 
+ pedicels 1–5 mm. long
+No. of trees: 1 ptime: 0.171601100000089
+Success: 
+ Calyx 0.6–0.8 mm. long, densely whitish pubescent
+No. of trees: 1 ptime: 0.4212026999999807
+Success: 
+ petals 5, claw 0.6 mm. long, limb triangular, 0.4 mm. long, long-white ciliate, scale 0.2 mm. long
+No. of trees: 1 ptime: 0.7956050999999889
+Success: 
+ disk said to be glandular
+No. of trees: 6 ptime: 0.4680029999999533
+Success: 
+ Stamens much exserted
+No. of trees: 1 ptime: 0.12480080000000271
+Success: 
+ filaments eventually 4 mm. long, pilose in the lower part
+No. of trees: 1 ptime: 0.49920320000001084
+Success: 
+ anthers triangular-ovate, with scattered hairs, the apex of the connective inflated
+No. of trees: 1 ptime: 0.5928038000000697
+Fail:
+ staminodes with 2 mm. long filaments and slightly smaller anthers
+No. of trees: 2 ptime: 0.37440240000000813
+Fail:
+ Ovary rudiment a small cushion of hairs
+No. of trees: 2 ptime: 0.18720120000000406
+Fail:
+ Fruit green-velvety when young, brown when mature, spherical, 8–12 mm. diameter, with a longitudinal ridge along which dehiscence occurs
+No. of trees: 6 ptime: 0.9360060000000203
+Fail:
+ interior of the valves glabrous
+No. of trees: 1 ptime: 0.20280130000003282
+Success: 
+ Seed 6–9 mm. across
+No. of trees: 1 ptime: 0.14040090000003147
+Fail:
+ Fig. 11
+No. of trees: 1 ptime: 0.14040090000003147
+TAXON:  FTEA Sapindaceae Paullinia pinnata
+Fail:
+ Plant is Shrubby climber 2.5–8(–?15) m. high, with a deep brown sharply ribbed stem up to 3.8 cm. wide at base
+No. of trees: 2 ptime: 5.0076321000000235
+Success: 
+ Leaves imparipinnate, 5-foliolate, (5–)15–25 cm. long, 8–20 cm. wide
+No. of trees: 1 ptime: 0.5304033999999547
+Success: 
+ petiole up to 10 cm. long, it and the rhachis winged, the wing 0.5–1.3 cm. wide
+No. of trees: 2 ptime: 0.8580054999999902
+Fail:
+ leaflets sessile or shortly stalked, ovate, elliptic or rhomboid, the terminal one 7–15 cm. long, 3.5–8 cm. wide, the laterals 3.5–10 cm. long, 1.7–5 cm. wide, acuminate, acute or obtuse at the apex, cordate, cuneate or narrowed at the base, subentire (rarely in our area), distantly dentate, serrate or shallowly lobed, subcoriaceous, glabrous, shining, with hairs present beneath on the venation and in tufts in the nerve axils
+No. of trees: 19 ptime: 12.308478900000068
+Success: 
+ lateral nerves strong
+No. of trees: 1 ptime: 0.296401899999978
+Fail:
+ Inflorescence a racemoid thyrse axillary in each of the upper leaves, 5–10 cm. long
+No. of trees: 3 ptime: 0.49920320000001084
+Fail:
+ peduncle 1–3×the length of the fertile portion, with apical pair of tightly coiled tendrils, or occasionally inflorescence sessile
+No. of trees: 4 ptime: 1.076406899999938
+Success: 
+ inflorescence-axes brown-puberulent
+No. of trees: 1 ptime: 0.20280130000003282
+Success: 
+ pedicels 0–3 mm. long
+No. of trees: 1 ptime: 0.15600099999994654
+Fail:
+ flowers (3–)5–9 in cymose clusters, the terminal one often female and the remainder male
+No. of trees: 3 ptime: 0.49920320000001084
+Success: 
+ Flowers yellowish, creamy white or pink, scented, 5–6 mm. long
+No. of trees: 1 ptime: 0.37440240000000813
+Fail:
+ sepals ovate, unequal, outermost 1.5 mm. long, innermost 4 mm. long, pubescent on their outer surfaces
+No. of trees: 6 ptime: 0.577203700000041
+Fail:
+ petals white, tongue-shaped, subequal, 5 mm. long, scale asymmetrically crested, ciliate, 3/4 of the length of the petal, yellow-tipped
+No. of trees: 9 ptime: 0.7176046000000724
+Fail:
+ disk to one side of the androgynophore, ciliate, consisting mainly of 2 large, plus 2 minute, ear-shaped glands
+No. of trees: 6 ptime: 0.6552041999999574
+Success: 
+ Stamens 8, 5 long and 3 short
+No. of trees: 1 ptime: 0.37440240000000813
+Success: 
+ anthers white
+No. of trees: 1 ptime: 0.07800050000003012
+Success: 
+ staminodes 8
+No. of trees: 1 ptime: 0.09360059999994519
+Success: 
+ Ovary pubescent
+No. of trees: 1 ptime: 0.07800050000003012
+Success: 
+ style trifid
+No. of trees: 1 ptime: 0.09360059999994519
+Success: 
+ rudimentary ovary much reduced
+No. of trees: 1 ptime: 0.20280130000003282
+Fail:
+ Fruit green, turning red or rose-red, obovoid or obovoid-oblong, 2.4–3.6 cm. long, 1.1–1.4 cm. wide, rounded or emarginate at the apex, mucronate, strongly narrowed at the base, 3-grooved, at first pubescent but later glabrous and finely rugulose, ultimately dehiscent
+No. of trees: 12 ptime: 1.4196091000000024
+Success: 
+ Seeds black, oblong-ellipsoid, 1–1.1 cm. long, 7–8 mm. wide
+No. of trees: 1 ptime: 0.40560259999995196
+Success: 
+ aril white
+No. of trees: 1 ptime: 0.07800050000003012
+Fail:
+ Fig. 26
+No. of trees: 1 ptime: 0.15600099999994654
+TAXON:  FTEA Sapindaceae Placodiscus amaniensis
+Success: 
+ Plant is Weak-stemmed tree ± 15 m. tall
+No. of trees: 1 ptime: 0.7176046000000724
+Success: 
+ Petiole 5–17 cm. long, woody
+No. of trees: 1 ptime: 0.35880229999997937
+Success: 
+ rhachis 4–20 cm., glabrous
+No. of trees: 1 ptime: 0.24960160000000542
+Success: 
+ petiolules swollen, channelled, 4–10 mm. long
+No. of trees: 1 ptime: 0.20280130000003282
+Success: 
+ leaflets in 3–5 pairs, oblong-elliptic or lanceolate, the uppermost pair largest, 12–26 cm. long, 4–13 cm. wide, the apex with a short acute acumen, the base unequally cuneate or rounded
+No. of trees: 2 ptime: 2.1216135999999324
+Fail:
+ both surfaces glabrous and shining, drying brown
+No. of trees: 2 ptime: 0.23400149999997666
+Fail:
+ lateral nerves in ± 10 well-marked pairs, they and the midrib with a convex line on the upper surface, very prominent beneath, the veins forming a very fine raised reticulum on both surfaces
+No. of trees: 5 ptime: 2.137213700000075
+Fail:
+ Inflorescence unbranched, with sessile fascicles on long spikes, apparently borne on the stem, opposite or between leaves
+No. of trees: 5 ptime: 0.6396041000000423
+Success: 
+ axis 27–40 cm. long, puberulous, bearing cymose groups of 3–7 flowers subtended by subulate bracts
+No. of trees: 2 ptime: 1.4352092000000312
+Success: 
+ Calyx-tube 1.5 mm. long, lobes 2 mm. long, densely ferrugineous-pubescent
+No. of trees: 1 ptime: 0.49920320000001084
+Success: 
+ disk said to be densely pubescent
+No. of trees: 4 ptime: 0.49920320000001084
+Success: 
+ Stamen filaments pilose
+No. of trees: 1 ptime: 0.18720120000000406
+Success: 
+ Fruit unknown
+No. of trees: 1 ptime: 0.09360060000005888
+TAXON:  FTEA Sapindaceae Placodiscus pedicellatus
+Success: 
+ Plant is Tree ± 20 m. tall
+No. of trees: 1 ptime: 0.4212026999999807
+Success: 
+ Petiole 3.5–6 cm. long, glabrescent
+No. of trees: 1 ptime: 0.2964019000000917
+Success: 
+ leaf-rhachis 13–17 cm. long, minutely hairy
+No. of trees: 1 ptime: 0.35880229999997937
+Success: 
+ petiolules 2 mm. long, swollen, pubescent
+No. of trees: 1 ptime: 0.2184013999999479
+Fail:
+ leaflets in 6–7 pairs, drying brownish, alternate apart from the lowermost, narrowly oblong-elliptic to lanceolate, 6–12 cm. long, 2–3 cm. wide, the middle pairs slightly longer than the lowermost, abruptly acuminate, the base asymmetrically acute or rounded, both surfaces glabrous
+No. of trees: 9 ptime: 1.6224104000000352
+Success: 
+ lateral veins in ± 13 pairs, indistinct above, prominent beneath, the midrib with a raised line on the upper surface, minor vein reticulum prominent on both surfaces
+No. of trees: 8 ptime: 2.7924178999999185
+Success: 
+ Inflorescence a branched thyrse borne on the old wood
+No. of trees: 2 ptime: 0.7800050000000738
+Success: 
+ main axis 27 cm. long, branches up to 11 cm. long, pubescent
+No. of trees: 1 ptime: 0.6864044000000149
+Fail:
+ flowers single or in groups on the main or branch axes or on short minor branches
+No. of trees: 2 ptime: 0.4836030999999821
+Success: 
+ bracts 0.5–2 mm. long
+No. of trees: 1 ptime: 0.15600099999994654
+Fail:
+ pedicels 5–9 mm. long, sometimes articulated with a pedicel-like stalk 1–5 mm. long below
+No. of trees: 3 ptime: 0.9204058999999916
+Success: 
+ Calyx-lobes triangular, 1.5 mm. long, externally shortly velvety pubescent
+No. of trees: 1 ptime: 0.468003000000067
+Success: 
+ disk pubescent
+No. of trees: 1 ptime: 0.09360059999994519
+Success: 
+ Staminodes 8 (male flowers unknown)
+No. of trees: 6 ptime: 0.3432021999999506
+Success: 
+ Ovary deeply 3-lobed, 3-locular
+No. of trees: 2 ptime: 0.4368028000000095
+Success: 
+ style equalling the ovary
+No. of trees: 1 ptime: 0.18720120000000406
+Fail:
+ Fruit unknown, expected to be a group of 1–3 mericarps joined at the base only or for a greater part of the central septum
+No. of trees: 3 ptime: 1.5132097000000613
+Fail:
+ Fig. 19
+No. of trees: 1 ptime: 0.14040089999991778
+TAXON:  FTEA Sapindaceae Sapindus saponaria
+Fail:
+ Plant is Tree 8–18 m. tall with rounded crown
+No. of trees: 2 ptime: 0.7020045000000437
+Fail:
+ bark ochraceous, smooth on branches but very rough and corrugated on trunk, scaling off in large flakes to reveal brown patches
+No. of trees: 4 ptime: 1.1232071999999107
+Success: 
+ slash pale orange
+No. of trees: 2 ptime: 0.23400149999997666
+Success: 
+ twigs grey, glabrous, with deep brown lenticels
+No. of trees: 1 ptime: 0.32760210000003553
+Success: 
+ Leaves 20–30(–60) cm. long
+No. of trees: 1 ptime: 0.2652016999999205
+Success: 
+ petiole (1–)4–8 cm. long, minutely pubescent
+No. of trees: 1 ptime: 0.3432022000000643
+Fail:
+ rhachis pale green or whitish, 14–40 cm. long, winged or with raised lines
+No. of trees: 4 ptime: 0.7956050999999889
+Success: 
+ petiolules (1–)3–5 mm. long
+No. of trees: 1 ptime: 0.28080179999994925
+Fail:
+ leaflets in 2–6 pairs, subopposite, elliptic-lanceolate to lanceolate, 7–17.5 cm. long, 2.5–6 cm. wide, often ± asymmetrically curved, narrowed to an acute or acuminate apex, cuneate at the base, glabrous above apart from the midrib, shortly pubescent beneath and with sessile glands
+No. of trees: 11 ptime: 1.9032122000000982
+Success: 
+ lateral nerves in 9–12 pairs
+No. of trees: 1 ptime: 0.49920320000001084
+Success: 
+ Inflorescences complex panicles of cymules, 30–75 cm. long, 20 cm. wide
+No. of trees: 1 ptime: 0.5928038000000697
+Success: 
+ axes puberulous
+No. of trees: 1 ptime: 0.07800049999991643
+Fail:
+ pedicels ± absent or 1–2 mm. long
+No. of trees: 2 ptime: 0.20280130000003282
+Success: 
+ Flowers creamy white or greenish white, small, slightly aromatic
+No. of trees: 2 ptime: 0.7488048000000163
+Success: 
+ sepals 2–3 mm. long
+No. of trees: 1 ptime: 0.15600099999994654
+Success: 
+ petals rhomboid, 1.5 mm. long, with long hairs
+No. of trees: 1 ptime: 0.296401899999978
+Success: 
+ disk glabrous
+No. of trees: 1 ptime: 0.09360060000005888
+Fail:
+ Fruit brown drying blue-black, with 1(–3) globose lobes, 1.7–2 cm. diameter, gelatinous when fresh, glabrous
+No. of trees: 6 ptime: 0.7332046999999875
+Success: 
+ pedicels 5–10 mm. long
+No. of trees: 1 ptime: 0.1716010999999753
+Success: 
+ Seeds black, globose, 1.2 cm. diameter
+No. of trees: 1 ptime: 0.20280130000003282
+Fail:
+ Fig. 23/1–3
+No. of trees: 1 ptime: 0.20280130000003282
+TAXON:  FTEA Sapindaceae Sapindus trifoliatus
+Success: 
+ Plant is Tree to 25 m.
+No. of trees: 1 ptime: 0.2652017000000342
+Success: 
+ branchlets purplish brown, lenticellate
+No. of trees: 1 ptime: 0.1716010999999753
+Success: 
+ Leaves 15–25(–35) cm. long
+No. of trees: 1 ptime: 0.28080180000006294
+Success: 
+ leaflets subopposite, in (1–)3(–4) pairs, elliptic-oblong to elliptic-lanceolate or obovate, (5–)10–20 cm. long, (3–)5.5–11 cm. wide, emarginate to ± acuminate at the apex, acute to truncate or rounded at the base, glabrous save for some pubescence on midrib above and beneath
+No. of trees: 72 ptime: 5.881237699999929
+Success: 
+ lateral nerves in 8–15 pairs
+No. of trees: 1 ptime: 0.3432022000000643
+Fail:
+ Panicles 6–15 cm. long, with spreading branches, velvety brown-pubescent
+No. of trees: 3 ptime: 0.4680029999999533
+Success: 
+ sepals elliptic, 4 mm. long, silky tomentellous outside
+No. of trees: 2 ptime: 0.4212026999999807
+Success: 
+ petals narrowly rhomboid, 4 mm. long, the dorsal surface densely long-white-pubescent
+No. of trees: 1 ptime: 0.6396041000000423
+Success: 
+ Ovary pubescent
+No. of trees: 1 ptime: 0.09360059999994519
+Success: 
+ disk hairy
+No. of trees: 1 ptime: 0.07800050000003012
+Success: 
+ Fruit brown, 1.6–2.2 cm. wide, with (1–)3 subglobose hairy lobes
+No. of trees: 2 ptime: 0.7332046999999875
+Fail:
+ Fig. 23/4
+No. of trees: 1 ptime: 0.15600100000006023
+TAXON:  FTEA Sapindaceae Stadmania oppositifolia
+Success: 
+ Plant is Medium-sized tree 9–30 m. tall
+No. of trees: 1 ptime: 0.5460034999999834
+Success: 
+ bark yellow or brown, smooth, finely fissured or concentrically-flaking, mottled yellow and grey, slash pink
+No. of trees: 2 ptime: 0.8424053999999614
+Fail:
+ twigs initially rusty- or tawny-pubescent
+No. of trees: 2 ptime: 0.2652017000000342
+Success: 
+ Petiole 3–7 cm. long, angled, pubescent
+No. of trees: 1 ptime: 0.3432021999999506
+Success: 
+ rhachis 4–10 cm. long
+No. of trees: 1 ptime: 0.15600100000006023
+Success: 
+ petiolules 1–7 mm. long
+No. of trees: 1 ptime: 0.1716010999999753
+Success: 
+ leaflets in (1–)2–4 pairs, opposite, the uppermost pair largest, blade narrowly elliptic or elliptic, 4–15 cm. long, 2.5–6.5 cm. wide, emarginate or rounded at the apex
+No. of trees: 1 ptime: 1.4196091000000024
+Fail:
+ asymmetrically cuneate at the base, entire, thickened, thick-textured, glabrous apart from the midrib, microscopically glandular on both surfaces, shining above, matt beneath
+No. of trees: 8 ptime: 1.1232072000000244
+Success: 
+ lateral veins in 10–16 pairs, indistinct, venation finely reticulate
+No. of trees: 1 ptime: 0.4836030999999821
+Success: 
+ Inflorescences 4–12.5 cm. long
+No. of trees: 1 ptime: 0.28080180000006294
+Fail:
+ flowers yellow in cymose clusters, scented
+No. of trees: 3 ptime: 0.2184013999999479
+Fail:
+ pedicels 2–3 mm. long, increasing to 5 mm. in fruit
+No. of trees: 3 ptime: 0.35880230000009306
+Fail:
+ Calyx cup 0.5 mm. long
+No. of trees: 2 ptime: 0.20280129999991914
+Success: 
+ lobes broadly triangular, 0.2 mm. long, densely pubescent
+No. of trees: 1 ptime: 0.296401899999978
+Success: 
+ Stamens 8
+No. of trees: 1 ptime: 0.09360060000005888
+Success: 
+ filaments in the bud straight and very short, at maturity 3 mm. long, pilose or glabrous
+No. of trees: 4 ptime: 1.0296065999999655
+Success: 
+ anthers oblong, pilose or glabrous
+No. of trees: 1 ptime: 0.18720120000000406
+Success: 
+ Style shortly 3-fid
+No. of trees: 1 ptime: 0.21840140000006159
+Fail:
+ Fruit golden yellow, usually of one developed globose mericarp, 1–2.1 cm. in diameter, shortly velvety pubescent, with the abortive carpels remaining attached to the base
+No. of trees: 6 ptime: 1.076406899999938
+Success: 
+ Seed chestnut brown, globose or ovoid, 1–1.2 cm. in diameter
+No. of trees: 1 ptime: 0.3120020000000068
+Fail:
+ aril red, loosely covering seed
+No. of trees: 3 ptime: 0.28080179999994925
+Fail:
+ Fig. 10
+No. of trees: 1 ptime: 0.03120020000005752
+TAXON:  FTEA Sapindaceae Tristiropsis acuteangula
+Success: 
+ Plant is A tree 7.5–35(–53) m. tall, often buttressed
+No. of trees: 1 ptime: 0.6084038999999848
+Success: 
+ branchlets fulvous tomentose at first
+No. of trees: 1 ptime: 0.20280129999991914
+Fail:
+ Leaves bipinnate or upper ones at least forked, up to 2 m. long
+No. of trees: 3 ptime: 0.3900025000000369
+Success: 
+ petiole to 20 cm. long
+No. of trees: 1 ptime: 0.20280130000003282
+Success: 
+ Leaflets ovate to elliptic, 5–18 cm. long, 1.5–8 cm. wide, emarginate, obtuse or acute and often mucronulate at the apex, acute to obtuse at the base
+No. of trees: 64 ptime: 3.416421899999932
+Success: 
+ Inflorescence up to 40 cm. long, densely adpressed brownish pubescent
+No. of trees: 1 ptime: 0.468003000000067
+Success: 
+ peduncle to 15 cm. long
+No. of trees: 1 ptime: 0.2184013999999479
+Fail:
+ cyme-stalks up to 8 mm. long
+No. of trees: 1 ptime: 0.28080179999994925
+Fail:
+ cymules containing both male and female flowers
+No. of trees: 1 ptime: 0.45240290000003824
+Success: 
+ pedicels 3–10 mm. long
+No. of trees: 1 ptime: 0.15600100000006023
+Success: 
+ Flowers sweet-scented
+No. of trees: 1 ptime: 0.09360059999994519
+Success: 
+ petals cream, 2.5–3.5 mm. long, 2.2–2.5 mm. wide
+No. of trees: 1 ptime: 0.37440240000000813
+Fail:
+ Fruits yellowish-green to dark yellow, ellipsoid to subglobular, 2–3 cm. long, 1.4–2.5 cm. wide, widest at or above the middle, narrowed to shortly stipitate at the base, 3–4-angular or 3–4-ribbed in cross section, densely minutely ferruginous tomentose, not dehiscent
+No. of trees: 10 ptime: 1.8408117999999831
+TAXON:  FTEA Sapindaceae Zanha africana
+Fail:
+ Plant is Small tree 3.5–12 m. tall with rather nodular gnarled grey branches
+No. of trees: 2 ptime: 0.9984064000000217
+Fail:
+ bark red, brittle, reticulate, flaking off in patches, with orange layer beneath
+No. of trees: 6 ptime: 0.5616036000000122
+Fail:
+ Leaves up to ± 23 cm. long
+No. of trees: 2 ptime: 0.35880230000009306
+Success: 
+ petiole 1–5 cm. long, ferruginous pubescent
+No. of trees: 1 ptime: 0.24960159999989173
+Success: 
+ leaf rhachis 4–35 cm. long, similarly pubescent
+No. of trees: 1 ptime: 0.5304034000000684
+Fail:
+ leaflets in 3–8 pairs, often not exactly opposite, ovate, elliptic or almost round, the lower pairs considerably smaller than the upper
+No. of trees: 6 ptime: 0.9048057999999628
+Fail:
+ upper leaflets 8–15 cm. long, 4–8 cm. wide, obtuse at the apex, truncate to cordate at the base, crenate towards the apex or rarely entire, glabrous to sparsely or densely ferruginous pubescent
+No. of trees: 8 ptime: 1.5132096999999476
+Success: 
+ lateral nerves in up to 14 pairs, the venation prominently reticulate beneath
+No. of trees: 2 ptime: 0.8580054999999902
+Success: 
+ petiolules 1–3 mm. long
+No. of trees: 1 ptime: 0.15600100000006023
+Fail:
+ Male inflorescences precocious, ± sessile clusters, 1.5 cm. wide, forming masses ± 5 cm. wide, peduncles sometimes 0.5–?3 cm. long
+No. of trees: 6 ptime: 1.3260084999999435
+Success: 
+ female inflorescences tawny felted, with peduncle up to 2 cm. long, lengthening in fruit
+No. of trees: 1 ptime: 0.7956050999999889
+Success: 
+ Flowers greenish, sweet-scented
+No. of trees: 1 ptime: 0.12480080000000271
+Fail:
+ sepals 5, 4 mm. long, united for 1 mm. at base
+No. of trees: 4 ptime: 0.4212026999999807
+Success: 
+ disk cup-shaped, 0.7 mm. high
+No. of trees: 1 ptime: 0.24960160000000542
+Fail:
+ Stamens and staminodes 5
+No. of trees: 2 ptime: 0.15600099999994654
+Success: 
+ filaments of stamens 9 mm. long
+No. of trees: 1 ptime: 0.3120020000000068
+Success: 
+ anthers 1.2 mm. long
+No. of trees: 1 ptime: 0.15600100000006023
+Success: 
+ Fruit bright orange, ellipsoid, up to 2.6 cm. long, 1.3–1.8 cm. wide, velvety
+No. of trees: 1 ptime: 0.5616036000000122
+Fail:
+ sepals and style base persistent
+No. of trees: 2 ptime: 0.35880229999997937
+Success: 
+ stalks 0.3–1.9 cm. long
+No. of trees: 1 ptime: 0.28080179999994925
+Fail:
+ Fig. 3/1–4
+No. of trees: 1 ptime: 0.20280130000003282
+TAXON:  FTEA Sapindaceae Zanha golungensis
+Success: 
+ Plant is Tree 6–24 m. tall
+No. of trees: 1 ptime: 0.40560259999995196
+Fail:
+ bark grey-brown, smooth, flaking in irregular circular patches, covered in reddish warty lenticels and petiole-scars
+No. of trees: 5 ptime: 1.3260085000000572
+Success: 
+ Leaf-axis 15–25 cm. long, terete (winged when young), sparsely hairy, glabrescent
+No. of trees: 6 ptime: 0.5928038000000697
+Success: 
+ petiolules 0–2 mm. long
+No. of trees: 1 ptime: 0.28080179999994925
+Fail:
+ leaflets in 4–6 pairs, mostly elliptic, varying slightly towards ovate and elliptic-oblong, shortly and obtusely acuminate, 6–11(–17) cm. long, 2–4(–5.5) cm. wide (the lower scarcely shorter than the upper), entire or crenate, glabrous
+No. of trees: 9 ptime: 1.2792082000000846
+Fail:
+ lateral nerves in 12–16 pairs, rather regularly and closely spaced, looped within the margins
+No. of trees: 4 ptime: 0.764404900000045
+Fail:
+ Male flowers olive green or yellowish, in dense cymose clusters 1–2.5 mm. long on stalks 2–10 mm. long at the ends of the peduncles, pedicels 0–2 mm. long
+No. of trees: 4 ptime: 1.2948082999999997
+Fail:
+ female flowers in a sessile cluster or short panicle, pedicels 1–3 mm. long, densely pubescent, lengthening in fruit.Sepals olive green, erect, ± 4.3 mm. long, united to ± half-way
+No. of trees: 8 ptime: 1.4820095000000038
+Success: 
+ disk flat, green and glandular when fresh, dark red in dried specimens
+No. of trees: 18 ptime: 1.1232072000000244
+Success: 
+ Stamens 4
+No. of trees: 1 ptime: 0.09360059999994519
+Success: 
+ filaments 2–7 mm. long
+No. of trees: 1 ptime: 0.171601100000089
+Fail:
+ after anthesis the filaments drop off the receptacle leaving a star-shaped configuration of sepals
+No. of trees: 1 ptime: 0.8268052999999327
+Success: 
+ Ovary rudiment absent
+No. of trees: 1 ptime: 0.15600100000006023
+Fail:
+ The male inflorescence drops off as a single unit after flowering
+No. of trees: 1 ptime: 0.45240289999992456
+Success: 
+ Infructescence a lax thyrse
+No. of trees: 1 ptime: 0.3120020000000068
+Success: 
+ drupe pink, yellow or orange, olive-like, 1.4–2 cm. long, glabrous, with persistent sepals and style
+No. of trees: 2 ptime: 0.8268053000000464
+Fail:
+ Fig. 3/5–6
+No. of trees: 1 ptime: 0.15600099999994654

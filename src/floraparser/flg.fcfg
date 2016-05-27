@@ -226,4 +226,7 @@ A[category=comparison, H=[orth=?o]] -> ART A[+*compar*, H=[orth=?o]] 'ones'
 ANAPH[anaph=(?o, 'ones')]           -> ART A[orth=?o] 'ones'
 ANAPH[anaph=(?o, 'one')]            -> ART A[orth=?o] 'one'
 
-
+TOKEN -> N | A[*compar*=?c] | ADV | NUM | CONJ | ART | PUNC | IN | P | FOR | UNK | THAN | DET | PRO | DEG
+TKL -> TKL TOKEN
+TKL -> TOKEN
+PAREXP -> PUNC[punc='('] TKL PUNC[punc=')']

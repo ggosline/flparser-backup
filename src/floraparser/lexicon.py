@@ -244,6 +244,7 @@ def pickle_lexicon():
     addlexicon(['located'], 'NULL', {})
     addlexicon(['borne'], 'NULL', {})
     addlexicon(['fig.'], 'NULL', {})
+    addlexicon(['so'], 'A', {'category':'anaphora'})
 
     readcpglossary()
     # for wlist in multiwords.values():

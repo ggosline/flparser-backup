@@ -1395,7 +1395,7 @@
 "1437","N","jacket_cell","structure",,"Any of the cells forming the portion of an antheridial wall between the basal cells and the cap cell(s).","STRUCTURE",
 "1438","N","joint","structure",,"A distinct, relatively narrow zone of demarcation between adjacent main portions of an elongate structure, often thicker than the rest of the structure and sometimes a site of eventual abscission.","STRUCTURE",
 "1439","A","jointed","architecture",,"Elongate with one or more distinct, relatively narrow zones of demarcation between adjacent main portions of the whole, these joints (articulations) often thicker and sometimes sites of eventual abscission.","architecture",
-"1439","A","_jugate","architecture",,""foliaceous structure","Compound with n orders of leaflets, each order bifoliolate.","architecture",
+"1439","A","_jugate","architecture",,"foliaceous structure","Compound with n orders of leaflets, each order bifoliolate.","architecture",
 "1440","N","keel","structure",,"An elongate, median longitudinal ridge that is basically triangular in transverse section and resembles the keel of a boat; esp. in leaf blades and sheaths, glumes, lemmata, paleae, sepals, petals.","STRUCTURE",
 "1441","N","keel","structure",,"Collectively, the two relatively small, connate or coherent, abaxial (lower) petals that form the keel-like portion of a papilionaceous corolla.","STRUCTURE",
 "1442","A","keel-shaped","shape",,"Elongate, basically triangular in transverse section, tapering at one or both ends, the outer edge thus somewhat arcuate, the whole resembling the keel of a boat.","shape",
@@ -2085,9 +2085,9 @@
 "2149","A","resinous","coating",,"Of liquid or hardened resin.","coating","q"
 "2150","A","resinous","texture",,"Having the consistency of resin.","texture","q"
 "2151","A","resupinate","orientation","lateral structure","Inverted due to twisting distal to the point of insertion during development.","orientation",
-"2152","A","reticulate","architecture","tertiary and higher-order laminar veins, excl veinlets","Interconnecting more or less regularly.","relief","q"
+"#","A","reticulate","architecture","tertiary and higher-order laminar veins, excl veinlets","Interconnecting more or less regularly.","relief","q"
 "#","A","reticulate","coloration",,"Having a  pattern of interconnected fine lines of contrasting hue and/or intensity.","relief","q"
-"#","A","reticulate","relief",,"Having prominulous, more or less regularly interconnected lines.","relief","q"
+"2154","A","reticulate","relief",,"Having prominulous, more or less regularly interconnected lines.","relief","q"
 "2155","A","reticulodromous","venation",,"Having a single median primary vein that branches to either side along the length of the lamina, the secondary veins running thence toward the margin, branching repeatedly, becoming less distinct, and yielding a dense higher-order reticulum near the margi","venation",
 "2156","A","retrorse","orientation",,"Directed generally backward, toward the proximal end of the context of reference, parallel or at an acute angle to the bearing structure.","orientation",
 "2157","A","retuse","shape","apex","Round overall with an obtuse terminal sinus.","shape",

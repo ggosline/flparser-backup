@@ -14,6 +14,7 @@ import traceback
 import ordered_set
 import logging
 logging.basicConfig(filename='flparse.log', filemode='w', level=logging.INFO)
+import time
 
 def charactersFromDB(query):
     ttaxa = FloraCorpusReader(db=r'..\resources\efloras.db3', query=query)
@@ -35,14 +36,15 @@ def parseTaxa(ttaxa, draw=False, outfile=None, ttrace=0, cleantree=True, projpar
     # cfcsv.writeheader()
     cfcsv = csv.writer(cf)
     cfcsv.writerow(
-        'taxonNo family taxon mainsubject subject subpart category value mod posit phase presence start end'.split())
+        'taxonNo flora family taxon mainsubject subject subpart category value mod posit phase presence start end'.split())
     cfset = ordered_set.OrderedSet()
     parser = FGParser(parser=projparser, trace=ttrace)
     for taxon in ttaxa.taxa:
-        print('\rTAXON: ', taxon.family, taxon.genus, taxon.species)
+        print('\rTAXON: ', taxon.flora, taxon.family, taxon.genus, taxon.species)
         if outfile:
-            print('\rTAXON: ', taxon.family, taxon.genus, taxon.species, file=outfile)
+            print('\rTAXON: ', taxon.flora, taxon.family, taxon.genus, taxon.species, file=outfile)
         # print('-'*80,  '\rTAXON: ', taxon.family, taxon.genus, taxon.species, file=cf)
+        flora = taxon.flora
         famname = taxon.family
         taxname = taxon.genus + ' ' + taxon.species
         taxonNo = taxon.taxonNO
@@ -52,7 +54,7 @@ def parseTaxa(ttaxa, draw=False, outfile=None, ttrace=0, cleantree=True, projpar
             for iphrase, phrase in enumerate(sent.phrases):
                 logging.info('PARSING: ' + phrase.text)
                 # print('\rPARSING: ', phrase.text, file=cf)
-
+                ptime = time.process_time()
                 try:
                     trees = parser.parse(phrase.tokens, cleantree=cleantree, maxtrees=100)
                 except:
@@ -72,7 +74,7 @@ def parseTaxa(ttaxa, draw=False, outfile=None, ttrace=0, cleantree=True, projpar
                         subject = H['orth']
                         if iphrase == 0:
                             mainsubject = subject
-                        DumpChars(taxonNo, famname, taxname, mainsubject, subject, '', H, tokens, sent.text,
+                        DumpChars(taxonNo, flora, famname, taxname, mainsubject, subject, '', H, tokens, sent.text,
                                   phrase.slice.start + sent.slice.start, phrase.slice.stop + sent.slice.start, indent=1,
                                   file=cfset)
 
@@ -89,14 +91,15 @@ def parseTaxa(ttaxa, draw=False, outfile=None, ttrace=0, cleantree=True, projpar
                             print('failure to get H')
                             H = None
                         if H:
-                            DumpChars(taxonNo, famname, taxname, mainsubject, subject, '', H, tokens, sent.text,
+                            DumpChars(taxonNo, flora, famname, taxname, mainsubject, subject, '', H, tokens, sent.text,
                                       txtstart + sent.slice.start, txtend + sent.slice.start, indent=1, file=cfset)
 
                     cfcsv.writerows(cfset)
 
+                dtime = time.process_time() - ptime
                 if trees:
                     if outfile: print('Success: \n ' + phrase.text, file=outfile)
-                    if outfile: print('No. of trees: %d' % len(trees), file=outfile)
+                    if outfile: print('No. of trees: %d' % len(trees), 'ptime: ' + str(dtime),file=outfile)
                     if ttrace:
                         for i, treex in enumerate(trees):
                             cleanparsetree(treex)
@@ -110,7 +113,7 @@ def parseTaxa(ttaxa, draw=False, outfile=None, ttrace=0, cleantree=True, projpar
                 else:
                     if outfile: print('Fail:\n ' + phrase.text, file=outfile)
                     trees = parser.partialparses()
-                    if outfile: print('No. of trees: %d' % len(trees), file=outfile)
+                    if outfile: print('No. of trees: %d' % len(trees), 'ptime: ' + str(dtime),file=outfile)
                     # if ttrace and draw:
                     #     for treex in trees[0:40]:
                     #         cleanparsetree(treex)

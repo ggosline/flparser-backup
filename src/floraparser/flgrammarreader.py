@@ -20,7 +20,6 @@ from __future__ import print_function, unicode_literals
 from nltk.grammar import Production, ProbabilisticProduction
 import re
 from itertools import chain, combinations
-from nltk.featstruct import FeatStruct, FeatDict, FeatStructReader, SLASH, TYPE
 
 # Parsing generic grammars
 from pkg_resources import string_types
@@ -114,7 +113,7 @@ def _read_production(line, nonterm_parser, probabilistic=False):
             optterms = [i for (i, isopt) in enumerate(optionality) if isopt]
             opttermlists = powerset(optterms)              # all possible combinations of optionals
             for optlist in opttermlists:
-                rhstemp = rhs.copy()
+                rhstemp = rhs[:]
                 for i in sorted(optlist, reverse=True):
                     del rhstemp[i]
                 rhsides_temp.append(rhstemp)
