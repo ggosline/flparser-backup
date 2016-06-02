@@ -3,7 +3,7 @@ __author__ = 'Geoge'
 from floraparser.TaxaToCharacters import *
 
 fromdb = False
-fromdb = True
+#fromdb = True
 
 if fromdb:
 
@@ -29,7 +29,7 @@ else:
     # Pappus grayish white, chaffy, of 4 or 5 bristles.
     # '''
 
-    description = 'lateral nerves in 8–10 pairs, venation raised and reticulate above (impressed in life <i>fide</i> Milne-Redhead & Taylor) and strongly so beneath'
+    description = 'lateral nerves in 8–10 pairs'
 
     parser = FeatureBottomUpLeftCornerChartParser
     # parser = FeatureEarleyChartParser
@@ -54,4 +54,5 @@ else:
 
     trdr = [trec]
 
-    charactersFromText(trdr, draw=draw, ttrace=ttrace, cleantree=cleantree, parser=parser, testphrases= testphrases, prefixdesc=prefixdesc)
+    print(charactersFromTaxon(trec))
+    #charactersFromText(trdr, draw=draw, ttrace=ttrace, cleantree=cleantree, parser=parser, testphrases= testphrases, prefixdesc=prefixdesc)

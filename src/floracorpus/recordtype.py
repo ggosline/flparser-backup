@@ -30,7 +30,7 @@
 
 __all__ = ['recordtype', 'NO_DEFAULT']
 
-from collections import Mapping as _Mapping
+from collections import Mapping as _Mapping, OrderedDict
 from keyword import iskeyword as _iskeyword
 
 from six import exec_, string_types
@@ -173,6 +173,7 @@ def recordtype(typename, field_names, default=NO_DEFAULT, rename=False,
                           for name, default in fields.with_defaults])
     reprtxt = ', '.join('{0}={{{0}}}'.format(f) for f in all_field_names)
     dicttxt = ', '.join('{0!r}:self.{0}'.format(f) for f in all_field_names)
+    ordereddicttxt = ', '.join('({0!r},self.{0})'.format(f) for f in all_field_names)
     listtxt = ', '.join('self.{0}'.format(f) for f in all_field_names)
 
 
@@ -218,6 +219,9 @@ def recordtype(typename, field_names, default=NO_DEFAULT, rename=False,
         def _asdict(self):
             return {{{dicttxt}}}
 
+        def _asordereddict(self):
+            return [{ordereddicttxt}]
+
         def _aslist(self):
             return ({listtxt})
 
@@ -232,6 +236,9 @@ def recordtype(typename, field_names, default=NO_DEFAULT, rename=False,
 
         def __getstate__(self):
             {getstate}
+
+        def __hash__(self):
+            return hash({tupletxt})
 
         def __getitem__(self, index):
             return getattr(self, self.__slots__[index])
@@ -254,6 +261,8 @@ def recordtype(typename, field_names, default=NO_DEFAULT, rename=False,
                                    getstate=getstate,
                                    setstate=setstate,
                                    slotstxt=slotstxt,
+                                   tupletxt=tupletxt,
+                                   ordereddicttxt=ordereddicttxt,
                                    )
 
     # Execute the template string in a temporary namespace.

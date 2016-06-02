@@ -31,11 +31,12 @@ def DumpSubj(taxonNo, flora, family, taxon, mainsubject, subject, subpart, struc
     crec = CharRec(taxonNo, flora, family, taxon, mainsubject, subject, start=start, end=end)
     DumpChar(crec, struct, tokens, ptext, indent, file)
 
-def DumpChars(taxonNo, flora, family, taxon, mainsubject, subject, subpart, struct, tokens, ptext: str, start, end, indent: int = 0, file=None):
+def DumpChars(taxonNo, flora, family, taxon, mainsubject, subject, subpart, struct, tokens, ptext: str, start, end,
+              indent: int = 0, cset=None):
     crec = CharRec(taxonNo, flora, family, taxon, mainsubject, subject, start=start, end=end)
-    DumpChar(crec, struct, tokens, ptext, indent, file)
+    DumpChar(crec, struct, tokens, ptext, indent, cset)
 
-def DumpChar(crec, struct: FeatDict, tokens, ptext: str, indent: int = 0, file=None):
+def DumpChar(crec, struct: FeatDict, tokens, ptext: str, indent: int = 0, cset=None):
 
     if isinstance(struct,FeatDict):
         struct.remove_variables()
@@ -53,13 +54,13 @@ def DumpChar(crec, struct: FeatDict, tokens, ptext: str, indent: int = 0, file=N
                 crec.value = struct['orth']
                 if struct.get('mod'):
                     crec.mod = stext(struct.get('mod'), tokens, ptext)
-                file.append(tuple(crec._aslist()))
+                cset.append(crec)
             if struct.get('clist'):
                 crec.mod = ""
-                DumpChar(crec, struct.get('clist'), tokens, ptext, indent, file)
+                DumpChar(crec, struct.get('clist'), tokens, ptext, indent, cset)
             if struct.get('OR'):
                 for subc in struct.get('OR'):
-                    DumpChar(crec, subc, tokens, ptext, file=file)
+                    DumpChar(crec, subc, tokens, ptext, cset=cset)
             else:
                 return
         elif struct.get('having'):
@@ -71,14 +72,14 @@ def DumpChar(crec, struct: FeatDict, tokens, ptext: str, indent: int = 0, file=N
                     if having.get('mod') != having.get('clist'):
                         crec.mod = stext(having.get('mod'), tokens, ptext)
                 if having.get('clist') and not isinstance(having.get('clist'),Variable):
-                    DumpChar(crec, having.get('clist'), tokens, ptext, indent, file)
+                    DumpChar(crec, having.get('clist'), tokens, ptext, indent, cset)
                 else:
-                    file.append(tuple(crec._aslist()))
+                    cset.append(crec)
                 return
             elif having.get('AND'):
                 for subc in having.get('AND'):
                     crec.subpart = subc.get('orth')
-                    DumpChar(crec, subc, tokens, ptext, file=file)
+                    DumpChar(crec, subc, tokens, ptext, cset=cset)
                 return
         else:
             if struct.get('mod'):
@@ -97,21 +98,21 @@ def DumpChar(crec, struct: FeatDict, tokens, ptext: str, indent: int = 0, file=N
             else:
                 crec.value =  struct.get('orth')
             if crec.value:
-                file.append(tuple(crec._aslist()))
+                cset.append(crec)
                 return
 
             if struct.get('OR'):
                 for subc in struct.get('OR'):
                     crec.mod = None
-                    DumpChar(crec, subc, tokens, ptext, file=file)
+                    DumpChar(crec, subc, tokens, ptext, cset=cset)
             elif struct.get('AND'):
                 for subc in struct.get('AND'):
                     crec.mod = None
-                    DumpChar(crec, subc, tokens, ptext, file=file)
+                    DumpChar(crec, subc, tokens, ptext, cset=cset)
             elif struct.get('TO'):
                 tolist = [stext(subc, tokens, ptext) for subc in struct.get('TO')]
                 crec.value = ' TO '.join(tolist)
-                file.append(tuple(crec._aslist()))
+                cset.append(crec)
 
 
         pass
@@ -123,7 +124,7 @@ def DumpChar(crec, struct: FeatDict, tokens, ptext: str, indent: int = 0, file=N
     #         DumpStruct(listitem, indent+1, file=file)
     elif isinstance(struct, FeatureValueTuple):
         for subc in struct:
-            DumpChar(crec, subc, tokens, ptext, file=file)
+            DumpChar(crec, subc, tokens, ptext, cset=cset)
     else:
         pass
 

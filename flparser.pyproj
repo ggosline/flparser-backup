@@ -1,0 +1,105 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{41895500-ab47-4e61-a7ab-cf898ebb803c}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>src\testFGParser.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{789894c7-04a9-4a11-a6b5-3f4435165112};{1b580a1a-fdb3-4b32-83e1-6407eb2722e6};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Web launcher</LaunchProvider>
+    <InterpreterId>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</InterpreterId>
+    <InterpreterVersion>3.5</InterpreterVersion>
+    <PythonWsgiHandler>{StartupModule}.wsgi_app</PythonWsgiHandler>
+    <UseIISExpress>true</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="src\floracorpus\ADO.py" />
+    <Compile Include="src\floracorpus\reader.py" />
+    <Compile Include="src\floracorpus\recordtype.py" />
+    <Compile Include="src\floracorpus\SQLitedb.py" />
+    <Compile Include="src\floracorpus\__init__.py" />
+    <Compile Include="src\floraparser\bits.py" />
+    <Compile Include="src\floraparser\botglossary.py" />
+    <Compile Include="src\floraparser\dumpstruct.py" />
+    <Compile Include="src\floraparser\FGFeatStructNonterminal.py" />
+    <Compile Include="src\floraparser\FGParser.py" />
+    <Compile Include="src\floraparser\flfeatureclass.py" />
+    <Compile Include="src\floraparser\flgrammarreader.py" />
+    <Compile Include="src\floraparser\fltoken.py" />
+    <Compile Include="src\floraparser\inflect.py" />
+    <Compile Include="src\floraparser\lexicon.py" />
+    <Compile Include="src\floraparser\pos.py" />
+    <Compile Include="src\floraparser\splitter.py" />
+    <Compile Include="src\floraparser\TaxaToCharacters.py" />
+    <Compile Include="src\floraparser\__init__.py" />
+    <Compile Include="src\floras-nltk\Snobol\Snobol.py" />
+    <Compile Include="src\floras-nltk\Snobol\Snoboltest.py" />
+    <Compile Include="src\floras-nltk\Snobol\__init__.py" />
+    <Compile Include="src\testFGParser.py" />
+    <Compile Include="src\testtkinter.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\floracorpus\notindict.txt" />
+    <Content Include="src\floraparser\notindict.txt" />
+    <Content Include="src\floraparser\testphrases.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="src" />
+    <Folder Include="src\floracorpus" />
+    <Folder Include="src\floraparser" />
+    <Folder Include="src\floras-nltk\" />
+    <Folder Include="src\floras-nltk\Snobol" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="{2af0f10d-7135-4994-9156-5d01c9c11b7e}\3.5" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:55893/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>True</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
