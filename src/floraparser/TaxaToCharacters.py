@@ -115,7 +115,7 @@ def parseTaxon(taxon, parser, cfcsv=None, jsonret=False, treefilebase=None, clea
                                   txtstart + sent.slice.start, txtend + sent.slice.start, indent=1, cset=cfset)
 
                 if cfcsv: cfcsv.writerows(cr._asdict() for cr in cfset)
-                if jsonret: return json.dumps(list(OrderedDict(cr._asordereddict()) for cr in cfset))
+                if jsonret: return json.dumps(list(OrderedDict(cr._asordereddict()) for cr in cfset),indent='\t')
 
             dtime = time.process_time() - ptime
             if trees:
@@ -126,10 +126,10 @@ def parseTaxon(taxon, parser, cfcsv=None, jsonret=False, treefilebase=None, clea
                         cleanparsetree(treex)
                         if draw: treex.draw()
                         if treefilebase and i <= 20:
-                            tfilename = tfilebase + str(i)
+                            tfilename = treefilebase + str(i)
                             tfile = open(tfilename, mode='w', encoding='utf-8')
                             print(treex, file=tfile)
-                            tfile.close
+                            tfile.close()
                             # print(FindNode('SUBJECT', trees[0]))
             else:
                 if outfile: print('Fail:\n ' + phrase.text, file=outfile)
