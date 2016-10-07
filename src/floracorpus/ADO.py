@@ -24,7 +24,7 @@ class ADOdb(object):
                 
 
     def __del__(self):
-        connection.Close
+        connection.Close()
 
     def printerrs(self):
         for err in connection.Errors:

@@ -4,7 +4,7 @@ __author__ = 'George'
 import re
 import copy
 
-from floraparser.inflect import singularize
+from floraparser.enginflect import singularize
 from floraparser.lexicon import lexicon, multiwords
 from floraparser.FGFeatStructNonterminal import FGFeatStructNonterminal
 from nltk.grammar import FeatStructNonterminal, TYPE, SLASH

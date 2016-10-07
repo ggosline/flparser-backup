@@ -6,7 +6,8 @@ from nltk.tokenize.punkt import PunktSentenceTokenizer, PunktParameters, PunktLa
 # from nltk.util import AbstractLazySequence, LazyMap, LazyConcatenation
 
 # from floracorpus.SQLitedb import SQLitedb
-from floracorpus.ADO import ADOdb
+# from floracorpus.ADO import ADOdb
+from floracorpus.SQLitedb import SQLitedb
 from floraparser.fltoken import FlTokenizer, FlTaxon, FlPhrase
 
 
@@ -35,10 +36,10 @@ class FloraCorpusReader(AbstractFloraCorpusReader):
         if not fieldlst:
             fieldlst = ['taxonNo', 'flora_name', 'rank', 'family', 'genus', 'species', 'infrarank', 'infraepi',
                         'description', ]
-        # self.dbr = SQLitedb(db)
-        self.dbr = ADOdb(Accessdbname)
+        self.dbr = SQLitedb(db)
+        # self.dbr = ADOdb(Accessdbname)
         self.dbr.OpenTable(query, fieldlst)
-        self.rdr = self.dbr.NextRec()
+        self.rdr = self.dbr.NextRec
         super().__init__(reader=self.rdr, prefixdesc = 'Plant is ', **kwargs)
 
 
@@ -59,9 +60,9 @@ if __name__ == "__main__":
     for t in taxa:
         for sent in t.sentences:
             for phrase in sent.phrases:
-                for token in phrase:
+                for token in phrase.tokens:
                     if token.POS == 'UNK':
-                        print(phrase)
+                        print(phrase.text)
                         notindict.add(token.text)
     with open('notindict.txt', 'w', encoding='utf-8') as nidf:
         for wd in sorted(notindict):

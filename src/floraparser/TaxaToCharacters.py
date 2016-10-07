@@ -52,7 +52,7 @@ def parseTaxa(ttaxa, draw=False, outfile=None, ttrace=0, cleantree=True, projpar
 
     parser = FGParser(parser=projparser, trace=ttrace)
     for taxon in ttaxa.taxa:
-        parseTaxon(taxon, parser, cfcsv, treefilebase, cleantree, draw, outfile, ttrace)
+        parseTaxon(taxon, parser, cfcsv=cfcsv, treefilebase=treefilebase, cleantree=cleantree, draw=draw, outfile=outfile, ttrace=ttrace)
 
     if outfile: outfile.close()
     cf.close()
@@ -114,8 +114,10 @@ def parseTaxon(taxon, parser, cfcsv=None, jsonret=False, treefilebase=None, clea
                         DumpChars(taxonNo, flora, famname, taxname, mainsubject, subject, '', H, tokens, sent.text,
                                   txtstart + sent.slice.start, txtend + sent.slice.start, indent=1, cset=cfset)
 
-                if cfcsv: cfcsv.writerows(cr._asdict() for cr in cfset)
-                if jsonret: return json.dumps(list(OrderedDict(cr._asordereddict()) for cr in cfset))
+                if cfcsv:
+                    cfcsv.writerows(cr._asdict() for cr in cfset)
+                if jsonret:
+                    return json.dumps(list(OrderedDict(cr._asordereddict()) for cr in cfset))
 
             dtime = time.process_time() - ptime
             if trees:
