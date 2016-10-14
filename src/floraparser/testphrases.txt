@@ -1,1 +1,4 @@
 TAXON:  None testfam Test run
+Success: 
+ Herbs, annual
+No. of trees: 2 ptime: 0.07800050000000003

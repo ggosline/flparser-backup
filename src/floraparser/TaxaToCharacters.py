@@ -23,46 +23,75 @@ import time
 sent_tokenizer = pickle.load(open(r'..\resources\FloraPunkt.pickle', 'rb'))
 PunktLanguageVars.sent_end_chars = ('.',)  # don't break on question marks !
 
+def flDescToCharacters(**qparms):
+
+    trec = defaultdict(lambda: None)
+    trec['taxonNo'] = qparms['taxonNo']
+    trec['family'] =  qparms['family']
+    trec['genus'] = qparms['genus']
+    trec['species'] = qparms['species']
+    trec['rank'] = qparms['rank']
+    trec['description'] = qparms['description']
+
+    trdr = [trec]
+
+    return charactersFromText(trdr, outmode='json', ttrace=0)
+
+
 def charactersFromDB(query):
     ttaxa = FloraCorpusReader(db=r'..\resources\efloras.db3', query=query)
     outfile = open('testphrases.txt', 'w', encoding='utf-8')
     parseTaxa(ttaxa, outfile=outfile)
 
-def charactersFromTaxon(trec, prefixdesc=None):
-    outfile = open('testphrases.txt', 'w', encoding='utf-8')
-    parser = FGParser(parser=FeatureBottomUpLeftCornerChartParser, trace=0)
-    taxon = FlTaxon(trec, sentence_tokenizer=sent_tokenizer.span_tokenize, prefixdesc=prefixdesc)
-    return parseTaxon(taxon, parser, jsonret=True, outfile=outfile)
 
-def charactersFromText(trdr, draw=True, ttrace=1, testphrases=False, cleantree=True, prefixdesc=None,
+def charactersFromText(trdr, outmode='csv', draw=False, ttrace=1, testphrases=False, cleantree=True, prefixdesc=None,
                        projparser=FeatureBottomUpLeftCornerChartParser):
     ttaxa = AbstractFloraCorpusReader(reader=trdr, prefixdesc=prefixdesc)
-    outfile = sys.stdout
+    outfile = None
     if testphrases:
         outfile = open('testphrases.txt', 'w', encoding='utf-8')
-    parseTaxa(ttaxa, draw=draw, outfile=outfile, cleantree=cleantree, ttrace=ttrace, projparser=projparser)
 
-def parseTaxa(ttaxa, draw=False, outfile=None, ttrace=0, cleantree=True, projparser=FeatureBottomUpLeftCornerChartParser):
+    cfset = parseTaxa(ttaxa, outmode=outmode, draw=draw, outfile=outfile, cleantree=cleantree, ttrace=ttrace, projparser=projparser)
+
+    if outmode=='csv':
+        cf = open('characters.csv', 'w', encoding='utf-8', newline='')
+        cfcsv = csv.DictWriter(cf,
+                               'taxonNo flora family taxon mainsubject subject subpart category value mod posit phase presence start end'.split())
+        cfcsv.writeheader()
+        cfcsv.writerows(cr for cr in cfset)
+        cf.close()
+    if outmode=='json':
+        return json.dumps(cfset, indent='\t')
+
+
+def parseTaxa(ttaxa, outmode='csv',
+              draw=False, outfile=None, ttrace=0, cleantree=True, projparser=FeatureBottomUpLeftCornerChartParser):
 
     treefilebase = r'..\..\temp\tree'
-    cf = open('characters.csv', 'w', encoding='utf-8', newline='')
-    cfcsv = csv.DictWriter(cf,
-                           'taxonNo flora family taxon mainsubject subject subpart category value mod posit phase presence start end'.split())
-    cfcsv.writeheader()
+
+    if outmode=='csv':
+        cf = open('characters.csv', 'w', encoding='utf-8', newline='')
+        cfcsv = csv.DictWriter(cf,
+                               'taxonNo flora family taxon mainsubject subject subpart category value mod posit phase presence start end'.split())
+        cfcsv.writeheader()
+
+    jsonlist = []
 
     parser = FGParser(parser=projparser, trace=ttrace)
     for taxon in ttaxa.taxa:
-        parseTaxon(taxon, parser, cfcsv, treefilebase, cleantree, draw, outfile, ttrace)
+        cfset = parseTaxon(taxon, parser, treefilebase, cleantree, draw, outfile, ttrace)
+
+    jsonlist += list(OrderedDict(cr._asordereddict()) for cr in cfset)
 
     if outfile: outfile.close()
-    cf.close()
+    return jsonlist
 
 
-def parseTaxon(taxon, parser, cfcsv=None, jsonret=False, treefilebase=None, cleantree=True, draw=False, outfile=None, ttrace=0):
+def parseTaxon(taxon, parser, treefilebase=None, cleantree=True, draw=False, outfile=None, ttrace=0):
+
     print('\rTAXON: ', taxon.flora, taxon.family, taxon.genus, taxon.species)
     if outfile:
         print('\rTAXON: ', taxon.flora, taxon.family, taxon.genus, taxon.species, file=outfile)
-    # print('-'*80,  '\rTAXON: ', taxon.family, taxon.genus, taxon.species, file=cf)
     flora = taxon.flora
     famname = taxon.family
     taxname = taxon.genus + ' ' + taxon.species
@@ -84,12 +113,11 @@ def parseTaxon(taxon, parser, cfcsv=None, jsonret=False, treefilebase=None, clea
                 continue
             if True:
                 tokens = parser._chart._tokens
-                cfset.clear()
-
+                # cfset.clear()
                 subject = ''
                 for t, txtstart, txtend in parser.listSUBJ():
                     cleanparsetree(t)
-                    print('Text: ', sent.text[txtstart:txtend])
+                    if ttrace: print('Text: ', sent.text[txtstart:txtend])
                     H = t[()].label()['H']
                     subject = H['orth']
                     if iphrase == 0:
@@ -101,21 +129,18 @@ def parseTaxon(taxon, parser, cfcsv=None, jsonret=False, treefilebase=None, clea
                 charlist = parser.listCHARs(getCHR=True if trees else False)
                 for t, txtstart, txtend in charlist:
                     if cleantree: cleanparsetree(t)
-                    print('Text: ', sent.text[txtstart:txtend])
+                    if ttrace: print('Text: ', sent.text[txtstart:txtend])
                     if draw:
                         t.draw()
                     try:
                         H = t[()].label()['H']
-                        print(H.get('category'), H.get('orth'))
+                        if ttrace: print(H.get('category'), H.get('orth'))
                     except:
                         print('failure to get H')
                         H = None
                     if H:
                         DumpChars(taxonNo, flora, famname, taxname, mainsubject, subject, '', H, tokens, sent.text,
                                   txtstart + sent.slice.start, txtend + sent.slice.start, indent=1, cset=cfset)
-
-                if cfcsv: cfcsv.writerows(cr._asdict() for cr in cfset)
-                if jsonret: return json.dumps(list(OrderedDict(cr._asordereddict()) for cr in cfset),indent='\t')
 
             dtime = time.process_time() - ptime
             if trees:
@@ -141,6 +166,8 @@ def parseTaxon(taxon, parser, cfcsv=None, jsonret=False, treefilebase=None, clea
                 #         treex.draw()
                 if trees:
                     print(FindNode('SUBJECT', trees[0]))
+
+    return cfset
 
 
 if __name__ == '__main__':

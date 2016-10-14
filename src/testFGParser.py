@@ -16,20 +16,20 @@ if fromdb:
     charactersFromDB(query)
 
 else:
-    # description = '''
-    # Herbs, annual.
-    # Rhizome stout, 5-12 mm in diam.
-    # Stems erect, 40-100 cm tall, 2-4(-6) mm in diam., simple or rarely caespitose, with slender stripes, subwoody at base, densely rusty pubescent or sparsely pubescent in lower part during anthesis.
-    # Cauline leaves ovate-lanceolate or narrowly oblong, 3-6 × 1-2 cm, papery, both surfaces slightly pubescent, more densely so along veins, base truncate or broadly cuneate, margin obtusely serrate, apex obtuse.
-    # Capitula solitary or several in terminal corymbs; peduncles densely pubescent.
-    # Involucre hemispheric, 6-10 mm; phyllaries in 3 series, narrowly lanceolate or broadly linear, 3-5 × ca. 1.5 mm, dorsally densely pubescent, margin membranous, apex obtuse.
-    # Paleae keeled, membranous, ca. 5 mm. Marginal florets female; corolla yellow; lamina obtriangular, ca. 6.5 × 2 mm, apex truncate, 3-dentate.
-    # Disk florets bisexual; corolla tubular, ca. 3 mm, with short triangular lobes.
-    # Achenes columnar, sparsely pubescent, apex truncate, slightly narrower to base, ca. 2 mm in female florets and ca. 1.5 mm in bisexual florets, with 4 ribs.
-    # Pappus grayish white, chaffy, of 4 or 5 bristles.
-    # '''
+    description = '''
+    Herbs, annual.
+    Rhizome stout, 5-12 mm in diam.
+    Stems erect, 40-100 cm tall, 2-4(-6) mm in diam., simple or rarely caespitose, with slender stripes, subwoody at base, densely rusty pubescent or sparsely pubescent in lower part during anthesis.
+    Cauline leaves ovate-lanceolate or narrowly oblong, 3-6 × 1-2 cm, papery, both surfaces slightly pubescent, more densely so along veins, base truncate or broadly cuneate, margin obtusely serrate, apex obtuse.
+    Capitula solitary or several in terminal corymbs; peduncles densely pubescent.
+    Involucre hemispheric, 6-10 mm; phyllaries in 3 series, narrowly lanceolate or broadly linear, 3-5 × ca. 1.5 mm, dorsally densely pubescent, margin membranous, apex obtuse.
+    Paleae keeled, membranous, ca. 5 mm. Marginal florets female; corolla yellow; lamina obtriangular, ca. 6.5 × 2 mm, apex truncate, 3-dentate.
+    Disk florets bisexual; corolla tubular, ca. 3 mm, with short triangular lobes.
+    Achenes columnar, sparsely pubescent, apex truncate, slightly narrower to base, ca. 2 mm in female florets and ca. 1.5 mm in bisexual florets, with 4 ribs.
+    Pappus grayish white, chaffy, of 4 or 5 bristles.
+    '''
 
-    description = 'lateral nerves in 8–10 pairs'
+    # description = 'lateral nerves in 8–10 pairs'
 
     parser = FeatureBottomUpLeftCornerChartParser
     # parser = FeatureEarleyChartParser
@@ -54,5 +54,5 @@ else:
 
     trdr = [trec]
 
-    print(charactersFromTaxon(trec))
-    #charactersFromText(trdr, draw=draw, ttrace=ttrace, cleantree=cleantree, parser=parser, testphrases= testphrases, prefixdesc=prefixdesc)
+    # charactersFromText(trdr, outmode='csv')
+    print (flDescToCharacters(ttrace=0, **trec))
