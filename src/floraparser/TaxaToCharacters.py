@@ -23,7 +23,7 @@ import time
 sent_tokenizer = pickle.load(open(r'..\resources\FloraPunkt.pickle', 'rb'))
 PunktLanguageVars.sent_end_chars = ('.',)  # don't break on question marks !
 
-def flDescToCharacters(**qparms):
+def flDescToCharacters(ttrace=0, **qparms):
 
     trec = defaultdict(lambda: None)
     trec['taxonNo'] = qparms['taxonNo']
@@ -35,7 +35,7 @@ def flDescToCharacters(**qparms):
 
     trdr = [trec]
 
-    return charactersFromText(trdr, outmode='json', ttrace=0)
+    return charactersFromText(trdr, outmode='json', ttrace=ttrace)
 
 
 def charactersFromDB(query):
@@ -61,7 +61,7 @@ def charactersFromText(trdr, outmode='csv', draw=False, ttrace=1, testphrases=Fa
         cfcsv.writerows(cr for cr in cfset)
         cf.close()
     if outmode=='json':
-        return json.dumps(cfset, indent='\t')
+        return cfset
 
 
 def parseTaxa(ttaxa, outmode='csv',
