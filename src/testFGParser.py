@@ -3,7 +3,7 @@ __author__ = 'Geoge'
 from floraparser.TaxaToCharacters import *
 
 fromdb = False
-fromdb = True
+#fromdb = True
 
 if fromdb:
 
