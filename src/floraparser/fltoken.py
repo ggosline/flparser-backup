@@ -3,8 +3,8 @@
 __author__ = 'gg12kg'
 
 import re
-from floraparser import botglossary, pos
-fltagger = pos.FlTagger()
+from floraparser import fltagger
+fltagger = fltagger.FlTagger()
 
 class FlTaxon():
     '''
