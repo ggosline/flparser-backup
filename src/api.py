@@ -1,5 +1,6 @@
 from flask import Flask
-from flask_restful import reqparse, abort, Api, Resource
+from flask_restful import reqparse, Api, Resource
+
 from floraparser.TaxaToCharacters import flDescToCharacters
 
 app = Flask(__name__)

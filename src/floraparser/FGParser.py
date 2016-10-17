@@ -1,25 +1,23 @@
 __author__ = 'gg12kg'
 
-from nltk.parse.featurechart import FeatureSingleEdgeFundamentalRule, FeatureTreeEdge, FeatureChart, \
-    BU_LC_FEATURE_STRATEGY, FeatureBottomUpPredictCombineRule, FeatureEmptyPredictRule, FeatureChartParser
+import copy
+import itertools
 
+from nltk import Tree
+from nltk.featstruct import FeatStruct, FeatList, FeatureValueTuple
 from nltk.grammar import FeatureGrammar, FeatStructNonterminal, FeatStructReader,\
     SLASH, TYPE, Production, \
     Nonterminal
-from floraparser.flgrammarreader import read_grammar
-from nltk.sem import Variable
-from nltk.parse.chart import TreeEdge, FundamentalRule, SingleEdgeFundamentalRule, LeafInitRule, EdgeI
-from nltk.grammar import FeatureValueType, is_nonterminal
-from nltk.featstruct import FeatStruct, Feature, FeatList, FeatDict, unify, FeatureValueTuple
-from floraparser.fltoken import FlToken
-from floraparser.lexicon import lexicon
-from floraparser.lexicon import defaultfeatures
-from floraparser.FGFeatStructNonterminal import FGFeatStructNonterminal
-from nltk import Tree
 from nltk.parse.chart import LeafEdge
 from nltk.parse.earleychart import FeatureIncrementalChart, FeatureEarleyChartParser
-import copy
-import itertools
+from nltk.parse.featurechart import FeatureTreeEdge, FeatureChart
+from nltk.sem import Variable
+
+from floraparser.FGFeatStructNonterminal import FGFeatStructNonterminal
+from floraparser.flgrammarreader import read_grammar
+from floraparser.fltoken import FlToken
+from floraparser.lexicon import defaultfeatures
+from floraparser.lexicon import lexicon
 
 class FGFeatureTreeEdge(FeatureTreeEdge):
 

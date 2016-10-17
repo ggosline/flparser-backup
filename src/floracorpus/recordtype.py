@@ -30,13 +30,11 @@
 
 __all__ = ['recordtype', 'NO_DEFAULT']
 
-from collections import Mapping as _Mapping, OrderedDict
+import sys as _sys
+from collections import Mapping as _Mapping
 from keyword import iskeyword as _iskeyword
 
 from six import exec_, string_types
-
-import sys as _sys
-
 
 NO_DEFAULT = object()
 

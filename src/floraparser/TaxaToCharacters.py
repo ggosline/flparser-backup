@@ -1,22 +1,19 @@
 __author__ = 'Geoge'
 
-import sys
-
-from collections import defaultdict, OrderedDict
-from floracorpus.reader import AbstractFloraCorpusReader , FloraCorpusReader
-from nltk.parse import FeatureEarleyChartParser, FeatureIncrementalBottomUpLeftCornerChartParser, FeatureChartParser
-from nltk.parse import FeatureBottomUpChartParser, FeatureBottomUpLeftCornerChartParser, FeatureTopDownChartParser
-from floraparser.FGParser import FGParser, cleanparsetree, FindNode
-from floraparser.dumpstruct import PrintStruct, DumpStruct, DumpChars
-from nltk.tokenize.punkt import PunktSentenceTokenizer, PunktParameters, PunktLanguageVars
-from floraparser.fltoken import FlTokenizer, FlTaxon, FlPhrase
-import pickle
 import csv
-import json
-import traceback
-import ordered_set
-
 import logging
+import pickle
+import traceback
+from collections import defaultdict, OrderedDict
+
+import ordered_set
+from nltk.parse import FeatureBottomUpLeftCornerChartParser
+from nltk.tokenize.punkt import PunktLanguageVars
+
+from floracorpus.reader import AbstractFloraCorpusReader , FloraCorpusReader
+from floraparser.FGParser import FGParser, cleanparsetree, FindNode
+from floraparser.dumpstruct import DumpChars
+
 logging.basicConfig(filename='flparse.log', filemode='w', level=logging.INFO)
 import time
 

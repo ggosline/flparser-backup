@@ -1,7 +1,9 @@
 __author__ = 'gg12kg'
 
-from nltk.grammar import FeatStructNonterminal
 import copy
+
+from nltk.grammar import FeatStructNonterminal
+
 
 class FGFeatStructNonterminal(FeatStructNonterminal):
 
