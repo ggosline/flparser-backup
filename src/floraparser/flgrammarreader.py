@@ -17,11 +17,11 @@ Copied from nltk grammar
 Adds optional nodes to grammar definition
 """
 from __future__ import print_function, unicode_literals
-from nltk.grammar import Production, ProbabilisticProduction
+
 import re
 from itertools import chain, combinations
 
-# Parsing generic grammars
+from nltk.grammar import Production, ProbabilisticProduction
 from pkg_resources import string_types
 
 _ARROW_RE = re.compile(r'\s* -> \s*', re.VERBOSE)

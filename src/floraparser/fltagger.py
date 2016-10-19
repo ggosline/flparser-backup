@@ -1,15 +1,15 @@
 # -*- coding: utf-8 -*-
 __author__ = 'George'
 
+import logging
 import re
-import copy
 
+from nltk.featstruct import FeatStructReader
+from nltk.grammar import FeatStructNonterminal, TYPE
+
+from floraparser.FGFeatStructNonterminal import FGFeatStructNonterminal
 from floraparser.enginflect import singularize
 from floraparser.lexicon import lexicon, multiwords
-from floraparser.FGFeatStructNonterminal import FGFeatStructNonterminal
-from nltk.grammar import FeatStructNonterminal, TYPE, SLASH
-from nltk.featstruct import FeatStructReader
-import logging
 
 # read_expr = Expression.fromstring
 # Expression._logic_parser.quote_chars = [('"', '"', r'\\', True)]
@@ -154,7 +154,6 @@ class FlTagger():
 
 
 if __name__ == "__main__":
-    from floraparser.fltoken import FlWord
     tagger = FlTagger()
     testword = "bilocular"
     print(tagger.tag_word(testword))

@@ -1,14 +1,8 @@
-from itertools import chain
-import pickle
 from nltk.data import LazyLoader
+from nltk.tokenize.punkt import PunktLanguageVars
 
-from nltk.tokenize.punkt import PunktSentenceTokenizer, PunktParameters, PunktLanguageVars
-# from nltk.util import AbstractLazySequence, LazyMap, LazyConcatenation
-
-# from floracorpus.SQLitedb import SQLitedb
-# from floracorpus.ADO import ADOdb
 from floracorpus.SQLitedb import SQLitedb
-from floraparser.fltoken import FlTokenizer, FlTaxon, FlPhrase
+from floraparser.fltoken import FlTokenizer, FlTaxon
 
 
 class AbstractFloraCorpusReader(object):

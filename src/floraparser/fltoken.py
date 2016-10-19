@@ -3,7 +3,9 @@
 __author__ = 'gg12kg'
 
 import re
+
 from floraparser import fltagger
+
 fltagger = fltagger.FlTagger()
 
 class FlTaxon():

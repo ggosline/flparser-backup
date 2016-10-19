@@ -1,0 +1,4 @@
+Flask==0.11.1
+Flask-RESTful==0.3.5
+nltk==3.2.1
+ordered-set==2.0.1

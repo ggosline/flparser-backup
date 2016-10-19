@@ -1,7 +1,8 @@
-
-from floracorpus import recordtype
 from nltk.featstruct import FeatDict, FeatureValueTuple
 from nltk.sem import Variable
+
+from floracorpus import recordtype
+
 
 def PrintStruct(struct, indent: int = 0, file=None):
     if isinstance(struct,FeatDict):
