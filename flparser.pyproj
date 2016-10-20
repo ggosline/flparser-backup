@@ -5,14 +5,14 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{41895500-ab47-4e61-a7ab-cf898ebb803c}</ProjectGuid>
     <ProjectHome />
-    <StartupFile>src\testFGParser.py</StartupFile>
+    <StartupFile>src\api.py</StartupFile>
     <SearchPath />
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <ProjectTypeGuids>{789894c7-04a9-4a11-a6b5-3f4435165112};{1b580a1a-fdb3-4b32-83e1-6407eb2722e6};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
     <LaunchProvider>Web launcher</LaunchProvider>
-    <InterpreterId>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</InterpreterId>
-    <InterpreterVersion>3.5</InterpreterVersion>
+    <InterpreterId>{87646f4f-e282-47f7-8d67-fb478b84e230}</InterpreterId>
+    <InterpreterVersion>3.4</InterpreterVersion>
     <PythonWsgiHandler>{StartupModule}.wsgi_app</PythonWsgiHandler>
     <UseIISExpress>true</UseIISExpress>
   </PropertyGroup>
@@ -22,6 +22,8 @@
     <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="api.py" />
+    <Compile Include="src\api.py" />
     <Compile Include="src\floracorpus\ADO.py" />
     <Compile Include="src\floracorpus\reader.py" />
     <Compile Include="src\floracorpus\recordtype.py" />
@@ -41,13 +43,10 @@
     <Compile Include="src\floraparser\splitter.py" />
     <Compile Include="src\floraparser\TaxaToCharacters.py" />
     <Compile Include="src\floraparser\__init__.py" />
-    <Compile Include="src\floras-nltk\Snobol\Snobol.py" />
-    <Compile Include="src\floras-nltk\Snobol\Snoboltest.py" />
-    <Compile Include="src\floras-nltk\Snobol\__init__.py" />
     <Compile Include="src\testFGParser.py" />
-    <Compile Include="src\testtkinter.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="requirements.txt" />
     <Content Include="src\floracorpus\notindict.txt" />
     <Content Include="src\floraparser\notindict.txt" />
     <Content Include="src\floraparser\testphrases.txt" />
@@ -56,11 +55,19 @@
     <Folder Include="src" />
     <Folder Include="src\floracorpus" />
     <Folder Include="src\floraparser" />
-    <Folder Include="src\floras-nltk\" />
-    <Folder Include="src\floras-nltk\Snobol" />
   </ItemGroup>
   <ItemGroup>
-    <InterpreterReference Include="{2af0f10d-7135-4994-9156-5d01c9c11b7e}\3.5" />
+    <Interpreter Include="env\">
+      <Id>{87646f4f-e282-47f7-8d67-fb478b84e230}</Id>
+      <BaseInterpreter>{2af0f10d-7135-4994-9156-5d01c9c11b7e}</BaseInterpreter>
+      <Version>3.4</Version>
+      <Description>env (Python 3.4)</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <LibraryPath>Lib\</LibraryPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X86</Architecture>
+    </Interpreter>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
   <ProjectExtensions>
