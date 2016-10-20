@@ -1,7 +1,7 @@
 from flask import Flask
 from flask_restful import reqparse, Api, Resource
 
-from floraparser.TaxaToCharacters import flDescToCharacters
+from src.floraparser.TaxaToCharacters import flDescToCharacters
 
 app = Flask(__name__)
 wsgi_app = app.wsgi_app
@@ -35,4 +35,10 @@ class descParse(Resource):
 api.add_resource(descParse, '/characters')
 
 if __name__ == '__main__':
-    app.run()
+    from os import environ
+    HOST = environ.get('SERVER_HOST', 'localhost')
+    try:
+        PORT = int(environ.get('SERVER_PORT', '5555'))
+    except ValueError:
+        PORT = 5555
+    app.run(HOST, PORT)
