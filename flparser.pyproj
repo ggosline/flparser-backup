@@ -23,6 +23,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="api.py" />
+    <Compile Include="ptvs_virtualenv_proxy.py" />
     <Compile Include="src\api.py" />
     <Compile Include="src\floracorpus\ADO.py" />
     <Compile Include="src\floracorpus\reader.py" />
@@ -46,10 +47,13 @@
     <Compile Include="src\testFGParser.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include=".skipPythonDeployment" />
     <Content Include="requirements.txt" />
     <Content Include="src\floracorpus\notindict.txt" />
     <Content Include="src\floraparser\notindict.txt" />
     <Content Include="src\floraparser\testphrases.txt" />
+    <Content Include="web.config" />
+    <None Include="web.debug.config" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="src" />
