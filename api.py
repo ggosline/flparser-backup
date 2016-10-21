@@ -1,7 +1,7 @@
 from flask import Flask
 from flask_restful import reqparse, Api, Resource
 
-from src.floraparser.TaxaToCharacters import flDescToCharacters
+from floraparser.TaxaToCharacters import flDescToCharacters
 
 app = Flask(__name__)
 wsgi_app = app.wsgi_app

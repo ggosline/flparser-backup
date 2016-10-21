@@ -1,0 +1,5 @@
+collections
+SLICE_ALL
+__version__
+is_iterable
+OrderedSet

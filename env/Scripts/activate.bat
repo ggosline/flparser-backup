@@ -1,5 +1,5 @@
 @echo off
-set "VIRTUAL_ENV=C:\GitHub\flparser\env"
+set "VIRTUAL_ENV=E:\GitHub\flparser\env"
 
 if not defined PROMPT (
     set "PROMPT=$P$G"
