@@ -10,7 +10,7 @@ import ordered_set
 from nltk.parse import FeatureBottomUpLeftCornerChartParser
 from nltk.tokenize.punkt import PunktLanguageVars
 
-from ..floracorpus.reader import AbstractFloraCorpusReader , FloraCorpusReader
+from floracorpus.reader import AbstractFloraCorpusReader , FloraCorpusReader
 from floraparser.FGParser import FGParser, cleanparsetree, FindNode
 from floraparser.dumpstruct import DumpChars
 
