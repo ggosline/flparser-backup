@@ -5,6 +5,7 @@ from floraparser.TaxaToCharacters import flDescToCharacters
 
 app = Flask(__name__)
 api = Api(app)
+wsgi_app = app.wsgi_app
 
 # def abort_if_todo_doesnt_exist(todo_id):
 #     if todo_id not in TODOS:

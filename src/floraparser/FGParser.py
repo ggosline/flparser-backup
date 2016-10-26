@@ -3,8 +3,9 @@ __author__ = 'gg12kg'
 import copy
 import itertools
 
+from nltk import featstruct
 from nltk import Tree
-from nltk.featstruct import FeatStruct, FeatList, FeatureValueTuple
+from nltk.featstruct import FeatStruct, FeatList, FeatureValueTuple, _substitute_bindings
 from nltk.grammar import FeatureGrammar, FeatStructNonterminal, FeatStructReader,\
     SLASH, TYPE, Production, \
     Nonterminal
@@ -12,12 +13,35 @@ from nltk.parse.chart import LeafEdge
 from nltk.parse.earleychart import FeatureIncrementalChart, FeatureEarleyChartParser
 from nltk.parse.featurechart import FeatureTreeEdge, FeatureChart
 from nltk.sem import Variable
+from nltk.sem.logic import SubstituteBindingsI
 
 from floraparser.FGFeatStructNonterminal import FGFeatStructNonterminal
 from floraparser.flgrammarreader import read_grammar
 from floraparser.fltoken import FlToken
 from floraparser.lexicon import defaultfeatures
 from floraparser.lexicon import lexicon
+
+# Try to monkeypatch the problem in FeatStruct
+
+def _substitute_bindings(fstruct, bindings, fs_class, visited):
+    # Visit each node only once:
+    if id(fstruct) in visited: return
+    visited.add(id(fstruct))
+
+    if _is_mapping(fstruct): items = fstruct.items()
+    elif _is_sequence(fstruct): items = enumerate(fstruct)
+    else: raise ValueError('Expected mapping or sequence')
+    for (fname, fval) in items:
+        while (isinstance(fval, Variable) and fval in bindings):
+            # old line led to problems with trying to modify frozen featstruct
+            # fval = fstruct[fname] = bindings[fval]
+            fval = fstruct[fname] = copy.deepcopy(bindings[fval])
+        if isinstance(fval, fs_class):
+            _substitute_bindings(fval, bindings, fs_class, visited)
+        elif isinstance(fval, SubstituteBindingsI):
+            fstruct[fname] = fval.substitute_bindings(bindings)
+
+featstruct._substitute_bindings = _substitute_bindings
 
 class FGFeatureTreeEdge(FeatureTreeEdge):
 
