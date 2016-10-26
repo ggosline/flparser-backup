@@ -1,6 +1,9 @@
 from flask import Flask
 from flask_restful import reqparse, Api, Resource
 
+import site
+site.addsitedir('src')
+
 from floraparser.TaxaToCharacters import flDescToCharacters
 
 app = Flask(__name__)
