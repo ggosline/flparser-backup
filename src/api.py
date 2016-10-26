@@ -4,7 +4,7 @@ from flask_restful import reqparse, Api, Resource
 import site
 site.addsitedir('src')
 
-from floraparser.TaxaToCharacters import flDescToCharacters
+from floraparser.TaxaToCharacters import flDescToCharacters, flDescToPhrases
 
 app = Flask(__name__)
 api = Api(app)
@@ -31,10 +31,17 @@ class descParse(Resource):
         args = parser.parse_args()
         return flDescToCharacters(ttrace=0, **args)
 
+class descParsePhrases(Resource):
+
+    def get(self):
+        args = parser.parse_args()
+        return flDescToPhrases(ttrace=0, **args)
+
 ##
 ## Actually setup the Api resource routing here
 ##
 api.add_resource(descParse, '/characters')
+api.add_resource(descParsePhrases, '/phrases')
 
 if __name__ == '__main__':
     app.run()

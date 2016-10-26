@@ -34,6 +34,19 @@ def flDescToCharacters(ttrace=0, **qparms):
 
     return charactersFromText(trdr, outmode='json', ttrace=ttrace)
 
+def flDescToPhrases(ttrace=0, **qparms):
+
+    trec = defaultdict(lambda: None)
+    trec['taxonNo'] = qparms['taxonNo']
+    trec['family'] =  qparms['family']
+    trec['genus'] = qparms['genus']
+    trec['species'] = qparms['species']
+    trec['rank'] = qparms['rank']
+    trec['description'] = qparms['description']
+
+    trdr = [trec]
+
+    return phrasesFromText(trdr, outmode='json', ttrace=ttrace)
 
 def charactersFromDB(query):
     ttaxa = FloraCorpusReader(db=r'..\resources\efloras.db3', query=query)
@@ -48,7 +61,26 @@ def charactersFromText(trdr, outmode='csv', draw=False, ttrace=1, testphrases=Fa
     if testphrases:
         outfile = open('testphrases.txt', 'w', encoding='utf-8')
 
-    cfset = parseTaxa(ttaxa, outmode=outmode, draw=draw, outfile=outfile, cleantree=cleantree, ttrace=ttrace, projparser=projparser)
+    cfset = parseTaxa(ttaxa, phrases=False, outmode=outmode, draw=draw, outfile=outfile, cleantree=cleantree, ttrace=ttrace, projparser=projparser)
+
+    if outmode=='csv':
+        cf = open('characters.csv', 'w', encoding='utf-8', newline='')
+        cfcsv = csv.DictWriter(cf,
+                               'taxonNo flora family taxon mainsubject subject subpart category value mod posit phase presence start end'.split())
+        cfcsv.writeheader()
+        cfcsv.writerows(cr for cr in cfset)
+        cf.close()
+    if outmode=='json':
+        return cfset
+
+def phrasesFromText(trdr, phrases=True, outmode='csv', draw=False, ttrace=1, testphrases=False, cleantree=True, prefixdesc=None,
+                       projparser=FeatureBottomUpLeftCornerChartParser):
+    ttaxa = AbstractFloraCorpusReader(reader=trdr, prefixdesc=prefixdesc)
+    outfile = None
+    if testphrases:
+        outfile = open('testphrases.txt', 'w', encoding='utf-8')
+
+    cfset = parseTaxa(ttaxa, phrases=True, outmode=outmode, draw=draw, outfile=outfile, cleantree=cleantree, ttrace=ttrace, projparser=projparser)
 
     if outmode=='csv':
         cf = open('characters.csv', 'w', encoding='utf-8', newline='')
@@ -61,7 +93,7 @@ def charactersFromText(trdr, outmode='csv', draw=False, ttrace=1, testphrases=Fa
         return cfset
 
 
-def parseTaxa(ttaxa, outmode='csv',
+def parseTaxa(ttaxa, phrases, outmode='csv',
               draw=False, outfile=None, ttrace=0, cleantree=True, projparser=FeatureBottomUpLeftCornerChartParser):
 
     treefilebase = r'..\..\temp\tree'
@@ -76,7 +108,7 @@ def parseTaxa(ttaxa, outmode='csv',
 
     parser = FGParser(parser=projparser, trace=ttrace)
     for taxon in ttaxa.taxa:
-        cfset = parseTaxon(taxon, parser, treefilebase, cleantree, draw, outfile, ttrace)
+        cfset = parseTaxon(taxon, parser=parser, phrases=phrases, treefilebase=treefilebase, cleantree=cleantree, draw=draw, outfile=outfile, ttrace=ttrace)
 
     jsonlist += list(OrderedDict(cr._asordereddict()) for cr in cfset)
 
@@ -84,7 +116,7 @@ def parseTaxa(ttaxa, outmode='csv',
     return jsonlist
 
 
-def parseTaxon(taxon, parser, treefilebase=None, cleantree=True, draw=False, outfile=None, ttrace=0):
+def parseTaxon(taxon, parser, phrases=False, treefilebase=None, cleantree=True, draw=False, outfile=None, ttrace=0):
 
     print('\rTAXON: ', taxon.flora, taxon.family, taxon.genus, taxon.species)
     if outfile:
@@ -122,7 +154,10 @@ def parseTaxon(taxon, parser, treefilebase=None, cleantree=True, draw=False, out
                     DumpChars(taxonNo, flora, famname, taxname, mainsubject, subject, '', H, tokens, sent.text,
                               phrase.slice.start + sent.slice.start, phrase.slice.stop + sent.slice.start, indent=1,
                               cset=cfset)
-
+                    if phrases:
+                        cfset[-1].value = phrase.text
+                        continue
+                if phrases: continue
                 charlist = parser.listCHARs(getCHR=True if trees else False)
                 for t, txtstart, txtend in charlist:
                     if cleantree: cleanparsetree(t)

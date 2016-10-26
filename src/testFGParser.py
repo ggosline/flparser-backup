@@ -55,4 +55,4 @@ else:
     trdr = [trec]
 
     # charactersFromText(trdr, outmode='csv')
-    print (flDescToCharacters(ttrace=0, **trec))
+    print (flDescToPhrases(ttrace=0, **trec))
