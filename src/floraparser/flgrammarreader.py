@@ -22,7 +22,6 @@ import re
 from itertools import chain, combinations
 
 from nltk.grammar import Production, ProbabilisticProduction
-from pkg_resources import string_types
 
 _ARROW_RE = re.compile(r'\s* -> \s*', re.VERBOSE)
 _PROBABILITY_RE = re.compile(r'( \[ [\d\.]+ \] ) \s*', re.VERBOSE)
@@ -149,7 +148,7 @@ def read_grammar(input, nonterm_parser, probabilistic=False, encoding=None):
     """
     if encoding is not None:
         input = input.decode(encoding)
-    if isinstance(input, string_types):
+    if isinstance(input, str):
         lines = input.split('\n')
     else:
         lines = input
