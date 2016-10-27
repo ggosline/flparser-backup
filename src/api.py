@@ -29,11 +29,19 @@ class descParse(Resource):
 
     def get(self):
         args = parser.parse_args()
+        return flDescToCharacters(ttrace=0, **args
+
+    def post(self):
+        args = parser.parse_args()
         return flDescToCharacters(ttrace=0, **args)
 
 class descParsePhrases(Resource):
 
     def get(self):
+        args = parser.parse_args()
+        return flDescToPhrases(ttrace=0, **args)
+
+    def post(self):
         args = parser.parse_args()
         return flDescToPhrases(ttrace=0, **args)
 
