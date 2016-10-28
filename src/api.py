@@ -29,7 +29,7 @@ class descParse(Resource):
 
     def get(self):
         args = parser.parse_args()
-        return flDescToCharacters(ttrace=0, **args
+        return flDescToCharacters(ttrace=0, **args)
 
     def post(self):
         args = parser.parse_args()
