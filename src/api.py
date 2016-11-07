@@ -24,7 +24,7 @@ flpparser.add_argument('rank')
 flpparser.add_argument('description', required=True)
 
 dbparser = reqparse.RequestParser()
-dbparser.add_argument('flora')
+dbparser.add_argument('flora_name')
 dbparser.add_argument('rank')
 dbparser.add_argument('genus')
 dbparser.add_argument('species')

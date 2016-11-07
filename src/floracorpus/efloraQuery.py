@@ -13,10 +13,11 @@ def run(stmt):
     return [dict(zip(row.keys(), row)) for row in rs]
 
 def readEflora(searchargs):
-        q = session.query(taxa).filter(taxa.c.flora_name == 'FZ').filter(taxa.c.genus == 'Diospyros')
-        return [row for row in q]
-        # s = taxa.select(and_(taxa.c.flora_name == 'FZ', taxa.c.genus == 'Diospyros') )
-        # return run(s)
+    nnargs = {k:v for k,v in searchargs.items() if v}
+    q = session.query(taxa).filter_by(**nnargs).all()
+    return [dict(zip(row.keys(), row)) for row in q]
+    # s = taxa.select(and_(taxa.c.flora_name == 'FZ', taxa.c.genus == 'Diospyros') )
+    # return run(s)
 
 #Connect to databse
 if __name__ == '__main__':
